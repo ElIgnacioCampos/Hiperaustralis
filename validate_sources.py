@@ -22,6 +22,13 @@ for name,(folder,kind) in EXPECTED.items():
   if d["_id"] in ids: fail(f"ID duplicado: {d['_id']}")
   ids.add(d["_id"])
   if not d.get("name"): fail(f"Nombre ausente: {path}")
+  if folder=="actors":
+   body=d.get("system",{}).get("body",{})
+   fields=body.get("contents",[])
+   keys=[x.get("key") for x in fields if isinstance(x,dict)]
+   required={"peso","descripcion","en_escena"}
+   if not required.issubset(set(keys)): fail(f"Actor sin estructura Rival completa: {path}; campos={keys}")
+   if "nota_peso" in d.get("system",{}).get("props",{}): fail(f"Campo editorial obsoleto nota_peso: {path}")
   if folder=="journals":
    pages=d.get("pages")
    if not isinstance(pages,list): fail("JournalEntry sin pages[]")
