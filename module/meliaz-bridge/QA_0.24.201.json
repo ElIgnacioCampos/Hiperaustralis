@@ -1,0 +1,32 @@
+{
+  "version": "0.24.201",
+  "target": "Foundry V14 / CSB 6.x",
+  "scope": "Kona: ocultación preventiva de wrappers CSB legacy equipo_1..7",
+  "checks": [
+    {
+      "check": "CSS oculta wrappers .ha-val-equipo_1..7 y .ha-field-equipo_1..7",
+      "status": "STATIC_PATCH"
+    },
+    {
+      "check": "CSS oculta wrappers [data-field=equipo_1..7]",
+      "status": "STATIC_PATCH"
+    },
+    {
+      "check": "cleanupLegacyHiperaEquipoSeven oculta wrapper completo y no elimina datos",
+      "status": "STATIC_PATCH"
+    },
+    {
+      "check": "No se modifican Items, flags, propiedades ni asignaciones",
+      "status": "STATIC_REVIEW"
+    },
+    {
+      "check": "Cuatro slots actuales y destinos Ñeque/Equipo preservados",
+      "status": "STATIC_REVIEW"
+    },
+    {
+      "check": "Foundry runtime: destello inicial y tooltip fantasma",
+      "status": "PENDING"
+    }
+  ],
+  "runtime_tested": false
+}

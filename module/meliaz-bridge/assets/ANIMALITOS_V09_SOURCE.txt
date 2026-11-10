@@ -1,0 +1,4 @@
+Fuente canónica de assets: HIPERAUSTRALIS_ANIMALITOS_CONSOLIDADO_v09_WEBP_OPTIMIZADO.zip
+Mascotas/Familiares: MASC-01.webp a MASC-10.webp (03_FOUNDRY_WEBP/MASCOTAS)
+Exóticos: EXO-001.webp a EXO-009.webp (03_FOUNDRY_WEBP/EXOTICOS)
+Las fichas de juego permanecen en el consolidado fuente; no se modifican reglas ni Peso.
