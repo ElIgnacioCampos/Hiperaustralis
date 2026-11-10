@@ -11,3 +11,5 @@
 - `bridge.js`: parche de 0.24.202 + 0.24.203 aplicado sobre la base 0.24.201.
 - `node --check`: pendiente en GitHub Actions.
 - QA runtime en Forge: pendiente.
+
+<!-- import trigger -->
