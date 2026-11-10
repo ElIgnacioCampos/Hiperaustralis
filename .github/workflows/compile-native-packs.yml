@@ -29,14 +29,15 @@ jobs:
         with:
           python-version: '3.x'
       - name: Install official Foundry CLI
-        run: npm install --no-audit --no-fund --no-save @foundryvtt/foundryvtt-cli@3.0.5
+        run: npm install --no-audit --no-fund --no-save --no-package-lock @foundryvtt/foundryvtt-cli@3.0.5
       - name: Validate canonical sources
         run: python validate_sources.py
-      - name: Compile and validate native packs
+      - name: Compile, unpack and validate native packs
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p module/packs
+          rm -rf module/packs/ha-proto-items module/packs/ha-proto-actors module/packs/ha-proto-journals
           VERIFY="$RUNNER_TEMP/verify"
           mkdir -p "$VERIFY"
           FVTT="./node_modules/.bin/fvtt"
