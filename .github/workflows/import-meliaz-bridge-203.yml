@@ -1,0 +1,48 @@
+name: Import MELIAZ Bridge 0.24.203
+
+on:
+  push:
+    branches:
+      - work/meliaz-bridge-0.24.203-audit
+    paths:
+      - 'staging/203/**'
+
+permissions:
+  contents: write
+
+jobs:
+  import-module:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: work/meliaz-bridge-0.24.203-audit
+          fetch-depth: 0
+      - name: Apply 0.24.202 and 0.24.203 changes over 0.24.201 base
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f staging/203/bridge-0.24.203.patch
+          test -f staging/203/module.json
+          test -f staging/203/CHANGELOG_0.24.203.md
+          patch --batch --forward -p1 < staging/203/bridge-0.24.203.patch
+          cp staging/203/module.json module/meliaz-bridge/module.json
+          cp staging/203/CHANGELOG_0.24.203.md module/meliaz-bridge/CHANGELOG_0.24.203.md
+          node --check module/meliaz-bridge/bridge.js
+          node --check module/meliaz-bridge/kona-token-icons.js
+          python3 - <<'PY'
+          import json, pathlib
+          root = pathlib.Path("module/meliaz-bridge")
+          m = json.loads((root / "module.json").read_text(encoding="utf-8"))
+          assert m["id"] == "meliaz-bridge"
+          assert m["version"] == "0.24.203"
+          assert "0.24.203" in m["description"]
+          assert len([p for p in root.rglob("*") if p.is_file()]) == 169
+          print("PASS:", m["id"], m["version"], "files:", len([p for p in root.rglob("*") if p.is_file()]))
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -rf staging/203
+          git add module/meliaz-bridge staging/203
+          git commit -m "Import MELIAZ Bridge 0.24.203"
+          git push origin HEAD:work/meliaz-bridge-0.24.203-audit
