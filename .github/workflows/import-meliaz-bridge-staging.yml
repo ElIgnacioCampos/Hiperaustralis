@@ -1,0 +1,82 @@
+name: Import MELIAZ Bridge staging ZIP
+
+on:
+  push:
+    branches:
+      - work/meliaz-bridge-0.24.201-migration
+    paths:
+      - staging/MELIAZ_BRIDGE_0.24.201_GITHUB_STAGING.zip
+
+permissions:
+  contents: write
+
+jobs:
+  import-module:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout migration branch
+        uses: actions/checkout@v4
+        with:
+          ref: work/meliaz-bridge-0.24.201-migration
+          fetch-depth: 0
+
+      - name: Validate and extract staging archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          archive="staging/MELIAZ_BRIDGE_0.24.201_GITHUB_STAGING.zip"
+          test -f "$archive"
+          python3 - <<'PY'
+          import zipfile
+          p = "staging/MELIAZ_BRIDGE_0.24.201_GITHUB_STAGING.zip"
+          with zipfile.ZipFile(p) as z:
+              bad = z.testzip()
+              if bad:
+                  raise SystemExit(f"ZIP CRC failure: {bad}")
+              names = z.namelist()
+              module = [n for n in names if n.startswith("module/meliaz-bridge/") and not n.endswith("/")]
+              if len(module) != 167:
+                  raise SystemExit(f"Expected 167 module files, found {len(module)}")
+              for n in names:
+                  if n.startswith("/") or ".." in n.split("/"):
+                      raise SystemExit(f"Unsafe ZIP path: {n}")
+              if "module/meliaz-bridge/module.json" not in names:
+                  raise SystemExit("module.json missing")
+              z.extractall("/tmp/meliaz-bridge-staging")
+          PY
+          mkdir -p module
+          rm -rf module/meliaz-bridge
+          cp -a /tmp/meliaz-bridge-staging/module/meliaz-bridge module/meliaz-bridge
+
+      - name: Verify module structure and syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(find module/meliaz-bridge -type f | wc -l)" -eq 167
+          node --check module/meliaz-bridge/bridge.js
+          node --check module/meliaz-bridge/kona-token-icons.js
+          python3 - <<'PY'
+          import json
+          with open("module/meliaz-bridge/module.json", encoding="utf-8") as f:
+              m = json.load(f)
+          assert m.get("id") == "meliaz-bridge", m
+          assert m.get("version") == "0.24.201", m
+          print("Validated", m["id"], m["version"])
+          PY
+
+      - name: Commit imported module
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add module/meliaz-bridge
+          git rm -f staging/MELIAZ_BRIDGE_0.24.201_GITHUB_STAGING.zip
+          if git diff --cached --quiet; then
+            echo "No changes to import."
+            exit 0
+          fi
+          git commit -m "Import MELIAZ Bridge 0.24.201 module"
+          git push origin HEAD:work/meliaz-bridge-0.24.201-migration
