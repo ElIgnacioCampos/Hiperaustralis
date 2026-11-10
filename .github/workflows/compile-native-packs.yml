@@ -2,8 +2,7 @@ name: Compile Hiperaustralis native compendia
 
 on:
   push:
-    branches:
-      - work/native-compendia-pipeline
+    branches: [work/native-compendia-pipeline]
     paths:
       - '.github/workflows/compile-native-packs.yml'
       - 'source/**'
@@ -18,16 +17,21 @@ jobs:
   compile:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v4
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+        name: Checkout
+      - uses: actions/setup-node@v4
+        name: Set up Node.js
         with:
           node-version: '22'
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
+        name: Set up Python
         with:
           python-version: '3.x'
+      - name: Restore compressed 21-page JournalEntry source
+        run: |
+          set -euo pipefail
+          base64 -d source/journals/01_auspicios_hiperaustralis.json.gz.b64 | gzip -dc > source/journals/01_auspicios_hiperaustralis.json
+          python -m json.tool source/journals/01_auspicios_hiperaustralis.json >/dev/null
       - name: Install official Foundry CLI
         run: npm install --no-audit --no-fund --no-save --no-package-lock @foundryvtt/foundryvtt-cli@3.0.5
       - name: Validate canonical sources
@@ -50,7 +54,7 @@ jobs:
             "$FVTT" package unpack -n "$pack" --inputDirectory module/packs --outputDirectory "$VERIFY/$pack"
           done
           python validate_compiled.py "$VERIFY"
-      - name: Build Forge-ready module ZIP
+      - name: Build and verify Forge ZIP
         run: |
           set -euo pipefail
           mkdir -p dist
@@ -60,8 +64,8 @@ jobs:
           unzip -t dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.2.zip
           unzip -l dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.2.zip | grep -q 'module.json'
           sha256sum dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.2.zip > dist/SHA256.txt
-      - name: Upload compiled module artifact
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
+        name: Publish compiled artifact
         with:
           name: HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.2
           path: dist/*
