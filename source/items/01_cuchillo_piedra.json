@@ -4,11 +4,21 @@
   "type": "equippableItem",
   "img": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_piedra.webp",
   "system": {
-    "description": {"value": "Cuchillo de piedra."},
-    "quantity": 1
+    "props": {
+      "hipera_tipo": "arma",
+      "descripcion": "Una hoja de piedra tallada, de filo irregular pero eficaz, sujeta a un mango corto mediante fibras resistentes. Ligero, sencillo y fácil de fabricar allí donde haya buena piedra y manos expertas."
+    },
+    "template": "HipArmaTpl000001",
+    "templateSystemUniqueVersion": 186001,
+    "unique": false,
+    "uniqueId": ""
   },
   "effects": [],
   "folder": null,
-  "flags": {},
+  "flags": {
+    "meliaz-bridge": {"kind": "arma"},
+    "hiperaustralis-armas": {"slug": "cuchillo-piedra", "catalogVersion": 1, "textStatus": "recovered-reviewed", "mechanics": "none"},
+    "hiperaustralis-sheet": {"background": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_piedra.webp", "backgroundOpacity": 0.25}
+  },
   "ownership": {"default": 0}
 }
