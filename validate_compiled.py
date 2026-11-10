@@ -13,12 +13,23 @@ for pack,(folder,kind) in PAIRS.items():
  expected={}
  for p in src.glob("*.json"):
   d=json.loads(p.read_text(encoding="utf-8")); expected[d["_id"]]=(d.get("name"),len(d.get("pages",[])))
+ files=sorted(out.rglob("*.json"))
  actual={}
- for p in out.rglob("*.json"):
-  d=json.loads(p.read_text(encoding="utf-8"))
-  if isinstance(d,dict) and isinstance(d.get("_id"),str):
-   if d["_id"] in actual: fail(f"ID duplicado en {pack}: {d['_id']}")
-   actual[d["_id"]]=(d.get("name"),len(d.get("pages",[])))
- if actual!=expected: fail(f"Round-trip alteró documentos/páginas de {pack}; esperado={expected}, actual={actual}")
+ for p in files:
+  try: d=json.loads(p.read_text(encoding="utf-8"))
+  except Exception as e: fail(f"JSON ilegible {p}: {e}")
+  if isinstance(d,dict):
+   docid=d.get("_id") or d.get("id")
+   if isinstance(docid,str) and docid:
+    if docid in actual: fail(f"ID duplicado en {pack}: {docid}")
+    actual[docid]=(d.get("name"),len(d.get("pages",[])))
+ if actual!=expected:
+  sample=[]
+  for p in files[:3]:
+   try:
+    d=json.loads(p.read_text(encoding="utf-8"))
+    sample.append({"file":str(p.relative_to(out)),"keys":list(d)[:30] if isinstance(d,dict) else type(d).__name__,"id":d.get("_id",d.get("id")) if isinstance(d,dict) else None,"name":d.get("name") if isinstance(d,dict) else None})
+   except Exception: sample.append({"file":str(p.relative_to(out)),"unreadable":True})
+  fail(f"{pack}: IDs/nombres/páginas no coinciden. Esperado={expected}; actual={actual}; archivos={len(files)}; muestra={sample}")
  result.append({"pack":pack,"type":kind,"documents":len(actual),"ids_names_pages_match":True})
 print(json.dumps({"status":"ROUNDTRIP_PASS","packs":result},ensure_ascii=False,indent=2))
