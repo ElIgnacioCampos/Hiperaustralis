@@ -1,0 +1,67 @@
+name: Compile Hiperaustralis native compendia
+
+on:
+  push:
+    branches:
+      - work/native-compendia-pipeline
+    paths:
+      - '.github/workflows/compile-native-packs.yml'
+      - 'source/**'
+      - 'module/**'
+      - 'validate_*.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install official Foundry CLI
+        run: npm install --no-audit --no-fund --no-save @foundryvtt/foundryvtt-cli@3.0.5
+      - name: Validate canonical sources
+        run: python validate_sources.py
+      - name: Compile and validate native packs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p module/packs
+          VERIFY="$RUNNER_TEMP/verify"
+          mkdir -p "$VERIFY"
+          FVTT="./node_modules/.bin/fvtt"
+          "$FVTT" package pack -n ha-proto-items --inputDirectory source/items --outputDirectory module/packs
+          "$FVTT" package pack -n ha-proto-actors --inputDirectory source/actors --outputDirectory module/packs
+          "$FVTT" package pack -n ha-proto-journals --inputDirectory source/journals --outputDirectory module/packs
+          for pack in ha-proto-items ha-proto-actors ha-proto-journals; do
+            test -d "module/packs/$pack"
+            test -n "$(find "module/packs/$pack" -type f -size +0c -print -quit)"
+            "$FVTT" package unpack -n "$pack" --inputDirectory module/packs --outputDirectory "$VERIFY/$pack"
+          done
+          python validate_compiled.py "$VERIFY"
+      - name: Build Forge-ready module ZIP
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          cd module
+          zip -qr ../dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.2.zip .
+          cd ..
+          unzip -t dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.2.zip
+          unzip -l dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.2.zip | grep -q 'module.json'
+          sha256sum dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.2.zip > dist/SHA256.txt
+      - name: Upload compiled module artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.2
+          path: dist/*
+          if-no-files-found: error
