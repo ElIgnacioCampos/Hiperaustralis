@@ -62,14 +62,14 @@ jobs:
           set -euo pipefail
           mkdir -p dist
           cd module
-          zip -qr ../dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.4.zip .
+          zip -qr ../dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip .
           cd ..
-          unzip -t dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.4.zip
-          unzip -l dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.4.zip | grep -q 'module.json'
-          sha256sum dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.4.zip > dist/SHA256.txt
+          unzip -t dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip
+          unzip -l dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip | grep -q 'module.json'
+          sha256sum dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip > dist/SHA256.txt
       - uses: actions/upload-artifact@v4
         name: Publish compiled artifact
         with:
-          name: HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.4
+          name: HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5
           path: dist/*
           if-no-files-found: error
