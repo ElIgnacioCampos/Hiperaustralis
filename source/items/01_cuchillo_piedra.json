@@ -1,0 +1,14 @@
+{
+  "_id": "HipArm01PackA000",
+  "name": "Cuchillo de piedra",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_piedra.webp",
+  "system": {
+    "description": {"value": "Cuchillo de piedra."},
+    "quantity": 1
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {"default": 0}
+}
