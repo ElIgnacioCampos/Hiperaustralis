@@ -22,6 +22,12 @@ for name,(folder,kind) in EXPECTED.items():
   if d["_id"] in ids: fail(f"ID duplicado: {d['_id']}")
   ids.add(d["_id"])
   if not d.get("name"): fail(f"Nombre ausente: {path}")
+  if folder=="items":
+   body=d.get("system",{}).get("body",{})
+   fields=body.get("contents",[])
+   keys=[x.get("key") for x in fields if isinstance(x,dict)]
+   if "descripcion" not in keys: fail(f"Item Arma sin campo Descripción: {path}; campos={keys}")
+   if body.get("cssClass")!="ha-arma-item-sheet": fail(f"Item Arma sin clase de hoja canónica: {path}")
   if folder=="actors":
    body=d.get("system",{}).get("body",{})
    fields=body.get("contents",[])
