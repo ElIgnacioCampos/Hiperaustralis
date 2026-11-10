@@ -8,6 +8,7 @@ on:
       - 'source/**'
       - 'module/**'
       - 'validate_*.py'
+      - 'prepare_sources.py'
   workflow_dispatch:
 
 permissions:
@@ -36,6 +37,8 @@ jobs:
         run: npm install --no-audit --no-fund --no-save --no-package-lock @foundryvtt/foundryvtt-cli@3.0.5
       - name: Validate canonical sources
         run: python validate_sources.py
+      - name: Prepare CLI transport fields
+        run: python prepare_sources.py "$RUNNER_TEMP/pack-source"
       - name: Compile, unpack and validate native packs
         shell: bash
         run: |
@@ -45,9 +48,9 @@ jobs:
           VERIFY="$RUNNER_TEMP/verify"
           mkdir -p "$VERIFY"
           FVTT="./node_modules/.bin/fvtt"
-          "$FVTT" package pack -n ha-proto-items --inputDirectory source/items --outputDirectory module/packs
-          "$FVTT" package pack -n ha-proto-actors --inputDirectory source/actors --outputDirectory module/packs
-          "$FVTT" package pack -n ha-proto-journals --inputDirectory source/journals --outputDirectory module/packs
+          "$FVTT" package pack -n ha-proto-items --inputDirectory "$RUNNER_TEMP/pack-source/items" --outputDirectory module/packs
+          "$FVTT" package pack -n ha-proto-actors --inputDirectory "$RUNNER_TEMP/pack-source/actors" --outputDirectory module/packs
+          "$FVTT" package pack -n ha-proto-journals --inputDirectory "$RUNNER_TEMP/pack-source/journals" --outputDirectory module/packs
           for pack in ha-proto-items ha-proto-actors ha-proto-journals; do
             test -d "module/packs/$pack"
             test -n "$(find "module/packs/$pack" -type f -size +0c -print -quit)"
