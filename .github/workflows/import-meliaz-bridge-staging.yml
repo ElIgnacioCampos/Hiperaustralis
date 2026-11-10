@@ -5,7 +5,8 @@ on:
     branches:
       - work/meliaz-bridge-0.24.201-migration
     paths:
-      - staging/MELIAZ_BRIDGE_0.24.201_GITHUB_STAGING.zip
+      - 'staging/**'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -24,11 +25,16 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          archive="staging/MELIAZ_BRIDGE_0.24.201_GITHUB_STAGING.zip"
-          test -f "$archive"
-          python3 - <<'PY'
-          import zipfile
-          p = "staging/MELIAZ_BRIDGE_0.24.201_GITHUB_STAGING.zip"
+          mapfile -t archives < <(find staging -maxdepth 1 -type f -name 'MELIAZ_BRIDGE_0.24.201_GITHUB_STAGING*.zip' -print)
+          if [ "${#archives[@]}" -ne 1 ]; then
+            echo "Expected exactly one staging ZIP; found ${#archives[@]}"
+            printf '%s\n' "${archives[@]}"
+            exit 1
+          fi
+          archive="${archives[0]}"
+          python3 - "$archive" <<'PY'
+          import sys, zipfile
+          p = sys.argv[1]
           with zipfile.ZipFile(p) as z:
               bad = z.testzip()
               if bad:
@@ -66,14 +72,12 @@ jobs:
 
       - name: Commit imported module
         shell: bash
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add module/meliaz-bridge
-          git rm -f staging/MELIAZ_BRIDGE_0.24.201_GITHUB_STAGING.zip
+          rm -f staging/MELIAZ_BRIDGE_0.24.201_GITHUB_STAGING*.zip
           if git diff --cached --quiet; then
             echo "No changes to import."
             exit 0
