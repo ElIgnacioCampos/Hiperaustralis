@@ -1,0 +1,63 @@
+{
+  "_id": "Iol01RpIqlQxSTMr",
+  "name": "Cuchillo de hueso",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/armas/02_cuchillo_hueso.webp",
+  "folder": "69KskVCCLMO3pLve",
+  "system": {
+    "props": {
+      "hipera_tipo": "arma",
+      "descripcion": "Una hoja pulida de hueso endurecido, afinada hasta formar un filo continuo y montada sobre un mango de madera. Más ligera que una hoja de piedra o metal, conserva la calidez y las marcas del material del que fue hecha."
+    },
+    "template": "HipArmaTpl000001",
+    "templateSystemUniqueVersion": 186001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "flags": {
+    "meliaz-bridge": {
+      "kind": "arma"
+    },
+    "hiperaustralis-armas": {
+      "slug": "cuchillo-hueso",
+      "catalogVersion": 1,
+      "mechanics": "none"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/armas/02_cuchillo_hueso.webp",
+      "backgroundOpacity": 0.25
+    },
+    "custom-system-builder": {
+      "version": "6.0.2"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754912037,
+    "modifiedTime": 1794181987402,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

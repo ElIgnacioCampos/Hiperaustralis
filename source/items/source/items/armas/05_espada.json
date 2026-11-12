@@ -1,0 +1,63 @@
+{
+  "_id": "tGW0xjpxQ9JnguU5",
+  "name": "Espada sencilla",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/armas/05_espada.webp",
+  "folder": "69KskVCCLMO3pLve",
+  "system": {
+    "props": {
+      "hipera_tipo": "arma",
+      "descripcion": "Una hoja larga de doble filo, equilibrada para cortar y punzar con rapidez. La empuñadura sencilla y la guarda corta privilegian la funcionalidad por sobre el ornamento."
+    },
+    "template": "HipArmaTpl000001",
+    "templateSystemUniqueVersion": 186001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "flags": {
+    "meliaz-bridge": {
+      "kind": "arma"
+    },
+    "hiperaustralis-armas": {
+      "slug": "espada",
+      "catalogVersion": 1,
+      "mechanics": "none"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/armas/05_espada.webp",
+      "backgroundOpacity": 0.25
+    },
+    "custom-system-builder": {
+      "version": "6.0.2"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754912714,
+    "modifiedTime": 1794181994187,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}
