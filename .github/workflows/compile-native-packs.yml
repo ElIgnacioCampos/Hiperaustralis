@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   compile:
@@ -73,3 +73,9 @@ jobs:
           name: HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5
           path: dist/*
           if-no-files-found: error
+      - name: Publish Forge test prerelease
+        if: contains(github.event.head_commit.message, '[publish-test]')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create v0.1.5-forge-test dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip --prerelease --title "Hiperaustralis Compendios v0.1.5 · Prueba Forge" --notes "Distribución de prueba aislada. No reemplaza hiperaustralis-rituales. Foundry 14.367; requiere Custom System Builder 6.0.0 o superior."
