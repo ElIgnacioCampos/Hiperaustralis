@@ -1,0 +1,90 @@
+{
+  "source": "HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB.zip",
+  "source_sha256": "c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e",
+  "source_data": "hiperaustralis-rituales/data/flora_items.json",
+  "editorial_data": "hiperaustralis-rituales/data/flora_y_funga_40.json",
+  "canonical_item_count": 40,
+  "migration_mode": "single canonical Item per FLO code; territorial manifests contain references only; no duplicated Item documents",
+  "status": "territorially_classified_pending_binary_asset_migration_and_foundry_uuid_validation",
+  "territories": {
+    "titicaca": [
+      "FLO-001",
+      "FLO-009",
+      "FLO-021",
+      "FLO-025"
+    ],
+    "paititi": [
+      "FLO-002",
+      "FLO-010",
+      "FLO-017",
+      "FLO-022",
+      "FLO-030"
+    ],
+    "ngulumapu": [
+      "FLO-003",
+      "FLO-011",
+      "FLO-013",
+      "FLO-018",
+      "FLO-031",
+      "FLO-038",
+      "FLO-039",
+      "FLO-040"
+    ],
+    "pewenmapu": [
+      "FLO-004",
+      "FLO-012",
+      "FLO-013",
+      "FLO-023",
+      "FLO-027"
+    ],
+    "patagonia-austral": [
+      "FLO-005",
+      "FLO-006",
+      "FLO-012",
+      "FLO-014",
+      "FLO-019"
+    ],
+    "tierra-del-fuego": [
+      "FLO-006",
+      "FLO-011",
+      "FLO-015",
+      "FLO-016"
+    ],
+    "canales-australes": [
+      "FLO-007",
+      "FLO-011",
+      "FLO-015",
+      "FLO-024",
+      "FLO-035"
+    ],
+    "umbral-polar": [
+      "FLO-008",
+      "FLO-020",
+      "FLO-028",
+      "FLO-032",
+      "FLO-036"
+    ]
+  },
+  "unassigned_or_pending": [
+    "FLO-026",
+    "FLO-029",
+    "FLO-033",
+    "FLO-034",
+    "FLO-037"
+  ],
+  "conditional_assignment": {
+    "FLO-028": "Umbral Polar is the declared scope; specific framing remains unresolved. Keep as conditional territorial reference, not as taxonomic identification.",
+    "FLO-026": "Declared scope 'Bosque nublado / templado' does not uniquely identify Paititi or Ngulumapu. Leave unassigned pending editorial decision.",
+    "FLO-029": "No territorial assignment confirmed.",
+    "FLO-033": "No territorial assignment.",
+    "FLO-034": "Cordillera-wide scope; specific territory not confirmed.",
+    "FLO-037": "Territory to be confirmed."
+  },
+  "preservation_rules": [
+    "Preserve original FLO code, seedId, name, system data, flags, icon path and background path.",
+    "A multi-territory Item remains one canonical Item; territorial indexes reference its code and do not duplicate the document.",
+    "Preserve editorial reservations and INCLUSION_AUTORIZADA_NO_INSTALADA state.",
+    "Do not infer species, taxon, or territorial distribution beyond the source ambito.",
+    "Do not install or publish these records automatically."
+  ]
+}
