@@ -1,0 +1,436 @@
+{
+  "document": "HIPERAUSTRALIS_FLORA_FOUNDRY_ID_MAP",
+  "status": "AUDITADO_NO_INSTALADO",
+  "provenance": {
+    "foundryExport": "HIPERAUSTRALIS_EXPORT_IDS_FLORA.json",
+    "world": "hipera-5",
+    "foundryVersion": "14.367",
+    "sourcePackage": "HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB.zip",
+    "sourcePackageSha256": "c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e"
+  },
+  "audit": {
+    "foundryItems": 40,
+    "expectedItems": 40,
+    "codesComplete": true,
+    "uniqueFoundryIds": 40,
+    "allInSameFolder": true,
+    "folder": {
+      "name": "Flora",
+      "id": "fqRoZg8otQGiJaoS"
+    },
+    "exportSourceNullCount": 40
+  },
+  "identityRules": [
+    "El codigo FLO identifica la ficha editorial canónica.",
+    "El seedId vincula la ficha con el identificador de semilla de Hiperaustralis.",
+    "El foundryId y el UUID conservan la identidad del Item ya existente en el mundo hipera-5.",
+    "No generar nuevos IDs ni duplicar Items durante la migración."
+  ],
+  "items": [
+    {
+      "codigo": "FLO-001",
+      "seedId": "flora-01",
+      "nombre": "Totora",
+      "foundryId": "8QxkLEqZyWoZwQuE",
+      "uuid": "Item.8QxkLEqZyWoZwQuE",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-002",
+      "seedId": "flora-02",
+      "nombre": "Orquídea andina",
+      "foundryId": "kPTRbEpIKnNKD22G",
+      "uuid": "Item.kPTRbEpIKnNKD22G",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-003",
+      "seedId": "flora-03",
+      "nombre": "Ulmo",
+      "foundryId": "hrHdYmhradICCOAg",
+      "uuid": "Item.hrHdYmhradICCOAg",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-004",
+      "seedId": "flora-04",
+      "nombre": "Pewen",
+      "foundryId": "D8DUTJF1Et3urear",
+      "uuid": "Item.D8DUTJF1Et3urear",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-005",
+      "seedId": "flora-05",
+      "nombre": "Calafate",
+      "foundryId": "obsN2rPwUuDCO9R1",
+      "uuid": "Item.obsN2rPwUuDCO9R1",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-006",
+      "seedId": "flora-06",
+      "nombre": "Lenga",
+      "foundryId": "AjK8zQYvQReR5Dej",
+      "uuid": "Item.AjK8zQYvQReR5Dej",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-007",
+      "seedId": "flora-07",
+      "nombre": "Ciprés de las Guaitecas",
+      "foundryId": "uj4l7qa0LFq7wBXp",
+      "uuid": "Item.uj4l7qa0LFq7wBXp",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-008",
+      "seedId": "flora-08",
+      "nombre": "Pasto antártico",
+      "foundryId": "RAFdBdh3zkbnLfFQ",
+      "uuid": "Item.RAFdBdh3zkbnLfFQ",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-009",
+      "seedId": "flora-09",
+      "nombre": "Llacho",
+      "foundryId": "AqSaHtDOp4paD2OA",
+      "uuid": "Item.AqSaHtDOp4paD2OA",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-010",
+      "seedId": "flora-10",
+      "nombre": "Bromelia",
+      "foundryId": "bgNINDolymBTkMDy",
+      "uuid": "Item.bgNINDolymBTkMDy",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-011",
+      "seedId": "flora-11",
+      "nombre": "Canelo",
+      "foundryId": "HRtAN5hQLFY2YhwT",
+      "uuid": "Item.HRtAN5hQLFY2YhwT",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-012",
+      "seedId": "flora-12",
+      "nombre": "Ñirre",
+      "foundryId": "ZGD5Ju34FhFSWGCp",
+      "uuid": "Item.ZGD5Ju34FhFSWGCp",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-013",
+      "seedId": "flora-13",
+      "nombre": "Coigüe",
+      "foundryId": "FxSyHzkYd6xLmkC0",
+      "uuid": "Item.FxSyHzkYd6xLmkC0",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-014",
+      "seedId": "flora-14",
+      "nombre": "Coirón",
+      "foundryId": "bWNDctTwgVuBN8ma",
+      "uuid": "Item.bWNDctTwgVuBN8ma",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-015",
+      "seedId": "flora-15",
+      "nombre": "Guindo",
+      "foundryId": "TvWyolfUzBJ4KWUY",
+      "uuid": "Item.TvWyolfUzBJ4KWUY",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-016",
+      "seedId": "flora-16",
+      "nombre": "Esfagno",
+      "foundryId": "1QDhWgJwPAuLX5Rs",
+      "uuid": "Item.1QDhWgJwPAuLX5Rs",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-017",
+      "seedId": "flora-17",
+      "nombre": "Helecho arborescente",
+      "foundryId": "QcEq2xpc5io1q7vD",
+      "uuid": "Item.QcEq2xpc5io1q7vD",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-018",
+      "seedId": "flora-18",
+      "nombre": "Avellano",
+      "foundryId": "EAKZGHAPhvoHXnzY",
+      "uuid": "Item.EAKZGHAPhvoHXnzY",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-019",
+      "seedId": "flora-19",
+      "nombre": "Chaura",
+      "foundryId": "If11MHBVELSdsaQ9",
+      "uuid": "Item.If11MHBVELSdsaQ9",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-020",
+      "seedId": "flora-20",
+      "nombre": "Liquen polar",
+      "foundryId": "OglJ4jmNql2edLh6",
+      "uuid": "Item.OglJ4jmNql2edLh6",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-021",
+      "seedId": "flora-21",
+      "nombre": "Junco",
+      "foundryId": "wKqymf6A6W8aCRiE",
+      "uuid": "Item.wKqymf6A6W8aCRiE",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-022",
+      "seedId": "flora-22",
+      "nombre": "Bambú",
+      "foundryId": "24LkJ0uBiyQWBJml",
+      "uuid": "Item.24LkJ0uBiyQWBJml",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-023",
+      "seedId": "flora-23",
+      "nombre": "Mañío",
+      "foundryId": "07hNf7vg5bHgJXh2",
+      "uuid": "Item.07hNf7vg5bHgJXh2",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-024",
+      "seedId": "flora-24",
+      "nombre": "Macroalga",
+      "foundryId": "YZmZVSVFTjl4hYud",
+      "uuid": "Item.YZmZVSVFTjl4hYud",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-025",
+      "seedId": "flora-25",
+      "nombre": "Lenteja de agua",
+      "foundryId": "JId9z6VBRmBOlXs7",
+      "uuid": "Item.JId9z6VBRmBOlXs7",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-026",
+      "seedId": "flora-26",
+      "nombre": "Musgo de bosque",
+      "foundryId": "OiLM8P1RIhCLROSv",
+      "uuid": "Item.OiLM8P1RIhCLROSv",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-027",
+      "seedId": "flora-27",
+      "nombre": "Ciprés de cordillera",
+      "foundryId": "WXw4KQcmzDupTAJL",
+      "uuid": "Item.WXw4KQcmzDupTAJL",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-028",
+      "seedId": "flora-28",
+      "nombre": "Fungosidades",
+      "foundryId": "l2u4hl0dxPmqflYF",
+      "uuid": "Item.l2u4hl0dxPmqflYF",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-029",
+      "seedId": "flora-29",
+      "nombre": "Helecho de agua",
+      "foundryId": "immVDHHU9IRjrKh1",
+      "uuid": "Item.immVDHHU9IRjrKh1",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-030",
+      "seedId": "flora-30",
+      "nombre": "Epífita",
+      "foundryId": "zKZ9w91iyVBmsi1Z",
+      "uuid": "Item.zKZ9w91iyVBmsi1Z",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-031",
+      "seedId": "flora-31",
+      "nombre": "Trepadora",
+      "foundryId": "6bRCFwRxDAig1TJO",
+      "uuid": "Item.6bRCFwRxDAig1TJO",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-032",
+      "seedId": "flora-32",
+      "nombre": "Alga polar",
+      "foundryId": "Gyk8U4yhhoZSckcb",
+      "uuid": "Item.Gyk8U4yhhoZSckcb",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-033",
+      "seedId": "flora-33",
+      "nombre": "Helecho terrestre",
+      "foundryId": "xgKE2gvAnDTcuCGt",
+      "uuid": "Item.xgKE2gvAnDTcuCGt",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-034",
+      "seedId": "flora-34",
+      "nombre": "Gramínea cordillerana",
+      "foundryId": "FP8NfVhSk4nLXZiw",
+      "uuid": "Item.FP8NfVhSk4nLXZiw",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-035",
+      "seedId": "flora-35",
+      "nombre": "Vegetación litoral",
+      "foundryId": "azGKtoLz76hPNUwZ",
+      "uuid": "Item.azGKtoLz76hPNUwZ",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-036",
+      "seedId": "flora-36",
+      "nombre": "Musgo polar",
+      "foundryId": "kol0TUekULuAIgkj",
+      "uuid": "Item.kol0TUekULuAIgkj",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-037",
+      "seedId": "flora-37",
+      "nombre": "Yareta",
+      "foundryId": "AgJPeKku9aQbjp4R",
+      "uuid": "Item.AgJPeKku9aQbjp4R",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-038",
+      "seedId": "flora-38",
+      "nombre": "Copihue",
+      "foundryId": "MV5XYAZDXi7NYtQP",
+      "uuid": "Item.MV5XYAZDXi7NYtQP",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-039",
+      "seedId": "flora-39",
+      "nombre": "Nalca",
+      "foundryId": "mPmQ3MtNIZi3H10C",
+      "uuid": "Item.mPmQ3MtNIZi3H10C",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    },
+    {
+      "codigo": "FLO-040",
+      "seedId": "flora-40",
+      "nombre": "Chilco",
+      "foundryId": "awe2EdrtmyFQnOzh",
+      "uuid": "Item.awe2EdrtmyFQnOzh",
+      "folder": "Flora",
+      "folderId": "fqRoZg8otQGiJaoS",
+      "exportSource": null
+    }
+  ],
+  "limitations": [
+    "exportSource es null en los 40 Items; la identidad se acredita mediante el export de documentos del mundo.",
+    "Este mapa no convierte los JSON fuente en documentos directamente compilables por el pipeline actual.",
+    "No autoriza instalación, publicación ni modificación del mundo productivo."
+  ]
+}
