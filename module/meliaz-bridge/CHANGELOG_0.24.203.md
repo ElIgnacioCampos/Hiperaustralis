@@ -9,7 +9,8 @@
 ## Validación
 - ZIP original: íntegro, 169 entradas, CRC correcto.
 - `bridge.js`: parche de 0.24.202 + 0.24.203 aplicado sobre la base 0.24.201.
-- `node --check`: pendiente en GitHub Actions.
-- QA runtime en Forge: pendiente.
+- `node --check` de `bridge.js` y `kona-token-icons.js`: PASS en GitHub Actions.
+- Inventario del módulo: 168 archivos; validación de estructura y versión: PASS.
+- QA runtime en Forge: pendiente; esta compilación no equivale a prueba visual ni funcional.
 
 <!-- import trigger -->
