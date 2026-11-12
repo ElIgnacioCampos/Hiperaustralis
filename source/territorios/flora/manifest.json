@@ -5,7 +5,7 @@
   "editorial_data": "hiperaustralis-rituales/data/flora_y_funga_40.json",
   "canonical_item_count": 40,
   "migration_mode": "single canonical Item per FLO code; territorial manifests contain references only; no duplicated Item documents",
-  "status": "territorially_classified_pending_binary_asset_migration_and_foundry_uuid_validation",
+  "status": "territorially_classified_and_foundry_identity_mapped_pending_binary_asset_migration",
   "territories": {
     "titicaca": [
       "FLO-001",
@@ -102,5 +102,7 @@
     "unique_assigned_items": 37,
     "pending_items": 3,
     "average_references_per_territory": 5.625
-  }
+  },
+  "foundry_identity_map": "source/territorios/flora/foundry-id-map.json",
+  "foundry_identity_status": "40_of_40_existing_world_items_mapped_by_codigo_seedId_name_and_unique_foundry_id; no installation performed"
 }
