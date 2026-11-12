@@ -5,6 +5,7 @@
     "FLO-011",
     "FLO-013",
     "FLO-018",
+    "FLO-026",
     "FLO-031",
     "FLO-038",
     "FLO-039",
@@ -13,6 +14,7 @@
   "source_scope": "Ngulumapu",
   "notes": [
     "FLO-011 and FLO-013 also appear in other territorial indexes because their source ambito is multiple.",
-    "FLO-018 retains an explicit visual correction pending."
+    "FLO-018 retains an explicit visual correction pending.",
+    "FLO-026 is shared with Paititi based on its broad source scope 'Bosque nublado / templado'; provisional ecological reference."
   ]
 }
