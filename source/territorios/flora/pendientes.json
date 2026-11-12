@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "codigo": "FLO-026",
+      "nombre": "Musgo de bosque",
+      "ambito": "Bosque nublado / templado",
+      "motivo": "No uniquely assignable to Paititi or Ngulumapu from source alone."
+    },
+    {
+      "codigo": "FLO-029",
+      "nombre": "Helecho de agua",
+      "ambito": "Sin asignación territorial confirmada",
+      "motivo": "The source explicitly prohibits treating it as a confirmed Titiqaqa taxon."
+    },
+    {
+      "codigo": "FLO-033",
+      "nombre": "Helecho terrestre",
+      "ambito": "Territorio no asignado",
+      "motivo": "No territorial assignment in source."
+    },
+    {
+      "codigo": "FLO-034",
+      "nombre": "Gramínea cordillerana",
+      "ambito": "Cordillera (territorio por definir)",
+      "motivo": "No specific territory confirmed."
+    },
+    {
+      "codigo": "FLO-037",
+      "nombre": "Yareta",
+      "ambito": "Territorio por confirmar",
+      "motivo": "Territory remains unconfirmed."
+    }
+  ],
+  "status": "not_migrated_to_territory_folder_pending_editorial_decision"
+}
