@@ -1,6 +1,6 @@
 # Migración de contenidos territoriales — checkpoint 2026-11-12
 
-Estado: PREPARACIÓN DE MIGRACIÓN; los binarios territoriales no se han incorporado todavía.
+Estado: PREPARACIÓN DE MIGRACIÓN; identidad Foundry de Flora 001–040 validada y registrada; los binarios territoriales no se han incorporado todavía.
 Rama: `work/native-compendia-pipeline`.
 Base verificada antes de este checkpoint: `d400c862a44cfc0fb6468b7fd651b090f6d9a83e`.
 
@@ -102,3 +102,19 @@ Los SHA-256 citados son los del respaldo descargado, no una comparación criptog
 
 ### Cambios al Estado Maestro
 NINGUNO. Este checkpoint sólo registra el estado de la migración técnica.
+
+
+## 7. Identidad Foundry de Flora — validación 2026-11-12
+
+Se obtuvo desde el mundo Foundry `hipera-5` (Foundry 14.367) un export de los 40 Items existentes en la carpeta `Flora`.
+
+- Resultado: 40/40 códigos FLO-001–FLO-040.
+- Correspondencia: 40/40 por código, nombre y seedId frente al inventario de fuente 0.4.75.
+- Identificadores Foundry: 40 _id únicos y 40 UUID Item correspondientes.
+- Carpeta común: `Flora`, ID `fqRoZg8otQGiJaoS`.
+- `exportSource`: null en los 40 documentos; se conserva este dato sin inferir procedencia adicional.
+- Mapa técnico: `source/territorios/flora/foundry-id-map.json`.
+- El manifiesto territorial enlaza ahora ese mapa.
+
+Esta validación resuelve la correspondencia de identidad de los documentos ya existentes. No demuestra que los JSON fuente sean directamente compilables por el pipeline ni autoriza instalación, reemplazo o publicación. La migración binaria y el diseño del mecanismo reversible siguen pendientes.
+
