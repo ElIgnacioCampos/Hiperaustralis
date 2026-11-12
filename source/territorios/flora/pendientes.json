@@ -1,35 +1,24 @@
 {
   "items": [
     {
-      "codigo": "FLO-026",
-      "nombre": "Musgo de bosque",
-      "ambito": "Bosque nublado / templado",
-      "motivo": "No uniquely assignable to Paititi or Ngulumapu from source alone."
-    },
-    {
       "codigo": "FLO-029",
       "nombre": "Helecho de agua",
       "ambito": "Sin asignación territorial confirmada",
-      "motivo": "The source explicitly prohibits treating it as a confirmed Titiqaqa taxon."
+      "motivo": "La fuente no confirma territorio y advierte que no debe tratarse como taxón acreditado de Titiqaqa."
     },
     {
       "codigo": "FLO-033",
       "nombre": "Helecho terrestre",
       "ambito": "Territorio no asignado",
-      "motivo": "No territorial assignment in source."
-    },
-    {
-      "codigo": "FLO-034",
-      "nombre": "Gramínea cordillerana",
-      "ambito": "Cordillera (territorio por definir)",
-      "motivo": "No specific territory confirmed."
+      "motivo": "La fuente no aporta ámbito territorial."
     },
     {
       "codigo": "FLO-037",
       "nombre": "Yareta",
       "ambito": "Territorio por confirmar",
-      "motivo": "Territory remains unconfirmed."
+      "motivo": "La ficha mantiene expresamente la asignación territorial pendiente; requiere decisión editorial o fuente territorial adicional."
     }
   ],
-  "status": "not_migrated_to_territory_folder_pending_editorial_decision"
+  "status": "3_items_pending_territorial_assignment",
+  "note": "FLO-026 se indexa provisionalmente en Paititi y Ngulumapu por su ámbito amplio 'Bosque nublado / templado'. FLO-034 se indexa provisionalmente en Pewenmapu y Patagonia austral por su referencia cordillerana general. Estas referencias no convierten los ámbitos en determinaciones taxonómicas."
 }
