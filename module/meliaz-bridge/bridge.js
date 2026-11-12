@@ -2805,6 +2805,21 @@ function installHiperaEquipoSlotIcons(canvas, actor) {
       input.dataset.haEquipoSlot = String(slot);
       input.style.setProperty("visibility", "hidden", "important");
       input.style.setProperty("pointer-events", "none", "important");
+      input.setAttribute("aria-hidden", "true");
+
+      // 0.24.203 · Ocultar el wrapper CSB completo, no sólo el input.
+      // El texto/valor legacy puede permanecer visible en el contenedor aunque
+      // el control esté oculto y reaparecer brevemente al refrescar el Actor
+      // durante un drag-and-drop. Los datos legacy NO se borran ni modifican.
+      const wrapper = input.closest?.(
+        `.ha-field-equipo_${slot}, .ha-val-equipo_${slot}, [data-field="equipo_${slot}"]`
+      );
+      if (wrapper) {
+        wrapper.style.setProperty("display", "none", "important");
+        wrapper.style.setProperty("visibility", "hidden", "important");
+        wrapper.style.setProperty("pointer-events", "none", "important");
+        wrapper.setAttribute("aria-hidden", "true");
+      }
     }
   }
 
@@ -5098,7 +5113,11 @@ async function attachHiperaArmaToEquipo(actor, source) {
   const embedded = created?.[0] ?? null;
   if (!embedded) return false;
 
-  await actor.update({[`system.props.equipo_${slot}`]: source.name});
+  // 0.24.202 · Equipo nuevo vive exclusivamente en Items + flags equipoSlot.
+  // No escribir system.props.equipo_N: esos campos CSB son legacy y su
+  // actualización reinyecta nombres de Items antiguos en el render de Kona.
+  // Los valores históricos se conservan intactos; sólo dejamos de generar
+  // nuevas duplicaciones visuales al hacer drag-and-drop.
   ui.notifications.info(`${source.name} añadido a Equipo (${slot}/4).`);
   return true;
 }
