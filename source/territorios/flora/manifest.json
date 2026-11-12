@@ -18,6 +18,7 @@
       "FLO-010",
       "FLO-017",
       "FLO-022",
+      "FLO-026",
       "FLO-030"
     ],
     "ngulumapu": [
@@ -25,6 +26,7 @@
       "FLO-011",
       "FLO-013",
       "FLO-018",
+      "FLO-026",
       "FLO-031",
       "FLO-038",
       "FLO-039",
@@ -35,14 +37,16 @@
       "FLO-012",
       "FLO-013",
       "FLO-023",
-      "FLO-027"
+      "FLO-027",
+      "FLO-034"
     ],
     "patagonia-austral": [
       "FLO-005",
       "FLO-006",
       "FLO-012",
       "FLO-014",
-      "FLO-019"
+      "FLO-019",
+      "FLO-034"
     ],
     "tierra-del-fuego": [
       "FLO-006",
@@ -66,25 +70,37 @@
     ]
   },
   "unassigned_or_pending": [
-    "FLO-026",
     "FLO-029",
     "FLO-033",
-    "FLO-034",
     "FLO-037"
   ],
   "conditional_assignment": {
-    "FLO-028": "Umbral Polar is the declared scope; specific framing remains unresolved. Keep as conditional territorial reference, not as taxonomic identification.",
-    "FLO-026": "Declared scope 'Bosque nublado / templado' does not uniquely identify Paititi or Ngulumapu. Leave unassigned pending editorial decision.",
-    "FLO-029": "No territorial assignment confirmed.",
-    "FLO-033": "No territorial assignment.",
-    "FLO-034": "Cordillera-wide scope; specific territory not confirmed.",
-    "FLO-037": "Territory to be confirmed."
+    "FLO-026": "Shared provisional ecological reference in Paititi and Ngulumapu based on source scope 'Bosque nublado / templado'; not a confirmed taxonomic distribution.",
+    "FLO-034": "Shared provisional cordilleran reference in Pewenmapu and Patagonia austral; source does not establish a specific territory.",
+    "FLO-029": "No territorial assignment confirmed; source explicitly cautions against treating it as a confirmed Titiqaqa taxon.",
+    "FLO-033": "No territorial assignment in source.",
+    "FLO-037": "Territory remains to be confirmed."
   },
   "preservation_rules": [
     "Preserve original FLO code, seedId, name, system data, flags, icon path and background path.",
     "A multi-territory Item remains one canonical Item; territorial indexes reference its code and do not duplicate the document.",
-    "Preserve editorial reservations and INCLUSION_AUTORIZADA_NO_INSTALADA state.",
-    "Do not infer species, taxon, or territorial distribution beyond the source ambito.",
-    "Do not install or publish these records automatically."
-  ]
+    "Preserve editorial reservations and inclusion status.",
+    "Provisional territorial references must remain explicitly marked and must not be represented as confirmed species distributions."
+  ],
+  "counts": {
+    "by_territory": {
+      "titicaca": 4,
+      "paititi": 6,
+      "ngulumapu": 9,
+      "pewenmapu": 6,
+      "patagonia-austral": 6,
+      "tierra-del-fuego": 4,
+      "canales-australes": 5,
+      "umbral-polar": 5
+    },
+    "total_territorial_references": 45,
+    "unique_assigned_items": 37,
+    "pending_items": 3,
+    "average_references_per_territory": 5.625
+  }
 }
