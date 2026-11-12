@@ -37,7 +37,7 @@ jobs:
           assert m["id"] == "meliaz-bridge"
           assert m["version"] == "0.24.203"
           assert "0.24.203" in m["description"]
-          assert len([p for p in root.rglob("*") if p.is_file()]) == 169
+          assert len([p for p in root.rglob("*") if p.is_file()]) == 168
           print("PASS:", m["id"], m["version"], "files:", len([p for p in root.rglob("*") if p.is_file()]))
           PY
           git config user.name "github-actions[bot]"
