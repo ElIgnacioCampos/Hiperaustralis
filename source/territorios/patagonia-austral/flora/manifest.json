@@ -5,10 +5,12 @@
     "FLO-006",
     "FLO-012",
     "FLO-014",
-    "FLO-019"
+    "FLO-019",
+    "FLO-034"
   ],
   "source_scope": "Patagonia austral",
   "notes": [
-    "FLO-006 and FLO-012 also appear in other territorial indexes."
+    "FLO-006 and FLO-012 also appear in other territorial indexes.",
+    "FLO-034 is included provisionally as a cordilleran grass reference; the source does not establish a specific territory."
   ]
 }
