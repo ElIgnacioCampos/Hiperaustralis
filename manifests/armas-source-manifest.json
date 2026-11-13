@@ -1,0 +1,152 @@
+{
+  "source": "HIPERAUSTRALIS_INVENTARIO_ARMAS_FOUNDRY.json",
+  "world": "hipera-5",
+  "exportedAt": "2026-11-11T23:57:35.988Z",
+  "pack": "world.hiperaustralis-rituales",
+  "sourceFolderId": "69KskVCCLMO3pLve",
+  "type": "Item",
+  "count": 20,
+  "preservation": "Each file contains only the Foundry Item document payload; _id, name, type, img, folder, system, flags and _stats preserved without normalization. Inventory envelope fields origin, pack, actor and uuid are excluded.",
+  "items": [
+    {
+      "name": "Cuchillo lítico",
+      "_id": "c2L6T5w4S9OcgkDt",
+      "filename": "01_cuchillo_litico.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_litico.webp",
+      "sha256": "391a89e0ad60bcc8c13a83fb9ae1670289754c1a82271d30da5018e8075915be"
+    },
+    {
+      "name": "Cuchillo de hueso",
+      "_id": "Iol01RpIqlQxSTMr",
+      "filename": "02_cuchillo_hueso.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/02_cuchillo_hueso.webp",
+      "sha256": "875f22c5cac5a028f8def2a6a33617fde15c0c960ecdf71519f127a786b55ce9"
+    },
+    {
+      "name": "Cuchillo metálico",
+      "_id": "Ri1XmMCXqdIJbK3s",
+      "filename": "03_cuchillo_metalico.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/03_cuchillo_metalico.webp",
+      "sha256": "f5cf6c961ae7a24e3cc57a6fb545152e2c6239c8f5f13efc987c552a194102e0"
+    },
+    {
+      "name": "Seax / cuchillo largo",
+      "_id": "n5lkb91fMyBzjvzX",
+      "filename": "04_seax.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/04_seax.webp",
+      "sha256": "db50afe52f561b2b270662d7992b7a79c990533760f51cd2a7670392533f0fbd"
+    },
+    {
+      "name": "Espada sencilla",
+      "_id": "tGW0xjpxQ9JnguU5",
+      "filename": "05_espada.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/05_espada.webp",
+      "sha256": "8fcaead6a43c641643f77b7927fb109063998b0a6e6ffc071ccd2fe34675770d"
+    },
+    {
+      "name": "Garrote",
+      "_id": "gf8C98EdlQSYUQh4",
+      "filename": "06_garrote.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/06_garrote.webp",
+      "sha256": "b44f9ad97f619e56fca8be92c221dd562a7374e7a5f6bc46216d674bcdca9897"
+    },
+    {
+      "name": "Bastón de combate",
+      "_id": "DYLtTWt2LeXGYvG7",
+      "filename": "07_baston_combate.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/07_baston_combate.webp",
+      "sha256": "e65fdab90802634ff55c0304f606b2b768a35fb1dcd6b348afda8716d1159a12"
+    },
+    {
+      "name": "Maza pétrea",
+      "_id": "VM0QO1ULwgCp72UM",
+      "filename": "08_maza_petrea.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/08_maza_petrea.webp",
+      "sha256": "f21e6d5c200b693a199f6c2aab8c4b2f4995d979b45057b9a964cdc011aa1254"
+    },
+    {
+      "name": "Hacha lítica",
+      "_id": "IIeIpAv4T4dD6hY1",
+      "filename": "09_hacha_litica.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/09_hacha_litica.webp",
+      "sha256": "7dde3c9d13005aca6292b6f078dda5b6c66c74ebcb3eedfee4dc79cd9a7302b0"
+    },
+    {
+      "name": "Hacha metálica",
+      "_id": "yJ6TtE7h71JqcxlU",
+      "filename": "10_hacha_metalica.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/10_hacha_metalica.webp",
+      "sha256": "046a7ecb4c240c6000dd14b29d17334a6394858754d965890025302752e84a6e"
+    },
+    {
+      "name": "Hacha de dos manos",
+      "_id": "utacTITGbR2IGTqs",
+      "filename": "11_hacha_dos_manos.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/11_hacha_dos_manos.webp",
+      "sha256": "0f24e7f55c9637888df1b5898ca17749c18b725c47bdcddfb8ef9fdb8c3eabd4"
+    },
+    {
+      "name": "Hacha barbada",
+      "_id": "9gpIv2fgoOYUFOpf",
+      "filename": "12_hacha_barbada.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/12_hacha_barbada.webp",
+      "sha256": "0d6f3dd43c2b70d7a567cdb047b3a651a8e00347c043fea10e37dbe8db972b2d"
+    },
+    {
+      "name": "Lanza corta",
+      "_id": "QxUldCoEJEOCXFnJ",
+      "filename": "13_lanza_corta.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/13_lanza_corta.webp",
+      "sha256": "ed676ec3f9e24759990dc0ea1451ecf41eef56959c31350f89c2a06708f09c4d"
+    },
+    {
+      "name": "Lanza larga",
+      "_id": "UEjClr8xQiDH77h1",
+      "filename": "14_lanza_larga.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/14_lanza_larga.webp",
+      "sha256": "a18466867346e7a2627cf0c7d064f37701e3e6bd7a5a996d4dc89fdd509d34da"
+    },
+    {
+      "name": "Jabalina",
+      "_id": "Rq6tY7rc6ktFEigy",
+      "filename": "15_jabalina.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/15_jabalina.webp",
+      "sha256": "f5eee0ef15314e031ba169140ce2583cc4b96a9bc8556af2986f84d7aedcad84"
+    },
+    {
+      "name": "Arco simple",
+      "_id": "8D8YGQR5iuPKMqo0",
+      "filename": "16_arco_simple.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/16_arco_simple.webp",
+      "sha256": "a9ac3a1b0db814269d333f99cd9254ab0399f1b8bf913f5618a8f0ef6baa7671"
+    },
+    {
+      "name": "Flecha",
+      "_id": "mHTbGNwut0kzDCVg",
+      "filename": "17_flecha.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/17_flecha.webp",
+      "sha256": "37a90f97d810c8f5995205a7c8d41ccb99c86f3bc554f29ed98f6e69bcb269de"
+    },
+    {
+      "name": "Honda",
+      "_id": "18MnPw0iJrmMtvgV",
+      "filename": "18_honda.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/18_honda.webp",
+      "sha256": "e9b27d4acd876e3e6f5cf79fff084c61ad181b2cc1c36b895df1eb704f157b9a"
+    },
+    {
+      "name": "Mata’a",
+      "_id": "3ssFdtyl81bRpdKc",
+      "filename": "19_mataa.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/19_mataa.webp",
+      "sha256": "3520ce5b6c194b11604ddc7b2d6fba3b8344eaf2de6483e485587473ddbed930"
+    },
+    {
+      "name": "Arpón",
+      "_id": "1uesBUeTeGjo9JQT",
+      "filename": "20_arpon.json",
+      "img": "modules/hiperaustralis-rituales/assets/armas/20_arpon.webp",
+      "sha256": "7fc614b3916738a75c3b150f1290c5445d21344fc98511ca7299bad5284ab44b"
+    }
+  ]
+}

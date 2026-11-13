@@ -1,0 +1,63 @@
+{
+  "_id": "gf8C98EdlQSYUQh4",
+  "name": "Garrote",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/armas/06_garrote.webp",
+  "folder": "69KskVCCLMO3pLve",
+  "system": {
+    "props": {
+      "hipera_tipo": "arma",
+      "descripcion": "Un grueso trozo de madera endurecida, elegido por su peso y resistencia natural. No necesita filo ni punta: toda su eficacia depende de la contundencia del golpe."
+    },
+    "template": "HipArmaTpl000001",
+    "templateSystemUniqueVersion": 186001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "flags": {
+    "meliaz-bridge": {
+      "kind": "arma"
+    },
+    "hiperaustralis-armas": {
+      "slug": "garrote",
+      "catalogVersion": 1,
+      "mechanics": "none"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/armas/06_garrote.webp",
+      "backgroundOpacity": 0.25
+    },
+    "custom-system-builder": {
+      "version": "6.0.2"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754912945,
+    "modifiedTime": 1794181992200,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

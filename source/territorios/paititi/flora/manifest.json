@@ -1,0 +1,16 @@
+{
+  "territory": "Paititi",
+  "items": [
+    "FLO-002",
+    "FLO-010",
+    "FLO-017",
+    "FLO-022",
+    "FLO-026",
+    "FLO-030"
+  ],
+  "source_scope": "Paititi",
+  "notes": [
+    "FLO-030 is an ecological habit, not a confirmed species.",
+    "FLO-026 is shared with Ngulumapu: the source scope is 'Bosque nublado / templado', so the reference is ecological and provisional rather than a confirmed taxonomic distribution."
+  ]
+}

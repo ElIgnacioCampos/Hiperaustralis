@@ -1,0 +1,218 @@
+{
+  "name": "Ladrón oportunista",
+  "type": "character",
+  "img": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-01_01_ladron_oportunista_FOUNDRY_512.webp",
+  "system": {
+    "body": {
+      "contents": [
+        {
+          "key": "peso",
+          "cssClass": "ha-rival-peso",
+          "role": 0,
+          "permission": 0,
+          "tooltip": "Peso del Rival en la situación",
+          "visibilityFormula": "",
+          "label": "Peso",
+          "defaultValue": "1",
+          "size": "full-size",
+          "allowDecimal": false,
+          "minVal": "0",
+          "maxVal": "9",
+          "allowRelative": true,
+          "showControls": true,
+          "controlsStyle": "hover",
+          "controlsCustomIncrements": "-1,1",
+          "inputStyle": "text",
+          "type": "numberField"
+        },
+        {
+          "key": "descripcion",
+          "cssClass": "ha-rival-descripcion",
+          "role": 0,
+          "editRole": 0,
+          "permission": 0,
+          "tooltip": "Descripción del Rival.",
+          "visibilityFormula": "",
+          "editableFormula": "",
+          "label": "Descripción",
+          "defaultValue": "",
+          "style": "dialog",
+          "type": "textArea"
+        },
+        {
+          "key": "en_escena",
+          "cssClass": "ha-rival-escena",
+          "role": 0,
+          "editRole": 0,
+          "permission": 0,
+          "tooltip": "Uso directo en escena.",
+          "visibilityFormula": "",
+          "editableFormula": "",
+          "label": "En escena",
+          "defaultValue": "",
+          "style": "dialog",
+          "type": "textArea"
+        }
+      ],
+      "key": "custom_body",
+      "cssClass": "ha-rival-sheet",
+      "role": 0,
+      "editRole": 0,
+      "permission": 0,
+      "tooltip": "",
+      "visibilityFormula": "",
+      "editableFormula": "",
+      "flow": "vertical",
+      "align": "left",
+      "verticalAlign": "top",
+      "type": "panel"
+    },
+    "display": {
+      "width": 520,
+      "height": 430,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "cssClass": "",
+      "type": "panel"
+    },
+    "hidden": [],
+    "attributeBar": {},
+    "statusEffects": {},
+    "props": {
+      "peso": "2",
+      "descripcion": "Aprovecha un descuido para arrebatar un bulto, una herramienta o una ofrenda, y huye antes de sostener un combate abierto.",
+      "en_escena": "El sigilo facilita el robo si el personaje consigue aproximarse; no constituye bono de Peso automático."
+    },
+    "activeConditionalModifierGroups": [],
+    "templateSystemUniqueVersion": 202001,
+    "template": "HipRivalTpl00001"
+  },
+  "prototypeToken": {
+    "name": "Ladrón oportunista",
+    "displayName": 30,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-01_01_ladron_oportunista_FOUNDRY_512.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": null
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "items": [],
+  "effects": [],
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "hiperaustralis-adversarios-mapuche": {
+      "seedId": "mapuche-adv-01",
+      "version": "v3r1",
+      "status": "BANCO/PLAYTEST",
+      "pesoReferencia": 2,
+      "escala": "Ordinario",
+      "fotoBase": "MAP-07 · Mapuche 1901.jpg",
+      "ajusteSituacional": "Puede subir a Peso 3 si su escondite, una ruta de escape o una posición preparada vuelven materialmente más difícil detenerlo.",
+      "code": "RIV-01",
+      "estadoPeso": "DOCUMENTADO · BANCO/PLAYTEST",
+      "estadoVisual": "candidato"
+    },
+    "hiperaustralis-token": {
+      "mode": "tokenizer-ready",
+      "avatarUnchanged": true,
+      "prototypeUsesAvatarUntilTokenized": true,
+      "dynamicRingPreEnabled": false,
+      "reason": "Opaque source portraits cannot be safely panned inside Foundry dynamic ring; Tokenizer should create the independent token crop.",
+      "tokenizerTarget": "prototype-token",
+      "version": "0.2"
+    }
+  },
+  "_id": "1ad8f2de41a35138"
+}

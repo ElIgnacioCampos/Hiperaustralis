@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "kind": "foundry-identity-map",
+  "scope": "Fauna",
+  "exportedAt": "2026-11-12T23:30:45.657Z",
+  "world": "hipera-5",
+  "foundryVersion": "14.367",
+  "compendium": "world.hiperaustralis-naturaleza-items",
+  "folder": "Fauna",
+  "folderId": "bFBfGotWh0kDYyPN",
+  "sourceExportSha256": "7ef175d270703a09a4fecdceea6278ab017c74b067facd15df174ca25bfa8b68",
+  "validation": {
+    "documents": 50,
+    "uniqueCodes": 50,
+    "uniqueIds": 50,
+    "uniqueUuids": 50,
+    "duplicates": [],
+    "missingCodes": [
+      "FAU-041",
+      "FAU-042",
+      "FAU-043",
+      "FAU-044"
+    ]
+  },
+  "notes": [
+    "Mapa de identidad técnica observado en Foundry; no declara aprobación editorial ni estado de publicación.",
+    "FAU-006 aparece en el compendio aunque está retirado del pack nuevo; conservar como legado.",
+    "FAU-041–044 no aparecen en esta exportación.",
+    "compendiumSource y exportSource son null en los 50 documentos."
+  ],
+  "items": [
+    {
+      "code": "FAU-001",
+      "_id": "MYBvmQTY5ka6CYOA",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.MYBvmQTY5ka6CYOA"
+    },
+    {
+      "code": "FAU-002",
+      "_id": "ghbWSzAV3A8PUmOj",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.ghbWSzAV3A8PUmOj"
+    },
+    {
+      "code": "FAU-003",
+      "_id": "8U49t6TXIzBEXBja",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.8U49t6TXIzBEXBja"
+    },
+    {
+      "code": "FAU-004",
+      "_id": "vpvHVQOGukREGu7l",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.vpvHVQOGukREGu7l"
+    },
+    {
+      "code": "FAU-005",
+      "_id": "ht3BGgYN4Qpv6Jxh",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.ht3BGgYN4Qpv6Jxh"
+    },
+    {
+      "code": "FAU-006",
+      "_id": "sJUb33WwcLgPb3PQ",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.sJUb33WwcLgPb3PQ"
+    },
+    {
+      "code": "FAU-007",
+      "_id": "zfH73rgloB8L6pSM",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.zfH73rgloB8L6pSM"
+    },
+    {
+      "code": "FAU-008",
+      "_id": "jeBv1DPoIY1lX2zq",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.jeBv1DPoIY1lX2zq"
+    },
+    {
+      "code": "FAU-009",
+      "_id": "5NdmuLKi7ZMHzjfX",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.5NdmuLKi7ZMHzjfX"
+    },
+    {
+      "code": "FAU-010",
+      "_id": "fHQnZGjmSOlu4qa8",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.fHQnZGjmSOlu4qa8"
+    },
+    {
+      "code": "FAU-011",
+      "_id": "9rgDjzvFGvWNfeKu",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.9rgDjzvFGvWNfeKu"
+    },
+    {
+      "code": "FAU-012",
+      "_id": "CWlLMol2AZpujPx7",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.CWlLMol2AZpujPx7"
+    },
+    {
+      "code": "FAU-013",
+      "_id": "DnbzqhzAdXN1r3kW",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.DnbzqhzAdXN1r3kW"
+    },
+    {
+      "code": "FAU-014",
+      "_id": "VUtnqenmd6OCLomn",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.VUtnqenmd6OCLomn"
+    },
+    {
+      "code": "FAU-015",
+      "_id": "gIDtNyJSYWIXOAp5",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.gIDtNyJSYWIXOAp5"
+    },
+    {
+      "code": "FAU-016",
+      "_id": "usQ73nSvGhNkSDSu",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.usQ73nSvGhNkSDSu"
+    },
+    {
+      "code": "FAU-017",
+      "_id": "xBWLbeiR1eoLoRNB",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.xBWLbeiR1eoLoRNB"
+    },
+    {
+      "code": "FAU-018",
+      "_id": "nmg6fpR6xYf8oZdL",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.nmg6fpR6xYf8oZdL"
+    },
+    {
+      "code": "FAU-019",
+      "_id": "OpHPHxq5nQDijZ7p",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.OpHPHxq5nQDijZ7p"
+    },
+    {
+      "code": "FAU-020",
+      "_id": "8fqHkodlT8RvP0BS",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.8fqHkodlT8RvP0BS"
+    },
+    {
+      "code": "FAU-021",
+      "_id": "Hy0GGLcD0eOhzq9W",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.Hy0GGLcD0eOhzq9W"
+    },
+    {
+      "code": "FAU-022",
+      "_id": "xYZgtFASxeIFpToR",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.xYZgtFASxeIFpToR"
+    },
+    {
+      "code": "FAU-023",
+      "_id": "ExYEwc3Ap4yp1hnX",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.ExYEwc3Ap4yp1hnX"
+    },
+    {
+      "code": "FAU-024",
+      "_id": "N4GmaJdfHlqloRZq",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.N4GmaJdfHlqloRZq"
+    },
+    {
+      "code": "FAU-025",
+      "_id": "wSNmNqNKH8EHbp44",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.wSNmNqNKH8EHbp44"
+    },
+    {
+      "code": "FAU-026",
+      "_id": "kb0XKfjLsXLerl6F",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.kb0XKfjLsXLerl6F"
+    },
+    {
+      "code": "FAU-027",
+      "_id": "nUYY5ux1kkLbNsiI",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.nUYY5ux1kkLbNsiI"
+    },
+    {
+      "code": "FAU-028",
+      "_id": "us4NecHuL6WQXwMc",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.us4NecHuL6WQXwMc"
+    },
+    {
+      "code": "FAU-029",
+      "_id": "YU8cxHhyveeveNAn",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.YU8cxHhyveeveNAn"
+    },
+    {
+      "code": "FAU-030",
+      "_id": "huZeixaINs1rrugH",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.huZeixaINs1rrugH"
+    },
+    {
+      "code": "FAU-031",
+      "_id": "DqpmHU2SZaEQ0IQe",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.DqpmHU2SZaEQ0IQe"
+    },
+    {
+      "code": "FAU-032",
+      "_id": "rv4P8LZ6pKAhtV0F",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.rv4P8LZ6pKAhtV0F"
+    },
+    {
+      "code": "FAU-033",
+      "_id": "KbtOX3hJ5s6hx3MV",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.KbtOX3hJ5s6hx3MV"
+    },
+    {
+      "code": "FAU-034",
+      "_id": "8LZSIGm6glTvjx8F",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.8LZSIGm6glTvjx8F"
+    },
+    {
+      "code": "FAU-035",
+      "_id": "pwpLirKw2V1zdpX7",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.pwpLirKw2V1zdpX7"
+    },
+    {
+      "code": "FAU-036",
+      "_id": "ty5vxa5YdStMLiDb",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.ty5vxa5YdStMLiDb"
+    },
+    {
+      "code": "FAU-037",
+      "_id": "vqydUWKetUA4uMwD",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.vqydUWKetUA4uMwD"
+    },
+    {
+      "code": "FAU-038",
+      "_id": "UWNOWOmcjnTU3TKM",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.UWNOWOmcjnTU3TKM"
+    },
+    {
+      "code": "FAU-039",
+      "_id": "eG8Fv70VMWfPn9ND",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.eG8Fv70VMWfPn9ND"
+    },
+    {
+      "code": "FAU-040",
+      "_id": "jSNogolHCojEoXVv",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.jSNogolHCojEoXVv"
+    },
+    {
+      "code": "FAU-045",
+      "_id": "1ZG2udTbA0CmXejm",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.1ZG2udTbA0CmXejm"
+    },
+    {
+      "code": "FAU-046",
+      "_id": "wS747C9NmBt7XFrg",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.wS747C9NmBt7XFrg"
+    },
+    {
+      "code": "FAU-047",
+      "_id": "exWEvQTUZT0S0hY4",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.exWEvQTUZT0S0hY4"
+    },
+    {
+      "code": "FAU-048",
+      "_id": "8qnBtUxCb8VYiSzp",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.8qnBtUxCb8VYiSzp"
+    },
+    {
+      "code": "FAU-049",
+      "_id": "yDxgobX0LZ1B8pff",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.yDxgobX0LZ1B8pff"
+    },
+    {
+      "code": "FAU-050",
+      "_id": "NpLnnFUGIb4QtU67",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.NpLnnFUGIb4QtU67"
+    },
+    {
+      "code": "FAU-051",
+      "_id": "Uo01VqsJ2QxRunBJ",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.Uo01VqsJ2QxRunBJ"
+    },
+    {
+      "code": "FAU-052",
+      "_id": "Ns2E8Uvsz8cPKJVt",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.Ns2E8Uvsz8cPKJVt"
+    },
+    {
+      "code": "FAU-053",
+      "_id": "t8fwdSxU650cW8DG",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.t8fwdSxU650cW8DG"
+    },
+    {
+      "code": "FAU-054",
+      "_id": "6dbWEBG1uRnGI28V",
+      "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.6dbWEBG1uRnGI28V"
+    }
+  ]
+}

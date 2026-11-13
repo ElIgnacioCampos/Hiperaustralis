@@ -1,0 +1,15 @@
+{
+  "territory": "Umbral Polar",
+  "items": [
+    "FLO-008",
+    "FLO-020",
+    "FLO-028",
+    "FLO-032",
+    "FLO-036"
+  ],
+  "source_scope": "Umbral Polar",
+  "notes": [
+    "FLO-028 remains conditional: specific framing unresolved.",
+    "FLO-020, FLO-032 and FLO-036 are ecological groups, not specific taxa."
+  ]
+}

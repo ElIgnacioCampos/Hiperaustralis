@@ -1,0 +1,17 @@
+{
+  "id": "hiperaustralis-compendios-prototype",
+  "title": "Hiperaustralis · Compendios (prototipo nativo)",
+  "description": "Prototipo aislado de distribución nativa de compendios. No reemplaza hiperaustralis-rituales.",
+  "version": "0.1.5",
+  "authors": [{"name": "Hiperaustralis RPG"}],
+  "compatibility": {"minimum": "14", "verified": "14.367"},
+  "relationships": {"systems": [{"id": "custom-system-builder", "type": "system", "compatibility": {"minimum": "6.0.0"}}]},
+  "packs": [
+    {"name": "ha-proto-items", "label": "HA · Prototipo · Objetos", "path": "packs/ha-proto-items", "type": "Item", "private": false, "system": "custom-system-builder"},
+    {"name": "ha-proto-actors", "label": "HA · Prototipo · Adversarios", "path": "packs/ha-proto-actors", "type": "Actor", "private": false, "system": "custom-system-builder"},
+    {"name": "ha-proto-journals", "label": "HA · Prototipo · Journals", "path": "packs/ha-proto-journals", "type": "JournalEntry", "private": false}
+  ],
+  "manifest": "https://raw.githubusercontent.com/ElIgnacioCampos/Hiperaustralis/work/native-compendia-pipeline/module/module.json",
+  "download": "https://github.com/ElIgnacioCampos/Hiperaustralis/releases/download/v0.1.5-forge-test/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip",
+  "type": "module"
+}
