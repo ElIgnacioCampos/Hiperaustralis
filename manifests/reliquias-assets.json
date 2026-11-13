@@ -267,7 +267,7 @@
       "status": "documented_previously_but_not_in_new_uploads"
     },
     "sourceStatus": "png_source_recovered_and_verified",
-    "itemAssociation": "unresolved",
+    "itemAssociation": "new_item_created",
     "runtimeMigration": "not_performed",
     "newItem": {
       "sourcePath": "source/items/reliquias/tokicura.json",
@@ -286,7 +286,8 @@
       "sourceDescription": "Hacha de piedra e insignia de autoridad del toki, el jefe guerrero. Algunas fuentes le atribuyen facultades oraculares.",
       "correspondence": "Temple · Fuego",
       "correspondenceStatus": "suggested_non_exclusive_not_canon",
-      "binaryStatus": "prepared_locally_upload_pending_verified_transfer"
+      "binaryStatus": "prepared_locally_upload_pending_verified_transfer",
+      "moduleRuntimePath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/tokicura_256.webp"
     }
   },
   "migrationStatus": "source_item_draft_committed; runtime_asset_pending_verified_upload; no_build_or_foundry_qa"
