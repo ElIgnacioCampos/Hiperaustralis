@@ -231,16 +231,44 @@
     }
   ],
   "tokicura": {
-    "runtimePath": "assets/reliquias-legendarias/tokicura_256.webp",
-    "sha256": "74a11a097d3c90cb42337a40a30247b799d5007a60403d654bc320759ebd9c2a",
-    "bytes": 27972,
-    "format": "WEBP",
-    "width": 256,
-    "height": 256,
-    "mode": "RGBA",
-    "alpha": true,
-    "status": "previously_verified_binary_not_rechecked_in_current_session",
-    "itemAssociation": "unresolved"
+    "sourceFiles": [
+      {
+        "path": "assets/reliquias/Tokicura.png",
+        "bytes": 26332,
+        "sha256": "eac02773aeb16224066a9777d5228ac1143d3ce2bf5d38de0ef1da756065845a",
+        "format": "PNG",
+        "width": 200,
+        "height": 200,
+        "mode": "RGBA",
+        "alpha": true
+      },
+      {
+        "path": "assets/reliquias/Tokicura.md",
+        "bytes": 528,
+        "sha256": "a8867f89145d325bebcf406045c8364d2035caf53763da77216227f08ebafc34",
+        "format": "Markdown",
+        "status": "description_with_integration_note"
+      }
+    ],
+    "duplicateSource": {
+      "path": "assets/Reliquias Legendarias/Tokicura.png",
+      "sameSha256As": "assets/reliquias/Tokicura.png",
+      "decision": "store_one_physical_copy"
+    },
+    "historicalRuntime": {
+      "path": "assets/reliquias-legendarias/tokicura_256.webp",
+      "sha256": "74a11a097d3c90cb42337a40a30247b799d5007a60403d654bc320759ebd9c2a",
+      "bytes": 27972,
+      "format": "WEBP",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "alpha": true,
+      "status": "documented_previously_but_not_in_new_uploads"
+    },
+    "sourceStatus": "png_source_recovered_and_verified",
+    "itemAssociation": "unresolved",
+    "runtimeMigration": "not_performed"
   },
-  "migrationStatus": "audit_only_no_binary_migration_no_source_item_split_no_runtime_path_changes"
+  "migrationStatus": "audit_only_source_png_recovered_runtime_binary_pending_no_source_item_split_no_runtime_path_changes"
 }
