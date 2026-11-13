@@ -268,7 +268,25 @@
     },
     "sourceStatus": "png_source_recovered_and_verified",
     "itemAssociation": "unresolved",
-    "runtimeMigration": "not_performed"
+    "runtimeMigration": "not_performed",
+    "newItem": {
+      "sourcePath": "source/items/reliquias/tokicura.json",
+      "foundryId": "TokicuraRel0001",
+      "name": "Tokicura",
+      "documentType": "Item",
+      "itemType": "equippableItem",
+      "category": "legendaria",
+      "editorialStatus": "draft",
+      "imageRuntimePath": "module/assets/reliquias/tokicura_256.webp",
+      "imageRuntimeSha256": "1a1a480ed3014b1f031e9e295ddf57ece94b2f5d060fcd6edb5fc6fb87421c09",
+      "imageRuntimeBytes": 11154,
+      "imageRuntimeDimensions": "256x256",
+      "imageRuntimeMode": "RGBA",
+      "imageRuntimeAlpha": true,
+      "sourceDescription": "Hacha de piedra e insignia de autoridad del toki, el jefe guerrero. Algunas fuentes le atribuyen facultades oraculares.",
+      "correspondence": "Temple · Fuego",
+      "correspondenceStatus": "suggested_non_exclusive_not_canon"
+    }
   },
-  "migrationStatus": "audit_only_source_png_recovered_runtime_binary_pending_no_source_item_split_no_runtime_path_changes"
+  "migrationStatus": "source_item_added; runtime_asset_pending_upload_and_build_qa"
 }
