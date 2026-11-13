@@ -10,6 +10,12 @@ EXPECTED = {
     "ha-proto-journals": ("journals", "JournalEntry"),
 }
 
+# Explicit exception for the recovered Tokicura relic template. This is not a
+# generic relaxation: other Item templates must provide body.contents[].
+BODYLESS_ITEM_TEMPLATES = {
+    ("HipRelqTpl000001", "reliquia"),
+}
+
 def fail(message):
     print("FAIL:", message, file=sys.stderr)
     raise SystemExit(1)
@@ -49,11 +55,14 @@ for name, (folder, kind) in EXPECTED.items():
             system = doc.get("system")
             if not isinstance(system, dict):
                 fail(f"Item sin system object: {path}")
-            if not isinstance(system.get("props"), dict):
+            props = system.get("props")
+            if not isinstance(props, dict):
                 fail(f"Item sin system.props object: {path}")
             body = system.get("body")
-            if not isinstance(body, dict) or not isinstance(body.get("contents"), list):
-                fail(f"Item sin system.body.contents[]: {path}")
+            has_body_contents = isinstance(body, dict) and isinstance(body.get("contents"), list)
+            template_signature = (system.get("template"), props.get("hipera_tipo"))
+            if not has_body_contents and template_signature not in BODYLESS_ITEM_TEMPLATES:
+                fail(f"Item sin system.body.contents[] ni excepción de plantilla documentada: {path}")
         if folder == "actors":
             body = doc.get("system", {}).get("body", {})
             fields = body.get("contents", [])
