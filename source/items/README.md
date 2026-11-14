@@ -11,7 +11,7 @@ Rama de trabajo: `work/native-compendia-pipeline`
 - Documentación e inventarios: versionados.
 - JSON canónicos de los 135 Items: pendientes de incorporación completa al árbol Git.
 - Binarios Turianos / Instrumentos / Equipo: pendientes de incorporación al árbol Git.
-- Reliquias: fuente recuperada y verificada; incorporación de los 16 JSON individuales en curso.
+- Reliquias: 16 JSON individuales incorporados y verificados por hash; validación CI y round-trip aprobados.
 - Build autónomo y QA Foundry aislado: pendientes.
 
 ## Validación de Items con plantilla
