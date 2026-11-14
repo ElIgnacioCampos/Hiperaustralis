@@ -10,6 +10,7 @@ Fecha de revisión: 2026-11-14
 - Compatibilidad declarada: Foundry VTT `14.367`; Custom System Builder mínimo `6.0.0`
 - Integridad ZIP/CRC: PASS
 - 108 archivos, 4.931.669 bytes descomprimidos; 124 entradas contando directorios.
+- La etiqueta `CI104` pertenece al nombre del archivo recibido; no acredita que corresponda a la ejecución GitHub Actions #104. La última ejecución de pipeline documentada en el PR es la #98.
 
 ## Inventario
 
