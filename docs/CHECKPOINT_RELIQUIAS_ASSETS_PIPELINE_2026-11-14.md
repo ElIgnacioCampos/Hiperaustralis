@@ -51,3 +51,14 @@ Ninguno. Este checkpoint documenta el avance de la rama de trabajo; no modifica 
 - PR #1 abierto, draft y sin merge.
 - `main` intacta por este trabajo.
 - Módulo productivo y MELIAZ Bridge sin cambios.
+
+## Paquete instalable extraído y verificado
+
+- Artefacto externo de Actions contiene el ZIP del módulo dentro de un ZIP de descarga.
+- ZIP interno extraído para instalación: `HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip`.
+- Tamaño: 4.938.253 bytes.
+- SHA-256: `440463e61e626b09eaaa0bb5e76ef61dcf9fede7df3f48454c6eb75505718b4a`.
+- Integridad ZIP: OK; 124 entradas.
+- `module.json` en raíz; tres packs presentes.
+- 16 WebP del lote verificados en las rutas del módulo. También aparece `assets/reliquias/tokicura_256.webp`, recurso preexistente de Tokicura, no incorporado ni modificado en este lote.
+- Próximo paso: instalación manual y QA en Foundry V14 + CSB 6.0.2. La CI no sustituye esa prueba de runtime.
