@@ -67,8 +67,12 @@ for pack, (folder, kind) in PAIRS.items():
         if set(actual_folders) != set(expected_folders):
             fail(f"Folders distintos; missing={sorted(set(expected_folders)-set(actual_folders))}, extra={sorted(set(actual_folders)-set(expected_folders))}")
         for folder_id, expected_folder in expected_folders.items():
-            if actual_folders[folder_id] != expected_folder:
-                fail(f"Folder alterada {folder_id}: expected={expected_folder}, actual={actual_folders[folder_id]}")
+            expected_shape = {
+                "id": expected_folder["id"], "name": expected_folder["name"],
+                "type": expected_folder["type"], "parent": expected_folder["parent"]
+            }
+            if actual_folders[folder_id] != expected_shape:
+                fail(f"Folder alterada {folder_id}: expected={expected_shape}, actual={actual_folders[folder_id]}")
         for doc_id, folder_path in expected_item_folders.items():
             expected_folder_id = next(x["id"] for x in folder_manifest["folders"] if x["path"] == folder_path)
             if actual[doc_id]["folder"] != expected_folder_id:
