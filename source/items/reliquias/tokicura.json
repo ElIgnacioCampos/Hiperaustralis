@@ -2,11 +2,11 @@
   "_id": "TokicuraRel0001",
   "name": "Tokicura",
   "type": "equippableItem",
-  "img": "modules/hiperaustralis-compendios-prototype/assets/reliquias/tokicura_256.webp",
+  "img": "modules/hiperaustralisis-compendios-prototype/assets/reliquias/tokicura_256.webp",
   "system": {
     "props": {
       "hipera_tipo": "reliquia",
-      "historia": "Hacha de piedra e insignia de autoridad del toki, el jefe guerrero. Algunas fuentes le atribuyen facultades oraculares.",
+      "historia": "Hacha de piedra, símbolo de poder y liderazgo guerrero en el mundo mapuche. Cuentan los ancianos que cayó del cielo como un rayo y quedó enterrado en las entrañas de la tierra.",
       "correspondencias": "Temple · Fuego (sugerida; no exclusiva; pendiente de canon).",
       "resonancia": "",
       "notas": ""
