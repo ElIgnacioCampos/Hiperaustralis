@@ -6,6 +6,8 @@ on:
     paths:
       - '.github/workflows/compile-native-packs.yml'
       - 'source/**'
+      - 'source-original/**'
+      - 'manifests/reliquias-assets.json'
       - 'module/**'
       - 'validate_*.py'
       - 'prepare_sources.py'
