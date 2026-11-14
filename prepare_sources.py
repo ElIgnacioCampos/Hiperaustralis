@@ -53,6 +53,11 @@ def write_folder(base: Path, folder_path: str, meta: dict):
         json.dumps(folder_doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
 
+items_dest = OUT / "items"
+items_dest.mkdir(parents=True, exist_ok=True)
+for folder_path, meta in FOLDERS.items():
+    write_folder(items_dest, folder_path, meta)
+
 for folder, collection in PAIRS.items():
     src = ROOT / "source" / folder
     dest = OUT / folder
@@ -70,9 +75,6 @@ for folder, collection in PAIRS.items():
             doc["folder"] = folder_meta["id"]
             target_dir = dest.joinpath(*folder_path.split("/"))
             target_dir.mkdir(parents=True, exist_ok=True)
-            write_folder(dest, folder_path, folder_meta)
-            manifest_path = OUT / "item-folder-manifest.json"
-            # The manifest is written once below from the complete deterministic map.
         else:
             target_dir = dest
         target = target_dir / path.name
