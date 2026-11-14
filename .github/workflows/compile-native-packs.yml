@@ -22,6 +22,33 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         name: Checkout
+      - name: Restore and verify 16 relic WebP assets
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib, json, zipfile
+          from pathlib import Path
+          root = Path.cwd()
+          archive = root / "source-original/HIPERAUSTRALIS_RELIQUIAS_ASSETS_16_WEBP_v01.zip"
+          manifest = json.loads((root / "manifests/reliquias-assets.json").read_text(encoding="utf-8"))
+          records = manifest["records"]
+          if len(records) != 16:
+              raise SystemExit(f"Expected 16 manifest records, got {len(records)}")
+          expected = {f'{r["group"]}/{Path(r["sourceImg"]).name}': r["sha256"] for r in records}
+          with zipfile.ZipFile(archive) as zf:
+              actual = {n for n in zf.namelist() if n.lower().endswith(".webp")}
+              if actual != set(expected):
+                  raise SystemExit(f"Asset inventory mismatch: missing={sorted(set(expected)-actual)}, extra={sorted(actual-set(expected))}")
+              for name, digest in expected.items():
+                  data = zf.read(name)
+                  got = hashlib.sha256(data).hexdigest()
+                  if got != digest:
+                      raise SystemExit(f"SHA-256 mismatch for {name}: {got}")
+                  target = root / "module/assets/reliquias" / name
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(data)
+          print("RELIQUIAS_ASSETS_PASS: 16/16 WebP SHA-256 verified and restored")
+          PY
       - uses: actions/setup-node@v4
         name: Set up Node.js
         with:
