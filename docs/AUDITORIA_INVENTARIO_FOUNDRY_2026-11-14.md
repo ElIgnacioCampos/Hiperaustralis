@@ -44,13 +44,14 @@ La distribución corresponde a ocho carpetas previstas.
 - `_id`/`documentId` repetidos entre ámbitos: **81** grupos.
 - Los 81 grupos corresponden a pares mundo/compendio con el mismo `_id`: 41 de Naturaleza y 40 de Armas. La diferencia de UUID se debe al contexto (mundo vs compendio), no a una colisión UUID.
 - En los 41 pares de Naturaleza, el contenido queda idéntico al excluir `_stats` y `system.uniqueId` (el duplicado de mundo tiene `uniqueId` rellenado; el compendio lo conserva vacío).
-- En los 40 pares de Armas, además de `_stats`, difieren `folder` y `sort`: las copias del mundo están organizadas en `Hiperaustralis - Assets/Armas`, mientras el compendio no tiene carpeta interna.
+- En los 40 pares de Armas, además de `_stats`, difieren `folder` y `sort`: las copias del mundo están organizadas en `Hiperaustralis - Assets/Armas`, mientras el compendio no tiene carpeta interna. Al excluir `_stats`, `folder` y `sort`, los 40 pares coinciden en el resto del payload.
 - Conservar `sourceScope` y `sourcePack` al reconciliar. No deduplicar únicamente por nombre ni tratar los 593 registros como 593 entidades canónicas.
 
 ## Observaciones estructurales
 
 - Los 135 Items de `hiperaustralis-rituales` tienen carpeta asignada y sus rutas de imagen apuntan a `modules/hiperaustralis-rituales/assets/...`.
 - El compendio `world.armas` exporta sus 40 Items sin `folderPath` de compendio; sus copias del mundo están bajo `Hiperaustralis - Assets/Armas`.
+- Los 135 Items de `hiperaustralis-rituales` y los 98 de `hiperaustralis-naturaleza-items` tienen `img`, `system`, `flags` y carpeta asignada. Los 40 Items de `world.armas` también tienen `img`, `system` y `flags`; no tienen carpeta interna.
 - El mundo contiene 320 Items: 311 `equippableItem`, ocho plantillas `_equippableItemTemplate` y un `activeEffectContainer`.
 - La exportación contiene 11 carpetas Item del mundo.
 - El exportador no incluyó Actors (`actorDocuments: false`); la reconciliación de Turianos requiere un export independiente.
@@ -65,7 +66,7 @@ La distribución corresponde a ocho carpetas previstas.
 
 ## Pendientes
 
-- Comparación campo por campo de los 40 pares de Armas, para confirmar que `folder` y `sort` son las únicas diferencias de contenido además de metadatos.
+- Auditoría semántica de campos, referencias UUID y contenido de los 135 Items.
 - Auditoría de `flags`, `system`, `_stats`, `img` y referencias UUID de los 135 Items.
 - Definir estructura canónica de packs y carpetas para la migración GitHub.
 - Exportar Actors para reconciliar Turianos.
