@@ -2,7 +2,7 @@
   "_id": "TokicuraRel0001",
   "name": "Tokicura",
   "type": "equippableItem",
-  "img": "modules/hiperaustralisis-compendios-prototype/assets/reliquias/tokicura_256.webp",
+  "img": "modules/hiperaustralis-compendios-prototype/assets/reliquias/tokicura_256.webp",
   "system": {
     "props": {
       "hipera_tipo": "reliquia",
