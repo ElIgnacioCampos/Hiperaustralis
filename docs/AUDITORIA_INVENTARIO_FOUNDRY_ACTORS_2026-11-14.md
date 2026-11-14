@@ -16,9 +16,9 @@ Rama: `work/native-compendia-pipeline`
 - 3 carpetas Actor en el mundo.
 - Errores de exportación: 0.
 - Compendios incluidos:
-  - `world.hiperaustralais-personajes`: 4.
-  - `world.hiperaustralais-adversarios-mapuche`: 20.
-  - `world.hiperaustralais-bestiario`: 48.
+  - `world.hiperaustralis-personajes`: 4.
+  - `world.hiperaustralis-adversarios-mapuche`: 20.
+  - `world.hiperaustralis-bestiario`: 48.
 
 El total 176 cuenta documentos en sus respectivos ámbitos. No debe tratarse como 176 identidades independientes sin cruzar IDs, UUID y procedencia.
 
@@ -57,7 +57,7 @@ Los 10 pares tienen el mismo contenido documental salvo metadatos `_stats`. Son 
 
 ### Kren
 
-El Actor del mundo y el del compendio `world.hiperaustralais-personajes` comparten `documentId`, pero **no son equivalentes**: difieren en plantilla CSB, versión de plantilla, campos de sistema, equipamiento y cantidad de Items embebidos (2 en mundo, 0 en compendio). Se conservan como dos versiones con procedencia distinta hasta decidir cuál es autoridad. No sobrescribir ni deduplicar.
+El Actor del mundo y el del compendio `world.hiperaustralis-personajes` comparten `documentId`, pero **no son equivalentes**: difieren en plantilla CSB, versión de plantilla, campos de sistema, equipamiento y cantidad de Items embebidos (2 en mundo, 0 en compendio). Se conservan como dos versiones con procedencia distinta hasta decidir cuál es autoridad. No sobrescribir ni deduplicar.
 
 ## 4. Items embebidos
 
