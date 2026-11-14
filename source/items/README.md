@@ -12,6 +12,7 @@ Rama de trabajo: `work/native-compendia-pipeline`
 - JSON canónicos de los 135 Items: pendientes de incorporación completa al árbol Git.
 - Binarios Turianos / Instrumentos / Equipo: pendientes de incorporación al árbol Git.
 - Reliquias: 16 JSON individuales incorporados y verificados por hash; validación CI y round-trip aprobados.
+- Assets de Reliquias: 16 WebP fuente identificados en el ZIP 0.4.76 y auditados en `manifests/reliquias-assets.json`; todavía no están copiados al módulo nuevo. Las referencias de imagen de los Items siguen apuntando a `modules/hiperaustralis-rituales/`; no reescribir hasta disponer de los binarios en destino y verificar sus hashes.
 - Build autónomo y QA Foundry aislado: pendientes.
 
 ## Validación de Items con plantilla
