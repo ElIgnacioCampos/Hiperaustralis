@@ -9,18 +9,41 @@ EXPECTED = {
     "ha-proto-actors": ("actors", "Actor"),
     "ha-proto-journals": ("journals", "JournalEntry"),
 }
-
-# Explicit exception for the recovered Tokicura relic template. This is not a
-# generic relaxation: other Item templates must provide body.contents[].
-BODYLESS_ITEM_TEMPLATES = {
-    ("HipRelqTpl000001", "reliquia"),
-}
+TEMPLATE_DIR = ROOT / "source-original" / "foundry-templates"
+ITEM_META_PROP_KEYS = {"hipera_tipo"}
 
 def fail(message):
     print("FAIL:", message, file=sys.stderr)
     raise SystemExit(1)
 
-manifest = json.loads((ROOT / "module/module.json").read_text(encoding="utf-8"))
+def load_json(path):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        fail(f"JSON ilegible {path}: {exc}")
+
+def load_item_templates():
+    templates = {}
+    for path in sorted(TEMPLATE_DIR.glob("fvtt-Item-*.json")):
+        doc = load_json(path)
+        system = doc.get("system", {})
+        template_id = system.get("uniqueId") or doc.get("_id")
+        version = system.get("templateSystemUniqueVersion")
+        contents = system.get("body", {}).get("contents", [])
+        if not isinstance(template_id, str) or not template_id:
+            fail(f"Plantilla sin uniqueId/_id: {path}")
+        if not isinstance(contents, list):
+            fail(f"Plantilla sin system.body.contents[]: {path}")
+        keys = {entry.get("key") for entry in contents
+                if isinstance(entry, dict) and isinstance(entry.get("key"), str)}
+        if template_id in templates:
+            fail(f"ID de plantilla duplicado: {template_id}")
+        templates[template_id] = {"version": version, "keys": keys, "file": path.name}
+    return templates
+
+ITEM_TEMPLATES = load_item_templates()
+
+manifest = load_json(ROOT / "module/module.json")
 if manifest.get("id") != "hiperaustralis-compendios-prototype":
     fail("ID de módulo inesperado")
 packs = {p.get("name"): p for p in manifest.get("packs", [])}
@@ -37,10 +60,7 @@ for name, (folder, kind) in EXPECTED.items():
         fail(f"Fuente vacía: {folder}")
     ids, docs = set(), []
     for path in paths:
-        try:
-            doc = json.loads(path.read_text(encoding="utf-8"))
-        except Exception as exc:
-            fail(f"JSON ilegible {path}: {exc}")
+        doc = load_json(path)
         if not isinstance(doc, dict):
             fail(f"Documento no es objeto JSON: {path}")
         doc_id = doc.get("_id")
@@ -58,11 +78,21 @@ for name, (folder, kind) in EXPECTED.items():
             props = system.get("props")
             if not isinstance(props, dict):
                 fail(f"Item sin system.props object: {path}")
-            body = system.get("body")
-            has_body_contents = isinstance(body, dict) and isinstance(body.get("contents"), list)
-            template_signature = (system.get("template"), props.get("hipera_tipo"))
-            if not has_body_contents and template_signature not in BODYLESS_ITEM_TEMPLATES:
-                fail(f"Item sin system.body.contents[] ni excepción de plantilla documentada: {path}")
+            template_id = system.get("template")
+            template = ITEM_TEMPLATES.get(template_id)
+            if not template:
+                fail(f"Item referencia plantilla no disponible en fixtures: {path}; template={template_id}")
+            if system.get("templateSystemUniqueVersion") != template["version"]:
+                fail(f"Versión de plantilla no coincide: {path}; "
+                     f"item={system.get('templateSystemUniqueVersion')} "
+                     f"fixture={template['version']}")
+            prop_keys = set(props) - ITEM_META_PROP_KEYS
+            unknown = prop_keys - template["keys"]
+            missing = template["keys"] - prop_keys
+            if unknown:
+                fail(f"Props no declaradas por plantilla {template_id}: {path}; campos={sorted(unknown)}")
+            if missing:
+                fail(f"Props requeridas por plantilla {template_id} ausentes: {path}; campos={sorted(missing)}")
         if folder == "actors":
             body = doc.get("system", {}).get("body", {})
             fields = body.get("contents", [])
