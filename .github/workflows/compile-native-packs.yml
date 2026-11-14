@@ -11,6 +11,7 @@ on:
       - 'module/**'
       - 'validate_*.py'
       - 'prepare_sources.py'
+      - 'tools/foundry/**'
   workflow_dispatch:
 
 permissions:
@@ -57,6 +58,11 @@ jobs:
         name: Set up Python
         with:
           python-version: '3.x'
+      - name: Test migration reconciliation utility
+        run: |
+          set -euo pipefail
+          python -m py_compile tools/foundry/reconcile-inventory.py
+          python -m unittest discover -s tools/foundry -p 'test_*.py' -v
       - name: Restore compressed 21-page JournalEntry source
         run: |
           set -euo pipefail
