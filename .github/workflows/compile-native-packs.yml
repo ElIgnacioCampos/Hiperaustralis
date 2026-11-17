@@ -50,6 +50,17 @@ jobs:
                   target.write_bytes(data)
           print("RELIQUIAS_ASSETS_PASS: 16/16 WebP SHA-256 verified and restored")
           PY
+      - name: Extract and audit weapon asset source ZIP
+        run: |
+          set -euo pipefail
+          python tools/foundry/audit-armas-archive.py dist/armas-source-audit
+      - uses: actions/upload-artifact@v4
+        name: Publish weapon asset audit bundle
+        with:
+          name: armas-source-audit
+          path: dist/armas-source-audit/*
+          if-no-files-found: error
+          retention-days: 14
       - uses: actions/setup-node@v4
         name: Set up Node.js
         with:
