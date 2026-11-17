@@ -67,6 +67,12 @@ El workflow:
 
 La validación actual no acredita igualdad semántica completa, integridad global de assets, ausencia de dependencias del módulo antiguo ni funcionamiento en Foundry.
 
-## Siguiente hito
+## Alcance y siguiente hito
 
-Ejecutar el exportador de Items en el mundo de Foundry que contiene las fuentes históricas. Reconciliar los 135 Items con IDs, UUID, carpetas, payload y rutas reales. Después, incorporar fuentes por lotes verificables, resolver los PNG maestros pendientes y ampliar los validadores. La instalación y QA visual/funcional del módulo siguen pendientes.
+- Territorios queda fuera de esta migración: su nomenclatura y estructura están pendientes de resolución autoral. No migrar ni completar contenidos territoriales en este bloque; conservar sus fuentes sin alterarlas.
+- Prioridad actual: migrar íntegramente el corpus no territorial, comenzando por los 135 Items históricos y sus ocho carpetas, y continuar con Actors/Journals no territoriales.
+- Recuperar y cotejar los exports y binarios originales; conservar IDs, payloads, flags, referencias y procedencia.
+- Resolver cada asset antes de actualizar rutas runtime. Ampliar validadores de integridad semántica y referencias.
+- La instalación y QA visual/funcional del módulo siguen pendientes.
+
+Checkpoint de alcance: `docs/CHECKPOINT_SCOPE_COMPENDIOS_2026-11-17.md`.
