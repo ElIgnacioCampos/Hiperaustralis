@@ -55,8 +55,8 @@ jobs:
               raise SystemExit("Module directory is empty")
 
           with open(__import__("os").environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
-              out.write(f"version={version}\\n")
-              out.write(f"file_count={len(files)}\\n")
+              out.write(f"version={version}\n")
+              out.write(f"file_count={len(files)}\n")
           print(f"PASS: meliaz-bridge {version}; {len(files)} files")
           PY
 
