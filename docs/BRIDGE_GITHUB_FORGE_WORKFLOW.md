@@ -23,7 +23,7 @@ Mantener GitHub como fuente versionada, producir desde allí un ZIP instalable y
 8. **Promover:** abrir PR hacia `main` sólo tras QA aprobado. La fusión y la distribución productiva son pasos separados.
 
 ## Límites de seguridad
-- No modificar ni sustituir `hiperaustralalis-rituales` (si el ID canónico difiere, conservar el valor del manifiesto vigente).
+- No modificar ni sustituir `hiperaustralis-rituales` (si el ID canónico difiere, conservar el valor del manifiesto vigente).
 - No tocar el mundo productivo ni sus actores.
 - No borrar datos heredados de Kona.
 - No mezclar Bridge con el prototipo de compendios.
