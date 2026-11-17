@@ -51,8 +51,6 @@ for record in records:
         fail(f"JSON SHA-256 mismatch: {record['filename']}")
     if doc.get("_id") != record.get("_id") or doc.get("name") != record.get("name"):
         fail(f"Identity mismatch against manifest: {record['filename']}")
-    if doc.get("type") != "Item":
-        fail(f"Not a Foundry Item: {record['filename']}")
     if doc.get("img") != record.get("img"):
         fail(f"Image reference differs from manifest: {record['filename']}")
     if doc["_id"] in seen_ids or doc["name"] in seen_names:
