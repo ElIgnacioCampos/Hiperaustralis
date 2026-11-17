@@ -83,6 +83,8 @@ jobs:
         run: npm install --no-audit --no-fund --no-save --no-package-lock @foundryvtt/foundryvtt-cli@3.0.5
       - name: Validate canonical sources
         run: python validate_sources.py
+      - name: Validate Armas source set and manifest
+        run: python validate_armas.py
       - name: Prepare CLI transport fields
         run: python prepare_sources.py "$RUNNER_TEMP/pack-source"
       - name: Compile, unpack and validate native packs
