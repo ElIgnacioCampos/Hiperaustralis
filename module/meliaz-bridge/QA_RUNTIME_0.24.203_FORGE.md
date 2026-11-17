@@ -1,13 +1,26 @@
 # QA runtime — MELIAZ Bridge 0.24.203
 Target: Foundry VTT V14 + Custom System Builder 6.0.2
-Branch: work/meliaz-bridge-0.24.203-audit
+Branch: work/meliaz-bridge-0.24.203-clean
 Status: PENDING — requiere prueba en Forge
+
+## Build de referencia
+- GitHub Actions: https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/43990574532
+- Artefacto: `meliaz-bridge-0.24.203-foundry`
+- Artifact ID: `14286718845`
+- Caducidad del artefacto: 2026-12-17 00:48 UTC
+- SHA-256 del ZIP externo de Actions: `e4e07022398696583c443daa88f7a70608927f92b2e26cfb1d324be4d63ba968`
+- ZIP instalable incluido: `meliaz-bridge-0.24.203.zip`
+- SHA-256 del ZIP instalable: `57748ab63d90675311b92dec258d0d5ab232477eefd394edf0757d51df457ea5`
+
+Descargar el artefacto desde la ejecución indicada, extraer el ZIP externo y utilizar el ZIP instalable interior para Foundry. Verificar el checksum del ZIP instalable antes de subirlo a Forge.
 
 ## Objetivo
 Comprobar en runtime que 0.24.203 elimina la aparición visual de los wrappers CSB heredados de Equipo sin borrar ni alterar sus datos, sin afectar los cuatro espacios actuales y sin romper Kona.
 
 ## Preparación segura
-- [ ] Instalar el ZIP 0.24.203 en un mundo de prueba de Forge.
+- [ ] Descargar y extraer el artefacto de la ejecución de referencia.
+- [ ] Verificar el SHA-256 del ZIP instalable interior.
+- [ ] Instalar el ZIP 0.24.203 en un mundo de prueba de Forge; no reemplazar la versión operativa.
 - [ ] Confirmar Foundry V14 y CSB 6.0.2.
 - [ ] Mantener una copia/exportación del Actor de prueba antes de modificarlo.
 - [ ] Usar un Actor duplicado; no ejecutar pruebas destructivas sobre el Actor de producción.
@@ -72,6 +85,7 @@ Resultado esperado: comportamiento estable durante el ciclo de prueba.
 
 | Área | Resultado | Evidencia / observaciones |
 |---|---|---|
+| Verificación de paquete | PENDIENTE | |
 | Activación y carga | PENDIENTE | |
 | Wrappers heredados ocultos | PENDIENTE | |
 | Persistencia tras refrescos | PENDIENTE | |
@@ -82,12 +96,13 @@ Resultado esperado: comportamiento estable durante el ciclo de prueba.
 
 ## Criterio de aprobación
 Aprobar 0.24.203 sólo si todas las pruebas A–F pasan y se conserva evidencia de:
-1. diagnóstico de módulo activo;
-2. hoja Kona renderizada;
-3. wrappers heredados ausentes después de refrescos y drag-and-drop;
-4. valores heredados antes/después sin cambios;
-5. cuatro espacios actuales y campos Cariños/Lenguas sin alteraciones;
-6. consola sin errores nuevos.
+1. checksum del paquete instalable verificado;
+2. diagnóstico de módulo activo;
+3. hoja Kona renderizada;
+4. wrappers heredados ausentes después de refrescos y drag-and-drop;
+5. valores heredados antes/después sin cambios;
+6. cuatro espacios actuales y campos Cariños/Lenguas sin alteraciones;
+7. consola sin errores nuevos.
 
 Si falla cualquier prueba, registrar el fallo y detener la promoción. No fusionar la rama ni reemplazar el ZIP operativo hasta resolverlo y repetir el QA.
 
