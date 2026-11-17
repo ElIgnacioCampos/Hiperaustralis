@@ -22,6 +22,7 @@ Repositorio técnico para la migración declarativa del corpus de Hiperaustralis
 - `source/journals/`: JournalEntry fixture, restaurado por el workflow desde su representación comprimida.
 - `manifests/items-armas.json`: inventario de los 20 Items de armas y sus hashes.
 - `manifests/reliquias-assets.json`: inventario y hashes de los 16 WebP de reliquias; Tokicura se documenta separadamente.
+- `docs/AUDITORIA_DEPENDENCIAS_ASSETS_ITEMS_2026-11-17.md`: identifica 21 referencias de Armas aún dependientes de rutas del módulo antiguo y define el cotejo pendiente.
 - `TRANSFER_MANIFEST.json`: inventario declarativo del lote de assets, no certificado autónomo de presencia de cada ruta.
 - `module/assets/_staging/`: derivados WebP de Equipo, Defensas, Instrumentos ERH y Turianos; permanecen en staging, sin referencias runtime nuevas.
 - `docs/MATRIZ_CRUCE_ASSETS_FOUNDRY_v01.md`: cruce preliminar entre assets, Items/Actors históricos y límites de evidencia.
@@ -72,7 +73,7 @@ La validación actual no acredita igualdad semántica completa, integridad globa
 - Territorios queda fuera de esta migración: su nomenclatura y estructura están pendientes de resolución autoral. No migrar ni completar contenidos territoriales en este bloque; conservar sus fuentes sin alterarlas.
 - Prioridad actual: migrar íntegramente el corpus no territorial, comenzando por los 135 Items históricos y sus ocho carpetas, y continuar con Actors/Journals no territoriales.
 - Recuperar y cotejar los exports y binarios originales; conservar IDs, payloads, flags, referencias y procedencia.
-- Resolver cada asset antes de actualizar rutas runtime. Ampliar validadores de integridad semántica y referencias.
+- Resolver los 21 assets de Armas que aún apuntan a `modules/hiperaustralis-rituales/`; los assets de Reliquias actuales sí tienen manifiesto y verificación CI. Ampliar validadores para que toda ruta runtime exista y no dependa del módulo antiguo.
 - La instalación y QA visual/funcional del módulo siguen pendientes.
 
 Checkpoint de alcance: `docs/CHECKPOINT_SCOPE_COMPENDIOS_2026-11-17.md`.
