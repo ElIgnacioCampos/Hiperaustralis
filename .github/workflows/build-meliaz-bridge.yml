@@ -6,13 +6,11 @@ on:
       - work/meliaz-bridge-0.24.203-clean
     paths:
       - 'module/meliaz-bridge/**'
-      - '.github/workflows/build-meliaz-bridge.yml'
   pull_request:
     branches:
       - main
     paths:
       - 'module/meliaz-bridge/**'
-      - '.github/workflows/build-meliaz-bridge.yml'
   workflow_dispatch:
 
 permissions:
@@ -35,7 +33,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          python3 - <<'PY'
           import json, pathlib
           root = pathlib.Path("module/meliaz-bridge")
           manifest_path = root / "module.json"
@@ -51,11 +49,14 @@ jobs:
               for item in manifest.get(key, []) or []:
                   if not (root / item).is_file():
                       raise SystemExit(f"Manifest {key} entry missing: {item}")
-          print(f"version={version}")
+
           files = [p for p in root.rglob("*") if p.is_file()]
           if not files:
               raise SystemExit("Module directory is empty")
-          print(f"file_count={len(files)}")
+
+          with open(__import__("os").environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
+              out.write(f"version={version}\\n")
+              out.write(f"file_count={len(files)}\\n")
           print(f"PASS: meliaz-bridge {version}; {len(files)} files")
           PY
 
