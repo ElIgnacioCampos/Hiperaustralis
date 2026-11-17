@@ -1,0 +1,21 @@
+{
+  "version": "0.24.198",
+  "base": "0.24.197",
+  "experimental": true,
+  "runtime_tested": false,
+  "artifact_sha256": "671925dc608becafc8d1db77c5a1c6d9b9a29d9b7b1a00b7a811a799d34bf737",
+  "checks": {
+    "node_syntax": "pass",
+    "incremental_kona_grid_reconciliation": "static-pass",
+    "incremental_equipment_grid_reconciliation": "static-pass",
+    "weapon_drop_only_to_neque_weapon": "static-pass",
+    "defense_drop_only_to_neque_armor_when_office_allows": "static-pass",
+    "equipment_drop_only_to_equipment_grid": "static-pass",
+    "no_equipment_normalization_on_mount_drop_or_remove": "static-pass",
+    "legacy_weapon_defense_slots_remain_visible": "static-pass",
+    "archive_integrity": "pass",
+    "foundry_v14_csb_6_runtime": "pending",
+    "visual_flicker_reproduction": "pending"
+  },
+  "production_approved": false
+}

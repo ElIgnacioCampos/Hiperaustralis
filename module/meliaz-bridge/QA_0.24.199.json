@@ -1,0 +1,28 @@
+{
+  "version": "0.24.199",
+  "base": "0.24.198",
+  "scope": "Kona redundant Equipo tooltips",
+  "checks": [
+    {
+      "check": "Only exact Equipo 1-4 title/data-tooltip attributes are removed",
+      "status": "PASS_STATIC"
+    },
+    {
+      "check": "Internal slot indexes 1-4 retained",
+      "status": "PASS_STATIC"
+    },
+    {
+      "check": "No geometry or drag/drop logic changes",
+      "status": "PASS_DIFF_REVIEW"
+    },
+    {
+      "check": "Arma/Defensa/Equipo destinations unchanged from 0.24.198",
+      "status": "PASS_DIFF_REVIEW"
+    },
+    {
+      "check": "Foundry V14 runtime tooltip verification",
+      "status": "NOT_RUN"
+    }
+  ],
+  "runtime_verified": false
+}

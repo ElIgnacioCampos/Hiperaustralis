@@ -1,0 +1,32 @@
+{
+  "version": "0.24.200",
+  "target": "Foundry V14 / CSB 6.x",
+  "scope": "Kona: prevención del destello de recuadros anteriores de Arma y Defensa durante montaje",
+  "checks": [
+    {
+      "check": "CSS hides .ha-neque-loadout until .ha-kona-neque-ready",
+      "status": "PASS"
+    },
+    {
+      "check": "renderHiperaNequeLoadout reveals only after both current rows are reconciled",
+      "status": "PASS"
+    },
+    {
+      "check": "scheduleKonaPostCsbMount clears readiness on each render cycle",
+      "status": "PASS"
+    },
+    {
+      "check": "No Item/flag/property deletion or migration added",
+      "status": "PASS"
+    },
+    {
+      "check": "No geometry, hitbox, drag-and-drop or Equipo changes",
+      "status": "PASS"
+    },
+    {
+      "check": "Foundry runtime visual test",
+      "status": "PENDING"
+    }
+  ],
+  "runtime_tested": false
+}

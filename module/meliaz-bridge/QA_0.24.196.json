@@ -1,0 +1,34 @@
+{
+  "bridge_version": "0.24.196",
+  "base": "0.24.195",
+  "compendios_version": "0.4.93",
+  "changes": {
+    "rituals": {
+      "icons_audited": 8,
+      "slot_count": 4,
+      "native_hitbox_viewbox_units": 70,
+      "visual_art_scale": 1.3,
+      "root_cause": "inline overflow:hidden !important on .ha-ritual-item-row overrode stylesheet overflow:visible",
+      "fix": "renderKonaItemGrid assigns overflow:visible to ritual slots",
+      "object_fit": "contain",
+      "hitbox_geometry_changed": false,
+      "positions_changed": false,
+      "all_eight_fit_visual_bounds": true,
+      "min_center_distance_units": 90.5,
+      "max_visible_icon_dimension_units": 88.2,
+      "composition_webp_adjustments": {
+        "02_RESTITUIR": 0.9,
+        "05_ATAR": 1.1,
+        "other_six": 1.0
+      }
+    },
+    "equipment": {
+      "occupied_slot_tooltip": "item.name",
+      "occupied_slot_aria_label": "item.name",
+      "image_alt_title_tooltip": "item.name",
+      "empty_slot_label": "Equipo",
+      "data_or_flag_mutations": false
+    }
+  },
+  "runtime_tested": false
+}
