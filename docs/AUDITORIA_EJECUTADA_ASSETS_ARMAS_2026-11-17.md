@@ -18,6 +18,10 @@ Artefacto: `armas-source-audit` (ID `14356639650`)
 - Binarios gráficos: 0.
 - Formatos de imagen encontrados: ninguno.
 
+## Precisión sobre el manifiesto
+
+Los campos `sha256` de `manifests/armas-source-manifest.json` coinciden con los hashes de los archivos JSON de cada Item, no con hashes de imágenes. El manifiesto registra la ruta esperada de cada WebP, pero no acredita la presencia ni integridad del binario gráfico. No deben usarse esos valores como hashes de assets.
+
 ## Conclusión
 
 La herramienta de extracción funciona y el archivo de origen está íntegro, pero el ZIP disponible no contiene los assets visuales. No existe evidencia suficiente para poblar `module/assets/armas/`, establecer hashes de imágenes o reescribir las rutas `img` y `flags.hiperaustralis-sheet.background`.
@@ -31,6 +35,7 @@ Los 20 documentos conservan las rutas históricas al módulo antiguo. El Item in
 3. No cambiar rutas hasta recuperar y cotejar los binarios originales.
 4. Mantener PR #1 en draft; no modificar `main` ni Forge productivo.
 5. Mantener Territorios fuera del alcance.
+6. Tratar los SHA-256 del manifiesto sólo como hashes de JSON, no como hashes de imágenes.
 
 ## Pendientes
 
@@ -44,6 +49,7 @@ Los 20 documentos conservan las rutas históricas al módulo antiguo. El Item in
 
 - Workflow y artefactos: [Actions run 44149199153](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/44149199153).
 - Archivo de auditoría generado: `ARCHIVE_AUDIT.json`.
+- Manifiesto: `manifests/armas-source-manifest.json`.
 - README incluido en el ZIP: `source/items/armas/README.md`.
 
 ## Cambios al Estado Maestro
