@@ -20,7 +20,8 @@ Repositorio técnico para la migración declarativa del corpus de Hiperaustralis
 - Total actual en el árbol fuente: 38 Items; no representa el inventario histórico completo de 135.
 - `source/actors/`: Actor fixture.
 - `source/journals/`: JournalEntry fixture, restaurado por el workflow desde su representación comprimida.
-- `manifests/items-armas.json`: inventario de los 20 Items de armas y sus hashes.
+- `manifests/items-armas.json`: inventario de los 20 Items de armas y SHA-256 de sus JSON.
+- `validate_armas.py`: gate CI de integridad del lote de 20 Armas; verifica JSON, IDs, nombres y referencias contra el manifiesto. Los assets visuales conservan sus rutas históricas hasta su incorporación verificada.
 - `manifests/reliquias-assets.json`: inventario y hashes de los 16 WebP de reliquias; Tokicura se documenta separadamente.
 - `docs/AUDITORIA_DEPENDENCIAS_ASSETS_ITEMS_2026-11-17.md`: identifica 21 referencias de Armas aún dependientes de rutas del módulo antiguo y define el cotejo pendiente.
 - `TRANSFER_MANIFEST.json`: inventario declarativo del lote de assets, no certificado autónomo de presencia de cada ruta.
