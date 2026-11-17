@@ -11,6 +11,10 @@ Mantener GitHub como fuente versionada, producir desde allí un ZIP instalable y
 - No incorporar contenidos de turianos en esta etapa.
 - La rama anterior `work/meliaz-bridge-0.24.203-audit` queda como fuente de recuperación, no como destino de integración.
 
+## Alcance de archivos
+
+Se integrarán los archivos de Bridge y los recursos gráficos que el código de ejecución referencia. Quedan fuera de esta etapa los recursos no referenciados por el runtime: familiares exóticos, mascotas, originales PNG de tokens, tokens PJ-041 a PJ-052, hoja Kona anterior y el archivo fuente de animalitos. Se conservan en la rama de recuperación para una decisión posterior.
+
 ## Flujo de trabajo
 
 1. **Preparar el módulo:** trasladar a `module/meliaz-bridge/` sólo los archivos aprobados para MELIAZ Bridge 0.24.203.
