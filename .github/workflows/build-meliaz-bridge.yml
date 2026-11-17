@@ -1,0 +1,99 @@
+name: Build MELIAZ Bridge package
+
+on:
+  push:
+    branches:
+      - work/meliaz-bridge-0.24.203-clean
+    paths:
+      - 'module/meliaz-bridge/**'
+      - '.github/workflows/build-meliaz-bridge.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'module/meliaz-bridge/**'
+      - '.github/workflows/build-meliaz-bridge.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate module manifest and referenced files
+        id: manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, pathlib
+          root = pathlib.Path("module/meliaz-bridge")
+          manifest_path = root / "module.json"
+          if not manifest_path.is_file():
+              raise SystemExit("module/meliaz-bridge/module.json is missing")
+          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+          if manifest.get("id") != "meliaz-bridge":
+              raise SystemExit(f"Unexpected module id: {manifest.get('id')!r}")
+          version = str(manifest.get("version", "")).strip()
+          if not version:
+              raise SystemExit("Module version is missing")
+          for key in ("esmodules", "scripts", "styles"):
+              for item in manifest.get(key, []) or []:
+                  if not (root / item).is_file():
+                      raise SystemExit(f"Manifest {key} entry missing: {item}")
+          print(f"version={version}")
+          files = [p for p in root.rglob("*") if p.is_file()]
+          if not files:
+              raise SystemExit("Module directory is empty")
+          print(f"file_count={len(files)}")
+          print(f"PASS: meliaz-bridge {version}; {len(files)} files")
+          PY
+
+      - name: Check JavaScript syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -d '' js_files < <(find module/meliaz-bridge -type f -name '*.js' -print0)
+          if [ "${#js_files[@]}" -eq 0 ]; then
+            echo "No JavaScript files found"
+            exit 1
+          fi
+          for file in "${js_files[@]}"; do
+            node --check "$file"
+          done
+          echo "PASS: checked ${#js_files[@]} JavaScript files"
+
+      - name: Build Foundry module ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          package="meliaz-bridge-${{ steps.manifest.outputs.version }}.zip"
+          (
+            cd module/meliaz-bridge
+            zip -qr "../../dist/$package" .
+          )
+          test -s "dist/$package"
+          unzip -t "dist/$package"
+          sha256sum "dist/$package" | tee "dist/$package.sha256"
+          echo "PACKAGE=$package" >> "$GITHUB_ENV"
+
+      - name: Upload installable package and checksum
+        uses: actions/upload-artifact@v4
+        with:
+          name: meliaz-bridge-${{ steps.manifest.outputs.version }}-foundry
+          path: |
+            dist/${{ env.PACKAGE }}
+            dist/${{ env.PACKAGE }}.sha256
+          if-no-files-found: error
+          retention-days: 30
