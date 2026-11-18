@@ -1,0 +1,81 @@
+{
+  "_id": "HipArm01PackA000",
+  "name": "Cuchillo de piedra",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_piedra.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "arma",
+      "descripcion": "Una hoja de piedra tallada, de filo irregular pero eficaz, sujeta a un mango corto mediante fibras resistentes. Ligero, sencillo y fácil de fabricar allí donde haya buena piedra y manos expertas."
+    },
+    "template": "HipArmaTpl000001",
+    "templateSystemUniqueVersion": 186001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [
+        {
+          "key": "descripcion",
+          "cssClass": "ha-arma-descripcion",
+          "role": 0,
+          "editRole": 0,
+          "permission": 0,
+          "tooltip": "Descripción del arma",
+          "visibilityFormula": "",
+          "editableFormula": "",
+          "label": "Descripción",
+          "defaultValue": "",
+          "style": "dialog",
+          "type": "textArea"
+        }
+      ],
+      "key": "custom_body",
+      "cssClass": "ha-arma-item-sheet",
+      "role": 0,
+      "editRole": 0,
+      "permission": 0,
+      "tooltip": "",
+      "visibilityFormula": "",
+      "editableFormula": "",
+      "flow": "vertical",
+      "align": "left",
+      "verticalAlign": "top",
+      "type": "panel"
+    },
+    "display": {
+      "width": 480,
+      "height": 360,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "cssClass": "",
+      "type": "panel"
+    },
+    "hidden": [],
+    "modifiers": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "meliaz-bridge": {
+      "kind": "arma"
+    },
+    "hiperaustralis-armas": {
+      "slug": "cuchillo-piedra",
+      "catalogVersion": 1,
+      "textStatus": "recovered-reviewed",
+      "mechanics": "none"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_piedra.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

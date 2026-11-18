@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "codigo": "FLO-029",
+      "nombre": "Helecho de agua",
+      "ambito": "Sin asignación territorial confirmada",
+      "motivo": "La fuente no confirma territorio y advierte que no debe tratarse como taxón acreditado de Titiqaqa."
+    },
+    {
+      "codigo": "FLO-033",
+      "nombre": "Helecho terrestre",
+      "ambito": "Territorio no asignado",
+      "motivo": "La fuente no aporta ámbito territorial."
+    },
+    {
+      "codigo": "FLO-037",
+      "nombre": "Yareta",
+      "ambito": "Territorio por confirmar",
+      "motivo": "La ficha mantiene expresamente la asignación territorial pendiente; requiere decisión editorial o fuente territorial adicional."
+    }
+  ],
+  "status": "3_items_pending_territorial_assignment",
+  "note": "FLO-026 se indexa provisionalmente en Paititi y Ngulumapu por su ámbito amplio 'Bosque nublado / templado'. FLO-034 se indexa provisionalmente en Pewenmapu y Patagonia austral por su referencia cordillerana general. Estas referencias no convierten los ámbitos en determinaciones taxonómicas."
+}

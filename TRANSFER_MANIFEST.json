@@ -1,0 +1,1542 @@
+{
+  "package": "LOTE_GITHUB_ASSETS_AUDITADOS_v01",
+  "repo": "ElIgnacioCampos/Hiperaustralis",
+  "branch": "work/native-compendia-pipeline",
+  "purpose": "Binary transfer batch; no source JSON, manifest, runtime reference, or Foundry pack changes except the already-committed Tokicura source JSON reference.",
+  "rules": [
+    "Do not overwrite existing source JSON or manifests.",
+    "Only Tokicura has a committed runtime path; all other assets are staged under module/assets/_staging and are not runtime-linked.",
+    "Do not promote Turianos into runtime until sheet/identity QA.",
+    "DEF-06 / COM-09 Tañaña is excluded because its approved binary is not recovered.",
+    "Sangu and Popr candidates are excluded.",
+    "ERH package uses audited partial consolidation; Lote05 v02 derivatives retained as distinct variants.",
+    "Exact duplicate bytes are stored once; all source aliases are recorded below."
+  ],
+  "physicalFiles": [
+    {
+      "path": "module/assets/_staging/equipo/webp256/com_02_foundry_256.webp",
+      "bytes": 15310,
+      "sha256": "75bf521d11419b619bbae84e96f624a8f890ba5711a68853e85bee531b391511"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/chinchorro_chope.webp",
+      "bytes": 21666,
+      "sha256": "86128383b0fd9cf02bc42e04636adb6d9a2f8b4e4f1be65c502006cbfde60658"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/com_05_foundry_256.webp",
+      "bytes": 45210,
+      "sha256": "43bd76d380614170266e3cb9eba900c3391576c98ff46afc29489f78f718af37"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/selknam_tai_canasto.webp",
+      "bytes": 64606,
+      "sha256": "bd2fb62b35ad1962f4504dba7b9dec46c00120fe86a42ee5988099a52590184b"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/nordico_knifr_cuchillo.webp",
+      "bytes": 14426,
+      "sha256": "6f7605a5299dddff721b6273d168516d82d7d759862b16de0bb6f63e9ee5c46f"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/aymara_qapu_huso.webp",
+      "bytes": 27378,
+      "sha256": "ae70b4a74d0c1b8e198353364753ca55aae5f4cb4e01f65da75709e32506e4f6"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/selknam_bolsa_de_fuego.webp",
+      "bytes": 64818,
+      "sha256": "16415c5d603a14aefbcc495edd07e1d1da9513379dc9f294b057ae01c31c557d"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/chinchorro_canasto.webp",
+      "bytes": 70338,
+      "sha256": "b33486635fe8045393384d41c56b13b27651340eba7fca007df8983108cab17d"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/nordico_eldjarn_yesquero.webp",
+      "bytes": 58760,
+      "sha256": "b243d618ec3bd6734b8c75705fe2667c448076901b05f1db4cfeae3d59347de5"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/com_04_foundry_256.webp",
+      "bytes": 21698,
+      "sha256": "77242a05a00d82f8bc242212d65131a13945d209fe79af0365a0cbb1d732d76a"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/chinchorro_chinguillo.webp",
+      "bytes": 76094,
+      "sha256": "13f021d60722dc0ae814df4aac8d7926683af860dfd32d360f75dbdaf0e83058"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/lickanantay_recipiente_calabaza.webp",
+      "bytes": 45738,
+      "sha256": "81d76ef364759f05711566f84d4a91b20363cab0390ef0e4abdc829281283db7"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/aymara_wayaqa_talega.webp",
+      "bytes": 81196,
+      "sha256": "76a99133c20b4f0e0232aae07e0d5d2a417a6286fd41f20e36f68aec678059fc"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/mapuche_rufugue.webp",
+      "bytes": 18026,
+      "sha256": "f41c02a73f084fcd73778502914f996da9a20dd8b85fbc783285abf99d025190"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/lickanantay_gancho_atalaje.webp",
+      "bytes": 32014,
+      "sha256": "ca461dc79940bad5c080c73a27de2589b73d8b582367396fb1206ec070c0541d"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/selknam_cham_raspador_pieles.webp",
+      "bytes": 32470,
+      "sha256": "462e9c571235ab145aedfb2867d360b8321109f830beb1d6ca231b791ba4c1f0"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/aymara_kiana_piedra_moler.webp",
+      "bytes": 49034,
+      "sha256": "d782b808ca190a0fe76cd148ffa85809a555bf6d3ba042aed69f89afe83117ce"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/mapuche_pilwa.webp",
+      "bytes": 92490,
+      "sha256": "9776590aa158e2905d8ca3bf72b54cae48c26b9506e41cf0f53531b272aa8f46"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/com_06_foundry_256.webp",
+      "bytes": 48352,
+      "sha256": "589f51fcf38383b9b020f514a3ec962bab210f0312b38b6c1b2f95c065fd8be8"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/selknam_mooh_punzon.webp",
+      "bytes": 17458,
+      "sha256": "ee8707004985bfa5b14c0c2ef6d999940ea23797dc2e581fe44bcf25d6b269fb"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/nordico_saum_nal_aguja.webp",
+      "bytes": 9540,
+      "sha256": "e364160285fead6ae064dc863e313838b38781cf1e7e254bd5c4213d2c8e709e"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/com_03_foundry_256.webp",
+      "bytes": 60678,
+      "sha256": "f99cd8519d7e44f253e84bebe599aebec100e3a9ba41e3b27f52bb7508351a13"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/chinchorro_punzon_hueso.webp",
+      "bytes": 21978,
+      "sha256": "e6f0bd65a66a9125973d07fe3b5a8a463af13bc7e68c7cf4db848d49ee031497"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/mapuche_llepu.webp",
+      "bytes": 49980,
+      "sha256": "8d5a8616faec4f51621354d49159a7623053536696eaeba98c467c4890653c0e"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/mapuche_alka_metawe.webp",
+      "bytes": 44984,
+      "sha256": "dafde9158da1d2643741c90134f46ec6717989f3a9abdb8de381b587db85f6d6"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/lickanantay_red_de_carga.webp",
+      "bytes": 52648,
+      "sha256": "379fa080088b2c2ca8194a82282d10e3be356f566043a840f00e114ef7c41208"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/aymara_phuno_vasija.webp",
+      "bytes": 54348,
+      "sha256": "958595038eb62c9f2909ac95811bbc786df31ad6ac1d605def84988697cd0afd"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/com_01_foundry_256.webp",
+      "bytes": 69356,
+      "sha256": "24ef6bb17a12eb84c7bb507649ec735be5cb2aee72cffe6ec7c60554320ecfc4"
+    },
+    {
+      "path": "module/assets/_staging/equipo/webp256/lickanantay_pala_agricola.webp",
+      "bytes": 28316,
+      "sha256": "08af5f21a9a541db0d7d295c47d7ac5c1fa804d930c66a82538476797b272794"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/MAPUCHE_PILWA_MAESTRO_512.png",
+      "bytes": 391500,
+      "sha256": "02e4f25e1996c1cc76b068e3c95756fef10fd63e8581357b5d8279df8fb21268"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/SELKNAM_CHAM_MAESTRO_512.png",
+      "bytes": 161308,
+      "sha256": "38b48f5b333b5d35a385bf413115e178f1e201ce9490a7e01133698789b0c58e"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/SELKNAM_BOLSA_DE_FUEGO_MAESTRO_512.png",
+      "bytes": 331021,
+      "sha256": "8402ba38ff9daf395493cb7646346761274d596499a77e4fdc051b0143cabbb9"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/NORDICO_ELDJARN_YESQUERO_v01.png",
+      "bytes": 312450,
+      "sha256": "6010d4815bdb4b64f699519b8f9284112214ece78da48e464b43156c634749b9"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/CHINCHORRO_CANASTO_v01.png",
+      "bytes": 344823,
+      "sha256": "012eee6c4cff0905b7703c2a0bb4a125bdc4099eb398adc4adb7031b0be416d1"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/COM-01_SOGA_MAESTRO_512.png",
+      "bytes": 335005,
+      "sha256": "ea732c82c2c875ddae82ea9966091bcb0536ada32481a048127e48e39da99530"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/AYMARA_WAYAQA_TALEGA_MAESTRO_512.png",
+      "bytes": 368522,
+      "sha256": "c112df18903d161bd92574cef23152ab15f2ea0c53c750d4aaaa50469747acd5"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/NORDICO_SAUM_NAL_AGUJA_v01_APROBADA.png",
+      "bytes": 37778,
+      "sha256": "608839c49e72bdc9c845b07b15b46303eb1934a2c9a0962d2afd9d10239089be"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/CHINCHORRO_CHINGUILLO_v01.png",
+      "bytes": 332561,
+      "sha256": "ef3b2a8d6d831863a4ca554a149d73296882dede1cac552dcf4e30099deac367"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/MAPUCHE_LLEPU_MAESTRO_512.png",
+      "bytes": 253802,
+      "sha256": "36279e084b4b9e2a91ffd4903ce65637114046e2e4f8eb37c7e3517176f85916"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/COM-02_BASTON_MAESTRO_512.png",
+      "bytes": 65903,
+      "sha256": "88dd950114cfebe7151b0baa7f7534b5cf4139993294592652cf767e86543ac5"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/AYMARA_KIANA_BATAN_MANO_MAESTRO_512.png",
+      "bytes": 279700,
+      "sha256": "4cae8c0366f518df28932fd6923a0816b6e0f2c453016624fa3c64ac33e2daba"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/SELKNAM_TAI_MAESTRO_512.png",
+      "bytes": 346530,
+      "sha256": "7f2d461e037e4c0a56fb3d303f21eb5b674e49c4134e54c859a69fbbabe15743"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/NORDICO_KNIFR_CUCHILLO_v02_APROBADO.png",
+      "bytes": 73779,
+      "sha256": "61cd62262d21120044ac0d0cf1c23f1810545b87481c8294873580754d0ec457"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/COM-06_PEDERNAL_ESLABON_MAESTRO_512.png",
+      "bytes": 240398,
+      "sha256": "c61c4410e76a124345257b5a45233389a6321596c07f8c266e23ff022fc47992"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/CHINCHORRO_PUNZON_HUESO_v01.png",
+      "bytes": 100298,
+      "sha256": "edd216d30449b126e0409d2a126405a8c07653e1da70e977b62cb3759f458a4f"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/LICKANANTAY_GANCHO_ATALAJE_MAESTRO_512.png",
+      "bytes": 163396,
+      "sha256": "0d299ddbdd62210ba2902e80ce16c3ae12654de12bdf6c0655d29bcb64aab7ae"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/COM-04_ANTORCHA_MAESTRO_512.png",
+      "bytes": 86617,
+      "sha256": "a8796f3b59b5aef64175277af77f794589587b925204133bcf6357f448250d38"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/COM-05_ODRE_MAESTRO_512.png",
+      "bytes": 274207,
+      "sha256": "d9e951853bb55d4abaf77affe7d1d5d6b0032cfd44edb73ed411173e8e442f72"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/COM-03_MANTA_MAESTRO_512.png",
+      "bytes": 316192,
+      "sha256": "b9fa44479692130eb08b51fd26d04490cfed738b4d7aae715f6b0ebbf1765fa7"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/AYMARA_PHUNO_VASIJA_MAESTRO_512.png",
+      "bytes": 344359,
+      "sha256": "3530a5399af91cbdbcc988e493899fc7f7adc090299c8bde225a2702f4bccd49"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/SELKNAM_MOOH_MAESTRO_512.png",
+      "bytes": 87068,
+      "sha256": "284a31abfafbf74434b3fa1596b153b969c849adc6a9de28b77853cd082f782e"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/LICKANANTAY_RED_DE_CARGA_MAESTRO_512.png",
+      "bytes": 223790,
+      "sha256": "a95a0f272a8e771d300338994ccbaae7c293d2f3865a63cf6b825eb498c4ee92"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/CHINCHORRO_CHOPE_v01.png",
+      "bytes": 101493,
+      "sha256": "f90908568e99f70f52ca7afe1bc014e768836e48ca6d4513c72bc468077e7135"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/LICKANANTAY_PALA_AGRICOLA_MAESTRO_512.png",
+      "bytes": 149453,
+      "sha256": "43e0f2f33a759a7627969ac2275f56fb336be0da936e85866ccdcb317c10be75"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/MAPUCHE_ALKA_METAWE_MAESTRO_512.png",
+      "bytes": 237805,
+      "sha256": "6a3365af4ff18f37b51f6f6f661ecac023c37215dc4abcdc2aef61f71884b783"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/MAPUCHE_RUFUGUE_MAESTRO_512.png",
+      "bytes": 73173,
+      "sha256": "4fb91c589adc26e6d288933c59603738b321cabef5eae2bde796895809ca197f"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/LICKANANTAY_RECIPIENTE_CALABAZA_MAESTRO_512.png",
+      "bytes": 244076,
+      "sha256": "54708f3885f291aa37cb2776824efc1eb569a9fe0d176b5b5283a5e9476ca2a5"
+    },
+    {
+      "path": "module/assets/_staging/equipo/png512/AYMARA_KAPU_HUSO_MAESTRO_512.png",
+      "bytes": 99890,
+      "sha256": "0135642311a6c49d919a2895d80cdae09631c2421ece98a4f0d9ddcb8fdb5269"
+    },
+    {
+      "path": "module/assets/_staging/defensas/webp256/COM-05_Capa_Selknam_Zorro_256.webp",
+      "bytes": 55852,
+      "sha256": "632a2d21ab1f3a6efe2097efe7dd4f8d7d03c8e1d8dca0676543cc6ab476aa2b"
+    },
+    {
+      "path": "module/assets/_staging/defensas/webp256/COM-06_Escudo_Nordico_256.webp",
+      "bytes": 85044,
+      "sha256": "d1015cdd974d6b6a5a04c15565e2369fd5d53662f11f542a8ccf46b0ad7bcb1e"
+    },
+    {
+      "path": "module/assets/_staging/defensas/webp256/COM-08_Coraza_Chiu-Chiu_256.webp",
+      "bytes": 72796,
+      "sha256": "2dfcfc0354bf1dee28989d4838fdeab6dd9b72561d9e70f5bf259fbed6bc254c"
+    },
+    {
+      "path": "module/assets/_staging/defensas/webp256/COM-07_Casco_Pica_Tarapaca_256.webp",
+      "bytes": 61054,
+      "sha256": "b0e32b13bc91c95f80954e2aabf50dcfa787d33e9a257804704fd5c204cf8920"
+    },
+    {
+      "path": "module/assets/_staging/defensas/webp256/COM-03_Manta_Mapuche_256.webp",
+      "bytes": 62434,
+      "sha256": "535cb7ca1244a81ab5174c51d18bf43813cbaaf7d59b396cb2a563d0c8716c4b"
+    },
+    {
+      "path": "module/assets/_staging/defensas/png256/COM-03_Manta_Mapuche_256.png",
+      "bytes": 91813,
+      "sha256": "ac180712a9bf58da6696de7cb3afc146c52b8f18a0566fb75c8120c8eccf4970"
+    },
+    {
+      "path": "module/assets/_staging/defensas/png256/COM-05_Capa_Selknam_Zorro_256.png",
+      "bytes": 81921,
+      "sha256": "126ab5bde32842b8590ea4f9fa3824a033f3c3eca8531e45d57711848dafbeee"
+    },
+    {
+      "path": "module/assets/_staging/defensas/png256/COM-08_Coraza_Chiu-Chiu_256.png",
+      "bytes": 101695,
+      "sha256": "80f9bdb7f40757c182075acea2bbc8ace948b0e2ac81fe4eb7946e82e07e8679"
+    },
+    {
+      "path": "module/assets/_staging/defensas/png256/COM-06_Escudo_Nordico_256.png",
+      "bytes": 118722,
+      "sha256": "72d9e6ca574651d9002ce545ccb5a7961e27aad6dfee129419693df99afd6ebd"
+    },
+    {
+      "path": "module/assets/_staging/defensas/png256/COM-07_Casco_Pica_Tarapaca_256.png",
+      "bytes": 77994,
+      "sha256": "05c3308c6147d012125d37609b2fb8fe139e59cddfe8b8d45e7d257c0392867c"
+    },
+    {
+      "path": "module/assets/_staging/defensas/png256/COM-10_CELADA_MAPUCHE_256.png",
+      "bytes": 131004,
+      "sha256": "3267fe8a7479a354ea7e77e84e6b0f1aa79b503f639c1fa5897313cecf145806"
+    },
+    {
+      "path": "module/assets/_staging/defensas/webp256/COM-10_CELADA_MAPUCHE_256.webp",
+      "bytes": 71582,
+      "sha256": "cc3f96a051df7ad9f52067e0c8b076da9eb0a25b2a1996e5622d6858b0933522"
+    },
+    {
+      "path": "module/assets/_staging/defensas/png256/COM-11_CORAZA_CHIU_CHIU_256.png",
+      "bytes": 112132,
+      "sha256": "b1c3f4e6a4dc37a052459c77c56730ee79a632607f028b750621abeb40f0127d"
+    },
+    {
+      "path": "module/assets/_staging/defensas/webp256/COM-11_CORAZA_CHIU_CHIU_256.webp",
+      "bytes": 79890,
+      "sha256": "551991bbd4c946ecbf08f1a5e847a0cdd8c296742e256c13a50f646d31bbb556"
+    },
+    {
+      "path": "module/assets/_staging/defensas/png256/COM-12_ARMADURA_ACOLCHADA_CHIMU_256.png",
+      "bytes": 105238,
+      "sha256": "d00c7da2dc29fd83cb4e6686201cb5b691e8d28e2f3baa8b52b276bf7bd2a32a"
+    },
+    {
+      "path": "module/assets/_staging/defensas/webp256/COM-12_ARMADURA_ACOLCHADA_CHIMU_256.webp",
+      "bytes": 69330,
+      "sha256": "f4a6bd39ac5d99ccab0bbdc60cb964e8653ffbf6b0c14fe57369917dc6c65245"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/SIKU_ERH_256.webp",
+      "bytes": 43738,
+      "sha256": "89bffe0500b8ddf00b703a33267b987d0f55c4373bcede1fb623d90ec52b3e27"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/FLAUTA_COYO_ERH_256.webp",
+      "bytes": 9218,
+      "sha256": "446e232ed4d7cdf556a9e718607a6dc45489b8f58c655785a4deb6aa8fc78ce4"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/CAMPANA_PIRAMIDAL_ERH_256.webp",
+      "bytes": 46010,
+      "sha256": "d52d5af9ecaf3eb7586e5f55cb61b01d3a272b63b8e6f6d3fefb7a1231166cb2"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/02_antara_tiwanaku.webp",
+      "bytes": 45044,
+      "sha256": "2fc9d341cd7d0081ab3265a106550fe935de99652d1178ac9ca335f17e5dba15"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/06_sonajero_lickanantay.webp",
+      "bytes": 41888,
+      "sha256": "92bca0d1ed2b270e1502d4f3ccdd65b1617cb988a9916c5a856b31db3b044e0a"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/01_wankara.webp",
+      "bytes": 61482,
+      "sha256": "4d45467e4fd2cace24a461872aba830a04c0c43eedc118c2b3470573d0ab9979"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/05_trompeta_monoxila.webp",
+      "bytes": 15000,
+      "sha256": "aa2bb8321c4eeb9000ba89302d470c35ad812dc2df7c9e20a023fbbb087d2f3d"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/03_sonaja_aymara.webp",
+      "bytes": 35276,
+      "sha256": "b1a457353375f71cf60c3a74a8991a7a318b8dc2471f3558381196f0c7edbec8"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/04_antara_lickanantay.webp",
+      "bytes": 26220,
+      "sha256": "1aa007c1bb13301f2a4e9b1f24ba2368e0cadf5ed052e259ad00502b4a11aea5"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/ERH_Sonaja_Calabaza_Alto_Ramirez_v02_256.webp",
+      "bytes": 12892,
+      "sha256": "f425a7087edc1e7170f663ed06ef95df3c9a75897c2fcffe1fb2e0d718ad89dc"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/ERH_Zampona_Cabuza_7_Tubos_v02_256.webp",
+      "bytes": 12174,
+      "sha256": "6f2c102dcdb49f0170be8b167d698755ea417c96100bd7f80e0882f90d19d9d1"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/ERH_Tambor_Cesteria_Maitas_v02_256.webp",
+      "bytes": 22820,
+      "sha256": "4cd1b340f2691fc3c023cb8617cd31995379a9a106db96f81bd33e466bd23eec"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/ERH_Silbato_Doble_Hueso_Arica_v02_256.webp",
+      "bytes": 18208,
+      "sha256": "3a5123fff844f9b3ab77c327b09511979a4c4fc64808b187da3b8f2f0dfe0c7e"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/ERH_Flauta_Hueso_Chinchorro_v02_256.webp",
+      "bytes": 10774,
+      "sha256": "3414ff70ae51b2fd49f96c97cfc2350d240df11d8b5ec0d87f255dc6337b4c2e"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/ERH_Canto_Corporal_Selknam_v04_256.webp",
+      "bytes": 83812,
+      "sha256": "838c0b6746dd51d67167d68ea9165406e3cec16d8939f31959bab9ad8775ca16"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/ERH_Baston_Percutido_Selknam_v01_256.webp",
+      "bytes": 9210,
+      "sha256": "ca7c34163ae7b21ac0132912477a424308f789f9f13ee2051c40b92873d389f8"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/piloilo_erh_256.webp",
+      "bytes": 49928,
+      "sha256": "44fe741c96bbcdc185fe45b225dbf4aa13764d2abc039539eb8ad207cef81fe4"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/pututu_erh_256.webp",
+      "bytes": 46472,
+      "sha256": "c85f79ac0e51f2194be355b76b6bc679ffb9163c3e2db116d7ef559aed333e77"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/waza_erh_256.webp",
+      "bytes": 20832,
+      "sha256": "42516d8a32aa293a146639ac844a515d1b6aa751362e6dcba858d3a7109e42d5"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/pifullka_erh_256.webp",
+      "bytes": 37872,
+      "sha256": "c4e1aeec786511dff44f84e9a8f80897e84ee43fbf991c12970fd59d6afa748d"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/kultrung_erh_256.webp",
+      "bytes": 65290,
+      "sha256": "f6871ff1e0f968dbf7e745461364dccd68ed79f3dd92063026bdee65bf470be2"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/kaskawilla_erh_256.webp",
+      "bytes": 42256,
+      "sha256": "99d04f3c8d65226cfb8e10a1bbdb168e37bd1e41ed4cd3d78e00aec5668377e6"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/FLAUTA_HUESO_ERH_256.webp",
+      "bytes": 20346,
+      "sha256": "3f81addeee80ef03ea314e3b4887405d92cba2a12d893b4c7f6ef85ea51baa14"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/CUERNO_MUSICAL_ERH_256.webp",
+      "bytes": 31852,
+      "sha256": "fd4562fb1fb2a3dfcced879c9ee8e66c1b8cea3c594a45bc233c54d03e5e9e8b"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/LIRA_ERH_256.webp",
+      "bytes": 47350,
+      "sha256": "f4bb215dd4b10e9006f3244d1af85fd659ffa3f17d3b5476490d37cee5f582dd"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/SONAJERO_HIERRO_ERH_256.webp",
+      "bytes": 34012,
+      "sha256": "7e34e4298e7df38d175f6881efd9ab3c7e6dad28be5cb443d14e89fcdce7981e"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/kakel_kultrung_ERH_256.webp",
+      "bytes": 55902,
+      "sha256": "68962384680974a17eed436187b640f7d30dabc2d50640e5b5d9c00154e786d6"
+    },
+    {
+      "path": "module/assets/_staging/instrumentos-erh/webp_256/ARPA_BOCA_NORDICA_ERH_256.webp",
+      "bytes": 34724,
+      "sha256": "eae0fbc7330c34bea7a66a147e2929c54bc43d0f820031887e56b799431d09b8"
+    },
+    {
+      "path": "module/assets/_staging/turianos/cantor_tamborilero.webp",
+      "bytes": 234400,
+      "sha256": "ed76179de48f9be939edd2d6f1dd7ff7d936769badd1c4771f99fe5164c865fc"
+    },
+    {
+      "path": "module/assets/_staging/turianos/guerrero_gorilesco_lanza.webp",
+      "bytes": 197934,
+      "sha256": "93d557b7250f0715eb341860ddc1575017e36cd65c43543b4262f445b9842567"
+    },
+    {
+      "path": "module/assets/_staging/turianos/sabio_pregonando_libro.webp",
+      "bytes": 236148,
+      "sha256": "806ec8ea4a3efb08a7fe23984cdae0869847dd5a36de161ba6395555453fb8ce"
+    },
+    {
+      "path": "module/assets/_staging/turianos/viajero_trenzas.webp",
+      "bytes": 199452,
+      "sha256": "a692735ede5e3711da7deeaeb0235eae408a13e3810d314f2d5cd789141218b3"
+    },
+    {
+      "path": "module/assets/reliquias/tokicura_256.webp",
+      "bytes": 11154,
+      "sha256": "1a1a480ed3014b1f031e9e295ddf57ece94b2f5d060fcd6edb5fc6fb87421c09"
+    },
+    {
+      "path": "source-original/reliquias/Tokicura.png",
+      "bytes": 26332,
+      "sha256": "eac02773aeb16224066a9777d5228ac1143d3ce2bf5d38de0ef1da756065845a"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/com_02_foundry_256.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/com_02_foundry_256.webp",
+      "sha256": "75bf521d11419b619bbae84e96f624a8f890ba5711a68853e85bee531b391511",
+      "bytes": 15310,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/chinchorro_chope.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/chinchorro_chope.webp",
+      "sha256": "86128383b0fd9cf02bc42e04636adb6d9a2f8b4e4f1be65c502006cbfde60658",
+      "bytes": 21666,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/com_05_foundry_256.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/com_05_foundry_256.webp",
+      "sha256": "43bd76d380614170266e3cb9eba900c3391576c98ff46afc29489f78f718af37",
+      "bytes": 45210,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/selknam_tai_canasto.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/selknam_tai_canasto.webp",
+      "sha256": "bd2fb62b35ad1962f4504dba7b9dec46c00120fe86a42ee5988099a52590184b",
+      "bytes": 64606,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/nordico_knifr_cuchillo.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/nordico_knifr_cuchillo.webp",
+      "sha256": "6f7605a5299dddff721b6273d168516d82d7d759862b16de0bb6f63e9ee5c46f",
+      "bytes": 14426,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/aymara_qapu_huso.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/aymara_qapu_huso.webp",
+      "sha256": "ae70b4a74d0c1b8e198353364753ca55aae5f4cb4e01f65da75709e32506e4f6",
+      "bytes": 27378,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/selknam_bolsa_de_fuego.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/selknam_bolsa_de_fuego.webp",
+      "sha256": "16415c5d603a14aefbcc495edd07e1d1da9513379dc9f294b057ae01c31c557d",
+      "bytes": 64818,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/chinchorro_canasto.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/chinchorro_canasto.webp",
+      "sha256": "b33486635fe8045393384d41c56b13b27651340eba7fca007df8983108cab17d",
+      "bytes": 70338,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/nordico_eldjarn_yesquero.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/nordico_eldjarn_yesquero.webp",
+      "sha256": "b243d618ec3bd6734b8c75705fe2667c448076901b05f1db4cfeae3d59347de5",
+      "bytes": 58760,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/com_04_foundry_256.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/com_04_foundry_256.webp",
+      "sha256": "77242a05a00d82f8bc242212d65131a13945d209fe79af0365a0cbb1d732d76a",
+      "bytes": 21698,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/chinchorro_chinguillo.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/chinchorro_chinguillo.webp",
+      "sha256": "13f021d60722dc0ae814df4aac8d7926683af860dfd32d360f75dbdaf0e83058",
+      "bytes": 76094,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/lickanantay_recipiente_calabaza.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/lickanantay_recipiente_calabaza.webp",
+      "sha256": "81d76ef364759f05711566f84d4a91b20363cab0390ef0e4abdc829281283db7",
+      "bytes": 45738,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/aymara_wayaqa_talega.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/aymara_wayaqa_talega.webp",
+      "sha256": "76a99133c20b4f0e0232aae07e0d5d2a417a6286fd41f20e36f68aec678059fc",
+      "bytes": 81196,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/mapuche_rufugue.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/mapuche_rufugue.webp",
+      "sha256": "f41c02a73f084fcd73778502914f996da9a20dd8b85fbc783285abf99d025190",
+      "bytes": 18026,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/lickanantay_gancho_atalaje.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/lickanantay_gancho_atalaje.webp",
+      "sha256": "ca461dc79940bad5c080c73a27de2589b73d8b582367396fb1206ec070c0541d",
+      "bytes": 32014,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/selknam_cham_raspador_pieles.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/selknam_cham_raspador_pieles.webp",
+      "sha256": "462e9c571235ab145aedfb2867d360b8321109f830beb1d6ca231b791ba4c1f0",
+      "bytes": 32470,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/aymara_kiana_piedra_moler.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/aymara_kiana_piedra_moler.webp",
+      "sha256": "d782b808ca190a0fe76cd148ffa85809a555bf6d3ba042aed69f89afe83117ce",
+      "bytes": 49034,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/mapuche_pilwa.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/mapuche_pilwa.webp",
+      "sha256": "9776590aa158e2905d8ca3bf72b54cae48c26b9506e41cf0f53531b272aa8f46",
+      "bytes": 92490,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/com_06_foundry_256.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/com_06_foundry_256.webp",
+      "sha256": "589f51fcf38383b9b020f514a3ec962bab210f0312b38b6c1b2f95c065fd8be8",
+      "bytes": 48352,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/selknam_mooh_punzon.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/selknam_mooh_punzon.webp",
+      "sha256": "ee8707004985bfa5b14c0c2ef6d999940ea23797dc2e581fe44bcf25d6b269fb",
+      "bytes": 17458,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/nordico_saum_nal_aguja.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/nordico_saum_nal_aguja.webp",
+      "sha256": "e364160285fead6ae064dc863e313838b38781cf1e7e254bd5c4213d2c8e709e",
+      "bytes": 9540,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/com_03_foundry_256.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/com_03_foundry_256.webp",
+      "sha256": "f99cd8519d7e44f253e84bebe599aebec100e3a9ba41e3b27f52bb7508351a13",
+      "bytes": 60678,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/chinchorro_punzon_hueso.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/chinchorro_punzon_hueso.webp",
+      "sha256": "e6f0bd65a66a9125973d07fe3b5a8a463af13bc7e68c7cf4db848d49ee031497",
+      "bytes": 21978,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/mapuche_llepu.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/mapuche_llepu.webp",
+      "sha256": "8d5a8616faec4f51621354d49159a7623053536696eaeba98c467c4890653c0e",
+      "bytes": 49980,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/mapuche_alka_metawe.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/mapuche_alka_metawe.webp",
+      "sha256": "dafde9158da1d2643741c90134f46ec6717989f3a9abdb8de381b587db85f6d6",
+      "bytes": 44984,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/lickanantay_red_de_carga.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/lickanantay_red_de_carga.webp",
+      "sha256": "379fa080088b2c2ca8194a82282d10e3be356f566043a840f00e114ef7c41208",
+      "bytes": 52648,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/aymara_phuno_vasija.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/aymara_phuno_vasija.webp",
+      "sha256": "958595038eb62c9f2909ac95811bbc786df31ad6ac1d605def84988697cd0afd",
+      "bytes": 54348,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/com_01_foundry_256.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/com_01_foundry_256.webp",
+      "sha256": "24ef6bb17a12eb84c7bb507649ec735be5cb2aee72cffe6ec7c60554320ecfc4",
+      "bytes": 69356,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "FOUNDRY_WEBP_256/lickanantay_pala_agricola.webp",
+      "stagedPath": "module/assets/_staging/equipo/webp256/lickanantay_pala_agricola.webp",
+      "sha256": "08af5f21a9a541db0d7d295c47d7ac5c1fa804d930c66a82538476797b272794",
+      "bytes": 28316,
+      "status": "approved_runtime_derivative"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/MAPUCHE_PILWA_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/MAPUCHE_PILWA_MAESTRO_512.png",
+      "sha256": "02e4f25e1996c1cc76b068e3c95756fef10fd63e8581357b5d8279df8fb21268",
+      "bytes": 391500,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/SELKNAM_CHAM_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/SELKNAM_CHAM_MAESTRO_512.png",
+      "sha256": "38b48f5b333b5d35a385bf413115e178f1e201ce9490a7e01133698789b0c58e",
+      "bytes": 161308,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/SELKNAM_BOLSA_DE_FUEGO_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/SELKNAM_BOLSA_DE_FUEGO_MAESTRO_512.png",
+      "sha256": "8402ba38ff9daf395493cb7646346761274d596499a77e4fdc051b0143cabbb9",
+      "bytes": 331021,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/NORDICO_ELDJARN_YESQUERO_v01.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/NORDICO_ELDJARN_YESQUERO_v01.png",
+      "sha256": "6010d4815bdb4b64f699519b8f9284112214ece78da48e464b43156c634749b9",
+      "bytes": 312450,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/CHINCHORRO_CANASTO_v01.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/CHINCHORRO_CANASTO_v01.png",
+      "sha256": "012eee6c4cff0905b7703c2a0bb4a125bdc4099eb398adc4adb7031b0be416d1",
+      "bytes": 344823,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/COM-01_SOGA_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/COM-01_SOGA_MAESTRO_512.png",
+      "sha256": "ea732c82c2c875ddae82ea9966091bcb0536ada32481a048127e48e39da99530",
+      "bytes": 335005,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/AYMARA_WAYAQA_TALEGA_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/AYMARA_WAYAQA_TALEGA_MAESTRO_512.png",
+      "sha256": "c112df18903d161bd92574cef23152ab15f2ea0c53c750d4aaaa50469747acd5",
+      "bytes": 368522,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/NORDICO_SAUM_NAL_AGUJA_v01_APROBADA.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/NORDICO_SAUM_NAL_AGUJA_v01_APROBADA.png",
+      "sha256": "608839c49e72bdc9c845b07b15b46303eb1934a2c9a0962d2afd9d10239089be",
+      "bytes": 37778,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/CHINCHORRO_CHINGUILLO_v01.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/CHINCHORRO_CHINGUILLO_v01.png",
+      "sha256": "ef3b2a8d6d831863a4ca554a149d73296882dede1cac552dcf4e30099deac367",
+      "bytes": 332561,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/MAPUCHE_LLEPU_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/MAPUCHE_LLEPU_MAESTRO_512.png",
+      "sha256": "36279e084b4b9e2a91ffd4903ce65637114046e2e4f8eb37c7e3517176f85916",
+      "bytes": 253802,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/COM-02_BASTON_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/COM-02_BASTON_MAESTRO_512.png",
+      "sha256": "88dd950114cfebe7151b0baa7f7534b5cf4139993294592652cf767e86543ac5",
+      "bytes": 65903,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/AYMARA_KIANA_BATAN_MANO_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/AYMARA_KIANA_BATAN_MANO_MAESTRO_512.png",
+      "sha256": "4cae8c0366f518df28932fd6923a0816b6e0f2c453016624fa3c64ac33e2daba",
+      "bytes": 279700,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/SELKNAM_TAI_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/SELKNAM_TAI_MAESTRO_512.png",
+      "sha256": "7f2d461e037e4c0a56fb3d303f21eb5b674e49c4134e54c859a69fbbabe15743",
+      "bytes": 346530,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/NORDICO_KNIFR_CUCHILLO_v02_APROBADO.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/NORDICO_KNIFR_CUCHILLO_v02_APROBADO.png",
+      "sha256": "61cd62262d21120044ac0d0cf1c23f1810545b87481c8294873580754d0ec457",
+      "bytes": 73779,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/COM-06_PEDERNAL_ESLABON_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/COM-06_PEDERNAL_ESLABON_MAESTRO_512.png",
+      "sha256": "c61c4410e76a124345257b5a45233389a6321596c07f8c266e23ff022fc47992",
+      "bytes": 240398,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/CHINCHORRO_PUNZON_HUESO_v01.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/CHINCHORRO_PUNZON_HUESO_v01.png",
+      "sha256": "edd216d30449b126e0409d2a126405a8c07653e1da70e977b62cb3759f458a4f",
+      "bytes": 100298,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/LICKANANTAY_GANCHO_ATALAJE_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/LICKANANTAY_GANCHO_ATALAJE_MAESTRO_512.png",
+      "sha256": "0d299ddbdd62210ba2902e80ce16c3ae12654de12bdf6c0655d29bcb64aab7ae",
+      "bytes": 163396,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/COM-04_ANTORCHA_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/COM-04_ANTORCHA_MAESTRO_512.png",
+      "sha256": "a8796f3b59b5aef64175277af77f794589587b925204133bcf6357f448250d38",
+      "bytes": 86617,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/COM-05_ODRE_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/COM-05_ODRE_MAESTRO_512.png",
+      "sha256": "d9e951853bb55d4abaf77affe7d1d5d6b0032cfd44edb73ed411173e8e442f72",
+      "bytes": 274207,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/COM-03_MANTA_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/COM-03_MANTA_MAESTRO_512.png",
+      "sha256": "b9fa44479692130eb08b51fd26d04490cfed738b4d7aae715f6b0ebbf1765fa7",
+      "bytes": 316192,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/AYMARA_PHUNO_VASIJA_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/AYMARA_PHUNO_VASIJA_MAESTRO_512.png",
+      "sha256": "3530a5399af91cbdbcc988e493899fc7f7adc090299c8bde225a2702f4bccd49",
+      "bytes": 344359,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/SELKNAM_MOOH_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/SELKNAM_MOOH_MAESTRO_512.png",
+      "sha256": "284a31abfafbf74434b3fa1596b153b969c849adc6a9de28b77853cd082f782e",
+      "bytes": 87068,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/LICKANANTAY_RED_DE_CARGA_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/LICKANANTAY_RED_DE_CARGA_MAESTRO_512.png",
+      "sha256": "a95a0f272a8e771d300338994ccbaae7c293d2f3865a63cf6b825eb498c4ee92",
+      "bytes": 223790,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/CHINCHORRO_CHOPE_v01.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/CHINCHORRO_CHOPE_v01.png",
+      "sha256": "f90908568e99f70f52ca7afe1bc014e768836e48ca6d4513c72bc468077e7135",
+      "bytes": 101493,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/LICKANANTAY_PALA_AGRICOLA_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/LICKANANTAY_PALA_AGRICOLA_MAESTRO_512.png",
+      "sha256": "43e0f2f33a759a7627969ac2275f56fb336be0da936e85866ccdcb317c10be75",
+      "bytes": 149453,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/MAPUCHE_ALKA_METAWE_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/MAPUCHE_ALKA_METAWE_MAESTRO_512.png",
+      "sha256": "6a3365af4ff18f37b51f6f6f661ecac023c37215dc4abcdc2aef61f71884b783",
+      "bytes": 237805,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/MAPUCHE_RUFUGUE_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/MAPUCHE_RUFUGUE_MAESTRO_512.png",
+      "sha256": "4fb91c589adc26e6d288933c59603738b321cabef5eae2bde796895809ca197f",
+      "bytes": 73173,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/LICKANANTAY_RECIPIENTE_CALABAZA_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/LICKANANTAY_RECIPIENTE_CALABAZA_MAESTRO_512.png",
+      "sha256": "54708f3885f291aa37cb2776824efc1eb569a9fe0d176b5b5283a5e9476ca2a5",
+      "bytes": 244076,
+      "status": "approved_master"
+    },
+    {
+      "family": "equipo",
+      "sourcePackage": "HIPERAUSTRALIS_EQUIPO_COMPLETO_INTEGRACION_v01.zip",
+      "sourceMember": "MAESTROS_PNG_512/AYMARA_KAPU_HUSO_MAESTRO_512.png",
+      "stagedPath": "module/assets/_staging/equipo/png512/AYMARA_KAPU_HUSO_MAESTRO_512.png",
+      "sha256": "0135642311a6c49d919a2895d80cdae09631c2421ece98a4f0d9ddcb8fdb5269",
+      "bytes": 99890,
+      "status": "approved_master"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/WEBP_256/COM-05_Capa_Selknam_Zorro_256.webp",
+      "stagedPath": "module/assets/_staging/defensas/webp256/COM-05_Capa_Selknam_Zorro_256.webp",
+      "sha256": "632a2d21ab1f3a6efe2097efe7dd4f8d7d03c8e1d8dca0676543cc6ab476aa2b",
+      "bytes": 55852,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/WEBP_256/COM-06_Escudo_Nordico_256.webp",
+      "stagedPath": "module/assets/_staging/defensas/webp256/COM-06_Escudo_Nordico_256.webp",
+      "sha256": "d1015cdd974d6b6a5a04c15565e2369fd5d53662f11f542a8ccf46b0ad7bcb1e",
+      "bytes": 85044,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/WEBP_256/COM-08_Coraza_Chiu-Chiu_256.webp",
+      "stagedPath": "module/assets/_staging/defensas/webp256/COM-08_Coraza_Chiu-Chiu_256.webp",
+      "sha256": "2dfcfc0354bf1dee28989d4838fdeab6dd9b72561d9e70f5bf259fbed6bc254c",
+      "bytes": 72796,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/WEBP_256/COM-07_Casco_Pica_Tarapaca_256.webp",
+      "stagedPath": "module/assets/_staging/defensas/webp256/COM-07_Casco_Pica_Tarapaca_256.webp",
+      "sha256": "b0e32b13bc91c95f80954e2aabf50dcfa787d33e9a257804704fd5c204cf8920",
+      "bytes": 61054,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/WEBP_256/COM-03_Manta_Mapuche_256.webp",
+      "stagedPath": "module/assets/_staging/defensas/webp256/COM-03_Manta_Mapuche_256.webp",
+      "sha256": "535cb7ca1244a81ab5174c51d18bf43813cbaaf7d59b396cb2a563d0c8716c4b",
+      "bytes": 62434,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/PNG_256/COM-03_Manta_Mapuche_256.png",
+      "stagedPath": "module/assets/_staging/defensas/png256/COM-03_Manta_Mapuche_256.png",
+      "sha256": "ac180712a9bf58da6696de7cb3afc146c52b8f18a0566fb75c8120c8eccf4970",
+      "bytes": 91813,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/PNG_256/COM-05_Capa_Selknam_Zorro_256.png",
+      "stagedPath": "module/assets/_staging/defensas/png256/COM-05_Capa_Selknam_Zorro_256.png",
+      "sha256": "126ab5bde32842b8590ea4f9fa3824a033f3c3eca8531e45d57711848dafbeee",
+      "bytes": 81921,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/PNG_256/COM-08_Coraza_Chiu-Chiu_256.png",
+      "stagedPath": "module/assets/_staging/defensas/png256/COM-08_Coraza_Chiu-Chiu_256.png",
+      "sha256": "80f9bdb7f40757c182075acea2bbc8ace948b0e2ac81fe4eb7946e82e07e8679",
+      "bytes": 101695,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/PNG_256/COM-06_Escudo_Nordico_256.png",
+      "stagedPath": "module/assets/_staging/defensas/png256/COM-06_Escudo_Nordico_256.png",
+      "sha256": "72d9e6ca574651d9002ce545ccb5a7961e27aad6dfee129419693df99afd6ebd",
+      "bytes": 118722,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/PNG_256/COM-07_Casco_Pica_Tarapaca_256.png",
+      "stagedPath": "module/assets/_staging/defensas/png256/COM-07_Casco_Pica_Tarapaca_256.png",
+      "sha256": "05c3308c6147d012125d37609b2fb8fe139e59cddfe8b8d45e7d257c0392867c",
+      "bytes": 77994,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/PNG_256/COM-10_CELADA_MAPUCHE_256.png",
+      "stagedPath": "module/assets/_staging/defensas/png256/COM-10_CELADA_MAPUCHE_256.png",
+      "sha256": "3267fe8a7479a354ea7e77e84e6b0f1aa79b503f639c1fa5897313cecf145806",
+      "bytes": 131004,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/WEBP_256/COM-10_CELADA_MAPUCHE_256.webp",
+      "stagedPath": "module/assets/_staging/defensas/webp256/COM-10_CELADA_MAPUCHE_256.webp",
+      "sha256": "cc3f96a051df7ad9f52067e0c8b076da9eb0a25b2a1996e5622d6858b0933522",
+      "bytes": 71582,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/PNG_256/COM-11_CORAZA_CHIU_CHIU_256.png",
+      "stagedPath": "module/assets/_staging/defensas/png256/COM-11_CORAZA_CHIU_CHIU_256.png",
+      "sha256": "b1c3f4e6a4dc37a052459c77c56730ee79a632607f028b750621abeb40f0127d",
+      "bytes": 112132,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/WEBP_256/COM-11_CORAZA_CHIU_CHIU_256.webp",
+      "stagedPath": "module/assets/_staging/defensas/webp256/COM-11_CORAZA_CHIU_CHIU_256.webp",
+      "sha256": "551991bbd4c946ecbf08f1a5e847a0cdd8c296742e256c13a50f646d31bbb556",
+      "bytes": 79890,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/PNG_256/COM-12_ARMADURA_ACOLCHADA_CHIMU_256.png",
+      "stagedPath": "module/assets/_staging/defensas/png256/COM-12_ARMADURA_ACOLCHADA_CHIMU_256.png",
+      "sha256": "d00c7da2dc29fd83cb4e6686201cb5b691e8d28e2f3baa8b52b276bf7bd2a32a",
+      "bytes": 105238,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "defensas",
+      "sourcePackage": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sourceMember": "COM_DEFENSAS/WEBP_256/COM-12_ARMADURA_ACOLCHADA_CHIMU_256.webp",
+      "stagedPath": "module/assets/_staging/defensas/webp256/COM-12_ARMADURA_ACOLCHADA_CHIMU_256.webp",
+      "sha256": "f4a6bd39ac5d99ccab0bbdc60cb964e8653ffbf6b0c14fe57369917dc6c65245",
+      "bytes": 69330,
+      "status": "approved_asset_present"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE03/webp_256/SIKU_ERH_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/SIKU_ERH_256.webp",
+      "sha256": "89bffe0500b8ddf00b703a33267b987d0f55c4373bcede1fb623d90ec52b3e27",
+      "bytes": 43738,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE03/webp_256/FLAUTA_COYO_ERH_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/FLAUTA_COYO_ERH_256.webp",
+      "sha256": "446e232ed4d7cdf556a9e718607a6dc45489b8f58c655785a4deb6aa8fc78ce4",
+      "bytes": 9218,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE03/webp_256/CAMPANA_PIRAMIDAL_ERH_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/CAMPANA_PIRAMIDAL_ERH_256.webp",
+      "sha256": "d52d5af9ecaf3eb7586e5f55cb61b01d3a272b63b8e6f6d3fefb7a1231166cb2",
+      "bytes": 46010,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE02_ANDINO_LICKANANTAY/webp_256/02_antara_tiwanaku.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/02_antara_tiwanaku.webp",
+      "sha256": "2fc9d341cd7d0081ab3265a106550fe935de99652d1178ac9ca335f17e5dba15",
+      "bytes": 45044,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE02_ANDINO_LICKANANTAY/webp_256/06_sonajero_lickanantay.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/06_sonajero_lickanantay.webp",
+      "sha256": "92bca0d1ed2b270e1502d4f3ccdd65b1617cb988a9916c5a856b31db3b044e0a",
+      "bytes": 41888,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE02_ANDINO_LICKANANTAY/webp_256/01_wankara.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/01_wankara.webp",
+      "sha256": "4d45467e4fd2cace24a461872aba830a04c0c43eedc118c2b3470573d0ab9979",
+      "bytes": 61482,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE02_ANDINO_LICKANANTAY/webp_256/05_trompeta_monoxila.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/05_trompeta_monoxila.webp",
+      "sha256": "aa2bb8321c4eeb9000ba89302d470c35ad812dc2df7c9e20a023fbbb087d2f3d",
+      "bytes": 15000,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE02_ANDINO_LICKANANTAY/webp_256/03_sonaja_aymara.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/03_sonaja_aymara.webp",
+      "sha256": "b1a457353375f71cf60c3a74a8991a7a318b8dc2471f3558381196f0c7edbec8",
+      "bytes": 35276,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE02_ANDINO_LICKANANTAY/webp_256/04_antara_lickanantay.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/04_antara_lickanantay.webp",
+      "sha256": "1aa007c1bb13301f2a4e9b1f24ba2368e0cadf5ed052e259ad00502b4a11aea5",
+      "bytes": 26220,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE05_NORTE_COSTERO/webp_256/ERH_Sonaja_Calabaza_Alto_Ramirez_v02_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/ERH_Sonaja_Calabaza_Alto_Ramirez_v02_256.webp",
+      "sha256": "f425a7087edc1e7170f663ed06ef95df3c9a75897c2fcffe1fb2e0d718ad89dc",
+      "bytes": 12892,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE05_NORTE_COSTERO/webp_256/ERH_Zampona_Cabuza_7_Tubos_v02_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/ERH_Zampona_Cabuza_7_Tubos_v02_256.webp",
+      "sha256": "6f2c102dcdb49f0170be8b167d698755ea417c96100bd7f80e0882f90d19d9d1",
+      "bytes": 12174,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE05_NORTE_COSTERO/webp_256/ERH_Tambor_Cesteria_Maitas_v02_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/ERH_Tambor_Cesteria_Maitas_v02_256.webp",
+      "sha256": "4cd1b340f2691fc3c023cb8617cd31995379a9a106db96f81bd33e466bd23eec",
+      "bytes": 22820,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE05_NORTE_COSTERO/webp_256/ERH_Silbato_Doble_Hueso_Arica_v02_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/ERH_Silbato_Doble_Hueso_Arica_v02_256.webp",
+      "sha256": "3a5123fff844f9b3ab77c327b09511979a4c4fc64808b187da3b8f2f0dfe0c7e",
+      "bytes": 18208,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE05_NORTE_COSTERO/webp_256/ERH_Flauta_Hueso_Chinchorro_v02_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/ERH_Flauta_Hueso_Chinchorro_v02_256.webp",
+      "sha256": "3414ff70ae51b2fd49f96c97cfc2350d240df11d8b5ec0d87f255dc6337b4c2e",
+      "bytes": 10774,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE04_SELKNAM/webp_256/ERH_Canto_Corporal_Selknam_v04_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/ERH_Canto_Corporal_Selknam_v04_256.webp",
+      "sha256": "838c0b6746dd51d67167d68ea9165406e3cec16d8939f31959bab9ad8775ca16",
+      "bytes": 83812,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE04_SELKNAM/webp_256/ERH_Baston_Percutido_Selknam_v01_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/ERH_Baston_Percutido_Selknam_v01_256.webp",
+      "sha256": "ca7c34163ae7b21ac0132912477a424308f789f9f13ee2051c40b92873d389f8",
+      "bytes": 9210,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE01_MAPUCHE_ANDINO/webp_256/piloilo_erh_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/piloilo_erh_256.webp",
+      "sha256": "44fe741c96bbcdc185fe45b225dbf4aa13764d2abc039539eb8ad207cef81fe4",
+      "bytes": 49928,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE01_MAPUCHE_ANDINO/webp_256/pututu_erh_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/pututu_erh_256.webp",
+      "sha256": "c85f79ac0e51f2194be355b76b6bc679ffb9163c3e2db116d7ef559aed333e77",
+      "bytes": 46472,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE01_MAPUCHE_ANDINO/webp_256/waza_erh_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/waza_erh_256.webp",
+      "sha256": "42516d8a32aa293a146639ac844a515d1b6aa751362e6dcba858d3a7109e42d5",
+      "bytes": 20832,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE01_MAPUCHE_ANDINO/webp_256/pifullka_erh_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/pifullka_erh_256.webp",
+      "sha256": "c4e1aeec786511dff44f84e9a8f80897e84ee43fbf991c12970fd59d6afa748d",
+      "bytes": 37872,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE01_MAPUCHE_ANDINO/webp_256/kultrung_erh_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/kultrung_erh_256.webp",
+      "sha256": "f6871ff1e0f968dbf7e745461364dccd68ed79f3dd92063026bdee65bf470be2",
+      "bytes": 65290,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE01_MAPUCHE_ANDINO/webp_256/kaskawilla_erh_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/kaskawilla_erh_256.webp",
+      "sha256": "99d04f3c8d65226cfb8e10a1bbdb168e37bd1e41ed4cd3d78e00aec5668377e6",
+      "bytes": 42256,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE02_NORDICO/webp_256/FLAUTA_HUESO_ERH_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/FLAUTA_HUESO_ERH_256.webp",
+      "sha256": "3f81addeee80ef03ea314e3b4887405d92cba2a12d893b4c7f6ef85ea51baa14",
+      "bytes": 20346,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE02_NORDICO/webp_256/CUERNO_MUSICAL_ERH_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/CUERNO_MUSICAL_ERH_256.webp",
+      "sha256": "fd4562fb1fb2a3dfcced879c9ee8e66c1b8cea3c594a45bc233c54d03e5e9e8b",
+      "bytes": 31852,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE02_NORDICO/webp_256/LIRA_ERH_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/LIRA_ERH_256.webp",
+      "sha256": "f4bb215dd4b10e9006f3244d1af85fd659ffa3f17d3b5476490d37cee5f582dd",
+      "bytes": 47350,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "LOTE02_NORDICO/webp_256/SONAJERO_HIERRO_ERH_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/SONAJERO_HIERRO_ERH_256.webp",
+      "sha256": "7e34e4298e7df38d175f6881efd9ab3c7e6dad28be5cb443d14e89fcdce7981e",
+      "bytes": 34012,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "EXTRAS_APROBADOS/webp_256/kakel_kultrung_ERH_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/kakel_kultrung_ERH_256.webp",
+      "sha256": "68962384680974a17eed436187b640f7d30dabc2d50640e5b5d9c00154e786d6",
+      "bytes": 55902,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "instrumentos_ERH",
+      "sourcePackage": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sourceMember": "EXTRAS_APROBADOS/webp_256/ARPA_BOCA_NORDICA_ERH_256.webp",
+      "stagedPath": "module/assets/_staging/instrumentos-erh/webp_256/ARPA_BOCA_NORDICA_ERH_256.webp",
+      "sha256": "eae0fbc7330c34bea7a66a147e2929c54bc43d0f820031887e56b799431d09b8",
+      "bytes": 34724,
+      "status": "audited_runtime_derivative"
+    },
+    {
+      "family": "turianos",
+      "sourcePackage": "HIPERAUSTRALIS_TURIANOS_TUR01-06_CARPETA_CULTURAS.zip",
+      "sourceMember": "assets/adversarios/turianos/cantor_tamborilero.webp",
+      "stagedPath": "module/assets/_staging/turianos/cantor_tamborilero.webp",
+      "sha256": "ed76179de48f9be939edd2d6f1dd7ff7d936769badd1c4771f99fe5164c865fc",
+      "bytes": 234400,
+      "status": "visual_recovered_sheet_pending"
+    },
+    {
+      "family": "turianos",
+      "sourcePackage": "HIPERAUSTRALIS_TURIANOS_TUR01-06_CARPETA_CULTURAS.zip",
+      "sourceMember": "assets/adversarios/turianos/guerrero_gorilesco_lanza.webp",
+      "stagedPath": "module/assets/_staging/turianos/guerrero_gorilesco_lanza.webp",
+      "sha256": "93d557b7250f0715eb341860ddc1575017e36cd65c43543b4262f445b9842567",
+      "bytes": 197934,
+      "status": "visual_recovered_sheet_pending"
+    },
+    {
+      "family": "turianos",
+      "sourcePackage": "HIPERAUSTRALIS_TURIANOS_TUR01-06_CARPETA_CULTURAS.zip",
+      "sourceMember": "assets/adversarios/turianos/sabio_pregonando_libro.webp",
+      "stagedPath": "module/assets/_staging/turianos/sabio_pregonando_libro.webp",
+      "sha256": "806ec8ea4a3efb08a7fe23984cdae0869847dd5a36de161ba6395555453fb8ce",
+      "bytes": 236148,
+      "status": "visual_recovered_sheet_pending"
+    },
+    {
+      "family": "turianos",
+      "sourcePackage": "HIPERAUSTRALIS_TURIANOS_TUR01-06_CARPETA_CULTURAS.zip",
+      "sourceMember": "assets/adversarios/turianos/viajero_trenzas.webp",
+      "stagedPath": "module/assets/_staging/turianos/viajero_trenzas.webp",
+      "sha256": "a692735ede5e3711da7deeaeb0235eae408a13e3810d314f2d5cd789141218b3",
+      "bytes": 199452,
+      "status": "visual_recovered_sheet_pending"
+    },
+    {
+      "family": "reliquias",
+      "sourcePackage": "LOTE_GITHUB_TOKICURA_v01.zip",
+      "sourceMember": "LOTE_GITHUB_TOKICURA_v01/module/assets/reliquias/tokicura_256.webp",
+      "stagedPath": "module/assets/reliquias/tokicura_256.webp",
+      "sha256": "1a1a480ed3014b1f031e9e295ddf57ece94b2f5d060fcd6edb5fc6fb87421c09",
+      "bytes": 11154,
+      "status": "new_item_runtime_asset"
+    },
+    {
+      "family": "reliquias",
+      "sourcePackage": "HIPERAUSTRALIS_RELIQUIAS_LEGENDARIAS_TOKICURA_v02.zip",
+      "sourceMember": "assets/Reliquias Legendarias/Tokicura.png",
+      "stagedPath": "source-original/reliquias/Tokicura.png",
+      "sha256": "eac02773aeb16224066a9777d5228ac1143d3ce2bf5d38de0ef1da756065845a",
+      "bytes": 26332,
+      "status": "source_master"
+    }
+  ],
+  "counts": {
+    "physicalFiles": 108,
+    "sourceRecords": 108,
+    "families": [
+      "defensas",
+      "equipo",
+      "instrumentos_ERH",
+      "reliquias",
+      "turianos"
+    ]
+  }
+}

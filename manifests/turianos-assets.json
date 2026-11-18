@@ -1,0 +1,110 @@
+{
+  "family": "turianos",
+  "auditDate": "2026-11-13",
+  "packages": [
+    {
+      "file": "HIPERAUSTRALIS_TURIANOS_TUR01-06_CARPETA_CULTURAS.zip",
+      "sha256": "6b35d342cf5530da4f11e693ae74bff15ed529a030d9479dd3788872094b98fd",
+      "entries": 9,
+      "uncompressedBytes": 1291933,
+      "crc": "ok"
+    },
+    {
+      "file": "HIPERAUSTRALIS_TURIANOS_REUBICAR_Y_NORMALIZAR.zip",
+      "sha256": "2f1ef4a2580e1e789e3e91563e4d784128aa34b411107b8572667a2cff0bcc5c",
+      "entries": 2,
+      "uncompressedBytes": 14522,
+      "crc": "ok"
+    }
+  ],
+  "actors": [
+    {
+      "code": "TUR-01",
+      "seedId": "turiano-cantor-tamborilero",
+      "name": "Cantor / Tamborilero",
+      "groupInPayload": "GORILESCOS",
+      "weight": 4,
+      "status": "visual_recovered_sheet_pending",
+      "asset": "cantor_tamborilero.webp",
+      "sha256": "ed76179de48f9be939edd2d6f1dd7ff7d936769badd1c4771f99fe5164c865fc"
+    },
+    {
+      "code": "TUR-02",
+      "seedId": "turiano-viajero-trenzas",
+      "name": "Viajero",
+      "groupInPayload": "GORILESCOS",
+      "weight": 4,
+      "status": "visual_recovered_sheet_pending",
+      "asset": "viajero_trenzas.webp",
+      "sha256": "a692735ede5e3711da7deeaeb0235eae408a13e3810d314f2d5cd789141218b3"
+    },
+    {
+      "code": "TUR-03",
+      "seedId": "turiano-sabio-pregonando",
+      "name": "Sabio",
+      "groupInPayload": "GORILESCOS",
+      "weight": 4,
+      "status": "visual_recovered_sheet_pending",
+      "asset": "sabio_pregonando_libro.webp",
+      "sha256": "806ec8ea4a3efb08a7fe23984cdae0869847dd5a36de161ba6395555453fb8ce"
+    },
+    {
+      "code": "TUR-04",
+      "seedId": "turiano-guerrero-lanza",
+      "name": "Guerrero gorilesco de lanza",
+      "groupInPayload": "GORILESCOS",
+      "weight": 4,
+      "status": "visual_recovered_sheet_pending",
+      "asset": "guerrero_gorilesco_lanza.webp",
+      "sha256": "93d557b7250f0715eb341860ddc1575017e36cd65c43543b4262f445b9842567"
+    },
+    {
+      "code": "TUR-05",
+      "seedId": "turiano-sangu",
+      "name": "Sangu",
+      "groupInPayload": "ESPECIAL",
+      "weight": 5,
+      "status": "candidate_not_foundry_validated",
+      "runtime": false,
+      "asset": "sangu_candidato_provisional.webp",
+      "sha256": "c0cab8588b5649c0eefd39190db7c02390d7d7781b759715012e421994aa3c98"
+    },
+    {
+      "code": "TUR-06",
+      "seedId": "turiano-popr",
+      "name": "Popr",
+      "groupInPayload": "ESPECIAL",
+      "weight": 5,
+      "status": "technical_refinement_approved_foundry_test_pending",
+      "runtime": false,
+      "asset": "popr.webp",
+      "sha256": "80a0f0f1c5a46a001089a1f4064e7a79401242cb9c688f5fd58d7d9a6d5571e0"
+    }
+  ],
+  "imageValidation": {
+    "format": "WEBP",
+    "dimensions": "512x512",
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  "sourceJson": {
+    "file": "turianos_6_actores.json",
+    "recordCount": 6,
+    "hasFoundryIds": false,
+    "hasUuid": false,
+    "hasFolder": false,
+    "canonical": false
+  },
+  "scripts": {
+    "count": 2,
+    "relationship": "alternative_installers",
+    "executed": false,
+    "warning": "Both scripts update/create by TUR code; do not run both."
+  },
+  "runtimePaths": "all source records point to modules/hiperaustralis-rituales/assets/adversarios/turianos/",
+  "migrationStatus": "audited; binaries not copied to GitHub assets/",
+  "stateMasterChanges": "none"
+}

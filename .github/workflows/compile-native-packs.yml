@@ -1,0 +1,133 @@
+name: Compile Hiperaustralis native compendia
+
+on:
+  push:
+    branches: [work/native-compendia-pipeline]
+    paths:
+      - '.github/workflows/compile-native-packs.yml'
+      - 'source/**'
+      - 'source-original/**'
+      - 'manifests/reliquias-assets.json'
+      - 'module/**'
+      - 'validate_*.py'
+      - 'prepare_sources.py'
+      - 'tools/foundry/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        name: Checkout
+      - name: Restore and verify 16 relic WebP assets
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib, json, zipfile
+          from pathlib import Path
+          root = Path.cwd()
+          archive = root / "source-original/HIPERAUSTRALIS_RELIQUIAS_ASSETS_16_WEBP_v01.zip"
+          manifest = json.loads((root / "manifests/reliquias-assets.json").read_text(encoding="utf-8"))
+          records = manifest["records"]
+          if len(records) != 16:
+              raise SystemExit(f"Expected 16 manifest records, got {len(records)}")
+          expected = {f'{r["group"]}/{Path(r["sourceImg"]).name}': r["sha256"] for r in records}
+          with zipfile.ZipFile(archive) as zf:
+              actual = {n for n in zf.namelist() if n.lower().endswith(".webp")}
+              if actual != set(expected):
+                  raise SystemExit(f"Asset inventory mismatch: missing={sorted(set(expected)-actual)}, extra={sorted(actual-set(expected))}")
+              for name, digest in expected.items():
+                  data = zf.read(name)
+                  got = hashlib.sha256(data).hexdigest()
+                  if got != digest:
+                      raise SystemExit(f"SHA-256 mismatch for {name}: {got}")
+                  target = root / "module/assets/reliquias" / name
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(data)
+          print("RELIQUIAS_ASSETS_PASS: 16/16 WebP SHA-256 verified and restored")
+          PY
+      - name: Extract and audit weapon asset source ZIP
+        run: |
+          set -euo pipefail
+          python tools/foundry/audit-armas-archive.py dist/armas-source-audit
+      - uses: actions/upload-artifact@v4
+        name: Publish weapon asset audit bundle
+        with:
+          name: armas-source-audit
+          path: dist/armas-source-audit/*
+          if-no-files-found: error
+          retention-days: 14
+      - uses: actions/setup-node@v4
+        name: Set up Node.js
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        name: Set up Python
+        with:
+          python-version: '3.x'
+      - name: Test migration reconciliation utility
+        run: |
+          set -euo pipefail
+          python -m py_compile tools/foundry/reconcile-inventory.py
+          python -m unittest discover -s tools/foundry -p 'test_*.py' -v
+      - name: Restore compressed 21-page JournalEntry source
+        run: |
+          set -euo pipefail
+          base64 -d source/journals/01_auspicios_hiperaustralis.json.gz.b64 | gzip -dc > source/journals/01_auspicios_hiperaustralis.json
+          python -m json.tool source/journals/01_auspicios_hiperaustralis.json >/dev/null
+      - name: Install official Foundry CLI
+        run: npm install --no-audit --no-fund --no-save --no-package-lock @foundryvtt/foundryvtt-cli@3.0.5
+      - name: Validate canonical sources
+        run: python validate_sources.py
+      - name: Validate Armas source set and manifest
+        run: python validate_armas.py
+      - name: Prepare CLI transport fields
+        run: python prepare_sources.py "$RUNNER_TEMP/pack-source"
+      - name: Compile, unpack and validate native packs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p module/packs
+          rm -rf module/packs/ha-proto-items module/packs/ha-proto-actors module/packs/ha-proto-journals
+          VERIFY="$RUNNER_TEMP/verify"
+          mkdir -p "$VERIFY"
+          FVTT="./node_modules/.bin/fvtt"
+          "$FVTT" package pack -n ha-proto-items --inputDirectory "$RUNNER_TEMP/pack-source/items" --outputDirectory module/packs --recursive
+          "$FVTT" package pack -n ha-proto-actors --inputDirectory "$RUNNER_TEMP/pack-source/actors" --outputDirectory module/packs
+          "$FVTT" package pack -n ha-proto-journals --inputDirectory "$RUNNER_TEMP/pack-source/journals" --outputDirectory module/packs
+          for pack in ha-proto-items ha-proto-actors ha-proto-journals; do
+            test -d "module/packs/$pack"
+            test -n "$(find "module/packs/$pack" -type f -size +0c -print -quit)"
+            if [ "$pack" = "ha-proto-items" ]; then
+              "$FVTT" package unpack -n "$pack" --inputDirectory module/packs --outputDirectory "$VERIFY/$pack" --folders
+            else
+              "$FVTT" package unpack -n "$pack" --inputDirectory module/packs --outputDirectory "$VERIFY/$pack"
+            fi
+          done
+          python validate_compiled.py "$VERIFY" "$RUNNER_TEMP/pack-source"
+      - name: Build and verify Forge ZIP
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          cd module
+          zip -qr ../dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip .
+          cd ..
+          unzip -t dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip
+          unzip -l dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip | grep -q 'module.json'
+          sha256sum dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip > dist/SHA256.txt
+      - uses: actions/upload-artifact@v4
+        name: Publish compiled artifact
+        with:
+          name: HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5
+          path: dist/*
+          if-no-files-found: error
+      - name: Publish Forge test prerelease
+        if: contains(github.event.head_commit.message, '[publish-test]')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create v0.1.5-forge-test dist/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip --prerelease --title "Hiperaustralis Compendios v0.1.5 · Prueba Forge" --notes "Distribución de prueba aislada. No reemplaza hiperaustralis-rituales. Foundry 14.367; requiere Custom System Builder 6.0.0 o superior."

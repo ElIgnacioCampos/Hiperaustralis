@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-12",
+  "status": "blocked_pending_source_binaries",
+  "branch": "work/native-compendia-pipeline",
+  "territorial_structure": {
+    "journal_entry": {
+      "source_name": "Biomas",
+      "target_name": "Territorios",
+      "document_type": "JournalEntry"
+    },
+    "item_folder": {
+      "name": "Territorio",
+      "document_type": "Item",
+      "subfolders": [
+        "Flora",
+        "Fauna",
+        "Funga",
+        "Recetas"
+      ]
+    }
+  },
+  "territories": [
+    {
+      "id": "TITICACA",
+      "name": "Titicaca",
+      "biome": "Altiplano lacustre"
+    },
+    {
+      "id": "PAITITI",
+      "name": "Paititi",
+      "biome": "Bosque nublado"
+    },
+    {
+      "id": "NGULUMAPU",
+      "name": "Ngulumapu",
+      "biome": "Bosque lluvioso"
+    },
+    {
+      "id": "PEWENMAPU",
+      "name": "Pewenmapu",
+      "biome": "Cordillera volcánica"
+    },
+    {
+      "id": "PATAGONIA_AUSTRAL",
+      "name": "Patagonia austral"
+    },
+    {
+      "id": "TIERRA_DEL_FUEGO",
+      "name": "Tierra del Fuego"
+    },
+    {
+      "id": "CANALES_AUSTRALES",
+      "name": "Canales australes"
+    },
+    {
+      "id": "UMBRAL_POLAR",
+      "name": "Umbral Polar"
+    }
+  ],
+  "sources": [
+    {
+      "file": "HIPERAUSTRALIS_COMPENDIOS_0.4.71_BIOMAS_REPARACION_LAB.zip",
+      "status": "drive_backup_recorded_not_accessible",
+      "entries_crc": 357,
+      "backup_sha256": "52ee79aa5662e56024dc5b6c90cc8bb20a00b00f98dce8a3c3755b0bb3b9fcd1"
+    },
+    {
+      "file": "HIPERAUSTRALIS_COMPENDIOS_0.4.72_REPARACION_BIO_LAB.zip",
+      "status": "drive_backup_recorded_not_accessible",
+      "entries_crc": 357,
+      "backup_sha256": "437b263f40c0c1e18cd24d0bcb996a4e1769a3830978133d0c839a0dbe1b228c"
+    },
+    {
+      "file": "HIPERAUSTRALIS_COMPENDIOS_0.4.73_BIO_TEXTOS_LAB.zip",
+      "status": "drive_backup_recorded_not_accessible",
+      "entries_crc": 357,
+      "backup_sha256": "2d8830d5a18b7d6ff7ba4eee469214fef7b7efdf7164b552464620a0580a5329"
+    },
+    {
+      "file": "HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB.zip",
+      "status": "drive_backup_recorded_not_accessible",
+      "entries_crc": 358,
+      "backup_sha256": "c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e"
+    },
+    {
+      "file": "HIPERAUSTRALIS_FLORA_001_040_RESCATADAS_EDITORIAL_v2.zip",
+      "status": "drive_backup_recorded_not_accessible",
+      "entries_crc": 144,
+      "backup_sha256": "c91c58c8cb32b215e46ae57e8ccf85d99ad512b4fabb59ccc41b888eeb6d932e"
+    },
+    {
+      "file": "BIO_RUP_INVENTARIO_REAL_2026-10-11.csv",
+      "status": "text_inventory_accessible_binary_sources_not_accessible",
+      "records": 98
+    }
+  ],
+  "migration_rules": [
+    "Do not merge JournalEntry Territorios with Item folder Territorio.",
+    "Do not invent documents for empty folders.",
+    "Do not infer approval from file existence or checkpoint production status.",
+    "Preserve original IDs and record path equivalences.",
+    "Verify source and destination SHA-256 for every migrated binary."
+  ],
+  "migrated_binary_count": 0
+}
