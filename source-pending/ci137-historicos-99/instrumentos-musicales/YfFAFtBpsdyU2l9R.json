@@ -1,0 +1,70 @@
+{
+  "name": "Flauta de hueso",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/11_flauta_hueso.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "instrumento",
+      "descripcion": "Flauta sencilla hecha de hueso trabajado, ligera y fácil de llevar durante un viaje.",
+      "procedencia": "Era de tu hermana mayor, que la tocaba cuando vigilaba animales lejos de casa. Te la entregó antes de embarcarse y nunca volvió por ella."
+    },
+    "template": "HipInstrTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "f799PMHpfXLJ1HuA",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "instrumento"
+    },
+    "hiperaustralis-instrumentos": {
+      "seedId": "inst-11-flauta_hueso",
+      "version": "0.1",
+      "culture": "Nórdicos",
+      "family": "Aerófono",
+      "evidence": "A — hallazgos arqueológicos directos.",
+      "sourceOriginal": "11_flauta_hueso_nordica.png"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "YfFAFtBpsdyU2l9R",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754930226,
+    "modifiedTime": 1793380510851,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

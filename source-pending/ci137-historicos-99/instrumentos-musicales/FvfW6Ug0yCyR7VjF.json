@@ -1,0 +1,70 @@
+{
+  "name": "Wankara",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/instrumentos/aymara/05_wankara.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "instrumento",
+      "descripcion": "Gran tambor de madera y cuero que sostiene el pulso de conjuntos y celebraciones.",
+      "procedencia": "Era de tu tío, que lo llevó durante años entre distintos ayllus antes de entregárselo a tu familia. Conserva una marca en el borde que nadie ha querido reparar."
+    },
+    "template": "HipInstrTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "f799PMHpfXLJ1HuA",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "instrumento"
+    },
+    "hiperaustralis-instrumentos": {
+      "seedId": "inst-05-wankara",
+      "version": "0.1",
+      "culture": "Aymara",
+      "family": "Membranófono",
+      "evidence": "B — tradición musical aymara documentada; morfología medieval reconstruida.",
+      "sourceOriginal": "05_wankara.png"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "FvfW6Ug0yCyR7VjF",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754928815,
+    "modifiedTime": 1793380479943,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

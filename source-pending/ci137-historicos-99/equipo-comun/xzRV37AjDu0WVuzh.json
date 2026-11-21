@@ -1,0 +1,82 @@
+{
+  "name": "Ckarisur · Peine",
+  "type": "equippableItem",
+  "img": "icons/tools/hand/brush-paint-brown-tan.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Peine pequeño, tallado en madera, para desenredar y cuidar el cabello.",
+      "procedencia": "Lo encontraste al vaciar una antigua bolsa que te habían prestado para un viaje. Cuando intentaste devolverlo, su dueña dijo que nunca había sido suyo y que podías quedártelo."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "e1H5TyvyNEU2Dv5E",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-equipo": {
+      "seedId": "eq-lick-ckarisur",
+      "seedVersion": "0.2",
+      "seedProvenance": "Lo encontraste al vaciar una antigua bolsa que te habían prestado para un viaje. Cuando intentaste devolverlo, su dueña dijo que nunca había sido suyo y que podías quedártelo.",
+      "culture": "Lickanantay",
+      "family": "cuidado_personal",
+      "localName": "Ckarisur",
+      "spanishName": "Peine",
+      "languageScope": "Ckunsa histórico",
+      "materials": [
+        "madera"
+      ],
+      "sourceRefs": [
+        "SRC-LICK-SANPEDRO",
+        "SRC-LICK-CKUNSA"
+      ],
+      "editorialNote": "",
+      "iconSource": "Foundry Core Data Icons",
+      "iconMatch": "approximate"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "xzRV37AjDu0WVuzh",
+  "sort": 3900000,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754925423,
+    "modifiedTime": 1793750036925,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

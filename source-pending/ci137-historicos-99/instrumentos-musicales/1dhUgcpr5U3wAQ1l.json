@@ -1,0 +1,70 @@
+{
+  "name": "Kakel-kultrung",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/15_kakel_kultrung.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "instrumento",
+      "descripcion": "Tambor mayor de madera y cuero, pensado para hacer sentir el ritmo tanto como escucharlo.",
+      "procedencia": "No pertenece a una sola persona: ha pasado de mano en mano dentro de tu comunidad. Esta vez te corresponde a ti transportarlo y devolverlo."
+    },
+    "template": "HipInstrTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "f799PMHpfXLJ1HuA",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "instrumento"
+    },
+    "hiperaustralis-instrumentos": {
+      "seedId": "inst-15-kakel_kultrung",
+      "version": "0.1",
+      "culture": "Mapuche",
+      "family": "Membranófono",
+      "evidence": "B/C — documentación etnográfica con reconstrucción cauta.",
+      "sourceOriginal": "tambor_indígena_de_madera_y_cuero.png"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "1dhUgcpr5U3wAQ1l",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754931123,
+    "modifiedTime": 1793380452344,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

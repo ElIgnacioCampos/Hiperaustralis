@@ -1,0 +1,66 @@
+{
+  "name": "Casco emplumado — Pica–Tarapacá",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/defensas/02_casco_emplumado_pica_tarapaca.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "defensa",
+      "descripcion": "Casco rígido con plumas usadas como señal de rango, identidad o reconocimiento. Protege como el casco base, pero hace visible a su portador a distancia. Sus plumas actuales reemplazan las que perdió un antiguo dueño al regresar solo de una emboscada.",
+      "procedencia": ""
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 520,
+      "height": 390,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "defensa"
+    },
+    "hiperaustralis-defensas": {
+      "seedId": "defensa-02",
+      "sourcePack": "HIPERAUSTRALIS_PACK_DEFENSAS_FOUNDRY_TRASPASO_v0.1"
+    }
+  },
+  "folder": "gDvsYx33i07xvBK6",
+  "_id": "uM1FCC5l7Lbx8sRa",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754947662,
+    "modifiedTime": 1793380535522,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

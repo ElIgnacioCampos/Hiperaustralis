@@ -1,0 +1,68 @@
+{
+  "name": "Bolsa con semillas de beleño",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/iconos_aprobados/16_NORDICOS_BOLSA_BELENO.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Pequeña bolsa destinada a mantener semillas separadas del resto del equipaje. Su contenido exige identificación y cuidado: confundirse de bolsa puede ser mucho más grave que perderla.",
+      "procedencia": "La recibiste en un intercambio y sólo después te explicaron qué contenía. Desde entonces la guardas separada de tus alimentos y nunca permites que otra persona la abra sin saber qué hay dentro."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 520,
+      "height": 390,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-aprobados": {
+      "seedId": "aprobado-16",
+      "numero": "16",
+      "culture": "Nórdicos",
+      "sourcePack": "HIPERAUSTRALIS_COMPENDIO_ICONOS_APROBADOS_v0.1"
+    }
+  },
+  "folder": "j2J6pAlRV0X0X3ne",
+  "_id": "ilG4UwSV1Bgbk4TF",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754944218,
+    "modifiedTime": 1791754958628,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

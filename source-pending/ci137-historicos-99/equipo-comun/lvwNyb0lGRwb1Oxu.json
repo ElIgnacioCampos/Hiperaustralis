@@ -1,0 +1,82 @@
+{
+  "name": "Cuchillo lítico",
+  "type": "equippableItem",
+  "img": "icons/weapons/daggers/dagger-simple-stone-black.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Herramienta de piedra de borde cortante para procesar alimentos, cortar fibras, trabajar pieles y realizar otras labores que requieren filo.",
+      "procedencia": "Encontraste la piedra apropiada durante un desplazamiento tierra adentro. Una persona con más experiencia terminó de trabajar el filo y te enseñó cómo renovarlo."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "e1H5TyvyNEU2Dv5E",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-equipo": {
+      "seedId": "eq-chin-cuchillo",
+      "seedVersion": "0.2",
+      "seedProvenance": "Encontraste la piedra apropiada durante un desplazamiento tierra adentro. Una persona con más experiencia terminó de trabajar el filo y te enseñó cómo renovarlo.",
+      "culture": "Chinchorro",
+      "family": "herramienta_corte",
+      "localName": null,
+      "spanishName": "Cuchillo lítico",
+      "languageScope": null,
+      "materials": [
+        "piedra"
+      ],
+      "sourceRefs": [
+        "SRC-CHIN-ARQUEOLOGIA",
+        "SRC-CHIN-UNESCO"
+      ],
+      "editorialNote": "",
+      "iconSource": "Foundry Core Data Icons",
+      "iconMatch": "direct"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "lvwNyb0lGRwb1Oxu",
+  "sort": 3200000,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754926995,
+    "modifiedTime": 1793750036925,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

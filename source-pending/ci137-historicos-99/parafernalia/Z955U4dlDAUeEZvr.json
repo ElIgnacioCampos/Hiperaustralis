@@ -1,0 +1,68 @@
+{
+  "name": "Cucharilla / espátula",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/iconos_aprobados/13_LICKANANTAY_CUCHARILLA_ESPATULA.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Herramienta diminuta para recoger, mover y dosificar polvo o pasta sin utilizar los dedos. También permite limpiar las esquinas de recipientes pequeños y recuperar material adherido.",
+      "procedencia": "La hallaste donde alguien había dejado restos de un antiguo equipo. No encontraste la tableta ni los recipientes que probablemente la acompañaban, y todavía observas otros objetos esperando reconocer alguna pieza de su conjunto original."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 520,
+      "height": 390,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-aprobados": {
+      "seedId": "aprobado-13",
+      "numero": "13",
+      "culture": "Lickanantay",
+      "sourcePack": "HIPERAUSTRALIS_COMPENDIO_ICONOS_APROBADOS_v0.1"
+    }
+  },
+  "folder": "j2J6pAlRV0X0X3ne",
+  "_id": "Z955U4dlDAUeEZvr",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754943535,
+    "modifiedTime": 1791754956609,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

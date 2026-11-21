@@ -1,0 +1,82 @@
+{
+  "name": "Saba · Saco",
+  "type": "equippableItem",
+  "img": "icons/containers/bags/sack-cloth-orange.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Saco de tejido resistente para guardar provisiones y pertenencias.",
+      "procedencia": "Lo obtuviste durante un intercambio en el camino. Conserva una costura distinta en la base: alguien lo reparó mucho antes de que llegara a tus manos."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "e1H5TyvyNEU2Dv5E",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-equipo": {
+      "seedId": "eq-lick-saba",
+      "seedVersion": "0.2",
+      "seedProvenance": "Lo obtuviste durante un intercambio en el camino. Conserva una costura distinta en la base: alguien lo reparó mucho antes de que llegara a tus manos.",
+      "culture": "Lickanantay",
+      "family": "bolsa_carga",
+      "localName": "Saba",
+      "spanishName": "Saco",
+      "languageScope": "Ckunsa histórico",
+      "materials": [
+        "fibra_textil"
+      ],
+      "sourceRefs": [
+        "SRC-LICK-SANPEDRO",
+        "SRC-LICK-CKUNSA"
+      ],
+      "editorialNote": "",
+      "iconSource": "Foundry Core Data Icons",
+      "iconMatch": "direct"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "89egEPGh4AtrOMS0",
+  "sort": 600000,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754925195,
+    "modifiedTime": 1793750036924,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

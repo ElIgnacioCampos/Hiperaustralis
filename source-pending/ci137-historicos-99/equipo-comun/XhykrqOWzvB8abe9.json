@@ -1,0 +1,84 @@
+{
+  "name": "Eldjárn · Yesquero",
+  "type": "equippableItem",
+  "img": "icons/tools/laboratory/burner-steel-grey.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Pieza de hierro o acero que se golpea contra una piedra adecuada para obtener las chispas con que prender yesca.",
+      "procedencia": "Te lo dio una marinera después de verte intentar encender una fogata con material empapado. La piedra original ya se gastó; el hierro sigue siendo el mismo."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "e1H5TyvyNEU2Dv5E",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-equipo": {
+      "seedId": "eq-nor-eldjarn",
+      "seedVersion": "0.2",
+      "seedProvenance": "Te lo dio una marinera después de verte intentar encender una fogata con material empapado. La piedra original ya se gastó; el hierro sigue siendo el mismo.",
+      "culture": "Nórdicos",
+      "family": "fuego",
+      "localName": "Eldjárn",
+      "spanishName": "Yesquero",
+      "languageScope": "nórdico antiguo",
+      "materials": [
+        "hierro_o_acero",
+        "piedra",
+        "yesca"
+      ],
+      "sourceRefs": [
+        "SRC-NOR-LEXICO",
+        "SRC-NOR-ARQUEOLOGIA"
+      ],
+      "editorialNote": "",
+      "iconSource": "Foundry Core Data Icons",
+      "iconMatch": "user-audited"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "XhykrqOWzvB8abe9",
+  "sort": 2500000,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754922670,
+    "modifiedTime": 1793750036925,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

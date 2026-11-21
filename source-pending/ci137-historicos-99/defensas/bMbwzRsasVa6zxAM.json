@@ -1,0 +1,66 @@
+{
+  "name": "Manta densa defensiva surandina",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/defensas/08_manta_densa_surandina.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "defensa",
+      "descripcion": "Manta gruesa de fibra de camélido que, enrollada en varias capas, amortigua golpes y complementa otras protecciones. Sigue sirviendo para dormir, abrigarse o envolver heridos. Una de sus esquinas conserva una quemadura cuyo origen nadie recuerda con certeza.",
+      "procedencia": ""
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 520,
+      "height": 390,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "defensa"
+    },
+    "hiperaustralis-defensas": {
+      "seedId": "defensa-08",
+      "sourcePack": "HIPERAUSTRALIS_PACK_DEFENSAS_FOUNDRY_TRASPASO_v0.1"
+    }
+  },
+  "folder": "gDvsYx33i07xvBK6",
+  "_id": "bMbwzRsasVa6zxAM",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754949040,
+    "modifiedTime": 1793380513753,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

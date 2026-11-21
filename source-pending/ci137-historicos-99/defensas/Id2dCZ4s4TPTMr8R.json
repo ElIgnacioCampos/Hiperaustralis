@@ -1,0 +1,66 @@
+{
+  "name": "Casco rígido de madera y fibras — Pica–Tarapacá",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/defensas/01_casco_rigido_pica_tarapaca.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "defensa",
+      "descripcion": "Protección cerrada para la cabeza, hecha con madera, fibras vegetales y amarres de camélido. Reduce visión periférica, pero cubre bien coronilla, frente y laterales. Pasó por tres generaciones antes de cambiarse por dos llamas y un saco de sal; entre dos tablillas aún guarda un mechón de lana roja.",
+      "procedencia": ""
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 520,
+      "height": 390,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "defensa"
+    },
+    "hiperaustralis-defensas": {
+      "seedId": "defensa-01",
+      "sourcePack": "HIPERAUSTRALIS_PACK_DEFENSAS_FOUNDRY_TRASPASO_v0.1"
+    }
+  },
+  "folder": "gDvsYx33i07xvBK6",
+  "_id": "Id2dCZ4s4TPTMr8R",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754947193,
+    "modifiedTime": 1793380482962,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

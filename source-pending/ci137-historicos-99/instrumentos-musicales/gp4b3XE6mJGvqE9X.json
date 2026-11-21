@@ -1,0 +1,70 @@
+{
+  "name": "Waza",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/03_waza.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "instrumento",
+      "descripcion": "Sonaja de calabaza seca, semillas y fibras, ligera en la mano pero capaz de sostener un ritmo durante horas.",
+      "procedencia": "Tu abuela la usaba mientras trabajaba y decía que cada semilla guardaba un camino distinto. La heredaste cuando ya casi nadie recordaba quién la había construido."
+    },
+    "template": "HipInstrTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "f799PMHpfXLJ1HuA",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "instrumento"
+    },
+    "hiperaustralis-instrumentos": {
+      "seedId": "inst-03-waza",
+      "version": "0.1",
+      "culture": "Mapuche",
+      "family": "Idiófono",
+      "evidence": "B — documentación etnográfica y continuidad cultural.",
+      "sourceOriginal": "sonaja_de_calabaza_tejida.png"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "gp4b3XE6mJGvqE9X",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754928323,
+    "modifiedTime": 1793380519750,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

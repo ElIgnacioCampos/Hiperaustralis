@@ -1,0 +1,70 @@
+{
+  "name": "Pifüllka",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/02_pifullka.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "instrumento",
+      "descripcion": "Aerófono de piedra, compacto y pesado, cuya voz breve atraviesa el aire con facilidad.",
+      "procedencia": "Tu hermana lo encontró entre las pertenencias de una anciana de la familia y aprendió a hacerlo sonar antes que tú. Te lo dejó cuando partió hacia [lugar]."
+    },
+    "template": "HipInstrTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "f799PMHpfXLJ1HuA",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "instrumento"
+    },
+    "hiperaustralis-instrumentos": {
+      "seedId": "inst-02-pifullka",
+      "version": "0.1",
+      "culture": "Mapuche",
+      "family": "Aerófono",
+      "evidence": "A — respaldo arqueológico directo.",
+      "sourceOriginal": "pifüllka_de_piedra_antigua.png"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "IG8DW7Wr30mg1jqx",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754928084,
+    "modifiedTime": 1793380480687,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

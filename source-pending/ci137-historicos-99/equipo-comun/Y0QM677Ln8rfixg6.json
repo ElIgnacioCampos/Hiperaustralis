@@ -1,0 +1,82 @@
+{
+  "name": "Ch'uspa · Bolsa pequeña",
+  "type": "equippableItem",
+  "img": "icons/containers/bags/pouch-leather-simple-tan.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Bolsa textil pequeña para llevar coca, alimentos menudos y pertenencias personales.",
+      "procedencia": "Te la dio una pariente antes de un viaje hacia tierras más bajas. El cordón actual no es el original: lo reemplazaste después de perder el primero durante una jornada de pastoreo."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "e1H5TyvyNEU2Dv5E",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-equipo": {
+      "seedId": "eq-aym-chuspa",
+      "seedVersion": "0.2",
+      "seedProvenance": "Te la dio una pariente antes de un viaje hacia tierras más bajas. El cordón actual no es el original: lo reemplazaste después de perder el primero durante una jornada de pastoreo.",
+      "culture": "Aymara",
+      "family": "bolsa_personal",
+      "localName": "Ch'uspa",
+      "spanishName": "Bolsa pequeña",
+      "languageScope": "aymara/andino",
+      "materials": [
+        "fibra_textil"
+      ],
+      "sourceRefs": [
+        "SRC-AYM-LEXICO",
+        "SRC-AYM-SURANDINO"
+      ],
+      "editorialNote": "Voz de uso andino; no presentar como etimología exclusivamente aymara.",
+      "iconSource": "Foundry Core Data Icons",
+      "iconMatch": "direct"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "Y0QM677Ln8rfixg6",
+  "sort": 2600000,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754919682,
+    "modifiedTime": 1793750036925,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

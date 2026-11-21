@@ -1,0 +1,70 @@
+{
+  "name": "Kultrung",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/01_kultrung.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "instrumento",
+      "descripcion": "Tambor de cuenco de madera y cuero, de sonido grave y cercano, ligado a la vida ceremonial mapuche.",
+      "procedencia": "El tuyo perteneció a tu madre antes que a ti; una de sus amarras fue reemplazada durante un viaje del que nunca quiso hablar. Dentro del cuenco todavía suena algo pequeño cuando lo inclinas."
+    },
+    "template": "HipInstrTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "f799PMHpfXLJ1HuA",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "instrumento"
+    },
+    "hiperaustralis-instrumentos": {
+      "seedId": "inst-01-kultrung",
+      "version": "0.1",
+      "culture": "Mapuche",
+      "family": "Membranófono",
+      "evidence": "B — continuidad etnográfica fuerte; forma exacta ca. 1067 reconstruida con cautela.",
+      "sourceOriginal": "kultrung_mapuche_con_baqueta.png"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "K7d2oqF6P7DB0Kpt",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754927862,
+    "modifiedTime": 1793380486814,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

@@ -1,0 +1,82 @@
+{
+  "name": "Punzón de hueso",
+  "type": "equippableItem",
+  "img": "icons/commodities/bones/tooth-spiked-brown.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Herramienta estrecha y puntiaguda utilizada para perforar pieles, fibras y otros materiales blandos durante la confección o reparación de objetos.",
+      "procedencia": "Lo hiciste con un fragmento de hueso guardado después de preparar una presa. La punta ya ha sido afilada tantas veces que es considerablemente más corta que cuando la terminaste."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "e1H5TyvyNEU2Dv5E",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-equipo": {
+      "seedId": "eq-chin-punzon",
+      "seedVersion": "0.2",
+      "seedProvenance": "Lo hiciste con un fragmento de hueso guardado después de preparar una presa. La punta ya ha sido afilada tantas veces que es considerablemente más corta que cuando la terminaste.",
+      "culture": "Chinchorro",
+      "family": "perforacion_costura",
+      "localName": null,
+      "spanishName": "Punzón de hueso",
+      "languageScope": null,
+      "materials": [
+        "hueso"
+      ],
+      "sourceRefs": [
+        "SRC-CHIN-ARQUEOLOGIA",
+        "SRC-CHIN-UNESCO"
+      ],
+      "editorialNote": "",
+      "iconSource": "Foundry Core Data Icons",
+      "iconMatch": "user-audited"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "MX9mAxfkdCwvEvkZ",
+  "sort": 1600000,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754927236,
+    "modifiedTime": 1793750036924,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

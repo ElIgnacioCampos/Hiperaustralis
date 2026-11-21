@@ -1,0 +1,82 @@
+{
+  "name": "Metawe · Jarro",
+  "type": "equippableItem",
+  "img": "icons/containers/kitchenware/jug-clay-brown.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Jarro de cerámica para contener, transportar y servir agua u otras bebidas.",
+      "procedencia": "Te lo entregaron después de llevar un mensaje hasta una ruka junto al lago. Una de las asas ya había sido reparada antes de que llegara a tus manos."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "e1H5TyvyNEU2Dv5E",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-equipo": {
+      "seedId": "eq-map-metawe",
+      "seedVersion": "0.2",
+      "seedProvenance": "Te lo entregaron después de llevar un mensaje hasta una ruka junto al lago. Una de las asas ya había sido reparada antes de que llegara a tus manos.",
+      "culture": "Mapuche",
+      "family": "recipiente_liquidos",
+      "localName": "Metawe",
+      "spanishName": "Jarro",
+      "languageScope": "mapudungun",
+      "materials": [
+        "cerámica"
+      ],
+      "sourceRefs": [
+        "SRC-MAP-PITREN",
+        "SRC-MAP-LEXICO"
+      ],
+      "editorialNote": "",
+      "iconSource": "Foundry Core Data Icons",
+      "iconMatch": "direct"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "o1z5pPevd1NzySi6",
+  "sort": 3300000,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754918120,
+    "modifiedTime": 1793750036925,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

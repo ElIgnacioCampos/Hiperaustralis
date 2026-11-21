@@ -1,0 +1,129 @@
+{
+  "name": "Lakutun · Legar",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/rituales/08_LAKUTUN_LEGAR.webp",
+  "system": {
+    "body": {
+      "contents": [
+        {
+          "key": "procedimiento",
+          "cssClass": "ha-ritual-procedimiento",
+          "role": 0,
+          "editRole": 0,
+          "permission": 0,
+          "tooltip": "Procedimiento del Ritual",
+          "visibilityFormula": "",
+          "editableFormula": "",
+          "label": "",
+          "defaultValue": "",
+          "style": "dialog",
+          "type": "textArea"
+        },
+        {
+          "key": "correspondencias",
+          "cssClass": "ha-ritual-correspondencias",
+          "role": 0,
+          "editRole": 0,
+          "permission": 0,
+          "tooltip": "Correspondencias requeridas cuando corresponda",
+          "visibilityFormula": "",
+          "editableFormula": "",
+          "label": "",
+          "defaultValue": "",
+          "style": "dialog",
+          "type": "textArea"
+        },
+        {
+          "key": "coste",
+          "cssClass": "ha-ritual-coste",
+          "role": 0,
+          "editRole": 0,
+          "permission": 0,
+          "tooltip": "Coste de Newén cuando corresponda",
+          "visibilityFormula": "",
+          "editableFormula": "",
+          "label": "",
+          "defaultValue": "",
+          "style": "dialog",
+          "type": "textArea"
+        },
+        {
+          "key": "notas",
+          "cssClass": "ha-ritual-notas",
+          "role": 0,
+          "editRole": 0,
+          "permission": 0,
+          "tooltip": "Notas del Ritual",
+          "visibilityFormula": "",
+          "editableFormula": "",
+          "label": "",
+          "defaultValue": "",
+          "style": "dialog",
+          "type": "textArea"
+        }
+      ],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 543,
+      "height": 408,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "props": {
+      "hipera_tipo": "ritual",
+      "procedimiento": "El oficiante acompaña a otro personaje en el Lakutun y fija aquello que éste decide Legar. Cada personaje puede Legar una sola vez.",
+      "correspondencias": "Quien Lega y aquello que queda ligado a su Legado.",
+      "coste": "Cuesta una parte de Newén.",
+      "notas": "Haber Legado no impide oficiar posteriormente el Lakutun para otro personaje."
+    },
+    "unique": false,
+    "uniqueId": "",
+    "templateSystemUniqueVersion": 166001,
+    "template": "HipRitualTpl0001"
+  },
+  "effects": [],
+  "folder": "jmb9NXQ4AxJ3oytD",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "ritual"
+    },
+    "hiperaustralis-rituales": {
+      "slug": "lakutun-legar",
+      "catalogVersion": 5
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/rituales/08_LAKUTUN_LEGAR.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "4jeuBPUYEGHmXKXv",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754906813,
+    "modifiedTime": 1793380456115,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

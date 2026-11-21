@@ -1,0 +1,68 @@
+{
+  "name": "Runas corregidas",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/iconos_aprobados/40_NORDICOS_RUNAS_CORREGIDAS.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Trozo de madera inscrito, raspado y vuelto a tallar. Su superficie permite ver que alguien consideró errónea una inscripción anterior y empleó tiempo y conocimiento en modificarla.",
+      "procedencia": "La tablilla llegó a tus manos ya inscrita. Algo en los signos te pareció incorrecto; raspaste una parte y volviste a tallarla. Todavía no sabes si corregiste el problema o simplemente cambiaste su naturaleza."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 520,
+      "height": 390,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-aprobados": {
+      "seedId": "aprobado-40",
+      "numero": "40",
+      "culture": "Nórdicos",
+      "sourcePack": "HIPERAUSTRALIS_COMPENDIO_ICONOS_APROBADOS_v0.1"
+    }
+  },
+  "folder": "j2J6pAlRV0X0X3ne",
+  "_id": "3cCDbjqou8AlzfsW",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754945802,
+    "modifiedTime": 1791754963235,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

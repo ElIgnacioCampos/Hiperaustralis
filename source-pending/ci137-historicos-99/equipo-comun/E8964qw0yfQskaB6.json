@@ -1,0 +1,84 @@
+{
+  "name": "Arco y flechas",
+  "type": "equippableItem",
+  "img": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Arco de madera acompañado por un pequeño haz de flechas para cazar y alcanzar objetivos a distancia.",
+      "procedencia": "El arco pertenecía a un cazador que ya no podía subir a la quebrada. Te lo entregó después de comprobar que podías tensarlo sin dañarlo; las flechas las has ido reemplazando una por una."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "e1H5TyvyNEU2Dv5E",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-equipo": {
+      "seedId": "eq-lick-arco",
+      "seedVersion": "0.2",
+      "seedProvenance": "El arco pertenecía a un cazador que ya no podía subir a la quebrada. Te lo entregó después de comprobar que podías tensarlo sin dañarlo; las flechas las has ido reemplazando una por una.",
+      "culture": "Lickanantay",
+      "family": "arma_proyectil",
+      "localName": null,
+      "spanishName": "Arco y flechas",
+      "languageScope": null,
+      "materials": [
+        "madera",
+        "fibra",
+        "piedra_o_metal"
+      ],
+      "sourceRefs": [
+        "SRC-LICK-SANPEDRO",
+        "SRC-LICK-CKUNSA"
+      ],
+      "editorialNote": "",
+      "iconSource": "Foundry Core Data Icons",
+      "iconMatch": "user-audited"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "E8964qw0yfQskaB6",
+  "sort": 800000,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754924500,
+    "modifiedTime": 1793750036924,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

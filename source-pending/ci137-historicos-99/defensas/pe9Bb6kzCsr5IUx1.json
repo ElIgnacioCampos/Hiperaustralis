@@ -1,0 +1,66 @@
+{
+  "name": "Capucha protectora de fibra de camélido — Pica–Tarapacá",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/defensas/04_capucha_protectora_pica_tarapaca.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "defensa",
+      "descripcion": "Defensa blanda para cabeza, cuello y hombros, útil sola o bajo un casco. También sirve como abrigo y prenda de viaje. Regresó a una familia sin la mujer para quien había sido tejida, y desde entonces acompaña a quienes deben partir lejos.",
+      "procedencia": ""
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 520,
+      "height": 390,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "defensa"
+    },
+    "hiperaustralis-defensas": {
+      "seedId": "defensa-04",
+      "sourcePack": "HIPERAUSTRALIS_PACK_DEFENSAS_FOUNDRY_TRASPASO_v0.1"
+    }
+  },
+  "folder": "gDvsYx33i07xvBK6",
+  "_id": "pe9Bb6kzCsr5IUx1",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754948142,
+    "modifiedTime": 1793380527190,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

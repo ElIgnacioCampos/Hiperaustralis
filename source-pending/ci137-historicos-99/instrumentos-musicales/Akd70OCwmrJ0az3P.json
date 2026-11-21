@@ -1,0 +1,70 @@
+{
+  "name": "Trompeta monóxila",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/08_trompeta_monoxila.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "instrumento",
+      "descripcion": "Trompeta larga tallada en madera, hecha para que una señal viaje lejos.",
+      "procedencia": "Tu padre la cambió por tejidos y alimento durante una travesía hacia [lugar]. Aseguraba que una vez su sonido respondió desde una quebrada donde no había nadie."
+    },
+    "template": "HipInstrTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "f799PMHpfXLJ1HuA",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "instrumento"
+    },
+    "hiperaustralis-instrumentos": {
+      "seedId": "inst-08-trompeta_monoxila",
+      "version": "0.1",
+      "culture": "Lickanantay",
+      "family": "Aerófono",
+      "evidence": "A/B — tradición arqueológica circumpuneña con reconstrucción funcional.",
+      "sourceOriginal": "08_trompeta_monoxila.png"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "Akd70OCwmrJ0az3P",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754929532,
+    "modifiedTime": 1793380468553,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

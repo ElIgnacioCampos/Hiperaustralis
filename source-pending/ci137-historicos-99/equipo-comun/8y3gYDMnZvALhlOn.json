@@ -1,0 +1,82 @@
+{
+  "name": "Phala · Soga",
+  "type": "equippableItem",
+  "img": "icons/sundries/survival/rope-wrapped-tan.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Soga de fibras trenzadas para amarrar, sujetar y asegurar cargas u objetos.",
+      "procedencia": "La hicieron en tu comunidad para una jornada de trabajo colectivo. Cuando comenzó a quedar corta para las cargas mayores, pasó a formar parte de tu equipo."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "e1H5TyvyNEU2Dv5E",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-equipo": {
+      "seedId": "eq-aym-phala",
+      "seedVersion": "0.2",
+      "seedProvenance": "La hicieron en tu comunidad para una jornada de trabajo colectivo. Cuando comenzó a quedar corta para las cargas mayores, pasó a formar parte de tu equipo.",
+      "culture": "Aymara",
+      "family": "cordeleria",
+      "localName": "Phala",
+      "spanishName": "Soga",
+      "languageScope": "aymara",
+      "materials": [
+        "fibra"
+      ],
+      "sourceRefs": [
+        "SRC-AYM-LEXICO",
+        "SRC-AYM-SURANDINO"
+      ],
+      "editorialNote": "",
+      "iconSource": "Foundry Core Data Icons",
+      "iconMatch": "direct"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "8y3gYDMnZvALhlOn",
+  "sort": 900000,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754920583,
+    "modifiedTime": 1793750036924,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

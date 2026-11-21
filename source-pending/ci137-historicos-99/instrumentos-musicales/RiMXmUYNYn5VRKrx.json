@@ -1,0 +1,70 @@
+{
+  "name": "Sonajero de hierro",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/12_sonajero_hierro.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "instrumento",
+      "descripcion": "Conjunto de piezas de hierro que chocan entre sí al moverse, produciendo un sonido áspero y brillante.",
+      "procedencia": "Tu abuelo lo llevaba colgado entre sus pertenencias y decía que servía tanto para celebrar como para hacerse notar. Nadie sabe de dónde lo obtuvo."
+    },
+    "template": "HipInstrTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "f799PMHpfXLJ1HuA",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "instrumento"
+    },
+    "hiperaustralis-instrumentos": {
+      "seedId": "inst-12-sonajero_hierro",
+      "version": "0.1",
+      "culture": "Nórdicos",
+      "family": "Idiófono",
+      "evidence": "B — reconstrucción desde hallazgos y paralelos escandinavos.",
+      "sourceOriginal": "12_sonajero_hierro_nordico.png"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "RiMXmUYNYn5VRKrx",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754930451,
+    "modifiedTime": 1793380496167,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

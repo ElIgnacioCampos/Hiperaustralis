@@ -1,0 +1,66 @@
+{
+  "name": "Espaldar grueso de cuero surandino",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/defensas/07_espaldar_cuero_surandino.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "defensa",
+      "descripcion": "Protección dorsal amplia, pensada para combinarse con un peto u otra defensa frontal. Cubre una zona difícil de proteger activamente. Fue encontrado entre cargas abandonadas junto a una pared de piedra; nadie sabe qué ocurrió con sus dueños.",
+      "procedencia": ""
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 520,
+      "height": 390,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "defensa"
+    },
+    "hiperaustralis-defensas": {
+      "seedId": "defensa-07",
+      "sourcePack": "HIPERAUSTRALIS_PACK_DEFENSAS_FOUNDRY_TRASPASO_v0.1"
+    }
+  },
+  "folder": "gDvsYx33i07xvBK6",
+  "_id": "6z2oWVl5FstIDJKB",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754948825,
+    "modifiedTime": 1793380459126,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

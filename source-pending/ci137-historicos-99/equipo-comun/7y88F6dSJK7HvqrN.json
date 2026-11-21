@@ -1,0 +1,81 @@
+{
+  "name": "Mortero de piedra",
+  "type": "equippableItem",
+  "img": "icons/tools/cooking/mortar-stone-yellow.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Piedra con una cavidad resistente para triturar semillas, frutos, plantas, pigmentos y otros materiales.",
+      "procedencia": "Pertenece a una familia que te recibe cuando atraviesas su territorio. No lo transportas contigo: sabes en qué ruka está y a quién debes pedir permiso para utilizarlo."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "e1H5TyvyNEU2Dv5E",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-equipo": {
+      "seedId": "eq-map-mortero",
+      "seedVersion": "0.2",
+      "seedProvenance": "Pertenece a una familia que te recibe cuando atraviesas su territorio. No lo transportas contigo: sabes en qué ruka está y a quién debes pedir permiso para utilizarlo.",
+      "culture": "Mapuche",
+      "family": "procesamiento",
+      "localName": null,
+      "spanishName": "Mortero de piedra",
+      "languageScope": null,
+      "materials": [
+        "piedra"
+      ],
+      "sourceRefs": [
+        "SRC-MAP-LITICA"
+      ],
+      "editorialNote": "",
+      "iconSource": "Foundry Core Data Icons",
+      "iconMatch": "direct"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "7y88F6dSJK7HvqrN",
+  "sort": 500000,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754919016,
+    "modifiedTime": 1793750036924,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

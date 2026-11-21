@@ -1,0 +1,84 @@
+{
+  "name": "Toki · Hacha de piedra",
+  "type": "equippableItem",
+  "img": "icons/weapons/axes/axe-tomahawk-simple-black.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Hacha con cabeza de piedra trabajada y mango de madera, utilizada para cortar, golpear y trabajar madera.",
+      "procedencia": "Encontraste la piedra apropiada en la ribera después de una crecida. Preparaste el mango con madera recogida río arriba y otra persona del lof hizo las ligaduras."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "e1H5TyvyNEU2Dv5E",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-equipo": {
+      "seedId": "eq-map-toki",
+      "seedVersion": "0.2",
+      "seedProvenance": "Encontraste la piedra apropiada en la ribera después de una crecida. Preparaste el mango con madera recogida río arriba y otra persona del lof hizo las ligaduras.",
+      "culture": "Mapuche",
+      "family": "herramienta_corte",
+      "localName": "Toki",
+      "spanishName": "Hacha de piedra",
+      "languageScope": "mapudungun",
+      "materials": [
+        "piedra",
+        "madera",
+        "fibra"
+      ],
+      "sourceRefs": [
+        "SRC-MAP-LITICA",
+        "SRC-MAP-LEXICO"
+      ],
+      "editorialNote": "Aquí toki designa la herramienta; no implica por sí mismo rango, autoridad ni carácter ceremonial.",
+      "iconSource": "Foundry Core Data Icons",
+      "iconMatch": "direct"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "rZ5JztozLP6qqf7u",
+  "sort": 3400000,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754918794,
+    "modifiedTime": 1793750036925,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

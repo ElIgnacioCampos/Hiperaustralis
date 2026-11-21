@@ -1,0 +1,70 @@
+{
+  "name": "Antara Tiwanaku",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/instrumentos/aymara/06_antara_tiwanaku.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "instrumento",
+      "descripcion": "Aerófono compacto de piedra o cerámica, con varios ductos internos y un sonido más antiguo que familiar.",
+      "procedencia": "Llegó a tu familia mediante intercambio, procedente de tierras altas. Tu madre decía que no pertenecía realmente a nadie, sólo a quienes supieran escucharlo."
+    },
+    "template": "HipInstrTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "f799PMHpfXLJ1HuA",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "instrumento"
+    },
+    "hiperaustralis-instrumentos": {
+      "seedId": "inst-06-antara_tiwanaku",
+      "version": "0.1",
+      "culture": "Aymara",
+      "family": "Aerófono",
+      "evidence": "A — tradición arqueológica prehispánica del horizonte pertinente.",
+      "sourceOriginal": "06_antara_tiwanaku.png"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "zSsH0T0CZzJ4nNQB",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754929060,
+    "modifiedTime": 1793380544413,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

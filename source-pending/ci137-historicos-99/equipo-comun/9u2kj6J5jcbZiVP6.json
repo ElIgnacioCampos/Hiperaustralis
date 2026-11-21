@@ -1,0 +1,82 @@
+{
+  "name": "Challa · Olla",
+  "type": "equippableItem",
+  "img": "icons/containers/kitchenware/vase-clay-pot-decorated-red.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Olla de cerámica de boca amplia para cocinar alimentos y hervir preparaciones junto al fuego.",
+      "procedencia": "La hizo una alfarera del lof donde pasaste el último invierno. Un costado permanece ennegrecido desde las primeras veces que la pusieron al fuego."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "e1H5TyvyNEU2Dv5E",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-equipo": {
+      "seedId": "eq-map-challa",
+      "seedVersion": "0.2",
+      "seedProvenance": "La hizo una alfarera del lof donde pasaste el último invierno. Un costado permanece ennegrecido desde las primeras veces que la pusieron al fuego.",
+      "culture": "Mapuche",
+      "family": "recipiente_coccion",
+      "localName": "Challa",
+      "spanishName": "Olla",
+      "languageScope": "mapudungun",
+      "materials": [
+        "cerámica"
+      ],
+      "sourceRefs": [
+        "SRC-MAP-PITREN",
+        "SRC-MAP-LEXICO"
+      ],
+      "editorialNote": "",
+      "iconSource": "Foundry Core Data Icons",
+      "iconMatch": "direct"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "9u2kj6J5jcbZiVP6",
+  "sort": 1000000,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754917902,
+    "modifiedTime": 1793750036924,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

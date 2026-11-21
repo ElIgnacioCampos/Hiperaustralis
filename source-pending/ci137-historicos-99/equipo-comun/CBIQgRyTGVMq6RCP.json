@@ -1,0 +1,83 @@
+{
+  "name": "Chinguillo · Bolsa-red",
+  "type": "equippableItem",
+  "img": "icons/tools/fishing/net-tan.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "equipo",
+      "descripcion": "Bolsa de red utilizada para recoger mariscos, peces pequeños o transportar aparejos de pesca.",
+      "procedencia": "La tejieron varias personas durante los días en que el mar impedía salir a pescar. Una sección tiene nudos distintos porque fue rehecha después de engancharse en el fondo."
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "folder": "e1H5TyvyNEU2Dv5E",
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "equipo"
+    },
+    "hiperaustralis-equipo": {
+      "seedId": "eq-chin-chinguillo",
+      "seedVersion": "0.2",
+      "seedProvenance": "La tejieron varias personas durante los días en que el mar impedía salir a pescar. Una sección tiene nudos distintos porque fue rehecha después de engancharse en el fondo.",
+      "culture": "Chinchorro",
+      "family": "red_contenedor",
+      "localName": "Chinguillo",
+      "spanishName": "Bolsa-red",
+      "languageScope": "arqueológico/regional",
+      "materials": [
+        "fibra_vegetal",
+        "madera"
+      ],
+      "sourceRefs": [
+        "SRC-CHIN-ARQUEOLOGIA",
+        "SRC-CHIN-UNESCO"
+      ],
+      "editorialNote": "Chinguillo es denominación arqueológica/regional; no se presenta como voz de la lengua chinchorro.",
+      "iconSource": "Foundry Core Data Icons",
+      "iconMatch": "direct"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "CBIQgRyTGVMq6RCP",
+  "sort": 1100000,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754926111,
+    "modifiedTime": 1793750036924,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}
