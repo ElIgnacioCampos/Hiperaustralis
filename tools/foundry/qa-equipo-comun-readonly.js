@@ -10,15 +10,15 @@
   const MODULE_ID = "hiperaustralis-compendios-prototype";
   const base = "modules/" + MODULE_ID + "/assets/_staging/equipo/webp256/";
   const entries = [
-    [13, "Qapu · Huso", "SbBJa9ACdFH2z86D", "aymara_qapu_huso.webp"],
-    [17, "Knífr · Cuchillo", "EPqXIQm8A38zvtXw", "nordico_knifr_cuchillo.webp"],
-    [20, "Eldjárn · Yesquero", "XhykrqOWzvB8abe9", "nordico_eldjarn_yesquero.webp"],
-    [22, "Saum-nál · Aguja de coser", "VOtfeqh5KvQw6eF1", "nordico_saum_nal_aguja.webp"],
-    [29, "Gancho de atalaje", "YuTiSkP9Mx7FvJy7", "lickanantay_gancho_atalaje.webp"],
-    [35, "Chinguillo · Bolsa-red", "CBIQgRyTGVMq6RCP", "chinchorro_chinguillo.webp"],
-    [36, "Chope · Desconchador", "Cal0I8l96tdRm1pR", "chinchorro_chope.webp"],
-    [38, "Canasto", "8a526Vqfx3hsafi3", "chinchorro_canasto.webp"],
-    [40, "Punzón de hueso", "MX9mAxfkdCwvEvkZ", "chinchorro_punzon_hueso.webp"]
+    [13, "Qapu · Huso", "SbBJa9ACdFH2z86D", "aymara_qapu_huso.webp", "icons/commodities/cloth/thread-spindle-grey.webp"],
+    [17, "Knífr · Cuchillo", "EPqXIQm8A38zvtXw", "nordico_knifr_cuchillo.webp", "icons/weapons/daggers/dagger-black.webp"],
+    [20, "Eldjárn · Yesquero", "XhykrqOWzvB8abe9", "nordico_eldjarn_yesquero.webp", "icons/tools/laboratory/burner-steel-grey.webp"],
+    [22, "Saum-nál · Aguja de coser", "VOtfeqh5KvQw6eF1", "nordico_saum_nal_aguja.webp", "icons/tools/hand/needle-grey.webp"],
+    [29, "Gancho de atalaje", "YuTiSkP9Mx7FvJy7", "lickanantay_gancho_atalaje.webp", "icons/sundries/survival/rope-wrapped-loops-grey.webp"],
+    [35, "Chinguillo · Bolsa-red", "CBIQgRyTGVMq6RCP", "chinchorro_chinguillo.webp", "icons/tools/fishing/net-tan.webp"],
+    [36, "Chope · Desconchador", "Cal0I8l96tdRm1pR", "chinchorro_chope.webp", "icons/tools/hand/wrench-steel-grey.webp"],
+    [38, "Canasto", "8a526Vqfx3hsafi3", "chinchorro_canasto.webp", "icons/containers/misc/basket-simple-yellow.webp"],
+    [40, "Punzón de hueso", "MX9mAxfkdCwvEvkZ", "chinchorro_punzon_hueso.webp", "icons/commodities/bones/tooth-spiked-brown.webp"]
   ];
   const pack = game.packs.get(PACK_ID);
   const report = {
@@ -32,9 +32,10 @@
     prototypeModuleFound: Boolean(game.modules.get(MODULE_ID)),
     results: []
   };
-  for (const [number, name, id, image] of entries) {
+  for (const [number, name, id, image, expectedPreviousImg] of entries) {
     const row = {number, name, id, asset: base + image, itemFound: false,
-                 itemNameMatches: false, existingImg: null, assetLoaded: false,
+                 itemNameMatches: false, existingImg: null, expectedPreviousImg, previousImgMatches: false,
+                 itemTypeMatches: false, folderMatches: false, assetLoaded: false,
                  dimensions: null, problems: []};
     if (!report.sourcePackFound) row.problems.push("El compendio histórico no está accesible");
     else {
@@ -45,6 +46,12 @@
         else {
           row.itemNameMatches = item.name === name;
           row.existingImg = item.img ?? null;
+          row.previousImgMatches = row.existingImg === expectedPreviousImg;
+          row.itemTypeMatches = item.type === "equippableItem";
+          row.folderMatches = item.folder?.id === "e1H5TyvyNEU2Dv5E";
+          if (!row.previousImgMatches) row.problems.push("Imagen previa distinta: " + row.existingImg);
+          if (!row.itemTypeMatches) row.problems.push("Tipo Item distinto: " + item.type);
+          if (!row.folderMatches) row.problems.push("Carpeta distinta: " + (item.folder?.id ?? "null"));
           if (!row.itemNameMatches) row.problems.push("Nombre distinto: " + item.name);
           if (item.system?.props?.hipera_tipo !== "equipo")
             row.problems.push("hipera_tipo distinto de equipo");
