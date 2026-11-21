@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "1.0",
+  "checkedAt": "2026-11-21",
+  "title": "Equipo común — QA documental y binario ejecutado; runtime no ejecutado",
+  "branch": "work/native-compendia-pipeline",
+  "authoritativeExport": "HIPERAUSTRALIS_FOUNDRY_ITEMS_2026-11-19T00-23-25-933Z.json",
+  "comparisonManifest": "manifests/equipo-comun-candidatos-solo-img-20261121.json",
+  "binaryManifest": "TRANSFER_MANIFEST.json",
+  "scope": "READ_ONLY_REVIEW",
+  "automatedObservations": {
+    "historicalCommonItems": {
+      "found": 40,
+      "expected": 40,
+      "uniqueDocumentIds": 40,
+      "correctItemType": 40,
+      "correctHiperaTipo": 40,
+      "commonCsbTemplate": 40,
+      "descriptionsPresent": 40,
+      "provenancePresent": 40,
+      "flagsPresent": 40,
+      "foundryIconPaths": 40
+    },
+    "candidateMappings": {
+      "checked": 9,
+      "passed": 9,
+      "checks": [
+        "documentId",
+        "UUID",
+        "name",
+        "type",
+        "folder",
+        "historical img",
+        "hipera_tipo",
+        "descripcion",
+        "system.template"
+      ],
+      "failures": 0
+    },
+    "stagingWebp": {
+      "checked": 29,
+      "passed": 29,
+      "checks": [
+        "exists in GitHub branch",
+        "binary byte length matches manifest",
+        "SHA-256 recomputed",
+        "RIFF/WEBP header",
+        "VP8L lossless format",
+        "256 x 256 dimensions",
+        "alpha flag"
+      ],
+      "failures": 0
+    },
+    "candidateSourceChecks": [
+      {
+        "index": 13,
+        "id": "SbBJa9ACdFH2z86D",
+        "name": "Qapu · Huso",
+        "sourceMatch": true,
+        "candidateWebp": "module/assets/_staging/equipo/webp256/aymara_qapu_huso.webp",
+        "integrityMatch": true
+      },
+      {
+        "index": 17,
+        "id": "EPqXIQm8A38zvtXw",
+        "name": "Knífr · Cuchillo",
+        "sourceMatch": true,
+        "candidateWebp": "module/assets/_staging/equipo/webp256/nordico_knifr_cuchillo.webp",
+        "integrityMatch": true
+      },
+      {
+        "index": 20,
+        "id": "XhykrqOWzvB8abe9",
+        "name": "Eldjárn · Yesquero",
+        "sourceMatch": true,
+        "candidateWebp": "module/assets/_staging/equipo/webp256/nordico_eldjarn_yesquero.webp",
+        "integrityMatch": true
+      },
+      {
+        "index": 22,
+        "id": "VOtfeqh5KvQw6eF1",
+        "name": "Saum-nál · Aguja de coser",
+        "sourceMatch": true,
+        "candidateWebp": "module/assets/_staging/equipo/webp256/nordico_saum_nal_aguja.webp",
+        "integrityMatch": true
+      },
+      {
+        "index": 29,
+        "id": "YuTiSkP9Mx7FvJy7",
+        "name": "Gancho de atalaje",
+        "sourceMatch": true,
+        "candidateWebp": "module/assets/_staging/equipo/webp256/lickanantay_gancho_atalaje.webp",
+        "integrityMatch": true
+      },
+      {
+        "index": 35,
+        "id": "CBIQgRyTGVMq6RCP",
+        "name": "Chinguillo · Bolsa-red",
+        "sourceMatch": true,
+        "candidateWebp": "module/assets/_staging/equipo/webp256/chinchorro_chinguillo.webp",
+        "integrityMatch": true
+      },
+      {
+        "index": 36,
+        "id": "Cal0I8l96tdRm1pR",
+        "name": "Chope · Desconchador",
+        "sourceMatch": true,
+        "candidateWebp": "module/assets/_staging/equipo/webp256/chinchorro_chope.webp",
+        "integrityMatch": true
+      },
+      {
+        "index": 38,
+        "id": "8a526Vqfx3hsafi3",
+        "name": "Canasto",
+        "sourceMatch": true,
+        "candidateWebp": "module/assets/_staging/equipo/webp256/chinchorro_canasto.webp",
+        "integrityMatch": true
+      },
+      {
+        "index": 40,
+        "id": "MX9mAxfkdCwvEvkZ",
+        "name": "Punzón de hueso",
+        "sourceMatch": true,
+        "candidateWebp": "module/assets/_staging/equipo/webp256/chinchorro_punzon_hueso.webp",
+        "integrityMatch": true
+      }
+    ]
+  },
+  "distinctions": [
+    "Icono de Foundry actual no implica imagen faltante; son 40/40 rutas de iconos de Foundry en el export del 19-11",
+    "Nueve sustituciones solo-img son candidatas, no una orden de instalación",
+    "Los 20 WebP sin cruce directo son banco cultural y no 20 Items pendientes",
+    "No se comparó visualmente cada ilustración en interfaz Foundry",
+    "No se probó que los assets staged sean servidos por el módulo instalado"
+  ],
+  "pendingTests": [
+    "Ejecutar macro de solo lectura en mundo Foundry V14 aislado con módulo prototipo habilitado y compendio histórico accesible",
+    "Revisar visualmente fondo claro y oscuro, halos y legibilidad al tamaño de ficha",
+    "Acreditar rutas accesibles en paquete instalado, sin promover staging aún",
+    "Comparar el resultado de ejecución y autorizar por separado cualquier cambio img"
+  ],
+  "notExecuted": [
+    "Foundry client / world QA",
+    "GitHub Actions CI for these specific QA scripts",
+    "productivo Foundry",
+    "modificación de Items o de img",
+    "maestros PNG recovery"
+  ],
+  "verdict": "OFFLINE_DATA_AND_BINARY_PASS__FOUNDRY_RUNTIME_PENDING",
+  "filesCreatedOrChangedInThisQA": [
+    "docs/CORE_EQUIPO_COMUN_QA_DOCUMENTAL_BINARIO_2026-11-21_v07.md",
+    "reports/CORE_EQUIPO_COMUN_QA_OFFLINE_2026-11-21.json"
+  ],
+  "productionChanges": false
+}
