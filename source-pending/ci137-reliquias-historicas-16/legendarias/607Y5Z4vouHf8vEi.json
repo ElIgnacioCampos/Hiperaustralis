@@ -1,0 +1,73 @@
+{
+  "name": "Tridente de Ullman",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/01_TRIDENTE_DE_ULLMAN.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "reliquia",
+      "historia": "El tridente de Ullman es un arma extraordinaria cuya materia conserva la historia de los actos que ha atravesado. En manos de Hildr, durante el combate sobre Jasconius, su peso parece guiarla. Como toda Reliquia, lo vivido por sus portadores puede volver a importar cuando una situación reactiva esas relaciones.",
+      "correspondencias": "Agua · Viento · mar · Luna · mareas · horizonte · tormenta.",
+      "resonancia": "Resuena especialmente allí donde mar y cielo se encuentran: cambios del viento, movimiento de las aguas, mareas, tormentas y horizontes abiertos pueden volver pertinentes las relaciones que el tridente conserva. Esa resonancia puede revelar una Correspondencia, una Huella o hacer posible una acción coherente con la escena.",
+      "notas": "Reliquia portátil. No concede un bonificador fijo: su fuerza está en la relación entre materia, historia, Correspondencias y situación."
+    },
+    "template": "HipRelqTpl000001",
+    "templateSystemUniqueVersion": 172001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "flags": {
+    "meliaz-bridge": {
+      "kind": "reliquia"
+    },
+    "hiperaustralis-reliquias": {
+      "slug": "tridente-de-ullman",
+      "catalogVersion": 4,
+      "categoria": "legendaria"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/01_TRIDENTE_DE_ULLMAN.webp",
+      "backgroundOpacity": 0.25
+    },
+    "custom-system-builder": {
+      "version": "6.0.2"
+    }
+  },
+  "effects": [],
+  "folder": "UIWjSdC9Mhj0VWop",
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "607Y5Z4vouHf8vEi",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754907043,
+    "modifiedTime": 1793380458376,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

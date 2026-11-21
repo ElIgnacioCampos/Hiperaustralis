@@ -1,0 +1,73 @@
+{
+  "name": "Yelmo de Hipólita",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/03_YELMO_DE_HIPOLITA.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "reliquia",
+      "historia": "El yelmo de oro de Hipólita sobrevivió a la caída de su reino cuando casi todo a su alrededor quedó reducido a ruinas, herrumbre y memoria. Sheba reconoce su ausencia entre los restos y lo recupera de manos de una criatura que lo había sustraído. Desde entonces, el yelmo conserva la relación entre una soberanía desaparecida, quienes todavía la recuerdan y aquello que permanece después de la destrucción.",
+      "correspondencias": "Tierra · oro · Sol · ocaso · ruina · memoria.",
+      "resonancia": "Resuena cuando una escena pone en juego memoria, herencia, autoridad perdida o ruinas que todavía conservan una relación viva con quienes las habitaron. Puede revelar una Huella, reconocer una continuidad o volver pertinente una Correspondencia ligada a aquello que sobrevivió a la caída.",
+      "notas": "Reliquia portátil. Llevar el yelmo no concede por sí solo la autoridad, la fuerza ni las hazañas de Hipólita: esas relaciones deben hacerse verdaderas en la escena."
+    },
+    "template": "HipRelqTpl000001",
+    "templateSystemUniqueVersion": 172001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "flags": {
+    "meliaz-bridge": {
+      "kind": "reliquia"
+    },
+    "hiperaustralis-reliquias": {
+      "slug": "yelmo-de-hipolita",
+      "catalogVersion": 4,
+      "categoria": "legendaria"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/03_YELMO_DE_HIPOLITA.webp",
+      "backgroundOpacity": 0.25
+    },
+    "custom-system-builder": {
+      "version": "6.0.2"
+    }
+  },
+  "effects": [],
+  "folder": "UIWjSdC9Mhj0VWop",
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "sRDyvzOfCVjdHJ0D",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754907506,
+    "modifiedTime": 1793380530261,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

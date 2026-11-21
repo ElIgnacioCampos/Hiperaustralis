@@ -1,0 +1,73 @@
+{
+  "name": "Cencerro de madera",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/08_cencerro_de_madera.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "reliquia",
+      "historia": "«Sonó durante años al cuello de la llama que guiaba la recua de mi familia; mi abuela me lo entregó cuando dejó de subir a las tierras altas.»",
+      "correspondencias": "Aire · sonido · caravana · orientación · animales · camino · territorio",
+      "resonancia": "Puede servir en Viajar, Consultar o Vincular cuando sonido, caravana, tránsito, llamada o reconocimiento territorial sean parte de la ficción ritual.",
+      "notas": "Un cencerro de madera asociado al tránsito de una recua. Su sonido pertenece tanto al animal que lo porta como al grupo que avanza, se dispersa y vuelve a reunirse durante el camino."
+    },
+    "template": "HipRelqTpl000001",
+    "templateSystemUniqueVersion": 172001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "flags": {
+    "meliaz-bridge": {
+      "kind": "reliquia"
+    },
+    "hiperaustralis-reliquias": {
+      "slug": "cencerro-de-madera",
+      "catalogVersion": 4,
+      "categoria": "cotidiana"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/08_cencerro_de_madera.webp",
+      "backgroundOpacity": 0.25
+    },
+    "custom-system-builder": {
+      "version": "6.0.2"
+    }
+  },
+  "effects": [],
+  "folder": "n9n22uuQq87v13ZQ",
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "frD3BIM7bklCxPle",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754910534,
+    "modifiedTime": 1793380516809,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

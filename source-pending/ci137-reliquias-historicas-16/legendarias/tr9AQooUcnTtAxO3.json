@@ -1,0 +1,73 @@
+{
+  "name": "Drakar de Ullman",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/04_DRAKAR_DE_ULLMAN.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "reliquia",
+      "historia": "Ullman extrae este drakar a través de una geometría imposible abierta sobre un túmulo ancestral. Al emerger brilla como oro bajo la luz del ocaso y luego vuelve al gris y marrón de la madera. Es más liviano que la madera ordinaria, está cubierto de escamas pétreas y lleva un mascarón de bestia marina. Los viajes, tripulaciones y costas atravesadas pasan a formar parte de su historia.",
+      "correspondencias": "Agua · Viento · mar · horizonte · ocaso · madera · piedra.",
+      "resonancia": "Resuena en viajes donde el mar, la costa o el horizonte dejan de comportarse como límites ordinarios. Puede reconocer una ruta, conservar la Huella de un tránsito o hacer pertinente una Correspondencia entre navegación, territorio y aquello que espera más allá del horizonte.",
+      "notas": "Reliquia móvil de gran escala. No es un vehículo que ignore automáticamente cualquier distancia, tormenta o frontera: su historia debe encontrarse con una situación capaz de hacerla resonar."
+    },
+    "template": "HipRelqTpl000001",
+    "templateSystemUniqueVersion": 172001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "flags": {
+    "meliaz-bridge": {
+      "kind": "reliquia"
+    },
+    "hiperaustralis-reliquias": {
+      "slug": "drakar-de-ullman",
+      "catalogVersion": 4,
+      "categoria": "legendaria"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/04_DRAKAR_DE_ULLMAN.webp",
+      "backgroundOpacity": 0.25
+    },
+    "custom-system-builder": {
+      "version": "6.0.2"
+    }
+  },
+  "effects": [],
+  "folder": "UIWjSdC9Mhj0VWop",
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "tr9AQooUcnTtAxO3",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754907736,
+    "modifiedTime": 1793380533351,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

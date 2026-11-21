@@ -1,0 +1,73 @@
+{
+  "name": "Inkuña de ofrendas",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/04_inkuna_de_ofrendas.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "reliquia",
+      "historia": "«Era de mi abuela. Me enseñó a desplegarla antes de pedirme que aprendiera a pedir cualquier otra cosa.»",
+      "correspondencias": "Tierra · ofrenda · reciprocidad · Presencias · territorio · compromiso",
+      "resonancia": "Puede servir en Consultar, Vincular, Restituir o Renovar Arraigo cuando el Ritual requiere presentar, devolver, reconocer o consagrar una ofrenda.",
+      "notas": "Un paño tejido para contener, envolver y presentar ofrendas. Al desplegarlo, aquello que se entrega queda separado del uso cotidiano y dispuesto para una relación de reciprocidad."
+    },
+    "template": "HipRelqTpl000001",
+    "templateSystemUniqueVersion": 172001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "flags": {
+    "meliaz-bridge": {
+      "kind": "reliquia"
+    },
+    "hiperaustralis-reliquias": {
+      "slug": "inkuna-de-ofrendas",
+      "catalogVersion": 4,
+      "categoria": "cotidiana"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/04_inkuna_de_ofrendas.webp",
+      "backgroundOpacity": 0.25
+    },
+    "custom-system-builder": {
+      "version": "6.0.2"
+    }
+  },
+  "effects": [],
+  "folder": "n9n22uuQq87v13ZQ",
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "TADm8tlCkyns4iwE",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754909568,
+    "modifiedTime": 1793380501174,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

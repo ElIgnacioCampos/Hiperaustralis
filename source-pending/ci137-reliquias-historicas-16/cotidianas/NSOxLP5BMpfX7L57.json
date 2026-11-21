@@ -1,0 +1,73 @@
+{
+  "name": "Piedra de afilar del viaje",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/06_piedra_de_afilar_del_viaje.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "reliquia",
+      "historia": "«Mi abuelo la guardaba junto a sus herramientas y me la dejó con una sola advertencia: no emprendas un viaje con algo que no estés dispuesto a cuidar.»",
+      "correspondencias": "Tierra · preparación · herramienta · oficio · camino · perseverancia",
+      "resonancia": "Puede servir en Viajar, Restituir o Vincular cuando el Ritual depende de preparación, oficio, reparación o continuidad de una tarea.",
+      "notas": "Una pequeña piedra de afilar alisada por años de uso. Viaja junto a herramientas y armas no para volverlas excepcionales, sino para mantenerlas en condiciones de seguir cumpliendo su tarea."
+    },
+    "template": "HipRelqTpl000001",
+    "templateSystemUniqueVersion": 172001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "flags": {
+    "meliaz-bridge": {
+      "kind": "reliquia"
+    },
+    "hiperaustralis-reliquias": {
+      "slug": "piedra-de-afilar-del-viaje",
+      "catalogVersion": 4,
+      "categoria": "cotidiana"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/06_piedra_de_afilar_del_viaje.webp",
+      "backgroundOpacity": 0.25
+    },
+    "custom-system-builder": {
+      "version": "6.0.2"
+    }
+  },
+  "effects": [],
+  "folder": "n9n22uuQq87v13ZQ",
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "NSOxLP5BMpfX7L57",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754910068,
+    "modifiedTime": 1793380489908,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}

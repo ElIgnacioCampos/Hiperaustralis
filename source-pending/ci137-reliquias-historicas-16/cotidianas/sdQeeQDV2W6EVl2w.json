@@ -1,0 +1,73 @@
+{
+  "name": "Cuchara de chañar",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/07_cuchara_de_chanar.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "reliquia",
+      "historia": "«La talló mi bisabuela y comieron con ella sus hijos; llegó a mí para que recordara que también se hereda la mesa.»",
+      "correspondencias": "Tierra · alimento · árbol · mesa · cuidado · territorio",
+      "resonancia": "Puede servir en Vincular, Restituir o Renovar Arraigo cuando la relación ritual pasa por alimento compartido, cuidado o pertenencia doméstica.",
+      "notas": "Una cuchara de madera de chañar, oscurecida por el uso y conservada como objeto doméstico. Une la madera del territorio con el acto repetido de servir y compartir alimento."
+    },
+    "template": "HipRelqTpl000001",
+    "templateSystemUniqueVersion": 172001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "flags": {
+    "meliaz-bridge": {
+      "kind": "reliquia"
+    },
+    "hiperaustralis-reliquias": {
+      "slug": "cuchara-de-chanar",
+      "catalogVersion": 4,
+      "categoria": "cotidiana"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/07_cuchara_de_chanar.webp",
+      "backgroundOpacity": 0.25
+    },
+    "custom-system-builder": {
+      "version": "6.0.2"
+    }
+  },
+  "effects": [],
+  "folder": "n9n22uuQq87v13ZQ",
+  "ownership": {
+    "default": 0,
+    "zuJuqzsEVZsKtxHu": 3
+  },
+  "_id": "sdQeeQDV2W6EVl2w",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754910296,
+    "modifiedTime": 1793380531010,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": []
+}
