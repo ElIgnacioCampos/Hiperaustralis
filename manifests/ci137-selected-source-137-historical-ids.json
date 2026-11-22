@@ -1,0 +1,739 @@
+{
+  "schema": "hipera-ci137-selected-historic-identities-v01",
+  "status": "SOURCE_SELECTION_ONLY_DO_NOT_BUILD_OR_PUBLISH",
+  "targetCount": 137,
+  "entries": [
+    {
+      "id": "pe9Bb6kzCsr5IUx1",
+      "family": "Defensas",
+      "source": "source-pending/ci137-historicos-99/defensas/pe9Bb6kzCsr5IUx1.json"
+    },
+    {
+      "id": "uM1FCC5l7Lbx8sRa",
+      "family": "Defensas",
+      "source": "source-pending/ci137-historicos-99/defensas/uM1FCC5l7Lbx8sRa.json"
+    },
+    {
+      "id": "Id2dCZ4s4TPTMr8R",
+      "family": "Defensas",
+      "source": "source-pending/ci137-historicos-99/defensas/Id2dCZ4s4TPTMr8R.json"
+    },
+    {
+      "id": "ThGITBgBJNBwJ6o2",
+      "family": "Defensas",
+      "source": "source-pending/ci137-historicos-99/defensas/ThGITBgBJNBwJ6o2.json"
+    },
+    {
+      "id": "aa9YXJm5fD4UF6oK",
+      "family": "Defensas",
+      "source": "source-pending/ci137-historicos-99/defensas/aa9YXJm5fD4UF6oK.json"
+    },
+    {
+      "id": "6z2oWVl5FstIDJKB",
+      "family": "Defensas",
+      "source": "source-pending/ci137-historicos-99/defensas/6z2oWVl5FstIDJKB.json"
+    },
+    {
+      "id": "bMbwzRsasVa6zxAM",
+      "family": "Defensas",
+      "source": "source-pending/ci137-historicos-99/defensas/bMbwzRsasVa6zxAM.json"
+    },
+    {
+      "id": "gftm3lDJ8r4YbOjh",
+      "family": "Defensas",
+      "source": "source-pending/ci137-historicos-99/defensas/gftm3lDJ8r4YbOjh.json"
+    },
+    {
+      "id": "3v9D425QdKOva3XV",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/3v9D425QdKOva3XV.json"
+    },
+    {
+      "id": "E8964qw0yfQskaB6",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/E8964qw0yfQskaB6.json"
+    },
+    {
+      "id": "U4ON2BsjM4Y0t5nD",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/U4ON2BsjM4Y0t5nD.json"
+    },
+    {
+      "id": "kMqPL8yvZQIaZGmY",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/kMqPL8yvZQIaZGmY.json"
+    },
+    {
+      "id": "8a526Vqfx3hsafi3",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/8a526Vqfx3hsafi3.json"
+    },
+    {
+      "id": "em5ML5e9yQyQCH2o",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/em5ML5e9yQyQCH2o.json"
+    },
+    {
+      "id": "Y0QM677Ln8rfixg6",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/Y0QM677Ln8rfixg6.json"
+    },
+    {
+      "id": "9u2kj6J5jcbZiVP6",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/9u2kj6J5jcbZiVP6.json"
+    },
+    {
+      "id": "CBIQgRyTGVMq6RCP",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/CBIQgRyTGVMq6RCP.json"
+    },
+    {
+      "id": "Cal0I8l96tdRm1pR",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/Cal0I8l96tdRm1pR.json"
+    },
+    {
+      "id": "xzRV37AjDu0WVuzh",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/xzRV37AjDu0WVuzh.json"
+    },
+    {
+      "id": "5mmFqPLbv3kcJcoj",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/5mmFqPLbv3kcJcoj.json"
+    },
+    {
+      "id": "lvwNyb0lGRwb1Oxu",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/lvwNyb0lGRwb1Oxu.json"
+    },
+    {
+      "id": "XhykrqOWzvB8abe9",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/XhykrqOWzvB8abe9.json"
+    },
+    {
+      "id": "WgYdtWEqZmWbZpuU",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/WgYdtWEqZmWbZpuU.json"
+    },
+    {
+      "id": "YuTiSkP9Mx7FvJy7",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/YuTiSkP9Mx7FvJy7.json"
+    },
+    {
+      "id": "V70OePeRN8xLcbuy",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/V70OePeRN8xLcbuy.json"
+    },
+    {
+      "id": "PmTYfMVymolkOvkq",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/PmTYfMVymolkOvkq.json"
+    },
+    {
+      "id": "EPqXIQm8A38zvtXw",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/EPqXIQm8A38zvtXw.json"
+    },
+    {
+      "id": "F8SYAQfuZnLiXCv6",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/F8SYAQfuZnLiXCv6.json"
+    },
+    {
+      "id": "o1z5pPevd1NzySi6",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/o1z5pPevd1NzySi6.json"
+    },
+    {
+      "id": "7y88F6dSJK7HvqrN",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/7y88F6dSJK7HvqrN.json"
+    },
+    {
+      "id": "UZCgOpwUoDoYPAME",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/UZCgOpwUoDoYPAME.json"
+    },
+    {
+      "id": "0AeK5B1RD2Z0xry7",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/0AeK5B1RD2Z0xry7.json"
+    },
+    {
+      "id": "8y3gYDMnZvALhlOn",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/8y3gYDMnZvALhlOn.json"
+    },
+    {
+      "id": "rmS5WS3R6v1dapQ3",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/rmS5WS3R6v1dapQ3.json"
+    },
+    {
+      "id": "xE1erYosmiInLUpj",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/xE1erYosmiInLUpj.json"
+    },
+    {
+      "id": "yFT8cUZ71AOrxvN5",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/yFT8cUZ71AOrxvN5.json"
+    },
+    {
+      "id": "MX9mAxfkdCwvEvkZ",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/MX9mAxfkdCwvEvkZ.json"
+    },
+    {
+      "id": "g2YB821BybKVvqgK",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/g2YB821BybKVvqgK.json"
+    },
+    {
+      "id": "Qbf0kVDqbeWvJ0ty",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/Qbf0kVDqbeWvJ0ty.json"
+    },
+    {
+      "id": "SbBJa9ACdFH2z86D",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/SbBJa9ACdFH2z86D.json"
+    },
+    {
+      "id": "MVaSt17DYFT5CP5R",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/MVaSt17DYFT5CP5R.json"
+    },
+    {
+      "id": "89egEPGh4AtrOMS0",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/89egEPGh4AtrOMS0.json"
+    },
+    {
+      "id": "VOtfeqh5KvQw6eF1",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/VOtfeqh5KvQw6eF1.json"
+    },
+    {
+      "id": "w9DvGQFnGfW8GsiW",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/w9DvGQFnGfW8GsiW.json"
+    },
+    {
+      "id": "rZ5JztozLP6qqf7u",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/rZ5JztozLP6qqf7u.json"
+    },
+    {
+      "id": "tfOpt8w3B1dFl6qS",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/tfOpt8w3B1dFl6qS.json"
+    },
+    {
+      "id": "iqLSPRD0g34ZMqTi",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/iqLSPRD0g34ZMqTi.json"
+    },
+    {
+      "id": "5nFewbreKtldDFdL",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/5nFewbreKtldDFdL.json"
+    },
+    {
+      "id": "Aobt60Pl1vy7i7MU",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/Aobt60Pl1vy7i7MU.json"
+    },
+    {
+      "id": "zSsH0T0CZzJ4nNQB",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/zSsH0T0CZzJ4nNQB.json"
+    },
+    {
+      "id": "j7J6wcAttET8rJpB",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/j7J6wcAttET8rJpB.json"
+    },
+    {
+      "id": "RzhInApxuwq1o651",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/RzhInApxuwq1o651.json"
+    },
+    {
+      "id": "INdG4JndLBl0sWto",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/INdG4JndLBl0sWto.json"
+    },
+    {
+      "id": "YfFAFtBpsdyU2l9R",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/YfFAFtBpsdyU2l9R.json"
+    },
+    {
+      "id": "R1exJG9q2EP8URHe",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/R1exJG9q2EP8URHe.json"
+    },
+    {
+      "id": "1dhUgcpr5U3wAQ1l",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/1dhUgcpr5U3wAQ1l.json"
+    },
+    {
+      "id": "vr5gUbTNMU8tj3zL",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/vr5gUbTNMU8tj3zL.json"
+    },
+    {
+      "id": "K7d2oqF6P7DB0Kpt",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/K7d2oqF6P7DB0Kpt.json"
+    },
+    {
+      "id": "7yTC2u73mcFuQrx2",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/7yTC2u73mcFuQrx2.json"
+    },
+    {
+      "id": "IG8DW7Wr30mg1jqx",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/IG8DW7Wr30mg1jqx.json"
+    },
+    {
+      "id": "KpK5mqDdleRnemjh",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/KpK5mqDdleRnemjh.json"
+    },
+    {
+      "id": "JZUzx0bNMoDj6xs5",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/JZUzx0bNMoDj6xs5.json"
+    },
+    {
+      "id": "K4BKDYp47LohrxuD",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/K4BKDYp47LohrxuD.json"
+    },
+    {
+      "id": "VMdFQpCaienOgLV4",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/VMdFQpCaienOgLV4.json"
+    },
+    {
+      "id": "RiMXmUYNYn5VRKrx",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/RiMXmUYNYn5VRKrx.json"
+    },
+    {
+      "id": "tvgKf9WGkUmy6GJi",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/tvgKf9WGkUmy6GJi.json"
+    },
+    {
+      "id": "Akd70OCwmrJ0az3P",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/Akd70OCwmrJ0az3P.json"
+    },
+    {
+      "id": "FvfW6Ug0yCyR7VjF",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/FvfW6Ug0yCyR7VjF.json"
+    },
+    {
+      "id": "gp4b3XE6mJGvqE9X",
+      "family": "Instrumentos musicales",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/gp4b3XE6mJGvqE9X.json"
+    },
+    {
+      "id": "ntEPr3gfZn4xD2rG",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/ntEPr3gfZn4xD2rG.json"
+    },
+    {
+      "id": "JKxUdwuhOtz8yGW1",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/JKxUdwuhOtz8yGW1.json"
+    },
+    {
+      "id": "ilG4UwSV1Bgbk4TF",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/ilG4UwSV1Bgbk4TF.json"
+    },
+    {
+      "id": "nnmYeJON0DKDGJsL",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/nnmYeJON0DKDGJsL.json"
+    },
+    {
+      "id": "Z955U4dlDAUeEZvr",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/Z955U4dlDAUeEZvr.json"
+    },
+    {
+      "id": "FwlbrqC5ZBqiRjXy",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/FwlbrqC5ZBqiRjXy.json"
+    },
+    {
+      "id": "IPKDCSo3bKzUCcGl",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/IPKDCSo3bKzUCcGl.json"
+    },
+    {
+      "id": "AocpkbZW4w29Bc4u",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/AocpkbZW4w29Bc4u.json"
+    },
+    {
+      "id": "Nvj2xTK4apIrEDPn",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/Nvj2xTK4apIrEDPn.json"
+    },
+    {
+      "id": "psnu2t74dnHQ3pFx",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/psnu2t74dnHQ3pFx.json"
+    },
+    {
+      "id": "FBVSE0HBZ62ShEZM",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/FBVSE0HBZ62ShEZM.json"
+    },
+    {
+      "id": "xdvai2XGysSWwdKt",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/xdvai2XGysSWwdKt.json"
+    },
+    {
+      "id": "q0qlFGWAMip94Y4i",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/q0qlFGWAMip94Y4i.json"
+    },
+    {
+      "id": "dVgxiZYJcTLdA5yL",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/dVgxiZYJcTLdA5yL.json"
+    },
+    {
+      "id": "P0xH74Ofvj2xnAvk",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/P0xH74Ofvj2xnAvk.json"
+    },
+    {
+      "id": "fW04rY0fTfZ84fL6",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/fW04rY0fTfZ84fL6.json"
+    },
+    {
+      "id": "3cCDbjqou8AlzfsW",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/3cCDbjqou8AlzfsW.json"
+    },
+    {
+      "id": "zSx4zh9b24XjjXMx",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/zSx4zh9b24XjjXMx.json"
+    },
+    {
+      "id": "QTbZkuQcog7ReVW5",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/QTbZkuQcog7ReVW5.json"
+    },
+    {
+      "id": "MvGDMBIuGD1iozPW",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/MvGDMBIuGD1iozPW.json"
+    },
+    {
+      "id": "0MRehrLjaQOO4s1A",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/0MRehrLjaQOO4s1A.json"
+    },
+    {
+      "id": "oaLaLLWoZXQrRULq",
+      "family": "Parafernalia · sanación · cultura material",
+      "source": "source-pending/ci137-historicos-99/parafernalia/oaLaLLWoZXQrRULq.json"
+    },
+    {
+      "id": "StbeCxC7TrpiOUdG",
+      "family": "Rituales",
+      "source": "source-pending/ci137-historicos-99/rituales/StbeCxC7TrpiOUdG.json"
+    },
+    {
+      "id": "fCg9JDUw2DNqWjOe",
+      "family": "Rituales",
+      "source": "source-pending/ci137-historicos-99/rituales/fCg9JDUw2DNqWjOe.json"
+    },
+    {
+      "id": "wgLZd7pqnk84LSWJ",
+      "family": "Rituales",
+      "source": "source-pending/ci137-historicos-99/rituales/wgLZd7pqnk84LSWJ.json"
+    },
+    {
+      "id": "4jeuBPUYEGHmXKXv",
+      "family": "Rituales",
+      "source": "source-pending/ci137-historicos-99/rituales/4jeuBPUYEGHmXKXv.json"
+    },
+    {
+      "id": "mLpXRfCGbmX1t8xa",
+      "family": "Rituales",
+      "source": "source-pending/ci137-historicos-99/rituales/mLpXRfCGbmX1t8xa.json"
+    },
+    {
+      "id": "JQI2h5gPnAsqvcsF",
+      "family": "Rituales",
+      "source": "source-pending/ci137-historicos-99/rituales/JQI2h5gPnAsqvcsF.json"
+    },
+    {
+      "id": "yoCFKUIlnBqVvRsH",
+      "family": "Rituales",
+      "source": "source-pending/ci137-historicos-99/rituales/yoCFKUIlnBqVvRsH.json"
+    },
+    {
+      "id": "yQe9xxburYY3j35H",
+      "family": "Rituales",
+      "source": "source-pending/ci137-historicos-99/rituales/yQe9xxburYY3j35H.json"
+    },
+    {
+      "id": "c2L6T5w4S9OcgkDt",
+      "family": "Armas",
+      "source": "source/items/armas/01_cuchillo_litico.json"
+    },
+    {
+      "id": "Iol01RpIqlQxSTMr",
+      "family": "Armas",
+      "source": "source/items/armas/02_cuchillo_hueso.json"
+    },
+    {
+      "id": "Ri1XmMCXqdIJbK3s",
+      "family": "Armas",
+      "source": "source/items/armas/03_cuchillo_metalico.json"
+    },
+    {
+      "id": "n5lkb91fMyBzjvzX",
+      "family": "Armas",
+      "source": "source/items/armas/04_seax.json"
+    },
+    {
+      "id": "tGW0xjpxQ9JnguU5",
+      "family": "Armas",
+      "source": "source/items/armas/05_espada.json"
+    },
+    {
+      "id": "gf8C98EdlQSYUQh4",
+      "family": "Armas",
+      "source": "source/items/armas/06_garrote.json"
+    },
+    {
+      "id": "DYLtTWt2LeXGYvG7",
+      "family": "Armas",
+      "source": "source/items/armas/07_baston_combate.json"
+    },
+    {
+      "id": "VM0QO1ULwgCp72UM",
+      "family": "Armas",
+      "source": "source/items/armas/08_maza_petrea.json"
+    },
+    {
+      "id": "IIeIpAv4T4dD6hY1",
+      "family": "Armas",
+      "source": "source/items/armas/09_hacha_litica.json"
+    },
+    {
+      "id": "yJ6TtE7h71JqcxlU",
+      "family": "Armas",
+      "source": "source/items/armas/10_hacha_metalica.json"
+    },
+    {
+      "id": "utacTITGbR2IGTqs",
+      "family": "Armas",
+      "source": "source/items/armas/11_hacha_dos_manos.json"
+    },
+    {
+      "id": "9gpIv2fgoOYUFOpf",
+      "family": "Armas",
+      "source": "source/items/armas/12_hacha_barbada.json"
+    },
+    {
+      "id": "QxUldCoEJEOCXFnJ",
+      "family": "Armas",
+      "source": "source/items/armas/13_lanza_corta.json"
+    },
+    {
+      "id": "UEjClr8xQiDH77h1",
+      "family": "Armas",
+      "source": "source/items/armas/14_lanza_larga.json"
+    },
+    {
+      "id": "Rq6tY7rc6ktFEigy",
+      "family": "Armas",
+      "source": "source/items/armas/15_jabalina.json"
+    },
+    {
+      "id": "8D8YGQR5iuPKMqo0",
+      "family": "Armas",
+      "source": "source/items/armas/16_arco_simple.json"
+    },
+    {
+      "id": "mHTbGNwut0kzDCVg",
+      "family": "Armas",
+      "source": "source/items/armas/17_flecha.json"
+    },
+    {
+      "id": "18MnPw0iJrmMtvgV",
+      "family": "Armas",
+      "source": "source/items/armas/18_honda.json"
+    },
+    {
+      "id": "3ssFdtyl81bRpdKc",
+      "family": "Armas",
+      "source": "source/items/armas/19_mataa.json"
+    },
+    {
+      "id": "1uesBUeTeGjo9JQT",
+      "family": "Armas",
+      "source": "source/items/armas/20_arpon.json"
+    },
+    {
+      "id": "q3HXoB750L6j6XHK",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/q3HXoB750L6j6XHK.json",
+      "prototypeAlias": "KvinnebyRel00001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.q3HXoB750L6j6XHK"
+    },
+    {
+      "id": "CtMcaOnMjw23zWmq",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/CtMcaOnMjw23zWmq.json",
+      "prototypeAlias": "AntukuraReliq001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.CtMcaOnMjw23zWmq"
+    },
+    {
+      "id": "frD3BIM7bklCxPle",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/frD3BIM7bklCxPle.json",
+      "prototypeAlias": "CencerroMadRel01",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.frD3BIM7bklCxPle"
+    },
+    {
+      "id": "z8BEvJ4uHgLSZePS",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/z8BEvJ4uHgLSZePS.json",
+      "prototypeAlias": "ChallaHeredRel001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.z8BEvJ4uHgLSZePS"
+    },
+    {
+      "id": "a9NdZq068ANs5hnR",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/a9NdZq068ANs5hnR.json",
+      "prototypeAlias": "ChayancoRel00001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.a9NdZq068ANs5hnR"
+    },
+    {
+      "id": "u5Vbl3gGUL4kJJQ2",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/u5Vbl3gGUL4kJJQ2.json",
+      "prototypeAlias": "ChuspaCamRel0001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.u5Vbl3gGUL4kJJQ2"
+    },
+    {
+      "id": "sdQeeQDV2W6EVl2w",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/sdQeeQDV2W6EVl2w.json",
+      "prototypeAlias": "CuchChaniarRel01",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.sdQeeQDV2W6EVl2w"
+    },
+    {
+      "id": "tr9AQooUcnTtAxO3",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/tr9AQooUcnTtAxO3.json",
+      "prototypeAlias": "DrakarUllmanRel01",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.tr9AQooUcnTtAxO3"
+    },
+    {
+      "id": "TADm8tlCkyns4iwE",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/TADm8tlCkyns4iwE.json",
+      "prototypeAlias": "InkuniaRel000001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.TADm8tlCkyns4iwE"
+    },
+    {
+      "id": "T0yw5ZsA7WtDOB9G",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/T0yw5ZsA7WtDOB9G.json",
+      "prototypeAlias": "KMetaweFamRel01",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.T0yw5ZsA7WtDOB9G"
+    },
+    {
+      "id": "3Rjv67wd9g9rVwka",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/3Rjv67wd9g9rVwka.json",
+      "prototypeAlias": "PeineAstaRel0001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.3Rjv67wd9g9rVwka"
+    },
+    {
+      "id": "NSOxLP5BMpfX7L57",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/NSOxLP5BMpfX7L57.json",
+      "prototypeAlias": "AfilarViajeRel01",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.NSOxLP5BMpfX7L57"
+    },
+    {
+      "id": "ik1kdfVoqQbbTAmH",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/ik1kdfVoqQbbTAmH.json",
+      "prototypeAlias": "PiedraPaititiRel1",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.ik1kdfVoqQbbTAmH"
+    },
+    {
+      "id": "UrZNB1QgdnAghNQb",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/UrZNB1QgdnAghNQb.json",
+      "prototypeAlias": "TabHumFelRel0001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.UrZNB1QgdnAghNQb"
+    },
+    {
+      "id": "607Y5Z4vouHf8vEi",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/607Y5Z4vouHf8vEi.json",
+      "prototypeAlias": "TridUllmanRel001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.607Y5Z4vouHf8vEi"
+    },
+    {
+      "id": "sRDyvzOfCVjdHJ0D",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/sRDyvzOfCVjdHJ0D.json",
+      "prototypeAlias": "YelHipolitaRel01",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.sRDyvzOfCVjdHJ0D"
+    },
+    {
+      "id": "HipArm01PackA000",
+      "family": "Armas",
+      "source": "source/items/01_cuchillo_piedra.json",
+      "blockedAsset": "01_cuchillo_piedra.webp"
+    },
+    {
+      "id": "TokicuraRel0001",
+      "family": "Reliquias",
+      "source": "source/items/reliquias/tokicura.json"
+    }
+  ],
+  "policy": {
+    "relicIdentity": "HISTORICAL_IDS_APPROVED",
+    "prototypeAliases": "DOCUMENTARY_ONLY",
+    "keepSourceJSONUnchanged": true,
+    "doNotRewriteCompendiumSource": true,
+    "doNotPublish": true,
+    "gates": [
+      "art_approved_ARM11_12_13",
+      "distinct_cuchillo_piedra_image",
+      "binary_provenance_and_final_visuals",
+      "five_CSB_templates",
+      "Foundry_CLI_and_runtime_QA"
+    ]
+  }
+}
