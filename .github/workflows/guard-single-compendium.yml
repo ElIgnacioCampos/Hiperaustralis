@@ -1,0 +1,34 @@
+name: One existing HA Prototipo compendium only
+
+on:
+  push:
+    branches:
+      - work/ci137-ensayo-identidad-historica-20261121
+      - work/native-compendia-pipeline
+    paths:
+      - 'module/**'
+      - 'tools/foundry/**'
+      - '.github/workflows/**'
+  pull_request:
+    paths:
+      - 'module/**'
+      - 'tools/foundry/**'
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  no-second-compendium:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Enforce existing module ID and exact 3 packs; reject duplicate generators
+        run: python tools/foundry/assert_single_compendium.py --self-test
+
+# This does not alter CI137 sources, make a module, or publish to Forge.
+# Any candidate ZIP is checked separately using --artifact and optionally --baseline.

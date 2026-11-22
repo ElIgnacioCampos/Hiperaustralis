@@ -3,6 +3,16 @@
 **Estado ejecutivo:** 137 Items históricos/seleccionados compilados y round-trip PASS; **no hay todavía módulo CI137 autónomo instalable ni QA en cliente Foundry**.
 **Autoridad:** este checkpoint sólo rige implementación técnica de CI137. El Estado Maestro ACTUAL de Hiperaustralis rige el canon; no se modifica aquí.
 
+## NORMA CERRADA — NO DUPLICAR EL COMPENDIO
+
+**Objeto de continuidad:** `hiperaustralis-compendios-prototype.ha-proto-items` (**HA · Prototipo · Objetos**) es y seguirá siendo el **ÚNICO compendio Item** de este trabajo, con las identidades históricas dentro del mismo pack, no en un segundo pack. Se preservan los otros dos compendios existentes, `ha-proto-actors` y `ha-proto-journals`. **El mundo (Hipera 6 u otro) no determina la identidad del compendio.**
+
+**PROHIBIDO salvo decisión autoral explícita:** crear otro módulo con nuevo ID, otro compendio de Objetos, un cuarto pack, clones `CI137 QA`, reetiquetar el pack existente o encargar ZIP de otro módulo. Los ejemplos `hiperaustralis-ci137-qa6` y `ha-ci137-items` son rutas de trabajo **rechazadas**.
+
+**Guard ejecutable:** `tools/foundry/assert_single_compendium.py` y `.github/workflows/guard-single-compendium.yml`. En cada cambio relevante validan ID, nombres/tipos/rutas/etiquetas exactas, tres packs, un solo Item, ausencia de generadores duplicadores y cinco pruebas negativas. Antes de entregar cualquier ZIP, ejecutar `--artifact`; si actualiza el prototipo, ejecutar además `--baseline` para exigir SHA idéntico de Actors y Journals. Una anomalía bloquea la entrega. No reemplazar la versión de Forge sin comparar antes su estado real.
+
+**Objetivo único:** actualizar el contenido del pack actual de **38 → 137 Items**; conservar los demás packs. D2 = PASS de las 137 fuentes; D3 Foundry sigue pendiente. **No volver a proponer un nuevo compendio para evitar una colisión: resolver las colisiones preservando el compendio existente.**
+
 ## 1. Evidencia actual — no volver a auditar sin delta
 
 | Frente | Hecho comprobado | Alcance del PASS o del pendiente |
