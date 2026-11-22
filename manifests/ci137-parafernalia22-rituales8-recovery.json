@@ -19,7 +19,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "6c98a15b52266541f4706e9e102c5733d74702576e7fd16e6f69b18cd8f3dfc3",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "JKxUdwuhOtz8yGW1",
@@ -34,7 +36,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "30f7b63b3d5be566f0be15d641d0ae6c99d554de55c83863bbe616fc1788581a",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "ilG4UwSV1Bgbk4TF",
@@ -49,7 +53,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "6683307437b506ac91f077526be977455c39899daf540e785766a08915a787ad",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "nnmYeJON0DKDGJsL",
@@ -64,7 +70,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "7416f12b44173f8fac92246a1d16070c60a2287abfe6bbba9581693eff04e8db",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "Z955U4dlDAUeEZvr",
@@ -79,7 +87,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "d6ac2cc61e9cea198a0cc16a1dbaa2b47ec80dcee43ab549c2a1c82bd040178e",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "FwlbrqC5ZBqiRjXy",
@@ -94,7 +104,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "eb2b1213ae4280f1bca6a9c8d55eebb668ca3065e305f8567be800b63be2ddab",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "IPKDCSo3bKzUCcGl",
@@ -109,7 +121,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "9025ec2cf84c444f9d23445a62807139e5299c80b5ba8810ebe311c14ebc15f2",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "AocpkbZW4w29Bc4u",
@@ -124,7 +138,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "26a708f3ddc434d63c1ea7480df1507289a1e71480a85202450aeb83894fd3d1",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "Nvj2xTK4apIrEDPn",
@@ -139,7 +155,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "6ab7c7727eef63eaf5f3cb50a2bb0fad08b69e3801b16be8f5c98683425a564c",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "psnu2t74dnHQ3pFx",
@@ -154,7 +172,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "e9fa09c34d1b5729854485d4fc9ac2f41a132f0fc13df5abc9514bd7cb8bb5a9",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "FBVSE0HBZ62ShEZM",
@@ -169,7 +189,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "f7a283767b7af0deabbcfc0a1056acd22820593051334958ed698225f48785cd",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "xdvai2XGysSWwdKt",
@@ -184,7 +206,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "7d879943cc4c5268d6d275cb558b792a2927f3eb67384790037c55a4a56f5a08",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "q0qlFGWAMip94Y4i",
@@ -199,7 +223,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "992bad6fd2e659a13de68a16a0d21f3046fa9497209455486bb9c86d667bcf13",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "dVgxiZYJcTLdA5yL",
@@ -214,7 +240,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "8df4b74eb46ee2685804f9d066d41c1762ed3dcf0052330372170840cad02120",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "P0xH74Ofvj2xnAvk",
@@ -229,7 +257,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "4261df817c80f91a6c43f15d8f31bcc7f36145abb184716fc8fccc5df508a195",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "fW04rY0fTfZ84fL6",
@@ -244,7 +274,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "467a7c0774807528ed59f0e47cfe010529ab02a8808346a8d5ee916742e818b2",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "3cCDbjqou8AlzfsW",
@@ -259,7 +291,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "056718e3ae8e88ba624ef38d75e13ebb7ad7f14be2852d545d4c0147b88c9354",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "zSx4zh9b24XjjXMx",
@@ -274,7 +308,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "02a9e3a249e1ea8150be3784935db743f1a1235f4f7d9beaf36f2f977dea8d04",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "QTbZkuQcog7ReVW5",
@@ -289,7 +325,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "1e4f03a636063b0c71b1ad0e9d9f05842325e9d83a417aa3ed59c42035017d76",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "MvGDMBIuGD1iozPW",
@@ -304,7 +342,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "9bc6ca29dfa40afc7940b4cd3f7a494425998d2dae8da9530bcc46147374b733",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "0MRehrLjaQOO4s1A",
@@ -319,7 +359,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "9a56a3140637a0e0a4aeddb7486b8e8600823f902d5a21769f5f49f2f7bcd6bb",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "oaLaLLWoZXQrRULq",
@@ -334,7 +376,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
-      "expectedSheetBackground": null
+      "expectedSheetBackground": null,
+      "historicalCandidateSha256_0472_0473": "150860af274a4fd18eec036a615f154f1c134e7cc3da898860e45ee027cdc0a1",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "StbeCxC7TrpiOUdG",
@@ -349,7 +393,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
-      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/05_ATAR.webp"
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/05_ATAR.webp",
+      "historicalCandidateSha256_0472_0473": "4bc0e33bf074b4470d0b365c5df8fc1f0d9b27856ce54028f15f778d579e840c",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "fCg9JDUw2DNqWjOe",
@@ -364,7 +410,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
-      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/03_CONSULTAR.webp"
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/03_CONSULTAR.webp",
+      "historicalCandidateSha256_0472_0473": "4f58e8bc3858845609bdf59d5a67ed7bd7a8a9ce866b0d59194611b4ac150f63",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "wgLZd7pqnk84LSWJ",
@@ -379,7 +427,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
-      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/06_DESPEDIR.webp"
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/06_DESPEDIR.webp",
+      "historicalCandidateSha256_0472_0473": "d1431045961edbb393699a475f28a52010d52f9415e1d45451c32083020cf5c3",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "4jeuBPUYEGHmXKXv",
@@ -394,7 +444,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
-      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/08_LAKUTUN_LEGAR.webp"
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/08_LAKUTUN_LEGAR.webp",
+      "historicalCandidateSha256_0472_0473": "db739af284a42297ab54dd4ae30efe9c6e94210b047b7f64c76b9fb52139396a",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "mLpXRfCGbmX1t8xa",
@@ -409,7 +461,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
-      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/04_RENOVAR_ARRAIGO.webp"
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/04_RENOVAR_ARRAIGO.webp",
+      "historicalCandidateSha256_0472_0473": "80d35ca3a6b187d2723207e467922295620221cd9813dbffba4f7ea712e683ab",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "JQI2h5gPnAsqvcsF",
@@ -424,7 +478,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
-      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/02_RESTITUIR.webp"
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/02_RESTITUIR.webp",
+      "historicalCandidateSha256_0472_0473": "cb9f1d488d4fd39ac4597a52cb1dc118ce0d2ab2c2927f55690d959e570332e8",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "yoCFKUIlnBqVvRsH",
@@ -439,7 +495,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
-      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/07_VIAJAR.webp"
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/07_VIAJAR.webp",
+      "historicalCandidateSha256_0472_0473": "a5c1afee1e80ad1806b3d4c624c661e9e988f66abb117708496d1320f1cabb89",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     },
     {
       "id": "yQe9xxburYY3j35H",
@@ -454,7 +512,9 @@
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
-      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/01_VINCULAR.webp"
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/01_VINCULAR.webp",
+      "historicalCandidateSha256_0472_0473": "e43cf8433dc1299b57087696ae90278de7d2c12beb6100219c30d80a35e9da1e",
+      "historicalCandidateStatus": "MATCHES_0472_0473_NOT_0475_VERIFIED"
     }
   ],
   "sourcePayloadVerification": {
@@ -467,5 +527,16 @@
     "ritualTemplate": "HipRitualTpl0001",
     "source": "30 original Item JSONs read from same CI137 branch",
     "scope": "JSON identity and path only; original binary bytes not opened"
+  },
+  "historicalCandidateSha256_0472_0473": {
+    "status": "CANDIDATE_BINARY_ONLY_NOT_FINAL",
+    "sourceCopies": [
+      "HIPERAUSTRALIS_COMPENDIOS_0.4.72_REPARACION_BIO_LAB.zip",
+      "HIPERAUSTRALIS_COMPENDIOS_0.4.73_BIO_TEXTOS_LAB.zip"
+    ],
+    "sameShaCount": 30,
+    "decodedWebPCount": 30,
+    "expectedDimensions": "512x512",
+    "validatedAgainst075": false
   }
 }
