@@ -43,6 +43,17 @@
 
 **F. Cerrar sin trasladar carga:** no pedir al usuario que reconstruya material ya documentado; ante un recurso inaccesible, indicar el bloqueo preciso y proponer o ejecutar el mejor avance independiente. No prometer QA en Foundry si no hay acceso a su cliente real.
 
+## Entrega Forge — Hipera 6 (22-11-2026)
+
+**Candidato nuevo y preferente para el wizard:** `HIPERA_CI137_FORGE_HIPERA6_WIZARD_v01.zip`, **1.263.987 bytes**, SHA-256 **`e8e6396068190fe6095ea6ccfd933bb133156f99832019828bfd7cd043c8a5a5`**.
+**Drive verificado:** https://drive.google.com/file/d/1AEzaDJT-OYMaFQQuSzXnAgydSQdemuAD/view?usp=drivesdk.
+**GitHub Actions:** https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45059105108 — **SUCCESS**; artifact `HIPERA_CI137_FORGE_HIPERA6_WIZARD_v01`.
+**Identificador exclusivo:** `hiperaustralis-ci137-qa6` (distinto de `hiperaustralis-compendios-prototype`); ruta de las **34 referencias propias** normalizada sólo en documentos de transporte, sin cambiar los JSON fuente. **137 Items, 9 carpetas, 5 plantillas referenciadas; 17 WebP propios SHA comprobado; 109 referencias históricas conservadas**. ZIP íntegro CRC PASS y `module.json` en raíz.
+**Macro:** `QA/CI137_FORGE_HIPERA6_SOLO_LECTURA.js`, valida identidades, carpetas, plantillas referenciadas y URLs sin mutaciones.
+**Procedimiento:** Games Configuration → Summon Import Wizard → ZIP File → desactivar instalación desde Bazaar → Analyze Files → comprobar que sólo aparezca `hiperaustralis-ci137-qa6` → Import Selection → reiniciar servidor → activar **sólo en Hipera 6**. El wizard reemplaza silenciosamente un módulo si comparte ID con uno anterior, pero esta variante usa ID nuevo.
+**Seguridad:** importación afecta catálogo de módulos de la cuenta Forge, no instala automáticamente en un mundo. No importar el ZIP anterior `HIPERA_CI137_CANDIDATO_AISLADO_QA_D3_20261122.zip` al Forge compartido: su ID colisiona. **Hipera 6 no debe migrar UUID a mundos definitivos**. D3 real todavía NO EJECUTADO. No afirmar autonomía: 109 dependencias visuales siguen externas.
+**D4:** no publicable, sin release. `main`, producción, MELIAZ y Estado Maestro intactos.
+
 ## 4. Ruta única de ejecución — sin volver a diseñar iconos
 
 **Paso 1 — QA de autonomía y compatibilidad del candidato, SIN nuevo arte:** elaborar sobre el pack D2 ya probado una verificación read-only que distinga (a) rutas de imágenes del módulo nuevo con bytes existentes, (b) rutas originales que dependen de `hiperaustralis-rituales`, (c) iconos stock Foundry válidos y (d) recursos ausentes de verdad. Esto es una **prueba de dependencias**, no un nuevo banco de imágenes. Distinguir carga **con** el módulo histórico instalado (QA de compatibilidad) de instalación **autónoma** (gate posterior). Si no hay acceso al cliente Foundry, preparar prueba reproducible y marcar D3 NO EJECUTADO.
