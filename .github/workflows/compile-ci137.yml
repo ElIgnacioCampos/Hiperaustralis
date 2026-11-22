@@ -7,6 +7,9 @@ on:
     paths:
       - '.github/workflows/compile-ci137.yml'
       - 'tools/foundry/ci137_pipeline.py'
+      - 'tools/foundry/ci137_update_existing_prototype.py'
+      - 'tools/foundry/assert_single_compendium.py'
+      - 'tools/foundry/ci137_readonly_existing_prototype.js'
       - 'manifests/ci137-selected-source-137-historical-ids.json'
       - 'source/items/**'
       - 'source-pending/**'
@@ -15,6 +18,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
 
 jobs:
   historical-items-137:
@@ -27,8 +31,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Validate CI137 Python syntax
-        run: python -m py_compile tools/foundry/ci137_pipeline.py
+      - name: Validate CI137 Python and macro syntax
+        run: |
+          python -m py_compile tools/foundry/ci137_pipeline.py tools/foundry/ci137_update_existing_prototype.py tools/foundry/assert_single_compendium.py
+          node --check tools/foundry/ci137_readonly_existing_prototype.js
+          python tools/foundry/assert_single_compendium.py --self-test
       - name: Prepare exactly 137 selected real sources - no asset changes
         run: python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/ci137-prepared"
       - name: Install official Foundry CLI 3.0.5
@@ -49,6 +56,34 @@ jobs:
           python tools/foundry/ci137_pipeline.py verify \
             --prepared "$RUNNER_TEMP/ci137-prepared" \
             --unpacked "$RUNNER_TEMP/ci137-unpacked"
+      - name: Recover EXACT existing HA Prototipo baseline (run 44961385066)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/ha-prototype-baseline"
+          gh run download 44961385066 --repo ElIgnacioCampos/Hiperaustralis \
+            -n HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5 \
+            -D "$RUNNER_TEMP/ha-prototype-baseline"
+          test -f "$RUNNER_TEMP/ha-prototype-baseline/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip"
+          echo "c3125b7fe1ec4022a2d7e6c8802f723ac27a480541cef41a0136289de201ec93  $RUNNER_TEMP/ha-prototype-baseline/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip" | sha256sum --check
+      - name: Update ONLY existing HA Prototipo Objects - guard other packs and all artwork
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="$RUNNER_TEMP/ha-prototype-baseline/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip"
+          OUT="$RUNNER_TEMP/HIPERA_PROTOTIPO_EXISTENTE_CI137_VALIDADO.zip"
+          python tools/foundry/ci137_update_existing_prototype.py \
+            --baseline "$BASE" \
+            --items "$RUNNER_TEMP/ci137-packs/ha-proto-items" \
+            --preflight "$RUNNER_TEMP/ci137-prepared/ci137-preflight.json" \
+            --macro tools/foundry/ci137_readonly_existing_prototype.js \
+            --out "$OUT"
+          python tools/foundry/assert_single_compendium.py \
+            --self-test --artifact "$OUT" --baseline "$BASE"
+          unzip -t "$OUT" | tail -1
+          echo "CI137: SINGLE_EXISTING_PROTOTYPE_3_PACKS_PASS"
       - name: Preserve isolated audit evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -58,6 +93,7 @@ jobs:
             ${{ runner.temp }}/ci137-prepared/ci137-*.json
             ${{ runner.temp }}/ci137-prepared/assets/reliquias/**
             ${{ runner.temp }}/ci137-packs/ha-proto-items/**
+            ${{ runner.temp }}/HIPERA_PROTOTIPO_EXISTENTE_CI137_VALIDADO.zip
           if-no-files-found: warn
           retention-days: 30
 
