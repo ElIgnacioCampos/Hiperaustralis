@@ -39,6 +39,24 @@
 
 **P4 — CI/QA nativo:** compilar y probar **una variante seleccionada** con las cinco plantillas CSB y 137 Items en mundo V14/CSB6.1.2 aislado; verificar UUID, imágenes y persistencia, sin modificar producción.
 
+## 3A. P2 — Propuesta de autoridad de Reliquias (DECISIÓN PREPARADA, NO APROBADA)
+
+**Propuesta recomendada:** conservar los **16 IDs históricos** de `world.hiperaustralis-rituales` en la variante de transporte CI137; tratar los 16 IDs del prototipo como **alias documentales** para diagnóstico y reversión, no como una segunda colección publicada de Reliquias. La candidata histórica mantiene **135/135 IDs originales** de Hipera 5 y dos Items adicionales hasta sumar 137.
+
+**Evidencia de partida:** manifiesto `source-pending/ci137-reliquias-historicas-16/manifest.json` con correspondencia 16/16 entre `historicalId`, `prototypeId`, `sourceUuid` y `storedAt`; checkpoint del 18–19/11: 32 copias mundiales para esas 16, propiedades y contenido equivalentes, sin necesidad de reabrir el cotejo semántico.
+
+**Contrato para futura integración, sujeto a aprobación:**
+1. Preservar en origen ambas variantes de 16 JSON y sus hashes; seleccionar **una sola** para el pack resultante. No eliminar ni sobrescribir la alternativa.
+2. Mantener en la seleccionada `_id` histórico, `system.props`, `_stats`, flags y relaciones originales, salvo remapeos explícitos de rutas gráficas comprobadas y `folder` de transporte.
+3. Usar una tabla de `sourceUuid` → UUID nuevo del pack (también `prototypeId` → `historicalId`). No reescribir en masa `_stats.compendiumSource`: indica procedencia, no necesariamente un enlace runtime.
+4. Aun conservando el ID, el UUID completo cambia de `Compendium.world.hiperaustralis-rituales.Item.<ID>` a `Compendium.hiperaustralis-compendios-prototype.ha-proto-items.Item.<ID>`. No afirmar preservación del vínculo por conservar solo `_id`.
+5. Antes de activar la variante, comprobar con Foundry CLI y mundo V14/CSB6.1.2 aislado los documentos que referencian UUID antiguos, Items embebidos, Journals, macros, las cinco plantillas CSB y rutas gráficas.
+6. Fallo de cualquier referencia o de QA ⇒ no promover; rollback por sustitución de variante completa, no edición fragmentaria del mundo.
+
+**Decisión del usuario:** aún pendiente. Esta sección registra **RECOMENDACIÓN TÉCNICA / NO CANON**, no una autorización para migrar IDs, referencias ni módulos.
+
+---
+
 ## 4. Recomendación de flujo
 1. **Congelar auditoría de rescate:** registrar el corpus como fuente recuperada, sin buscar más copias por inercia.
 2. Resolver **P1 y P2** en una matriz breve de decisiones; mantener dudas sin inventar aprobación.
