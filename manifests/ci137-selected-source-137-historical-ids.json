@@ -1,6 +1,6 @@
 {
-  "schema": "hipera-ci137-selected-historic-identities-v03",
-  "status": "CI137_NATIVE_ROUNDTRIP_137_PASS__ASSETS_RUNTIME_QA_PENDING",
+  "schema": "hipera-ci137-selected-historic-identities-v04",
+  "status": "CI137_137_ROUNDTRIP_PASS__16_APPROVED_RELICS_MAPPED__109_LEGACY_REFS_PENDING",
   "targetCount": 137,
   "entries": [
     {
@@ -736,16 +736,16 @@
       "Foundry_CLI_and_runtime_QA"
     ],
     "lockedHistoricalIds": true,
-    "actualBuildGate": "PASS_137_GITHUB_ACTIONS",
+    "actualBuildGate": "PASS_137_ITEMS_NINE_FOLDERS_FIVE_TEMPLATES_2026-11-22",
     "noAssetRegeneration": true,
     "reuseExistingAssetsBeforeRecovery": true,
     "sourcePromotionRequiresExactIdentityAndApprovedAssetMap": true,
-    "nextGate": "REWRITE_ONLY_VERIFIED_141_ASSET_REFERENCES_THEN_REBUILD"
+    "nextGate": "MAP_ONLY_APPROVED_IMAGES_THEN_REBUILD_AND_FOUNDRY_QA"
   },
   "auditSnapshot": {
     "date": "2026-11-22",
     "source": "GitHub live branch/tree, GHA workflow, existing historical checkpoints and native QA29 v10",
-    "auditedBranchHead": "69b02d93de5698bf29c992084941f208f141342d",
+    "auditedBranchHead": "63fd9989870cc17f16808dd2e6b28211d7432c10",
     "auditScope": "STRUCTURAL_SOURCE_SELECTION_NOT_PAYLOAD_ROUNDTRIP_OR_RUNTIME",
     "selectedDocuments": 137,
     "uniqueIds": 137,
@@ -800,13 +800,10 @@
       "doNotSumAsUniqueApproved": true
     },
     "alerts": [
-      "CI137 not in auto-push workflow branch allowlist",
-      "prepare_sources.py ignores source-pending and CI137 selection manifest",
-      "validate_compiled.py evaluates source/items prototype not selected 137",
-      "no CI137 9-folder build or Foundry runtime QA",
-      "QA29 recent work lives on native branch and BBTECA not mirrored as CI137 assets",
-      "Cuchillo de piedra distinct image and ARM11-13 current approval unresolved on CI137",
-      "old asset URLs must not be silently mapped"
+      "109 legacy references remain across 80 distinct original icons; do not auto-map by name",
+      "QA29 overlay artifacts reside in native branch/BBTECA and have no approval for runtime replacement",
+      "Cuchillo de piedra distinct original missing; ARM 11-13 newer editorial images must take precedence",
+      "No standalone CI137 module ZIP or Foundry client QA yet"
     ],
     "ci137NativeBuild": {
       "workflowRunId": 44981432165,
@@ -835,7 +832,149 @@
       "artifactSha256": "56621207bba83ad0975bc47ff488339cf3062210be2c7366e34f6e05aa27e26d",
       "assetAutonomyPassed": false,
       "foundryClientQA": false,
-      "cliVersion": "3.0.5"
+      "cliVersion": "3.0.5",
+      "latestWorkflowRunId": 44981739482,
+      "latestHeadSha": "63fd9989870cc17f16808dd2e6b28211d7432c10",
+      "approvedReusedRelicAssets": 16,
+      "approvedRemappedLinks": 32,
+      "unresolvedLegacyReferences": 109
+    },
+    "assetProgress": {
+      "verifiedAt": "2026-11-22",
+      "workflowRun": 44981739482,
+      "sourceProof": "source-pending/ci137-reliquias-historicas-16/manifest.json + manifests/reliquias-assets.json + source-original/HIPERAUSTRALIS_RELIQUIAS_ASSETS_16_WEBP_v01.zip",
+      "approvedImageCount": 16,
+      "approvedReferencesRemapped": 32,
+      "originalReferences": 141,
+      "unresolvedReferences": 109,
+      "unresolvedDistinctImages": 80,
+      "unresolvedByFamily": {
+        "Armas": 42,
+        "Parafernalia": 22,
+        "Instrumentos": 21,
+        "Rituales": 16,
+        "Defensas": 8
+      },
+      "assetArtifacts": {
+        "id": 14738057398,
+        "sha256": "3b3331152a8bad71f0f98f89c7a0a3cbfdeee9fdfeeda469bddc700fcfd7408b",
+        "webpImages": 16,
+        "bytes": 1170388
+      },
+      "verifiedRelicCrosswalk": [
+        {
+          "historicalId": "q3HXoB750L6j6XHK",
+          "prototypeAlias": "KvinnebyRel00001",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/08_AMULETO_RUNICO_DE_KVINNEBY.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/08_AMULETO_RUNICO_DE_KVINNEBY.webp",
+          "sha256": "4cf181d48a67841ea760acffb7ca1b434e0857b2ac99d063fc914b5d28da2878"
+        },
+        {
+          "historicalId": "CtMcaOnMjw23zWmq",
+          "prototypeAlias": "AntukuraReliq001",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/02_ANTUKURA.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/02_ANTUKURA.webp",
+          "sha256": "51ef7804baec4824e80c4840b14a6807ec7b93bb96f3ebbf505253908930fb8a"
+        },
+        {
+          "historicalId": "frD3BIM7bklCxPle",
+          "prototypeAlias": "CencerroMadRel01",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/08_cencerro_de_madera.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/08_cencerro_de_madera.webp",
+          "sha256": "d0901ea867582c77b868bc4914c23a4d34be6078a677315502cbd4fa5a730f18"
+        },
+        {
+          "historicalId": "z8BEvJ4uHgLSZePS",
+          "prototypeAlias": "ChallaHeredRel001",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/01_challa_heredada.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/01_challa_heredada.webp",
+          "sha256": "ebd510bc84991f321fa328a4036e793a819f1d8bc1e70d406bc52957d7ed590f"
+        },
+        {
+          "historicalId": "a9NdZq068ANs5hnR",
+          "prototypeAlias": "ChayancoRel00001",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/06_CHAYANCO_DE_CHILLPILA.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/06_CHAYANCO_DE_CHILLPILA.webp",
+          "sha256": "2eb1bbdf76773bd599a7aa78dece04cbd52f6cd1b706c9f04eb8f2412b9d8827"
+        },
+        {
+          "historicalId": "u5Vbl3gGUL4kJJQ2",
+          "prototypeAlias": "ChuspaCamRel0001",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/03_chuspa_de_camino.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/03_chuspa_de_camino.webp",
+          "sha256": "cb1153adf283051551502c7446d1c82927ba9b1c04584fcd336724c30f0e58ba"
+        },
+        {
+          "historicalId": "sdQeeQDV2W6EVl2w",
+          "prototypeAlias": "CuchChaniarRel01",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/07_cuchara_de_chanar.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/07_cuchara_de_chanar.webp",
+          "sha256": "fb4e2e65925253b880114ce43b4e9607ff0ece36a714baaa80e53b43677cfde6"
+        },
+        {
+          "historicalId": "tr9AQooUcnTtAxO3",
+          "prototypeAlias": "DrakarUllmanRel01",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/04_DRAKAR_DE_ULLMAN.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/04_DRAKAR_DE_ULLMAN.webp",
+          "sha256": "9db5966beaef1596c8080a56ac54ffa35d9df883a8ee5117d59be3ea216c30ff"
+        },
+        {
+          "historicalId": "TADm8tlCkyns4iwE",
+          "prototypeAlias": "InkuniaRel000001",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/04_inkuna_de_ofrendas.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/04_inkuna_de_ofrendas.webp",
+          "sha256": "e58cb0b1d0b3427831e74f9280869725620c34f1b01af4be879f6bcaaaa67653"
+        },
+        {
+          "historicalId": "T0yw5ZsA7WtDOB9G",
+          "prototypeAlias": "KMetaweFamRel01",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/02_kutru_metawe_familiar.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/02_kutru_metawe_familiar.webp",
+          "sha256": "cfdc91370729a4480d480f7012e61a96ebbd9f5af525dac0dc9f47f8e0ccd151"
+        },
+        {
+          "historicalId": "3Rjv67wd9g9rVwka",
+          "prototypeAlias": "PeineAstaRel0001",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/05_peine_de_asta_heredado.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/05_peine_de_asta_heredado.webp",
+          "sha256": "e4bd529c83c1e83c4ca8c70159dfdf1e71ee268ed2a02fd4520c7fde2016dac0"
+        },
+        {
+          "historicalId": "NSOxLP5BMpfX7L57",
+          "prototypeAlias": "AfilarViajeRel01",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/06_piedra_de_afilar_del_viaje.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/06_piedra_de_afilar_del_viaje.webp",
+          "sha256": "8bc4bf7d9460ed9fb14f45e36c5e17b290c126ce12a091197ca0c637b15ec78d"
+        },
+        {
+          "historicalId": "ik1kdfVoqQbbTAmH",
+          "prototypeAlias": "PiedraPaititiRel1",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/05_PIEDRA_VIEJA_DE_PAITITI.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/05_PIEDRA_VIEJA_DE_PAITITI.webp",
+          "sha256": "76e4a49f5bf04e39ad93d108fc539d2df685dbbd946a74a9ce6ebe193c38c457"
+        },
+        {
+          "historicalId": "UrZNB1QgdnAghNQb",
+          "prototypeAlias": "TabHumFelRel0001",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/07_TABLETA_DEL_HOMBRE_FELINO.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/07_TABLETA_DEL_HOMBRE_FELINO.webp",
+          "sha256": "618d8ac03134411f22b26165a54ff3ca06da805081d4ca88e0026f47930cdffa"
+        },
+        {
+          "historicalId": "607Y5Z4vouHf8vEi",
+          "prototypeAlias": "TridUllmanRel001",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/01_TRIDENTE_DE_ULLMAN.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/01_TRIDENTE_DE_ULLMAN.webp",
+          "sha256": "453291d3c7600b6beef40d53ac884331910c3d809ccb688d151e78ca01a5515e"
+        },
+        {
+          "historicalId": "sRDyvzOfCVjdHJ0D",
+          "prototypeAlias": "YelHipolitaRel01",
+          "oldImage": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/03_YELMO_DE_HIPOLITA.webp",
+          "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/03_YELMO_DE_HIPOLITA.webp",
+          "sha256": "360c5e670f6d9aa383e5d363429ecea543a446fc7e2362fd89ce132161928bfd"
+        }
+      ]
     }
   }
 }
