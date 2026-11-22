@@ -1,47 +1,103 @@
 {
-  "schema": "hipera-ci137-selected-historic-identities-v04",
-  "status": "CI137_137_ROUNDTRIP_PASS__16_APPROVED_RELICS_MAPPED__109_LEGACY_REFS_PENDING",
+  "schema": "hipera-ci137-selected-historic-identities-v05",
+  "status": "CI137_137_ROUNDTRIP_PASS__16_RELICS_REMAPPED__79_ARCHIVED_CANDIDATES_MATCHED__ONE_UNLOCATED_ART",
   "targetCount": 137,
   "entries": [
     {
       "id": "pe9Bb6kzCsr5IUx1",
       "family": "Defensas",
-      "source": "source-pending/ci137-historicos-99/defensas/pe9Bb6kzCsr5IUx1.json"
+      "source": "source-pending/ci137-historicos-99/defensas/pe9Bb6kzCsr5IUx1.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/defensas/04_capucha_protectora_pica_tarapaca.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "uM1FCC5l7Lbx8sRa",
       "family": "Defensas",
-      "source": "source-pending/ci137-historicos-99/defensas/uM1FCC5l7Lbx8sRa.json"
+      "source": "source-pending/ci137-historicos-99/defensas/uM1FCC5l7Lbx8sRa.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/defensas/02_casco_emplumado_pica_tarapaca.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "Id2dCZ4s4TPTMr8R",
       "family": "Defensas",
-      "source": "source-pending/ci137-historicos-99/defensas/Id2dCZ4s4TPTMr8R.json"
+      "source": "source-pending/ci137-historicos-99/defensas/Id2dCZ4s4TPTMr8R.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/defensas/01_casco_rigido_pica_tarapaca.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "ThGITBgBJNBwJ6o2",
       "family": "Defensas",
-      "source": "source-pending/ci137-historicos-99/defensas/ThGITBgBJNBwJ6o2.json"
+      "source": "source-pending/ci137-historicos-99/defensas/ThGITBgBJNBwJ6o2.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/defensas/03_casco_sobre_capucha_pica_tarapaca.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "aa9YXJm5fD4UF6oK",
       "family": "Defensas",
-      "source": "source-pending/ci137-historicos-99/defensas/aa9YXJm5fD4UF6oK.json"
+      "source": "source-pending/ci137-historicos-99/defensas/aa9YXJm5fD4UF6oK.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/defensas/05_coraza_lasana.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "6z2oWVl5FstIDJKB",
       "family": "Defensas",
-      "source": "source-pending/ci137-historicos-99/defensas/6z2oWVl5FstIDJKB.json"
+      "source": "source-pending/ci137-historicos-99/defensas/6z2oWVl5FstIDJKB.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/defensas/07_espaldar_cuero_surandino.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "bMbwzRsasVa6zxAM",
       "family": "Defensas",
-      "source": "source-pending/ci137-historicos-99/defensas/bMbwzRsasVa6zxAM.json"
+      "source": "source-pending/ci137-historicos-99/defensas/bMbwzRsasVa6zxAM.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/defensas/08_manta_densa_surandina.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "gftm3lDJ8r4YbOjh",
       "family": "Defensas",
-      "source": "source-pending/ci137-historicos-99/defensas/gftm3lDJ8r4YbOjh.json"
+      "source": "source-pending/ci137-historicos-99/defensas/gftm3lDJ8r4YbOjh.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/defensas/06_peto_cuero_surandino.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "3v9D425QdKOva3XV",
@@ -246,357 +302,854 @@
     {
       "id": "Aobt60Pl1vy7i7MU",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/Aobt60Pl1vy7i7MU.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/Aobt60Pl1vy7i7MU.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/07_antara_4_ductos.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "zSsH0T0CZzJ4nNQB",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/zSsH0T0CZzJ4nNQB.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/zSsH0T0CZzJ4nNQB.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/aymara/06_antara_tiwanaku.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "j7J6wcAttET8rJpB",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/j7J6wcAttET8rJpB.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/j7J6wcAttET8rJpB.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/21_arpa_de_boca.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "RzhInApxuwq1o651",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/RzhInApxuwq1o651.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/RzhInApxuwq1o651.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/19_campana.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "INdG4JndLBl0sWto",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/INdG4JndLBl0sWto.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/INdG4JndLBl0sWto.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/20_cuerno_musical.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "YfFAFtBpsdyU2l9R",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/YfFAFtBpsdyU2l9R.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/YfFAFtBpsdyU2l9R.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/11_flauta_hueso.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "R1exJG9q2EP8URHe",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/R1exJG9q2EP8URHe.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/R1exJG9q2EP8URHe.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/18_flauta_coyo.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "1dhUgcpr5U3wAQ1l",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/1dhUgcpr5U3wAQ1l.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/1dhUgcpr5U3wAQ1l.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/15_kakel_kultrung.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "vr5gUbTNMU8tj3zL",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/vr5gUbTNMU8tj3zL.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/vr5gUbTNMU8tj3zL.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/14_kaskawilla.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "K7d2oqF6P7DB0Kpt",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/K7d2oqF6P7DB0Kpt.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/K7d2oqF6P7DB0Kpt.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/01_kultrung.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "7yTC2u73mcFuQrx2",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/7yTC2u73mcFuQrx2.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/7yTC2u73mcFuQrx2.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/10_lira.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "IG8DW7Wr30mg1jqx",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/IG8DW7Wr30mg1jqx.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/IG8DW7Wr30mg1jqx.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/02_pifullka.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "KpK5mqDdleRnemjh",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/KpK5mqDdleRnemjh.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/KpK5mqDdleRnemjh.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/13_piloilo.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "JZUzx0bNMoDj6xs5",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/JZUzx0bNMoDj6xs5.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/JZUzx0bNMoDj6xs5.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/andino/16_pututu.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "K4BKDYp47LohrxuD",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/K4BKDYp47LohrxuD.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/K4BKDYp47LohrxuD.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/aymara/04_siku.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "VMdFQpCaienOgLV4",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/VMdFQpCaienOgLV4.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/VMdFQpCaienOgLV4.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/aymara/17_sonaja.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "RiMXmUYNYn5VRKrx",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/RiMXmUYNYn5VRKrx.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/RiMXmUYNYn5VRKrx.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/12_sonajero_hierro.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "tvgKf9WGkUmy6GJi",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/tvgKf9WGkUmy6GJi.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/tvgKf9WGkUmy6GJi.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/09_sonajero.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "Akd70OCwmrJ0az3P",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/Akd70OCwmrJ0az3P.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/Akd70OCwmrJ0az3P.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/08_trompeta_monoxila.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "FvfW6Ug0yCyR7VjF",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/FvfW6Ug0yCyR7VjF.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/FvfW6Ug0yCyR7VjF.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/aymara/05_wankara.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "gp4b3XE6mJGvqE9X",
       "family": "Instrumentos musicales",
-      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/gp4b3XE6mJGvqE9X.json"
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/gp4b3XE6mJGvqE9X.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/03_waza.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "ntEPr3gfZn4xD2rG",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/ntEPr3gfZn4xD2rG.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/ntEPr3gfZn4xD2rG.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/08_NORDICOS_ASIENTO_MINIATURA.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "6c98a15b52266541f4706e9e102c5733d74702576e7fd16e6f69b18cd8f3dfc3",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "JKxUdwuhOtz8yGW1",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/JKxUdwuhOtz8yGW1.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/JKxUdwuhOtz8yGW1.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/19_AYMARA_BOCA_DEL_MALLKU.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "30f7b63b3d5be566f0be15d641d0ae6c99d554de55c83863bbe616fc1788581a",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "ilG4UwSV1Bgbk4TF",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/ilG4UwSV1Bgbk4TF.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/ilG4UwSV1Bgbk4TF.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/16_NORDICOS_BOLSA_BELENO.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "6683307437b506ac91f077526be977455c39899daf540e785766a08915a787ad",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "nnmYeJON0DKDGJsL",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/nnmYeJON0DKDGJsL.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/nnmYeJON0DKDGJsL.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/17_LICKANANTAY_CONTENEDOR_KIT.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "7416f12b44173f8fac92246a1d16070c60a2287abfe6bbba9581693eff04e8db",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "Z955U4dlDAUeEZvr",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/Z955U4dlDAUeEZvr.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/Z955U4dlDAUeEZvr.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/13_LICKANANTAY_CUCHARILLA_ESPATULA.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "d6ac2cc61e9cea198a0cc16a1dbaa2b47ec80dcee43ab549c2a1c82bd040178e",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "FwlbrqC5ZBqiRjXy",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/FwlbrqC5ZBqiRjXy.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/FwlbrqC5ZBqiRjXy.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/21_LICKANANTAY_ESCOBILLA_LIMPIEZA.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "eb2b1213ae4280f1bca6a9c8d55eebb668ca3065e305f8567be800b63be2ddab",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "IPKDCSo3bKzUCcGl",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/IPKDCSo3bKzUCcGl.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/IPKDCSo3bKzUCcGl.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/15_AYMARA_HILO_NEGRO.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "9025ec2cf84c444f9d23445a62807139e5299c80b5ba8810ebe311c14ebc15f2",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "AocpkbZW4w29Bc4u",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/AocpkbZW4w29Bc4u.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/AocpkbZW4w29Bc4u.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/38_MAPUCHE_KENEYKEN.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "26a708f3ddc434d63c1ea7480df1507289a1e71480a85202450aeb83894fd3d1",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "Nvj2xTK4apIrEDPn",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/Nvj2xTK4apIrEDPn.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/Nvj2xTK4apIrEDPn.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/02_MAPUCHE_KULTRUN.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "6ab7c7727eef63eaf5f3cb50a2bb0fad08b69e3801b16be8f5c98683425a564c",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "psnu2t74dnHQ3pFx",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/psnu2t74dnHQ3pFx.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/psnu2t74dnHQ3pFx.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/42_MAPUCHE_LATUE.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "e9fa09c34d1b5729854485d4fc9ac2f41a132f0fc13df5abc9514bd7cb8bb5a9",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "FBVSE0HBZ62ShEZM",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/FBVSE0HBZ62ShEZM.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/FBVSE0HBZ62ShEZM.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/10_MAPUCHE_LLAF_LLAF.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "f7a283767b7af0deabbcfc0a1056acd22820593051334958ed698225f48785cd",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "xdvai2XGysSWwdKt",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/xdvai2XGysSWwdKt.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/xdvai2XGysSWwdKt.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/09_LICKANANTAY_MORTERO_MINIATURA.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "7d879943cc4c5268d6d275cb558b792a2927f3eb67384790037c55a4a56f5a08",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "q0qlFGWAMip94Y4i",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/q0qlFGWAMip94Y4i.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/q0qlFGWAMip94Y4i.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/14_MAPUCHE_PANOLETA_CEREMONIAL.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "992bad6fd2e659a13de68a16a0d21f3046fa9497209455486bb9c86d667bcf13",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "dVgxiZYJcTLdA5yL",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/dVgxiZYJcTLdA5yL.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/dVgxiZYJcTLdA5yL.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/26_MAPUCHE_PIFULLKA.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "8df4b74eb46ee2685804f9d066d41c1762ed3dcf0052330372170840cad02120",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "P0xH74Ofvj2xnAvk",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/P0xH74Ofvj2xnAvk.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/P0xH74Ofvj2xnAvk.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/11_AYMARA_QUWA_HUMO.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "4261df817c80f91a6c43f15d8f31bcc7f36145abb184716fc8fccc5df508a195",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "fW04rY0fTfZ84fL6",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/fW04rY0fTfZ84fL6.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/fW04rY0fTfZ84fL6.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/06_MAPUCHE_REWE.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "467a7c0774807528ed59f0e47cfe010529ab02a8808346a8d5ee916742e818b2",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "3cCDbjqou8AlzfsW",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/3cCDbjqou8AlzfsW.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/3cCDbjqou8AlzfsW.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/40_NORDICOS_RUNAS_CORREGIDAS.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "056718e3ae8e88ba624ef38d75e13ebb7ad7f14be2852d545d4c0147b88c9354",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "zSx4zh9b24XjjXMx",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/zSx4zh9b24XjjXMx.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/zSx4zh9b24XjjXMx.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/01_LICKANANTAY_TABLETA_INHALATORIA.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "02a9e3a249e1ea8150be3784935db743f1a1235f4f7d9beaf36f2f977dea8d04",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "QTbZkuQcog7ReVW5",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/QTbZkuQcog7ReVW5.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/QTbZkuQcog7ReVW5.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/41_ATACAMA_TREPANACION_CICATRIZADA.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "1e4f03a636063b0c71b1ad0e9d9f05842325e9d83a417aa3ed59c42035017d76",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "MvGDMBIuGD1iozPW",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/MvGDMBIuGD1iozPW.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/MvGDMBIuGD1iozPW.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/05_LICKANANTAY_TUBO_INHALATORIO.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "9bc6ca29dfa40afc7940b4cd3f7a494425998d2dae8da9530bcc46147374b733",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "0MRehrLjaQOO4s1A",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/0MRehrLjaQOO4s1A.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/0MRehrLjaQOO4s1A.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/24_NORDICOS_VARA_VOLVA_KOPINGSVIK.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "9a56a3140637a0e0a4aeddb7486b8e8600823f902d5a21769f5f49f2f7bcd6bb",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "oaLaLLWoZXQrRULq",
       "family": "Parafernalia · sanación · cultura material",
-      "source": "source-pending/ci137-historicos-99/parafernalia/oaLaLLWoZXQrRULq.json"
+      "source": "source-pending/ci137-historicos-99/parafernalia/oaLaLLWoZXQrRULq.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/43_AYMARA_VIGILIA_NOCTURNA.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "150860af274a4fd18eec036a615f154f1c134e7cc3da898860e45ee027cdc0a1",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "StbeCxC7TrpiOUdG",
       "family": "Rituales",
-      "source": "source-pending/ci137-historicos-99/rituales/StbeCxC7TrpiOUdG.json"
+      "source": "source-pending/ci137-historicos-99/rituales/StbeCxC7TrpiOUdG.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/rituales/05_ATAR.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "4bc0e33bf074b4470d0b365c5df8fc1f0d9b27856ce54028f15f778d579e840c",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "fCg9JDUw2DNqWjOe",
       "family": "Rituales",
-      "source": "source-pending/ci137-historicos-99/rituales/fCg9JDUw2DNqWjOe.json"
+      "source": "source-pending/ci137-historicos-99/rituales/fCg9JDUw2DNqWjOe.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/rituales/03_CONSULTAR.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "4f58e8bc3858845609bdf59d5a67ed7bd7a8a9ce866b0d59194611b4ac150f63",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "wgLZd7pqnk84LSWJ",
       "family": "Rituales",
-      "source": "source-pending/ci137-historicos-99/rituales/wgLZd7pqnk84LSWJ.json"
+      "source": "source-pending/ci137-historicos-99/rituales/wgLZd7pqnk84LSWJ.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/rituales/06_DESPEDIR.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "d1431045961edbb393699a475f28a52010d52f9415e1d45451c32083020cf5c3",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "4jeuBPUYEGHmXKXv",
       "family": "Rituales",
-      "source": "source-pending/ci137-historicos-99/rituales/4jeuBPUYEGHmXKXv.json"
+      "source": "source-pending/ci137-historicos-99/rituales/4jeuBPUYEGHmXKXv.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/rituales/08_LAKUTUN_LEGAR.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "db739af284a42297ab54dd4ae30efe9c6e94210b047b7f64c76b9fb52139396a",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "mLpXRfCGbmX1t8xa",
       "family": "Rituales",
-      "source": "source-pending/ci137-historicos-99/rituales/mLpXRfCGbmX1t8xa.json"
+      "source": "source-pending/ci137-historicos-99/rituales/mLpXRfCGbmX1t8xa.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/rituales/04_RENOVAR_ARRAIGO.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "80d35ca3a6b187d2723207e467922295620221cd9813dbffba4f7ea712e683ab",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "JQI2h5gPnAsqvcsF",
       "family": "Rituales",
-      "source": "source-pending/ci137-historicos-99/rituales/JQI2h5gPnAsqvcsF.json"
+      "source": "source-pending/ci137-historicos-99/rituales/JQI2h5gPnAsqvcsF.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/rituales/02_RESTITUIR.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "cb9f1d488d4fd39ac4597a52cb1dc118ce0d2ab2c2927f55690d959e570332e8",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "yoCFKUIlnBqVvRsH",
       "family": "Rituales",
-      "source": "source-pending/ci137-historicos-99/rituales/yoCFKUIlnBqVvRsH.json"
+      "source": "source-pending/ci137-historicos-99/rituales/yoCFKUIlnBqVvRsH.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/rituales/07_VIAJAR.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "a5c1afee1e80ad1806b3d4c624c661e9e988f66abb117708496d1320f1cabb89",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "yQe9xxburYY3j35H",
       "family": "Rituales",
-      "source": "source-pending/ci137-historicos-99/rituales/yQe9xxburYY3j35H.json"
+      "source": "source-pending/ci137-historicos-99/rituales/yQe9xxburYY3j35H.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/rituales/01_VINCULAR.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "sha256": "e43cf8433dc1299b57087696ae90278de7d2c12beb6100219c30d80a35e9da1e",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "c2L6T5w4S9OcgkDt",
       "family": "Armas",
-      "source": "source/items/armas/01_cuchillo_litico.json"
+      "source": "source/items/armas/01_cuchillo_litico.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_litico.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "Iol01RpIqlQxSTMr",
       "family": "Armas",
-      "source": "source/items/armas/02_cuchillo_hueso.json"
+      "source": "source/items/armas/02_cuchillo_hueso.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/02_cuchillo_hueso.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "Ri1XmMCXqdIJbK3s",
       "family": "Armas",
-      "source": "source/items/armas/03_cuchillo_metalico.json"
+      "source": "source/items/armas/03_cuchillo_metalico.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/03_cuchillo_metalico.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "n5lkb91fMyBzjvzX",
       "family": "Armas",
-      "source": "source/items/armas/04_seax.json"
+      "source": "source/items/armas/04_seax.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/04_seax.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "tGW0xjpxQ9JnguU5",
       "family": "Armas",
-      "source": "source/items/armas/05_espada.json"
+      "source": "source/items/armas/05_espada.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/05_espada.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "gf8C98EdlQSYUQh4",
       "family": "Armas",
-      "source": "source/items/armas/06_garrote.json"
+      "source": "source/items/armas/06_garrote.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/06_garrote.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "DYLtTWt2LeXGYvG7",
       "family": "Armas",
-      "source": "source/items/armas/07_baston_combate.json"
+      "source": "source/items/armas/07_baston_combate.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/07_baston_combate.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "VM0QO1ULwgCp72UM",
       "family": "Armas",
-      "source": "source/items/armas/08_maza_petrea.json"
+      "source": "source/items/armas/08_maza_petrea.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/08_maza_petrea.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "IIeIpAv4T4dD6hY1",
       "family": "Armas",
-      "source": "source/items/armas/09_hacha_litica.json"
+      "source": "source/items/armas/09_hacha_litica.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/09_hacha_litica.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "yJ6TtE7h71JqcxlU",
       "family": "Armas",
-      "source": "source/items/armas/10_hacha_metalica.json"
+      "source": "source/items/armas/10_hacha_metalica.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/10_hacha_metalica.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "utacTITGbR2IGTqs",
       "family": "Armas",
-      "source": "source/items/armas/11_hacha_dos_manos.json"
+      "source": "source/items/armas/11_hacha_dos_manos.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/11_hacha_dos_manos.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "9gpIv2fgoOYUFOpf",
       "family": "Armas",
-      "source": "source/items/armas/12_hacha_barbada.json"
+      "source": "source/items/armas/12_hacha_barbada.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/12_hacha_barbada.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "QxUldCoEJEOCXFnJ",
       "family": "Armas",
-      "source": "source/items/armas/13_lanza_corta.json"
+      "source": "source/items/armas/13_lanza_corta.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/13_lanza_corta.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "UEjClr8xQiDH77h1",
       "family": "Armas",
-      "source": "source/items/armas/14_lanza_larga.json"
+      "source": "source/items/armas/14_lanza_larga.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/14_lanza_larga.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "Rq6tY7rc6ktFEigy",
       "family": "Armas",
-      "source": "source/items/armas/15_jabalina.json"
+      "source": "source/items/armas/15_jabalina.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/15_jabalina.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "8D8YGQR5iuPKMqo0",
       "family": "Armas",
-      "source": "source/items/armas/16_arco_simple.json"
+      "source": "source/items/armas/16_arco_simple.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/16_arco_simple.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "mHTbGNwut0kzDCVg",
       "family": "Armas",
-      "source": "source/items/armas/17_flecha.json"
+      "source": "source/items/armas/17_flecha.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/17_flecha.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "18MnPw0iJrmMtvgV",
       "family": "Armas",
-      "source": "source/items/armas/18_honda.json"
+      "source": "source/items/armas/18_honda.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/18_honda.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "3ssFdtyl81bRpdKc",
       "family": "Armas",
-      "source": "source/items/armas/19_mataa.json"
+      "source": "source/items/armas/19_mataa.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/19_mataa.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "1uesBUeTeGjo9JQT",
       "family": "Armas",
-      "source": "source/items/armas/20_arpon.json"
+      "source": "source/items/armas/20_arpon.json",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/20_arpon.webp",
+        "status": "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL",
+        "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
+        "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "q3HXoB750L6j6XHK",
@@ -714,7 +1267,12 @@
       "id": "HipArm01PackA000",
       "family": "Armas",
       "source": "source/items/01_cuchillo_piedra.json",
-      "blockedAsset": "01_cuchillo_piedra.webp"
+      "blockedAsset": "01_cuchillo_piedra.webp",
+      "archivedImage": {
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_piedra.webp",
+        "status": "MISSING_EXACT_HISTORICAL_BINARY_DO_NOT_SUBSTITUTE",
+        "finalArtApprovedForCI137": false
+      }
     },
     {
       "id": "TokicuraRel0001",
@@ -974,7 +1532,22 @@
           "newImage": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/03_YELMO_DE_HIPOLITA.webp",
           "sha256": "360c5e670f6d9aa383e5d363429ecea543a446fc7e2362fd89ce132161928bfd"
         }
-      ]
+      ],
+      "historicalAssetCrosswalk": {
+        "distinctLegacyImages": 80,
+        "historicalCandidatesByOriginalLiteralPath": 79,
+        "shaInGitHubManifest": 30,
+        "shaInLocalRescueManifests": 49,
+        "unlocatedExactBinary": 1,
+        "missing": "armas/01_cuchillo_piedra.webp",
+        "sourceBackups": [
+          "0.4.72",
+          "0.4.73"
+        ],
+        "editorialApproval": "NOT_ISSUED_FOR_ARCHIVAL_CANDIDATES",
+        "binaryFilesTransferredToGitHub": 0,
+        "noneAutomaticallyAssigned": true
+      }
     }
   }
 }

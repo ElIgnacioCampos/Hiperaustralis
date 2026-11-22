@@ -13,6 +13,10 @@ Este archivo sustituye operativamente los checkpoints anteriores sin borrar ante
 - Artefacto Actions **14738057398**, ZIP SHA-256 `3b3331152a8bad71f0f98f89c7a0a3cbfdeee9fdfeeda469bddc700fcfd7408b`; inspección física: **16 WebP, 137 Item round-trip PASS y CRC ZIP PASS**.
 - **Antes:** 141 referencias heredadas. **Ahora:** 109 referencias heredadas (80 imágenes distintas); no autónomo todavía. La compilación no es prueba de funcionamiento de cliente Foundry.
 
+## Cruce físico de 80 imágenes históricas
+
+**79/80 archivos históricos localizados** en ZIPs 0.4.72/0.4.73 por ruta literal y con SHA coincidentes, cruzados con los documentos CI137. **Falta únicamente Cuchillo de piedra** (`armas/01_cuchillo_piedra.webp`). El manifiesto de 137 registra esos 79 por ID: 30 SHA publicados en GitHub y 49 hashes en manifiestos locales de rescate. **No implica aprobación editorial final, ni transferencia de archivos, ni remapeo de rutas.** Mantener ARM-11–13 posteriores como prioridad al recuperar sus binarios y no volver a auditar los 79 originales.
+
 ## Las 109 referencias restantes — segmentación sin nuevos inventarios
 | Familia | Referencias heredadas | Distintas imágenes |
 |---|---:|---:|
