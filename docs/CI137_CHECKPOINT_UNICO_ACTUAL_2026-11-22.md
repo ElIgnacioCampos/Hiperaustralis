@@ -33,7 +33,7 @@
 ## 3. Pendientes mínimos, en orden
 **P1 — Arte aprobado:** localizar únicamente fuente final de ARM-11–13 (256 transparente; respaldo posterior) y recurso independiente de Cuchillo de piedra. Si no se encuentran, registrar incidencia y mantener placeholder/ruta original, sin suplantación.
 
-**P2 — Destino de Reliquias:** presentar una única decisión de autoridad de los 16 IDs y consecuencias UUID. No alterar referencias, ni mantener dos versiones activas por accidente.
+**P2 — Destino de Reliquias: DECIDIDO.** Los 16 IDs históricos serán la identidad principal; 16 IDs de prototipo como alias documentales. La ejecución y los remapeos UUID siguen sujetos a QA.
 
 **P3 — Transferencia binaria controlada (cuando se pueda):** usar el staging v02 de 96 archivos si reaparece, o comparar por SHA la fuente 0.4.75 con el lote histórico 0.4.72/73. No exige otro inventario general. Un solo manifiesto agregado de SHA y asignaciones definitivas; no subir recursos 512 antiguos encima de versiones editoriales 256.
 
@@ -53,7 +53,7 @@
 5. Antes de activar la variante, comprobar con Foundry CLI y mundo V14/CSB6.1.2 aislado los documentos que referencian UUID antiguos, Items embebidos, Journals, macros, las cinco plantillas CSB y rutas gráficas.
 6. Fallo de cualquier referencia o de QA ⇒ no promover; rollback por sustitución de variante completa, no edición fragmentaria del mundo.
 
-**Decisión del usuario:** aún pendiente. Esta sección registra **RECOMENDACIÓN TÉCNICA / NO CANON**, no una autorización para migrar IDs, referencias ni módulos.
+**Decisión del usuario (22/11/2026): APROBADA la autoridad de los 16 IDs históricos y el uso de los IDs del prototipo como alias documentales.** Esto autoriza el **criterio de selección de la variante CI137**, NO su publicación, ni migración de UUID, ni mutación de Items del mundo. La aplicación técnica queda sujeta a los gates de QA y procedencia del mismo checkpoint.
 
 ---
 
