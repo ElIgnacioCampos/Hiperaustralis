@@ -1,0 +1,64 @@
+name: CI137 historical Items - isolated native roundtrip
+
+on:
+  push:
+    branches:
+      - work/ci137-ensayo-identidad-historica-20261121
+    paths:
+      - '.github/workflows/compile-ci137.yml'
+      - 'tools/foundry/ci137_pipeline.py'
+      - 'manifests/ci137-selected-source-137-historical-ids.json'
+      - 'source/items/**'
+      - 'source-pending/**'
+      - 'source-original/foundry-templates/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  historical-items-137:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate CI137 Python syntax
+        run: python -m py_compile tools/foundry/ci137_pipeline.py
+      - name: Prepare exactly 137 selected real sources - no asset changes
+        run: python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/ci137-prepared"
+      - name: Install official Foundry CLI 3.0.5
+        run: npm install --no-audit --no-fund --no-save --no-package-lock @foundryvtt/foundryvtt-cli@3.0.5
+      - name: Compile and unpack isolated 137 Item native pack
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/ci137-packs" "$RUNNER_TEMP/ci137-unpacked"
+          ./node_modules/.bin/fvtt package pack -n ha-proto-items \
+            --inputDirectory "$RUNNER_TEMP/ci137-prepared/items" \
+            --outputDirectory "$RUNNER_TEMP/ci137-packs" --recursive
+          ./node_modules/.bin/fvtt package unpack -n ha-proto-items \
+            --inputDirectory "$RUNNER_TEMP/ci137-packs" \
+            --outputDirectory "$RUNNER_TEMP/ci137-unpacked" --folders
+      - name: Verify 137 identities, 9 folders and semantic fields
+        run: |
+          python tools/foundry/ci137_pipeline.py verify \
+            --prepared "$RUNNER_TEMP/ci137-prepared" \
+            --unpacked "$RUNNER_TEMP/ci137-unpacked"
+      - name: Preserve isolated audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci137-real-137-preflight-and-roundtrip
+          path: |
+            ${{ runner.temp }}/ci137-prepared/ci137-*.json
+            ${{ runner.temp }}/ci137-packs/ha-proto-items/**
+          if-no-files-found: warn
+          retention-days: 30
+
+# This workflow does NOT modify main, published packs, Foundry world, Forge,
+# MELIAZ Bridge, item sources, or image binaries. No prerelease or deployment.
