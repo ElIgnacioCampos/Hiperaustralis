@@ -29,6 +29,21 @@ Este archivo sustituye operativamente los checkpoints anteriores sin borrar ante
 
 **Regla:** no sustituir por parecido, no regenerar ilustraciones. Cotejar exclusivamente los binarios ya aprobados y sus manifiestos existentes. Los 79 WebP históricos 0.4.72/73, el staging previo de 96 y los 69 staging GitHub son inventarios **distintos**, no 79/96 imágenes aprobadas por equivalencia. El lote visual más reciente puede estar respaldado en BBTECA o en otra rama, no necesariamente en CI137.
 
+## Continuidad de ramas y staging v02 — decisión operativa del 22-11-2026
+
+**No volver a reconstruir 96 WebP ni interpretar 109 referencias de CI137 como 109 imágenes perdidas.** El staging anterior `CORE_FOUNDRY_CI137_STAGING_INTEGRADO_v02.zip`, registrado en `docs/CI137_RECTIFICACION_CONTINUIDAD_ASSETS_2026-11-21.md`, ya había verificado **137 Items, nueve carpetas, 96 WebP y 141/143 referencias internas resueltas**. En la rama CI137 vigente sólo está integrado y probado el mapeo de las 16 Reliquias (32 referencias); **no constan los bytes ni las asignaciones completas de aquel staging v02 en esta rama**. Este es un desfase de continuidad entre artefactos y repositorio, NO una orden para repetir inventarios ni regenerar iconos.
+
+**Consolidación transversal ejecutada:** de los 34 archivos exclusivos de `work/native-compendia-pipeline`, se incorporó a CI137 **sólo el corte vigente de Equipo común (QA29 v10), sus cuatro manifiestos de evidencia, dos CSV de cotejo, reporte QA offline y tres herramientas de sólo lectura (11 archivos)**, sin modificar su contenido ni trasladar 23 borradores intermedios. Estos ficheros son evidencia y herramientas, NO un segundo manifiesto operativo de selección CI137.
+
+- **40 Items históricos de Equipo común**, 29 candidatos con identidad documentada, 20 WebP nuevos aprobados en BBTECA y nueve WebP en staging GitHub; QA binario local 20/20, **QA cliente Foundry no ejecutado**.
+- **11 Items mantienen su iconografía de Foundry**; no se crean imágenes para cubrirlos.
+- **No se aprobaron cambios runtime de `img` para los 29 candidatos**, aunque la creación de la ilustración y la integridad binaria estén documentadas.
+- Los 34 archivos permanecen en la rama nativa. Se preserva el historial; sólo 11 archivos de continuidad se copian por SHA de blob **idéntico**.
+
+**Puerta siguiente, única:** recuperar el *artefacto exacto del staging v02* o sus rutas/bytes desde su respaldo ya señalado y cotejarlo con el estado CI137. Si sus bytes no están disponibles, registrar **NO LOCALIZADO EN EL CHECKOUT**; no inferir que los iconos fueron perdidos ni retroceder al inventario 0.4.72/73. Preparar candidato instalable sólo con fuente y asset final acreditados. Luego QA real en Foundry aislado.
+
+**Disciplina GitHub:** no modificar `manifests/ci137-selected-source-137-historical-ids.json` para registrar meros avances de auditoría; actualizar **únicamente este checkpoint**. Así las modificaciones documentales no disparan otra compilación de 137. El workflow vigente ya se ejecuta por cambios en fuentes, adaptador, selección o workflow, **no por cambios en este checkpoint ni en los manifiestos auxiliares de Equipo**. No crear nuevo PR ni fusionar PR #1; éste continúa en borrador sobre el prototipo de 38, no CI137.
+
 ## Estado transversal conservado
 | Frente | Estado |
 |---|---|
@@ -44,7 +59,7 @@ Este archivo sustituye operativamente los checkpoints anteriores sin borrar ante
 | Main, Foundry, Forge | No modificados |
 
 ## Siguiente operación — una sola secuencia
-1. **Resolver los 80 iconos de origen pendientes**, mediante correspondencias documentadas con **assets finales ya existentes**. Priorizar aprobaciones y hashes: Equipo común QA29 permanece separado, no da autorización automática para alterar imágenes; ARM-11–13 y Cuchillo de piedra requieren sus identidades finales.
+1. **Recuperar el staging CI137 v02 ya integrado** (96 WebP y 141/143 referencias resueltas) a partir del respaldo exacto identificado en la rectificación 21/11. No reconstruir los 80 iconos históricos ni reusar 512 sobre 256 posteriores. Mantener separación de pendientes de ARM-11–13 y Cuchillo de piedra.
 2. **Actualizar rutas sólo en transporte**, conservando ambos campos de Armas/Rituales cuando corresponda; fallar si un SHA o ruta de destino no coincide. Repetir CI137.
 3. **QA en mundo aislado** Foundry V14/CSB sobre 137 fichas, carpetas, imágenes, UUID/compendiumSource y persistencia. No instalar en producción ni publicar sin aprobación.
 

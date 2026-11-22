@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0",
+  "family": "Equipo común",
+  "lot": "L01",
+  "approval": "VISUAL_APPROVED_FOR_ALL_FOUR",
+  "date": "2026-11-21",
+  "basis": "User confirmation ok following technical cleanup and minimal editorial proposal",
+  "sourcePack": "world.hiperaustralis-rituales",
+  "moduleStatus": "NOT_PROMOTED_NO_RUNTIME_QA",
+  "library": {
+    "folder": "/Hiperaustralis/CORE/IMPLEMENTACION/FOUNDRY/EQUIPO_COMUN",
+    "approvedDeltaFilename": "HIPERA_EQUIPO_COMUN_L01_DELTA_LIMPIEZA_ALFA_v02_APROBADO.zip",
+    "historicalFilename": "HIPERA_EQUIPO_COMUN_L01_2x2_CANDIDATOS_v01.zip",
+    "deltaSha256": "f9d6a0bbfe6315e49d46609f70ef6e0b95e6f379b02c3bc7aac63c4459a06988",
+    "zipManifestStillSaysCandidate": true
+  },
+  "items": [
+    {
+      "name": "Külko · Canasto",
+      "culture": "Mapuche",
+      "compendiumDocumentId": "F8SYAQfuZnLiXCv6",
+      "filename": "EQ_MAP_KULKO_CANASTO_L01_v02_ALFA_LIMPIA.webp",
+      "pathWithinDelta": "FOUNDRY_WEBP_256/EQ_MAP_KULKO_CANASTO_L01_v02_ALFA_LIMPIA.webp",
+      "sha256": "5d03ba5b9bc14e29015c4e9c7d1ddbbe4655519fff3ab279ac3c6a37d13ac30c",
+      "status": "VISUALLY_APPROVED",
+      "runtimeImageChanged": false
+    },
+    {
+      "name": "Uysu · Arado de pie",
+      "culture": "Aymara",
+      "compendiumDocumentId": "tfOpt8w3B1dFl6qS",
+      "filename": "EQ_AYM_UYSU_ARADO_PIE_L01_v02_ALFA_LIMPIA.webp",
+      "pathWithinDelta": "FOUNDRY_WEBP_256/EQ_AYM_UYSU_ARADO_PIE_L01_v02_ALFA_LIMPIA.webp",
+      "sha256": "f70d345c2de92b69e78dc266bec9b579152d1969413c55b45fa540e536647666",
+      "status": "VISUALLY_APPROVED",
+      "runtimeImageChanged": false
+    },
+    {
+      "name": "Brýni · Piedra de afilar",
+      "culture": "Nórdicos",
+      "compendiumDocumentId": "kMqPL8yvZQIaZGmY",
+      "filename": "EQ_NOR_BRYNI_PIEDRA_AFILAR_L01_v02_ALFA_LIMPIA.webp",
+      "pathWithinDelta": "FOUNDRY_WEBP_256/EQ_NOR_BRYNI_PIEDRA_AFILAR_L01_v02_ALFA_LIMPIA.webp",
+      "sha256": "f722f42795c85431a01e1d8766df1135fce5e3a35842aa1d50fd63b42f6385a1",
+      "status": "VISUALLY_APPROVED",
+      "runtimeImageChanged": false
+    },
+    {
+      "name": "Ckarisur · Peine",
+      "culture": "Lickanantay",
+      "compendiumDocumentId": "xzRV37AjDu0WVuzh",
+      "filename": "EQ_LICK_CKARISUR_PEINE_L01_v02_ALFA_LIMPIA.webp",
+      "pathWithinDelta": "FOUNDRY_WEBP_256/EQ_LICK_CKARISUR_PEINE_L01_v02_ALFA_LIMPIA.webp",
+      "sha256": "364cb29d35c807622d2e4a95b63a511fb8d2594c144b61f9041f30f1054c8f52",
+      "status": "VISUALLY_APPROVED",
+      "runtimeImageChanged": false
+    }
+  ],
+  "editorialChange": {
+    "documentId": "xzRV37AjDu0WVuzh",
+    "documentUuid": "Compendium.world.hiperaustralis-rituales.Item.xzRV37AjDu0WVuzh",
+    "documentName": "Ckarisur · Peine",
+    "systemField": "system.props.descripcion",
+    "oldValue": "Peine pequeño, tallado en madera, para desenredar y cuidar el cabello.",
+    "newValue": "Peine pequeño, con dientes vegetales sujetos entre varillas de madera, para desenredar y cuidar el cabello.",
+    "scope": "APPROVED_IN_EDITORIAL_REGISTER_ONLY",
+    "appliedToFoundry": false,
+    "preserveOtherFields": true
+  },
+  "nextStep": "QA in isolated Foundry V14 and controlled img migration after runtime checks",
+  "noImageGeneration": true
+}
