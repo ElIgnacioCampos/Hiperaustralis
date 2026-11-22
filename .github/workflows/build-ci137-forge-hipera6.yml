@@ -50,10 +50,12 @@ jobs:
           ./node_modules/.bin/fvtt package unpack -n ha-proto-items \
             --inputDirectory "$MOD/packs" \
             --outputDirectory "${{ runner.temp }}/ci137-qa6-unpacked" --folders
+          # Verify against the rewritten isolated transport, not the historic original URLs.
+          cp "${{ runner.temp }}/ci137-prepared/ci137-preflight.json" "$MOD/ci137-preflight.json"
           python tools/foundry/ci137_pipeline.py verify \
-            --prepared "${{ runner.temp }}/ci137-prepared" \
+            --prepared "$MOD" \
             --unpacked "${{ runner.temp }}/ci137-qa6-unpacked"
-          rm -rf "$MOD/items"
+          rm -rf "$MOD/items" "$MOD/ci137-preflight.json"
       - name: ZIP Forge Wizard package, module manifest in ZIP root
         shell: bash
         run: |
