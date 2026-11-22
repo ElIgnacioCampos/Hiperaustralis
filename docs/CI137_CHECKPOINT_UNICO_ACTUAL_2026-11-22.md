@@ -1,0 +1,61 @@
+# HIPERAUSTRALIS — CI137 / CHECKPOINT ÚNICO ACTUAL
+**Fecha:** 2026-11-22  
+**Frente:** CORE / Implementación — migración de 137 Items históricos a compendio nativo  
+**Ámbito:** rama `work/ci137-ensayo-identidad-historica-20261121` exclusivamente  
+**Estado:** IDENTIDADES Y FUENTES RECUPERADAS / ASSETS HISTÓRICOS RESCATADOS / NO PUBLICABLE
+
+> **Este es el checkpoint operativo único del bloque CI137.** Las actas y matrices anteriores quedan como evidencia archivada, NO como tareas sucesivas. El Estado Maestro general no se modifica sin aprobación.
+
+## 1. Resultado consolidado (sin volver a auditar)
+| Unidad | Evidencia acreditada | Estado |
+|---|---|---|
+| 137 Items, nueve carpetas | staging histórico CI137 v02 y variante con 135 IDs históricos + 2 extras, PASS offline | **CERRADO estructuralmente; no runtime** |
+| 99 Items de cinco familias | JSON originales recuperados de export real Hipera 5; incluidos en rama aislada | **CERRADO documentalmente** |
+| 16 Reliquias históricas y 16 del prototipo | dos juegos de IDs preservados; equivalencias de contenido/imagen conocidas | **CERRADO el cotejo; PENDIENTE decidir autoridad/UUID** |
+| 20 Armas históricas | JSON/IDs preservados; 20 WebP 512 recuperados desde 0.4.72/0.4.73 con SHA coincidentes | **CERRADO rescate histórico; no selección artística final** |
+| 22 Parafernalia y ocho Rituales | 30 JSON cotejados 1:1 con rutas; 30 WebP recuperados y cotejados entre 0.4.72/0.4.73 | **CERRADO rescate histórico** |
+| Ocho Defensas y 21 Instrumentos | 29 WebP recuperados de 0.4.72/0.4.73, con igualdad SHA entre versiones | **CERRADO rescate histórico; no sustitución de ERH finales** |
+| 16 WebP Reliquias + Tokicura | ZIP de 16 y archivo Tokicura registrados en GitHub | **ACREDITADO por fuente anterior; sin repetir auditoría** |
+| Recursos extra en staging GitHub | 69 WebP de Equipo/Defensas/ERH y ZIP Reliquias más Tokicura; son otro inventario | **NO fusionar por semejanza** |
+| Cuchillo de piedra `HipArm01PackA000` | distinto de Cuchillo lítico; su `01_cuchillo_piedra.webp` no fue localizado | **BLOQUEO REAL** |
+| Foundry CLI / QA V14.367 + CSB 6.1.2 | en los checkpoints no consta compilación/round-trip de variante 137, ni QA runtime | **BLOQUEO REAL** |
+
+**Nota fundamental:** `79` WebP locales (20+30+29) recuperados de 0.4.72/0.4.73 **no son 79/96 hashes validados contra el staging previo**. Constituyen una copia histórica alternativa. Los **96** del staging v02 del 18–19/11 quedaron acreditados entonces, pero sus paquetes completos no fueron localizados ahora. No sumar ni reemplazar automáticamente ambas fuentes.
+
+## 2. Lo que NO se hará de nuevo
+- No reabrir búsqueda interminable de ZIP por el mismo nombre. Ya se comprobó que 0.4.75 no aparece por búsqueda de título en las fuentes consultadas.
+- No volver a validar en bucle que 0.4.72 = 0.4.73: prueba realizada para **79 WebP**.
+- No repetir clasificación léxica de los 137 Items: la matriz v05 sólo es evidencia de compatibilidad del árbol de GitHub, **no** criterio de existencia física ni autoridad visual.
+- No producir un documento/commit por cada verificación menor.
+- No volver a construir fuentes JSON, reimaginar 96 iconos, ni volver a comparar 16 Reliquias semánticamente.
+- No bloquear **todo el proyecto** por la ausencia del ZIP 0.4.75: ese cotejo queda como **gate de procedencia sólo para una futura promoción de sus binarios**.
+
+## 3. Pendientes mínimos, en orden
+**P1 — Arte aprobado:** localizar únicamente fuente final de ARM-11–13 (256 transparente; respaldo posterior) y recurso independiente de Cuchillo de piedra. Si no se encuentran, registrar incidencia y mantener placeholder/ruta original, sin suplantación.
+
+**P2 — Destino de Reliquias:** presentar una única decisión de autoridad de los 16 IDs y consecuencias UUID. No alterar referencias, ni mantener dos versiones activas por accidente.
+
+**P3 — Transferencia binaria controlada (cuando se pueda):** usar el staging v02 de 96 archivos si reaparece, o comparar por SHA la fuente 0.4.75 con el lote histórico 0.4.72/73. No exige otro inventario general. Un solo manifiesto agregado de SHA y asignaciones definitivas; no subir recursos 512 antiguos encima de versiones editoriales 256.
+
+**P4 — CI/QA nativo:** compilar y probar **una variante seleccionada** con las cinco plantillas CSB y 137 Items en mundo V14/CSB6.1.2 aislado; verificar UUID, imágenes y persistencia, sin modificar producción.
+
+## 4. Recomendación de flujo
+1. **Congelar auditoría de rescate:** registrar el corpus como fuente recuperada, sin buscar más copias por inercia.
+2. Resolver **P1 y P2** en una matriz breve de decisiones; mantener dudas sin inventar aprobación.
+3. Hacer **un único lote de integración** bajo rama aislada; QA estructural + CI + QA runtime.
+4. Publicar/actualizar Estado Maestro sólo tras revisión del resultado y aprobación expresa.
+
+## 5. Referencias preservadas (históricas, no checkpoints activos)
+- `CHECKPOINT_CORE_GITHUB_FOUNDRY_INVENTARIO_2026-11-18.md`: v04–v09, staging 137, 96 WebP, 141/143 referencias, gates y UUID.
+- `docs/CI137_MATRIZ_ITEMS_ASSETS_2026-11-21_v05.json`: cruce léxico por rama, sólo diagnóstico.
+- `docs/CI137_RESCATE_BINARIO_COMPARADO_0472_0473_2026-11-21.md`: rescate 30 Parafernalia/Rituales.
+- `docs/CI137_ARMAS20_RESCATE_BINARIO_0472_0473_2026-11-22.md`: Armas 20.
+- `docs/CI137_ARM_11_13_Y_RESCATE_DEF08_INS21_2026-11-22.md`: Defensas/Instrumentos y advertencia ARM.
+- `docs/CI137_GATE_075_CIERRE_LOTE_PF22_RIT08_2026-11-22.md`: límite de cotejo con 0.4.75.
+- Archivos locales: `CI137_CANDIDATO_0473_30_WEBP.zip`, `CI137_CANDIDATO_0473_ARMAS20_WEBP.zip`, `CI137_CANDIDATO_0473_DEF08_INS21_WEBP.zip` y sus manifiestos.
+
+## 6. Decisiones / Pendientes / Fuentes / Cambios al Maestro
+**Decisiones operativas:** se consolida un único checkpoint; se detienen búsquedas y auditorías redundantes; se mantiene archivada toda la evidencia sin borrados; no se promueven imágenes históricas por falta de prueba de autoridad final.  
+**Pendientes:** P1–P4 exclusivamente.  
+**Fuentes:** export Hipera 5 593, staging CI137 v02 y checkpoint 18–19/11, rama GitHub aislada, respaldos Drive v0.4.72/0.4.73 y actas de recuperación.  
+**Cambios al Estado Maestro:** ninguno. **main, Bridge, Foundry y Forge:** intactos.
