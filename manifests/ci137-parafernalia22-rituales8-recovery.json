@@ -1,5 +1,5 @@
 {
-  "schema": "hipera-ci137-pf22-rit08-recovery-v01",
+  "schema": "hipera-ci137-pf22-rit08-recovery-v02",
   "status": "SOURCE_MANIFEST_ONLY_NO_BINARIES_TRANSFERRED",
   "archiveName": "HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB.zip",
   "archiveSha256": "c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e",
@@ -15,7 +15,11 @@
       "stagedPath": "module/assets/iconos_aprobados/08_NORDICOS_ASIENTO_MINIATURA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/ntEPr3gfZn4xD2rG.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "JKxUdwuhOtz8yGW1",
@@ -26,7 +30,11 @@
       "stagedPath": "module/assets/iconos_aprobados/19_AYMARA_BOCA_DEL_MALLKU.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/JKxUdwuhOtz8yGW1.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "ilG4UwSV1Bgbk4TF",
@@ -37,7 +45,11 @@
       "stagedPath": "module/assets/iconos_aprobados/16_NORDICOS_BOLSA_BELENO.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/ilG4UwSV1Bgbk4TF.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "nnmYeJON0DKDGJsL",
@@ -48,7 +60,11 @@
       "stagedPath": "module/assets/iconos_aprobados/17_LICKANANTAY_CONTENEDOR_KIT.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/nnmYeJON0DKDGJsL.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "Z955U4dlDAUeEZvr",
@@ -59,7 +75,11 @@
       "stagedPath": "module/assets/iconos_aprobados/13_LICKANANTAY_CUCHARILLA_ESPATULA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/Z955U4dlDAUeEZvr.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "FwlbrqC5ZBqiRjXy",
@@ -70,7 +90,11 @@
       "stagedPath": "module/assets/iconos_aprobados/21_LICKANANTAY_ESCOBILLA_LIMPIEZA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/FwlbrqC5ZBqiRjXy.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "IPKDCSo3bKzUCcGl",
@@ -81,7 +105,11 @@
       "stagedPath": "module/assets/iconos_aprobados/15_AYMARA_HILO_NEGRO.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/IPKDCSo3bKzUCcGl.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "AocpkbZW4w29Bc4u",
@@ -92,7 +120,11 @@
       "stagedPath": "module/assets/iconos_aprobados/38_MAPUCHE_KENEYKEN.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/AocpkbZW4w29Bc4u.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "Nvj2xTK4apIrEDPn",
@@ -103,7 +135,11 @@
       "stagedPath": "module/assets/iconos_aprobados/02_MAPUCHE_KULTRUN.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/Nvj2xTK4apIrEDPn.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "psnu2t74dnHQ3pFx",
@@ -114,7 +150,11 @@
       "stagedPath": "module/assets/iconos_aprobados/42_MAPUCHE_LATUE.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/psnu2t74dnHQ3pFx.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "FBVSE0HBZ62ShEZM",
@@ -125,7 +165,11 @@
       "stagedPath": "module/assets/iconos_aprobados/10_MAPUCHE_LLAF_LLAF.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/FBVSE0HBZ62ShEZM.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "xdvai2XGysSWwdKt",
@@ -136,7 +180,11 @@
       "stagedPath": "module/assets/iconos_aprobados/09_LICKANANTAY_MORTERO_MINIATURA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/xdvai2XGysSWwdKt.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "q0qlFGWAMip94Y4i",
@@ -147,7 +195,11 @@
       "stagedPath": "module/assets/iconos_aprobados/14_MAPUCHE_PANOLETA_CEREMONIAL.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/q0qlFGWAMip94Y4i.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "dVgxiZYJcTLdA5yL",
@@ -158,7 +210,11 @@
       "stagedPath": "module/assets/iconos_aprobados/26_MAPUCHE_PIFULLKA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/dVgxiZYJcTLdA5yL.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "P0xH74Ofvj2xnAvk",
@@ -169,7 +225,11 @@
       "stagedPath": "module/assets/iconos_aprobados/11_AYMARA_QUWA_HUMO.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/P0xH74Ofvj2xnAvk.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "fW04rY0fTfZ84fL6",
@@ -180,7 +240,11 @@
       "stagedPath": "module/assets/iconos_aprobados/06_MAPUCHE_REWE.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/fW04rY0fTfZ84fL6.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "3cCDbjqou8AlzfsW",
@@ -191,7 +255,11 @@
       "stagedPath": "module/assets/iconos_aprobados/40_NORDICOS_RUNAS_CORREGIDAS.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/3cCDbjqou8AlzfsW.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "zSx4zh9b24XjjXMx",
@@ -202,7 +270,11 @@
       "stagedPath": "module/assets/iconos_aprobados/01_LICKANANTAY_TABLETA_INHALATORIA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/zSx4zh9b24XjjXMx.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "QTbZkuQcog7ReVW5",
@@ -213,7 +285,11 @@
       "stagedPath": "module/assets/iconos_aprobados/41_ATACAMA_TREPANACION_CICATRIZADA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/QTbZkuQcog7ReVW5.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "MvGDMBIuGD1iozPW",
@@ -224,7 +300,11 @@
       "stagedPath": "module/assets/iconos_aprobados/05_LICKANANTAY_TUBO_INHALATORIO.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/MvGDMBIuGD1iozPW.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "0MRehrLjaQOO4s1A",
@@ -235,7 +315,11 @@
       "stagedPath": "module/assets/iconos_aprobados/24_NORDICOS_VARA_VOLVA_KOPINGSVIK.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/0MRehrLjaQOO4s1A.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "oaLaLLWoZXQrRULq",
@@ -246,7 +330,11 @@
       "stagedPath": "module/assets/iconos_aprobados/43_AYMARA_VIGILIA_NOCTURNA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/oaLaLLWoZXQrRULq.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipEquipTpl00001",
+      "backgroundPathFromSourceVerified": false,
+      "expectedSheetBackground": null
     },
     {
       "id": "StbeCxC7TrpiOUdG",
@@ -257,7 +345,11 @@
       "stagedPath": "module/assets/rituales/05_ATAR.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/StbeCxC7TrpiOUdG.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipRitualTpl0001",
+      "backgroundPathFromSourceVerified": true,
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/05_ATAR.webp"
     },
     {
       "id": "fCg9JDUw2DNqWjOe",
@@ -268,7 +360,11 @@
       "stagedPath": "module/assets/rituales/03_CONSULTAR.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/fCg9JDUw2DNqWjOe.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipRitualTpl0001",
+      "backgroundPathFromSourceVerified": true,
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/03_CONSULTAR.webp"
     },
     {
       "id": "wgLZd7pqnk84LSWJ",
@@ -279,7 +375,11 @@
       "stagedPath": "module/assets/rituales/06_DESPEDIR.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/wgLZd7pqnk84LSWJ.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipRitualTpl0001",
+      "backgroundPathFromSourceVerified": true,
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/06_DESPEDIR.webp"
     },
     {
       "id": "4jeuBPUYEGHmXKXv",
@@ -290,7 +390,11 @@
       "stagedPath": "module/assets/rituales/08_LAKUTUN_LEGAR.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/4jeuBPUYEGHmXKXv.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipRitualTpl0001",
+      "backgroundPathFromSourceVerified": true,
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/08_LAKUTUN_LEGAR.webp"
     },
     {
       "id": "mLpXRfCGbmX1t8xa",
@@ -301,7 +405,11 @@
       "stagedPath": "module/assets/rituales/04_RENOVAR_ARRAIGO.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/mLpXRfCGbmX1t8xa.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipRitualTpl0001",
+      "backgroundPathFromSourceVerified": true,
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/04_RENOVAR_ARRAIGO.webp"
     },
     {
       "id": "JQI2h5gPnAsqvcsF",
@@ -312,7 +420,11 @@
       "stagedPath": "module/assets/rituales/02_RESTITUIR.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/JQI2h5gPnAsqvcsF.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipRitualTpl0001",
+      "backgroundPathFromSourceVerified": true,
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/02_RESTITUIR.webp"
     },
     {
       "id": "yoCFKUIlnBqVvRsH",
@@ -323,7 +435,11 @@
       "stagedPath": "module/assets/rituales/07_VIAJAR.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/yoCFKUIlnBqVvRsH.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipRitualTpl0001",
+      "backgroundPathFromSourceVerified": true,
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/07_VIAJAR.webp"
     },
     {
       "id": "yQe9xxburYY3j35H",
@@ -334,7 +450,22 @@
       "stagedPath": "module/assets/rituales/01_VINCULAR.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/yQe9xxburYY3j35H.json",
       "assetSha256": null,
-      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED"
+      "assetStatus": "HISTORICAL_CHECKPOINT_ONLY_NOT_COPIED",
+      "imgPathFromSourceVerified": true,
+      "template": "HipRitualTpl0001",
+      "backgroundPathFromSourceVerified": true,
+      "expectedSheetBackground": "modules/hiperaustralis-rituales/assets/rituales/01_VINCULAR.webp"
     }
-  ]
+  ],
+  "sourcePayloadVerification": {
+    "date": "2026-11-21",
+    "verifiedItems": 30,
+    "matchedIds": 30,
+    "matchedImg": 30,
+    "matchedRitualBackgrounds": 8,
+    "parafernaliaTemplate": "HipEquipTpl00001",
+    "ritualTemplate": "HipRitualTpl0001",
+    "source": "30 original Item JSONs read from same CI137 branch",
+    "scope": "JSON identity and path only; original binary bytes not opened"
+  }
 }
