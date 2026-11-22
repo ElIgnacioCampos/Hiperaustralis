@@ -56,6 +56,7 @@ jobs:
           name: ci137-real-137-preflight-and-roundtrip
           path: |
             ${{ runner.temp }}/ci137-prepared/ci137-*.json
+            ${{ runner.temp }}/ci137-prepared/assets/reliquias/**
             ${{ runner.temp }}/ci137-packs/ha-proto-items/**
           if-no-files-found: warn
           retention-days: 30
