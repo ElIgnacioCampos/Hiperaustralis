@@ -1,0 +1,871 @@
+{
+  "schema": "hipera-ci137-exact-legacy-image-index-v01",
+  "source": "CI137 historical manifests",
+  "imageCount": 95,
+  "counts": {
+    "Armas": 20,
+    "Defensas": 8,
+    "Instrumentos musicales": 21,
+    "Parafernalia · sanación · cultura material": 22,
+    "Rituales": 8,
+    "Reliquias legendarias": 8,
+    "Reliquias cotidianas": 8
+  },
+  "records": [
+    {
+      "family": "Armas",
+      "id": "c2L6T5w4S9OcgkDt",
+      "name": "Cuchillo lítico",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_litico.webp",
+      "source": "source/items/armas/01_cuchillo_litico.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "Iol01RpIqlQxSTMr",
+      "name": "Cuchillo de hueso",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/02_cuchillo_hueso.webp",
+      "source": "source/items/armas/02_cuchillo_hueso.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "Ri1XmMCXqdIJbK3s",
+      "name": "Cuchillo metálico",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/03_cuchillo_metalico.webp",
+      "source": "source/items/armas/03_cuchillo_metalico.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "n5lkb91fMyBzjvzX",
+      "name": "Seax / cuchillo largo",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/04_seax.webp",
+      "source": "source/items/armas/04_seax.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "tGW0xjpxQ9JnguU5",
+      "name": "Espada sencilla",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/05_espada.webp",
+      "source": "source/items/armas/05_espada.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "gf8C98EdlQSYUQh4",
+      "name": "Garrote",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/06_garrote.webp",
+      "source": "source/items/armas/06_garrote.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "DYLtTWt2LeXGYvG7",
+      "name": "Bastón de combate",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/07_baston_combate.webp",
+      "source": "source/items/armas/07_baston_combate.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "VM0QO1ULwgCp72UM",
+      "name": "Maza pétrea",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/08_maza_petrea.webp",
+      "source": "source/items/armas/08_maza_petrea.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "IIeIpAv4T4dD6hY1",
+      "name": "Hacha lítica",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/09_hacha_litica.webp",
+      "source": "source/items/armas/09_hacha_litica.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "yJ6TtE7h71JqcxlU",
+      "name": "Hacha metálica",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/10_hacha_metalica.webp",
+      "source": "source/items/armas/10_hacha_metalica.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "utacTITGbR2IGTqs",
+      "name": "Hacha de dos manos",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/11_hacha_dos_manos.webp",
+      "source": "source/items/armas/11_hacha_dos_manos.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "9gpIv2fgoOYUFOpf",
+      "name": "Hacha barbada",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/12_hacha_barbada.webp",
+      "source": "source/items/armas/12_hacha_barbada.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "QxUldCoEJEOCXFnJ",
+      "name": "Lanza corta",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/13_lanza_corta.webp",
+      "source": "source/items/armas/13_lanza_corta.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "UEjClr8xQiDH77h1",
+      "name": "Lanza larga",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/14_lanza_larga.webp",
+      "source": "source/items/armas/14_lanza_larga.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "Rq6tY7rc6ktFEigy",
+      "name": "Jabalina",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/15_jabalina.webp",
+      "source": "source/items/armas/15_jabalina.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "8D8YGQR5iuPKMqo0",
+      "name": "Arco simple",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/16_arco_simple.webp",
+      "source": "source/items/armas/16_arco_simple.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "mHTbGNwut0kzDCVg",
+      "name": "Flecha",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/17_flecha.webp",
+      "source": "source/items/armas/17_flecha.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "18MnPw0iJrmMtvgV",
+      "name": "Honda",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/18_honda.webp",
+      "source": "source/items/armas/18_honda.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "3ssFdtyl81bRpdKc",
+      "name": "Mata’a",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/19_mataa.webp",
+      "source": "source/items/armas/19_mataa.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Armas",
+      "id": "1uesBUeTeGjo9JQT",
+      "name": "Arpón",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/armas/20_arpon.webp",
+      "source": "source/items/armas/20_arpon.json",
+      "assetInGitHubBranch": "NO",
+      "historicalBackup": "0.4.75 and ARMAS20 staging"
+    },
+    {
+      "family": "Defensas",
+      "id": "pe9Bb6kzCsr5IUx1",
+      "name": "Capucha protectora de fibra de camélido — Pica–Tarapacá",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/defensas/04_capucha_protectora_pica_tarapaca.webp",
+      "source": "source-pending/ci137-historicos-99/defensas/pe9Bb6kzCsr5IUx1.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Defensas",
+      "id": "uM1FCC5l7Lbx8sRa",
+      "name": "Casco emplumado — Pica–Tarapacá",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/defensas/02_casco_emplumado_pica_tarapaca.webp",
+      "source": "source-pending/ci137-historicos-99/defensas/uM1FCC5l7Lbx8sRa.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Defensas",
+      "id": "Id2dCZ4s4TPTMr8R",
+      "name": "Casco rígido de madera y fibras — Pica–Tarapacá",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/defensas/01_casco_rigido_pica_tarapaca.webp",
+      "source": "source-pending/ci137-historicos-99/defensas/Id2dCZ4s4TPTMr8R.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Defensas",
+      "id": "ThGITBgBJNBwJ6o2",
+      "name": "Casco sobre capucha tejida — Pica–Tarapacá",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/defensas/03_casco_sobre_capucha_pica_tarapaca.webp",
+      "source": "source-pending/ci137-historicos-99/defensas/ThGITBgBJNBwJ6o2.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Defensas",
+      "id": "aa9YXJm5fD4UF6oK",
+      "name": "Coraza de Lasana — Alto Loa",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/defensas/05_coraza_lasana.webp",
+      "source": "source-pending/ci137-historicos-99/defensas/aa9YXJm5fD4UF6oK.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Defensas",
+      "id": "6z2oWVl5FstIDJKB",
+      "name": "Espaldar grueso de cuero surandino",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/defensas/07_espaldar_cuero_surandino.webp",
+      "source": "source-pending/ci137-historicos-99/defensas/6z2oWVl5FstIDJKB.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Defensas",
+      "id": "bMbwzRsasVa6zxAM",
+      "name": "Manta densa defensiva surandina",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/defensas/08_manta_densa_surandina.webp",
+      "source": "source-pending/ci137-historicos-99/defensas/bMbwzRsasVa6zxAM.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Defensas",
+      "id": "gftm3lDJ8r4YbOjh",
+      "name": "Peto grueso de cuero surandino",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/defensas/06_peto_cuero_surandino.webp",
+      "source": "source-pending/ci137-historicos-99/defensas/gftm3lDJ8r4YbOjh.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "Aobt60Pl1vy7i7MU",
+      "name": "Antara Lickanantay",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/07_antara_4_ductos.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/Aobt60Pl1vy7i7MU.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "zSsH0T0CZzJ4nNQB",
+      "name": "Antara Tiwanaku",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/aymara/06_antara_tiwanaku.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/zSsH0T0CZzJ4nNQB.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "j7J6wcAttET8rJpB",
+      "name": "Arpa de boca",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/21_arpa_de_boca.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/j7J6wcAttET8rJpB.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "RzhInApxuwq1o651",
+      "name": "Campana Lickanantay",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/19_campana.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/RzhInApxuwq1o651.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "INdG4JndLBl0sWto",
+      "name": "Cuerno musical nórdico",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/20_cuerno_musical.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/INdG4JndLBl0sWto.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "YfFAFtBpsdyU2l9R",
+      "name": "Flauta de hueso",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/11_flauta_hueso.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/YfFAFtBpsdyU2l9R.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "R1exJG9q2EP8URHe",
+      "name": "Flauta traversa de Coyo",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/18_flauta_coyo.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/R1exJG9q2EP8URHe.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "1dhUgcpr5U3wAQ1l",
+      "name": "Kakel-kultrung",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/15_kakel_kultrung.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/1dhUgcpr5U3wAQ1l.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "vr5gUbTNMU8tj3zL",
+      "name": "Kaskawilla",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/14_kaskawilla.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/vr5gUbTNMU8tj3zL.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "K7d2oqF6P7DB0Kpt",
+      "name": "Kultrung",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/01_kultrung.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/K7d2oqF6P7DB0Kpt.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "7yTC2u73mcFuQrx2",
+      "name": "Lira nórdica",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/10_lira.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/7yTC2u73mcFuQrx2.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "IG8DW7Wr30mg1jqx",
+      "name": "Pifüllka",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/02_pifullka.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/IG8DW7Wr30mg1jqx.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "KpK5mqDdleRnemjh",
+      "name": "Piloilo",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/13_piloilo.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/KpK5mqDdleRnemjh.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "JZUzx0bNMoDj6xs5",
+      "name": "Pututu",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/andino/16_pututu.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/JZUzx0bNMoDj6xs5.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "K4BKDYp47LohrxuD",
+      "name": "Siku",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/aymara/04_siku.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/K4BKDYp47LohrxuD.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "VMdFQpCaienOgLV4",
+      "name": "Sonaja Aymara",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/aymara/17_sonaja.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/VMdFQpCaienOgLV4.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "RiMXmUYNYn5VRKrx",
+      "name": "Sonajero de hierro",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/12_sonajero_hierro.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/RiMXmUYNYn5VRKrx.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "tvgKf9WGkUmy6GJi",
+      "name": "Sonajero Lickanantay",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/09_sonajero.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/tvgKf9WGkUmy6GJi.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "Akd70OCwmrJ0az3P",
+      "name": "Trompeta monóxila",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/08_trompeta_monoxila.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/Akd70OCwmrJ0az3P.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "FvfW6Ug0yCyR7VjF",
+      "name": "Wankara",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/aymara/05_wankara.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/FvfW6Ug0yCyR7VjF.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Instrumentos musicales",
+      "id": "gp4b3XE6mJGvqE9X",
+      "name": "Waza",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/03_waza.webp",
+      "source": "source-pending/ci137-historicos-99/instrumentos-musicales/gp4b3XE6mJGvqE9X.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "ntEPr3gfZn4xD2rG",
+      "name": "Asiento miniatura de plata",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/08_NORDICOS_ASIENTO_MINIATURA.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/ntEPr3gfZn4xD2rG.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "JKxUdwuhOtz8yGW1",
+      "name": "Boca del mallku",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/19_AYMARA_BOCA_DEL_MALLKU.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/JKxUdwuhOtz8yGW1.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "ilG4UwSV1Bgbk4TF",
+      "name": "Bolsa con semillas de beleño",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/16_NORDICOS_BOLSA_BELENO.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/ilG4UwSV1Bgbk4TF.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "nnmYeJON0DKDGJsL",
+      "name": "Contenedor del kit inhalatorio",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/17_LICKANANTAY_CONTENEDOR_KIT.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/nnmYeJON0DKDGJsL.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "Z955U4dlDAUeEZvr",
+      "name": "Cucharilla / espátula",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/13_LICKANANTAY_CUCHARILLA_ESPATULA.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/Z955U4dlDAUeEZvr.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "FwlbrqC5ZBqiRjXy",
+      "name": "Escobilla de limpieza",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/21_LICKANANTAY_ESCOBILLA_LIMPIEZA.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/FwlbrqC5ZBqiRjXy.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "IPKDCSo3bKzUCcGl",
+      "name": "Hilo negro ritual",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/15_AYMARA_HILO_NEGRO.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/IPKDCSo3bKzUCcGl.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "AocpkbZW4w29Bc4u",
+      "name": "Keñeyken",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/38_MAPUCHE_KENEYKEN.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/AocpkbZW4w29Bc4u.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "Nvj2xTK4apIrEDPn",
+      "name": "Kultrún",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/02_MAPUCHE_KULTRUN.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/Nvj2xTK4apIrEDPn.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "psnu2t74dnHQ3pFx",
+      "name": "Latúe",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/42_MAPUCHE_LATUE.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/psnu2t74dnHQ3pFx.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "FBVSE0HBZ62ShEZM",
+      "name": "Llaf-llaf",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/10_MAPUCHE_LLAF_LLAF.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/FBVSE0HBZ62ShEZM.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "xdvai2XGysSWwdKt",
+      "name": "Mortero miniatura y mano",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/09_LICKANANTAY_MORTERO_MINIATURA.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/xdvai2XGysSWwdKt.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "q0qlFGWAMip94Y4i",
+      "name": "Pañoleta ceremonial",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/14_MAPUCHE_PANOLETA_CEREMONIAL.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/q0qlFGWAMip94Y4i.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "dVgxiZYJcTLdA5yL",
+      "name": "Pifüllka",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/26_MAPUCHE_PIFULLKA.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/dVgxiZYJcTLdA5yL.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "P0xH74Ofvj2xnAvk",
+      "name": "Q'uwa",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/11_AYMARA_QUWA_HUMO.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/P0xH74Ofvj2xnAvk.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "fW04rY0fTfZ84fL6",
+      "name": "Rewe",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/06_MAPUCHE_REWE.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/fW04rY0fTfZ84fL6.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "3cCDbjqou8AlzfsW",
+      "name": "Runas corregidas",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/40_NORDICOS_RUNAS_CORREGIDAS.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/3cCDbjqou8AlzfsW.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "zSx4zh9b24XjjXMx",
+      "name": "Tableta inhalatoria",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/01_LICKANANTAY_TABLETA_INHALATORIA.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/zSx4zh9b24XjjXMx.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "QTbZkuQcog7ReVW5",
+      "name": "Trepanación cicatrizada",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/41_ATACAMA_TREPANACION_CICATRIZADA.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/QTbZkuQcog7ReVW5.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "MvGDMBIuGD1iozPW",
+      "name": "Tubo inhalatorio",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/05_LICKANANTAY_TUBO_INHALATORIO.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/MvGDMBIuGD1iozPW.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "0MRehrLjaQOO4s1A",
+      "name": "Vara de völva",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/24_NORDICOS_VARA_VOLVA_KOPINGSVIK.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/0MRehrLjaQOO4s1A.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Parafernalia · sanación · cultura material",
+      "id": "oaLaLLWoZXQrRULq",
+      "name": "Vigilia nocturna",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/iconos_aprobados/43_AYMARA_VIGILIA_NOCTURNA.webp",
+      "source": "source-pending/ci137-historicos-99/parafernalia/oaLaLLWoZXQrRULq.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Rituales",
+      "id": "StbeCxC7TrpiOUdG",
+      "name": "Atar",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/rituales/05_ATAR.webp",
+      "source": "source-pending/ci137-historicos-99/rituales/StbeCxC7TrpiOUdG.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Rituales",
+      "id": "fCg9JDUw2DNqWjOe",
+      "name": "Consultar",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/rituales/03_CONSULTAR.webp",
+      "source": "source-pending/ci137-historicos-99/rituales/fCg9JDUw2DNqWjOe.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Rituales",
+      "id": "wgLZd7pqnk84LSWJ",
+      "name": "Despedir",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/rituales/06_DESPEDIR.webp",
+      "source": "source-pending/ci137-historicos-99/rituales/wgLZd7pqnk84LSWJ.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Rituales",
+      "id": "4jeuBPUYEGHmXKXv",
+      "name": "Lakutun · Legar",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/rituales/08_LAKUTUN_LEGAR.webp",
+      "source": "source-pending/ci137-historicos-99/rituales/4jeuBPUYEGHmXKXv.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Rituales",
+      "id": "mLpXRfCGbmX1t8xa",
+      "name": "Renovar Arraigo",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/rituales/04_RENOVAR_ARRAIGO.webp",
+      "source": "source-pending/ci137-historicos-99/rituales/mLpXRfCGbmX1t8xa.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Rituales",
+      "id": "JQI2h5gPnAsqvcsF",
+      "name": "Restituir",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/rituales/02_RESTITUIR.webp",
+      "source": "source-pending/ci137-historicos-99/rituales/JQI2h5gPnAsqvcsF.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Rituales",
+      "id": "yoCFKUIlnBqVvRsH",
+      "name": "Viajar",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/rituales/07_VIAJAR.webp",
+      "source": "source-pending/ci137-historicos-99/rituales/yoCFKUIlnBqVvRsH.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Rituales",
+      "id": "yQe9xxburYY3j35H",
+      "name": "Vincular",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/rituales/01_VINCULAR.webp",
+      "source": "source-pending/ci137-historicos-99/rituales/yQe9xxburYY3j35H.json",
+      "assetInGitHubBranch": "NOT_MAPPED",
+      "historicalBackup": "staging 59"
+    },
+    {
+      "family": "Reliquias legendarias",
+      "id": "q3HXoB750L6j6XHK",
+      "name": "Amuleto rúnico de Kvinneby",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/08_AMULETO_RUNICO_DE_KVINNEBY.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/q3HXoB750L6j6XHK.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    },
+    {
+      "family": "Reliquias legendarias",
+      "id": "CtMcaOnMjw23zWmq",
+      "name": "Antükura",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/02_ANTUKURA.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/CtMcaOnMjw23zWmq.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    },
+    {
+      "family": "Reliquias cotidianas",
+      "id": "frD3BIM7bklCxPle",
+      "name": "Cencerro de madera",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/08_cencerro_de_madera.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/frD3BIM7bklCxPle.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    },
+    {
+      "family": "Reliquias cotidianas",
+      "id": "z8BEvJ4uHgLSZePS",
+      "name": "Challa heredada",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/01_challa_heredada.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/z8BEvJ4uHgLSZePS.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    },
+    {
+      "family": "Reliquias legendarias",
+      "id": "a9NdZq068ANs5hnR",
+      "name": "Chayanco de Chillpila",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/06_CHAYANCO_DE_CHILLPILA.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/a9NdZq068ANs5hnR.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    },
+    {
+      "family": "Reliquias cotidianas",
+      "id": "u5Vbl3gGUL4kJJQ2",
+      "name": "Chuspa de camino",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/03_chuspa_de_camino.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/u5Vbl3gGUL4kJJQ2.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    },
+    {
+      "family": "Reliquias cotidianas",
+      "id": "sdQeeQDV2W6EVl2w",
+      "name": "Cuchara de chañar",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/07_cuchara_de_chanar.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/sdQeeQDV2W6EVl2w.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    },
+    {
+      "family": "Reliquias legendarias",
+      "id": "tr9AQooUcnTtAxO3",
+      "name": "Drakar de Ullman",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/04_DRAKAR_DE_ULLMAN.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/tr9AQooUcnTtAxO3.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    },
+    {
+      "family": "Reliquias cotidianas",
+      "id": "TADm8tlCkyns4iwE",
+      "name": "Inkuña de ofrendas",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/04_inkuna_de_ofrendas.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/TADm8tlCkyns4iwE.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    },
+    {
+      "family": "Reliquias cotidianas",
+      "id": "T0yw5ZsA7WtDOB9G",
+      "name": "Kütru metawe familiar",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/02_kutru_metawe_familiar.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/T0yw5ZsA7WtDOB9G.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    },
+    {
+      "family": "Reliquias cotidianas",
+      "id": "3Rjv67wd9g9rVwka",
+      "name": "Peine de asta heredado",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/05_peine_de_asta_heredado.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/3Rjv67wd9g9rVwka.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    },
+    {
+      "family": "Reliquias cotidianas",
+      "id": "NSOxLP5BMpfX7L57",
+      "name": "Piedra de afilar del viaje",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/06_piedra_de_afilar_del_viaje.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/NSOxLP5BMpfX7L57.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    },
+    {
+      "family": "Reliquias legendarias",
+      "id": "ik1kdfVoqQbbTAmH",
+      "name": "Piedra Vieja de Paititi",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/05_PIEDRA_VIEJA_DE_PAITITI.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/ik1kdfVoqQbbTAmH.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    },
+    {
+      "family": "Reliquias legendarias",
+      "id": "UrZNB1QgdnAghNQb",
+      "name": "Tableta del Hombre-Felino",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/07_TABLETA_DEL_HOMBRE_FELINO.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/UrZNB1QgdnAghNQb.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    },
+    {
+      "family": "Reliquias legendarias",
+      "id": "607Y5Z4vouHf8vEi",
+      "name": "Tridente de Ullman",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/01_TRIDENTE_DE_ULLMAN.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/607Y5Z4vouHf8vEi.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    },
+    {
+      "family": "Reliquias legendarias",
+      "id": "sRDyvzOfCVjdHJ0D",
+      "name": "Yelmo de Hipólita",
+      "historicalImg": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/03_YELMO_DE_HIPOLITA.webp",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/sRDyvzOfCVjdHJ0D.json",
+      "assetInGitHubBranch": "IN_ARCHIVE_NOT_EXTRACTED",
+      "historicalBackup": "CI112 relics"
+    }
+  ]
+}
