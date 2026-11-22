@@ -223,6 +223,10 @@ def verify(prepared, unpacked):
         if dst.get("folder") != src.get("folder"):
             fail("Item folder changed " + item_id)
         for field in PRESERVED_FIELDS:
+            # Foundry CLI supplies the empty ActiveEffect array when the original
+            # JSON omits it. This is a serialization default, not altered content.
+            if field == "effects" and src.get("effects", []) == dst.get("effects", []) == []:
+                continue
             if dst.get(field) != src.get(field):
                 fail("Item semantic field changed " + item_id + "/" + field)
     result = {
