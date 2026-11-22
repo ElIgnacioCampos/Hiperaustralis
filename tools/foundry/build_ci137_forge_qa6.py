@@ -84,8 +84,8 @@ def main():
         counts[converted["system"]["template"]]=counts.get(converted["system"]["template"],0)+1
         checkedRecords.append({"id":doc["_id"],"folderId":converted["folder"],"template":converted["system"]["template"]})
         dump(module/"items"/rel,converted)
-    if len(ids)!=137 or len(counts)!=5 or legacy!=109 or local!=33:
-        raise SystemExit(f"Unplanned 137/5/109/33: {len(ids)}/{len(counts)}/{legacy}/{local}")
+    if len(ids)!=137 or len(counts)!=5 or legacy!=109 or local!=34:
+        raise SystemExit(f"Unplanned 137/5/109/34: {len(ids)}/{len(counts)}/{legacy}/{local}")
     src=prepared/"assets/reliquias"
     if not src.is_dir():raise SystemExit("16 approved relics are not staged")
     shutil.copytree(src,module/"assets/reliquias")
