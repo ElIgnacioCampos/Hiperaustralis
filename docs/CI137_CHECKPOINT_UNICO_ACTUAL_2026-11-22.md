@@ -57,6 +57,18 @@
 
 ---
 
+## 3B. P1 — Resolución de estado gráfico (sin nueva auditoría general)
+
+**ARM-11, ARM-12 y ARM-13:** la continuidad del 09/11 identifica una serie **posterior** de WebP 256×256 transparentes y dos respaldos `RESPALDO_ARM_11-13_WEBP256_transparente.zip` y `RESPALDO_ARM_11-13_PNG1024_WEBP256.zip`. Se registró aprobación de diseño parcial (ARM-11); normalización posterior para ARM-12 y producción de ARM-13. Las referencias a candidatos de compendio `0.4.85`, `0.4.86` y `0.4.87` **no implican** aprobación de carga/QA runtime. Los bytes finales 256 no están localizados en las fuentes actuales. Los WebP 512 de 0.4.72/73 permanecen archivados como históricos.
+
+**Cuchillo de piedra:** `HipArm01PackA000`, con `01_cuchillo_piedra.webp`, requiere arte propio. Prohibido sustituirlo por `01_cuchillo_litico.webp`. Fuente histórica/asset independiente **no localizado**.
+
+**Dictamen de P1:** investigación y estado documental consolidados; **bloqueo de binarios finales** para ARM-11–13 y Cuchillo de piedra. No volver a solicitar búsqueda idéntica sin una fuente nueva; no publicar ni asignar imágenes antiguas como finales. P1 sólo se reabre ante hallazgo concreto de ZIP/archivo o export verificable. No convertir este bloqueo de iconografía en rediseño del CORE ni en un ciclo de auditorías.
+
+**Próxima acción permitida:** preparar un solo lote técnico CI137 conservador con manifiesto de dependencias y gates explícitos, sin compendio publicado y sin rellenar rutas faltantes.
+
+---
+
 ## 4. Recomendación de flujo
 1. **Congelar auditoría de rescate:** registrar el corpus como fuente recuperada, sin buscar más copias por inercia.
 2. Resolver **P1 y P2** en una matriz breve de decisiones; mantener dudas sin inventar aprobación.
