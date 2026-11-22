@@ -60,7 +60,7 @@ def check_repo():
             "packs": [p["name"] for p in m["packs"]]}
 
 
-def read_archive(path):
+def read_archive(path, require_no_remote_urls=True):
     with zipfile.ZipFile(path) as archive:
         bad = archive.testzip()
         if bad:
@@ -71,16 +71,22 @@ def read_archive(path):
         manifest = json.loads(archive.read("module.json"))
         check_manifest(manifest)
         # An old public URL would redirect to the 38-Item prototype.
-        if manifest.get("download") or manifest.get("manifest"):
+        if require_no_remote_urls and (manifest.get("download") or manifest.get("manifest")):
             raise Blocked("QA ZIP must not reference a previously published remote download")
         members = {n: hashlib.sha256(archive.read(n)).hexdigest()
                    for n in archive.namelist() if not n.endswith("/")}
+        pack_dirs = {n.split("/")[1] for n in members
+                     if n.startswith("packs/") and len(n.split("/")) > 2}
+        if pack_dirs != set(PACKS):
+            raise Blocked("ZIP has extra or missing physical packs: " + repr(sorted(pack_dirs)))
     return members
 
 
 def preserve_unchanged(base, candidate):
-    a = read_archive(base)
-    b = read_archive(candidate)
+    # Baseline v0.1.5 is allowed to contain its original published URLs.
+    # Only the new candidate must have no stale manifest/download URLs.
+    a = read_archive(base, require_no_remote_urls=False)
+    b = read_archive(candidate, require_no_remote_urls=True)
     for name in ("ha-proto-actors", "ha-proto-journals"):
         prefix = "packs/" + name + "/"
         left = {k:v for k,v in a.items() if k.startswith(prefix)}
