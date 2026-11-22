@@ -6,6 +6,7 @@ Does not alter Foundry, git Items, runtime references, or approved artworks.
 """
 import argparse
 import hashlib
+import io
 import json
 import sys
 import zipfile
@@ -29,12 +30,20 @@ def audit(archive, manifest, stage=None):
     if actual_zip_sha != spec["archiveSha256"]:
         raise ValueError("Historical archive SHA mismatch: " + actual_zip_sha)
     ids = [x["id"] for x in entries]
+    source_paths = [x["archiveMember"] for x in entries]
+    destination_paths = [x["stagedPath"] for x in entries]
+    if len(set(source_paths)) != 30 or len(set(destination_paths)) != 30:
+        raise ValueError("Expected 30 unique source and destination image paths")
     if len(ids) != len(set(ids)):
         raise ValueError("Duplicate historical Item IDs")
     if stage is not None and (stage.resolve() in [Path(".").resolve(), archive.parent.resolve()]):
         raise ValueError("Stage destination may not be repository root or source archive folder")
     report = {"schema": "ci137-30-assets-recovered-v01", "archiveSha256": actual_zip_sha,
               "status": "READ_ONLY_AUDIT", "items": []}
+    try:
+        from PIL import Image
+    except ImportError as exc:
+        raise ValueError("Pillow required for verified WebP decoding; no extraction performed") from exc
     planned = []
     with zipfile.ZipFile(archive) as z:
         if z.testzip():
@@ -56,6 +65,16 @@ def audit(archive, manifest, stage=None):
             binary = z.read(src)
             if binary[:4] != b"RIFF" or binary[8:12] != b"WEBP":
                 raise ValueError("Invalid WebP header: " + src)
+            try:
+                with Image.open(io.BytesIO(binary)) as image:
+                    if image.format != "WEBP":
+                        raise ValueError("Not a decoded WebP")
+                    width, height = image.size
+                    image.verify()
+                with Image.open(io.BytesIO(binary)) as image:
+                    image.load()
+            except Exception as exc:
+                raise ValueError("WebP decode/verify failed: " + src) from exc
             observed = digest(binary)
             if row.get("assetSha256") and row["assetSha256"] != observed:
                 raise ValueError("Declared asset SHA differs: " + src)
@@ -65,11 +84,14 @@ def audit(archive, manifest, stage=None):
             planned.append((target, binary))
             report["items"].append({"id": row["id"], "name": row["name"], "family": row["family"],
                                     "archiveMember": src, "stagedPath": dst,
-                                    "bytes": len(binary), "sha256": observed})
+                                    "bytes": len(binary), "sha256": observed, "width": width, "height": height})
         if stage is not None:
             for target, binary in planned:
-                target.parent.mkdir(parents=True, exist_ok=True)
-                target.write_bytes(binary)
+                if not target.exists():
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    target.write_bytes(binary)
+                if digest(target.read_bytes()) != digest(binary):
+                    raise ValueError("Post-write SHA mismatch: " + str(target))
             report["status"] = "STAGED_30_ASSETS_HASHED"
             out = stage / "manifests" / "ci137-pf22-rit08-assets-verified.json"
             out.parent.mkdir(parents=True, exist_ok=True)
