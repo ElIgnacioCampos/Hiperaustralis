@@ -1,0 +1,15 @@
+{
+  "territory": "Canales australes",
+  "items": [
+    "FLO-007",
+    "FLO-011",
+    "FLO-015",
+    "FLO-024",
+    "FLO-035"
+  ],
+  "source_scope": "Canales australes",
+  "notes": [
+    "FLO-011 and FLO-015 also appear in other territorial indexes.",
+    "FLO-035 is a vegetation group, not an individual species."
+  ]
+}

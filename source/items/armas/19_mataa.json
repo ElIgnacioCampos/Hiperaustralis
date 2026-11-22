@@ -1,0 +1,63 @@
+{
+  "_id": "3ssFdtyl81bRpdKc",
+  "name": "Mata’a",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/armas/19_mataa.webp",
+  "folder": "69KskVCCLMO3pLve",
+  "system": {
+    "props": {
+      "hipera_tipo": "arma",
+      "descripcion": "Una pieza ancha e irregular de obsidiana tallada, de bordes cortantes y superficie marcada por las fracturas del vidrio volcánico. Un pequeño mango y unas pocas ligaduras permiten sujetarla sin ocultar la forma particular de la piedra."
+    },
+    "template": "HipArmaTpl000001",
+    "templateSystemUniqueVersion": 186001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "flags": {
+    "meliaz-bridge": {
+      "kind": "arma"
+    },
+    "hiperaustralis-armas": {
+      "slug": "mataa",
+      "catalogVersion": 1,
+      "mechanics": "none"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/armas/19_mataa.webp",
+      "backgroundOpacity": 0.25
+    },
+    "custom-system-builder": {
+      "version": "6.0.2"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754915936,
+    "modifiedTime": 1794181983836,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

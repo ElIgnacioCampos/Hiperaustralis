@@ -1,0 +1,193 @@
+{
+  "project": "Hiperaustralis RPG",
+  "family": "defensas",
+  "auditDate": "2026-11-12",
+  "sourcePackages": [
+    {
+      "file": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip",
+      "sha256": "31890564f71121c06450464dd1e0ce0c67a82c477f3ea1cdd21ab7e844357ea8",
+      "entries": 18,
+      "crc": "ok"
+    },
+    {
+      "file": "CATALOGO_DEF_DESCRIPCIONES.zip",
+      "sha256": "5c20aca4c3fee3b8f9dd85305c00e64120a96783253978939fe776a4282b7441",
+      "entries": 12,
+      "crc": "ok"
+    },
+    {
+      "file": "COM12_CHIMU.zip",
+      "sha256": "1fe557af06ab23032854ccd9c39f68203a4cc0b894c4dc48304275fe74870c17",
+      "entries": 2,
+      "crc": "ok",
+      "duplicateOf": "COM_DEFENSAS_CONSOLIDADO_TOTAL_v02.zip"
+    }
+  ],
+  "format": {
+    "master": "PNG",
+    "derivative": "WEBP",
+    "width": 256,
+    "height": 256,
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  "items": [
+    {
+      "catalogCode": "DEF-01",
+      "assetCode": "COM-03",
+      "name": "Makün — Manta Mapuche",
+      "status": "approved_asset_present",
+      "files": [
+        {
+          "path": "COM_DEFENSAS/PNG_256/COM-03_Manta_Mapuche_256.png",
+          "bytes": 91813,
+          "sha256": "ac180712a9bf58da6696de7cb3afc146c52b8f18a0566fb75c8120c8eccf4970"
+        },
+        {
+          "path": "COM_DEFENSAS/WEBP_256/COM-03_Manta_Mapuche_256.webp",
+          "bytes": 62434,
+          "sha256": "535cb7ca1244a81ab5174c51d18bf43813cbaaf7d59b396cb2a563d0c8716c4b"
+        }
+      ]
+    },
+    {
+      "catalogCode": "DEF-02",
+      "assetCode": "COM-05",
+      "name": "Capa Selk'nam",
+      "status": "approved_asset_present",
+      "files": [
+        {
+          "path": "COM_DEFENSAS/PNG_256/COM-05_Capa_Selknam_Zorro_256.png",
+          "bytes": 81921,
+          "sha256": "126ab5bde32842b8590ea4f9fa3824a033f3c3eca8531e45d57711848dafbeee"
+        },
+        {
+          "path": "COM_DEFENSAS/WEBP_256/COM-05_Capa_Selknam_Zorro_256.webp",
+          "bytes": 55852,
+          "sha256": "632a2d21ab1f3a6efe2097efe7dd4f8d7d03c8e1d8dca0676543cc6ab476aa2b"
+        }
+      ]
+    },
+    {
+      "catalogCode": "DEF-03",
+      "assetCode": "COM-06",
+      "name": "Escudo nórdico",
+      "status": "approved_asset_present",
+      "files": [
+        {
+          "path": "COM_DEFENSAS/PNG_256/COM-06_Escudo_Nordico_256.png",
+          "bytes": 118722,
+          "sha256": "72d9e6ca574651d9002ce545ccb5a7961e27aad6dfee129419693df99afd6ebd"
+        },
+        {
+          "path": "COM_DEFENSAS/WEBP_256/COM-06_Escudo_Nordico_256.webp",
+          "bytes": 85044,
+          "sha256": "d1015cdd974d6b6a5a04c15565e2369fd5d53662f11f542a8ccf46b0ad7bcb1e"
+        }
+      ]
+    },
+    {
+      "catalogCode": "DEF-04",
+      "assetCode": "COM-07",
+      "name": "Casco Pica-Tarapacá",
+      "status": "approved_asset_present",
+      "files": [
+        {
+          "path": "COM_DEFENSAS/PNG_256/COM-07_Casco_Pica_Tarapaca_256.png",
+          "bytes": 77994,
+          "sha256": "05c3308c6147d012125d37609b2fb8fe139e59cddfe8b8d45e7d257c0392867c"
+        },
+        {
+          "path": "COM_DEFENSAS/WEBP_256/COM-07_Casco_Pica_Tarapaca_256.webp",
+          "bytes": 61054,
+          "sha256": "b0e32b13bc91c95f80954e2aabf50dcfa787d33e9a257804704fd5c204cf8920"
+        }
+      ]
+    },
+    {
+      "catalogCode": "DEF-05",
+      "assetCode": "COM-08",
+      "name": "Coraza Chiu-Chiu (pieza del primer lote)",
+      "status": "approved_asset_present",
+      "files": [
+        {
+          "path": "COM_DEFENSAS/PNG_256/COM-08_Coraza_Chiu-Chiu_256.png",
+          "bytes": 101695,
+          "sha256": "80f9bdb7f40757c182075acea2bbc8ace948b0e2ac81fe4eb7946e82e07e8679"
+        },
+        {
+          "path": "COM_DEFENSAS/WEBP_256/COM-08_Coraza_Chiu-Chiu_256.webp",
+          "bytes": 72796,
+          "sha256": "2dfcfc0354bf1dee28989d4838fdeab6dd9b72561d9e70f5bf259fbed6bc254c"
+        }
+      ]
+    },
+    {
+      "catalogCode": "DEF-06",
+      "assetCode": "COM-09",
+      "name": "Tañaña — Coraza cónica mapuche",
+      "status": "approved_pending_asset_recovery",
+      "files": []
+    },
+    {
+      "catalogCode": "DEF-07",
+      "assetCode": "COM-10",
+      "name": "Celada — Casquete de cuero mapuche",
+      "status": "approved_asset_present",
+      "files": [
+        {
+          "path": "COM_DEFENSAS/PNG_256/COM-10_CELADA_MAPUCHE_256.png",
+          "bytes": 131004,
+          "sha256": "3267fe8a7479a354ea7e77e84e6b0f1aa79b503f639c1fa5897313cecf145806"
+        },
+        {
+          "path": "COM_DEFENSAS/WEBP_256/COM-10_CELADA_MAPUCHE_256.webp",
+          "bytes": 71582,
+          "sha256": "cc3f96a051df7ad9f52067e0c8b076da9eb0a25b2a1996e5622d6858b0933522"
+        }
+      ]
+    },
+    {
+      "catalogCode": "DEF-08",
+      "assetCode": "COM-11",
+      "name": "Coraza atacameña de cuero de caimán",
+      "status": "approved_asset_present",
+      "files": [
+        {
+          "path": "COM_DEFENSAS/PNG_256/COM-11_CORAZA_CHIU_CHIU_256.png",
+          "bytes": 112132,
+          "sha256": "b1c3f4e6a4dc37a052459c77c56730ee79a632607f028b750621abeb40f0127d"
+        },
+        {
+          "path": "COM_DEFENSAS/WEBP_256/COM-11_CORAZA_CHIU_CHIU_256.webp",
+          "bytes": 79890,
+          "sha256": "551991bbd4c946ecbf08f1a5e847a0cdd8c296742e256c13a50f646d31bbb556"
+        }
+      ]
+    },
+    {
+      "catalogCode": "DEF-09",
+      "assetCode": "COM-12",
+      "name": "Armadura acolchada Chimú",
+      "status": "approved_asset_present",
+      "files": [
+        {
+          "path": "COM_DEFENSAS/PNG_256/COM-12_ARMADURA_ACOLCHADA_CHIMU_256.png",
+          "bytes": 105238,
+          "sha256": "d00c7da2dc29fd83cb4e6686201cb5b691e8d28e2f3baa8b52b276bf7bd2a32a"
+        },
+        {
+          "path": "COM_DEFENSAS/WEBP_256/COM-12_ARMADURA_ACOLCHADA_CHIMU_256.webp",
+          "bytes": 69330,
+          "sha256": "f4a6bd39ac5d99ccab0bbdc60cb964e8653ffbf6b0c14fe57369917dc6c65245"
+        }
+      ]
+    }
+  ],
+  "migrationStatus": "metadata-audited; binary files not yet copied to GitHub assets/",
+  "foundryIds": "not reconciled; do not create or modify Item documents",
+  "runtimePaths": "not changed"
+}

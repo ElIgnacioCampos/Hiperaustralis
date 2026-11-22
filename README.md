@@ -1,29 +1,80 @@
 # Hiperaustralis — implementación Foundry
 
-Repositorio de trabajo técnico del módulo Hiperaustralis para Foundry VTT.
+Repositorio técnico para la migración declarativa del corpus de Hiperaustralis RPG y el prototipo independiente de compendios nativos.
 
-## Estado inicial
+## Estado actual
 
-- Repositorio identificado: `ElIgnacioCampos/Hiperaustralis`.
-- Rama: `main`.
-- El repositorio estaba vacío al iniciar esta recuperación.
-- El prototipo nativo de compendios existe como fuente local de trabajo, pero **todavía no contiene packs LevelDB compilados ni ha sido probado dentro de Foundry V14**.
+- Rama de trabajo: `work/native-compendia-pipeline`.
+- Pull request #1 abierto hacia `main`, en draft y sin merge.
+- `main`, MELIAZ Bridge y el módulo productivo permanecen fuera de este frente.
+- Prototipo de compendios nativos: Foundry V14.367 + Custom System Builder 6.0.0 mínimo.
+- Tres packs fixture compilados: Item, Actor y JournalEntry.
+- CI #105 verificó la jerarquía interna de carpetas del pack Item, compilación y round-trip. Esto no equivale a instalación ni QA visual en Foundry/Forge.
+- El prototipo sigue siendo fixture técnico; no es el corpus completo ni el módulo final.
 
-## Líneas de trabajo
+## Estructura de fuentes y control
 
-1. `prototype/native-compendia/`: prototipo aislado de packs nativos.
-2. `module/`: módulo instalable sólo después de compilar y validar los packs.
-3. `source/`: fuentes JSON canónicas para la compilación.
-4. `.github/workflows/`: automatización de validación y compilación en GitHub Actions.
+- `source/items/armas/`: 20 Items Foundry preservados como JSON.
+- `source/items/01_cuchillo_piedra.json`: Item independiente de referencia.
+- `source/items/reliquias/` y familias de Reliquias: 16 registros recuperados más Tokicura como fuente independiente.
+- Total actual en el árbol fuente: 38 Items; no representa el inventario histórico completo de 135.
+- `source/actors/`: Actor fixture.
+- `source/journals/`: JournalEntry fixture, restaurado por el workflow desde su representación comprimida.
+- `manifests/items-armas.json`: inventario de los 20 Items de armas y SHA-256 de sus JSON.
+- `validate_armas.py`: gate CI de integridad del lote de 20 Armas; verifica JSON, IDs, nombres y referencias contra el manifiesto. Los assets visuales conservan sus rutas históricas hasta su incorporación verificada.
+- `manifests/reliquias-assets.json`: inventario y hashes de los 16 WebP de reliquias; Tokicura se documenta separadamente.
+- `docs/AUDITORIA_DEPENDENCIAS_ASSETS_ITEMS_2026-11-17.md`: identifica 21 referencias de Armas aún dependientes de rutas del módulo antiguo y define el cotejo pendiente.
+- `TRANSFER_MANIFEST.json`: inventario declarativo del lote de assets, no certificado autónomo de presencia de cada ruta.
+- `module/assets/_staging/`: derivados WebP de Equipo, Defensas, Instrumentos ERH y Turianos; permanecen en staging, sin referencias runtime nuevas.
+- `docs/MATRIZ_CRUCE_ASSETS_FOUNDRY_v01.md`: cruce preliminar entre assets, Items/Actors históricos y límites de evidencia.
+- `tools/foundry/export-items-inventory.js`: exportador de sólo lectura de Items del mundo y compendios `world.*`.
+- `docs/EXPORT_INVENTARIO_FOUNDRY_ITEMS.md`: instrucciones de ejecución del exportador.
+- `module/`: manifiesto y salida del módulo prototipo.
+- `docs/`: arquitectura, auditorías y checkpoints.
+- `.github/workflows/`: pipeline de compilación cloud.
 
-## Salvaguardas
+## Arquitectura y salvaguardas
 
-- No reemplazar el módulo productivo `hiperaustralis-rituales`.
-- No modificar MELIAZ Bridge.
-- No borrar ni migrar los compendios `world.*` existentes.
-- No desplegar en el mundo productivo.
-- Todo paquete compilado debe superar validación de fuentes, compilación, desempaquetado de control y prueba en un mundo Foundry aislado antes de considerarse candidato.
+- El nuevo módulo es independiente de `hiperaustralis-rituales`.
+- No modificar MELIAZ Bridge ni el módulo estable.
+- No migrar ni borrar compendios `world.*`.
+- No desplegar sobre el mundo productivo.
+- Mantener originales y referencias históricas hasta completar inventario y QA.
+- Reconciliar documentos por `_id`, UUID y `compendiumSource`; no colapsar registros sólo porque compartan nombres o seedId.
+- No asignar IDs finales ni crear packs de producto antes de conocer el inventario.
+- No promover recursos de staging a runtime sin vincularlos a su documento Foundry y auditar sus referencias.
+- Distinguir binarios presentes, rutas declaradas en manifiestos y archivos aún no verificados.
 
-## Primer hito
+## Paquete CI104 y transferencia de assets
 
-Revisar y subir el prototipo de tres documentos (Item, Actor y JournalEntry), corregir su pipeline si corresponde y producir un artefacto de prueba. La compilación en GitHub Actions y la carga en Forge son etapas separadas.
+El ZIP recibido contiene:
+1. 69 recursos de staging: 29 WebP de Equipo, 8 WebP de Defensas, 28 WebP de Instrumentos ERH y 4 WebP Turianos.
+2. 17 recursos de Reliquias bajo el paquete, incluidos los 16 cotejados con el manifiesto y Tokicura.
+3. Tres packs LevelDB compilados.
+
+`TRANSFER_MANIFEST.json` declara 108 registros físicos: los 69 derivados WebP, 37 PNG maestros de Equipo/Defensas, y los dos recursos de Tokicura. Las consultas directas confirmaron varias rutas WebP y los dos recursos de Tokicura. Cuatro rutas de PNG maestro comprobadas devolvieron 404; la presencia del conjunto de 37 masters no está acreditada. Ver `docs/MATRIZ_CRUCE_ASSETS_FOUNDRY_v01.md`.
+
+Los assets de staging no están vinculados todavía a documentos fuente canónicos de todas sus familias. No se han actualizado rutas runtime de Equipo, Defensas o Instrumentos ni se han creado Items/Actors para rellenar el inventario.
+
+## Pipeline de prueba existente
+
+El workflow:
+1. restaura el Journal comprimido;
+2. instala Foundry CLI 3.0.5;
+3. valida los documentos fixture;
+4. prepara campos temporales `_key`;
+5. compila los tres packs LevelDB;
+6. desempaqueta y compara IDs, nombres, páginas y jerarquía de carpetas;
+7. empaqueta un ZIP y calcula SHA-256.
+
+La validación actual no acredita igualdad semántica completa, integridad global de assets, ausencia de dependencias del módulo antiguo ni funcionamiento en Foundry.
+
+## Alcance y siguiente hito
+
+- Territorios queda fuera de esta migración: su nomenclatura y estructura están pendientes de resolución autoral. No migrar ni completar contenidos territoriales en este bloque; conservar sus fuentes sin alterarlas.
+- Prioridad actual: migrar íntegramente el corpus no territorial, comenzando por los 135 Items históricos y sus ocho carpetas, y continuar con Actors/Journals no territoriales.
+- Recuperar y cotejar los exports y binarios originales; conservar IDs, payloads, flags, referencias y procedencia.
+- Resolver los 21 assets de Armas que aún apuntan a `modules/hiperaustralis-rituales/`; los assets de Reliquias actuales sí tienen manifiesto y verificación CI. Ampliar validadores para que toda ruta runtime exista y no dependa del módulo antiguo.
+- La instalación y QA visual/funcional del módulo siguen pendientes.
+
+Checkpoint de alcance: `docs/CHECKPOINT_SCOPE_COMPENDIOS_2026-11-17.md`.

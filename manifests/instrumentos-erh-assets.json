@@ -1,0 +1,77 @@
+{
+  "family": "instrumentos_musicales_ERH",
+  "auditDate": "2026-11-13",
+  "sources": [
+    {
+      "file": "HIPERAUSTRALIS_INSTRUMENTOS_ERH_CONSOLIDACION_PARCIAL_v01.zip",
+      "sha256": "d8ddc54957d649d4625b09c77dce7feaa4632634bbe8851d4271a8a574e3336a",
+      "entries": 49,
+      "crc": "ok",
+      "webpCount": 28
+    },
+    {
+      "file": "INSTRUMENTOS_ERH_CONSOLIDADO_FOUNDRY_v01.zip",
+      "sha256": "10b944708ed588894d8d3fbc522aff7c1f9a0cd822fbdb5fcd13a53ffe5feda9",
+      "entries": 30,
+      "crc": "ok"
+    },
+    {
+      "file": "LOTE_INSTRUMENTOS_ERH_02_WEBP256.zip",
+      "sha256": "a2c9f9877e384eec2165c3dedf9cc27ae76d51f5448921a7c8f35c73c715fea6",
+      "entries": 9,
+      "crc": "ok"
+    },
+    {
+      "file": "INSTRUMENTOS_ERH_LOTE03_APROBADO_v01.zip",
+      "sha256": "ce0d41f957f46e9c80518fd7a5ba092a011beace5f870fee0c4c0f7acd7c266e",
+      "entries": 14,
+      "crc": "ok"
+    },
+    {
+      "file": "LOTE04_SELKNAM_ERH_RESPALDO_v01.zip",
+      "sha256": "8a04014a0340c1ac539bda8e800beb8002b06c8da25898357ee13ce22c0b9e8f",
+      "entries": 7,
+      "crc": "ok"
+    },
+    {
+      "file": "LOTE05_NORTE_COSTERO_ERH_CONSOLIDADO_v01.zip",
+      "sha256": "3d3322b04a1fbc50d133fa315aa777d2ac9aac4d84a2260edf51a476d0f44a12",
+      "entries": 13,
+      "crc": "ok"
+    }
+  ],
+  "verifiedStandards": {
+    "runtime": "WebP RGBA 256x256",
+    "master": "PNG RGBA 1024x1024 where included",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "zipCrc": "all passed"
+  },
+  "deduplication": {
+    "lote02AndinoLickanantay": "6 exact files across partial consolidation, Foundry consolidation, and individual Lote 02",
+    "lote03": "3 exact WebP files across partial consolidation and approved Lote 03",
+    "lote04": "2 exact WebP files across partial consolidation and Lote 04 backup",
+    "lote01AndNordic": "WebP files exact between partial consolidation and Foundry consolidation",
+    "kakelKultrung": "exact WebP duplicate between partial and Foundry consolidation",
+    "lote05": "partial consolidation uses v02 derivatives; separate individual package is v01"
+  },
+  "statuses": {
+    "lote03": "approved_visual",
+    "lote04": "approved_visual; Selknam bone whistle excluded pending attribution",
+    "lote05": "five approved visual assets; partial consolidation has v02 derivatives",
+    "kakelKultrung": "approved",
+    "arpaBoca": "pending_technical_runtime"
+  },
+  "editorialAuthority": {
+    "current": "CATALOGO_INSTRUMENTOS_ERH_DESCRIPCIONES_CONSOLIDADO_v04.md",
+    "proposal": "ERH_DESCRIPCIONES_DE_JUEGO_PROPUESTAS_v0.1_2026-11-13.md",
+    "proposalStatus": "not_approved_not_integrated",
+    "comparison": "AUDITORIA_PROPUESTAS_DESCRIPCIONES_ERH_v0.1_vs_v04_2026-11-13.md"
+  },
+  "foundryIdentity": "not reconciled; no Item documents created or modified",
+  "runtimePaths": "not changed",
+  "githubAssets": "binary assets not copied yet",
+  "stateMasterChanges": "none"
+}

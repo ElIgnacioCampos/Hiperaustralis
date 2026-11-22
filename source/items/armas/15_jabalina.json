@@ -1,0 +1,63 @@
+{
+  "_id": "Rq6tY7rc6ktFEigy",
+  "name": "Jabalina",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/armas/15_jabalina.webp",
+  "folder": "69KskVCCLMO3pLve",
+  "system": {
+    "props": {
+      "hipera_tipo": "arma",
+      "descripcion": "Una lanza delgada y liviana, construida para viajar por el aire además de usarse en la mano. Su punta pequeña y su asta flexible favorecen el lanzamiento antes que la fuerza bruta."
+    },
+    "template": "HipArmaTpl000001",
+    "templateSystemUniqueVersion": 186001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "flags": {
+    "meliaz-bridge": {
+      "kind": "arma"
+    },
+    "hiperaustralis-armas": {
+      "slug": "jabalina",
+      "catalogVersion": 1,
+      "mechanics": "none"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/armas/15_jabalina.webp",
+      "backgroundOpacity": 0.25
+    },
+    "custom-system-builder": {
+      "version": "6.0.2"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754914964,
+    "modifiedTime": 1794181989545,
+    "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "source": "HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB.zip",
+  "source_sha256": "c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e",
+  "source_data": "hiperaustralis-rituales/data/flora_items.json",
+  "editorial_data": "hiperaustralis-rituales/data/flora_y_funga_40.json",
+  "canonical_item_count": 40,
+  "migration_mode": "single canonical Item per FLO code; territorial manifests contain references only; no duplicated Item documents",
+  "status": "territorially_classified_and_foundry_identity_mapped_pending_binary_asset_migration",
+  "territories": {
+    "titicaca": [
+      "FLO-001",
+      "FLO-009",
+      "FLO-021",
+      "FLO-025"
+    ],
+    "paititi": [
+      "FLO-002",
+      "FLO-010",
+      "FLO-017",
+      "FLO-022",
+      "FLO-026",
+      "FLO-030"
+    ],
+    "ngulumapu": [
+      "FLO-003",
+      "FLO-011",
+      "FLO-013",
+      "FLO-018",
+      "FLO-026",
+      "FLO-031",
+      "FLO-038",
+      "FLO-039",
+      "FLO-040"
+    ],
+    "pewenmapu": [
+      "FLO-004",
+      "FLO-012",
+      "FLO-013",
+      "FLO-023",
+      "FLO-027",
+      "FLO-034"
+    ],
+    "patagonia-austral": [
+      "FLO-005",
+      "FLO-006",
+      "FLO-012",
+      "FLO-014",
+      "FLO-019",
+      "FLO-034"
+    ],
+    "tierra-del-fuego": [
+      "FLO-006",
+      "FLO-011",
+      "FLO-015",
+      "FLO-016"
+    ],
+    "canales-australes": [
+      "FLO-007",
+      "FLO-011",
+      "FLO-015",
+      "FLO-024",
+      "FLO-035"
+    ],
+    "umbral-polar": [
+      "FLO-008",
+      "FLO-020",
+      "FLO-028",
+      "FLO-032",
+      "FLO-036"
+    ]
+  },
+  "unassigned_or_pending": [
+    "FLO-029",
+    "FLO-033",
+    "FLO-037"
+  ],
+  "conditional_assignment": {
+    "FLO-026": "Shared provisional ecological reference in Paititi and Ngulumapu based on source scope 'Bosque nublado / templado'; not a confirmed taxonomic distribution.",
+    "FLO-034": "Shared provisional cordilleran reference in Pewenmapu and Patagonia austral; source does not establish a specific territory.",
+    "FLO-029": "No territorial assignment confirmed; source explicitly cautions against treating it as a confirmed Titiqaqa taxon.",
+    "FLO-033": "No territorial assignment in source.",
+    "FLO-037": "Territory remains to be confirmed."
+  },
+  "preservation_rules": [
+    "Preserve original FLO code, seedId, name, system data, flags, icon path and background path.",
+    "A multi-territory Item remains one canonical Item; territorial indexes reference its code and do not duplicate the document.",
+    "Preserve editorial reservations and inclusion status.",
+    "Provisional territorial references must remain explicitly marked and must not be represented as confirmed species distributions."
+  ],
+  "counts": {
+    "by_territory": {
+      "titicaca": 4,
+      "paititi": 6,
+      "ngulumapu": 9,
+      "pewenmapu": 6,
+      "patagonia-austral": 6,
+      "tierra-del-fuego": 4,
+      "canales-australes": 5,
+      "umbral-polar": 5
+    },
+    "total_territorial_references": 45,
+    "unique_assigned_items": 37,
+    "pending_items": 3,
+    "average_references_per_territory": 5.625
+  },
+  "foundry_identity_map": "source/territorios/flora/foundry-id-map.json",
+  "foundry_identity_status": "40_of_40_existing_world_items_mapped_by_codigo_seedId_name_and_unique_foundry_id; no installation performed"
+}

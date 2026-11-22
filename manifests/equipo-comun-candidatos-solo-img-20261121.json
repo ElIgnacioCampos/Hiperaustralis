@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "1.0",
+  "date": "2026-11-21",
+  "status": "PROPOSED_READONLY_CROSSWALK",
+  "authoritativeSource": "HIPERAUSTRALIS_FOUNDRY_ITEMS_2026-11-19T00-23-25-933Z.json",
+  "sourceType": "historical-world-compendium",
+  "authorialClarification": "Most common items use stock Foundry icons; culturally specific artwork production began November 2026. Do not manufacture missing icons to fill the historical catalogue.",
+  "totalHistoricalCommonItems": 40,
+  "candidateImageOnlyChanges": 9,
+  "preserveUnchangedCount": 31,
+  "constraints": [
+    "Treat original images as permitted, not broken",
+    "Only image replacements after isolated Foundry QA and separate promotion approval",
+    "Staging paths are NOT runtime promotion destinations",
+    "Match ID, name, Item type, folder, hipera_tipo and previous img before considering an image change",
+    "Preserve each complete Item document without rewriting non-img fields",
+    "Do not mutate the world, historic compendium, main, stable module, MELIAZ Bridge or master"
+  ],
+  "entries": [
+    {
+      "index": 13,
+      "name": "Qapu · Huso",
+      "culture": "Aymara",
+      "compendium": "world.hiperaustralis-rituales",
+      "sourceId": "SbBJa9ACdFH2z86D",
+      "sourceUuid": "Compendium.world.hiperaustralis-rituales.Item.SbBJa9ACdFH2z86D",
+      "itemType": "equippableItem",
+      "folderName": "Equipo común",
+      "folderId": "e1H5TyvyNEU2Dv5E",
+      "expectedProps": {
+        "hipera_tipo": "equipo"
+      },
+      "expectedCurrentImg": "icons/commodities/cloth/thread-spindle-grey.webp",
+      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/aymara_qapu_huso.webp",
+      "candidateSha256": "ae70b4a74d0c1b8e198353364753ca55aae5f4cb4e01f65da75709e32506e4f6",
+      "operation": "image-only",
+      "intendedMutation": {
+        "img": "SET_LATER_AFTER_FOUNDRY_QA"
+      },
+      "approval": "CANDIDATE_NOT_AUTHORIZED"
+    },
+    {
+      "index": 17,
+      "name": "Knífr · Cuchillo",
+      "culture": "Nórdicos",
+      "compendium": "world.hiperaustralis-rituales",
+      "sourceId": "EPqXIQm8A38zvtXw",
+      "sourceUuid": "Compendium.world.hiperaustralis-rituales.Item.EPqXIQm8A38zvtXw",
+      "itemType": "equippableItem",
+      "folderName": "Equipo común",
+      "folderId": "e1H5TyvyNEU2Dv5E",
+      "expectedProps": {
+        "hipera_tipo": "equipo"
+      },
+      "expectedCurrentImg": "icons/weapons/daggers/dagger-black.webp",
+      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/nordico_knifr_cuchillo.webp",
+      "candidateSha256": "6f7605a5299dddff721b6273d168516d82d7d759862b16de0bb6f63e9ee5c46f",
+      "operation": "image-only",
+      "intendedMutation": {
+        "img": "SET_LATER_AFTER_FOUNDRY_QA"
+      },
+      "approval": "CANDIDATE_NOT_AUTHORIZED"
+    },
+    {
+      "index": 20,
+      "name": "Eldjárn · Yesquero",
+      "culture": "Nórdicos",
+      "compendium": "world.hiperaustralis-rituales",
+      "sourceId": "XhykrqOWzvB8abe9",
+      "sourceUuid": "Compendium.world.hiperaustralis-rituales.Item.XhykrqOWzvB8abe9",
+      "itemType": "equippableItem",
+      "folderName": "Equipo común",
+      "folderId": "e1H5TyvyNEU2Dv5E",
+      "expectedProps": {
+        "hipera_tipo": "equipo"
+      },
+      "expectedCurrentImg": "icons/tools/laboratory/burner-steel-grey.webp",
+      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/nordico_eldjarn_yesquero.webp",
+      "candidateSha256": "b243d618ec3bd6734b8c75705fe2667c448076901b05f1db4cfeae3d59347de5",
+      "operation": "image-only",
+      "intendedMutation": {
+        "img": "SET_LATER_AFTER_FOUNDRY_QA"
+      },
+      "approval": "CANDIDATE_NOT_AUTHORIZED"
+    },
+    {
+      "index": 22,
+      "name": "Saum-nál · Aguja de coser",
+      "culture": "Nórdicos",
+      "compendium": "world.hiperaustralis-rituales",
+      "sourceId": "VOtfeqh5KvQw6eF1",
+      "sourceUuid": "Compendium.world.hiperaustralis-rituales.Item.VOtfeqh5KvQw6eF1",
+      "itemType": "equippableItem",
+      "folderName": "Equipo común",
+      "folderId": "e1H5TyvyNEU2Dv5E",
+      "expectedProps": {
+        "hipera_tipo": "equipo"
+      },
+      "expectedCurrentImg": "icons/tools/hand/needle-grey.webp",
+      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/nordico_saum_nal_aguja.webp",
+      "candidateSha256": "e364160285fead6ae064dc863e313838b38781cf1e7e254bd5c4213d2c8e709e",
+      "operation": "image-only",
+      "intendedMutation": {
+        "img": "SET_LATER_AFTER_FOUNDRY_QA"
+      },
+      "approval": "CANDIDATE_NOT_AUTHORIZED"
+    },
+    {
+      "index": 29,
+      "name": "Gancho de atalaje",
+      "culture": "Lickanantay",
+      "compendium": "world.hiperaustralis-rituales",
+      "sourceId": "YuTiSkP9Mx7FvJy7",
+      "sourceUuid": "Compendium.world.hiperaustralis-rituales.Item.YuTiSkP9Mx7FvJy7",
+      "itemType": "equippableItem",
+      "folderName": "Equipo común",
+      "folderId": "e1H5TyvyNEU2Dv5E",
+      "expectedProps": {
+        "hipera_tipo": "equipo"
+      },
+      "expectedCurrentImg": "icons/sundries/survival/rope-wrapped-loops-grey.webp",
+      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/lickanantay_gancho_atalaje.webp",
+      "candidateSha256": "ca461dc79940bad5c080c73a27de2589b73d8b582367396fb1206ec070c0541d",
+      "operation": "image-only",
+      "intendedMutation": {
+        "img": "SET_LATER_AFTER_FOUNDRY_QA"
+      },
+      "approval": "CANDIDATE_NOT_AUTHORIZED"
+    },
+    {
+      "index": 35,
+      "name": "Chinguillo · Bolsa-red",
+      "culture": "Chinchorro",
+      "compendium": "world.hiperaustralis-rituales",
+      "sourceId": "CBIQgRyTGVMq6RCP",
+      "sourceUuid": "Compendium.world.hiperaustralis-rituales.Item.CBIQgRyTGVMq6RCP",
+      "itemType": "equippableItem",
+      "folderName": "Equipo común",
+      "folderId": "e1H5TyvyNEU2Dv5E",
+      "expectedProps": {
+        "hipera_tipo": "equipo"
+      },
+      "expectedCurrentImg": "icons/tools/fishing/net-tan.webp",
+      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/chinchorro_chinguillo.webp",
+      "candidateSha256": "13f021d60722dc0ae814df4aac8d7926683af860dfd32d360f75dbdaf0e83058",
+      "operation": "image-only",
+      "intendedMutation": {
+        "img": "SET_LATER_AFTER_FOUNDRY_QA"
+      },
+      "approval": "CANDIDATE_NOT_AUTHORIZED"
+    },
+    {
+      "index": 36,
+      "name": "Chope · Desconchador",
+      "culture": "Chinchorro",
+      "compendium": "world.hiperaustralis-rituales",
+      "sourceId": "Cal0I8l96tdRm1pR",
+      "sourceUuid": "Compendium.world.hiperaustralis-rituales.Item.Cal0I8l96tdRm1pR",
+      "itemType": "equippableItem",
+      "folderName": "Equipo común",
+      "folderId": "e1H5TyvyNEU2Dv5E",
+      "expectedProps": {
+        "hipera_tipo": "equipo"
+      },
+      "expectedCurrentImg": "icons/tools/hand/wrench-steel-grey.webp",
+      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/chinchorro_chope.webp",
+      "candidateSha256": "86128383b0fd9cf02bc42e04636adb6d9a2f8b4e4f1be65c502006cbfde60658",
+      "operation": "image-only",
+      "intendedMutation": {
+        "img": "SET_LATER_AFTER_FOUNDRY_QA"
+      },
+      "approval": "CANDIDATE_NOT_AUTHORIZED"
+    },
+    {
+      "index": 38,
+      "name": "Canasto",
+      "culture": "Chinchorro",
+      "compendium": "world.hiperaustralis-rituales",
+      "sourceId": "8a526Vqfx3hsafi3",
+      "sourceUuid": "Compendium.world.hiperaustralis-rituales.Item.8a526Vqfx3hsafi3",
+      "itemType": "equippableItem",
+      "folderName": "Equipo común",
+      "folderId": "e1H5TyvyNEU2Dv5E",
+      "expectedProps": {
+        "hipera_tipo": "equipo"
+      },
+      "expectedCurrentImg": "icons/containers/misc/basket-simple-yellow.webp",
+      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/chinchorro_canasto.webp",
+      "candidateSha256": "b33486635fe8045393384d41c56b13b27651340eba7fca007df8983108cab17d",
+      "operation": "image-only",
+      "intendedMutation": {
+        "img": "SET_LATER_AFTER_FOUNDRY_QA"
+      },
+      "approval": "CANDIDATE_NOT_AUTHORIZED"
+    },
+    {
+      "index": 40,
+      "name": "Punzón de hueso",
+      "culture": "Chinchorro",
+      "compendium": "world.hiperaustralis-rituales",
+      "sourceId": "MX9mAxfkdCwvEvkZ",
+      "sourceUuid": "Compendium.world.hiperaustralis-rituales.Item.MX9mAxfkdCwvEvkZ",
+      "itemType": "equippableItem",
+      "folderName": "Equipo común",
+      "folderId": "e1H5TyvyNEU2Dv5E",
+      "expectedProps": {
+        "hipera_tipo": "equipo"
+      },
+      "expectedCurrentImg": "icons/commodities/bones/tooth-spiked-brown.webp",
+      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/chinchorro_punzon_hueso.webp",
+      "candidateSha256": "e6f0bd65a66a9125973d07fe3b5a8a463af13bc7e68c7cf4db848d49ee031497",
+      "operation": "image-only",
+      "intendedMutation": {
+        "img": "SET_LATER_AFTER_FOUNDRY_QA"
+      },
+      "approval": "CANDIDATE_NOT_AUTHORIZED"
+    }
+  ]
+}

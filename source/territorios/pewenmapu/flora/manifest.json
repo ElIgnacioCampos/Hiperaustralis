@@ -1,0 +1,17 @@
+{
+  "territory": "Pewenmapu",
+  "items": [
+    "FLO-004",
+    "FLO-012",
+    "FLO-013",
+    "FLO-023",
+    "FLO-027",
+    "FLO-034"
+  ],
+  "source_scope": "Pewenmapu",
+  "notes": [
+    "FLO-012 and FLO-013 also appear in other territorial indexes.",
+    "FLO-023 uses a common name; species not specified.",
+    "FLO-034 is included provisionally as a cordilleran grass reference; the source does not establish a specific territory."
+  ]
+}

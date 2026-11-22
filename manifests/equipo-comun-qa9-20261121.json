@@ -1,0 +1,205 @@
+{
+  "schemaVersion": "1.0",
+  "created": "2026-11-21",
+  "purpose": "Fuente de prueba para nueve enlaces de Equipo Común; NO implica autorización para alterar img o Items.",
+  "historicalItemExport": "HIPERAUSTRALIS_FOUNDRY_ITEMS_2026-11-19T00-23-25-933Z.json",
+  "expectedHistoricalTotal": 40,
+  "expectedStagingWebpTotal": 29,
+  "notes": [
+    "Preserve original Item JSON, IDs, flags and folders",
+    "Nine WebPs verified by SHA256, WebP VP8L and 256x256",
+    "Nine PNG master paths returned 404; declared hash is not proof of bytes",
+    "Must pass isolated Foundry visual QA before runtime"
+  ],
+  "items": [
+    {
+      "index": 13,
+      "name": "Qapu · Huso",
+      "culture": "Aymara",
+      "sourceCompendium": "world.hiperaustralis-rituales",
+      "documentId": "SbBJa9ACdFH2z86D",
+      "seedId": "eq-aym-qapu",
+      "webp": {
+        "path": "module/assets/_staging/equipo/webp256/aymara_qapu_huso.webp",
+        "bytes": 27378,
+        "sha256": "ae70b4a74d0c1b8e198353364753ca55aae5f4cb4e01f65da75709e32506e4f6",
+        "integrityVerifiedOn": "2026-11-21"
+      },
+      "master": {
+        "declaredPath": "module/assets/_staging/equipo/png512/AYMARA_KAPU_HUSO_MAESTRO_512.png",
+        "declaredBytes": 99890,
+        "declaredSha256": "0135642311a6c49d919a2895d80cdae09631c2421ece98a4f0d9ddcb8fdb5269",
+        "githubReadback": "NOT_FOUND_2026_11_21"
+      },
+      "scope": "CANDIDATE_ONLY"
+    },
+    {
+      "index": 17,
+      "name": "Knífr · Cuchillo",
+      "culture": "Nórdicos",
+      "sourceCompendium": "world.hiperaustralis-rituales",
+      "documentId": "EPqXIQm8A38zvtXw",
+      "seedId": "eq-nor-knifr",
+      "webp": {
+        "path": "module/assets/_staging/equipo/webp256/nordico_knifr_cuchillo.webp",
+        "bytes": 14426,
+        "sha256": "6f7605a5299dddff721b6273d168516d82d7d759862b16de0bb6f63e9ee5c46f",
+        "integrityVerifiedOn": "2026-11-21"
+      },
+      "master": {
+        "declaredPath": "module/assets/_staging/equipo/png512/NORDICO_KNIFR_CUCHILLO_v02_APROBADO.png",
+        "declaredBytes": 73779,
+        "declaredSha256": "61cd62262d21120044ac0d0cf1c23f1810545b87481c8294873580754d0ec457",
+        "githubReadback": "NOT_FOUND_2026_11_21"
+      },
+      "scope": "CANDIDATE_ONLY"
+    },
+    {
+      "index": 20,
+      "name": "Eldjárn · Yesquero",
+      "culture": "Nórdicos",
+      "sourceCompendium": "world.hiperaustralis-rituales",
+      "documentId": "XhykrqOWzvB8abe9",
+      "seedId": "eq-nor-eldjarn",
+      "webp": {
+        "path": "module/assets/_staging/equipo/webp256/nordico_eldjarn_yesquero.webp",
+        "bytes": 58760,
+        "sha256": "b243d618ec3bd6734b8c75705fe2667c448076901b05f1db4cfeae3d59347de5",
+        "integrityVerifiedOn": "2026-11-21"
+      },
+      "master": {
+        "declaredPath": "module/assets/_staging/equipo/png512/NORDICO_ELDJARN_YESQUERO_v01.png",
+        "declaredBytes": 312450,
+        "declaredSha256": "6010d4815bdb4b64f699519b8f9284112214ece78da48e464b43156c634749b9",
+        "githubReadback": "NOT_FOUND_2026_11_21"
+      },
+      "scope": "CANDIDATE_ONLY"
+    },
+    {
+      "index": 22,
+      "name": "Saum-nál · Aguja de coser",
+      "culture": "Nórdicos",
+      "sourceCompendium": "world.hiperaustralis-rituales",
+      "documentId": "VOtfeqh5KvQw6eF1",
+      "seedId": "eq-nor-saumnal",
+      "webp": {
+        "path": "module/assets/_staging/equipo/webp256/nordico_saum_nal_aguja.webp",
+        "bytes": 9540,
+        "sha256": "e364160285fead6ae064dc863e313838b38781cf1e7e254bd5c4213d2c8e709e",
+        "integrityVerifiedOn": "2026-11-21"
+      },
+      "master": {
+        "declaredPath": "module/assets/_staging/equipo/png512/NORDICO_SAUM_NAL_AGUJA_v01_APROBADA.png",
+        "declaredBytes": 37778,
+        "declaredSha256": "608839c49e72bdc9c845b07b15b46303eb1934a2c9a0962d2afd9d10239089be",
+        "githubReadback": "NOT_FOUND_2026_11_21"
+      },
+      "scope": "CANDIDATE_ONLY"
+    },
+    {
+      "index": 29,
+      "name": "Gancho de atalaje",
+      "culture": "Lickanantay",
+      "sourceCompendium": "world.hiperaustralis-rituales",
+      "documentId": "YuTiSkP9Mx7FvJy7",
+      "seedId": "eq-lick-atalaje",
+      "webp": {
+        "path": "module/assets/_staging/equipo/webp256/lickanantay_gancho_atalaje.webp",
+        "bytes": 32014,
+        "sha256": "ca461dc79940bad5c080c73a27de2589b73d8b582367396fb1206ec070c0541d",
+        "integrityVerifiedOn": "2026-11-21"
+      },
+      "master": {
+        "declaredPath": "module/assets/_staging/equipo/png512/LICKANANTAY_GANCHO_ATALAJE_MAESTRO_512.png",
+        "declaredBytes": 163396,
+        "declaredSha256": "0d299ddbdd62210ba2902e80ce16c3ae12654de12bdf6c0655d29bcb64aab7ae",
+        "githubReadback": "NOT_FOUND_2026_11_21"
+      },
+      "scope": "CANDIDATE_ONLY"
+    },
+    {
+      "index": 35,
+      "name": "Chinguillo · Bolsa-red",
+      "culture": "Chinchorro",
+      "sourceCompendium": "world.hiperaustralis-rituales",
+      "documentId": "CBIQgRyTGVMq6RCP",
+      "seedId": "eq-chin-chinguillo",
+      "webp": {
+        "path": "module/assets/_staging/equipo/webp256/chinchorro_chinguillo.webp",
+        "bytes": 76094,
+        "sha256": "13f021d60722dc0ae814df4aac8d7926683af860dfd32d360f75dbdaf0e83058",
+        "integrityVerifiedOn": "2026-11-21"
+      },
+      "master": {
+        "declaredPath": "module/assets/_staging/equipo/png512/CHINCHORRO_CHINGUILLO_v01.png",
+        "declaredBytes": 332561,
+        "declaredSha256": "ef3b2a8d6d831863a4ca554a149d73296882dede1cac552dcf4e30099deac367",
+        "githubReadback": "NOT_FOUND_2026_11_21"
+      },
+      "scope": "CANDIDATE_ONLY"
+    },
+    {
+      "index": 36,
+      "name": "Chope · Desconchador",
+      "culture": "Chinchorro",
+      "sourceCompendium": "world.hiperaustralis-rituales",
+      "documentId": "Cal0I8l96tdRm1pR",
+      "seedId": "eq-chin-chope",
+      "webp": {
+        "path": "module/assets/_staging/equipo/webp256/chinchorro_chope.webp",
+        "bytes": 21666,
+        "sha256": "86128383b0fd9cf02bc42e04636adb6d9a2f8b4e4f1be65c502006cbfde60658",
+        "integrityVerifiedOn": "2026-11-21"
+      },
+      "master": {
+        "declaredPath": "module/assets/_staging/equipo/png512/CHINCHORRO_CHOPE_v01.png",
+        "declaredBytes": 101493,
+        "declaredSha256": "f90908568e99f70f52ca7afe1bc014e768836e48ca6d4513c72bc468077e7135",
+        "githubReadback": "NOT_FOUND_2026_11_21"
+      },
+      "scope": "CANDIDATE_ONLY"
+    },
+    {
+      "index": 38,
+      "name": "Canasto",
+      "culture": "Chinchorro",
+      "sourceCompendium": "world.hiperaustralis-rituales",
+      "documentId": "8a526Vqfx3hsafi3",
+      "seedId": "eq-chin-canasto",
+      "webp": {
+        "path": "module/assets/_staging/equipo/webp256/chinchorro_canasto.webp",
+        "bytes": 70338,
+        "sha256": "b33486635fe8045393384d41c56b13b27651340eba7fca007df8983108cab17d",
+        "integrityVerifiedOn": "2026-11-21"
+      },
+      "master": {
+        "declaredPath": "module/assets/_staging/equipo/png512/CHINCHORRO_CANASTO_v01.png",
+        "declaredBytes": 344823,
+        "declaredSha256": "012eee6c4cff0905b7703c2a0bb4a125bdc4099eb398adc4adb7031b0be416d1",
+        "githubReadback": "NOT_FOUND_2026_11_21"
+      },
+      "scope": "CANDIDATE_ONLY"
+    },
+    {
+      "index": 40,
+      "name": "Punzón de hueso",
+      "culture": "Chinchorro",
+      "sourceCompendium": "world.hiperaustralis-rituales",
+      "documentId": "MX9mAxfkdCwvEvkZ",
+      "seedId": "eq-chin-punzon",
+      "webp": {
+        "path": "module/assets/_staging/equipo/webp256/chinchorro_punzon_hueso.webp",
+        "bytes": 21978,
+        "sha256": "e6f0bd65a66a9125973d07fe3b5a8a463af13bc7e68c7cf4db848d49ee031497",
+        "integrityVerifiedOn": "2026-11-21"
+      },
+      "master": {
+        "declaredPath": "module/assets/_staging/equipo/png512/CHINCHORRO_PUNZON_HUESO_v01.png",
+        "declaredBytes": 100298,
+        "declaredSha256": "edd216d30449b126e0409d2a126405a8c07653e1da70e977b62cb3759f458a4f",
+        "githubReadback": "NOT_FOUND_2026_11_21"
+      },
+      "scope": "CANDIDATE_ONLY"
+    }
+  ]
+}
