@@ -44,6 +44,16 @@ Este archivo sustituye operativamente los checkpoints anteriores sin borrar ante
 
 **Disciplina GitHub:** no modificar `manifests/ci137-selected-source-137-historical-ids.json` para registrar meros avances de auditoría; actualizar **únicamente este checkpoint**. Así las modificaciones documentales no disparan otra compilación de 137. El workflow vigente ya se ejecuta por cambios en fuentes, adaptador, selección o workflow, **no por cambios en este checkpoint ni en los manifiestos auxiliares de Equipo**. No crear nuevo PR ni fusionar PR #1; éste continúa en borrador sobre el prototipo de 38, no CI137.
 
+## Rectificación de disponibilidad del staging v02 — 22/11
+
+**Evidencia recuperada del chat del 18–19/11:** `CORE_FOUNDRY_CI137_STAGING_INTEGRADO_v02.zip` (**4,35 MB**) fue generado y comprobado localmente, pero **no fue respaldado íntegro en BBTECA para evitar duplicar gráficos**. Se declaró guardado sólo `CORE_FOUNDRY_CI137_INTEGRACION_v02.zip` (complemento liviano, ≈17 KB); posteriormente se preparó `CORE_FOUNDRY_UUID_CSB_20261119_v01.zip` con las comprobaciones de identidad/plantillas. Los enlaces `sandbox:/mnt/data/...` del chat anterior **no acreditan que sus bytes sigan disponibles ahora**.
+
+**Acceso al corte:** búsqueda exacta de los tres nombres del staging y los dos complementos en Drive conectado: **sin resultados accesibles**. Biblioteca indexada: **sin copia localizable** de los ZIP de integración; archivos montados de esta sesión: **sin el ZIP completo**. GitHub CI137 guarda los JSON fuente, el pack nativo real probado y respaldos históricos, **no** el paquete exacto v02 ni sus 96 WebP íntegros como tal.
+
+**Decisión:** **CERRAR REBÚSQUEDA DEL ZIP POR NOMBRE.** El staging v02 sigue siendo evidencia histórica de **137 Items/9 carpetas/96 WebP/141 de 143 enlaces**, pero su integración final **no puede afirmarse replicada en GitHub**. **No reconstruir sus imágenes ni suplir versiones finales con el respaldo histórico de 512 px**. En la rama actual, lo realmente aplicado son 16 Reliquias y 32 enlaces; restan 109 enlaces heredados. El arte final posterior de Equipo común está documentado en QA29 y su ZIP aprobado, sin promoción de rutas.
+
+**Siguiente hito autorizado:** consolidar la procedencia y acceso **sólo si aparece un vínculo o archivo verificable nuevo**, o en su defecto avanzar con QA técnico no gráfico sobre el CI137 137/137 ya compilado. No declarar candidato instalable completo ni hacer CI redundantes. No pedir al usuario que reconstruya contexto ni reiterar búsquedas agotadas.
+
 ## Estado transversal conservado
 | Frente | Estado |
 |---|---|
@@ -59,12 +69,12 @@ Este archivo sustituye operativamente los checkpoints anteriores sin borrar ante
 | Main, Foundry, Forge | No modificados |
 
 ## Siguiente operación — una sola secuencia
-1. **Recuperar el staging CI137 v02 ya integrado** (96 WebP y 141/143 referencias resueltas) a partir del respaldo exacto identificado en la rectificación 21/11. No reconstruir los 80 iconos históricos ni reusar 512 sobre 256 posteriores. Mantener separación de pendientes de ARM-11–13 y Cuchillo de piedra.
+1. **Suspender recuperación repetida del ZIP v02:** fue generado localmente pero el archivo completo no quedó respaldado en BBTECA ni aparece en los recursos accesibles. Usar el checkpoint v02 sólo como evidencia. No regenerar imágenes ni reconstruir a ciegas sus 96 asignaciones; reabrir únicamente ante bytes verificables.
 2. **Actualizar rutas sólo en transporte**, conservando ambos campos de Armas/Rituales cuando corresponda; fallar si un SHA o ruta de destino no coincide. Repetir CI137.
 3. **QA en mundo aislado** Foundry V14/CSB sobre 137 fichas, carpetas, imágenes, UUID/compendiumSource y persistencia. No instalar en producción ni publicar sin aprobación.
 
 ## Fuentes / Decisiones / Pendientes / Estado Maestro
 **Fuentes:** [Actions #44981739482](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/44981739482), artefacto #14738057398, `tools/foundry/ci137_pipeline.py`, `manifests/reliquias-assets.json`, manifest CI137, QA29 v10 en rama nativa, checkpoints v02 de 18–19/11.
 **Decisiones:** 16 IDs históricos, iconos aprobados existentes, ningún rediseño, un checkpoint y un manifiesto.
-**Pendientes:** 109 referencias de imágenes, QA cliente, posterior publicación con autorización.
+**Pendientes:** acceso comprobable a un lote final gráfico completo sin regeneración, 109 referencias antiguas en el transporte actual, QA cliente, publicación posterior sólo con aprobación. **Staging v02 íntegro no disponible en el corte actual; no reabrir por inercia.**
 **Cambios al Estado Maestro:** ninguno. `main`, MELIAZ Bridge y producción intactos.
