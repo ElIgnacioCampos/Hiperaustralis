@@ -1,6 +1,6 @@
 {
-  "schema": "hipera-ci137-selected-historic-identities-v02",
-  "status": "SOURCE_SELECTION_PATHS_VERIFIED_137_OF_137__BUILD_NOT_RUN",
+  "schema": "hipera-ci137-selected-historic-identities-v03",
+  "status": "CI137_NATIVE_ROUNDTRIP_137_PASS__ASSETS_RUNTIME_QA_PENDING",
   "targetCount": 137,
   "entries": [
     {
@@ -736,15 +736,16 @@
       "Foundry_CLI_and_runtime_QA"
     ],
     "lockedHistoricalIds": true,
-    "actualBuildGate": "BLOCKED_UNTIL_CI137_ADAPTER_AND_OFFLINE_VALIDATION",
+    "actualBuildGate": "PASS_137_GITHUB_ACTIONS",
     "noAssetRegeneration": true,
     "reuseExistingAssetsBeforeRecovery": true,
-    "sourcePromotionRequiresExactIdentityAndApprovedAssetMap": true
+    "sourcePromotionRequiresExactIdentityAndApprovedAssetMap": true,
+    "nextGate": "REWRITE_ONLY_VERIFIED_141_ASSET_REFERENCES_THEN_REBUILD"
   },
   "auditSnapshot": {
     "date": "2026-11-22",
     "source": "GitHub live branch/tree, GHA workflow, existing historical checkpoints and native QA29 v10",
-    "auditedBranchHead": "4282df2382e13e6b1e1de860a594fac7a51397d7",
+    "auditedBranchHead": "69b02d93de5698bf29c992084941f208f141342d",
     "auditScope": "STRUCTURAL_SOURCE_SELECTION_NOT_PAYLOAD_ROUNDTRIP_OR_RUNTIME",
     "selectedDocuments": 137,
     "uniqueIds": 137,
@@ -776,8 +777,8 @@
     "nativePrototypeWorkflowHead": "7e92f3b8d267d49ef4ddedafef2ed58c67f814fe",
     "lastSuccessfulNativeWorkflowRunId": 44961385066,
     "nativeBuildFixtureItems": 38,
-    "ci137BuildExecuted": false,
-    "ci137RoundTripExecuted": false,
+    "ci137BuildExecuted": true,
+    "ci137RoundTripExecuted": true,
     "ci137RuntimeQAExecuted": false,
     "relicsAuthority": "16 HISTORICAL IDs APPROVED 2026-11-22",
     "nativeQA29": {
@@ -806,6 +807,35 @@
       "QA29 recent work lives on native branch and BBTECA not mirrored as CI137 assets",
       "Cuchillo de piedra distinct image and ARM11-13 current approval unresolved on CI137",
       "old asset URLs must not be silently mapped"
-    ]
+    ],
+    "ci137NativeBuild": {
+      "workflowRunId": 44981432165,
+      "url": "https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/44981432165",
+      "headSha": "69b02d93de5698bf29c992084941f208f141342d",
+      "outcome": "SUCCESS",
+      "sourceItems": 137,
+      "uniqueIds": 137,
+      "folderCount": 9,
+      "CSBTemplateCount": 5,
+      "semanticFieldsVerified": [
+        "name",
+        "type",
+        "img",
+        "system",
+        "effects",
+        "flags",
+        "ownership"
+      ],
+      "assetLegacyReferences": {
+        "total": 141,
+        "img": 96,
+        "background": 45
+      },
+      "artifactId": 14736924797,
+      "artifactSha256": "56621207bba83ad0975bc47ff488339cf3062210be2c7366e34f6e05aa27e26d",
+      "assetAutonomyPassed": false,
+      "foundryClientQA": false,
+      "cliVersion": "3.0.5"
+    }
   }
 }
