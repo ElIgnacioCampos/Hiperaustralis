@@ -1,91 +1,68 @@
-# HIPERAUSTRALIS — CI137 / CHECKPOINT ÚNICO ACTUAL
-**Fecha:** 2026-11-22  
-**Frente:** CORE / Implementación — migración de 137 Items históricos a compendio nativo  
-**Ámbito:** rama `work/ci137-ensayo-identidad-historica-20261121` exclusivamente  
-**Estado:** IDENTIDADES Y FUENTES RECUPERADAS / ASSETS HISTÓRICOS RESCATADOS / NO PUBLICABLE
+# HIPERAUSTRALIS — CORE / GitHub–Foundry · CHECKPOINT ÚNICO ACTUAL
 
-> **Este es el checkpoint operativo único del bloque CI137.** Las actas y matrices anteriores quedan como evidencia archivada, NO como tareas sucesivas. El Estado Maestro general no se modifica sin aprobación.
+**Corte:** 22-11-2026 · **Ámbito:** migración histórica del corpus no territorial · **Rama auditada:** `work/ci137-ensayo-identidad-historica-20261121` (`4282df2382e13e6b1e1de860a594fac7a51397d7` antes de este checkpoint).
+**Dictamen:** **FUENTES RECUPERADAS / SELECCIÓN 137 VALIDADA / PIPELINE CI137 NO CONECTADO / NO PUBLICABLE**.
 
-## 1. Resultado consolidado (sin volver a auditar)
-| Unidad | Evidencia acreditada | Estado |
+Este documento reemplaza operativamente los checkpoints CI137 anteriores, sin borrar su historial. **El único manifiesto activo de selección es `manifests/ci137-selected-source-137-historical-ids.json`.** Estado Maestro general sin cambios.
+
+## 1. Diagnóstico central
+
+El pipeline existente compila **38 Items de prototipo**, no los 137 históricos seleccionados. `prepare_sources.py` recorre sólo `source/items/`; **ignora `source-pending/` y el manifiesto CI137**. `validate_compiled.py` compara también contra `source/items/`. El workflow `.github/workflows/compile-native-packs.yml` sólo se dispara automáticamente mediante push sobre `work/native-compendia-pipeline` (además de permitir ejecución manual); **no hay run CI137 acreditado**.
+
+Por tanto, no interpretar **SOURCE_PASS, ROUNDTRIP_PASS, Actions SUCCESS o ZIP v0.1.5** como validación de CI137. Los resultados son reales, pero se refieren al fixture de 38.
+
+## 2. Inventario auditado en GitHub — qué existe de verdad
+
+| Frente | Evidencia GitHub / histórica | Estado al corte |
 |---|---|---|
-| 137 Items, nueve carpetas | staging histórico CI137 v02 y variante con 135 IDs históricos + 2 extras, PASS offline | **CERRADO estructuralmente; no runtime** |
-| 99 Items de cinco familias | JSON originales recuperados de export real Hipera 5; incluidos en rama aislada | **CERRADO documentalmente** |
-| 16 Reliquias históricas y 16 del prototipo | dos juegos de IDs preservados; equivalencias de contenido/imagen conocidas | **CERRADO el cotejo; PENDIENTE decidir autoridad/UUID** |
-| 20 Armas históricas | JSON/IDs preservados; 20 WebP 512 recuperados desde 0.4.72/0.4.73 con SHA coincidentes | **CERRADO rescate histórico; no selección artística final** |
-| 22 Parafernalia y ocho Rituales | 30 JSON cotejados 1:1 con rutas; 30 WebP recuperados y cotejados entre 0.4.72/0.4.73 | **CERRADO rescate histórico** |
-| Ocho Defensas y 21 Instrumentos | 29 WebP recuperados de 0.4.72/0.4.73, con igualdad SHA entre versiones | **CERRADO rescate histórico; no sustitución de ERH finales** |
-| 16 WebP Reliquias + Tokicura | ZIP de 16 y archivo Tokicura registrados en GitHub | **ACREDITADO por fuente anterior; sin repetir auditoría** |
-| Recursos extra en staging GitHub | 69 WebP de Equipo/Defensas/ERH y ZIP Reliquias más Tokicura; son otro inventario | **NO fusionar por semejanza** |
-| Cuchillo de piedra `HipArm01PackA000` | distinto de Cuchillo lítico; su `01_cuchillo_piedra.webp` no fue localizado | **BLOQUEO REAL** |
-| Foundry CLI / QA V14.367 + CSB 6.1.2 | en los checkpoints no consta compilación/round-trip de variante 137, ni QA runtime | **BLOQUEO REAL** |
+| Selección CI137 | 137 registros, **137 IDs únicos, 137 rutas únicas, 137 archivos de origen presentes** en árbol de la rama | **CERRADO: selección de rutas**; no ejecución de los 137 JSON |
+| Corpus original | 135 Items del pack `world.hiperaustralis-rituales` (export Hipera 5 de 593 Items): **99** de cinco familias + **20** Armas + **16** Reliquias | **RECUPERADO** documentalmente |
+| Extras del prototipo | **Cuchillo de piedra** `HipArm01PackA000` y **Tokicura** `TokicuraRel0001` | Se incluyen en 137; no confundir con históricos |
+| Estructura objetivo | 9 rutas de carpeta en manifiesto: Armas 21, Defensas 8, Equipo común 40, Instrumentos 21, Parafernalia 22, Rituales 8, Reliquias/Cotidianas 8, Reliquias/Legendarias 8, Reliquias raíz 1 | **DISEÑO DE SELECCIÓN**; no carpeta CI137 compilada |
+| Reliquias | 16 IDs históricos y 16 alias del prototipo, cruce 1:1 en `source-pending/ci137-reliquias-historicas-16/manifest.json` | **DECISIÓN APROBADA:** IDs históricos; conservar alias, no duplicar pack |
+| Pipeline nativo | Rama `work/native-compendia-pipeline`, HEAD `7e92f3b8`; run Actions `44961385066` SUCCESS | **CERRADO SÓLO PARA 38 FIXTURES**; PR #1 draft |
+| Recursos visibles en la rama CI137 | 69 WebP en `_staging` (29 Equipo + 8 Defensas + 28 ERH + 4 Turianos), Tokicura WebP y ZIP de 16 Reliquias | **PRESENTES; NO EQUIVALENTES AUTOMÁTICOS** a 96 del staging histórico |
+| Rescate histórico 18–22/11 | Checkpoint previo: 96 WebP staging y 141/143 referencias resueltas en **copia local v02**; nueva extracción: 79 WebP de backups v0.4.72/73 con SHA entre versiones | **EVIDENCIAS DISTINTAS**; 79 no son automáticamente 79/96 aprobados |
+| Equipo común QA29 | Rama nativa: `manifests/equipo-comun-29-cruces-candidatos-20261121.json`; overlay en BBTECA: 20 WebP nuevos + nueve rutas de staging, 29 IDs candidatos; prueba real local 20/20 | **QA OFFLINE PARCIAL**; no QA en cliente Foundry, no replicado en CI137 |
+| Actors históricos | Export 176 (104 mundo +72 compendios), 170 Items embebidos entre 11 Actors; Kren tiene dos versiones incompatibles | **INVENTARIADOS**; prototipo sólo compila un Actor fixture; migración pendiente |
+| JournalEntry | Un Journal del prototipo con 21 páginas, restaurado desde fuente comprimida en CI | **FIXTURE COMPILADO**; no equivale a migración general de Journals |
+| Territorios | Manifiestos/source preservados en GitHub y excluidos expresamente del lote no territorial | **FUERA DE ALCANCE** por decisión anterior; no incorporar ni rediseñar aquí |
+| MELIAZ Bridge | Rama separada 0.24.203 con build de Actions SUCCESS | **BUILD** acreditado, QA en Forge no acreditado; no mezclar con CI137 |
+| `main` y PR | `main` HEAD `7c54311`; PR #1 abierto, draft, **apunta a rama nativa, no a CI137** | **SIN MERGE / SIN DESPLIEGUE** |
 
-**Nota fundamental:** `79` WebP locales (20+30+29) recuperados de 0.4.72/0.4.73 **no son 79/96 hashes validados contra el staging previo**. Constituyen una copia histórica alternativa. Los **96** del staging v02 del 18–19/11 quedaron acreditados entonces, pero sus paquetes completos no fueron localizados ahora. No sumar ni reemplazar automáticamente ambas fuentes.
+### Nota crucial sobre los iconos
 
-## 2. Lo que NO se hará de nuevo
-- No reabrir búsqueda interminable de ZIP por el mismo nombre. Ya se comprobó que 0.4.75 no aparece por búsqueda de título en las fuentes consultadas.
-- No volver a validar en bucle que 0.4.72 = 0.4.73: prueba realizada para **79 WebP**.
-- No repetir clasificación léxica de los 137 Items: la matriz v05 sólo es evidencia de compatibilidad del árbol de GitHub, **no** criterio de existencia física ni autoridad visual.
-- No producir un documento/commit por cada verificación menor.
-- No volver a construir fuentes JSON, reimaginar 96 iconos, ni volver a comparar 16 Reliquias semánticamente.
-- No bloquear **todo el proyecto** por la ausencia del ZIP 0.4.75: ese cotejo queda como **gate de procedencia sólo para una futura promoción de sus binarios**.
+Los recursos gráficos **ya trabajados** no se vuelven a generar ni se rescatan por costumbre. El QA29 confirma que 20 iconos recientes están en un ZIP aprobado de BBTECA y que otros nueve ya están en staging GitHub. La ausencia de un recurso *en la rama CI137* no demuestra que falte en el proyecto. El paso útil es **referenciar correctamente los aprobados**, no inventariarlos otra vez. Los lotes históricos de 512 px no reemplazan las revisiones posteriores de 256 px.
 
-## 3. Pendientes mínimos, en orden
-**P1 — Arte aprobado:** localizar únicamente fuente final de ARM-11–13 (256 transparente; respaldo posterior) y recurso independiente de Cuchillo de piedra. Si no se encuentran, registrar incidencia y mantener placeholder/ruta original, sin suplantación.
+## 3. Errores de diagnóstico anteriores — rectificación
 
-**P2 — Destino de Reliquias: DECIDIDO.** Los 16 IDs históricos serán la identidad principal; 16 IDs de prototipo como alias documentales. La ejecución y los remapeos UUID siguen sujetos a QA.
+1. Se presentó un preparador probado con **datos simulados** como paso hacia compilación real. **No constituye prueba CI137** ni sustituye el pipeline oficial; queda fuera de la autoridad de GitHub.
+2. Se multiplicaron actas, manifests de rescate y búsquedas duplicadas de 0.4.75. Se **congelan como historial**; ninguna abre por sí misma un nuevo frente.
+3. Se mezclaron tres contadores de imágenes: **69 en staging GitHub**, **79 históricos recuperados en ZIP locales** y **96 del checkpoint staging anterior**. Son conjuntos de distinta procedencia y validación; no se suman ni se reemplazan.
+4. Se trató la falta de determinados iconos en la rama como falta de diseño. **Falso por alcance**: la línea visual posterior y el overlay QA29 existen en otros respaldos/ramas; sólo falta resolver su inclusión controlada.
+5. El encabezado anterior «P2 propuesta no aprobada» era contradictorio con la decisión posterior del usuario. **P2 está APROBADO**.
 
-**P3 — Transferencia binaria controlada (cuando se pueda):** usar el staging v02 de 96 archivos si reaparece, o comparar por SHA la fuente 0.4.75 con el lote histórico 0.4.72/73. No exige otro inventario general. Un solo manifiesto agregado de SHA y asignaciones definitivas; no subir recursos 512 antiguos encima de versiones editoriales 256.
+## 4. Decisiones cerradas y barreras reales
 
-**P4 — CI/QA nativo:** compilar y probar **una variante seleccionada** con las cinco plantillas CSB y 137 Items en mundo V14/CSB6.1.2 aislado; verificar UUID, imágenes y persistencia, sin modificar producción.
+**CERRADO / NO REABRIR:** 135 históricos + 2 extras; selección de 137 fuentes e IDs; decisión de 16 Reliquias históricas; distinción Cuchillo de piedra ≠ Cuchillo lítico; conservación de versiones de arte y del overlay QA29; Territorios fuera de este bloque; `main` y producción protegidos.
 
-## 3A. P2 — Propuesta de autoridad de Reliquias (DECISIÓN PREPARADA, NO APROBADA)
+**GATE 1 — Conexión de fuentes (PRIORIDAD INMEDIATA):** adaptar el pipeline en la rama aislada para consumir **exactamente el manifiesto de 137**, elegir las Reliquias históricas en lugar de las 16 del prototipo y generar nueve carpetas sin alterar fuentes. El pipeline existente no lo hace. Encolar CI real sólo después de revisar fuentes y rutas.
 
-**Propuesta recomendada:** conservar los **16 IDs históricos** de `world.hiperaustralis-rituales` en la variante de transporte CI137; tratar los 16 IDs del prototipo como **alias documentales** para diagnóstico y reversión, no como una segunda colección publicada de Reliquias. La candidata histórica mantiene **135/135 IDs originales** de Hipera 5 y dos Items adicionales hasta sumar 137.
+**GATE 2 — Validador:** comparar el pack desempacado contra los **137 IDs del manifiesto** y nueve carpetas, no contra `source/items/` de 38. Verificar además cinco plantillas aplicables, igualdad de contenido sin transformaciones no autorizadas, UUID, imágenes y flags.
 
-**Evidencia de partida:** manifiesto `source-pending/ci137-reliquias-historicas-16/manifest.json` con correspondencia 16/16 entre `historicalId`, `prototypeId`, `sourceUuid` y `storedAt`; checkpoint del 18–19/11: 32 copias mundiales para esas 16, propiedades y contenido equivalentes, sin necesidad de reabrir el cotejo semántico.
+**GATE 3 — Assets:** resolver enlaces a iconos aprobados ya existentes usando manifiestos/QA29; no usar parecido de nombres ni sustituir archivos 256 por 512. Conservar pendiente específica del **Cuchillo de piedra** y cotejar autoridad de ARM-11–13 sólo cuando exista un binario final localizable. El backup 0.4.75 no es requisito para ejecutar **preflight estructural**, sí puede ser prueba de procedencia para la promoción de ciertos binarios.
 
-**Contrato para futura integración, sujeto a aprobación:**
-1. Preservar en origen ambas variantes de 16 JSON y sus hashes; seleccionar **una sola** para el pack resultante. No eliminar ni sobrescribir la alternativa.
-2. Mantener en la seleccionada `_id` histórico, `system.props`, `_stats`, flags y relaciones originales, salvo remapeos explícitos de rutas gráficas comprobadas y `folder` de transporte.
-3. Usar una tabla de `sourceUuid` → UUID nuevo del pack (también `prototypeId` → `historicalId`). No reescribir en masa `_stats.compendiumSource`: indica procedencia, no necesariamente un enlace runtime.
-4. Aun conservando el ID, el UUID completo cambia de `Compendium.world.hiperaustralis-rituales.Item.<ID>` a `Compendium.hiperaustralis-compendios-prototype.ha-proto-items.Item.<ID>`. No afirmar preservación del vínculo por conservar solo `_id`.
-5. Antes de activar la variante, comprobar con Foundry CLI y mundo V14/CSB6.1.2 aislado los documentos que referencian UUID antiguos, Items embebidos, Journals, macros, las cinco plantillas CSB y rutas gráficas.
-6. Fallo de cualquier referencia o de QA ⇒ no promover; rollback por sustitución de variante completa, no edición fragmentaria del mundo.
+**GATE 4 — Cliente:** instalar **sólo en mundo aislado** Foundry V14 + CSB compatible, abrir fichas, comprobar imágenes, carpetas, referencias antiguas, UUID y persistencia. Sin este QA no declarar módulo publicable.
 
-**Decisión del usuario (22/11/2026): APROBADA la autoridad de los 16 IDs históricos y el uso de los IDs del prototipo como alias documentales.** Esto autoriza el **criterio de selección de la variante CI137**, NO su publicación, ni migración de UUID, ni mutación de Items del mundo. La aplicación técnica queda sujeta a los gates de QA y procedencia del mismo checkpoint.
+**NO INCLUIR EN ESTE CICLO:** importación de 176 Actors, 170 Items embebidos, Territorios ni nuevas reglas. Son siguientes lotes con autoridad separada; Kren permanece conflicto no resuelto.
 
----
+## 5. Paso siguiente único
 
-## 3B. P1 — Resolución de estado gráfico (sin nueva auditoría general)
+**Implementar adaptador CI137 sobre el pipeline existente** y su validador, con entrada `manifests/ci137-selected-source-137-historical-ids.json` y salida en carpeta temporal. Debe fallar si no hay exactamente 137 documentos, si se duplican IDs, si alguna fuente falta, si se incorpora una Reliquia del prototipo en lugar de su identidad histórica o si faltan las nueve carpetas. Ejecutar preflight real y CI aislado; no generar iconos, ZIP de sustitución ni más actas. Publicación y migración de UUID siguen bloqueadas hasta QA.
 
-**ARM-11, ARM-12 y ARM-13:** la continuidad del 09/11 identifica una serie **posterior** de WebP 256×256 transparentes y dos respaldos `RESPALDO_ARM_11-13_WEBP256_transparente.zip` y `RESPALDO_ARM_11-13_PNG1024_WEBP256.zip`. Se registró aprobación de diseño parcial (ARM-11); normalización posterior para ARM-12 y producción de ARM-13. Las referencias a candidatos de compendio `0.4.85`, `0.4.86` y `0.4.87` **no implican** aprobación de carga/QA runtime. Los bytes finales 256 no están localizados en las fuentes actuales. Los WebP 512 de 0.4.72/73 permanecen archivados como históricos.
+## 6. Decisiones / Pendientes / Fuentes / Estado Maestro
 
-**Cuchillo de piedra:** `HipArm01PackA000`, con `01_cuchillo_piedra.webp`, requiere arte propio. Prohibido sustituirlo por `01_cuchillo_litico.webp`. Fuente histórica/asset independiente **no localizado**.
-
-**Dictamen de P1:** investigación y estado documental consolidados; **bloqueo de binarios finales** para ARM-11–13 y Cuchillo de piedra. No volver a solicitar búsqueda idéntica sin una fuente nueva; no publicar ni asignar imágenes antiguas como finales. P1 sólo se reabre ante hallazgo concreto de ZIP/archivo o export verificable. No convertir este bloqueo de iconografía en rediseño del CORE ni en un ciclo de auditorías.
-
-**Próxima acción permitida:** preparar un solo lote técnico CI137 conservador con manifiesto de dependencias y gates explícitos, sin compendio publicado y sin rellenar rutas faltantes.
-
----
-
-## 4. Recomendación de flujo
-1. **Congelar auditoría de rescate:** registrar el corpus como fuente recuperada, sin buscar más copias por inercia.
-2. Resolver **P1 y P2** en una matriz breve de decisiones; mantener dudas sin inventar aprobación.
-3. Hacer **un único lote de integración** bajo rama aislada; QA estructural + CI + QA runtime.
-4. Publicar/actualizar Estado Maestro sólo tras revisión del resultado y aprobación expresa.
-
-## 5. Referencias preservadas (históricas, no checkpoints activos)
-- `CHECKPOINT_CORE_GITHUB_FOUNDRY_INVENTARIO_2026-11-18.md`: v04–v09, staging 137, 96 WebP, 141/143 referencias, gates y UUID.
-- `docs/CI137_MATRIZ_ITEMS_ASSETS_2026-11-21_v05.json`: cruce léxico por rama, sólo diagnóstico.
-- `docs/CI137_RESCATE_BINARIO_COMPARADO_0472_0473_2026-11-21.md`: rescate 30 Parafernalia/Rituales.
-- `docs/CI137_ARMAS20_RESCATE_BINARIO_0472_0473_2026-11-22.md`: Armas 20.
-- `docs/CI137_ARM_11_13_Y_RESCATE_DEF08_INS21_2026-11-22.md`: Defensas/Instrumentos y advertencia ARM.
-- `docs/CI137_GATE_075_CIERRE_LOTE_PF22_RIT08_2026-11-22.md`: límite de cotejo con 0.4.75.
-- Archivos locales: `CI137_CANDIDATO_0473_30_WEBP.zip`, `CI137_CANDIDATO_0473_ARMAS20_WEBP.zip`, `CI137_CANDIDATO_0473_DEF08_INS21_WEBP.zip` y sus manifiestos.
-
-## 6. Decisiones / Pendientes / Fuentes / Cambios al Maestro
-**Decisiones operativas:** se consolida un único checkpoint; se detienen búsquedas y auditorías redundantes; se mantiene archivada toda la evidencia sin borrados; no se promueven imágenes históricas por falta de prueba de autoridad final.  
-**Pendientes:** P1–P4 exclusivamente.  
-**Fuentes:** export Hipera 5 593, staging CI137 v02 y checkpoint 18–19/11, rama GitHub aislada, respaldos Drive v0.4.72/0.4.73 y actas de recuperación.  
-**Cambios al Estado Maestro:** ninguno. **main, Bridge, Foundry y Forge:** intactos.
+**Decisiones:** conservar arte y fuentes; usar 16 IDs históricos; un solo checkpoint y un manifiesto; detener auditorías recurrentes; respetar PR draft y ramas separadas.
+**Pendientes:** adaptador 137, validador/CI con datos reales, referencias gráficas aprobadas, QA cliente; luego Actors y resto de contenidos no territoriales en otro frente.
+**Fuentes:** GitHub rama CI137 HEAD `4282df2`; rama nativa HEAD `7e92f3b`; workflow y tres validadores; manifiestos 99/16/137; QA29 v10; Actions `44961385066`; `docs/CHECKPOINT_SCOPE_COMPENDIOS_2026-11-17.md`; export y auditoría Actors 14/11; respaldo staging CI137 v02 y ZIPs históricos registrados.
+**Cambios al Estado Maestro ACTUAL:** ninguno. **`main`, Foundry productivo, Forge y MELIAZ Bridge:** sin modificaciones.

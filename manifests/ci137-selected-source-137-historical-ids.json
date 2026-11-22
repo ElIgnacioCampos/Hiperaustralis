@@ -1,6 +1,6 @@
 {
-  "schema": "hipera-ci137-selected-historic-identities-v01",
-  "status": "SOURCE_SELECTION_ONLY_DO_NOT_BUILD_OR_PUBLISH",
+  "schema": "hipera-ci137-selected-historic-identities-v02",
+  "status": "SOURCE_SELECTION_PATHS_VERIFIED_137_OF_137__BUILD_NOT_RUN",
   "targetCount": 137,
   "entries": [
     {
@@ -734,6 +734,78 @@
       "binary_provenance_and_final_visuals",
       "five_CSB_templates",
       "Foundry_CLI_and_runtime_QA"
+    ],
+    "lockedHistoricalIds": true,
+    "actualBuildGate": "BLOCKED_UNTIL_CI137_ADAPTER_AND_OFFLINE_VALIDATION",
+    "noAssetRegeneration": true,
+    "reuseExistingAssetsBeforeRecovery": true,
+    "sourcePromotionRequiresExactIdentityAndApprovedAssetMap": true
+  },
+  "auditSnapshot": {
+    "date": "2026-11-22",
+    "source": "GitHub live branch/tree, GHA workflow, existing historical checkpoints and native QA29 v10",
+    "auditedBranchHead": "4282df2382e13e6b1e1de860a594fac7a51397d7",
+    "auditScope": "STRUCTURAL_SOURCE_SELECTION_NOT_PAYLOAD_ROUNDTRIP_OR_RUNTIME",
+    "selectedDocuments": 137,
+    "uniqueIds": 137,
+    "uniquePaths": 137,
+    "pathsExistingInBranch": 137,
+    "missingPaths": 0,
+    "composition": {
+      "historicalWorldItems": 135,
+      "historicalOtherFamilies": 99,
+      "historicalArms": 20,
+      "historicalRelics": 16,
+      "prototypeExtras": 2
+    },
+    "familyCounts": {
+      "Defensas": 8,
+      "Equipo común": 40,
+      "Instrumentos musicales": 21,
+      "Parafernalia · sanación · cultura material": 22,
+      "Rituales": 8,
+      "Armas": 21,
+      "Reliquias legendarias": 8,
+      "Reliquias cotidianas": 8,
+      "Reliquias": 1
+    },
+    "historicalSourcePending": 115,
+    "inSourceItemsPrototype": 38,
+    "selectedNotReadByExistingPrepareSources": 115,
+    "nativePrototypeWorkflowBranch": "work/native-compendia-pipeline",
+    "nativePrototypeWorkflowHead": "7e92f3b8d267d49ef4ddedafef2ed58c67f814fe",
+    "lastSuccessfulNativeWorkflowRunId": 44961385066,
+    "nativeBuildFixtureItems": 38,
+    "ci137BuildExecuted": false,
+    "ci137RoundTripExecuted": false,
+    "ci137RuntimeQAExecuted": false,
+    "relicsAuthority": "16 HISTORICAL IDs APPROVED 2026-11-22",
+    "nativeQA29": {
+      "count": 29,
+      "completedOverlayBytes": 1128909,
+      "passedRealOfflineBytes": 20,
+      "stagedGitHub": 9,
+      "foundryWorldQA": false,
+      "record": "docs/CORE_EQUIPO_COMUN_QA29_OVERLAY_AISLADO_PREPARADO_20261121_v10.md",
+      "onOtherBranch": true
+    },
+    "imaging": {
+      "historicalLocalRecovery": 79,
+      "originalStagingCheckpoint": 96,
+      "githubStageWebPs": 69,
+      "githubRuntimeTokicuraWebP": 1,
+      "relicZipWebPs": 16,
+      "proofOfIdentityOfTheseSets": false,
+      "doNotSumAsUniqueApproved": true
+    },
+    "alerts": [
+      "CI137 not in auto-push workflow branch allowlist",
+      "prepare_sources.py ignores source-pending and CI137 selection manifest",
+      "validate_compiled.py evaluates source/items prototype not selected 137",
+      "no CI137 9-folder build or Foundry runtime QA",
+      "QA29 recent work lives on native branch and BBTECA not mirrored as CI137 assets",
+      "Cuchillo de piedra distinct image and ARM11-13 current approval unresolved on CI137",
+      "old asset URLs must not be silently mapped"
     ]
   }
 }
