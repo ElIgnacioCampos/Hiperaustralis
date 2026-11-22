@@ -1,0 +1,34 @@
+name: One existing HA Prototipo compendium only
+
+on:
+  push:
+    branches:
+      - work/native-compendia-pipeline
+    paths:
+      - 'module/**'
+      - 'tools/foundry/**'
+      - 'ci/assert_single_compendium.py'
+      - '.github/workflows/**'
+  pull_request:
+    paths:
+      - 'module/**'
+      - 'tools/foundry/**'
+      - 'ci/assert_single_compendium.py'
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  no-second-compendium:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Block new module, fourth pack, second Objects compendium and duplicate generators
+        run: python ci/assert_single_compendium.py --self-test
+
+# Guards the pre-existing HA prototype on its native branch, without building it.
