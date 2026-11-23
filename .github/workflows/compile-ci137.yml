@@ -8,6 +8,7 @@ on:
       - '.github/workflows/compile-ci137.yml'
       - 'tools/foundry/ci137_pipeline.py'
       - 'tools/foundry/ci137_template_gate.py'
+      - 'tools/foundry/ci137_verify_075.py'
       - 'tools/foundry/assert_single_compendium.py'
       - 'manifests/ci137-selected-source-137-historical-ids.json'
       - 'manifests/ci137-parafernalia22-rituales8-recovery.json'
@@ -34,7 +35,8 @@ jobs:
           node-version: '22'
       - name: Validate CI137 Python and macro syntax
         run: |
-          python -m py_compile tools/foundry/ci137_pipeline.py tools/foundry/assert_single_compendium.py tools/foundry/ci137_template_gate.py tools/foundry/ci137_equipo_20_transfer.py
+          python -m py_compile tools/foundry/ci137_pipeline.py tools/foundry/assert_single_compendium.py tools/foundry/ci137_template_gate.py tools/foundry/ci137_equipo_20_transfer.py tools/foundry/ci137_verify_075.py
+          python tools/foundry/ci137_verify_075.py --self-test
           python tools/foundry/assert_single_compendium.py --self-test
           python - <<'PY'
           # Synthetic-only proof of approval gate; no Item/asset persisted or published.
@@ -212,6 +214,18 @@ jobs:
           assert flora_v1["approvedForRuntime"] is False
           assert flora_v1["webpsStagedInGitHub"]==0
           assert flora_v1["verifiedAgainst0475Final"] is False
+          source075=d["recoveryAudit20261123"]["optimizedFlora0475"]
+          located=source075["libraryMetadataDiscovery20261123"]
+          assert located["catalogSizeBytes"]==33028294
+          assert located["expectedHistoricalZIPSHA256"]==source075["sourceSHA256"]
+          assert located["currentFileSHA256Verified"] is False
+          assert located["visualOrRuntimeApprovalGranted"] is False
+          assert source075["bytesCurrentlyAccessible"] is False
+          disagreement=source075["historicalFlora0475ByteCountDisagreement"]
+          assert disagreement["comparator40IconBytes"]==3641622
+          assert disagreement["hashAudit40IconBytes"]==5951968
+          assert disagreement["status"].startswith("UNRESOLVED")
+
           assert sum(t["assetsVerifiedInRepository"] for t in d["territories"])==5
           assert d["releaseGate"]["territorialRuntimeImgRemaps"]==0
           assert d["releaseGate"]["territorialIconBinariesAuditedLocally"]==79
