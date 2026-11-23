@@ -26,7 +26,15 @@
 
 **Próximo avance material de Equipo común:** transferir **exactamente los 20 WebP de BBTECA** al árbol de assets del mismo prototipo mediante una vía autenticada que admita bytes; comparar cada SHA al llegar. Solo después hacer QA de los 29 en cliente aislado y decidir las sustituciones `img` individualmente; no suponer aprobación runtime.
 
-## 3. Otros pendientes legítimos, sin reabrir inventarios
+## 3. Puertas técnicas nuevas — ejecutadas sobre fuentes reales
+
+**Transferencia QA29 reproducible sin subir binarios todavía:** añadido `tools/foundry/ci137_equipo_20_transfer.py` sobre el mismo módulo, sin crear flujo alternativo. Entradas: los DOS ZIP exactos ya recuperados en BBTECA. Comprueba SHA256/CRC de ambos ZIP, igualdad exacta de los 20 WebP, dimensiones/alpha, los 29 IDs/hashes contra manifiesto del repositorio, las 40 identidades de Equipo común y el ID/los tres packs del módulo; en modo `--apply` exige además los nueve assets históricos ya presentes en el checkout y rechaza colisiones. Por defecto actúa en **sólo lectura**. El script no altera Items, `img`, LevelDB, manifiesto de módulo ni releases. Prueba local previa sobre la misma lógica y ZIP reales: **20/20 PASS offline; --apply BLOCKED correctamente al faltar el staging en checkout incompleto**. **No consta ejecución --apply sobre checkout real y no se transfirieron los 20 binarios a GitHub**: la conexión de Library a GitHub no permite egress binario directo. No presentarlo como incorporación terminada.
+
+**Plantillas CSB: comprobación real del corpus completo, no de cinco muestras.** Añadido `tools/foundry/ci137_template_gate.py` al workflow CI137 ya existente; compara los **137 JSON de transporte** con cinco JSON exactos de `source-original/foundry-templates/`. [GitHub Actions #45093151565](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45093151565) **SUCCESS**, `PASS_STATIC_REFERENCES_NOT_RUNTIME`, cero problemas de identidad, versión de plantilla o campos requeridos. Distribución real: **21 Arma / 70 Equipo (incluye Defensas y Parafernalia) / 21 Instrumento / 17 Reliquia / 8 Ritual = 137**. Flags declarados en fuentes: **99 CSB 5.2.1, 36 CSB 6.0.2, dos sin declaración**. Conservados intactos, no migrar por inferencia. `ci137-template-compatibility.json` se conserva dentro del artefacto D2; el release gate sigue `BLOCKED`, **ningún ZIP instalable**.
+
+**Advertencia:** estas verificaciones prueban consistencia de metadatos, NO presencia de plantillas en el mundo ni hidratación de fichas, compatibilidad del cliente CSB instalado, apertura de mundos o causalidad del bloqueo D3.
+
+## 4. Otros pendientes legítimos, sin reabrir inventarios
 
 - **Historias del staging v02:** antecedente offline de 137 Items/9 carpetas/96 WebP/141 de 143 referencias; **ZIP completo no localizable en este corte**. No volver a buscar por nombre ni reproducirlo con imágenes antiguas; permanecer como evidencia histórica.
 - **Gráfica Armas/otras familias:** 79/80 candidatos antiguos localizados en 0.4.72–0.4.73, no aprobados automáticamente como finales. Cuchillo de piedra `HipArm01PackA000` tiene icono propio no acreditado. ARM-11–13 requieren priorizar arte posterior 256px. Los 20 gráficos de Equipo común son un frente distinto y no restan de las **109 referencias heredadas**.
@@ -34,16 +42,16 @@
 - **D3:** prueba del cliente V14+CSB, carga de mundo, renderizado de fichas, fondos, carpetas, UUID y persistencia. **No aprobado**. D4 solo tras autorización del usuario.
 - **Bridge, Actors, Journals, Territorios, Fauna, `main`, Forge productivo y Estado Maestro:** fuera de esta operación, intactos.
 
-## 4. Método operativo
+## 5. Método operativo
 
 1. Reutilizar **el manifiesto de identidades único** y el registro de QA29 existente. No crear otro compendio, otra matriz ni otro inventario.
 2. **Fuente → bytes/ID/hash → decisión editorial → cambio en transporte → prueba en cliente.** Una prueba offline nunca sustituye D3.
 3. Un lote debe entregar un cambio material verificable y registrar su límite. No producir instaladores ni activar releases mientras el gate esté BLOQUEADO.
 4. No pedir de nuevo los ZIP que ya están en BBTECA. Para cambios gráficos usar únicamente los bytes ya aprobados y sus respaldos persistentes.
 
-## 5. Decisiones / Pendientes / Fuentes / Maestro
+## 6. Decisiones / Pendientes / Fuentes / Maestro
 
 **Decisiones:** mantener un único HA Prototipo y sus tres packs; congelar el instalador fallido; los 20 WebP de Equipo común son recuperados/validados en Biblioteca, sin promoción runtime.
-**Pendientes:** transferencia autenticada de los 20 binarios exactos al repositorio; QA29 cliente; cerrar imágenes históricas restantes y cinco dependencias de CSB; diagnosticar carga de Foundry; pasar D3 antes de nueva distribución.
+**Pendientes:** transferencia autenticada de los 20 binarios exactos al repositorio (transferidor preparado, no aplicado); QA29 cliente; cerrar imágenes históricas restantes; verificar disponibilidad efectiva e hidratación de cinco plantillas CSB en cliente; diagnosticar carga de Foundry; pasar D3 antes de nueva distribución.
 **Fuentes:** [compilación y gate D2](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45090601010); `docs/CI137_RECTIFICACION_CONTINUIDAD_ASSETS_2026-11-21.md`; `docs/CORE_EQUIPO_COMUN_QA29_OVERLAY_AISLADO_PREPARADO_20261121_v10.md`; los dos ZIP de BBTECA especificados arriba; `manifests/equipo-comun-29-cruces-candidatos-20261121.json`.
 **Cambios al Estado Maestro:** ninguno. `main`, Bridge y Forge sin cambios.
