@@ -3,6 +3,16 @@
 **Estado ACTUAL (23-11-2026, D2):** **136/136 Items PASS con nombre final Cuchillo de piedra**, 20 Armas, nueve carpetas, cinco plantillas; **115/115 WebP transferidos PASS**. **79/79 WebP históricos**, 30 SHA históricos, **17/17 candidatos ERH** y **8/8 COM aprobados** verificados físicamente en CI. En los 29 Items DEF08/INS21: **17 cruces nominales, 8 ambiguos, 4 sin pareja**; cero remapeos nuevos. Permanecen **105 referencias gráficas** sin resolución editorial. D3/Foundry **NO ACREDITADO**; publicación **BLOQUEADA**.
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
+## D2 — PF22/RIT08, corrección de rutas físicas y prueba de 30 IDs (23-11-2026)
+
+El manifiesto vigente `manifests/ci137-parafernalia22-rituales8-recovery.json` indicaba `NO_BINARIES_TRANSFERRED`, estado desactualizado: los 30 WebP históricos **ya estaban** en GitHub dentro de los 115 transferidos. Se distinguen ahora **destino propuesto** (`stagedPath` anterior) y **ubicación real archivada** (`currentPhysicalStagingPath` nueva). Los SHA conservados provienen de 0.4.72/0.4.73; `assetSha256` continúa `null` para el cotejo pendiente con 0.4.75. **Ninguna imagen final promovida.**
+
+El `INVENTARIO_LEGACY_0.4.75.json` recuperado documenta ocho rutas de Rituales con archivo presente en el ZIP 0.4.75 (ocho `zipImagePresent: true`), pero no aporta SHA-256 por imagen. Los 22 Items de Parafernalia no están representados como fichas en ese instalador. Esto prueba continuidad nominal para Rituales, **no paridad de bytes**. La comparación binaria exacta con 0.4.75 sigue bloqueada por falta de acceso al ZIP real.
+
+**Validación integrada al pipeline CI137 existente:** comprobar por los **30 IDs** fuente JSON, tipo de plantilla, ruta `img`, SHA-256 de staging y ocho fondos rituales, sin cambiar Item ni `img`. La puerta del workflow exige cero remapeos y `archive075ByteParity: false` hasta disponer del ZIP. **Resultado CI: PENDIENTE.**
+
+**Decisiones:** conservar 30 originales históricos; no reemplazar con 0.4.73 como si fueran finales 0.4.75. **Pendientes:** archivo fuente 0.4.75 recuperable y cotejo de bytes/arte final. **Fuentes:** manifiesto PF22/RIT08, inventario legacy 0.4.75 (solo metadatos derivados), fuente de 30 Items y staging GitHub. **Maestro:** sin cambios.
+
 ## D2 — Cruce de 29 Items Defensas/Instrumentos y control de ocho COM (23-11-2026)
 
 **Corte validado CI PASS:** cotejadas las **29 fuentes JSON originales** con los catálogos gráficos **COM Defensas v02** y **ERH Instrumentos**, los staging ya presentes en GitHub y la matriz de triage. Se registran **17 correspondencias nominales uno-a-uno de Instrumentos**, **8 ambiguas** (cuatro Instrumentos; cuatro Defensas) y **4 Defensas sin obra idéntica acreditada**. Las correspondencias nombradas se almacenan en el mismo manifiesto de selección como `editorialCrosswalk`, **sin aprobación visual ni remapeo de ningún `img`**.

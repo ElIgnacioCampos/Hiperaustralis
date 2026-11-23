@@ -375,6 +375,72 @@ def verify_defensas_instrumentos_crosswalk(rows):
             "approvedItemRemaps": 0}
 
 
+def verify_pfrit_historical_manifest(rows):
+    """Check physical 30/30 0472/0473 WebP sources and Item paths; 075 parity is unknown."""
+    m = read_json(ROOT / "manifests/ci137-parafernalia22-rituales8-recovery.json")
+    if m.get("count") != 30 or len(m.get("rows", [])) != 30:
+        fail("PF22/RIT08 manifest count changed")
+    if (m.get("inventory075", {}).get("perImageSHAAvailable") is not False
+            or m.get("physicalStaging", {}).get("approvedRemaps") != 0
+            or m.get("physicalStaging", {}).get("ref075VerifiedSHA") is not False):
+        fail("0.4.75 parity improperly claimed")
+    chosen = {r["id"]: r for r in rows
+              if r["family"] in ("Parafernalia · sanación · cultura material", "Rituales")}
+    if len(chosen) != 30:
+        fail("PF22/RIT08 selected IDs changed")
+    found = set()
+    family = Counter()
+    backgrounds = 0
+    for rec in m["rows"]:
+        key = rec["id"]
+        if key in found or key not in chosen:
+            fail("PF22/RIT08 duplicate/missing ID " + key)
+        found.add(key)
+        entry = chosen[key]
+        src = read_json(ROOT / entry["source"])
+        if (entry["source"] != rec["itemJson"] or entry["family"] != rec["family"]
+                or src.get("_id") != key or src.get("img") != rec["originalImg"]
+                or src.get("system", {}).get("template") != rec["template"]
+                or entry["archivedImage"]["originalPath"] != rec["originalImg"]):
+            fail("PF22/RIT08 source/identity mismatch " + key)
+        prefix = "modules/hiperaustralis-rituales/assets/"
+        if not rec["originalImg"].startswith(prefix):
+            fail("PF22/RIT08 unexpected legacy path " + key)
+        suffix = Path(rec["originalImg"][len(prefix):])
+        if suffix.is_absolute() or ".." in suffix.parts or suffix.suffix != ".webp":
+            fail("PF22/RIT08 unsafe asset path " + key)
+        physical = "module/assets/_staging/ci137_v02_historico/" + suffix.as_posix()
+        sha = rec["historicalCandidateSha256_0472_0473"]
+        if (rec.get("currentPhysicalStagingPath") != physical
+                or rec.get("currentPhysicalStagingSha256_0472_0473") != sha
+                or rec.get("assetStatus") != "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL"
+                or rec.get("approvedForTransport") is not False
+                or rec.get("archive075ByteEquality") != "NOT_VERIFIED"
+                or rec.get("assetSha256") is not None or entry["archivedImage"].get("sha256") != sha):
+            fail("PF22/RIT08 archive status/SHA mismatch " + key)
+        binary = ROOT / physical
+        if not binary.is_file():
+            fail("PF22/RIT08 recovered WebP missing " + key)
+        data = binary.read_bytes()
+        if (digest(data) != sha or data[:4] != b"RIFF" or data[8:12] != b"WEBP"
+                or int.from_bytes(data[4:8], "little") + 8 != len(data)):
+            fail("PF22/RIT08 historic WebP bytes altered " + key)
+        bg = src.get("flags", {}).get("hiperaustralis-sheet", {}).get("background")
+        if rec["family"] == "Rituales":
+            if bg != rec["originalImg"] or rec["expectedSheetBackground"] != bg:
+                fail("Ritual background mismatch " + key)
+            backgrounds += 1
+        elif rec["backgroundPathFromSourceVerified"] is not False:
+            fail("unverified PF background was promoted " + key)
+        family[rec["family"]] += 1
+    if (len(found) != 30 or family != Counter({"Parafernalia · sanación · cultura material": 22, "Rituales": 8})
+            or backgrounds != 8):
+        fail("PF22/RIT08 family/ritual counts changed")
+    return {"items": 30, "parafernalia": 22, "rituales": 8, "historicShaMatches": 30,
+            "ritualBackgroundMatches": 8, "inventory075RitualPresence": 8,
+            "archive075ByteParity": False, "approvedRemaps": 0}
+
+
 def folder_doc(folder, folder_id, parent):
     return {
         "_id": folder_id, "name": folder.split("/")[-1], "type": "Item",
@@ -387,6 +453,7 @@ def prepare(output):
     rows = validate_selection()
     historical_staging = verify_historical_staging(rows)
     crosswalk = verify_defensas_instrumentos_crosswalk(rows)
+    pfrit = verify_pfrit_historical_manifest(rows)
     if output.exists() and any(output.iterdir()):
         fail("refusing nonempty output directory: " + str(output))
     output.mkdir(parents=True, exist_ok=True)
@@ -481,6 +548,7 @@ def prepare(output):
         "historicalStagingShaMatched": sum(r["shaMatchedArchivalManifest"] for r in historical_staging),
         "historicalStagingPromotedCount": 0,
         "defensasInstrumentosCrosswalk": crosswalk,
+        "parafernaliaRitualesCrosswalk": pfrit,
         "records": records,
     }
     (output / "ci137-preflight.json").write_text(
@@ -497,6 +565,9 @@ def verify(prepared, unpacked):
     source_rows = validate_selection()
     stage_rows = verify_historical_staging(source_rows)
     crosswalk = verify_defensas_instrumentos_crosswalk(source_rows)
+    pfrit = verify_pfrit_historical_manifest(source_rows)
+    if manifest.get("parafernaliaRitualesCrosswalk") != pfrit:
+        fail("PF22/RIT08 staging crosswalk changed during roundtrip")
     if manifest.get("defensasInstrumentosCrosswalk") != crosswalk:
         fail("crosswalk or final COM graphics changed across CI roundtrip")
     previous = manifest.get("historicalStagingAssets", [])
@@ -573,6 +644,7 @@ def verify(prepared, unpacked):
         "archivalWebpsShaCompared": 30,
         "archivalWebpsPromoted": 0,
         "defensasInstrumentosCrosswalk": crosswalk,
+        "parafernaliaRitualesCrosswalk": pfrit,
         "approvedRelicReferencesRemapped": len(manifest["approvedRemaps"]),
         "note": "16 historical relic WebP and one approved knife mapped; 79 historical WebP audited (30 archived SHA checked), eight COM approved-source SHA verified; 17 unique named ERH candidates not approved for transport; 105 legacy references remain; no Foundry client QA",
     }
