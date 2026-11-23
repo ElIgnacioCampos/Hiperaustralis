@@ -83,6 +83,40 @@ jobs:
                       raise AssertionError("unapproved/modified image was accepted: " + key)
           print("CI137 synthetic approval gate: positive + rejection cases PASS; actual approved remaps: 0")
           PY
+      - name: Recover six previously approved ERH visual identities by exact seedId and SHA
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          selected=json.loads(Path("manifests/ci137-selected-source-137-historical-ids.json").read_text(encoding="utf-8"))["entries"]
+          byid={r["id"]:r for r in selected}
+          approved={
+              "K7d2oqF6P7DB0Kpt":"inst-01-kultrung",
+              "IG8DW7Wr30mg1jqx":"inst-02-pifullka",
+              "gp4b3XE6mJGvqE9X":"inst-03-waza",
+              "KpK5mqDdleRnemjh":"inst-13-piloilo",
+              "vr5gUbTNMU8tj3zL":"inst-14-kaskawilla",
+              "JZUzx0bNMoDj6xs5":"inst-16-pututu"
+          }
+          report=[]
+          for id,seed in approved.items():
+              row=byid[id]
+              doc=json.loads(Path(row["source"]).read_text(encoding="utf-8"))
+              assert doc["_id"]==id
+              assert doc.get("flags",{}).get("hiperaustralis-instrumentos",{}).get("seedId")==seed
+              assert doc["name"] and row["family"]=="Instrumentos musicales"
+              p=row["editorialCrosswalk"]["candidateStagedPath"]
+              assert p.startswith("source-original/ci137-asset-staging/instrumentos-erh/webp_256/")
+              raw=Path(p).read_bytes()
+              blob=hashlib.sha1(b"blob "+str(len(raw)).encode()+b"\0"+raw).hexdigest()
+              assert blob==row["editorialCrosswalk"]["expectedGitBlobSha1"]
+              assert len(raw)==row["editorialCrosswalk"]["expectedBytes"]
+              assert raw[:4]==b"RIFF" and raw[8:12]==b"WEBP"
+              report.append({"id":id,"seedId":seed,"path":p,"gitBlob":blob,
+                             "sha256":hashlib.sha256(raw).hexdigest(),"bytes":len(raw)})
+          assert len(report)==6
+          print("CI137_ERH6_SHA256_JSON="+json.dumps(report,ensure_ascii=False,separators=(',',':')))
+          PY
       - name: Assert module contains no archival staging assets
         run: |
           python - <<'PY'
