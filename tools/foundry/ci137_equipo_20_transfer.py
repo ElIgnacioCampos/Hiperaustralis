@@ -17,7 +17,7 @@ APPROVED_SHA = "41d20db6e45894e1f00ad94a8fccce01e767567bd8d3401a58716a609f4e1a72
 OVERLAY_SHA = "867884cadc27b86216e5c8f91703a7d5c75c9bc2f6410e75db7fe605e8d54be6"
 APPROVED_PREFIX = "FOUNDRY_WEBP_256/"
 OVERLAY_PREFIX = "module/assets/equipo-comun/"
-STAGING_PREFIX = "module/assets/_staging/equipo/webp256/"
+STAGING_PREFIX = "source-original/ci137-asset-staging/equipo/webp256/"
 MANIFEST = "manifests/equipo-comun-29-cruces-candidatos-20261121.json"
 SELECTION = "manifests/ci137-selected-source-137-historical-ids.json"
 

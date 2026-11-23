@@ -53,7 +53,7 @@ jobs:
           assert ci.verified_additional_approved_asset_remaps(entries, Path(".")) == {}
           row = copy.deepcopy(next(r for r in entries if r["id"] == "1dhUgcpr5U3wAQ1l"))
           original = json.loads(Path(row["source"]).read_text(encoding="utf-8"))
-          input_path = "module/assets/_staging/instrumentos-erh/webp_256/kakel_kultrung_ERH_256.webp"
+          input_path = "source-original/ci137-asset-staging/instrumentos-erh/webp_256/kakel_kultrung_ERH_256.webp"
           source_bytes = Path(input_path).read_bytes()
           approved = {
               "status": "FINAL_ART_APPROVED_FOR_CI137",
@@ -82,6 +82,18 @@ jobs:
                   else:
                       raise AssertionError("unapproved/modified image was accepted: " + key)
           print("CI137 synthetic approval gate: positive + rejection cases PASS; actual approved remaps: 0")
+          PY
+      - name: Assert module contains no archival staging assets
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          runtime = sorted(Path("module/assets").rglob("*.webp"))
+          archive = sorted(Path("source-original/ci137-asset-staging").rglob("*.webp"))
+          assert not Path("module/assets/_staging").exists()
+          assert len(runtime) == 38, len(runtime)
+          assert len(archive) == 148, len(archive)
+          assert sum(p.stat().st_size for p in archive) == 6654130
+          print({"runtimeWebps":38, "archivedWebps":148, "archivedBytes":6654130})
           PY
       - name: Prepare exactly 136 selected real sources - no asset changes
         run: python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/ci137-prepared"

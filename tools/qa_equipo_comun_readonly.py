@@ -6,7 +6,7 @@ import json
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-STAGING = "module/assets/_staging/equipo/webp256/"
+STAGING = "source-original/ci137-asset-staging/equipo/webp256/"
 M = json.loads((ROOT / "TRANSFER_MANIFEST.json").read_text(encoding="utf-8"))
 Q = json.loads((ROOT / "manifests/equipo-comun-qa9-20261121.json").read_text(encoding="utf-8"))
 files = {record["path"]: record for record in M["physicalFiles"]}

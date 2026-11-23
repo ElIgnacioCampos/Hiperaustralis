@@ -31,7 +31,7 @@
         "hipera_tipo": "equipo"
       },
       "expectedCurrentImg": "icons/commodities/cloth/thread-spindle-grey.webp",
-      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/aymara_qapu_huso.webp",
+      "candidateStagingWebp": "source-original/ci137-asset-staging/equipo/webp256/aymara_qapu_huso.webp",
       "candidateSha256": "ae70b4a74d0c1b8e198353364753ca55aae5f4cb4e01f65da75709e32506e4f6",
       "operation": "image-only",
       "intendedMutation": {
@@ -53,7 +53,7 @@
         "hipera_tipo": "equipo"
       },
       "expectedCurrentImg": "icons/weapons/daggers/dagger-black.webp",
-      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/nordico_knifr_cuchillo.webp",
+      "candidateStagingWebp": "source-original/ci137-asset-staging/equipo/webp256/nordico_knifr_cuchillo.webp",
       "candidateSha256": "6f7605a5299dddff721b6273d168516d82d7d759862b16de0bb6f63e9ee5c46f",
       "operation": "image-only",
       "intendedMutation": {
@@ -75,7 +75,7 @@
         "hipera_tipo": "equipo"
       },
       "expectedCurrentImg": "icons/tools/laboratory/burner-steel-grey.webp",
-      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/nordico_eldjarn_yesquero.webp",
+      "candidateStagingWebp": "source-original/ci137-asset-staging/equipo/webp256/nordico_eldjarn_yesquero.webp",
       "candidateSha256": "b243d618ec3bd6734b8c75705fe2667c448076901b05f1db4cfeae3d59347de5",
       "operation": "image-only",
       "intendedMutation": {
@@ -97,7 +97,7 @@
         "hipera_tipo": "equipo"
       },
       "expectedCurrentImg": "icons/tools/hand/needle-grey.webp",
-      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/nordico_saum_nal_aguja.webp",
+      "candidateStagingWebp": "source-original/ci137-asset-staging/equipo/webp256/nordico_saum_nal_aguja.webp",
       "candidateSha256": "e364160285fead6ae064dc863e313838b38781cf1e7e254bd5c4213d2c8e709e",
       "operation": "image-only",
       "intendedMutation": {
@@ -119,7 +119,7 @@
         "hipera_tipo": "equipo"
       },
       "expectedCurrentImg": "icons/sundries/survival/rope-wrapped-loops-grey.webp",
-      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/lickanantay_gancho_atalaje.webp",
+      "candidateStagingWebp": "source-original/ci137-asset-staging/equipo/webp256/lickanantay_gancho_atalaje.webp",
       "candidateSha256": "ca461dc79940bad5c080c73a27de2589b73d8b582367396fb1206ec070c0541d",
       "operation": "image-only",
       "intendedMutation": {
@@ -141,7 +141,7 @@
         "hipera_tipo": "equipo"
       },
       "expectedCurrentImg": "icons/tools/fishing/net-tan.webp",
-      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/chinchorro_chinguillo.webp",
+      "candidateStagingWebp": "source-original/ci137-asset-staging/equipo/webp256/chinchorro_chinguillo.webp",
       "candidateSha256": "13f021d60722dc0ae814df4aac8d7926683af860dfd32d360f75dbdaf0e83058",
       "operation": "image-only",
       "intendedMutation": {
@@ -163,7 +163,7 @@
         "hipera_tipo": "equipo"
       },
       "expectedCurrentImg": "icons/tools/hand/wrench-steel-grey.webp",
-      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/chinchorro_chope.webp",
+      "candidateStagingWebp": "source-original/ci137-asset-staging/equipo/webp256/chinchorro_chope.webp",
       "candidateSha256": "86128383b0fd9cf02bc42e04636adb6d9a2f8b4e4f1be65c502006cbfde60658",
       "operation": "image-only",
       "intendedMutation": {
@@ -185,7 +185,7 @@
         "hipera_tipo": "equipo"
       },
       "expectedCurrentImg": "icons/containers/misc/basket-simple-yellow.webp",
-      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/chinchorro_canasto.webp",
+      "candidateStagingWebp": "source-original/ci137-asset-staging/equipo/webp256/chinchorro_canasto.webp",
       "candidateSha256": "b33486635fe8045393384d41c56b13b27651340eba7fca007df8983108cab17d",
       "operation": "image-only",
       "intendedMutation": {
@@ -207,7 +207,7 @@
         "hipera_tipo": "equipo"
       },
       "expectedCurrentImg": "icons/commodities/bones/tooth-spiked-brown.webp",
-      "candidateStagingWebp": "module/assets/_staging/equipo/webp256/chinchorro_punzon_hueso.webp",
+      "candidateStagingWebp": "source-original/ci137-asset-staging/equipo/webp256/chinchorro_punzon_hueso.webp",
       "candidateSha256": "e6f0bd65a66a9125973d07fe3b5a8a463af13bc7e68c7cf4db848d49ee031497",
       "operation": "image-only",
       "intendedMutation": {

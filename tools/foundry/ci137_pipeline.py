@@ -55,7 +55,7 @@ EXCLUDED_PROTOTYPE_KNIFE_SOURCE = "source/items/01_cuchillo_piedra.json"
 SHARED_KNIFE_MEMBER = "assets/armas/01_cuchillo_litico.webp"
 SHARED_KNIFE_URL = "modules/hiperaustralis-compendios-prototype/" + SHARED_KNIFE_MEMBER
 SHARED_KNIFE_SHA256 = "7ff631440c2a74d7ca25014ceb1c38024b14d3ebdb2f73a9bcc0be98ba7a8082"
-SHARED_KNIFE_STAGE = "module/assets/_staging/ci137_v02_historico/armas/01_cuchillo_litico.webp"
+SHARED_KNIFE_STAGE = "source-original/ci137-asset-staging/ci137_v02_historico/armas/01_cuchillo_litico.webp"
 
 
 
@@ -260,7 +260,7 @@ def verified_additional_approved_asset_remaps(rows, output):
         member = approved.get("targetMember")
         sha = approved.get("sha256")
         if (not isinstance(staged, str) or
-                not staged.startswith("module/assets/_staging/") or
+                not staged.startswith("source-original/ci137-asset-staging/") or
                 not isinstance(member, str) or
                 not member.startswith("assets/") or
                 not isinstance(sha, str) or len(sha) != 64):
@@ -308,7 +308,7 @@ def verify_historical_staging(rows):
     Historical source images in the original module are archival CANDIDATES, not
     approved replacements. A SHA match proves bytes, not visual/editorial approval.
     """
-    stage_root = ROOT / "module/assets/_staging/ci137_v02_historico"
+    stage_root = ROOT / "source-original/ci137-asset-staging/ci137_v02_historico"
     records = []
     unique_paths = set()
     original_paths = set()
@@ -349,7 +349,7 @@ def verify_historical_staging(rows):
         records.append({
             "id": row["id"], "family": row["family"],
             "legacyPath": old,
-            "stagedPath": "module/assets/_staging/ci137_v02_historico/" + rel.as_posix(),
+            "stagedPath": "source-original/ci137-asset-staging/ci137_v02_historico/" + rel.as_posix(),
             "sha256": sha, "shaMatchedArchivalManifest": expected_sha is not None,
             "bytes": len(raw), "promotionAuthorized": False,
         })
@@ -383,7 +383,7 @@ def verify_defensas_instrumentos_crosswalk(rows):
             if row["family"] != "Instrumentos musicales":
                 fail("only distinctive musical-name candidates are in scope")
             staged_path = entry.get("candidateStagedPath")
-            prefix = "module/assets/_staging/instrumentos-erh/webp_256/"
+            prefix = "source-original/ci137-asset-staging/instrumentos-erh/webp_256/"
             if (not isinstance(staged_path, str) or not staged_path.startswith(prefix)
                     or ".." in Path(staged_path).parts or Path(staged_path).suffix.lower() != ".webp"):
                 fail("invalid musical candidate staged path " + row["id"])
@@ -405,7 +405,7 @@ def verify_defensas_instrumentos_crosswalk(rows):
             related = entry.get("relatedStagedPaths", [])
             if not isinstance(related, list) or not related or any(
                     not isinstance(q, str)
-                    or not q.startswith("module/assets/_staging/")
+                    or not q.startswith("source-original/ci137-asset-staging/")
                     or ".." in Path(q).parts
                     or not (ROOT / q).is_file() for q in related):
                 fail("ambiguous asset evidence missing " + row["id"])
@@ -433,7 +433,7 @@ def verify_defensas_instrumentos_crosswalk(rows):
         if len(found) != 1:
             fail("approved COM record lacks unique WebP " + record["name"])
         asset = found[0]
-        source_path = ROOT / "module/assets/_staging/defensas/webp256" / Path(asset["path"]).name
+        source_path = ROOT / "source-original/ci137-asset-staging/defensas/webp256" / Path(asset["path"]).name
         if source_path.name in seen or not source_path.is_file():
             fail("approved COM WebP missing/duplicated " + str(source_path))
         seen.add(source_path.name)
@@ -482,7 +482,7 @@ def verify_pfrit_historical_manifest(rows):
         suffix = Path(rec["originalImg"][len(prefix):])
         if suffix.is_absolute() or ".." in suffix.parts or suffix.suffix != ".webp":
             fail("PF22/RIT08 unsafe asset path " + key)
-        physical = "module/assets/_staging/ci137_v02_historico/" + suffix.as_posix()
+        physical = "source-original/ci137-asset-staging/ci137_v02_historico/" + suffix.as_posix()
         sha = rec["historicalCandidateSha256_0472_0473"]
         if (rec.get("currentPhysicalStagingPath") != physical
                 or rec.get("currentPhysicalStagingSha256_0472_0473") != sha
