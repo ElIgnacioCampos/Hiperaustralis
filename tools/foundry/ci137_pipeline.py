@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CI137: prepare/verify exactly 137 historical Items without editing source or runtime.
+"""CI137: prepare/verify exactly 136 selected Items without editing source or runtime.
 
 The only authority for selection is manifests/ci137-selected-source-137-historical-ids.json.
 Outputs are temporary Foundry CLI transport. No asset replacement, UUID rewriting,
@@ -38,7 +38,7 @@ FAMILY_FOLDER = {
     "Reliquias": "Reliquias/Legendarias",  # Tokicura; parent folder also generated.
 }
 EXPECTED_FAMILY_COUNTS = {
-    "Armas": 21, "Defensas": 8, "Equipo común": 40,
+    "Armas": 20, "Defensas": 8, "Equipo común": 40,
     "Instrumentos musicales": 21,
     "Parafernalia · sanación · cultura material": 22,
     "Rituales": 8, "Reliquias cotidianas": 8,
@@ -49,7 +49,9 @@ TEMPLATE_IDS = {
     "HipRelqTpl000001", "HipRitualTpl0001",
 }
 PRESERVED_FIELDS = ("name", "type", "img", "system", "effects", "flags", "ownership")
-SHARED_KNIFE_IDS = {"c2L6T5w4S9OcgkDt", "HipArm01PackA000"}
+SHARED_KNIFE_IDS = {"c2L6T5w4S9OcgkDt"}
+EXCLUDED_PROTOTYPE_KNIFE_ID = "HipArm01PackA000"
+EXCLUDED_PROTOTYPE_KNIFE_SOURCE = "source/items/01_cuchillo_piedra.json"
 SHARED_KNIFE_MEMBER = "assets/armas/01_cuchillo_litico.webp"
 SHARED_KNIFE_URL = "modules/hiperaustralis-compendios-prototype/" + SHARED_KNIFE_MEMBER
 SHARED_KNIFE_SHA256 = "7ff631440c2a74d7ca25014ceb1c38024b14d3ebdb2f73a9bcc0be98ba7a8082"
@@ -72,14 +74,16 @@ def digest(data):
 def validate_selection():
     m = read_json(MANIFEST)
     rows = m.get("entries", [])
-    if m.get("targetCount") != 137 or len(rows) != 137:
-        fail("expected 137 selected sources")
+    if m.get("targetCount") != 136 or len(rows) != 136:
+        fail("expected 136 selected sources")
     ids = [r.get("id") for r in rows]
     paths = [r.get("source") for r in rows]
     if any(not isinstance(x, str) or not x for x in ids):
         fail("missing/invalid Item ID")
     if len(ids) != len(set(ids)) or len(paths) != len(set(paths)):
         fail("duplicate ID or source path")
+    if EXCLUDED_PROTOTYPE_KNIFE_ID in ids or SHARED_KNIFE_IDS.difference(ids):
+        fail("editorial duplicate selected or historical knife missing")
     if Counter(r.get("family") for r in rows) != EXPECTED_FAMILY_COUNTS:
         fail("unexpected family counts")
     if len(set(v[0] for v in FOLDERS.values())) != 9:
@@ -185,44 +189,38 @@ def verified_relic_remaps(output):
 
 
 def verified_shared_knife(rows, output):
-    """User-approved one WebP for two preserved Items; transport only, no source changes."""
+    """Keep the single approved WebP for the retained historical knife; source JSON intact."""
     selected = {r["id"]: r for r in rows if r["id"] in SHARED_KNIFE_IDS}
-    if set(selected) != SHARED_KNIFE_IDS:
-        fail("the two historical knife IDs are not selected")
+    if set(selected) != SHARED_KNIFE_IDS or EXCLUDED_PROTOTYPE_KNIFE_ID in {r["id"] for r in rows}:
+        fail("selected historical knife and excluded prototype duplicate mismatch")
     original = ROOT / SHARED_KNIFE_STAGE
     final = ROOT / "module" / SHARED_KNIFE_MEMBER
     if not original.is_file() or not final.is_file():
-        fail("shared knife image is missing from staged or final module asset")
+        fail("approved knife image is missing from staging or module assets")
     data = final.read_bytes()
     if original.read_bytes() != data or digest(data) != SHARED_KNIFE_SHA256:
-        fail("approved shared knife image differs from original SHA")
-    new = SHARED_KNIFE_URL
-    docs, maps = {}, {}
-    expected_originals = {
-        "c2L6T5w4S9OcgkDt": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_litico.webp",
-        "HipArm01PackA000": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_piedra.webp",
-    }
-    for item_id, row in selected.items():
-        entry = row.get("sharedKnifeImage", {})
-        source = read_json(ROOT / row["source"])
-        old = expected_originals[item_id]
-        bg = source.get("flags", {}).get("hiperaustralis-sheet", {}).get("background")
-        if (entry.get("approvedForTransport") is not True
-                or entry.get("originalPath") != old
-                or entry.get("sharedTarget") != new
-                or entry.get("sha256") != SHARED_KNIFE_SHA256
-                or entry.get("sourceAsset") != SHARED_KNIFE_STAGE
-                or source.get("_id") != item_id or source.get("img") != old or bg != old):
-            fail("unapproved shared knife mapping: " + item_id)
-        docs[item_id] = source
-        maps[item_id] = {"old": old, "new": new, "sha256": SHARED_KNIFE_SHA256}
-    if docs["c2L6T5w4S9OcgkDt"]["system"]["props"]["descripcion"] != docs["HipArm01PackA000"]["system"]["props"]["descripcion"]:
-        fail("historical knife descriptions differ; no shared-image assumption")
+        fail("approved historical knife image differs from original SHA")
+    item_id = "c2L6T5w4S9OcgkDt"
+    row = selected[item_id]
+    source = read_json(ROOT / row["source"])
+    duplicate = read_json(ROOT / EXCLUDED_PROTOTYPE_KNIFE_SOURCE)
+    old = "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_litico.webp"
+    entry = row.get("sharedKnifeImage", {})
+    bg = source.get("flags", {}).get("hiperaustralis-sheet", {}).get("background")
+    if (entry.get("approvedForTransport") is not True
+            or entry.get("originalPath") != old
+            or entry.get("sharedTarget") != SHARED_KNIFE_URL
+            or entry.get("sha256") != SHARED_KNIFE_SHA256
+            or entry.get("sourceAsset") != SHARED_KNIFE_STAGE
+            or source.get("_id") != item_id or source.get("img") != old or bg != old):
+        fail("unapproved historical knife image mapping")
+    if (duplicate.get("_id") != EXCLUDED_PROTOTYPE_KNIFE_ID
+            or source["system"]["props"]["descripcion"] != duplicate["system"]["props"]["descripcion"]):
+        fail("duplicate source identity or original editorial equivalence changed")
     dest = output / SHARED_KNIFE_MEMBER
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_bytes(data)
-    return maps
-
+    return {item_id: {"old": old, "new": SHARED_KNIFE_URL, "sha256": SHARED_KNIFE_SHA256}}
 
 def folder_doc(folder, folder_id, parent):
     return {
@@ -298,13 +296,13 @@ def prepare(output):
             "id": row["id"], "source": row["source"], "sha256": source_sha,
             "folder": folder, "template": doc["system"]["template"],
         })
-    if (original_legacy_count != 141 or len(remapped) != 32
-            or len(shared_remapped) != 4 or len(legacy) != 105
+    if (original_legacy_count != 139 or len(remapped) != 32
+            or len(shared_remapped) != 2 or len(legacy) != 105
             or len({x["path"] for x in legacy}) != 78):
         fail("unplanned count of approved remaps or unresolved legacy links")
     report = {
-        "schema": "ci137-transport-preflight-v03",
-        "status": "137_REAL_SOURCES_PREPARED__16_RELIC_ASSETS__1_SHARED_KNIFE__105_LEGACY_REFS",
+        "schema": "ci137-transport-preflight-v04",
+        "status": "136_REAL_SOURCES_PREPARED__16_RELIC_ASSETS__1_HISTORICAL_KNIFE__105_LEGACY_REFS",
         "count": len(records), "uniqueIds": len(set(r["id"] for r in records)),
         "folders": 9, "templates": 5,
         "originalLegacyReferences": original_legacy_count,
@@ -322,17 +320,17 @@ def prepare(output):
 
 def verify(prepared, unpacked):
     manifest = read_json(prepared / "ci137-preflight.json")
-    if manifest.get("count") != 137:
-        fail("prepared corpus not 137")
+    if manifest.get("count") != 136:
+        fail("prepared corpus not 136")
     if (len(manifest.get("approvedRemaps", [])) != 32
-            or len(manifest.get("sharedKnifeRemaps", [])) != 4
+            or len(manifest.get("sharedKnifeRemaps", [])) != 2
             or len(manifest.get("legacyAssetReferences", [])) != 105):
-        fail("expected 32 relic remaps, 4 knife remaps and 105 unresolved legacy references")
+        fail("expected 32 relic remaps, 2 historical knife remaps and 105 unresolved legacy references")
     knife_image = prepared / SHARED_KNIFE_MEMBER
     if (not knife_image.is_file() or digest(knife_image.read_bytes()) != SHARED_KNIFE_SHA256
             or {x["id"] for x in manifest["sharedKnifeRemaps"]} != SHARED_KNIFE_IDS
             or {x["to"] for x in manifest["sharedKnifeRemaps"]} != {SHARED_KNIFE_URL}):
-        fail("one shared knife WebP must serve both IDs and both background fields")
+        fail("the retained historical knife must have both img and background mapped to its approved WebP")
     for mapping in manifest["approvedRemaps"]:
         member = mapping["to"].split("/assets/reliquias/", 1)[-1]
         image = prepared / "assets/reliquias" / member
@@ -357,7 +355,7 @@ def verify(prepared, unpacked):
         if key in actual:
             fail("duplicate unpacked Item " + str(key))
         actual[key] = doc
-    if len(expected) != 137 or set(actual) != set(expected):
+    if len(expected) != 136 or set(actual) != set(expected):
         fail("roundtrip IDs differ: missing=" + repr(sorted(set(expected) - set(actual))) +
              " extra=" + repr(sorted(set(actual) - set(expected))))
     expected_folders = {v[0]: (k.split("/")[-1], v[1]) for k, v in FOLDERS.items()}
@@ -378,7 +376,7 @@ def verify(prepared, unpacked):
             if dst.get(field) != src.get(field):
                 fail("Item semantic field changed " + item_id + "/" + field)
     result = {
-        "status": "CI137_ROUNDTRIP_137_PASS__ASSETS_AND_RUNTIME_PENDING",
+        "status": "CI137_ROUNDTRIP_136_PASS__ASSETS_AND_RUNTIME_PENDING",
         "items": len(actual), "folders": len(folders),
         "semanticFieldsChecked": list(PRESERVED_FIELDS),
         "legacyReferenceCount": len(manifest["legacyAssetReferences"]),

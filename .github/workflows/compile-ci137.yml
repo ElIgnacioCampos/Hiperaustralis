@@ -34,7 +34,7 @@ jobs:
         run: |
           python -m py_compile tools/foundry/ci137_pipeline.py tools/foundry/assert_single_compendium.py tools/foundry/ci137_template_gate.py tools/foundry/ci137_equipo_20_transfer.py
           python tools/foundry/assert_single_compendium.py --self-test
-      - name: Prepare exactly 137 selected real sources - no asset changes
+      - name: Prepare exactly 136 selected real sources - no asset changes
         run: python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/ci137-prepared"
       - name: Static CSB template compatibility — evidence only, never runtime approval
         run: |
@@ -42,7 +42,7 @@ jobs:
             --repo . --prepared "$RUNNER_TEMP/ci137-prepared"
       - name: Install official Foundry CLI 3.0.5
         run: npm install --no-audit --no-fund --no-save --no-package-lock @foundryvtt/foundryvtt-cli@3.0.5
-      - name: Compile and unpack isolated 137 Item native pack
+      - name: Compile and unpack isolated 136 Item native pack
         shell: bash
         run: |
           set -euo pipefail
@@ -53,7 +53,7 @@ jobs:
           ./node_modules/.bin/fvtt package unpack -n ha-proto-items \
             --inputDirectory "$RUNNER_TEMP/ci137-packs" \
             --outputDirectory "$RUNNER_TEMP/ci137-unpacked" --folders
-      - name: Verify 137 identities, 9 folders and semantic fields
+      - name: Verify 136 identities, 9 folders and semantic fields
         run: |
           python tools/foundry/ci137_pipeline.py verify \
             --prepared "$RUNNER_TEMP/ci137-prepared" \
@@ -74,10 +74,10 @@ jobs:
           refs = pre["legacyAssetReferences"]
           unique_paths = {r["path"] for r in refs}
           templates = {r["template"] for r in pre["records"]}
-          assert pre["count"] == rt["items"] == 137
+          assert pre["count"] == rt["items"] == 136
           assert pre["folders"] == rt["folders"] == 9
           assert len(refs) == 105 and len(unique_paths) == 78 and len(templates) == 5
-          assert len(pre["sharedKnifeRemaps"]) == 4 and pre["sharedKnifeAssetCount"] == 1
+          assert len(pre["sharedKnifeRemaps"]) == 2 and pre["sharedKnifeAssetCount"] == 1
           assert pre["approvedAssetCount"] == 16
           assert len(pre["approvedRemaps"]) == 32
           result = {
@@ -85,7 +85,7 @@ jobs:
             "id": "hiperaustralis-compendios-prototype",
             "pack": "ha-proto-items",
             "D2": "ROUNDTRIP_PASS",
-            "itemCount": 137,
+            "itemCount": 136,
             "legacyImageRefs": len(refs),
             "legacyUniquePaths": len(unique_paths),
             "csbTemplateIdsReferenced": sorted(templates),
@@ -103,7 +103,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: ci137-real-137-preflight-and-roundtrip
+          name: ci137-real-136-preflight-and-roundtrip
           path: |
             ${{ runner.temp }}/ci137-prepared/ci137-*.json
             ${{ runner.temp }}/ci137-prepared/assets/reliquias/**

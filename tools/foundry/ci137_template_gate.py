@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CI137: read-only static check of 137 Items against the five archived CSB templates.
+"""CI137: read-only static check of 136 Items against the five archived CSB templates.
 
 The fixtures are user-exported documents, not a runtime installation. Passing
 this check NEVER certifies that Foundry loads, hydrates or saves an Item sheet.
@@ -70,7 +70,7 @@ def check(repo, prepared):
         flag = doc.get("flags", {}).get("custom-system-builder", {}).get("version")
         flag_versions[str(flag) if flag is not None else "not_declared"] += 1
 
-    if len(paths) != 137 or len(ids) != 137:
+    if len(paths) != 136 or len(ids) != 136:
         problems.append({"problem": "wrong_corpus_count", "files": len(paths), "ids": len(ids)})
     if set(assigned) != set(fixtures):
         problems.append({"problem": "not_all_five_templates_used", "actual": sorted(assigned)})

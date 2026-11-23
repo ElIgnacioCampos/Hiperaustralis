@@ -1,7 +1,7 @@
 {
-  "schema": "hipera-ci137-selected-historic-identities-v05",
-  "status": "CI137_137_ROUNDTRIP_PASS__16_RELICS_REMAPPED__79_ARCHIVED_CANDIDATES_MATCHED__ONE_UNLOCATED_ART",
-  "targetCount": 137,
+  "schema": "hipera-ci137-selected-historic-identities-v06",
+  "status": "CI137_SELECTED_136__D2_ROUNDTRIP_PENDING__D3_RELEASE_BLOCKED",
+  "targetCount": 136,
   "entries": [
     {
       "id": "pe9Bb6kzCsr5IUx1",
@@ -1274,27 +1274,6 @@
       "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.sRDyvzOfCVjdHJ0D"
     },
     {
-      "id": "HipArm01PackA000",
-      "family": "Armas",
-      "source": "source/items/01_cuchillo_piedra.json",
-      "blockedAsset": "01_cuchillo_piedra.webp",
-      "archivedImage": {
-        "originalPath": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_piedra.webp",
-        "status": "MISSING_EXACT_HISTORICAL_BINARY_DO_NOT_SUBSTITUTE",
-        "finalArtApprovedForCI137": false
-      },
-      "sharedKnifeImage": {
-        "approval": "USER_APPROVED_ONE_SHARED_ILLUSTRATION_BOTH_ITEMS",
-        "scope": "TRANSPORT_ONLY__PRESERVE_BOTH_ITEM_IDS_AND_SOURCE_JSON",
-        "originalPath": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_piedra.webp",
-        "sharedTarget": "modules/hiperaustralis-compendios-prototype/assets/armas/01_cuchillo_litico.webp",
-        "sha256": "7ff631440c2a74d7ca25014ceb1c38024b14d3ebdb2f73a9bcc0be98ba7a8082",
-        "sourceAsset": "module/assets/_staging/ci137_v02_historico/armas/01_cuchillo_litico.webp",
-        "approvedForTransport": true,
-        "runtimeQA": "NOT_EXECUTED"
-      }
-    },
-    {
       "id": "TokicuraRel0001",
       "family": "Reliquias",
       "source": "source/items/reliquias/tokicura.json"
@@ -1308,19 +1287,18 @@
     "doNotPublish": true,
     "gates": [
       "art_approved_ARM11_12_13",
-      "distinct_cuchillo_piedra_image",
       "binary_provenance_and_final_visuals",
       "five_CSB_templates",
       "Foundry_CLI_and_runtime_QA"
     ],
     "lockedHistoricalIds": true,
-    "actualBuildGate": "PASS_137_ITEMS_NINE_FOLDERS_FIVE_TEMPLATES_2026-11-22",
+    "actualBuildGate": "PENDING_D2_136_GITHUB_ACTIONS",
     "noAssetRegeneration": true,
     "reuseExistingAssetsBeforeRecovery": true,
     "sourcePromotionRequiresExactIdentityAndApprovedAssetMap": true,
-    "nextGate": "MAP_ONLY_APPROVED_IMAGES_THEN_REBUILD_AND_FOUNDRY_QA"
+    "nextGate": "VALIDATE_136_WITH_EXISTING_PIPELINE_THEN_RESUME_APPROVED_ASSET_MAPPING"
   },
-  "auditSnapshot": {
+  "auditSnapshotBeforeDeduplication": {
     "date": "2026-11-22",
     "source": "GitHub live branch/tree, GHA workflow, existing historical checkpoints and native QA29 v10",
     "auditedBranchHead": "63fd9989870cc17f16808dd2e6b28211d7432c10",
@@ -1569,5 +1547,30 @@
         "noneAutomaticallyAssigned": true
       }
     }
+  },
+  "currentSelection": {
+    "date": "2026-11-22",
+    "scope": "D2 existing CI137 work branch and workflow; no runtime deployment",
+    "count": 136,
+    "uniqueIds": 136,
+    "historicalWorldItems": 135,
+    "prototypeExtras": 1,
+    "armas": 20,
+    "folders": 9,
+    "templates": 5,
+    "excludedPrototypeItem": {
+      "id": "HipArm01PackA000",
+      "reason": "EDITORIAL_DUPLICATE_OF_HISTORICAL_CUCHILLO_LITICO",
+      "sourcePreserved": "source/items/01_cuchillo_piedra.json",
+      "replacementHistoricalId": "c2L6T5w4S9OcgkDt",
+      "deletedFromWorld": false
+    },
+    "assets": {
+      "reusedSharedKnifeWebP": "module/assets/armas/01_cuchillo_litico.webp",
+      "sharedKnifeRemapsExpected": 2,
+      "approvedRelicRemapsExpected": 32,
+      "unresolvedLegacyReferencesExpected": 105
+    },
+    "d3": "BLOCKED"
   }
 }

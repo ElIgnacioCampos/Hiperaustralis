@@ -1,7 +1,15 @@
 # HIPERAUSTRALIS · CI137 / CHECKPOINT ÚNICO ACTUAL
 **Corte:** 22-11-2026 (Chile) · **Rama:** `work/ci137-ensayo-identidad-historica-20261121`
-**Estado:** D2 / 137 Items **PASS** · **TRANSFERENCIA REAL 115/115 WEBP A GITHUB PASS** (79 staging históricos, 20 Equipo aprobado, 16 Reliquias aprobadas) · D3 / Foundry **NO ACREDITADO, incidente previo sin diagnóstico** · PUBLICACIÓN **BLOQUEADA**.
-**Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 137 identidades; este checkpoint para implementación técnica. Sin cambios al Maestro.
+**Estado ACTUAL (22-11-2026, D2):** selección **136 Items / 20 Armas**; **GitHub Actions para 136 PENDIENTE**. Último PASS técnico anterior: 137/137. Transferencia **115/115 WebP PASS**. D3/Foundry **NO ACREDITADO**; publicación **BLOQUEADA**.
+**Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
+
+## CORTE VIGENTE — D2 / CORRECCIÓN EDITORIAL A 136, VALIDACIÓN PENDIENTE
+
+**Autorización recibida:** ejecutar la corrección mínima dentro de la misma rama, pipeline, workflow, manifiesto y checkpoint CI137. Se excluye **solo del transporte** `HipArm01PackA000` (Cuchillo de piedra), redundante con `c2L6T5w4S9OcgkDt` (Cuchillo lítico). Fuente `source/items/01_cuchillo_piedra.json` conservada intacta como archivo histórico del prototipo. Tokicura y los 135 Items históricos permanecen seleccionados. Resultado propuesto: **136 Items, 20 Armas, nueve carpetas, cinco plantillas**.
+
+**Asset:** el único WebP aprobado `module/assets/armas/01_cuchillo_litico.webp` permanece con su SHA verificado; solo dos referencias `img`/fondo del Cuchillo lítico requieren el remapeo. Los 105 enlaces heredados no resueltos se mantienen. Los 115 WebP ya transferidos no se reimportan ni sustituyen. No hay gráficos nuevos.
+
+**Puertas:** solo D2 mediante workflow existente. Scripts legados de instalador y macro QA D3 quedan congelados, contienen expectativas antiguas de 137 y **no están habilitados para uso con 136** hasta revisar el incidente de carga en Foundry. No generar instalador, no modificar `main`, Forge, Bridge, mundo, plantilla CSB ni Estado Maestro. Las secciones inferiores documentan el corte histórico 137, no la selección actual.
 
 ## AUDITORÍA EDITORIAL — DUPLICACIÓN CONFIRMADA, CORRECCIÓN PROPUESTA (22-11-2026)
 
