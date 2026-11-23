@@ -44,7 +44,23 @@
 
 **Transferencia de 20 WebP de Equipo común:** también se comprobó vía API GitHub si los 20 hashes Git-blob de los binarios aprobados ya existían en el almacén de objetos del repositorio; **20/20 no encontrados**. No es posible reutilizarlos por SHA con `create_tree`; sigue siendo necesaria una vía de subida binaria autorizada. No se simuló transferencia ni se escribió ningún blob sustitutivo.
 
-## 5. Otros pendientes legítimos, sin reabrir inventarios
+## 5. Rescate material del staging CI137 v02 — 96 WebP (22-11-2026)
+
+**Hallazgo decisivo:** aunque el ZIP autosuficiente `CORE_FOUNDRY_CI137_STAGING_INTEGRADO_v02.zip` no se encontró directamente, **los cuatro insumos originales y el ensamblador v02 persistían en BBTECA**. En lugar de regenerar imágenes se recuperaron físicamente:
+1. `CORE_FOUNDRY_MIGRACION_STAGING_99_20261118_v01.zip` — SHA256 `5ad6d6fd16981cf08d25b5ee93f16f3b6c071d9bb2844e844aa003a9534588db`;
+2. `CORE_FOUNDRY_PREFLIGHT_CI137_20261118_v01.zip` — SHA256 `0240f2ade0c9a0159f5dc037e4a0e9bf5e54d067c321a2e112eae85037415321`;
+3. `CORE_FOUNDRY_ARMAS20_IDENTIDAD_RELIQUIAS16_20261118_v01.zip` — SHA256 `12dfd717c804ea91b7f2fff71f22b379c634ff2f223e0380eafb4b02239e77b9`;
+4. `CI137_DEPENDENCY_BASE_NATIVE_PROTOTYPE_RUN44961385066.zip` — SHA256 `416572117ab167c22a3c8328e254404b6f7b834818b951a02dc5211151ac1898`, contiene el prototipo 0.1.5 interno con SHA256 `c3125b7fe1ec4022a2d7e6c8802f723ac27a480541cef41a0136289de201ec93` (idéntico al respaldo ya acreditado).
+
+**Ejecución local efectiva del código histórico**, sin modificaciones en los insumos: `assemble_ci137_v02.py`, `prepare_sources.py`, `verify_staging_v02.py`. Resultado exacto: `PASS_OFFLINE_V02` — **137 Items, nueve carpetas, 96 WebP, 141/143 enlaces internos resueltos y 2 referencias faltantes**, ambas al `01_cuchillo_piedra.webp` independiente. Los 96 assets son **20 Armas históricas + 59 del staging99 + 17 Reliquias CI112**; se verificaron por SHA/CRC. Manifest recuperado `MANIFEST_ASSETS96.json`: SHA256 `7379f48be2aa8665bad0d644f4252774e162fff1fc76a1af452ec91b471f66a0`. **No se cotejó el ZIP completo recuperado contra el ZIP v02 original ausente, por lo que no afirmar identidad byte a byte del ZIP entero.**
+
+**Cruce con el corpus VIGENTE de identidades CI137:** la selección actual de 137 IDs comparte **121** con el staging v02; sus **16 IDs distintos** son las Reliquias CI112 del staging histórico, reemplazadas luego por **16 IDs históricos** ya aprobados. **NO importar ni instalar la selección antigua del staging v02 sobre los 137 actuales.** El rescate es para sus **96 bytes gráficos, 20 copias fuente de Armas previamente remapeadas, rutas y evidencia de hashes**; el actual corpus histórico sigue siendo la autoridad.
+
+**Prueba nueva de correspondencia:** de las **109 referencias heredadas** en el preflight VIGENTE (`ci137-preflight.json` con 16 reliquias ya remapeadas), **107** apuntan exactamente a **79 de los WebP recuperados** en v02, por sufijo de ruta sin selección por parecido; las otras **2** son el Cuchillo de piedra. Distribución de las 107: **40** referencias a 20 WebP de Armas, **67** a 59 WebP de otras familias. Esto prueba que el antiguo trabajo material sí cubre los archivos necesarios para eliminar 107 enlaces externos cuando se integre por rutas y hashes. **No implica promoción editorial de ARM-11–13 (arte final posterior) ni integración efectiva en GitHub/Foundry**.
+
+**Estado D3 y publicación:** siguen BLOQUEADOS. No se generó ZIP instalable, no se subieron binarios a GitHub, no se tocó mundo ni módulo. Mantener las 16 Reliquias de identidad histórica, no resucitar la variante CI112. Próximo trabajo: integrar **assets verificados**, no el corpus obsoleto del staging v02, mediante transferencia binaria auténtica; cotejar versiones finales de Armas, resolver Cuchillo y ejecutar QA cliente real.
+
+## 6. Otros pendientes legítimos, sin reabrir inventarios
 
 - **Historias del staging v02:** antecedente offline de 137 Items/9 carpetas/96 WebP/141 de 143 referencias; **ZIP completo no localizable en este corte**. No volver a buscar por nombre ni reproducirlo con imágenes antiguas; permanecer como evidencia histórica.
 - **Gráfica Armas/otras familias:** 79/80 candidatos antiguos localizados en 0.4.72–0.4.73, no aprobados automáticamente como finales. Cuchillo de piedra `HipArm01PackA000` tiene icono propio no acreditado. ARM-11–13 requieren priorizar arte posterior 256px. Los 20 gráficos de Equipo común son un frente distinto y no restan de las **109 referencias heredadas**.
@@ -52,16 +68,16 @@
 - **D3:** prueba del cliente V14+CSB, carga de mundo, renderizado de fichas, fondos, carpetas, UUID y persistencia. **No aprobado**. D4 solo tras autorización del usuario.
 - **Bridge, Actors, Journals, Territorios, Fauna, `main`, Forge productivo y Estado Maestro:** fuera de esta operación, intactos.
 
-## 6. Método operativo
+## 7. Método operativo
 
 1. Reutilizar **el manifiesto de identidades único** y el registro de QA29 existente. No crear otro compendio, otra matriz ni otro inventario.
 2. **Fuente → bytes/ID/hash → decisión editorial → cambio en transporte → prueba en cliente.** Una prueba offline nunca sustituye D3.
 3. Un lote debe entregar un cambio material verificable y registrar su límite. No producir instaladores ni activar releases mientras el gate esté BLOQUEADO.
 4. No pedir de nuevo los ZIP que ya están en BBTECA. Para cambios gráficos usar únicamente los bytes ya aprobados y sus respaldos persistentes.
 
-## 7. Decisiones / Pendientes / Fuentes / Maestro
+## 8. Decisiones / Pendientes / Fuentes / Maestro
 
 **Decisiones:** mantener un único HA Prototipo y sus tres packs; congelar el instalador fallido; los 20 WebP de Equipo común son recuperados/validados en Biblioteca, sin promoción runtime.
-**Pendientes:** transferencia autenticada de los 20 binarios exactos al repositorio (transferidor preparado, no aplicado); QA29 cliente; cerrar imágenes históricas restantes; verificar disponibilidad efectiva e hidratación de cinco plantillas CSB en cliente; diagnosticar carga de Foundry; pasar D3 antes de nueva distribución.
+**Pendientes:** transferir sólo los bytes aprobados del staging v02 recuperado (sin sustituir las 16 Reliquias históricas, ni versiones posteriores ARM-11–13); transferencia auténtica de los 20 WebP de Equipo común; icono Cuchillo de piedra; QA29 cliente y 5 plantillas CSB en runtime; diagnosticar carga de Foundry; D3 antes de distribución.
 **Fuentes:** [compilación y gate D2](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45090601010); `docs/CI137_RECTIFICACION_CONTINUIDAD_ASSETS_2026-11-21.md`; `docs/CORE_EQUIPO_COMUN_QA29_OVERLAY_AISLADO_PREPARADO_20261121_v10.md`; los dos ZIP de BBTECA especificados arriba; `manifests/equipo-comun-29-cruces-candidatos-20261121.json`.
 **Cambios al Estado Maestro:** ninguno. `main`, Bridge y Forge sin cambios.
