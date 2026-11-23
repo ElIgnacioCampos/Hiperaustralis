@@ -75,11 +75,13 @@
   "githubAssets": "28 WebP de instrumentos archivados en source-original/ci137-asset-staging/instrumentos-erh/webp_256; seis blobs exactos ERH integrados en module/assets/instrumentos para CI137 aislado",
   "stateMasterChanges": "none",
   "ci137SixInstruments": {
-    "status": "PENDING_D2_CI",
+    "status": "PASS_D2_CI137_ISOLATED",
     "approvedArtCount": 6,
     "approvedItemRemaps": 6,
     "historicalSourceJSONEdited": false,
     "clientFoundryQA": "NOT_EXECUTED",
-    "assetHashProofRun": 45248811731
+    "assetHashProofRun": 45248811731,
+    "workflowRun": 45249674230,
+    "verifiedCommit": "39257fc3ba071b40aeb34c611e36dab74fd7f369"
   }
 }

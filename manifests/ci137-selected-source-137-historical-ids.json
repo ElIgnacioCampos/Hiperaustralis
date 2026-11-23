@@ -2008,16 +2008,16 @@
     "d3": "BLOCKED",
     "D2": {
       "status": "PASS",
-      "workflowRunId": 45099157074,
-      "headSha": "031723a7b630b5c770aeb4457747794dc949cb6a",
-      "url": "https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45099157074",
+      "workflowRunId": 45249674230,
+      "headSha": "39257fc3ba071b40aeb34c611e36dab74fd7f369",
+      "url": "https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45249674230",
       "sourceItems": 136,
       "uniqueIds": 136,
       "folders": 9,
       "csbTemplates": 5,
       "approvedRelicRemaps": 32,
       "historicalKnifeRemaps": 2,
-      "unresolvedLegacyImageReferences": 105,
+      "unresolvedLegacyImageReferences": 99,
       "foundryClientQA": "NOT_EXECUTED",
       "release": "BLOCKED",
       "nameOverrideValidation": {
@@ -2029,7 +2029,7 @@
         "runtimeQA": "NOT_EXECUTED"
       },
       "editorialCrosswalk": {
-        "status": "PENDING_CI_SIX_APPROVED_ERH_SEED_RECONCILED",
+        "status": "PASS_CI137_6_SEED_APPROVED_11_NAMED_CANDIDATES",
         "familyScope": [
           "Defensas",
           "Instrumentos musicales"
@@ -2041,14 +2041,14 @@
         "approvedDefensaWebpSha256Checks": 8,
         "approvedItemRemaps": 6,
         "notes": "Six prior ERH 256 visual approvals linked by seedId to historical Item sources, 11 further named candidates without authorization; 8 ambiguous, 4 no matching artwork.",
-        "workflowRun": 45239742686,
-        "verifiedCommit": "a1ae2262593dcd79641bad37186d6a040c2b5a50",
+        "workflowRun": 45249674230,
+        "verifiedCommit": "39257fc3ba071b40aeb34c611e36dab74fd7f369",
         "workflowUrl": "https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45239742686",
         "candidateOnlyCount": 11,
         "exactSeedApprovedIsolated": 6
       },
       "approvedERH6Isolated": {
-        "status": "PENDING_CI",
+        "status": "PASS_CI137_D2_ISOLATED",
         "itemCount": 6,
         "sourceVisualApprovals": "2026-11-09",
         "assetSHA256Run": 45248811731,
@@ -2056,7 +2056,10 @@
         "remainingLegacyImageReferences": 99,
         "sourceJSONMutations": 0,
         "foundryClientQA": "NOT_EXECUTED",
-        "release": "BLOCKED"
+        "release": "BLOCKED",
+        "workflowRun": 45249674230,
+        "workflowUrl": "https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45249674230",
+        "verifiedCommit": "39257fc3ba071b40aeb34c611e36dab74fd7f369"
       }
     },
     "finalNameResolution": {
