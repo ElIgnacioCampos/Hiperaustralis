@@ -7,8 +7,8 @@
 - Fuente de identidades y decisiones: `manifests/ci137-selected-source-137-historical-ids.json`. Las fuentes originales JSON se conservan intactas.
 
 ## Rutas ordenadas
-- `module/assets/`: **38 WebP** (20 Equipo común aprobado pendiente de enlace/QA; 16 Reliquias; Tokicura; Cuchillo de piedra). **Sin candidatos históricos.**
-- `source-original/ci137-asset-staging/`: **148 WebP** archivados con sus blobs Git intactos: 79 CI137 históricos, 29 Equipo, 8 Defensas COM, 28 Instrumentos ERH y 4 Turianos. No son assets runtime ni aprobaciones de remapeo.
+- `module/assets/`: **44 WebP** (20 Equipo común aprobado pendiente de enlace/QA; 16 Reliquias; Tokicura; Cuchillo de piedra; **6 Instrumentos ERH visualmente aprobados y ligados por seedId/SHA a la prueba CI137**). **Sin candidatos históricos.**
+- `source-original/ci137-asset-staging/`: **148 WebP** preservados sin modificación: 79 CI137 históricos, 29 Equipo, 8 Defensas COM, 28 Instrumentos ERH y 4 Turianos. Seis ERH tienen copia idéntica en el módulo para transporte aislado; el resto sigue sin autorización de remapeo.
 - `source-original/ci137-asset-staging/TRANSFER_MANIFEST_LEGACY_CI104.json`: manifiesto histórico original de importación; sus rutas son anteriores al traslado.
 - `source-original/HIPERAUSTRALIS_RELIQUIAS_ASSETS_16_WEBP_v01.zip`: fuente aprobada de Reliquias necesaria para las pruebas.
 - `source/`, `source-pending/`, `manifests/`: fuentes y evidencias. `tools/foundry/ci137_pipeline.py` + `.github/workflows/compile-ci137.yml`: única compilación aislada CI137, sin instalador.

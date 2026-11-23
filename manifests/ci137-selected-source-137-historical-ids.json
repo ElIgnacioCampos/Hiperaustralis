@@ -588,15 +588,31 @@
       },
       "editorialCrosswalk": {
         "sourceName": null,
-        "visualIdentityVerified": false,
-        "approvedForTransport": false,
-        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "visualIdentityVerified": true,
+        "approvedForTransport": true,
+        "scope": "D2_APPROVED_VISUAL_SOURCE_ISOLATED_TRANSPORT_NO_DEPLOY",
         "reviewedDate": "2026-11-23",
-        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "status": "APPROVED_ERH_SEED_RECONCILED_ISOLATED",
         "candidateStagedPath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/kaskawilla_erh_256.webp",
         "expectedGitBlobSha1": "4b10cc8f1614c6cf69acc048d5d38e6e4c8e28a8",
         "expectedBytes": 42256,
-        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
+        "evidence": "Prior approved ERH asset, exact Item source seedId and Git binary SHA256 validated in CI run #45248811731",
+        "historicalSeedId": "inst-14-kaskawilla",
+        "priorApprovalScope": "2026-11-09_ERH_VISUAL_WEBP256_AND_UPDATE_EXISTING_ITEMS_WITHOUT_DEPLOY",
+        "sha256": "99d04f3c8d65226cfb8e10a1bbdb168e37bd1e41ed4cd3d78e00aec5668377e6"
+      },
+      "approvedAssetTransport": {
+        "status": "FINAL_ART_APPROVED_FOR_CI137",
+        "visualIdentityApproved": true,
+        "approvedForTransport": true,
+        "approvalReference": "ERH_2026-11-09_6_WebP256_visually_approved_and_existing_Items_update_without_install; seedId=inst-14-kaskawilla; crosscheck=docs/AUDITORIA_INSTRUMENTOS_ERH_2026-11-13.md",
+        "originalImg": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/14_kaskawilla.webp",
+        "sourcePath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/kaskawilla_erh_256.webp",
+        "targetMember": "assets/instrumentos/kaskawilla_erh_256.webp",
+        "sha256": "99d04f3c8d65226cfb8e10a1bbdb168e37bd1e41ed4cd3d78e00aec5668377e6",
+        "updateBackground": false,
+        "historicalSeedId": "inst-14-kaskawilla",
+        "isolatedD2Only": true
       }
     },
     {
@@ -612,15 +628,31 @@
       },
       "editorialCrosswalk": {
         "sourceName": null,
-        "visualIdentityVerified": false,
-        "approvedForTransport": false,
-        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "visualIdentityVerified": true,
+        "approvedForTransport": true,
+        "scope": "D2_APPROVED_VISUAL_SOURCE_ISOLATED_TRANSPORT_NO_DEPLOY",
         "reviewedDate": "2026-11-23",
-        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "status": "APPROVED_ERH_SEED_RECONCILED_ISOLATED",
         "candidateStagedPath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/kultrung_erh_256.webp",
         "expectedGitBlobSha1": "288dcb3bc1879ac0b043117357979fcb2aa2f2ce",
         "expectedBytes": 65290,
-        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
+        "evidence": "Prior approved ERH asset, exact Item source seedId and Git binary SHA256 validated in CI run #45248811731",
+        "historicalSeedId": "inst-01-kultrung",
+        "priorApprovalScope": "2026-11-09_ERH_VISUAL_WEBP256_AND_UPDATE_EXISTING_ITEMS_WITHOUT_DEPLOY",
+        "sha256": "f6871ff1e0f968dbf7e745461364dccd68ed79f3dd92063026bdee65bf470be2"
+      },
+      "approvedAssetTransport": {
+        "status": "FINAL_ART_APPROVED_FOR_CI137",
+        "visualIdentityApproved": true,
+        "approvedForTransport": true,
+        "approvalReference": "ERH_2026-11-09_6_WebP256_visually_approved_and_existing_Items_update_without_install; seedId=inst-01-kultrung; crosscheck=docs/AUDITORIA_INSTRUMENTOS_ERH_2026-11-13.md",
+        "originalImg": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/01_kultrung.webp",
+        "sourcePath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/kultrung_erh_256.webp",
+        "targetMember": "assets/instrumentos/kultrung_erh_256.webp",
+        "sha256": "f6871ff1e0f968dbf7e745461364dccd68ed79f3dd92063026bdee65bf470be2",
+        "updateBackground": false,
+        "historicalSeedId": "inst-01-kultrung",
+        "isolatedD2Only": true
       }
     },
     {
@@ -660,15 +692,31 @@
       },
       "editorialCrosswalk": {
         "sourceName": null,
-        "visualIdentityVerified": false,
-        "approvedForTransport": false,
-        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "visualIdentityVerified": true,
+        "approvedForTransport": true,
+        "scope": "D2_APPROVED_VISUAL_SOURCE_ISOLATED_TRANSPORT_NO_DEPLOY",
         "reviewedDate": "2026-11-23",
-        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "status": "APPROVED_ERH_SEED_RECONCILED_ISOLATED",
         "candidateStagedPath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/pifullka_erh_256.webp",
         "expectedGitBlobSha1": "a3ed316998b2b23f1cc5731858dcf2698f5d7864",
         "expectedBytes": 37872,
-        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
+        "evidence": "Prior approved ERH asset, exact Item source seedId and Git binary SHA256 validated in CI run #45248811731",
+        "historicalSeedId": "inst-02-pifullka",
+        "priorApprovalScope": "2026-11-09_ERH_VISUAL_WEBP256_AND_UPDATE_EXISTING_ITEMS_WITHOUT_DEPLOY",
+        "sha256": "c4e1aeec786511dff44f84e9a8f80897e84ee43fbf991c12970fd59d6afa748d"
+      },
+      "approvedAssetTransport": {
+        "status": "FINAL_ART_APPROVED_FOR_CI137",
+        "visualIdentityApproved": true,
+        "approvedForTransport": true,
+        "approvalReference": "ERH_2026-11-09_6_WebP256_visually_approved_and_existing_Items_update_without_install; seedId=inst-02-pifullka; crosscheck=docs/AUDITORIA_INSTRUMENTOS_ERH_2026-11-13.md",
+        "originalImg": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/02_pifullka.webp",
+        "sourcePath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/pifullka_erh_256.webp",
+        "targetMember": "assets/instrumentos/pifullka_erh_256.webp",
+        "sha256": "c4e1aeec786511dff44f84e9a8f80897e84ee43fbf991c12970fd59d6afa748d",
+        "updateBackground": false,
+        "historicalSeedId": "inst-02-pifullka",
+        "isolatedD2Only": true
       }
     },
     {
@@ -684,15 +732,31 @@
       },
       "editorialCrosswalk": {
         "sourceName": null,
-        "visualIdentityVerified": false,
-        "approvedForTransport": false,
-        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "visualIdentityVerified": true,
+        "approvedForTransport": true,
+        "scope": "D2_APPROVED_VISUAL_SOURCE_ISOLATED_TRANSPORT_NO_DEPLOY",
         "reviewedDate": "2026-11-23",
-        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "status": "APPROVED_ERH_SEED_RECONCILED_ISOLATED",
         "candidateStagedPath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/piloilo_erh_256.webp",
         "expectedGitBlobSha1": "0e6e20287f0d4c377faa38e3574698dd465b2066",
         "expectedBytes": 49928,
-        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
+        "evidence": "Prior approved ERH asset, exact Item source seedId and Git binary SHA256 validated in CI run #45248811731",
+        "historicalSeedId": "inst-13-piloilo",
+        "priorApprovalScope": "2026-11-09_ERH_VISUAL_WEBP256_AND_UPDATE_EXISTING_ITEMS_WITHOUT_DEPLOY",
+        "sha256": "44fe741c96bbcdc185fe45b225dbf4aa13764d2abc039539eb8ad207cef81fe4"
+      },
+      "approvedAssetTransport": {
+        "status": "FINAL_ART_APPROVED_FOR_CI137",
+        "visualIdentityApproved": true,
+        "approvedForTransport": true,
+        "approvalReference": "ERH_2026-11-09_6_WebP256_visually_approved_and_existing_Items_update_without_install; seedId=inst-13-piloilo; crosscheck=docs/AUDITORIA_INSTRUMENTOS_ERH_2026-11-13.md",
+        "originalImg": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/13_piloilo.webp",
+        "sourcePath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/piloilo_erh_256.webp",
+        "targetMember": "assets/instrumentos/piloilo_erh_256.webp",
+        "sha256": "44fe741c96bbcdc185fe45b225dbf4aa13764d2abc039539eb8ad207cef81fe4",
+        "updateBackground": false,
+        "historicalSeedId": "inst-13-piloilo",
+        "isolatedD2Only": true
       }
     },
     {
@@ -708,15 +772,31 @@
       },
       "editorialCrosswalk": {
         "sourceName": null,
-        "visualIdentityVerified": false,
-        "approvedForTransport": false,
-        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "visualIdentityVerified": true,
+        "approvedForTransport": true,
+        "scope": "D2_APPROVED_VISUAL_SOURCE_ISOLATED_TRANSPORT_NO_DEPLOY",
         "reviewedDate": "2026-11-23",
-        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "status": "APPROVED_ERH_SEED_RECONCILED_ISOLATED",
         "candidateStagedPath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/pututu_erh_256.webp",
         "expectedGitBlobSha1": "410c90ce59ad712e30a30581093280856451177e",
         "expectedBytes": 46472,
-        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
+        "evidence": "Prior approved ERH asset, exact Item source seedId and Git binary SHA256 validated in CI run #45248811731",
+        "historicalSeedId": "inst-16-pututu",
+        "priorApprovalScope": "2026-11-09_ERH_VISUAL_WEBP256_AND_UPDATE_EXISTING_ITEMS_WITHOUT_DEPLOY",
+        "sha256": "c85f79ac0e51f2194be355b76b6bc679ffb9163c3e2db116d7ef559aed333e77"
+      },
+      "approvedAssetTransport": {
+        "status": "FINAL_ART_APPROVED_FOR_CI137",
+        "visualIdentityApproved": true,
+        "approvedForTransport": true,
+        "approvalReference": "ERH_2026-11-09_6_WebP256_visually_approved_and_existing_Items_update_without_install; seedId=inst-16-pututu; crosscheck=docs/AUDITORIA_INSTRUMENTOS_ERH_2026-11-13.md",
+        "originalImg": "modules/hiperaustralis-rituales/assets/instrumentos/andino/16_pututu.webp",
+        "sourcePath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/pututu_erh_256.webp",
+        "targetMember": "assets/instrumentos/pututu_erh_256.webp",
+        "sha256": "c85f79ac0e51f2194be355b76b6bc679ffb9163c3e2db116d7ef559aed333e77",
+        "updateBackground": false,
+        "historicalSeedId": "inst-16-pututu",
+        "isolatedD2Only": true
       }
     },
     {
@@ -876,15 +956,31 @@
       },
       "editorialCrosswalk": {
         "sourceName": null,
-        "visualIdentityVerified": false,
-        "approvedForTransport": false,
-        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "visualIdentityVerified": true,
+        "approvedForTransport": true,
+        "scope": "D2_APPROVED_VISUAL_SOURCE_ISOLATED_TRANSPORT_NO_DEPLOY",
         "reviewedDate": "2026-11-23",
-        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "status": "APPROVED_ERH_SEED_RECONCILED_ISOLATED",
         "candidateStagedPath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/waza_erh_256.webp",
         "expectedGitBlobSha1": "9f558e2a66f873a43e02f708fda9293e4b3f5f65",
         "expectedBytes": 20832,
-        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
+        "evidence": "Prior approved ERH asset, exact Item source seedId and Git binary SHA256 validated in CI run #45248811731",
+        "historicalSeedId": "inst-03-waza",
+        "priorApprovalScope": "2026-11-09_ERH_VISUAL_WEBP256_AND_UPDATE_EXISTING_ITEMS_WITHOUT_DEPLOY",
+        "sha256": "42516d8a32aa293a146639ac844a515d1b6aa751362e6dcba858d3a7109e42d5"
+      },
+      "approvedAssetTransport": {
+        "status": "FINAL_ART_APPROVED_FOR_CI137",
+        "visualIdentityApproved": true,
+        "approvedForTransport": true,
+        "approvalReference": "ERH_2026-11-09_6_WebP256_visually_approved_and_existing_Items_update_without_install; seedId=inst-03-waza; crosscheck=docs/AUDITORIA_INSTRUMENTOS_ERH_2026-11-13.md",
+        "originalImg": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/03_waza.webp",
+        "sourcePath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/waza_erh_256.webp",
+        "targetMember": "assets/instrumentos/waza_erh_256.webp",
+        "sha256": "42516d8a32aa293a146639ac844a515d1b6aa751362e6dcba858d3a7109e42d5",
+        "updateBackground": false,
+        "historicalSeedId": "inst-03-waza",
+        "isolatedD2Only": true
       }
     },
     {
@@ -1933,7 +2029,7 @@
         "runtimeQA": "NOT_EXECUTED"
       },
       "editorialCrosswalk": {
-        "status": "PASS_29_ITEMS_17_NAMED_CANDIDATES_8_COM_SHA256_NO_PROMOTION",
+        "status": "PENDING_CI_SIX_APPROVED_ERH_SEED_RECONCILED",
         "familyScope": [
           "Defensas",
           "Instrumentos musicales"
@@ -1943,11 +2039,24 @@
         "ambiguous": 8,
         "noIdenticalArtCandidate": 4,
         "approvedDefensaWebpSha256Checks": 8,
-        "approvedItemRemaps": 0,
-        "notes": "One-to-one asset name candidate is not approved visual identity; three distinct Pica helmets share one COM-07 suggestion; Antara Lickanantay and Tiwanaku paths must differ.",
+        "approvedItemRemaps": 6,
+        "notes": "Six prior ERH 256 visual approvals linked by seedId to historical Item sources, 11 further named candidates without authorization; 8 ambiguous, 4 no matching artwork.",
         "workflowRun": 45239742686,
         "verifiedCommit": "a1ae2262593dcd79641bad37186d6a040c2b5a50",
-        "workflowUrl": "https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45239742686"
+        "workflowUrl": "https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45239742686",
+        "candidateOnlyCount": 11,
+        "exactSeedApprovedIsolated": 6
+      },
+      "approvedERH6Isolated": {
+        "status": "PENDING_CI",
+        "itemCount": 6,
+        "sourceVisualApprovals": "2026-11-09",
+        "assetSHA256Run": 45248811731,
+        "additionalImageRemaps": 6,
+        "remainingLegacyImageReferences": 99,
+        "sourceJSONMutations": 0,
+        "foundryClientQA": "NOT_EXECUTED",
+        "release": "BLOCKED"
       }
     },
     "finalNameResolution": {

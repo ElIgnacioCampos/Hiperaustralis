@@ -49,8 +49,15 @@ jobs:
           ci = importlib.util.module_from_spec(spec)
           spec.loader.exec_module(ci)
           entries = json.loads(Path("manifests/ci137-selected-source-137-historical-ids.json").read_text(encoding="utf-8"))["entries"]
-          assert not any(r.get("approvedAssetTransport") for r in entries)
-          assert ci.verified_additional_approved_asset_remaps(entries, Path(".")) == {}
+          already_approved = [r for r in entries if r.get("approvedAssetTransport")]
+          assert len(already_approved) == 6
+          with tempfile.TemporaryDirectory() as isolated:
+              verified = ci.verified_additional_approved_asset_remaps(entries, Path(isolated))
+              assert set(verified) == {r["id"] for r in already_approved}
+              for item in already_approved:
+                  image = Path(isolated) / item["approvedAssetTransport"]["targetMember"]
+                  assert image.is_file()
+                  assert hashlib.sha256(image.read_bytes()).hexdigest() == item["approvedAssetTransport"]["sha256"]
           row = copy.deepcopy(next(r for r in entries if r["id"] == "1dhUgcpr5U3wAQ1l"))
           original = json.loads(Path(row["source"]).read_text(encoding="utf-8"))
           input_path = "source-original/ci137-asset-staging/instrumentos-erh/webp_256/kakel_kultrung_ERH_256.webp"
@@ -115,6 +122,13 @@ jobs:
               report.append({"id":id,"seedId":seed,"path":p,"gitBlob":blob,
                              "sha256":hashlib.sha256(raw).hexdigest(),"bytes":len(raw)})
           assert len(report)==6
+          approved_rows=[r for r in selected if r.get("approvedAssetTransport")]
+          assert len(approved_rows)==6
+          for row in approved_rows:
+              match=next(r for r in report if r["id"]==row["id"])
+              assert row["approvedAssetTransport"]["sha256"]==match["sha256"]
+              assert row["approvedAssetTransport"]["sourcePath"]==match["path"]
+              assert row["approvedAssetTransport"]["historicalSeedId"]==match["seedId"]
           print("CI137_ERH6_SHA256_JSON="+json.dumps(report,ensure_ascii=False,separators=(',',':')))
           PY
       - name: Assert module contains no archival staging assets
@@ -124,10 +138,10 @@ jobs:
           runtime = sorted(Path("module/assets").rglob("*.webp"))
           archive = sorted(Path("source-original/ci137-asset-staging").rglob("*.webp"))
           assert not Path("module/assets/_staging").exists()
-          assert len(runtime) == 38, len(runtime)
+          assert len(runtime) == 44, len(runtime)
           assert len(archive) == 148, len(archive)
           assert sum(p.stat().st_size for p in archive) == 6654130
-          print({"runtimeWebps":38, "archivedWebps":148, "archivedBytes":6654130})
+          print({"runtimeWebps":44, "archivedWebps":148, "archivedBytes":6654130})
           PY
       - name: Prepare exactly 136 selected real sources - no asset changes
         run: python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/ci137-prepared"
@@ -191,7 +205,9 @@ jobs:
           assert (pr["items"], pr["parafernalia"], pr["rituales"], pr["historicShaMatches"], pr["ritualBackgroundMatches"], pr["inventory075RitualPresence"], pr["archive075ByteParity"], pr["approvedRemaps"]) == (30, 22, 8, 30, 8, 8, False, 0)
           assert pre["defensasInstrumentosCrosswalk"] == rt["defensasInstrumentosCrosswalk"]
           cross = pre["defensasInstrumentosCrosswalk"]
-          assert (cross["itemsAudited"], cross["uniqueNamedCandidates"], cross["ambiguous"], cross["withoutIdenticalArt"], cross["comApprovedWebpsSha256Verified"], cross["approvedItemRemaps"]) == (29, 17, 8, 4, 8, 0)
+          assert (cross["itemsAudited"], cross["uniqueNamedCandidates"], cross["approvedERHSeedMatches"], cross["namedCandidatesRemaining"], cross["ambiguous"], cross["withoutIdenticalArt"], cross["comApprovedWebpsSha256Verified"], cross["approvedItemRemaps"]) == (29, 17, 6, 11, 8, 4, 8, 6)
+          assert pre["additionalApprovedAssetCount"] == 6
+          assert len(refs) == 99 and len(unique_paths) == 72
           result = {
             "schema": "ci137-release-gate-v01",
             "id": "hiperaustralis-compendios-prototype",

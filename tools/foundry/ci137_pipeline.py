@@ -362,24 +362,41 @@ def verify_historical_staging(rows):
 
 
 def verify_defensas_instrumentos_crosswalk(rows):
-    """Lock 17 named ERH candidates and eight approved COM bytes, without promotion."""
+    """Verify six seed-approved ERH transport Items, eleven named candidates and eight COM bytes."""
     selected = [r for r in rows if r["family"] in ("Defensas", "Instrumentos musicales")]
     if len(selected) != 29:
         fail("Defensas/Instrumentos Item count changed")
     counts = Counter()
     unique_paths = set()
     candidate_ids = set()
+    approved_seeds = {
+        "K7d2oqF6P7DB0Kpt": "inst-01-kultrung",
+        "IG8DW7Wr30mg1jqx": "inst-02-pifullka",
+        "gp4b3XE6mJGvqE9X": "inst-03-waza",
+        "KpK5mqDdleRnemjh": "inst-13-piloilo",
+        "vr5gUbTNMU8tj3zL": "inst-14-kaskawilla",
+        "JZUzx0bNMoDj6xs5": "inst-16-pututu",
+    }
+    approved_ids = set()
     for row in selected:
         entry = row.get("editorialCrosswalk", {})
         status = entry.get("status")
-        if (entry.get("scope") != "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION"
+        approved_status = status == "APPROVED_ERH_SEED_RECONCILED_ISOLATED"
+        if approved_status:
+            if (row["id"] not in approved_seeds
+                    or entry.get("scope") != "D2_APPROVED_VISUAL_SOURCE_ISOLATED_TRANSPORT_NO_DEPLOY"
+                    or entry.get("visualIdentityVerified") is not True
+                    or entry.get("approvedForTransport") is not True):
+                fail("ERH approval not tied to one of six confirmed identities " + row["id"])
+        elif (entry.get("scope") != "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION"
                 or entry.get("visualIdentityVerified") is not False
-                or entry.get("approvedForTransport") is not False):
+                or entry.get("approvedForTransport") is not False
+                or row.get("approvedAssetTransport")):
             fail("unapproved graphics identity promoted: " + row["id"])
         original = read_json(ROOT / row["source"])
         if original.get("_id") != row["id"] or original.get("img") != row["archivedImage"]["originalPath"]:
             fail("source Item or image changed during identity audit " + row["id"])
-        if status == "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE":
+        if status in ("ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE", "APPROVED_ERH_SEED_RECONCILED_ISOLATED"):
             if row["family"] != "Instrumentos musicales":
                 fail("only distinctive musical-name candidates are in scope")
             staged_path = entry.get("candidateStagedPath")
@@ -399,6 +416,19 @@ def verify_defensas_instrumentos_crosswalk(rows):
                     or int.from_bytes(raw[4:8], "little") + 8 != len(raw)):
                 fail("candidate musical graphic differs from registered Git blob " + row["id"])
             candidate_ids.add(row["id"])
+            if approved_status:
+                decision = row.get("approvedAssetTransport", {})
+                seed = original.get("flags", {}).get("hiperaustralis-instrumentos", {}).get("seedId")
+                if (seed != approved_seeds[row["id"]]
+                        or entry.get("historicalSeedId") != seed
+                        or decision.get("historicalSeedId") != seed
+                        or decision.get("isolatedD2Only") is not True
+                        or decision.get("sourcePath") != staged_path
+                        or decision.get("targetMember") != "assets/instrumentos/" + Path(staged_path).name
+                        or decision.get("sha256") != digest(raw)
+                        or entry.get("sha256") != digest(raw)):
+                    fail("ERH visual approval missing exact seed, path or SHA256 " + row["id"])
+                approved_ids.add(row["id"])
         elif status == "AMBIGUOUS_NOT_MAPPED":
             if entry.get("candidateStagedPath") or not entry.get("reason"):
                 fail("ambiguous candidate was mapped without approval " + row["id"])
@@ -415,11 +445,13 @@ def verify_defensas_instrumentos_crosswalk(rows):
         else:
             fail("missing/invalid Defensas/Instrumentos crosswalk " + row["id"])
         counts[status] += 1
-    if (counts != Counter({"ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE": 17,
+    if (counts != Counter({"ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE": 11,
+                          "APPROVED_ERH_SEED_RECONCILED_ISOLATED": 6,
                           "AMBIGUOUS_NOT_MAPPED": 8,
                           "NO_IDENTICAL_FINAL_ART_CANDIDATE": 4})
-            or len(candidate_ids) != 17 or len(unique_paths) != 17):
-        fail("Defensas/Instrumentos correspondence drift")
+            or len(candidate_ids) != 17 or len(unique_paths) != 17
+            or approved_ids != set(approved_seeds)):
+        fail("Defensas/Instrumentos approved identity correspondence drift")
     # Existing COM catalog is approved artwork; approval never establishes
     # identity with eight different historical defense Items.
     catalog = read_json(ROOT / "manifests/defensas-assets.json")
@@ -443,9 +475,10 @@ def verify_defensas_instrumentos_crosswalk(rows):
                 or int.from_bytes(raw[4:8], "little") + 8 != len(raw)):
             fail("approved COM WebP SHA or RIFF changed: " + str(source_path))
     return {"itemsAudited": 29, "uniqueNamedCandidates": 17,
+            "approvedERHSeedMatches": 6, "namedCandidatesRemaining": 11,
             "ambiguous": 8, "withoutIdenticalArt": 4,
             "comApprovedWebpsSha256Verified": len(approved),
-            "approvedItemRemaps": 0}
+            "approvedItemRemaps": 6}
 
 
 def verify_pfrit_historical_manifest(rows):

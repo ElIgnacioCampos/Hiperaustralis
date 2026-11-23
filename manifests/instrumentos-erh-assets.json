@@ -70,8 +70,16 @@
     "proposalStatus": "not_approved_not_integrated",
     "comparison": "AUDITORIA_PROPUESTAS_DESCRIPCIONES_ERH_v0.1_vs_v04_2026-11-13.md"
   },
-  "foundryIdentity": "not reconciled; no Item documents created or modified",
-  "runtimePaths": "not changed",
-  "githubAssets": "binary assets not copied yet",
-  "stateMasterChanges": "none"
+  "foundryIdentity": "Seis Items históricos vinculados por ID, seedId y SHA de versión aprobada; otros quince no tienen remapeo autorizado",
+  "runtimePaths": "Seis rutas solo de transporte CI137 para Kultrung, Pifüllka, Waza, Piloilo, Kaskawilla, Pututu; no hay instalación en cliente Foundry",
+  "githubAssets": "28 WebP de instrumentos archivados en source-original/ci137-asset-staging/instrumentos-erh/webp_256; seis blobs exactos ERH integrados en module/assets/instrumentos para CI137 aislado",
+  "stateMasterChanges": "none",
+  "ci137SixInstruments": {
+    "status": "PENDING_D2_CI",
+    "approvedArtCount": 6,
+    "approvedItemRemaps": 6,
+    "historicalSourceJSONEdited": false,
+    "clientFoundryQA": "NOT_EXECUTED",
+    "assetHashProofRun": 45248811731
+  }
 }

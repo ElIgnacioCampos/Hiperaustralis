@@ -1,7 +1,26 @@
 # HIPERAUSTRALIS · CI137 / CHECKPOINT ÚNICO ACTUAL
 **Corte:** 22-11-2026 (Chile) · **Rama:** `work/ci137-ensayo-identidad-historica-20261121`
-**Estado ACTUAL (23-11-2026, D2):** **136/136 Items PASS y remapeo autorizado condicionado PASS con nombre final Cuchillo de piedra**, 20 Armas, nueve carpetas, cinco plantillas; **115/115 WebP transferidos PASS**. **79/79 WebP históricos**, 30 SHA históricos, **17/17 candidatos ERH** y **8/8 COM aprobados** verificados físicamente en CI. **PF22/RIT08**: 30/30 identidades y SHA de los respaldos 0.4.72/0.4.73, ocho fondos rituales PASS; **igualdad de bytes 0.4.75 pendiente**. DEF08/INS21: 17 cruces nominales, 8 ambiguos, 4 sin pareja. Ningún remapeo nuevo; **105 referencias gráficas** por resolver editorialmente. D3/Foundry **NO ACREDITADO**; publicación **BLOQUEADA**.
+**Estado ACTUAL (23-11-2026, D2):** **136/136 Items PASS y seis Instrumentos ERH aislados en validación con nombre final Cuchillo de piedra**, 20 Armas, nueve carpetas, cinco plantillas; **115/115 WebP transferidos PASS**. **79/79 WebP históricos**, 30 SHA históricos, **17/17 candidatos ERH** y **8/8 COM aprobados** verificados físicamente en CI. **PF22/RIT08**: 30/30 identidades y SHA de los respaldos 0.4.72/0.4.73, ocho fondos rituales PASS; **igualdad de bytes 0.4.75 pendiente**. DEF08/INS21: 17 cruces nominales, 8 ambiguos, 4 sin pareja. **Seis remapeos nuevos de Instrumentos ERH en prueba aislada; 99 referencias gráficas** quedan por resolver editorialmente. D3/Foundry **NO ACREDITADO**; publicación **BLOQUEADA**.
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
+
+## D2 — Seis Instrumentos ERH aprobados: primer remapeo aislado (23-11-2026)
+
+**Aprobación previa recuperada:** el trabajo del 9-11-2026 aprobó seis gráficos ERH 256 para actualizar los Instrumentos existentes, sin crear Items ni instalar el módulo. Las fuentes históricas en GitHub conservan los **`seedId` exactos** y los seis IDs seleccionados. La ejecución [#45248811731](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45248811731) cotejó seis blobs Git, SHA-256 y las referencias originales sin alterar los gráficos.
+
+| Instrumento | ID histórico | Imagen final ERH |
+| --- | --- | --- |
+| Kultrung | `K7d2oqF6P7DB0Kpt` | `kultrung_erh_256.webp` |
+| Pifüllka | `IG8DW7Wr30mg1jqx` | `pifullka_erh_256.webp` |
+| Waza | `gp4b3XE6mJGvqE9X` | `waza_erh_256.webp` |
+| Piloilo | `KpK5mqDdleRnemjh` | `piloilo_erh_256.webp` |
+| Kaskawilla | `vr5gUbTNMU8tj3zL` | `kaskawilla_erh_256.webp` |
+| Pututu | `JZUzx0bNMoDj6xs5` | `pututu_erh_256.webp` |
+
+Se copiaron los **mismos seis blobs Git** desde `source-original/ci137-asset-staging/instrumentos-erh/webp_256/` a `module/assets/instrumentos/`, sin generación, edición ni pérdida de las fuentes. Se actualiza **solo el `img` de las copias temporales de transporte CI137**; no había fondo de hoja adicional en estos seis Items. Resultado esperado: **seis remapeos autorizados**, **99 referencias heredadas** (antes 105), **72 rutas únicas** (antes 78), **44 WebP** operativos (antes 38). Los 136 JSON originales permanecen intactos. **D3/cliente Foundry y publicación siguen BLOQUEADOS. Validación de este commit: PENDIENTE.**
+
+La auditoría de 29 Defensas/Instrumentos queda diferenciada: **6 aprobados y enlazados por seedId**, **11 candidatos nominales no autorizados**, **8 ambiguos** y **4 sin equivalente**. No se utiliza un asset por similitud. Las versiones ARM-11/12/13 y el cotejo 0.4.75 siguen pendientes.
+
+**Decisiones:** promover únicamente versiones ERH ya aprobadas y comprobadas por ID/seed/hash, en una rama aislada sin despliegue. **Pendientes:** CI de este commit, 99 referencias restantes, QA real Foundry. **Fuentes:** trabajos ERH 9-11 y auditoría 13-11, fuente de seis Items, GH Actions #45248811731, manifiesto CI137. **Maestro:** sin cambios.
 
 ## LIMPIEZA DEL PROTOTIPO — STAGING SEGREGADO (23-11-2026)
 
