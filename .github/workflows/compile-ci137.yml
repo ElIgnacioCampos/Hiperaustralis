@@ -220,11 +220,22 @@ jobs:
           assert located["expectedHistoricalZIPSHA256"]==source075["sourceSHA256"]
           assert located["currentFileSHA256Verified"] is False
           assert located["visualOrRuntimeApprovalGranted"] is False
-          assert source075["bytesCurrentlyAccessible"] is False
+          assert source075["bytesCurrentlyAccessible"] is True
+          audited=source075["conversationUploadPhysicalAudit20261123"]
+          assert audited["physicalBytes"]==33028294 and audited["observedSHA256"]==source075["sourceSHA256"]
+          assert audited["zipEntries"]==358 and audited["crc"]=="PASS"
+          assert audited["floraIcons"]==40 and audited["floraWebpTotalBytes"]==3641622
+          assert audited["floraBackgrounds"]==8 and audited["floraBackgroundTotalBytes"]==3228266
+          assert audited["floraItemReferencesPresent"]==40 and audited["floraBackgroundReferencesPresent"]==40
+          assert audited["totoraBackgroundSharedBy"]==33
+          assert audited["fauna003ApprovedMaster1024FoundExactSHA"] is True
+          assert audited["fauna003ApprovalInheritanceTo512"] is False
+          assert audited["installedOrPromotedAssets"]==0 and audited["clientFoundryQA"] is False
           disagreement=source075["historicalFlora0475ByteCountDisagreement"]
           assert disagreement["comparator40IconBytes"]==3641622
           assert disagreement["hashAudit40IconBytes"]==5951968
-          assert disagreement["status"].startswith("UNRESOLVED")
+          assert disagreement["status"]=="RESOLVED_BY_SHA_VERIFIED_0475_ZIP__3641622_CORRECT"
+          assert disagreement["actualExactZipFlora40Bytes"]==3641622
 
           assert sum(t["assetsVerifiedInRepository"] for t in d["territories"])==5
           assert d["releaseGate"]["territorialRuntimeImgRemaps"]==0
