@@ -1,7 +1,17 @@
 # HIPERAUSTRALIS · CI137 / CHECKPOINT ÚNICO ACTUAL
 **Corte:** 22-11-2026 (Chile) · **Rama:** `work/ci137-ensayo-identidad-historica-20261121`
-**Estado:** D2 / 137 Items **PASS** · D3 / Foundry **FALLÓ EN PRUEBA DE USUARIO, CAUSA NO DIAGNOSTICADA** · PUBLICACIÓN **BLOQUEADA**.
+**Estado:** D2 / 137 Items **PASS** · **TRANSFERENCIA REAL 115/115 WEBP A GITHUB PASS** (79 staging históricos, 20 Equipo aprobado, 16 Reliquias aprobadas) · D3 / Foundry **NO ACREDITADO, incidente previo sin diagnóstico** · PUBLICACIÓN **BLOQUEADA**.
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 137 identidades; este checkpoint para implementación técnica. Sin cambios al Maestro.
+
+## ACTUALIZACIÓN MATERIAL — TRANSFERENCIA GITHUB CERRADA (22-11-2026, hora de Santiago)
+
+**Resultado real, no una preparación:** [GitHub Actions #45095241123](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45095241123) **SUCCESS**. Commit de assets [`c3c0520`](https://github.com/ElIgnacioCampos/Hiperaustralis/commit/c3c0520f4971d56729bfd32c18d00d8e353605fd), verificado por consulta independiente del árbol y los SHA de los 115 blobs. **115/115 bytes originales exactos**; 79 fuentes del staging v02 archivadas en `module/assets/_staging/ci137_v02_historico/` para evitar promoción editorial indebida, 20 WebP de Equipo común L01–L05 en `module/assets/equipo-comun/`, 16 Reliquias históricas aprobadas en `module/assets/reliquias/`. Tokicura ya existía y se conserva sin duplicación (17 imágenes en la carpeta Reliquias después del cambio). **Los 115 archivos modificados en ese commit son todos WebP en `module/assets/`**.
+
+**Procedencia y seguridad:** se trasladó un archivo binario verificado SHA256 `84aa4402fd51c48e4f4a66d5dfb5d454708160cc3026cd3d5a7fc486815f3a52`, dividido en 11 objetos Git autenticados, recompuesto por Action con control SHA/CRC. El importador `tools/foundry/ci137_assets_import.py` verificó los 115 contenidos, identidad del módulo y los únicos tres packs, sin sobrescribir archivos distintos. El mismo algoritmo superó una prueba local de **115 escritos y posterior idempotencia 0 escritos**. Resultado remoto: 115 archivos incorporados, ningún Item, LevelDB, `module.json`, Bridge ni `main` modificado. No se instaló en Foundry.
+
+**IMPORTANTE — estado de promoción:** disponer de los 79 WebP históricos en GitHub **NO equivale a autorización para reemplazar los iconos finales**; ARM‑11/12/13 siguen sujetos a versiones 256 px posteriores. Los 20 Equipo común están aprobados como arte, NO sus cambios de `img` runtime. Las 16 Reliquias son las históricas seleccionadas. **La imagen independiente de Cuchillo de piedra continúa ausente**. Los 109 enlaces visuales heredados permanecen sin remapeo en el transporte CI137; ahora están disponibles los bytes respaldados para trabajar el remapeo tras autorización y QA. `D3` y release `BLOCKED`.
+
+**Historial:** las notas de las secciones 2–5 que dicen «no se transfirió», «no se subió» o «pendiente transferir» describen **cortes anteriores** y quedan superadas por este resultado con commit. Mantenerlas sólo como trazabilidad, no como estado ACTUAL.
 
 ## 1. Continuidad cerrada
 
@@ -78,6 +88,6 @@
 ## 8. Decisiones / Pendientes / Fuentes / Maestro
 
 **Decisiones:** mantener un único HA Prototipo y sus tres packs; congelar el instalador fallido; los 20 WebP de Equipo común son recuperados/validados en Biblioteca, sin promoción runtime.
-**Pendientes:** transferir sólo los bytes aprobados del staging v02 recuperado (sin sustituir las 16 Reliquias históricas, ni versiones posteriores ARM-11–13); transferencia auténtica de los 20 WebP de Equipo común; icono Cuchillo de piedra; QA29 cliente y 5 plantillas CSB en runtime; diagnosticar carga de Foundry; D3 antes de distribución.
+**Pendientes ACTUALES:** decidir por ID el remapeo de 107 referencias externas utilizando los 79 históricos sólo cuando exista aprobación editorial de las versiones finales (ARM‑11–13 excluidas por ahora); conservar los 20 Equipo común como arte aprobado sin modificar aún `img`; recuperar el icono independiente de Cuchillo de piedra; QA29 cliente, cinco plantillas CSB en runtime y diagnóstico de bloqueo Foundry; D3 antes de cualquier distribución. **Transferencia 115/115: CERRADA.**
 **Fuentes:** [compilación y gate D2](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45090601010); `docs/CI137_RECTIFICACION_CONTINUIDAD_ASSETS_2026-11-21.md`; `docs/CORE_EQUIPO_COMUN_QA29_OVERLAY_AISLADO_PREPARADO_20261121_v10.md`; los dos ZIP de BBTECA especificados arriba; `manifests/equipo-comun-29-cruces-candidatos-20261121.json`.
 **Cambios al Estado Maestro:** ninguno. `main`, Bridge y Forge sin cambios.
