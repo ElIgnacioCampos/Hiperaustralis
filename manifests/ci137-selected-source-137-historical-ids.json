@@ -1,6 +1,6 @@
 {
   "schema": "hipera-ci137-selected-historic-identities-v06",
-  "status": "CI137_136_EDITORIAL_NAME_CORRECTION__D2_REVALIDATION_PENDING__D3_BLOCKED",
+  "status": "CI137_136_FINAL_NAME_CUCHILLO_DE_PIEDRA_D2_PASS__D3_BLOCKED",
   "targetCount": 136,
   "entries": [
     {
@@ -1294,7 +1294,7 @@
       "Foundry_CLI_and_runtime_QA"
     ],
     "lockedHistoricalIds": true,
-    "actualBuildGate": "PENDING_D2_136_NAME_OVERRIDE_REVALIDATION",
+    "actualBuildGate": "PASS_136_FINAL_NAME_GHA_45099633940",
     "noAssetRegeneration": true,
     "reuseExistingAssetsBeforeRecovery": true,
     "sourcePromotionRequiresExactIdentityAndApprovedAssetMap": true,
@@ -1588,7 +1588,14 @@
       "unresolvedLegacyImageReferences": 105,
       "foundryClientQA": "NOT_EXECUTED",
       "release": "BLOCKED",
-      "nameOverrideValidation": "PENDING"
+      "nameOverrideValidation": {
+        "status": "PASS",
+        "workflowRunId": 45099633940,
+        "validatedCommit": "68135981f425b68a3985e64eecf8ffb65056e0fa",
+        "finalName": "Cuchillo de piedra",
+        "identityId": "c2L6T5w4S9OcgkDt",
+        "runtimeQA": "NOT_EXECUTED"
+      }
     },
     "finalNameResolution": {
       "itemId": "c2L6T5w4S9OcgkDt",
