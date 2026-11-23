@@ -1922,7 +1922,24 @@
       "originalIconsOptimizedCount": 40,
       "status": "PHYSICAL_SOURCE_PENDING__DO_NOT_USE_0473_AS_FINAL",
       "alternativeCandidateV1SourcePresentInLibrary": true,
-      "alternativeCandidateV1NotEquivalent": true
+      "alternativeCandidateV1NotEquivalent": true,
+      "libraryMetadataDiscovery20261123": {
+        "sourceRecord": "Library /Hiperaustralis/HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB.zip",
+        "catalogSizeBytes": 33028294,
+        "matchesHistoricalZipSize": true,
+        "expectedHistoricalZIPSHA256": "c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e",
+        "currentFileSHA256Verified": false,
+        "rawMaterialization": "NOT_AVAILABLE_IN_CURRENT_PROJECT_SESSION",
+        "sourceLevel": "LIBRARY_METADATA_ONLY_NOT_ZIP_BYTE_PROOF",
+        "visualOrRuntimeApprovalGranted": false
+      },
+      "historicalFlora0475ByteCountDisagreement": {
+        "comparatorReport": "docs/AUDITORIA_COMPARATIVA_COMPENDIOS_0.4.68_vs_0.4.75_2026-11-12.md",
+        "comparator40IconBytes": 3641622,
+        "hashAuditReport": "docs/AUDITORIA_HASHES_FLORA_0.4.68_vs_0.4.75_2026-11-12.md",
+        "hashAudit40IconBytes": 5951968,
+        "status": "UNRESOLVED_IN_RECORDS__DO_NOT_CHOOSE_WITHOUT_EXTRACTING_ZIP"
+      }
     },
     "isolatedRecoveryPack": {
       "name": "CI137_FAU_5_APROBADOS_VERIFICADOS_WEBP512_20261123.zip",
