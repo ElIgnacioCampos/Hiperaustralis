@@ -3,6 +3,24 @@
 **Estado ACTUAL (23-11-2026, D2):** **136/136 Items PASS con nombre final Cuchillo de piedra**, 20 Armas, nueve carpetas, cinco plantillas; **115/115 WebP transferidos PASS**. D3/Foundry **NO ACREDITADO**; publicación **BLOQUEADA**.
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
+## D2 — Recuperación documental de salidas originales del 9-11-2026 (23-11-2026)
+
+**Fuente recuperada:** secuencia real del chat del **9-11-2026** sobre ARM-11 Hacha de dos manos, ARM-12 Hacha barbada y ARM-13 Lanza corta; el usuario aprobó avanzar con respaldo y WebP transparentes. Hay **salidas sandbox generadas** documentadas, pero **ningún comprobante de que esos cinco archivos exactos hayan sido subidos posteriormente a Biblioteca/Drive/GitHub**. Corrige cualquier presunción de que «se generó en el chat» significa «se respaldó persistentemente».
+
+| Salida histórica (9-11-2026) | Contenido/estado declarado en chat |
+| --- | --- |
+| `RESPALDO_ARM_11-13_PNG1024_WEBP256.zip` | PNG 1024 + tres WebP 256, paquete de respaldo entregado por sandbox |
+| `RESPALDO_ARM_11-13_WEBP256_transparente.zip` | `ARM-11_Hacha_a_dos_manos_256.webp`, `ARM-12_Hacha_barbada_256.webp`, `ARM-13_Lanza_corta_256.webp`; 256×256, RGBA, WebP lossless según comprobación declarada en ese chat |
+| `ARMAS_HIPERAUSTRALIS_01-13_WEBP256_TRANSPARENTES_v01.zip` | Consolidación de ARM-01–13; entregado por sandbox |
+| `HIPERAUSTRALIS_COMPENDIOS_0.4.85_ARMAS_01-20_CONSOLIDADAS_CANDIDATO.zip` | **CANDIDATO** de compendio con 392 entradas, CRC declarado correcto |
+| `HIPERAUSTRALIS_COMPENDIOS_0.4.86_ARCO_REEMPLAZADO_CANDIDATO.zip` | **CANDIDATO** posterior; reemplazó exclusivamente `16_arco_simple.webp`, mantuvo 392 archivos |
+
+**Alcance de evidencia:** estas afirmaciones son **registros de entrega en la conversación**, no lectura de bytes ni validación CRC/SHA actual. Sus enlaces originales eran `sandbox:/mnt/data/...`, pertenecientes a la sesión anterior: **no reutilizar esos enlaces ni suponer que son accesibles en la sesión actual**. Los PNG se nombraron `ARM-11_Hacha_a_dos_manos_v01.png`, `ARM-12_Hacha_barbada_v01.png`, `ARM-13_Lanza_corta_v01.png`. Los hashes de los tres WebP **finales no constan** en las fuentes recuperadas; **no usar los hashes 512×512 de 0.4.72/0.4.73 como si fueran finales**.
+
+**Búsqueda persistente realizada:** inventario de ZIP e imágenes de Biblioteca, carpetas CORE/Foundry, Drive por nombre y papelera, ramas y commits de GitHub y Releases. Los archivos finales **no aparecen como copias de bytes accesibles con esos nombres**. El único dato concluyente es la **creación/entrega histórica por sandbox sin prueba recuperada de respaldo persistente**. Ausencia de índice no prueba borrado. Las 115 imágenes cargadas en la rama CI137 son el lote histórico 79 + 20 Equipo + 16 Reliquias: **no incluye la promoción final ARM-11/12/13**.
+
+**Decisión:** conservar D2 136/136 PASS, imagen compartida y resto de assets sin intervención; no reproducir, regenerar, reasignar ni promover ARM-11/12/13 hasta encontrar bytes verificables del lote final. Si aparece copia 0.4.85/0.4.86 o paquete 256, comparar CRC, dimensiones, alfa y hashes contra su propio manifiesto antes de usar el **mismo** transporte CI137. D3 continúa bloqueado; no crear otros pipelines, ramas o instaladores. **Estado Maestro sin cambios.**
+
 ## D2 — Rastreo ampliado de respaldos preexistentes (23-11-2026)
 
 **Rectificación del diagnóstico de localización:** el archivo `CORE_FOUNDRY_CI137_STAGING_INTEGRADO_v02.zip` **SÍ figura en la Biblioteca** en `/Hiperaustralis/CORE_FOUNDRY_CI137_STAGING_INTEGRADO_v02.zip`, tamaño **4.353.820 bytes**, registro de creación **2026-11-19 03:36:25 UTC** (ID Biblioteca `libfile_4b991fac711881918fde0e058bf143ed`). La afirmación anterior «no localizable» es incorrecta para el **índice**; **la lectura binaria actual está BLOQUEADA**: el acceso de materialización al ZIP informa `This Project file does not have an authorized raw-byte materialization path`. No se abrió el ZIP ni se comprobó su CRC/SHA en esta pasada. **No borrar su registro ni recrearlo de memoria**.
