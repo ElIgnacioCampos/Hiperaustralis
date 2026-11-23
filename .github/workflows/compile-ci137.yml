@@ -206,6 +206,12 @@ jobs:
               assert raw[:4]==b"RIFF" and raw[8:12]==b"WEBP"
               assert int.from_bytes(raw[4:8],"little")+8==len(raw)
           assert d["fauna"]["iconFilesRecoveredToCI137"]==5
+          flora_v1=d["flora"]["candidateOptimizedV1Recovery"]
+          assert flora_v1["webpCandidates"]==40
+          assert flora_v1["approvalStatus"]=="ZERO_FINAL_APPROVALS__CANDIDATES_ONLY"
+          assert flora_v1["approvedForRuntime"] is False
+          assert flora_v1["webpsStagedInGitHub"]==0
+          assert flora_v1["verifiedAgainst0475Final"] is False
           assert sum(t["assetsVerifiedInRepository"] for t in d["territories"])==5
           assert d["releaseGate"]["territorialRuntimeImgRemaps"]==0
           assert d["releaseGate"]["territorialIconBinariesAuditedLocally"]==79

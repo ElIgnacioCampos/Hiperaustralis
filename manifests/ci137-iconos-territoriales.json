@@ -900,6 +900,48 @@
       ],
       "allIconMode": "RGBA",
       "zipSHA256": "2d8830d5a18b7d6ff7ba4eee469214fef7b7efdf7164b552464620a0580a5329"
+    },
+    "candidateOptimizedV1Recovery": {
+      "source": "Library /Hiperaustralis/ED/FLORA/HIPERAUSTRALIS_FLORA_001_040_WEBP_OPTIMIZADAS_v1.zip",
+      "filename": "HIPERAUSTRALIS_FLORA_001_040_WEBP_OPTIMIZADAS_v1.zip",
+      "physicalSourceRecovered": true,
+      "fileBytes": 32493807,
+      "sha256": "f758e2adb2a2dcc6f815361bbf1314d44bd5d9e23dd64bdad9e8dbd6c330e340",
+      "zipEntries": 57,
+      "zipCRC": "PASS",
+      "webpCandidates": 40,
+      "totalCandidateWebpBytes": 9090158,
+      "candidateOutputDimensions": [
+        512,
+        512
+      ],
+      "approvalStatus": "ZERO_FINAL_APPROVALS__CANDIDATES_ONLY",
+      "preselectedCodes": [
+        "FLO-004"
+      ],
+      "formalPreselectionOnly": [
+        "FLO-010",
+        "FLO-022",
+        "FLO-024"
+      ],
+      "defectsFromInternalAudit": [
+        "labels_001_004",
+        "cut_figures",
+        "neighbor_fragments",
+        "halos",
+        "generic_morphology",
+        "species_verification_incomplete"
+      ],
+      "sourceInternalDocuments": [
+        "AUDITORIA_ESTADO.md",
+        "CHECKPOINT_PRODUCCION_ORIGINAL.md",
+        "LEEME.md",
+        "MANIFIESTO.csv"
+      ],
+      "verifiedAgainst0475Final": false,
+      "approvedForRuntime": false,
+      "webpsStagedInGitHub": 0,
+      "decision": "ARCHIVE_AS_EDITORIAL_CANDIDATE_AND_DO_NOT_SUBSTITUTE_0475_FINAL"
     }
   },
   "fauna": {
@@ -1680,7 +1722,9 @@
     "D3": "BLOCKED",
     "territorialIconBinariesAuditedLocally": 79,
     "territorialIconsUploadedToGitHub": 5,
-    "territorialSourcesVerifiedByGitSha": 5
+    "territorialSourcesVerifiedByGitSha": 5,
+    "faunaSourceBinaryAuditCI": "PASS_45257260793",
+    "guardCI": "PASS_45257261006"
   },
   "todo": [
     "Recover exact source ZIP for 0.4.75 Flora optimized binaries and verify 40 per-image SHA and 8 shared background files",
@@ -1876,7 +1920,9 @@
       "sourceSHA256": "c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e",
       "bytesCurrentlyAccessible": false,
       "originalIconsOptimizedCount": 40,
-      "status": "PHYSICAL_SOURCE_PENDING__DO_NOT_USE_0473_AS_FINAL"
+      "status": "PHYSICAL_SOURCE_PENDING__DO_NOT_USE_0473_AS_FINAL",
+      "alternativeCandidateV1SourcePresentInLibrary": true,
+      "alternativeCandidateV1NotEquivalent": true
     },
     "isolatedRecoveryPack": {
       "name": "CI137_FAU_5_APROBADOS_VERIFICADOS_WEBP512_20261123.zip",
@@ -1888,10 +1934,13 @@
       "runtimeAssetsAdded": 0,
       "sourceJSONEdited": 0,
       "compendiumItemsCreated": 0,
-      "remoteBinaryTransfer": "FIVE_EXACT_GIT_BLOBS_STAGED_SOURCE_ORIGINAL",
+      "remoteBinaryTransfer": "PASS_GITHUB_BLOB_EXACT_SHA_CI_45257260793",
       "releaseGate": "BLOCKED",
       "sourceStagingCount": 5,
-      "bytesStaged": 839504
+      "bytesStaged": 839504,
+      "workflowRun": 45257260793,
+      "verifiedCommit": "130f3a50dada16dc8236368cdddcfa3eafc17f40",
+      "tempTransferFolderDrive": "TRASHED_FIVE_TEMP_FILES_AND_DELETED_EMPTY_TEMP_FOLDER"
     }
   }
 }

@@ -15,7 +15,7 @@
 
 ## Iconos y contenidos por territorio
 - `manifests/ci137-iconos-territoriales.json`: catálogo de ocho territorios (40 Flora con 45 referencias; 50 Fauna, 32 con Journal y 18 por cotejar). Funga y Recetas siguen diferenciados.
-- El catálogo no sustituye archivos binarios ni crea Items. **Fuentes físicas recuperadas**: Fauna v2 (277 entradas) y compendio 0.4.73 (40 iconos Flora + 8 fondos; 31 rupestres FAU); **cinco iconos rupestres FAU aprobados fueron resguardados en `source-original/ci137-territorial/fau-approved/`; ninguno es todavía asset runtime**. Cinco FAU aprobados tienen WebP válido recuperado; FAU-003 aprobada conserva un WebP vacío en la auditoría v2 y exige cotejo. Flora final 0.4.75 y BIO-RUP siguen pendientes. Figuras documentales del Journal ≠ iconos de Items.
+- El catálogo no sustituye archivos binarios ni crea Items. **Fuentes físicas recuperadas**: Fauna v2 (277 entradas) y compendio 0.4.73 (40 iconos Flora + 8 fondos; 31 rupestres FAU); **cinco iconos rupestres FAU aprobados fueron resguardados en `source-original/ci137-territorial/fau-approved/`; ninguno es todavía asset runtime**. Banco Flora `WEBP_OPTIMIZADAS_v1` recuperado de Biblioteca: **40 candidatos, cero iconos aprobados**; no equivale a Flora final 0.4.75. Cinco FAU aprobados tienen WebP válido recuperado; FAU-003 aprobada conserva un WebP vacío en la auditoría v2 y exige cotejo. Flora final 0.4.75 y BIO-RUP siguen pendientes. Figuras documentales del Journal ≠ iconos de Items.
 - El workflow CI137 valida identidad y referencias del catálogo sin modificar los 136 Items ni publicar el módulo.
 
 ## Salvaguardas
