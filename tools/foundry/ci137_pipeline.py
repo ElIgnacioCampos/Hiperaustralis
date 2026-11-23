@@ -229,6 +229,65 @@ def verified_shared_knife(rows, output):
     dest.write_bytes(data)
     return {item_id: {"old": old, "new": SHARED_KNIFE_URL, "sha256": SHARED_KNIFE_SHA256}}
 
+def verify_historical_staging(rows):
+    """Audit 79 already recovered historical WebP files, without authorizing art promotion.
+
+    Historical source images in the original module are archival CANDIDATES, not
+    approved replacements. A SHA match proves bytes, not visual/editorial approval.
+    """
+    stage_root = ROOT / "module/assets/_staging/ci137_v02_historico"
+    records = []
+    unique_paths = set()
+    original_paths = set()
+    for row in rows:
+        candidate = row.get("archivedImage")
+        if candidate is None:
+            continue
+        if row["family"] not in ("Armas", "Defensas", "Instrumentos musicales",
+                                  "Parafernalia · sanación · cultura material", "Rituales"):
+            fail("unexpected staged archive family for " + row["id"])
+        if (candidate.get("finalArtApprovedForCI137") is not False
+                or candidate.get("status") != "PHYSICALLY_RECOVERED_0472_0473_HISTORICAL_CANDIDATE_NOT_FINAL"):
+            fail("historical candidate wrongly marked approved or changed: " + row["id"])
+        old = candidate.get("originalPath")
+        prefix = "modules/hiperaustralis-rituales/assets/"
+        if not isinstance(old, str) or not old.startswith(prefix):
+            fail("historical asset has unexpected original path " + row["id"])
+        rel = Path(old[len(prefix):])
+        if rel.is_absolute() or ".." in rel.parts or rel.suffix.lower() != ".webp":
+            fail("invalid historical archive asset path " + row["id"])
+        staged = stage_root / rel
+        if not staged.is_file():
+            fail("missing historical staging WebP " + str(staged))
+        if rel.as_posix() in unique_paths or old in original_paths:
+            fail("historical staging filename collision " + str(rel))
+        unique_paths.add(rel.as_posix())
+        original_paths.add(old)
+        raw = staged.read_bytes()
+        if len(raw) < 16 or raw[:4] != b"RIFF" or raw[8:12] != b"WEBP":
+            fail("invalid or incomplete historical WebP header " + str(rel))
+        if int.from_bytes(raw[4:8], "little") + 8 != len(raw):
+            fail("invalid historical WebP RIFF byte count " + str(rel))
+        sha = digest(raw)
+        expected_sha = candidate.get("sha256")
+        if expected_sha is not None and (not isinstance(expected_sha, str)
+                                          or len(expected_sha) != 64 or sha != expected_sha):
+            fail("historical 0472/0473 SHA mismatch " + str(rel))
+        records.append({
+            "id": row["id"], "family": row["family"],
+            "legacyPath": old,
+            "stagedPath": "module/assets/_staging/ci137_v02_historico/" + rel.as_posix(),
+            "sha256": sha, "shaMatchedArchivalManifest": expected_sha is not None,
+            "bytes": len(raw), "promotionAuthorized": False,
+        })
+    if (len(records) != 79 or len(unique_paths) != 79
+            or len([r for r in records if r["shaMatchedArchivalManifest"]]) != 30):
+        fail("historical staging expected 79 exact files, including 30 manifest SHA matches")
+    if not any(r["id"] == "c2L6T5w4S9OcgkDt" for r in records):
+        fail("historical knife staging record missing")
+    return records
+
+
 def folder_doc(folder, folder_id, parent):
     return {
         "_id": folder_id, "name": folder.split("/")[-1], "type": "Item",
@@ -239,6 +298,7 @@ def folder_doc(folder, folder_id, parent):
 
 def prepare(output):
     rows = validate_selection()
+    historical_staging = verify_historical_staging(rows)
     if output.exists() and any(output.iterdir()):
         fail("refusing nonempty output directory: " + str(output))
     output.mkdir(parents=True, exist_ok=True)
@@ -258,7 +318,12 @@ def prepare(output):
     remapped = []
     shared_remapped = []
     original_legacy_count = 0
+    historic_by_id = {r["id"]: r for r in historical_staging}
     for row, doc, source_sha, folder in item_data(rows):
+        if row["id"] in historic_by_id:
+            expected_original = historic_by_id[row["id"]]["legacyPath"]
+            if doc.get("img") != expected_original:
+                fail("historical source img mismatch for " + row["id"])
         folder_id = FOLDERS[folder][0]
         transport = copy.deepcopy(doc)
         if row.get("editorialName"):
@@ -323,6 +388,10 @@ def prepare(output):
         "approvedRemaps": remapped, "approvedAssetCount": len(approved_relics),
         "sharedKnifeRemaps": shared_remapped, "sharedKnifeAssetCount": 1,
         "legacyAssetReferences": legacy,
+        "historicalStagingAssets": historical_staging,
+        "historicalStagingVerifiedCount": len(historical_staging),
+        "historicalStagingShaMatched": sum(r["shaMatchedArchivalManifest"] for r in historical_staging),
+        "historicalStagingPromotedCount": 0,
         "records": records,
     }
     (output / "ci137-preflight.json").write_text(
@@ -336,6 +405,13 @@ def verify(prepared, unpacked):
     manifest = read_json(prepared / "ci137-preflight.json")
     if manifest.get("count") != 136:
         fail("prepared corpus not 136")
+    stage_rows = verify_historical_staging(validate_selection())
+    previous = manifest.get("historicalStagingAssets", [])
+    if (len(previous) != 79 or stage_rows != previous
+            or manifest.get("historicalStagingVerifiedCount") != 79
+            or manifest.get("historicalStagingShaMatched") != 30
+            or manifest.get("historicalStagingPromotedCount") != 0):
+        fail("historical staging audit changed between prepare and verify")
     if (len(manifest.get("approvedRemaps", [])) != 32
             or len(manifest.get("sharedKnifeRemaps", [])) != 2
             or len(manifest.get("legacyAssetReferences", [])) != 105):
@@ -400,8 +476,11 @@ def verify(prepared, unpacked):
         "legacyReferenceCount": len(manifest["legacyAssetReferences"]),
         "sharedKnifeReferencesRemapped": len(manifest["sharedKnifeRemaps"]),
         "approvedRelicAssetCount": manifest["approvedAssetCount"],
+        "archivalWebpsVerified": len(stage_rows),
+        "archivalWebpsShaCompared": 30,
+        "archivalWebpsPromoted": 0,
         "approvedRelicReferencesRemapped": len(manifest["approvedRemaps"]),
-        "note": "16 historical relic WebP and one user-approved shared knife WebP mapped; 105 legacy references remain; no Foundry client QA",
+        "note": "16 historical relic WebP and one user-approved knife WebP mapped; 79 historical staging WebP CRC/header-size validated, 30 SHA matched; 105 legacy references remain, archival images not promoted; no Foundry client QA",
     }
     (prepared / "ci137-roundtrip.json").write_text(
         json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"

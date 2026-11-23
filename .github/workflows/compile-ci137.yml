@@ -80,6 +80,11 @@ jobs:
           assert len(pre["sharedKnifeRemaps"]) == 2 and pre["sharedKnifeAssetCount"] == 1
           assert pre["approvedAssetCount"] == 16
           assert len(pre["approvedRemaps"]) == 32
+          assert len(pre["historicalStagingAssets"]) == pre["historicalStagingVerifiedCount"] == rt["archivalWebpsVerified"] == 79
+          assert pre["historicalStagingShaMatched"] == rt["archivalWebpsShaCompared"] == 30
+          assert pre["historicalStagingPromotedCount"] == rt["archivalWebpsPromoted"] == 0
+          assert len({x["stagedPath"] for x in pre["historicalStagingAssets"]}) == 79
+          assert all(x["promotionAuthorized"] is False for x in pre["historicalStagingAssets"])
           result = {
             "schema": "ci137-release-gate-v01",
             "id": "hiperaustralis-compendios-prototype",
@@ -88,6 +93,9 @@ jobs:
             "itemCount": 136,
             "legacyImageRefs": len(refs),
             "legacyUniquePaths": len(unique_paths),
+            "historicalWebpsPhysicallyAudited": pre["historicalStagingVerifiedCount"],
+            "historicalWebpsShaMatched": pre["historicalStagingShaMatched"],
+            "historicalWebpsPromoted": 0,
             "csbTemplateIdsReferenced": sorted(templates),
             "D3": "FAILED_OR_UNVERIFIED",
             "installableArtifactProduced": False,

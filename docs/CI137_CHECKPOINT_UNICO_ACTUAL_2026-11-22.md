@@ -3,6 +3,12 @@
 **Estado ACTUAL (23-11-2026, D2):** **136/136 Items PASS con nombre final Cuchillo de piedra**, 20 Armas, nueve carpetas, cinco plantillas; **115/115 WebP transferidos PASS**. D3/Foundry **NO ACREDITADO**; publicación **BLOQUEADA**.
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
+## D2 — Puerta física de 79 WebP históricos en pipeline único (23-11-2026)
+
+**Trabajo en curso, pendiente de CI:** se endurece el **compilador existente** `tools/foundry/ci137_pipeline.py` sin nuevo script ni workflow. Para cada uno de los **79 Items con arte histórico** (`archivedImage`) verifica antes de compilar: ruta original consistente, ruta de staging exacta dentro de `module/assets/_staging/ci137_v02_historico/`, archivo físico, encabezado RIFF/WEBP y longitud interna coherente, SHA-256 calculado. En **30/79** exige igualdad frente al SHA-256 original ya registrado en el manifiesto CI137 (22 Parafernalia + 8 Rituales). Para los otros 49 se registra el SHA medido **sin atribuirle aprobación editorial**. Valida de nuevo durante el round-trip y exige **cero promociones** de candidatos históricos. El reporte se integra en `ci137-preflight.json` y en la puerta release **ya existentes**.
+
+**Objeto y alcance:** 136 Items, 20 Armas, nombre final `Cuchillo de piedra`, imágenes y fuentes intactas. Las 105 referencias heredadas siguen abiertas hasta cotejar el arte final. **Esta puerta valida bytes del respaldo, no reemplaza `img` ni satisface D3**. Estado **PENDIENTE** hasta contar con GitHub Actions PASS en este commit.
+
 ## D2 — Recuperación documental de salidas originales del 9-11-2026 (23-11-2026)
 
 **Fuente recuperada:** secuencia real del chat del **9-11-2026** sobre ARM-11 Hacha de dos manos, ARM-12 Hacha barbada y ARM-13 Lanza corta; el usuario aprobó avanzar con respaldo y WebP transparentes. Hay **salidas sandbox generadas** documentadas, pero **ningún comprobante de que esos cinco archivos exactos hayan sido subidos posteriormente a Biblioteca/Drive/GitHub**. Corrige cualquier presunción de que «se generó en el chat» significa «se respaldó persistentemente».
