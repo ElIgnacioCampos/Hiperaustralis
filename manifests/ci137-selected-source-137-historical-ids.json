@@ -1933,7 +1933,7 @@
         "runtimeQA": "NOT_EXECUTED"
       },
       "editorialCrosswalk": {
-        "status": "PENDING_EXISTING_CI_ROUNDTRIP",
+        "status": "PASS_29_ITEMS_17_NAMED_CANDIDATES_8_COM_SHA256_NO_PROMOTION",
         "familyScope": [
           "Defensas",
           "Instrumentos musicales"
@@ -1944,7 +1944,10 @@
         "noIdenticalArtCandidate": 4,
         "approvedDefensaWebpSha256Checks": 8,
         "approvedItemRemaps": 0,
-        "notes": "One-to-one asset name candidate is not approved visual identity; three distinct Pica helmets share one COM-07 suggestion; Antara Lickanantay and Tiwanaku paths must differ."
+        "notes": "One-to-one asset name candidate is not approved visual identity; three distinct Pica helmets share one COM-07 suggestion; Antara Lickanantay and Tiwanaku paths must differ.",
+        "workflowRun": 45239742686,
+        "verifiedCommit": "a1ae2262593dcd79641bad37186d6a040c2b5a50",
+        "workflowUrl": "https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45239742686"
       }
     },
     "finalNameResolution": {
