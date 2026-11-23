@@ -413,5 +413,47 @@
       "approval": "ART_APPROVED_NO_RUNTIME_QA",
       "runtimeChange": false
     }
-  ]
+  ],
+  "physicalBackingVerifiedAt": {
+    "date": "2026-11-22",
+    "state": "PHYSICAL_BBTECA_VERIFIED__NO_GITHUB_BINARY_PROMOTION__NO_ITEM_IMG_CHANGES",
+    "libraryPath": "/Hiperaustralis/CORE/IMPLEMENTACION/FOUNDRY/EQUIPO_COMUN",
+    "approvedArchive": {
+      "file": "HIPERA_EQUIPO_COMUN_20_WEBP_APROBADOS_LOTES01_05_QA_v01.zip",
+      "sha256": "41d20db6e45894e1f00ad94a8fccce01e767567bd8d3401a58716a609f4e1a72",
+      "bytes": 1121107,
+      "verifiedItems": 20,
+      "verifiedWebpBytes": 1109864,
+      "dimensions": "256x256",
+      "format": "VP8L WebP with alpha",
+      "crc": "PASS"
+    },
+    "overlayArchive": {
+      "file": "HIPERA_EQUIPO_COMUN_QA29_OVERLAY_AISLADO_v01.zip",
+      "sha256": "867884cadc27b86216e5c8f91703a7d5c75c9bc2f6410e75db7fe605e8d54be6",
+      "bytes": 1128909,
+      "verifiedBundledWebp": 20,
+      "crc": "PASS"
+    },
+    "byteComparison": "20/20 WebP identical in approved archive and QA29 overlay; each SHA/size matches both manifests; image decoding verified",
+    "crosswalk29": {
+      "itemIdAndSha256CanonicalListSha256": "e49e5a78bea2e742ae5fbcc030ccd57515f267bfdb6c79aa20817fa0db25ce85",
+      "matchesCurrentGithubManifest": true,
+      "selectedCorpusEquipmentIds": 40,
+      "candidates": 29,
+      "othersKeepStockIcons": 11
+    },
+    "existingNine": {
+      "status": "PRESENT_IN_GITHUB_STAGING_NOT_RECOPIED",
+      "count": 9,
+      "path": "module/assets/_staging/equipo/webp256/",
+      "source": "Previous QA9/transfer manifests"
+    },
+    "promotion": {
+      "binaryTransferToGitHub": "NOT_PERFORMED",
+      "imageRuntimeMutations": "NOT_AUTHORIZED",
+      "foundryRuntimeQa": "NOT_EXECUTED",
+      "release": "BLOCKED"
+    }
+  }
 }
