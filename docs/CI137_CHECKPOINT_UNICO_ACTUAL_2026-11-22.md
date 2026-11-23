@@ -6,7 +6,7 @@
 
 ## D2-TERR — ZIP 0.4.75 físico auditado, P1 resuelto (23-11-2026)
 
-**Fuente exacta entregada en este chat:** `HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB(1).zip`, 33.028.294 bytes, SHA-256 `c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e` **PASS** contra auditorías de 12-11; 358 entradas y CRC PASS. La restricción de materialización desde Biblioteca consignada más abajo es un episodio histórico **SUPERADO por el adjunto de conversación**, no un bloqueo vigente. Informe completo: [docs/CI137_AUDITORIA_BINARIA_ZIP075_REAL_2026-11-23.md](../CI137_AUDITORIA_BINARIA_ZIP075_REAL_2026-11-23.md).
+**Fuente exacta entregada en este chat:** `HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB(1).zip`, 33.028.294 bytes, SHA-256 `c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e` **PASS** contra auditorías de 12-11; 358 entradas y CRC PASS. La restricción de materialización desde Biblioteca consignada más abajo es un episodio histórico **SUPERADO por el adjunto de conversación**, no un bloqueo vigente. Informe completo: [docs/CI137_AUDITORIA_BINARIA_ZIP075_REAL_2026-11-23.md](CI137_AUDITORIA_BINARIA_ZIP075_REAL_2026-11-23.md).
 
 **Flora real:** **40/40 WebP RGBA 512×512 PASS por decodificación**, 8 fondos RGB legibles; **40/40 rutas de iconos, 40/40 rutas de fondo existentes** en la fuente. Suma exacta de 40 iconos `3.641.622` bytes; corresponde a auditoría comparativa 12-11 y **corrige la cifra histórica `5.951.968`**, incorrecta para este SHA específico. Incidencia heredada: **33/40 Items utilizan el mismo fondo de Totora**; no se reasignan ni editan sin decisión editorial. Los 8 BIO mantienen **CANDIDATO / NO PUBLICAR**.
 
