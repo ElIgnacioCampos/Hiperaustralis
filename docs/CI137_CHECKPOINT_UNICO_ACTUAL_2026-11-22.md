@@ -4,6 +4,16 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## H7 — Recuperación de arranque y criterio de subida (23-11-2026)
+
+**Incidencia de runtime informada por usuario:** Hipera 7, clonado de Hipera 5, **NO abre**, incluso con el módulo CI137 desactivado. Hipera 6 quedó inutilizable. **No existe evidencia que permita responsabilizar sólo a CI137**, ni afirmar que el mundo H7 está estabilizado.
+
+**Recuperación inmediata en Forge sin Game Manager:** abrir la pantalla Setup de Foundry (`forge-vtt.com/setup` → Launch My Game), pestaña Game Worlds → editar Hipera 7 → **Launch in Safe Configuration** → Update World → iniciar. La opción inhabilita módulos y escenas activas; es la vía oficial de Foundry/The Forge para aislar el bloqueo. No ejecutar macros de migración, no importar ZIP 0.4.75, no activar Compendios CI137 durante el primer acceso. Si abre en Safe Configuration, comprobar CSB y un Actor base antes de reactivar `socketlib` y `meliaz-bridge` por separado. El error exacto sigue sin diagnóstico de consola.
+
+**Estado de consolidación para despliegue:** 136/136 Items y 9 carpetas / 5 plantillas pasan D2 en CI137, con 30/30 paridades binarias PF22/RIT08 y ZIP 0.4.75 verificado. El **D3 runtime de Foundry es NO ACREDITADO**, 99 referencias históricas pendientes, cero publicación; el Bridge 0.24.203 tiene ZIP CI compilado, pero las verificaciones A–F en mundo cliente no están cerradas. La versión CI137/compendios **NO es reemplazo aprobable aún**. No subir a H7 ni publicar release, no tocar `main`, Forge, Bridge, el Estado Maestro ni un mundo productivo.
+
+**Decisión operativa:** prioridad H7 jugable sobre migración. **Criterio para subir:** H7 abre sin módulos en configuración segura → entra con CSB → acepta Bridge probado → importar candidatos únicamente en clon controlado tras D3, respaldos y aprobación explícita. **Pendiente:** resultado Safe Configuration; evidencia F12 si falla.
+
 ## D2-TERR — ZIP 0.4.75 físico auditado, P1 resuelto (23-11-2026)
 
 **Fuente exacta entregada en este chat:** `HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB(1).zip`, 33.028.294 bytes, SHA-256 `c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e` **PASS** contra auditorías de 12-11; 358 entradas y CRC PASS. La restricción de materialización desde Biblioteca consignada más abajo es un episodio histórico **SUPERADO por el adjunto de conversación**, no un bloqueo vigente. Informe completo: [docs/CI137_AUDITORIA_BINARIA_ZIP075_REAL_2026-11-23.md](CI137_AUDITORIA_BINARIA_ZIP075_REAL_2026-11-23.md).
