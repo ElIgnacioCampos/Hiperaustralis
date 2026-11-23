@@ -1,6 +1,6 @@
 {
   "schema": "hipera-ci137-selected-historic-identities-v06",
-  "status": "CI137_136_ROUNDTRIP_PASS__D3_RELEASE_BLOCKED",
+  "status": "CI137_136_EDITORIAL_NAME_CORRECTION__D2_REVALIDATION_PENDING__D3_BLOCKED",
   "targetCount": 136,
   "entries": [
     {
@@ -931,7 +931,9 @@
         "sourceAsset": "module/assets/_staging/ci137_v02_historico/armas/01_cuchillo_litico.webp",
         "approvedForTransport": true,
         "runtimeQA": "NOT_EXECUTED"
-      }
+      },
+      "editorialName": "Cuchillo de piedra",
+      "sourceName": "Cuchillo lítico"
     },
     {
       "id": "Iol01RpIqlQxSTMr",
@@ -1292,7 +1294,7 @@
       "Foundry_CLI_and_runtime_QA"
     ],
     "lockedHistoricalIds": true,
-    "actualBuildGate": "PASS_136_CLI_ROUNDTRIP_GHA_45099157074",
+    "actualBuildGate": "PENDING_D2_136_NAME_OVERRIDE_REVALIDATION",
     "noAssetRegeneration": true,
     "reuseExistingAssetsBeforeRecovery": true,
     "sourcePromotionRequiresExactIdentityAndApprovedAssetMap": true,
@@ -1585,7 +1587,17 @@
       "historicalKnifeRemaps": 2,
       "unresolvedLegacyImageReferences": 105,
       "foundryClientQA": "NOT_EXECUTED",
-      "release": "BLOCKED"
+      "release": "BLOCKED",
+      "nameOverrideValidation": "PENDING"
+    },
+    "finalNameResolution": {
+      "itemId": "c2L6T5w4S9OcgkDt",
+      "displayName": "Cuchillo de piedra",
+      "historicalSourceName": "Cuchillo lítico",
+      "scope": "CI137_TRANSPORT_ONLY",
+      "originalJsonPreserved": true,
+      "excludedDuplicateId": "HipArm01PackA000",
+      "unchangedImage": "module/assets/armas/01_cuchillo_litico.webp"
     }
   }
 }

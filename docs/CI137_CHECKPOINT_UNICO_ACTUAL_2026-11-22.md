@@ -1,7 +1,10 @@
 # HIPERAUSTRALIS · CI137 / CHECKPOINT ÚNICO ACTUAL
 **Corte:** 22-11-2026 (Chile) · **Rama:** `work/ci137-ensayo-identidad-historica-20261121`
-**Estado ACTUAL (22-11-2026, D2):** **136/136 Items PASS**, **20 Armas**, nueve carpetas, cinco plantillas; **115/115 WebP transferidos PASS**. D3/Foundry **NO ACREDITADO**; publicación **BLOQUEADA**. La compilación previa 137/137 permanece en historial.
+**Estado ACTUAL (23-11-2026, D2):** **136/136 Items PASS antes del ajuste de nombre**; corrección del nombre final **Cuchillo de piedra** pendiente de revalidación GHA; **20 Armas**, nueve carpetas, cinco plantillas; **115/115 WebP transferidos PASS**. D3/Foundry **NO ACREDITADO**; publicación **BLOQUEADA**.
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
+
+## CORRECCIÓN DE NOMBRE FINAL — CUCHILLO DE PIEDRA (23-11-2026)
+**Decisión editorial explícita:** el nombre final del Item seleccionado es **Cuchillo de piedra**. Se conserva el ID histórico `c2L6T5w4S9OcgkDt` y se aplica el nombre solo al transporte CI137; `source/items/armas/01_cuchillo_litico.json` mantiene su nombre archivístico **Cuchillo lítico**. El duplicado `HipArm01PackA000` continúa excluido, con JSON fuente conservado. Mismo WebP aprobado, 136 Items, 20 Armas, nueve carpetas y cinco plantillas. **D2 debe revalidarse tras este cambio; D3 sigue bloqueado.** Los nombres antiguos en el historial siguiente son evidencias documentales, no el nombre editorial vigente.
 
 ## CORTE VIGENTE — D2 / CORRECCIÓN EDITORIAL A 136 VALIDADA
 

@@ -84,6 +84,13 @@ def validate_selection():
         fail("duplicate ID or source path")
     if EXCLUDED_PROTOTYPE_KNIFE_ID in ids or SHARED_KNIFE_IDS.difference(ids):
         fail("editorial duplicate selected or historical knife missing")
+    # One editorial name, on the retained historical identity; source names stay unchanged.
+    name_overrides = [r for r in rows if "editorialName" in r]
+    if (len(name_overrides) != 1
+            or name_overrides[0]["id"] != "c2L6T5w4S9OcgkDt"
+            or name_overrides[0]["editorialName"] != "Cuchillo de piedra"
+            or name_overrides[0].get("sourceName") != "Cuchillo lítico"):
+        fail("unexpected editorial Item name override")
     if Counter(r.get("family") for r in rows) != EXPECTED_FAMILY_COUNTS:
         fail("unexpected family counts")
     if len(set(v[0] for v in FOLDERS.values())) != 9:
@@ -254,6 +261,10 @@ def prepare(output):
     for row, doc, source_sha, folder in item_data(rows):
         folder_id = FOLDERS[folder][0]
         transport = copy.deepcopy(doc)
+        if row.get("editorialName"):
+            if row.get("sourceName") != doc.get("name"):
+                fail("original historical source name changed: " + row["id"])
+            transport["name"] = row["editorialName"]
         transport["folder"] = folder_id
         transport["_key"] = "!items!" + row["id"]
         approved = approved_relics.get(row["id"])
@@ -294,8 +305,11 @@ def prepare(output):
                 legacy.append({"id": row["id"], "field": field, "path": value})
         records.append({
             "id": row["id"], "source": row["source"], "sha256": source_sha,
+            "name": transport["name"],
             "folder": folder, "template": doc["system"]["template"],
         })
+    if len([r for r in records if r["name"] == "Cuchillo de piedra"]) != 1:
+        fail("final editorial name is missing or duplicated")
     if (original_legacy_count != 139 or len(remapped) != 32
             or len(shared_remapped) != 2 or len(legacy) != 105
             or len({x["path"] for x in legacy}) != 78):
@@ -355,6 +369,10 @@ def verify(prepared, unpacked):
         if key in actual:
             fail("duplicate unpacked Item " + str(key))
         actual[key] = doc
+    if ("c2L6T5w4S9OcgkDt" not in expected
+            or expected["c2L6T5w4S9OcgkDt"].get("name") != "Cuchillo de piedra"
+            or "HipArm01PackA000" in expected):
+        fail("final editorial knife name or identity incorrect")
     if len(expected) != 136 or set(actual) != set(expected):
         fail("roundtrip IDs differ: missing=" + repr(sorted(set(expected) - set(actual))) +
              " extra=" + repr(sorted(set(actual) - set(expected))))
