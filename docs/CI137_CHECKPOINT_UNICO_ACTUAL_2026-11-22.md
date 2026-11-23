@@ -1,4 +1,14 @@
 # HIPERAUSTRALIS — CORE / CI137 · CHECKPOINT ÚNICO ACTUAL
+## SANEAMIENTO EJECUTADO — CORTE OPERATIVO 23-11-2026
+
+**Hecho comprobado sobre ZIPs locales físicos** `HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5_RESTAURAR.zip` y `HIPERA_PROTOTIPO_EXISTENTE_ACTUALIZACION_CI137_QA_v01.zip`: el segundo es exactamente el ZIP producido por GitHub Actions #45078858569 (SHA256 `b4a353fb5fe422246c6d57d7a8ab46c6e67dffa8fad4d6c6aa535e1762c650d5`). No hay compendio adicional ni archivos borrados. Las diferencias de contenido afectan únicamente el `module.json`, archivos de LevelDB de `ha-proto-items` y tres añadidos `QA/*`; los archivos de `ha-proto-actors`, `ha-proto-journals` y **86 assets** son idénticos. Esto NO identifica por sí solo la causa del fallo de carga.
+
+**Dependencias medidas sin repetir arqueología de imágenes:** `ci137-preflight.json` conserva **137 IDs**, **9 carpetas**, **5 plantillas CSB referenciadas**, **16 Reliquias aprobadas/32 remaps**, **109 enlaces visuales a 80 rutas históricas**; referencia al módulo histórico ≠ imagen perdida. Las cinco plantillas no están empaquetadas como plantillas CSB autónomas en el ZIP. No consta QA real de apertura de las 137 fichas ni explicación forense concluyente del bloqueo de Forge. **El estado D3 es FALLÓ / NO ACREDITADO, no PASS.**
+
+**Corrección efectiva del riesgo:** el workflow CI137 se deja exclusivamente para **preparación, compilación/round-trip D2 y reporte de gate**. Se retiró la recuperación de v0.1.5 y el ensamblado de ZIP instalable dentro del workflow, así como la carga de ese ZIP a Actions; conserva el código histórico fuera del flujo operativo. El nuevo `ci137-release-gate.json` verifica las cuentas y devuelve **`releaseDecision: BLOCKED`**; no fabrica un módulo ni genera una nueva descarga instalable. Sólo se rehabilita el empaquetado tras evidencias de resolución de dependencias y QA cliente satisfactorio. No se abrió mundo, no se modificó `main`, Bridge, estado Maestro o Forge.
+
+**Próximo avance material:** trabajar sobre `manifests/ci137-selected-source-137-historical-ids.json`, aprobaciones gráficas y dependencias de las cinco plantillas. No producir ni importar ZIP hasta cerrar el gate. Mantener el mismo módulo y los mismos tres packs, sin variantes, sin duplicados.
+
 ## INCIDENCIA D3 — BLOQUEO DE CARGA EN FOUNDRY / FORGE (22-11-2026)
 
 **Reporte directo del usuario:** tras importar en Forge el ZIP de actualización del mismo `hiperaustralis-compendios-prototype` sobre v0.1.5, **Foundry se queda cargando el mundo y no permite entrar**. El run #45078858569 acreditó únicamente D2 (compilación/round-trip/estructura), **NO D3**. La causalidad técnica todavía no está diagnosticada; tratar la actualización CI137 como **SUSPENDIDA / NO INSTALAR** hasta evidencia contraria. No atribuir con certeza el bloqueo a imágenes, Items o sistema sin pruebas.

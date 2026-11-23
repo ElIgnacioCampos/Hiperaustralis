@@ -7,9 +7,7 @@ on:
     paths:
       - '.github/workflows/compile-ci137.yml'
       - 'tools/foundry/ci137_pipeline.py'
-      - 'tools/foundry/ci137_update_existing_prototype.py'
       - 'tools/foundry/assert_single_compendium.py'
-      - 'tools/foundry/ci137_readonly_existing_prototype.js'
       - 'manifests/ci137-selected-source-137-historical-ids.json'
       - 'source/items/**'
       - 'source-pending/**'
@@ -33,9 +31,8 @@ jobs:
           node-version: '22'
       - name: Validate CI137 Python and macro syntax
         run: |
-          python -m py_compile tools/foundry/ci137_pipeline.py tools/foundry/ci137_update_existing_prototype.py tools/foundry/assert_single_compendium.py
-          node --check tools/foundry/ci137_readonly_existing_prototype.js
-          python tools/foundry/assert_single_compendium.py --self-test
+          python -m py_compile tools/foundry/ci137_pipeline.py tools/foundry/assert_single_compendium.py
+                    python tools/foundry/assert_single_compendium.py --self-test
       - name: Prepare exactly 137 selected real sources - no asset changes
         run: python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/ci137-prepared"
       - name: Install official Foundry CLI 3.0.5
@@ -56,34 +53,46 @@ jobs:
           python tools/foundry/ci137_pipeline.py verify \
             --prepared "$RUNNER_TEMP/ci137-prepared" \
             --unpacked "$RUNNER_TEMP/ci137-unpacked"
-      - name: Recover EXACT existing HA Prototipo baseline (run 44961385066)
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: CI137 release gate — do not produce installable ZIP while dependencies are open
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p "$RUNNER_TEMP/ha-prototype-baseline"
-          gh run download 44961385066 --repo ElIgnacioCampos/Hiperaustralis \
-            -n HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5 \
-            -D "$RUNNER_TEMP/ha-prototype-baseline"
-          test -f "$RUNNER_TEMP/ha-prototype-baseline/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip"
-          echo "c3125b7fe1ec4022a2d7e6c8802f723ac27a480541cef41a0136289de201ec93  $RUNNER_TEMP/ha-prototype-baseline/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip" | sha256sum --check
-      - name: Update ONLY existing HA Prototipo Objects - guard other packs and all artwork
-        shell: bash
-        run: |
-          set -euo pipefail
-          BASE="$RUNNER_TEMP/ha-prototype-baseline/HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip"
-          OUT="$RUNNER_TEMP/HIPERA_PROTOTIPO_EXISTENTE_CI137_VALIDADO.zip"
-          python tools/foundry/ci137_update_existing_prototype.py \
-            --baseline "$BASE" \
-            --items "$RUNNER_TEMP/ci137-packs/ha-proto-items" \
-            --preflight "$RUNNER_TEMP/ci137-prepared/ci137-preflight.json" \
-            --macro tools/foundry/ci137_readonly_existing_prototype.js \
-            --out "$OUT"
-          python tools/foundry/assert_single_compendium.py \
-            --self-test --artifact "$OUT" --baseline "$BASE"
-          unzip -t "$OUT" | tail -1
-          echo "CI137: SINGLE_EXISTING_PROTOTYPE_3_PACKS_PASS"
+          python - <<'PY'
+          import json
+          import os
+          from collections import Counter
+          from pathlib import Path
+
+          temp = Path(os.environ["RUNNER_TEMP"])
+          pre = json.loads((temp / "ci137-prepared/ci137-preflight.json").read_text(encoding="utf-8"))
+          rt = json.loads((temp / "ci137-prepared/ci137-roundtrip.json").read_text(encoding="utf-8"))
+          refs = pre["legacyAssetReferences"]
+          unique_paths = {r["path"] for r in refs}
+          templates = {r["template"] for r in pre["records"]}
+          assert pre["count"] == rt["items"] == 137
+          assert pre["folders"] == rt["folders"] == 9
+          assert len(refs) == 109 and len(unique_paths) == 80 and len(templates) == 5
+          assert pre["approvedAssetCount"] == 16
+          assert len(pre["approvedRemaps"]) == 32
+          result = {
+            "schema": "ci137-release-gate-v01",
+            "id": "hiperaustralis-compendios-prototype",
+            "pack": "ha-proto-items",
+            "D2": "ROUNDTRIP_PASS",
+            "itemCount": 137,
+            "legacyImageRefs": len(refs),
+            "legacyUniquePaths": len(unique_paths),
+            "csbTemplateIdsReferenced": sorted(templates),
+            "D3": "FAILED_OR_UNVERIFIED",
+            "installableArtifactProduced": False,
+            "releaseDecision": "BLOCKED",
+            "reason": "109 unresolved historic image references; 5 CSB templates require real-world QA; the prior CI137 installer coincided with a world-load stall",
+            "nextStep": "Resolve approved asset dependencies and reproduce Foundry client loading before any packaging"
+          }
+          (temp / "ci137-prepared/ci137-release-gate.json").write_text(
+            json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          print(json.dumps(result, ensure_ascii=False))
+          PY
       - name: Preserve isolated audit evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -93,7 +102,6 @@ jobs:
             ${{ runner.temp }}/ci137-prepared/ci137-*.json
             ${{ runner.temp }}/ci137-prepared/assets/reliquias/**
             ${{ runner.temp }}/ci137-packs/ha-proto-items/**
-            ${{ runner.temp }}/HIPERA_PROTOTIPO_EXISTENTE_CI137_VALIDADO.zip
           if-no-files-found: warn
           retention-days: 30
 
