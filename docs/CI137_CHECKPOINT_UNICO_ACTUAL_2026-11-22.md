@@ -1,4 +1,16 @@
 # HIPERAUSTRALIS — CORE / CI137 · CHECKPOINT ÚNICO ACTUAL
+## INCIDENCIA D3 — BLOQUEO DE CARGA EN FOUNDRY / FORGE (22-11-2026)
+
+**Reporte directo del usuario:** tras importar en Forge el ZIP de actualización del mismo `hiperaustralis-compendios-prototype` sobre v0.1.5, **Foundry se queda cargando el mundo y no permite entrar**. El run #45078858569 acreditó únicamente D2 (compilación/round-trip/estructura), **NO D3**. La causalidad técnica todavía no está diagnosticada; tratar la actualización CI137 como **SUSPENDIDA / NO INSTALAR** hasta evidencia contraria. No atribuir con certeza el bloqueo a imágenes, Items o sistema sin pruebas.
+
+**Medidas preventivas realizadas:**
+- El ZIP QA de Drive con ID `16Vm55JK4cqqm87UXxnpOUYeckTiVNeRi` fue **renombrado en el mismo lugar** `NO_INSTALAR__CI137_QA_D3_FALLO_CARGA_MUNDO__HIPERA_PROTOTIPO_v0.1.6.zip`, sin duplicar ni borrar contenido.
+- Recuperado desde el artefacto de la compilación histórica **el ZIP original v0.1.5** (no otro compendio): `HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5_RESTAURAR.zip`, **4.938.068 bytes**, SHA-256 `c3125b7fe1ec4022a2d7e6c8802f723ac27a480541cef41a0136289de201ec93`, CRC PASS, mismo ID, mismos tres compendios. Respaldo Drive: https://drive.google.com/file/d/1B6YkLX_GbKNuHms9Sla__9US1aNRJ5oA/view?usp=drivesdk.
+- **Recuperación segura sugerida** (no ejecutada por ChatGPT): Safe Configuration para el mundo afectado (Foundry Setup → Game Worlds → Edit World → Launch in Safe Configuration → Update World; Forge Game Manager también tiene Launch in Safe Configuration). Si abre, mantener CI137 desactivado y volver a versión anterior mediante Import Wizard, evitando restauración/destrucción del mundo.
+- **No producir ni recomendar otro ZIP CI137 ni nueva versión** hasta diagnosticar el fallo real, preservar logs y probar en cliente aislado. No confundir PASS del workflow con usabilidad.
+
+**Estado actual:** D2 PASS documental/técnico anterior, **D3 FALLÓ EN OPERACIÓN DE USUARIO (causa no identificada)**, D4 bloqueado; **sin acceso desde esta sesión a Forge**. Se requiere confirmar recuperación funcional antes de retomar pruebas de compilación. No reproducir ni ignorar este incidente en el siguiente checkpoint.
+
 **Corte:** 2026-11-22 · **Rama:** `work/ci137-ensayo-identidad-historica-20261121`
 **Estado ejecutivo:** 137 Items históricos/seleccionados compilados y round-trip PASS; **no hay todavía módulo CI137 autónomo instalable ni QA en cliente Foundry**.
 **Autoridad:** este checkpoint sólo rige implementación técnica de CI137. El Estado Maestro ACTUAL de Hiperaustralis rige el canon; no se modifica aquí.
