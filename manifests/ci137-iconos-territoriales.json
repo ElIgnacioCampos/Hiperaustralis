@@ -1918,9 +1918,9 @@
     "optimizedFlora0475": {
       "originalName": "HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB.zip",
       "sourceSHA256": "c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e",
-      "bytesCurrentlyAccessible": false,
+      "bytesCurrentlyAccessible": true,
       "originalIconsOptimizedCount": 40,
-      "status": "PHYSICAL_SOURCE_PENDING__DO_NOT_USE_0473_AS_FINAL",
+      "status": "EXACT_0475_ZIP_BYTES_VERIFIED__FLORA_40_8_BGS_PASS__NOT_PROMOTED",
       "alternativeCandidateV1SourcePresentInLibrary": true,
       "alternativeCandidateV1NotEquivalent": true,
       "libraryMetadataDiscovery20261123": {
@@ -1938,7 +1938,46 @@
         "comparator40IconBytes": 3641622,
         "hashAuditReport": "docs/AUDITORIA_HASHES_FLORA_0.4.68_vs_0.4.75_2026-11-12.md",
         "hashAudit40IconBytes": 5951968,
-        "status": "UNRESOLVED_IN_RECORDS__DO_NOT_CHOOSE_WITHOUT_EXTRACTING_ZIP"
+        "status": "RESOLVED_BY_SHA_VERIFIED_0475_ZIP__3641622_CORRECT",
+        "actualExactZipFlora40Bytes": 3641622,
+        "comparatorReportCorrectForExactZip": true,
+        "hashAuditReportByteTotalIncorrectForExactZip": true
+      },
+      "conversationUploadPhysicalAudit20261123": {
+        "sourceFilename": "HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB(1).zip",
+        "originalCanonicalFilename": "HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB.zip",
+        "physicalBytes": 33028294,
+        "observedSHA256": "c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e",
+        "zipEntries": 358,
+        "crc": "PASS",
+        "unsafeNames": 0,
+        "duplicatedNames": 0,
+        "floraIcons": 40,
+        "floraWebpTotalBytes": 3641622,
+        "floraDimensions": [
+          512,
+          512
+        ],
+        "floraMode": "RGBA",
+        "floraDecodedByPillow": 40,
+        "floraBackgrounds": 8,
+        "floraBackgroundTotalBytes": 3228266,
+        "floraBackgroundMode": "RGB",
+        "backgroundsDecodedByPillow": 8,
+        "floraItemReferences": 40,
+        "floraItemReferencesPresent": 40,
+        "floraBackgroundReferences": 40,
+        "floraBackgroundReferencesPresent": 40,
+        "uniqueFloraBackgroundReferences": 8,
+        "totoraBackgroundSharedBy": 33,
+        "biomaIconCount": 8,
+        "biomaIconApproval": "CANDIDATO_NO_PUBLICAR",
+        "fauna003ApprovedMaster1024Sha256": "a5f418074209715ceb383ba53c4fc0974e9c68375b0dd02aa487c9b62775049d",
+        "fauna003ApprovedMaster1024FoundExactSHA": true,
+        "fauna003Archive0475Rupestre512Sha256": "c536bd972d57eb0b5534e1b020c7d409f327b2276a4bd7b56748cf6e00acd62f",
+        "fauna003ApprovalInheritanceTo512": false,
+        "installedOrPromotedAssets": 0,
+        "clientFoundryQA": false
       }
     },
     "isolatedRecoveryPack": {
