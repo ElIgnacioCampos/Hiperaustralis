@@ -49,6 +49,12 @@ TEMPLATE_IDS = {
     "HipRelqTpl000001", "HipRitualTpl0001",
 }
 PRESERVED_FIELDS = ("name", "type", "img", "system", "effects", "flags", "ownership")
+SHARED_KNIFE_IDS = {"c2L6T5w4S9OcgkDt", "HipArm01PackA000"}
+SHARED_KNIFE_MEMBER = "assets/armas/01_cuchillo_litico.webp"
+SHARED_KNIFE_URL = "modules/hiperaustralis-compendios-prototype/" + SHARED_KNIFE_MEMBER
+SHARED_KNIFE_SHA256 = "7ff631440c2a74d7ca25014ceb1c38024b14d3ebdb2f73a9bcc0be98ba7a8082"
+SHARED_KNIFE_STAGE = "module/assets/_staging/ci137_v02_historico/armas/01_cuchillo_litico.webp"
+
 
 
 def fail(message):
@@ -177,6 +183,47 @@ def verified_relic_remaps(output):
     return maps
 
 
+
+def verified_shared_knife(rows, output):
+    """User-approved one WebP for two preserved Items; transport only, no source changes."""
+    selected = {r["id"]: r for r in rows if r["id"] in SHARED_KNIFE_IDS}
+    if set(selected) != SHARED_KNIFE_IDS:
+        fail("the two historical knife IDs are not selected")
+    original = ROOT / SHARED_KNIFE_STAGE
+    final = ROOT / "module" / SHARED_KNIFE_MEMBER
+    if not original.is_file() or not final.is_file():
+        fail("shared knife image is missing from staged or final module asset")
+    data = final.read_bytes()
+    if original.read_bytes() != data or digest(data) != SHARED_KNIFE_SHA256:
+        fail("approved shared knife image differs from original SHA")
+    new = SHARED_KNIFE_URL
+    docs, maps = {}, {}
+    expected_originals = {
+        "c2L6T5w4S9OcgkDt": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_litico.webp",
+        "HipArm01PackA000": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_piedra.webp",
+    }
+    for item_id, row in selected.items():
+        entry = row.get("sharedKnifeImage", {})
+        source = read_json(ROOT / row["source"])
+        old = expected_originals[item_id]
+        bg = source.get("flags", {}).get("hiperaustralis-sheet", {}).get("background")
+        if (entry.get("approvedForTransport") is not True
+                or entry.get("originalPath") != old
+                or entry.get("sharedTarget") != new
+                or entry.get("sha256") != SHARED_KNIFE_SHA256
+                or entry.get("sourceAsset") != SHARED_KNIFE_STAGE
+                or source.get("_id") != item_id or source.get("img") != old or bg != old):
+            fail("unapproved shared knife mapping: " + item_id)
+        docs[item_id] = source
+        maps[item_id] = {"old": old, "new": new, "sha256": SHARED_KNIFE_SHA256}
+    if docs["c2L6T5w4S9OcgkDt"]["system"]["props"]["descripcion"] != docs["HipArm01PackA000"]["system"]["props"]["descripcion"]:
+        fail("historical knife descriptions differ; no shared-image assumption")
+    dest = output / SHARED_KNIFE_MEMBER
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_bytes(data)
+    return maps
+
+
 def folder_doc(folder, folder_id, parent):
     return {
         "_id": folder_id, "name": folder.split("/")[-1], "type": "Item",
@@ -200,9 +247,11 @@ def prepare(output):
             encoding="utf-8",
         )
     approved_relics = verified_relic_remaps(output)
+    shared_knives = verified_shared_knife(rows, output)
     records = []
     legacy = []
     remapped = []
+    shared_remapped = []
     original_legacy_count = 0
     for row, doc, source_sha, folder in item_data(rows):
         folder_id = FOLDERS[folder][0]
@@ -222,6 +271,15 @@ def prepare(output):
                 {"id": row["id"], "field": "img", "from": approved["old"], "to": approved["new"], "sha256": approved["sha256"]},
                 {"id": row["id"], "field": "flags.hiperaustralis-sheet.background", "from": approved["old"], "to": approved["new"], "sha256": approved["sha256"]},
             ])
+        shared = shared_knives.get(row["id"])
+        if shared is not None:
+            transport["img"] = shared["new"]
+            transport["flags"]["hiperaustralis-sheet"]["background"] = shared["new"]
+            shared_remapped.extend([
+                {"id": row["id"], "field": field, "from": shared["old"],
+                 "to": shared["new"], "sha256": shared["sha256"]}
+                for field in ("img", "flags.hiperaustralis-sheet.background")
+            ])
         target = itemroot.joinpath(*folder.split("/"), row["id"] + ".json")
         target.write_text(
             json.dumps(transport, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -240,15 +298,18 @@ def prepare(output):
             "id": row["id"], "source": row["source"], "sha256": source_sha,
             "folder": folder, "template": doc["system"]["template"],
         })
-    if original_legacy_count != 141 or len(remapped) != 32 or len(legacy) != 109:
+    if (original_legacy_count != 141 or len(remapped) != 32
+            or len(shared_remapped) != 4 or len(legacy) != 105
+            or len({x["path"] for x in legacy}) != 78):
         fail("unplanned count of approved remaps or unresolved legacy links")
     report = {
-        "schema": "ci137-transport-preflight-v02",
-        "status": "137_REAL_SOURCES_PREPARED__16_APPROVED_RELIC_ASSETS__109_LEGACY_REFS",
+        "schema": "ci137-transport-preflight-v03",
+        "status": "137_REAL_SOURCES_PREPARED__16_RELIC_ASSETS__1_SHARED_KNIFE__105_LEGACY_REFS",
         "count": len(records), "uniqueIds": len(set(r["id"] for r in records)),
         "folders": 9, "templates": 5,
         "originalLegacyReferences": original_legacy_count,
         "approvedRemaps": remapped, "approvedAssetCount": len(approved_relics),
+        "sharedKnifeRemaps": shared_remapped, "sharedKnifeAssetCount": 1,
         "legacyAssetReferences": legacy,
         "records": records,
     }
@@ -263,8 +324,15 @@ def verify(prepared, unpacked):
     manifest = read_json(prepared / "ci137-preflight.json")
     if manifest.get("count") != 137:
         fail("prepared corpus not 137")
-    if len(manifest.get("approvedRemaps", [])) != 32 or len(manifest.get("legacyAssetReferences", [])) != 109:
-        fail("expected 32 relic remaps and 109 unresolved legacy references")
+    if (len(manifest.get("approvedRemaps", [])) != 32
+            or len(manifest.get("sharedKnifeRemaps", [])) != 4
+            or len(manifest.get("legacyAssetReferences", [])) != 105):
+        fail("expected 32 relic remaps, 4 knife remaps and 105 unresolved legacy references")
+    knife_image = prepared / SHARED_KNIFE_MEMBER
+    if (not knife_image.is_file() or digest(knife_image.read_bytes()) != SHARED_KNIFE_SHA256
+            or {x["id"] for x in manifest["sharedKnifeRemaps"]} != SHARED_KNIFE_IDS
+            or {x["to"] for x in manifest["sharedKnifeRemaps"]} != {SHARED_KNIFE_URL}):
+        fail("one shared knife WebP must serve both IDs and both background fields")
     for mapping in manifest["approvedRemaps"]:
         member = mapping["to"].split("/assets/reliquias/", 1)[-1]
         image = prepared / "assets/reliquias" / member
@@ -314,9 +382,10 @@ def verify(prepared, unpacked):
         "items": len(actual), "folders": len(folders),
         "semanticFieldsChecked": list(PRESERVED_FIELDS),
         "legacyReferenceCount": len(manifest["legacyAssetReferences"]),
+        "sharedKnifeReferencesRemapped": len(manifest["sharedKnifeRemaps"]),
         "approvedRelicAssetCount": manifest["approvedAssetCount"],
         "approvedRelicReferencesRemapped": len(manifest["approvedRemaps"]),
-        "note": "Only 16 already-approved relic images remapped; 109 legacy references remain; no Foundry client QA",
+        "note": "16 historical relic WebP and one user-approved shared knife WebP mapped; 105 legacy references remain; no Foundry client QA",
     }
     (prepared / "ci137-roundtrip.json").write_text(
         json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"

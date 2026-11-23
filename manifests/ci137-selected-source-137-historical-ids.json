@@ -921,6 +921,16 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_ARMAS20_RESCATE_VERIFICADO_20261122.json",
         "finalArtApprovedForCI137": false
+      },
+      "sharedKnifeImage": {
+        "approval": "USER_APPROVED_ONE_SHARED_ILLUSTRATION_BOTH_ITEMS",
+        "scope": "TRANSPORT_ONLY__PRESERVE_BOTH_ITEM_IDS_AND_SOURCE_JSON",
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_litico.webp",
+        "sharedTarget": "modules/hiperaustralis-compendios-prototype/assets/armas/01_cuchillo_litico.webp",
+        "sha256": "7ff631440c2a74d7ca25014ceb1c38024b14d3ebdb2f73a9bcc0be98ba7a8082",
+        "sourceAsset": "module/assets/_staging/ci137_v02_historico/armas/01_cuchillo_litico.webp",
+        "approvedForTransport": true,
+        "runtimeQA": "NOT_EXECUTED"
       }
     },
     {
@@ -1272,6 +1282,16 @@
         "originalPath": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_piedra.webp",
         "status": "MISSING_EXACT_HISTORICAL_BINARY_DO_NOT_SUBSTITUTE",
         "finalArtApprovedForCI137": false
+      },
+      "sharedKnifeImage": {
+        "approval": "USER_APPROVED_ONE_SHARED_ILLUSTRATION_BOTH_ITEMS",
+        "scope": "TRANSPORT_ONLY__PRESERVE_BOTH_ITEM_IDS_AND_SOURCE_JSON",
+        "originalPath": "modules/hiperaustralis-rituales/assets/armas/01_cuchillo_piedra.webp",
+        "sharedTarget": "modules/hiperaustralis-compendios-prototype/assets/armas/01_cuchillo_litico.webp",
+        "sha256": "7ff631440c2a74d7ca25014ceb1c38024b14d3ebdb2f73a9bcc0be98ba7a8082",
+        "sourceAsset": "module/assets/_staging/ci137_v02_historico/armas/01_cuchillo_litico.webp",
+        "approvedForTransport": true,
+        "runtimeQA": "NOT_EXECUTED"
       }
     },
     {

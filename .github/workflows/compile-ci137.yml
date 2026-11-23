@@ -33,7 +33,7 @@ jobs:
       - name: Validate CI137 Python and macro syntax
         run: |
           python -m py_compile tools/foundry/ci137_pipeline.py tools/foundry/assert_single_compendium.py tools/foundry/ci137_template_gate.py tools/foundry/ci137_equipo_20_transfer.py
-                    python tools/foundry/assert_single_compendium.py --self-test
+          python tools/foundry/assert_single_compendium.py --self-test
       - name: Prepare exactly 137 selected real sources - no asset changes
         run: python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/ci137-prepared"
       - name: Static CSB template compatibility — evidence only, never runtime approval
@@ -76,7 +76,8 @@ jobs:
           templates = {r["template"] for r in pre["records"]}
           assert pre["count"] == rt["items"] == 137
           assert pre["folders"] == rt["folders"] == 9
-          assert len(refs) == 109 and len(unique_paths) == 80 and len(templates) == 5
+          assert len(refs) == 105 and len(unique_paths) == 78 and len(templates) == 5
+          assert len(pre["sharedKnifeRemaps"]) == 4 and pre["sharedKnifeAssetCount"] == 1
           assert pre["approvedAssetCount"] == 16
           assert len(pre["approvedRemaps"]) == 32
           result = {
@@ -91,7 +92,7 @@ jobs:
             "D3": "FAILED_OR_UNVERIFIED",
             "installableArtifactProduced": False,
             "releaseDecision": "BLOCKED",
-            "reason": "109 unresolved historic image references; 5 CSB templates require real-world QA; the prior CI137 installer coincided with a world-load stall",
+            "reason": "105 unresolved historic image references; 5 CSB templates require real-world QA; the prior CI137 installer coincided with a world-load stall",
             "nextStep": "Resolve approved asset dependencies and reproduce Foundry client loading before any packaging"
           }
           (temp / "ci137-prepared/ci137-release-gate.json").write_text(
@@ -106,6 +107,7 @@ jobs:
           path: |
             ${{ runner.temp }}/ci137-prepared/ci137-*.json
             ${{ runner.temp }}/ci137-prepared/assets/reliquias/**
+            ${{ runner.temp }}/ci137-prepared/assets/armas/**
             ${{ runner.temp }}/ci137-packs/ha-proto-items/**
           if-no-files-found: warn
           retention-days: 30

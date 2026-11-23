@@ -3,11 +3,19 @@
 **Estado:** D2 / 137 Items **PASS** · **TRANSFERENCIA REAL 115/115 WEBP A GITHUB PASS** (79 staging históricos, 20 Equipo aprobado, 16 Reliquias aprobadas) · D3 / Foundry **NO ACREDITADO, incidente previo sin diagnóstico** · PUBLICACIÓN **BLOQUEADA**.
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 137 identidades; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
+## DECISIÓN APLICADA — UNA ILUSTRACIÓN PARA DOS CUCHILLOS
+
+**Aprobación del usuario (22-11-2026):** mantener los IDs `HipArm01PackA000` (Cuchillo de piedra) y `c2L6T5w4S9OcgkDt` (Cuchillo lítico); ambos referirán el mismo WebP `assets/armas/01_cuchillo_litico.webp` en el **transporte CI137**. El objeto de Git `c8f32044e1c8e4e4cb671ad964e2378effb18f49` se reutiliza desde el staging, **sin regeneración ni duplicación de contenido binario**. SHA256 del WebP: `7ff631440c2a74d7ca25014ceb1c38024b14d3ebdb2f73a9bcc0be98ba7a8082`.
+
+**Cambio material previsto en este commit:** 4 referencias gráficas en transporte (dos `img`, dos fondos), una ruta compartida, cero cambios en JSON fuente. Los 137 IDs se mantienen, incluida su posible duplicación editorial. Los remaps anteriores de 16 Reliquias siguen separados (32 referencias). Conteo esperado de enlaces externos: **109 → 105**, rutas externas distintas **80 → 78**. La aprobación cubre **compartir el archivo**, no fusionar los dos Items ni promover otras imágenes de Armas.
+
+**Puerta:** CI137 debe comprobar 137 IDs/9 carpetas/5 plantillas, SHA exacto del WebP compartido y round-trip. `D3` sin aprobar; ningún ZIP instalable ni cambios a Forge, `main`, Bridge o Estado Maestro.
+
 ## ACLARACIÓN DE IDENTIDAD — CUCHILLO DE PIEDRA / CUCHILLO LÍTICO
 
 **Verificación directa de ambos JSON fuente y del WebP:** `source/items/01_cuchillo_piedra.json` (`HipArm01PackA000`) y `source/items/armas/01_cuchillo_litico.json` (`c2L6T5w4S9OcgkDt`) tienen **la misma descripción literal**. La imagen físicamente recuperada `01_cuchillo_litico.webp` representa visualmente una hoja de piedra tallada con mango y amarras. La ruta específica `01_cuchillo_piedra.webp` **no existe en los respaldos inspeccionados**, pero eso NO significa que falte una imagen apropiada del objeto. Corregir en adelante la frase «imagen de Cuchillo de piedra ausente» a **«ruta nominal específica ausente; equivalencia gráfica plausible con Cuchillo lítico»**.
 
-**No ejecutar sustitución aún:** la norma anterior impedía rellenar por semejanza; la coincidencia de la descripción y la verificación de imagen convierten la referencia compartida en una **propuesta editorial fundada**, no una aprobación automática. Decisión pendiente: conservar dos Items con **un WebP compartido sin duplicar bytes**, o reconocer una duplicación editorial y revisar el cómputo de 137. No fusionar IDs ni modificar fuentes `img`/fondo/compendios/manifest sin decisión explícita.
+**Rectificación tras aprobación:** la decisión quedó autorizada: se conservan ambos Items y se comparte exclusivamente el WebP en el transporte. La posible duplicación editorial permanece abierta. JSON fuente y compendios no se alteran.
 
 ## ACTUALIZACIÓN MATERIAL — TRANSFERENCIA GITHUB CERRADA (22-11-2026, hora de Santiago)
 
