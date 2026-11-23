@@ -1,6 +1,6 @@
 {
   "schema": "hipera-ci137-selected-historic-identities-v06",
-  "status": "CI137_SELECTED_136__D2_ROUNDTRIP_PENDING__D3_RELEASE_BLOCKED",
+  "status": "CI137_136_ROUNDTRIP_PASS__D3_RELEASE_BLOCKED",
   "targetCount": 136,
   "entries": [
     {
@@ -1292,11 +1292,11 @@
       "Foundry_CLI_and_runtime_QA"
     ],
     "lockedHistoricalIds": true,
-    "actualBuildGate": "PENDING_D2_136_GITHUB_ACTIONS",
+    "actualBuildGate": "PASS_136_CLI_ROUNDTRIP_GHA_45099157074",
     "noAssetRegeneration": true,
     "reuseExistingAssetsBeforeRecovery": true,
     "sourcePromotionRequiresExactIdentityAndApprovedAssetMap": true,
-    "nextGate": "VALIDATE_136_WITH_EXISTING_PIPELINE_THEN_RESUME_APPROVED_ASSET_MAPPING"
+    "nextGate": "D2_RESOLVE_APPROVED_ASSET_MAPPINGS_THEN_D3_CLIENT_DIAGNOSIS"
   },
   "auditSnapshotBeforeDeduplication": {
     "date": "2026-11-22",
@@ -1571,6 +1571,21 @@
       "approvedRelicRemapsExpected": 32,
       "unresolvedLegacyReferencesExpected": 105
     },
-    "d3": "BLOCKED"
+    "d3": "BLOCKED",
+    "D2": {
+      "status": "PASS",
+      "workflowRunId": 45099157074,
+      "headSha": "031723a7b630b5c770aeb4457747794dc949cb6a",
+      "url": "https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45099157074",
+      "sourceItems": 136,
+      "uniqueIds": 136,
+      "folders": 9,
+      "csbTemplates": 5,
+      "approvedRelicRemaps": 32,
+      "historicalKnifeRemaps": 2,
+      "unresolvedLegacyImageReferences": 105,
+      "foundryClientQA": "NOT_EXECUTED",
+      "release": "BLOCKED"
+    }
   }
 }

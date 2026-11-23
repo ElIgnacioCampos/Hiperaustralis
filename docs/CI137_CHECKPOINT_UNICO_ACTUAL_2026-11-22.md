@@ -1,13 +1,15 @@
 # HIPERAUSTRALIS · CI137 / CHECKPOINT ÚNICO ACTUAL
 **Corte:** 22-11-2026 (Chile) · **Rama:** `work/ci137-ensayo-identidad-historica-20261121`
-**Estado ACTUAL (22-11-2026, D2):** selección **136 Items / 20 Armas**; **GitHub Actions para 136 PENDIENTE**. Último PASS técnico anterior: 137/137. Transferencia **115/115 WebP PASS**. D3/Foundry **NO ACREDITADO**; publicación **BLOQUEADA**.
+**Estado ACTUAL (22-11-2026, D2):** **136/136 Items PASS**, **20 Armas**, nueve carpetas, cinco plantillas; **115/115 WebP transferidos PASS**. D3/Foundry **NO ACREDITADO**; publicación **BLOQUEADA**. La compilación previa 137/137 permanece en historial.
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
-## CORTE VIGENTE — D2 / CORRECCIÓN EDITORIAL A 136, VALIDACIÓN PENDIENTE
+## CORTE VIGENTE — D2 / CORRECCIÓN EDITORIAL A 136 VALIDADA
 
-**Autorización recibida:** ejecutar la corrección mínima dentro de la misma rama, pipeline, workflow, manifiesto y checkpoint CI137. Se excluye **solo del transporte** `HipArm01PackA000` (Cuchillo de piedra), redundante con `c2L6T5w4S9OcgkDt` (Cuchillo lítico). Fuente `source/items/01_cuchillo_piedra.json` conservada intacta como archivo histórico del prototipo. Tokicura y los 135 Items históricos permanecen seleccionados. Resultado propuesto: **136 Items, 20 Armas, nueve carpetas, cinco plantillas**.
+**Autorización recibida:** ejecutar la corrección mínima dentro de la misma rama, pipeline, workflow, manifiesto y checkpoint CI137. Se excluye **solo del transporte** `HipArm01PackA000` (Cuchillo de piedra), redundante con `c2L6T5w4S9OcgkDt` (Cuchillo lítico). Fuente `source/items/01_cuchillo_piedra.json` conservada intacta como archivo histórico del prototipo. Tokicura y los 135 Items históricos permanecen seleccionados. Resultado comprobado: **136 Items, 20 Armas, nueve carpetas, cinco plantillas**.
 
 **Asset:** el único WebP aprobado `module/assets/armas/01_cuchillo_litico.webp` permanece con su SHA verificado; solo dos referencias `img`/fondo del Cuchillo lítico requieren el remapeo. Los 105 enlaces heredados no resueltos se mantienen. Los 115 WebP ya transferidos no se reimportan ni sustituyen. No hay gráficos nuevos.
+
+**Validación material:** [GitHub Actions #45099157074](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45099157074) **SUCCESS**, commit `031723a7b630b5c770aeb4457747794dc949cb6a`: preparación 136 fuentes, control estático CSB, compilación y descompilación CLI 3.0.5, 136/136 IDs y campos semánticos, nueve carpetas y release gate `BLOCKED`. Artefacto de auditoría `ci137-real-136-preflight-and-roundtrip` (`14784562702`). **No es instalador; D3 sin ejecutar.**
 
 **Puertas:** solo D2 mediante workflow existente. Scripts legados de instalador y macro QA D3 quedan congelados, contienen expectativas antiguas de 137 y **no están habilitados para uso con 136** hasta revisar el incidente de carga en Foundry. No generar instalador, no modificar `main`, Forge, Bridge, mundo, plantilla CSB ni Estado Maestro. Las secciones inferiores documentan el corte histórico 137, no la selección actual.
 
@@ -119,7 +121,7 @@
 
 ## 8. Decisiones / Pendientes / Fuentes / Maestro
 
-**Decisiones:** mantener un único HA Prototipo y sus tres packs; congelar el instalador fallido; los 20 WebP de Equipo común son recuperados/validados en Biblioteca, sin promoción runtime.
-**Pendientes ACTUALES:** decidir por ID el remapeo de 107 referencias externas utilizando los 79 históricos sólo cuando exista aprobación editorial de las versiones finales (ARM‑11–13 excluidas por ahora); conservar los 20 Equipo común como arte aprobado sin modificar aún `img`; recuperar el icono independiente de Cuchillo de piedra; QA29 cliente, cinco plantillas CSB en runtime y diagnóstico de bloqueo Foundry; D3 antes de cualquier distribución. **Transferencia 115/115: CERRADA.**
-**Fuentes:** [compilación y gate D2](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45090601010); `docs/CI137_RECTIFICACION_CONTINUIDAD_ASSETS_2026-11-21.md`; `docs/CORE_EQUIPO_COMUN_QA29_OVERLAY_AISLADO_PREPARADO_20261121_v10.md`; los dos ZIP de BBTECA especificados arriba; `manifests/equipo-comun-29-cruces-candidatos-20261121.json`.
+**Decisiones:** mantener un único HA Prototipo y sus tres packs; D2 136/136 PASS tras excluir el duplicado Cuchillo de piedra del transporte sin borrar su fuente; congelar el instalador fallido; conservar los 20 WebP de Equipo común sin promoción runtime.
+**Pendientes ACTUALES:** D2: revisar remapeos gráficos de los **105 enlaces heredados** del corpus 136, separando archivos históricos recuperados de imágenes aprobadas; respetar arte final ARM‑11/12/13 y no sobreescribirlo con staging; preparar QA de Equipo común (29 cruces) sin dar por autorizados los cambios de `img`. D3: diagnosticar bloqueo de carga Foundry, confirmar las cinco plantillas CSB en runtime y aprobar por separado cualquier instalación. **La ruta independiente Cuchillo de piedra ya no es requisito**: ese Item quedó excluido del transporte y su fuente se preserva. **Transferencia de 115/115 WebP y duplicación editorial: CERRADAS**.
+**Fuentes:** [D2 vigente 136 PASS](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45099157074); [D2 histórico 137 PASS](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45090601010); `docs/CI137_RECTIFICACION_CONTINUIDAD_ASSETS_2026-11-21.md`; `docs/CORE_EQUIPO_COMUN_QA29_OVERLAY_AISLADO_PREPARADO_20261121_v10.md`; los dos ZIP de BBTECA especificados arriba; `manifests/equipo-comun-29-cruces-candidatos-20261121.json`.
 **Cambios al Estado Maestro:** ninguno. `main`, Bridge y Forge sin cambios.
