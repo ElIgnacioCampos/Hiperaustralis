@@ -291,10 +291,12 @@ jobs:
           assert all(x["promotionAuthorized"] is False for x in pre["historicalStagingAssets"])
           assert pre["parafernaliaRitualesCrosswalk"] == rt["parafernaliaRitualesCrosswalk"]
           pr = pre["parafernaliaRitualesCrosswalk"]
-          assert (pr["items"], pr["parafernalia"], pr["rituales"], pr["historicShaMatches"], pr["ritualBackgroundMatches"], pr["inventory075RitualPresence"], pr["archive075ByteParity"], pr["approvedRemaps"]) == (30, 22, 8, 30, 8, 8, False, 0)
+          assert (pr["items"], pr["parafernalia"], pr["rituales"], pr["historicShaMatches"], pr["ritualBackgroundMatches"], pr["inventory075RitualPresence"], pr["archive075ByteParity"], pr["approvedRemaps"]) == (30, 22, 8, 30, 8, 8, True, 0)
           assert pre["defensasInstrumentosCrosswalk"] == rt["defensasInstrumentosCrosswalk"]
           cross = pre["defensasInstrumentosCrosswalk"]
           assert (cross["itemsAudited"], cross["uniqueNamedCandidates"], cross["approvedERHSeedMatches"], cross["namedCandidatesRemaining"], cross["ambiguous"], cross["withoutIdenticalArt"], cross["comApprovedWebpsSha256Verified"], cross["approvedItemRemaps"]) == (29, 17, 6, 11, 8, 4, 8, 6)
+          assert pr["archive075VerificationScope"]=="EXTERNAL_EXACT_ZIP_AUDIT_AND_STAGED_SHA_MANIFEST_NOT_ZIP_REREAD_IN_CI"
+          assert pr["approvedRemaps"]==0
           assert pre["additionalApprovedAssetCount"] == 6
           assert len(refs) == 99 and len(unique_paths) == 72
           result = {
