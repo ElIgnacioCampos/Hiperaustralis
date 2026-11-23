@@ -482,13 +482,18 @@ def verify_defensas_instrumentos_crosswalk(rows):
 
 
 def verify_pfrit_historical_manifest(rows):
-    """Check physical 30/30 0472/0473 WebP sources and Item paths; 075 parity is unknown."""
+    """Verify 30 old SHA values and recorded 0.4.75 external byte proof; no visual promotion."""
     m = read_json(ROOT / "manifests/ci137-parafernalia22-rituales8-recovery.json")
     if m.get("count") != 30 or len(m.get("rows", [])) != 30:
         fail("PF22/RIT08 manifest count changed")
     if (m.get("inventory075", {}).get("perImageSHAAvailable") is not False
             or m.get("physicalStaging", {}).get("approvedRemaps") != 0
-            or m.get("physicalStaging", {}).get("ref075VerifiedSHA") is not False):
+            or m.get("physicalStaging", {}).get("ref075VerifiedSHA") is not True
+            or m.get("physicalStaging", {}).get("transportApproved") is not False
+            or m.get("actualArchive075Audit20261123", {}).get("matchingWebP") != 30
+            or m.get("actualArchive075Audit20261123", {}).get("mismatchedSHA256") != 0
+            or m.get("actualArchive075Audit20261123", {}).get("runtimeApproval") is not False
+            or m.get("actualArchive075Audit20261123", {}).get("sourceSHA256") != m.get("archiveSha256")):
         fail("0.4.75 parity improperly claimed")
     chosen = {r["id"]: r for r in rows
               if r["family"] in ("Parafernalia · sanación · cultura material", "Rituales")}
@@ -519,10 +524,10 @@ def verify_pfrit_historical_manifest(rows):
         sha = rec["historicalCandidateSha256_0472_0473"]
         if (rec.get("currentPhysicalStagingPath") != physical
                 or rec.get("currentPhysicalStagingSha256_0472_0473") != sha
-                or rec.get("assetStatus") != "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL"
+                or rec.get("assetStatus") != "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED"
                 or rec.get("approvedForTransport") is not False
-                or rec.get("archive075ByteEquality") != "NOT_VERIFIED"
-                or rec.get("assetSha256") is not None or entry["archivedImage"].get("sha256") != sha):
+                or rec.get("archive075ByteEquality") != "SHA256_EQUAL_0472_0473_AND_0475"
+                or rec.get("assetSha256") != sha or entry["archivedImage"].get("sha256") != sha):
             fail("PF22/RIT08 archive status/SHA mismatch " + key)
         binary = ROOT / physical
         if not binary.is_file():
@@ -544,7 +549,9 @@ def verify_pfrit_historical_manifest(rows):
         fail("PF22/RIT08 family/ritual counts changed")
     return {"items": 30, "parafernalia": 22, "rituales": 8, "historicShaMatches": 30,
             "ritualBackgroundMatches": 8, "inventory075RitualPresence": 8,
-            "archive075ByteParity": False, "approvedRemaps": 0}
+            "archive075ByteParity": True,
+            "archive075VerificationScope": "EXTERNAL_EXACT_ZIP_AUDIT_AND_STAGED_SHA_MANIFEST_NOT_ZIP_REREAD_IN_CI",
+            "approvedRemaps": 0}
 
 
 def folder_doc(folder, folder_id, parent):
