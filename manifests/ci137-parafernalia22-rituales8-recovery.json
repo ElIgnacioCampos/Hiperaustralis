@@ -690,13 +690,16 @@
     "validatedAgainst075": false
   },
   "physicalStaging": {
-    "status": "CI_PENDING",
+    "status": "PASS_CI137_D2_GATE_45240892668",
     "verifiedCount": 30,
     "parafernalia": 22,
     "rituales": 8,
     "sourceVersion": "0.4.72_0.4.73",
     "approvedRemaps": 0,
-    "ref075VerifiedSHA": false
+    "ref075VerifiedSHA": false,
+    "verifiedCommit": "d489622fa3fd555c40fe6ef216aea761aa388d1c",
+    "workflowRun": 45240892668,
+    "workflowUrl": "https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45240892668"
   },
   "inventory075": {
     "source": "INVENTARIO_LEGACY_0.4.75.json",
