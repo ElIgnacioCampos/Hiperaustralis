@@ -288,6 +288,93 @@ def verify_historical_staging(rows):
     return records
 
 
+def verify_defensas_instrumentos_crosswalk(rows):
+    """Lock 17 named ERH candidates and eight approved COM bytes, without promotion."""
+    selected = [r for r in rows if r["family"] in ("Defensas", "Instrumentos musicales")]
+    if len(selected) != 29:
+        fail("Defensas/Instrumentos Item count changed")
+    counts = Counter()
+    unique_paths = set()
+    candidate_ids = set()
+    for row in selected:
+        entry = row.get("editorialCrosswalk", {})
+        status = entry.get("status")
+        if (entry.get("scope") != "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION"
+                or entry.get("visualIdentityVerified") is not False
+                or entry.get("approvedForTransport") is not False):
+            fail("unapproved graphics identity promoted: " + row["id"])
+        original = read_json(ROOT / row["source"])
+        if original.get("_id") != row["id"] or original.get("img") != row["archivedImage"]["originalPath"]:
+            fail("source Item or image changed during identity audit " + row["id"])
+        if status == "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE":
+            if row["family"] != "Instrumentos musicales":
+                fail("only distinctive musical-name candidates are in scope")
+            staged_path = entry.get("candidateStagedPath")
+            prefix = "module/assets/_staging/instrumentos-erh/webp_256/"
+            if (not isinstance(staged_path, str) or not staged_path.startswith(prefix)
+                    or ".." in Path(staged_path).parts or Path(staged_path).suffix.lower() != ".webp"):
+                fail("invalid musical candidate staged path " + row["id"])
+            target = ROOT / staged_path
+            if not target.is_file() or staged_path in unique_paths:
+                fail("missing/duplicated ERH named candidate " + row["id"])
+            unique_paths.add(staged_path)
+            raw = target.read_bytes()
+            git_sha1 = hashlib.sha1(b"blob " + str(len(raw)).encode("ascii") + b"\0" + raw).hexdigest()
+            if (git_sha1 != entry.get("expectedGitBlobSha1")
+                    or len(raw) != entry.get("expectedBytes")
+                    or raw[:4] != b"RIFF" or raw[8:12] != b"WEBP"
+                    or int.from_bytes(raw[4:8], "little") + 8 != len(raw)):
+                fail("candidate musical graphic differs from registered Git blob " + row["id"])
+            candidate_ids.add(row["id"])
+        elif status == "AMBIGUOUS_NOT_MAPPED":
+            if entry.get("candidateStagedPath") or not entry.get("reason"):
+                fail("ambiguous candidate was mapped without approval " + row["id"])
+            related = entry.get("relatedStagedPaths", [])
+            if not isinstance(related, list) or not related or any(
+                    not isinstance(q, str)
+                    or not q.startswith("module/assets/_staging/")
+                    or ".." in Path(q).parts
+                    or not (ROOT / q).is_file() for q in related):
+                fail("ambiguous asset evidence missing " + row["id"])
+        elif status == "NO_IDENTICAL_FINAL_ART_CANDIDATE":
+            if row["family"] != "Defensas" or entry.get("candidateStagedPath") or not entry.get("reason"):
+                fail("no-match artwork incorrectly mapped " + row["id"])
+        else:
+            fail("missing/invalid Defensas/Instrumentos crosswalk " + row["id"])
+        counts[status] += 1
+    if (counts != Counter({"ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE": 17,
+                          "AMBIGUOUS_NOT_MAPPED": 8,
+                          "NO_IDENTICAL_FINAL_ART_CANDIDATE": 4})
+            or len(candidate_ids) != 17 or len(unique_paths) != 17):
+        fail("Defensas/Instrumentos correspondence drift")
+    # Existing COM catalog is approved artwork; approval never establishes
+    # identity with eight different historical defense Items.
+    catalog = read_json(ROOT / "manifests/defensas-assets.json")
+    approved = [r for r in catalog.get("items", [])
+                if r.get("status") == "approved_asset_present"]
+    if len(approved) != 8:
+        fail("expected exactly eight approved COM WebP sources")
+    seen = set()
+    for record in approved:
+        found = [a for a in record["files"] if a["path"].endswith(".webp")]
+        if len(found) != 1:
+            fail("approved COM record lacks unique WebP " + record["name"])
+        asset = found[0]
+        source_path = ROOT / "module/assets/_staging/defensas/webp256" / Path(asset["path"]).name
+        if source_path.name in seen or not source_path.is_file():
+            fail("approved COM WebP missing/duplicated " + str(source_path))
+        seen.add(source_path.name)
+        raw = source_path.read_bytes()
+        if (digest(raw) != asset["sha256"] or len(raw) != asset["bytes"]
+                or raw[:4] != b"RIFF" or raw[8:12] != b"WEBP"
+                or int.from_bytes(raw[4:8], "little") + 8 != len(raw)):
+            fail("approved COM WebP SHA or RIFF changed: " + str(source_path))
+    return {"itemsAudited": 29, "uniqueNamedCandidates": 17,
+            "ambiguous": 8, "withoutIdenticalArt": 4,
+            "comApprovedWebpsSha256Verified": len(approved),
+            "approvedItemRemaps": 0}
+
+
 def folder_doc(folder, folder_id, parent):
     return {
         "_id": folder_id, "name": folder.split("/")[-1], "type": "Item",
@@ -299,6 +386,7 @@ def folder_doc(folder, folder_id, parent):
 def prepare(output):
     rows = validate_selection()
     historical_staging = verify_historical_staging(rows)
+    crosswalk = verify_defensas_instrumentos_crosswalk(rows)
     if output.exists() and any(output.iterdir()):
         fail("refusing nonempty output directory: " + str(output))
     output.mkdir(parents=True, exist_ok=True)
@@ -392,6 +480,7 @@ def prepare(output):
         "historicalStagingVerifiedCount": len(historical_staging),
         "historicalStagingShaMatched": sum(r["shaMatchedArchivalManifest"] for r in historical_staging),
         "historicalStagingPromotedCount": 0,
+        "defensasInstrumentosCrosswalk": crosswalk,
         "records": records,
     }
     (output / "ci137-preflight.json").write_text(
@@ -405,7 +494,11 @@ def verify(prepared, unpacked):
     manifest = read_json(prepared / "ci137-preflight.json")
     if manifest.get("count") != 136:
         fail("prepared corpus not 136")
-    stage_rows = verify_historical_staging(validate_selection())
+    source_rows = validate_selection()
+    stage_rows = verify_historical_staging(source_rows)
+    crosswalk = verify_defensas_instrumentos_crosswalk(source_rows)
+    if manifest.get("defensasInstrumentosCrosswalk") != crosswalk:
+        fail("crosswalk or final COM graphics changed across CI roundtrip")
     previous = manifest.get("historicalStagingAssets", [])
     if (len(previous) != 79 or stage_rows != previous
             or manifest.get("historicalStagingVerifiedCount") != 79
@@ -479,8 +572,9 @@ def verify(prepared, unpacked):
         "archivalWebpsVerified": len(stage_rows),
         "archivalWebpsShaCompared": 30,
         "archivalWebpsPromoted": 0,
+        "defensasInstrumentosCrosswalk": crosswalk,
         "approvedRelicReferencesRemapped": len(manifest["approvedRemaps"]),
-        "note": "16 historical relic WebP and one user-approved knife WebP mapped; 79 historical staging WebP CRC/header-size validated, 30 SHA matched; 105 legacy references remain, archival images not promoted; no Foundry client QA",
+        "note": "16 historical relic WebP and one approved knife mapped; 79 historical WebP audited (30 archived SHA checked), eight COM approved-source SHA verified; 17 unique named ERH candidates not approved for transport; 105 legacy references remain; no Foundry client QA",
     }
     (prepared / "ci137-roundtrip.json").write_text(
         json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"

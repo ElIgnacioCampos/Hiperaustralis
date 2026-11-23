@@ -1,5 +1,5 @@
 {
-  "schema": "hipera-ci137-selected-historic-identities-v06",
+  "schema": "hipera-ci137-selected-historic-identities-v07",
   "status": "CI137_136_FINAL_NAME_CUCHILLO_DE_PIEDRA_D2_PASS__D3_BLOCKED",
   "targetCount": 136,
   "entries": [
@@ -13,6 +13,15 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "NO_IDENTICAL_FINAL_ART_CANDIDATE",
+        "reason": "La capucha protectora de camélido Pica–Tarapacá no tiene obra homónima en catálogo COM."
       }
     },
     {
@@ -25,6 +34,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "AMBIGUOUS_NOT_MAPPED",
+        "relatedStagedPaths": [
+          "module/assets/_staging/defensas/webp256/COM-07_Casco_Pica_Tarapaca_256.webp"
+        ],
+        "reason": "El casco emplumado Pica–Tarapacá no puede homologarse al único casco genérico COM-07."
       }
     },
     {
@@ -37,6 +58,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "AMBIGUOUS_NOT_MAPPED",
+        "relatedStagedPaths": [
+          "module/assets/_staging/defensas/webp256/COM-07_Casco_Pica_Tarapaca_256.webp"
+        ],
+        "reason": "El casco rígido madera/fibras Pica–Tarapacá difiere de los otros dos; COM-07 es un candidato compartido no desambiguado."
       }
     },
     {
@@ -49,6 +82,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "AMBIGUOUS_NOT_MAPPED",
+        "relatedStagedPaths": [
+          "module/assets/_staging/defensas/webp256/COM-07_Casco_Pica_Tarapaca_256.webp"
+        ],
+        "reason": "Casco sobre capucha tejida es una combinación específica; COM-07 no acredita esa estructura."
       }
     },
     {
@@ -61,6 +106,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "AMBIGUOUS_NOT_MAPPED",
+        "relatedStagedPaths": [
+          "module/assets/_staging/defensas/webp256/COM-11_CORAZA_CHIU_CHIU_256.webp"
+        ],
+        "reason": "Coraza Lasana combina cuero de caimán y piel de mono; COM-08/COM-11 son distintas piezas Chiu-Chiu y falta cotejo de identidad."
       }
     },
     {
@@ -73,6 +130,15 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "NO_IDENTICAL_FINAL_ART_CANDIDATE",
+        "reason": "El espaldar surandino no tiene ilustración COM específica."
       }
     },
     {
@@ -85,6 +151,15 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "NO_IDENTICAL_FINAL_ART_CANDIDATE",
+        "reason": "La manta defensiva surandina no equivale a Makün mapuche ni a capa Selk'nam."
       }
     },
     {
@@ -97,6 +172,15 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "NO_IDENTICAL_FINAL_ART_CANDIDATE",
+        "reason": "El peto frontal surandino no equivale a las corazas COM completas."
       }
     },
     {
@@ -309,6 +393,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/04_antara_lickanantay.webp",
+        "expectedGitBlobSha1": "b0a4dacd2597e31b0f2ccedf49f9df69f04596e1",
+        "expectedBytes": 26220,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -321,6 +417,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/02_antara_tiwanaku.webp",
+        "expectedGitBlobSha1": "01e3632c8e40b369748c7ac13d2bd71b6618652e",
+        "expectedBytes": 45044,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -333,6 +441,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "AMBIGUOUS_NOT_MAPPED",
+        "relatedStagedPaths": [
+          "module/assets/_staging/instrumentos-erh/webp_256/ARPA_BOCA_NORDICA_ERH_256.webp"
+        ],
+        "reason": "Instrumento nórdico; el WebP ARPA_BOCA_NORDICA existe, pero su ficha ERH registra pendiente técnico runtime."
       }
     },
     {
@@ -345,6 +465,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "AMBIGUOUS_NOT_MAPPED",
+        "relatedStagedPaths": [
+          "module/assets/_staging/instrumentos-erh/webp_256/CAMPANA_PIRAMIDAL_ERH_256.webp"
+        ],
+        "reason": "Campana de cobre irregular Lickanantay; la ilustración disponible representa una campana piramidal, sin identidad material probada."
       }
     },
     {
@@ -357,6 +489,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "AMBIGUOUS_NOT_MAPPED",
+        "relatedStagedPaths": [
+          "module/assets/_staging/instrumentos-erh/webp_256/CUERNO_MUSICAL_ERH_256.webp"
+        ],
+        "reason": "Cuerno musical nórdico; coincidencia de nombre genérico no verifica que el dibujo ERH represente el mismo instrumento."
       }
     },
     {
@@ -369,6 +513,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "AMBIGUOUS_NOT_MAPPED",
+        "relatedStagedPaths": [
+          "module/assets/_staging/instrumentos-erh/webp_256/FLAUTA_HUESO_ERH_256.webp"
+        ],
+        "reason": "Flauta de hueso de origen nórdico; dibujo ERH genérico no acredita pertenencia cultural ni forma exacta."
       }
     },
     {
@@ -381,6 +537,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/FLAUTA_COYO_ERH_256.webp",
+        "expectedGitBlobSha1": "8ef7d5e65c7b16945c4121d54cae4a130c491a96",
+        "expectedBytes": 9218,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -393,6 +561,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/kakel_kultrung_ERH_256.webp",
+        "expectedGitBlobSha1": "665e91dd32fecc3010ec61998b90bbcd69e7336d",
+        "expectedBytes": 55902,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -405,6 +585,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/kaskawilla_erh_256.webp",
+        "expectedGitBlobSha1": "4b10cc8f1614c6cf69acc048d5d38e6e4c8e28a8",
+        "expectedBytes": 42256,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -417,6 +609,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/kultrung_erh_256.webp",
+        "expectedGitBlobSha1": "288dcb3bc1879ac0b043117357979fcb2aa2f2ce",
+        "expectedBytes": 65290,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -429,6 +633,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/LIRA_ERH_256.webp",
+        "expectedGitBlobSha1": "8e6be12df6f8f14914be0c7410bb8d32b9c6e52d",
+        "expectedBytes": 47350,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -441,6 +657,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/pifullka_erh_256.webp",
+        "expectedGitBlobSha1": "a3ed316998b2b23f1cc5731858dcf2698f5d7864",
+        "expectedBytes": 37872,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -453,6 +681,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/piloilo_erh_256.webp",
+        "expectedGitBlobSha1": "0e6e20287f0d4c377faa38e3574698dd465b2066",
+        "expectedBytes": 49928,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -465,6 +705,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/pututu_erh_256.webp",
+        "expectedGitBlobSha1": "410c90ce59ad712e30a30581093280856451177e",
+        "expectedBytes": 46472,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -477,6 +729,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/SIKU_ERH_256.webp",
+        "expectedGitBlobSha1": "341c61d04536b0cdb98b585824bf1abc03660d68",
+        "expectedBytes": 43738,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -489,6 +753,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/03_sonaja_aymara.webp",
+        "expectedGitBlobSha1": "0af4e9c426e876d9c8d3d3354de7d95bf3bdcc96",
+        "expectedBytes": 35276,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -501,6 +777,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/SONAJERO_HIERRO_ERH_256.webp",
+        "expectedGitBlobSha1": "a297de4cc70bae9424290a5573341baadd297297",
+        "expectedBytes": 34012,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -513,6 +801,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/06_sonajero_lickanantay.webp",
+        "expectedGitBlobSha1": "6baca8fd8ce34b89631f9cfe0c8c63d0289c2e5f",
+        "expectedBytes": 41888,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -525,6 +825,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/05_trompeta_monoxila.webp",
+        "expectedGitBlobSha1": "b999ad5f31068b3a42cb5aad0690523f8a59b1df",
+        "expectedBytes": 15000,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -537,6 +849,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/01_wankara.webp",
+        "expectedGitBlobSha1": "44e1c9ab42f752039d5bdd77e9b5a020787604dd",
+        "expectedBytes": 61482,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -549,6 +873,18 @@
         "byteProof": "SHA equal across 0.4.72 and 0.4.73; CRC+WebP decoded; local rescue files",
         "localManifest": "CI137_DEF08_INS21_CANDIDATO_0473_MANIFIESTO.json",
         "finalArtApprovedForCI137": false
+      },
+      "editorialCrosswalk": {
+        "sourceName": null,
+        "visualIdentityVerified": false,
+        "approvedForTransport": false,
+        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
+        "reviewedDate": "2026-11-23",
+        "status": "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE",
+        "candidateStagedPath": "module/assets/_staging/instrumentos-erh/webp_256/waza_erh_256.webp",
+        "expectedGitBlobSha1": "9f558e2a66f873a43e02f708fda9293e4b3f5f65",
+        "expectedBytes": 20832,
+        "evidence": "distinctive Item name and culture against named ERH source; exact Git blob required; visual/editorial identity not approved"
       }
     },
     {
@@ -1595,6 +1931,20 @@
         "finalName": "Cuchillo de piedra",
         "identityId": "c2L6T5w4S9OcgkDt",
         "runtimeQA": "NOT_EXECUTED"
+      },
+      "editorialCrosswalk": {
+        "status": "PENDING_EXISTING_CI_ROUNDTRIP",
+        "familyScope": [
+          "Defensas",
+          "Instrumentos musicales"
+        ],
+        "itemsAudited": 29,
+        "uniqueNamedCandidates": 17,
+        "ambiguous": 8,
+        "noIdenticalArtCandidate": 4,
+        "approvedDefensaWebpSha256Checks": 8,
+        "approvedItemRemaps": 0,
+        "notes": "One-to-one asset name candidate is not approved visual identity; three distinct Pica helmets share one COM-07 suggestion; Antara Lickanantay and Tiwanaku paths must differ."
       }
     },
     "finalNameResolution": {

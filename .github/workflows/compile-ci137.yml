@@ -85,6 +85,9 @@ jobs:
           assert pre["historicalStagingPromotedCount"] == rt["archivalWebpsPromoted"] == 0
           assert len({x["stagedPath"] for x in pre["historicalStagingAssets"]}) == 79
           assert all(x["promotionAuthorized"] is False for x in pre["historicalStagingAssets"])
+          assert pre["defensasInstrumentosCrosswalk"] == rt["defensasInstrumentosCrosswalk"]
+          cross = pre["defensasInstrumentosCrosswalk"]
+          assert (cross["itemsAudited"], cross["uniqueNamedCandidates"], cross["ambiguous"], cross["withoutIdenticalArt"], cross["comApprovedWebpsSha256Verified"], cross["approvedItemRemaps"]) == (29, 17, 8, 4, 8, 0)
           result = {
             "schema": "ci137-release-gate-v01",
             "id": "hiperaustralis-compendios-prototype",
@@ -96,6 +99,7 @@ jobs:
             "historicalWebpsPhysicallyAudited": pre["historicalStagingVerifiedCount"],
             "historicalWebpsShaMatched": pre["historicalStagingShaMatched"],
             "historicalWebpsPromoted": 0,
+            "defensasInstrumentosEditorialCrosswalk": cross,
             "csbTemplateIdsReferenced": sorted(templates),
             "D3": "FAILED_OR_UNVERIFIED",
             "installableArtifactProduced": False,
