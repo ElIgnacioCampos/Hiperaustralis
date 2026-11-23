@@ -3,6 +3,14 @@
 **Estado ACTUAL (23-11-2026, D2):** **136/136 Items PASS, seis Instrumentos ERH integrados y validados en CI137 aislado, con nombre final Cuchillo de piedra**, 20 Armas, nueve carpetas, cinco plantillas; **115/115 WebP transferidos PASS**. **79/79 WebP históricos**, 30 SHA históricos, **17/17 candidatos ERH** y **8/8 COM aprobados** verificados físicamente en CI. **PF22/RIT08**: 30/30 identidades y SHA de los respaldos 0.4.72/0.4.73, ocho fondos rituales PASS; **igualdad de bytes 0.4.75 pendiente**. DEF08/INS21: 17 cruces nominales, 8 ambiguos, 4 sin pareja. **Seis remapeos de Instrumentos ERH PASS en transporte aislado; 99 referencias gráficas** quedan por resolver editorialmente. D3/Foundry **NO ACREDITADO**; publicación **BLOQUEADA**.
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
+
+## D2-TERR — CI del commit e64d1f9 (23-11-2026)
+
+**CI137 del cambio documental Flora v1 — PASS:** [round-trip #45258322706](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45258322706) y [guard de compendio único #45258322834](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45258322834), ambos asociados al commit [`e64d1f9`](https://github.com/ElIgnacioCampos/Hiperaustralis/commit/e64d1f9a27f2f8fe40e6a64da8699b71a338c162). Se comprobaron compilar/desempaquetar **136/136 Items, nueve carpetas y cinco plantillas en control estático**, sin acreditar D3; **44 WebP operativos y 148 archivados**, seis remapeos ERH aprobados y **99 referencias gráficas heredadas** preservadas. El workflow también exige que los **40 FLO v1 sigan como candidatos no aprobados**, con cero WebP v1 incorporados al repositorio y cero remapeos territoriales.
+
+**Fuente pendiente 0.4.75:** búsquedas nominales en Drive conectado y Biblioteca realizadas el 23-11 no localizaron el ZIP exacto `HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB.zip`. La falta de coincidencias **no prueba ausencia en los respaldos**. Sin SHA de sus binarios no se establece paridad con Flora v1 ni se promueve ningún candidato. **Siguiente paso D2:** localizar el ZIP 0.4.75 exacto, cotejar 40 iconos optimizados y ocho fondos por byte/SHA; separar validación técnica de aprobación visual. **D3, release, `main`, Forge, Bridge y Estado Maestro: intactos/bloqueados según corresponda.**
+
+
 ## D2-TERR — Banco FLO 001–040 candidatos, fuente recuperada (23-11-2026)
 
 Se localizó y **materializó** desde Biblioteca `/Hiperaustralis/ED/FLORA/` el archivo `HIPERAUSTRALIS_FLORA_001_040_WEBP_OPTIMIZADAS_v1.zip` (32.493.807 bytes; SHA-256 `f758e2adb2a2dcc6f815361bbf1314d44bd5d9e23dd64bdad9e8dbd6c330e340`; **57 entradas y CRC PASS**). Contiene **40 WebP RGBA 512×512** en `WEBP_512_CANDIDATOS/`, por **9.090.158 bytes**, más láminas originales, auditoría y manifiesto.
