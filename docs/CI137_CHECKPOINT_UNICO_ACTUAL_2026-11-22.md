@@ -3,6 +3,16 @@
 **Estado:** D2 / 137 Items **PASS** · **TRANSFERENCIA REAL 115/115 WEBP A GITHUB PASS** (79 staging históricos, 20 Equipo aprobado, 16 Reliquias aprobadas) · D3 / Foundry **NO ACREDITADO, incidente previo sin diagnóstico** · PUBLICACIÓN **BLOQUEADA**.
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 137 identidades; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
+## AUDITORÍA EDITORIAL — DUPLICACIÓN CONFIRMADA, CORRECCIÓN PROPUESTA (22-11-2026)
+
+**Evidencia:** comparados los dos JSON fuente, el export real del 19-11-2026 y la historia GitHub. Cuchillo de piedra (`HipArm01PackA000`, `source/items/01_cuchillo_piedra.json`) y Cuchillo lítico (`c2L6T5w4S9OcgkDt`, `source/items/armas/01_cuchillo_litico.json`) tienen descripción **idéntica literalmente**, mismo `equippableItem`, misma plantilla CSB `HipArmaTpl000001` versión `186001`, `hipera_tipo=arma` y `mechanics=none`. No hay diferencia funcional o editorial sustantiva. Difieren nombres, IDs, slugs y detalles de formato de exportación, sin justificar dos entradas.
+
+**Autoridad:** `c2L6T5w4S9OcgkDt` existe en el compendio histórico exportado `world.hiperaustralis-rituales` (`HIPERAUSTRALIS_FOUNDRY_ITEMS_2026-11-19T00-23-25-933Z.json`). `HipArm01PackA000` fue introducido para el prototipo el 10-11-2026, commits `dc029c2` y `6bea7d6`, y no aparece en el mismo export histórico. GitHub incorporó la fuente histórica por commit `8530444` el 12-11-2026. La duplicación se produjo al seleccionar 135 fuentes históricas más dos extras del prototipo para CI137.
+
+**Corrección editorial recomendada (aún no aplicada):** conservar **Cuchillo lítico** con su ID histórico; retirar **Cuchillo de piedra** **solamente de la selección del transporte**, preservando el JSON del prototipo como archivo documental. Resultado proyectado: **136 Items**, **20 Armas**, **9 carpetas**, **5 plantillas**; Tokicura sigue incluido. Conservar el único WebP aprobado; no borrar del mundo existente, no cambiar Estado Maestro.
+
+**Alcance de la orden:** el usuario pidió revisar, no ejecutar todavía una baja de ID. Por tanto se registra el dictamen sin modificar manifiesto, código, workflows, fuentes ni compendios. D2 137 sigue siendo el último corte técnico probado; el nuevo objetivo editorial sugerido sería 136 tras aprobación. D3 y publicación siguen bloqueados.
+
 ## DECISIÓN APLICADA — UNA ILUSTRACIÓN PARA DOS CUCHILLOS
 
 **Aprobación del usuario (22-11-2026):** mantener los IDs `HipArm01PackA000` (Cuchillo de piedra) y `c2L6T5w4S9OcgkDt` (Cuchillo lítico); ambos referirán el mismo WebP `assets/armas/01_cuchillo_litico.webp` en el **transporte CI137**. El objeto de Git `c8f32044e1c8e4e4cb671ad964e2378effb18f49` se reutiliza desde el staging, **sin regeneración ni duplicación de contenido binario**. SHA256 del WebP: `7ff631440c2a74d7ca25014ceb1c38024b14d3ebdb2f73a9bcc0be98ba7a8082`.
