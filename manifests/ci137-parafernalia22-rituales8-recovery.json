@@ -1,6 +1,6 @@
 {
   "schema": "hipera-ci137-pf22-rit08-recovery-v03",
-  "status": "ARCHIVAL_30_WEBP_IN_GITHUB_STAGING__075_SHA_PARITY_PENDING",
+  "status": "ARCHIVAL_30_WEBP_0475_SHA_PARITY_PASS__RUNTIME_NOT_APPROVED",
   "archiveName": "HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB.zip",
   "archiveSha256": "c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e",
   "count": 30,
@@ -14,8 +14,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/08_NORDICOS_ASIENTO_MINIATURA.webp",
       "stagedPath": "module/assets/iconos_aprobados/08_NORDICOS_ASIENTO_MINIATURA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/ntEPr3gfZn4xD2rG.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "6c98a15b52266541f4706e9e102c5733d74702576e7fd16e6f69b18cd8f3dfc3",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -26,7 +26,7 @@
       "currentPhysicalStagingSha256_0472_0473": "6c98a15b52266541f4706e9e102c5733d74702576e7fd16e6f69b18cd8f3dfc3",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "JKxUdwuhOtz8yGW1",
@@ -36,8 +36,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/19_AYMARA_BOCA_DEL_MALLKU.webp",
       "stagedPath": "module/assets/iconos_aprobados/19_AYMARA_BOCA_DEL_MALLKU.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/JKxUdwuhOtz8yGW1.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "30f7b63b3d5be566f0be15d641d0ae6c99d554de55c83863bbe616fc1788581a",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -48,7 +48,7 @@
       "currentPhysicalStagingSha256_0472_0473": "30f7b63b3d5be566f0be15d641d0ae6c99d554de55c83863bbe616fc1788581a",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "ilG4UwSV1Bgbk4TF",
@@ -58,8 +58,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/16_NORDICOS_BOLSA_BELENO.webp",
       "stagedPath": "module/assets/iconos_aprobados/16_NORDICOS_BOLSA_BELENO.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/ilG4UwSV1Bgbk4TF.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "6683307437b506ac91f077526be977455c39899daf540e785766a08915a787ad",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -70,7 +70,7 @@
       "currentPhysicalStagingSha256_0472_0473": "6683307437b506ac91f077526be977455c39899daf540e785766a08915a787ad",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "nnmYeJON0DKDGJsL",
@@ -80,8 +80,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/17_LICKANANTAY_CONTENEDOR_KIT.webp",
       "stagedPath": "module/assets/iconos_aprobados/17_LICKANANTAY_CONTENEDOR_KIT.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/nnmYeJON0DKDGJsL.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "7416f12b44173f8fac92246a1d16070c60a2287abfe6bbba9581693eff04e8db",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -92,7 +92,7 @@
       "currentPhysicalStagingSha256_0472_0473": "7416f12b44173f8fac92246a1d16070c60a2287abfe6bbba9581693eff04e8db",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "Z955U4dlDAUeEZvr",
@@ -102,8 +102,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/13_LICKANANTAY_CUCHARILLA_ESPATULA.webp",
       "stagedPath": "module/assets/iconos_aprobados/13_LICKANANTAY_CUCHARILLA_ESPATULA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/Z955U4dlDAUeEZvr.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "d6ac2cc61e9cea198a0cc16a1dbaa2b47ec80dcee43ab549c2a1c82bd040178e",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -114,7 +114,7 @@
       "currentPhysicalStagingSha256_0472_0473": "d6ac2cc61e9cea198a0cc16a1dbaa2b47ec80dcee43ab549c2a1c82bd040178e",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "FwlbrqC5ZBqiRjXy",
@@ -124,8 +124,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/21_LICKANANTAY_ESCOBILLA_LIMPIEZA.webp",
       "stagedPath": "module/assets/iconos_aprobados/21_LICKANANTAY_ESCOBILLA_LIMPIEZA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/FwlbrqC5ZBqiRjXy.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "eb2b1213ae4280f1bca6a9c8d55eebb668ca3065e305f8567be800b63be2ddab",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -136,7 +136,7 @@
       "currentPhysicalStagingSha256_0472_0473": "eb2b1213ae4280f1bca6a9c8d55eebb668ca3065e305f8567be800b63be2ddab",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "IPKDCSo3bKzUCcGl",
@@ -146,8 +146,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/15_AYMARA_HILO_NEGRO.webp",
       "stagedPath": "module/assets/iconos_aprobados/15_AYMARA_HILO_NEGRO.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/IPKDCSo3bKzUCcGl.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "9025ec2cf84c444f9d23445a62807139e5299c80b5ba8810ebe311c14ebc15f2",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -158,7 +158,7 @@
       "currentPhysicalStagingSha256_0472_0473": "9025ec2cf84c444f9d23445a62807139e5299c80b5ba8810ebe311c14ebc15f2",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "AocpkbZW4w29Bc4u",
@@ -168,8 +168,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/38_MAPUCHE_KENEYKEN.webp",
       "stagedPath": "module/assets/iconos_aprobados/38_MAPUCHE_KENEYKEN.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/AocpkbZW4w29Bc4u.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "26a708f3ddc434d63c1ea7480df1507289a1e71480a85202450aeb83894fd3d1",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -180,7 +180,7 @@
       "currentPhysicalStagingSha256_0472_0473": "26a708f3ddc434d63c1ea7480df1507289a1e71480a85202450aeb83894fd3d1",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "Nvj2xTK4apIrEDPn",
@@ -190,8 +190,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/02_MAPUCHE_KULTRUN.webp",
       "stagedPath": "module/assets/iconos_aprobados/02_MAPUCHE_KULTRUN.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/Nvj2xTK4apIrEDPn.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "6ab7c7727eef63eaf5f3cb50a2bb0fad08b69e3801b16be8f5c98683425a564c",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -202,7 +202,7 @@
       "currentPhysicalStagingSha256_0472_0473": "6ab7c7727eef63eaf5f3cb50a2bb0fad08b69e3801b16be8f5c98683425a564c",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "psnu2t74dnHQ3pFx",
@@ -212,8 +212,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/42_MAPUCHE_LATUE.webp",
       "stagedPath": "module/assets/iconos_aprobados/42_MAPUCHE_LATUE.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/psnu2t74dnHQ3pFx.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "e9fa09c34d1b5729854485d4fc9ac2f41a132f0fc13df5abc9514bd7cb8bb5a9",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -224,7 +224,7 @@
       "currentPhysicalStagingSha256_0472_0473": "e9fa09c34d1b5729854485d4fc9ac2f41a132f0fc13df5abc9514bd7cb8bb5a9",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "FBVSE0HBZ62ShEZM",
@@ -234,8 +234,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/10_MAPUCHE_LLAF_LLAF.webp",
       "stagedPath": "module/assets/iconos_aprobados/10_MAPUCHE_LLAF_LLAF.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/FBVSE0HBZ62ShEZM.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "f7a283767b7af0deabbcfc0a1056acd22820593051334958ed698225f48785cd",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -246,7 +246,7 @@
       "currentPhysicalStagingSha256_0472_0473": "f7a283767b7af0deabbcfc0a1056acd22820593051334958ed698225f48785cd",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "xdvai2XGysSWwdKt",
@@ -256,8 +256,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/09_LICKANANTAY_MORTERO_MINIATURA.webp",
       "stagedPath": "module/assets/iconos_aprobados/09_LICKANANTAY_MORTERO_MINIATURA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/xdvai2XGysSWwdKt.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "7d879943cc4c5268d6d275cb558b792a2927f3eb67384790037c55a4a56f5a08",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -268,7 +268,7 @@
       "currentPhysicalStagingSha256_0472_0473": "7d879943cc4c5268d6d275cb558b792a2927f3eb67384790037c55a4a56f5a08",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "q0qlFGWAMip94Y4i",
@@ -278,8 +278,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/14_MAPUCHE_PANOLETA_CEREMONIAL.webp",
       "stagedPath": "module/assets/iconos_aprobados/14_MAPUCHE_PANOLETA_CEREMONIAL.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/q0qlFGWAMip94Y4i.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "992bad6fd2e659a13de68a16a0d21f3046fa9497209455486bb9c86d667bcf13",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -290,7 +290,7 @@
       "currentPhysicalStagingSha256_0472_0473": "992bad6fd2e659a13de68a16a0d21f3046fa9497209455486bb9c86d667bcf13",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "dVgxiZYJcTLdA5yL",
@@ -300,8 +300,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/26_MAPUCHE_PIFULLKA.webp",
       "stagedPath": "module/assets/iconos_aprobados/26_MAPUCHE_PIFULLKA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/dVgxiZYJcTLdA5yL.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "8df4b74eb46ee2685804f9d066d41c1762ed3dcf0052330372170840cad02120",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -312,7 +312,7 @@
       "currentPhysicalStagingSha256_0472_0473": "8df4b74eb46ee2685804f9d066d41c1762ed3dcf0052330372170840cad02120",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "P0xH74Ofvj2xnAvk",
@@ -322,8 +322,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/11_AYMARA_QUWA_HUMO.webp",
       "stagedPath": "module/assets/iconos_aprobados/11_AYMARA_QUWA_HUMO.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/P0xH74Ofvj2xnAvk.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "4261df817c80f91a6c43f15d8f31bcc7f36145abb184716fc8fccc5df508a195",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -334,7 +334,7 @@
       "currentPhysicalStagingSha256_0472_0473": "4261df817c80f91a6c43f15d8f31bcc7f36145abb184716fc8fccc5df508a195",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "fW04rY0fTfZ84fL6",
@@ -344,8 +344,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/06_MAPUCHE_REWE.webp",
       "stagedPath": "module/assets/iconos_aprobados/06_MAPUCHE_REWE.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/fW04rY0fTfZ84fL6.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "467a7c0774807528ed59f0e47cfe010529ab02a8808346a8d5ee916742e818b2",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -356,7 +356,7 @@
       "currentPhysicalStagingSha256_0472_0473": "467a7c0774807528ed59f0e47cfe010529ab02a8808346a8d5ee916742e818b2",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "3cCDbjqou8AlzfsW",
@@ -366,8 +366,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/40_NORDICOS_RUNAS_CORREGIDAS.webp",
       "stagedPath": "module/assets/iconos_aprobados/40_NORDICOS_RUNAS_CORREGIDAS.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/3cCDbjqou8AlzfsW.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "056718e3ae8e88ba624ef38d75e13ebb7ad7f14be2852d545d4c0147b88c9354",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -378,7 +378,7 @@
       "currentPhysicalStagingSha256_0472_0473": "056718e3ae8e88ba624ef38d75e13ebb7ad7f14be2852d545d4c0147b88c9354",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "zSx4zh9b24XjjXMx",
@@ -388,8 +388,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/01_LICKANANTAY_TABLETA_INHALATORIA.webp",
       "stagedPath": "module/assets/iconos_aprobados/01_LICKANANTAY_TABLETA_INHALATORIA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/zSx4zh9b24XjjXMx.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "02a9e3a249e1ea8150be3784935db743f1a1235f4f7d9beaf36f2f977dea8d04",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -400,7 +400,7 @@
       "currentPhysicalStagingSha256_0472_0473": "02a9e3a249e1ea8150be3784935db743f1a1235f4f7d9beaf36f2f977dea8d04",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "QTbZkuQcog7ReVW5",
@@ -410,8 +410,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/41_ATACAMA_TREPANACION_CICATRIZADA.webp",
       "stagedPath": "module/assets/iconos_aprobados/41_ATACAMA_TREPANACION_CICATRIZADA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/QTbZkuQcog7ReVW5.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "1e4f03a636063b0c71b1ad0e9d9f05842325e9d83a417aa3ed59c42035017d76",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -422,7 +422,7 @@
       "currentPhysicalStagingSha256_0472_0473": "1e4f03a636063b0c71b1ad0e9d9f05842325e9d83a417aa3ed59c42035017d76",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "MvGDMBIuGD1iozPW",
@@ -432,8 +432,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/05_LICKANANTAY_TUBO_INHALATORIO.webp",
       "stagedPath": "module/assets/iconos_aprobados/05_LICKANANTAY_TUBO_INHALATORIO.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/MvGDMBIuGD1iozPW.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "9bc6ca29dfa40afc7940b4cd3f7a494425998d2dae8da9530bcc46147374b733",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -444,7 +444,7 @@
       "currentPhysicalStagingSha256_0472_0473": "9bc6ca29dfa40afc7940b4cd3f7a494425998d2dae8da9530bcc46147374b733",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "0MRehrLjaQOO4s1A",
@@ -454,8 +454,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/24_NORDICOS_VARA_VOLVA_KOPINGSVIK.webp",
       "stagedPath": "module/assets/iconos_aprobados/24_NORDICOS_VARA_VOLVA_KOPINGSVIK.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/0MRehrLjaQOO4s1A.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "9a56a3140637a0e0a4aeddb7486b8e8600823f902d5a21769f5f49f2f7bcd6bb",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -466,7 +466,7 @@
       "currentPhysicalStagingSha256_0472_0473": "9a56a3140637a0e0a4aeddb7486b8e8600823f902d5a21769f5f49f2f7bcd6bb",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "oaLaLLWoZXQrRULq",
@@ -476,8 +476,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/iconos_aprobados/43_AYMARA_VIGILIA_NOCTURNA.webp",
       "stagedPath": "module/assets/iconos_aprobados/43_AYMARA_VIGILIA_NOCTURNA.webp",
       "itemJson": "source-pending/ci137-historicos-99/parafernalia/oaLaLLWoZXQrRULq.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "150860af274a4fd18eec036a615f154f1c134e7cc3da898860e45ee027cdc0a1",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipEquipTpl00001",
       "backgroundPathFromSourceVerified": false,
@@ -488,7 +488,7 @@
       "currentPhysicalStagingSha256_0472_0473": "150860af274a4fd18eec036a615f154f1c134e7cc3da898860e45ee027cdc0a1",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "StbeCxC7TrpiOUdG",
@@ -498,8 +498,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/rituales/05_ATAR.webp",
       "stagedPath": "module/assets/rituales/05_ATAR.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/StbeCxC7TrpiOUdG.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "4bc0e33bf074b4470d0b365c5df8fc1f0d9b27856ce54028f15f778d579e840c",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
@@ -510,7 +510,7 @@
       "currentPhysicalStagingSha256_0472_0473": "4bc0e33bf074b4470d0b365c5df8fc1f0d9b27856ce54028f15f778d579e840c",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "fCg9JDUw2DNqWjOe",
@@ -520,8 +520,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/rituales/03_CONSULTAR.webp",
       "stagedPath": "module/assets/rituales/03_CONSULTAR.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/fCg9JDUw2DNqWjOe.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "4f58e8bc3858845609bdf59d5a67ed7bd7a8a9ce866b0d59194611b4ac150f63",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
@@ -532,7 +532,7 @@
       "currentPhysicalStagingSha256_0472_0473": "4f58e8bc3858845609bdf59d5a67ed7bd7a8a9ce866b0d59194611b4ac150f63",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "wgLZd7pqnk84LSWJ",
@@ -542,8 +542,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/rituales/06_DESPEDIR.webp",
       "stagedPath": "module/assets/rituales/06_DESPEDIR.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/wgLZd7pqnk84LSWJ.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "d1431045961edbb393699a475f28a52010d52f9415e1d45451c32083020cf5c3",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
@@ -554,7 +554,7 @@
       "currentPhysicalStagingSha256_0472_0473": "d1431045961edbb393699a475f28a52010d52f9415e1d45451c32083020cf5c3",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "4jeuBPUYEGHmXKXv",
@@ -564,8 +564,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/rituales/08_LAKUTUN_LEGAR.webp",
       "stagedPath": "module/assets/rituales/08_LAKUTUN_LEGAR.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/4jeuBPUYEGHmXKXv.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "db739af284a42297ab54dd4ae30efe9c6e94210b047b7f64c76b9fb52139396a",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
@@ -576,7 +576,7 @@
       "currentPhysicalStagingSha256_0472_0473": "db739af284a42297ab54dd4ae30efe9c6e94210b047b7f64c76b9fb52139396a",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "mLpXRfCGbmX1t8xa",
@@ -586,8 +586,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/rituales/04_RENOVAR_ARRAIGO.webp",
       "stagedPath": "module/assets/rituales/04_RENOVAR_ARRAIGO.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/mLpXRfCGbmX1t8xa.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "80d35ca3a6b187d2723207e467922295620221cd9813dbffba4f7ea712e683ab",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
@@ -598,7 +598,7 @@
       "currentPhysicalStagingSha256_0472_0473": "80d35ca3a6b187d2723207e467922295620221cd9813dbffba4f7ea712e683ab",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "JQI2h5gPnAsqvcsF",
@@ -608,8 +608,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/rituales/02_RESTITUIR.webp",
       "stagedPath": "module/assets/rituales/02_RESTITUIR.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/JQI2h5gPnAsqvcsF.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "cb9f1d488d4fd39ac4597a52cb1dc118ce0d2ab2c2927f55690d959e570332e8",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
@@ -620,7 +620,7 @@
       "currentPhysicalStagingSha256_0472_0473": "cb9f1d488d4fd39ac4597a52cb1dc118ce0d2ab2c2927f55690d959e570332e8",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "yoCFKUIlnBqVvRsH",
@@ -630,8 +630,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/rituales/07_VIAJAR.webp",
       "stagedPath": "module/assets/rituales/07_VIAJAR.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/yoCFKUIlnBqVvRsH.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "a5c1afee1e80ad1806b3d4c624c661e9e988f66abb117708496d1320f1cabb89",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
@@ -642,7 +642,7 @@
       "currentPhysicalStagingSha256_0472_0473": "a5c1afee1e80ad1806b3d4c624c661e9e988f66abb117708496d1320f1cabb89",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     },
     {
       "id": "yQe9xxburYY3j35H",
@@ -652,8 +652,8 @@
       "archiveMember": "hiperaustralis-rituales/assets/rituales/01_VINCULAR.webp",
       "stagedPath": "module/assets/rituales/01_VINCULAR.webp",
       "itemJson": "source-pending/ci137-historicos-99/rituales/yQe9xxburYY3j35H.json",
-      "assetSha256": null,
-      "assetStatus": "ARCHIVAL_CANDIDATE_0472_0473_PRESENT_IN_GITHUB_NOT_FINAL",
+      "assetSha256": "e43cf8433dc1299b57087696ae90278de7d2c12beb6100219c30d80a35e9da1e",
+      "assetStatus": "ARCHIVAL_0475_SHA_PARITY_PASS__NOT_RUNTIME_APPROVED",
       "imgPathFromSourceVerified": true,
       "template": "HipRitualTpl0001",
       "backgroundPathFromSourceVerified": true,
@@ -664,7 +664,7 @@
       "currentPhysicalStagingSha256_0472_0473": "e43cf8433dc1299b57087696ae90278de7d2c12beb6100219c30d80a35e9da1e",
       "stagedPathRole": "PROPOSED_RUNTIME_PATH_NOT_CURRENT_STAGING",
       "approvedForTransport": false,
-      "archive075ByteEquality": "NOT_VERIFIED"
+      "archive075ByteEquality": "SHA256_EQUAL_0472_0473_AND_0475"
     }
   ],
   "sourcePayloadVerification": {
@@ -696,10 +696,12 @@
     "rituales": 8,
     "sourceVersion": "0.4.72_0.4.73",
     "approvedRemaps": 0,
-    "ref075VerifiedSHA": false,
+    "ref075VerifiedSHA": true,
     "verifiedCommit": "d489622fa3fd555c40fe6ef216aea761aa388d1c",
     "workflowRun": 45240892668,
-    "workflowUrl": "https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45240892668"
+    "workflowUrl": "https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45240892668",
+    "ref075ProofScope": "USER_SUPPLIED_EXACT_ZIP_LOCAL_BINARY_AUDIT_20261123__CI_KEEPS_SHA_ATTESTATION",
+    "transportApproved": false
   },
   "inventory075": {
     "source": "INVENTARIO_LEGACY_0.4.75.json",
@@ -709,5 +711,25 @@
     "parafernaliaRecordsPresent": 0,
     "perImageSHAAvailable": false,
     "note": "Ritual image presence in 075 inventory is not byte equality; PF22 family not represented in installer inventory."
+  },
+  "actualArchive075Audit20261123": {
+    "source": "Conversation upload HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB(1).zip",
+    "sourceSizeBytes": 33028294,
+    "sourceSHA256": "c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e",
+    "zipEntries": 358,
+    "zipCRC": "PASS",
+    "matchingWebP": 30,
+    "parafernalia": 22,
+    "rituales": 8,
+    "mismatchedSHA256": 0,
+    "reference": "Individual SHA256 in each row, source 0.4.72/0.4.73 staging verified in GitHub CI137",
+    "fileDimensions": [
+      512,
+      512
+    ],
+    "fileMode": "RGB",
+    "runtimeApproval": false,
+    "sourceJsonModified": false,
+    "important": "Proof is physical user-provided exact ZIP audited locally; not a repeat of ZIP read inside GitHub Actions"
   }
 }
