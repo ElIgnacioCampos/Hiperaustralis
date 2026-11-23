@@ -179,6 +179,21 @@ jobs:
           assert all(row["assetSha256"] is None and not row["readyForTransport"] for row in F.values())
           assert d["releaseGate"]["territorialIconsPublished"]==0
           assert d["releaseGate"]["territorialRuntimeImgRemaps"]==0
+          rec=d["recoveryAudit20261123"]
+          fau=rec["faunaAuditV2"]
+          old=rec["compendios0473"]
+          assert (fau["bytes"],fau["zipMembers"],fau["validReadableWebp512RGBA"],fau["emptyWebp"]) == (57758125,277,28,3)
+          assert fau["sha256"]=="52a6466a23cf8cdf1229580bc7eb95c2fc2f83a91cb7ff34a346a05e9ecc7377"
+          assert fau["emptyCodes"]==["FAU-003","FAU-014","FAU-031"]
+          assert set(fau["approvedVisualCodes"])=={"FAU-001","FAU-002","FAU-003","FAU-004","FAU-005","FAU-032"}
+          assert {r["code"] for r in fau["approvedWebpValidAndExact"]}=={"FAU-001","FAU-002","FAU-004","FAU-005","FAU-032"}
+          assert all(len(r["sha256"])==64 and r["bytes"]>0 for r in fau["approvedWebpValidAndExact"])
+          assert (old["floraWebpIconCount"],old["floraBackgroundWebpCount"],old["faunaRupestreWebp"])==(40,8,31)
+          assert (old["zipMembers"],old["bytes"],old["comparisonToFaunaAuditV2"]["identicalSHA256"])==(357,45575239,26)
+          assert old["comparisonToFaunaAuditV2"]["divergentCodes"]==["FAU-003","FAU-014","FAU-023","FAU-027","FAU-031"]
+          assert d["releaseGate"]["territorialIconsUploadedToGitHub"]==0
+          assert d["releaseGate"]["territorialIconBinariesAuditedLocally"]==79
+          assert len([r for r in A.values() if r["recoveryStatus"].startswith("VISUAL_APPROVED_WEBP512_")])==5
           print({"territories":8,"floraItems":40,"floraRefs":45,"faunaItems":50,"faunaJournalRefs":32,"unassignedFauna":18,"verifiedTerritorialWebP":0,"productionChanges":0})
           PY
       - name: Prepare exactly 136 selected real sources - no asset changes

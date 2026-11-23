@@ -1,6 +1,6 @@
 {
   "schema": "ci137-territorial-icons-inventory-v01",
-  "status": "DOCUMENTARY_CROSSWALK_PREPARED_NO_TERRITORIAL_ASSET_BYTES",
+  "status": "DOCUMENTARY_CROSSWALK_AND_EXTERNAL_BINARY_SOURCE_AUDIT__NO_TERRITORIAL_GITHUB_ASSETS",
   "boundary": "CI137_TERRITORY_SEPARATE_FROM_136_EQUIPMENT_ITEMS",
   "preparedDate": "2026-11-23",
   "sourceAuthorities": {
@@ -889,7 +889,18 @@
       "FLO-034"
     ],
     "acceptedOptimizedIconSourceVersion": "0.4.75",
-    "iconFilesRecoveredToCI137": 0
+    "iconFilesRecoveredToCI137": 0,
+    "baseline0473Recovery": {
+      "status": "RAW_SOURCE_ZIP_VERIFIED_NO_0475_EQUALS_ASSERTED",
+      "floralWebp": 40,
+      "backgroundWebp": 8,
+      "allIconDimensions": [
+        512,
+        512
+      ],
+      "allIconMode": "RGBA",
+      "zipSHA256": "2d8830d5a18b7d6ff7ba4eee469214fef7b7efdf7164b552464620a0580a5329"
+    }
   },
   "fauna": {
     "foundryItems": 50,
@@ -908,7 +919,10 @@
         "iconSha256": null,
         "editorialStatus": "HISTORICALLY_APPROVED",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "VISUAL_APPROVED_WEBP512_INTEGRITY_VERIFIED_LOCALLY_NOT_IN_GITHUB",
+        "recoveredLocalSourceSha256": "fded6a73797db59a519f9a2fc30df387001551f096129e4c032c58ee2b5605b3",
+        "recoveredLocalSourceBytes": 152446
       },
       {
         "code": "FAU-002",
@@ -923,7 +937,10 @@
         "iconSha256": null,
         "editorialStatus": "HISTORICALLY_APPROVED",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "VISUAL_APPROVED_WEBP512_INTEGRITY_VERIFIED_LOCALLY_NOT_IN_GITHUB",
+        "recoveredLocalSourceSha256": "f50620b8b0beafe8e43696524561ed207118860634d71202b4f3bb696f0dc372",
+        "recoveredLocalSourceBytes": 193196
       },
       {
         "code": "FAU-003",
@@ -938,7 +955,9 @@
         "iconSha256": null,
         "editorialStatus": "HISTORICALLY_APPROVED",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "ZERO_BYTE_WEBP_IN_V2_ARCHIVE; NONIDENTICAL_VALID_0473_ALTERNATE",
+        "recoveredLocalSourceSha256": null
       },
       {
         "code": "FAU-004",
@@ -953,7 +972,10 @@
         "iconSha256": null,
         "editorialStatus": "HISTORICALLY_APPROVED",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "VISUAL_APPROVED_WEBP512_INTEGRITY_VERIFIED_LOCALLY_NOT_IN_GITHUB",
+        "recoveredLocalSourceSha256": "2910c0c0c9d00cb84ab816df8e4eec5c9b272b9102f2bcb651471e06f83ba62a",
+        "recoveredLocalSourceBytes": 153204
       },
       {
         "code": "FAU-005",
@@ -968,7 +990,10 @@
         "iconSha256": null,
         "editorialStatus": "HISTORICALLY_APPROVED",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "VISUAL_APPROVED_WEBP512_INTEGRITY_VERIFIED_LOCALLY_NOT_IN_GITHUB",
+        "recoveredLocalSourceSha256": "99075146e175102aa5c11698d2c667f527aed1b992b04313d2651c4476ef2591",
+        "recoveredLocalSourceBytes": 191324
       },
       {
         "code": "FAU-006",
@@ -983,7 +1008,8 @@
         "iconSha256": null,
         "editorialStatus": "LEGACY_RETIRED",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-007",
@@ -998,7 +1024,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-008",
@@ -1013,7 +1040,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-009",
@@ -1028,7 +1056,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-010",
@@ -1043,7 +1072,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-011",
@@ -1058,7 +1088,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-012",
@@ -1073,7 +1104,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-013",
@@ -1088,7 +1120,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-014",
@@ -1103,7 +1136,9 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "ZERO_BYTE_WEBP_IN_V2_ARCHIVE; NONIDENTICAL_VALID_0473_ALTERNATE",
+        "recoveredLocalSourceSha256": null
       },
       {
         "code": "FAU-015",
@@ -1118,7 +1153,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-016",
@@ -1133,7 +1169,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-017",
@@ -1148,7 +1185,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-018",
@@ -1163,7 +1201,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-019",
@@ -1178,7 +1217,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-020",
@@ -1193,7 +1233,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-021",
@@ -1208,7 +1249,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-022",
@@ -1223,7 +1265,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-023",
@@ -1238,7 +1281,8 @@
         "iconSha256": null,
         "editorialStatus": "APPROVAL_REQUIRES_RECENT_VERSION_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "REVIEW_REQUIRED_NO_PROMOTION"
       },
       {
         "code": "FAU-024",
@@ -1253,7 +1297,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-025",
@@ -1268,7 +1313,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-026",
@@ -1283,7 +1329,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-027",
@@ -1298,7 +1345,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-028",
@@ -1313,7 +1361,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-029",
@@ -1328,7 +1377,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-030",
@@ -1343,7 +1393,8 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "PRESELECTED_OR_LEGACY_NO_APPROVAL_FOR_BINARY_TRANSPORT"
       },
       {
         "code": "FAU-031",
@@ -1358,7 +1409,9 @@
         "iconSha256": null,
         "editorialStatus": "PENDING_EDITORIAL_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "ZERO_BYTE_WEBP_IN_V2_ARCHIVE; NONIDENTICAL_VALID_0473_ALTERNATE",
+        "recoveredLocalSourceSha256": null
       },
       {
         "code": "FAU-032",
@@ -1373,7 +1426,10 @@
         "iconSha256": null,
         "editorialStatus": "APPROVAL_REQUIRES_RECENT_VERSION_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
-        "readyForTransport": false
+        "readyForTransport": false,
+        "recoveryStatus": "VISUAL_APPROVED_WEBP512_INTEGRITY_VERIFIED_LOCALLY_NOT_IN_GITHUB",
+        "recoveredLocalSourceSha256": "ad6f2ac020589131d060beaacdb518a9e678fc75e14c8dfea8ea5f87938f9d40",
+        "recoveredLocalSourceBytes": 149334
       }
     ],
     "additionalFoundryItemsWithoutJournal": [
@@ -1601,7 +1657,9 @@
     "territorialRuntimeImgRemaps": 0,
     "foundryClientQA": "NOT_EXECUTED",
     "editionApproval": "MIXED_NOT_COMPLETE",
-    "D3": "BLOCKED"
+    "D3": "BLOCKED",
+    "territorialIconBinariesAuditedLocally": 79,
+    "territorialIconsUploadedToGitHub": 0
   },
   "todo": [
     "Recover exact source ZIP for 0.4.75 Flora optimized binaries and verify 40 per-image SHA and 8 shared background files",
@@ -1611,5 +1669,196 @@
     "Reconcile independent Funga/Recetas catalogs only if source documents exist",
     "Create only verified Item links and JournalEntry references, avoiding duplicate Item documents across territories",
     "Run isolated Foundry Client QA before deployment or distribution"
-  ]
+  ],
+  "recoveryAudit20261123": {
+    "status": "RAW_ARCHIVES_RECOVERED_AND_HASHED_LOCALLY__NOT_IN_GITHUB",
+    "authoritativeProof": "Drive raw ZIP bytes read locally, complete SHA256 and CRC checked; no individual territorial image has been uploaded to repository.",
+    "faunaAuditV2": {
+      "driveFolder": "https://drive.google.com/drive/folders/1inA3JFMSwsR1M28Bg6gRHoaBSrA4-wu_",
+      "originalName": "HIPERAUSTRALIS_FAU_AUDITORIA_2026-10-10_v2.zip",
+      "reconstruction": "4 exact Drive parts in order",
+      "bytes": 57758125,
+      "sha256": "52a6466a23cf8cdf1229580bc7eb95c2fc2f83a91cb7ff34a346a05e9ecc7377",
+      "zipMembers": 277,
+      "crc": "PASS",
+      "rupestreSelectedWebp": 31,
+      "validReadableWebp512RGBA": 28,
+      "emptyWebp": 3,
+      "emptyCodes": [
+        "FAU-003",
+        "FAU-014",
+        "FAU-031"
+      ],
+      "approvedVisualCodes": [
+        "FAU-001",
+        "FAU-002",
+        "FAU-003",
+        "FAU-004",
+        "FAU-005",
+        "FAU-032"
+      ],
+      "approvedWebpValidAndExact": [
+        {
+          "code": "FAU-001",
+          "sha256": "fded6a73797db59a519f9a2fc30df387001551f096129e4c032c58ee2b5605b3",
+          "bytes": 152446,
+          "dimensions": [
+            512,
+            512
+          ],
+          "mode": "RGBA",
+          "binaryProof": "AUDITORIA_V2_EQUALS_COMPENDIOS_0473_SHA256",
+          "artApproval": "HISTORICALLY_APPROVED",
+          "presentInGitHubCI137": false
+        },
+        {
+          "code": "FAU-002",
+          "sha256": "f50620b8b0beafe8e43696524561ed207118860634d71202b4f3bb696f0dc372",
+          "bytes": 193196,
+          "dimensions": [
+            512,
+            512
+          ],
+          "mode": "RGBA",
+          "binaryProof": "AUDITORIA_V2_EQUALS_COMPENDIOS_0473_SHA256",
+          "artApproval": "HISTORICALLY_APPROVED",
+          "presentInGitHubCI137": false
+        },
+        {
+          "code": "FAU-004",
+          "sha256": "2910c0c0c9d00cb84ab816df8e4eec5c9b272b9102f2bcb651471e06f83ba62a",
+          "bytes": 153204,
+          "dimensions": [
+            512,
+            512
+          ],
+          "mode": "RGBA",
+          "binaryProof": "AUDITORIA_V2_EQUALS_COMPENDIOS_0473_SHA256",
+          "artApproval": "HISTORICALLY_APPROVED",
+          "presentInGitHubCI137": false
+        },
+        {
+          "code": "FAU-005",
+          "sha256": "99075146e175102aa5c11698d2c667f527aed1b992b04313d2651c4476ef2591",
+          "bytes": 191324,
+          "dimensions": [
+            512,
+            512
+          ],
+          "mode": "RGBA",
+          "binaryProof": "AUDITORIA_V2_EQUALS_COMPENDIOS_0473_SHA256",
+          "artApproval": "HISTORICALLY_APPROVED",
+          "presentInGitHubCI137": false
+        },
+        {
+          "code": "FAU-032",
+          "sha256": "ad6f2ac020589131d060beaacdb518a9e678fc75e14c8dfea8ea5f87938f9d40",
+          "bytes": 149334,
+          "dimensions": [
+            512,
+            512
+          ],
+          "mode": "RGBA",
+          "binaryProof": "AUDITORIA_V2_EQUALS_COMPENDIOS_0473_SHA256",
+          "artApproval": "HISTORICALLY_APPROVED",
+          "presentInGitHubCI137": false
+        }
+      ],
+      "approvedButInvalidWebpCode": "FAU-003",
+      "currentEditorialCut": "CORE_CHECKPOINT_FAU_CIERRE_VISUAL_2026-10-10_v2.md",
+      "unapprovedProposal": "FAU-023_v2_NOT_APPROVED",
+      "preselectedCount": 24,
+      "reviewCount": 1,
+      "legacyRetired": "FAU-006"
+    },
+    "compendios0473": {
+      "driveUrl": "https://drive.google.com/file/d/1xqs4-doppW-pOuIuUKj31kc7FPN7tijg/view",
+      "originalName": "HIPERAUSTRALIS_COMPENDIOS_0.4.73_BIO_TEXTOS_LAB.zip",
+      "bytes": 45575239,
+      "sha256": "2d8830d5a18b7d6ff7ba4eee469214fef7b7efdf7164b552464620a0580a5329",
+      "zipMembers": 357,
+      "crc": "PASS",
+      "floraWebpIconCount": 40,
+      "floraWebpDimensions": [
+        512,
+        512
+      ],
+      "floraMode": "RGBA",
+      "floraTotalUncompressedWebpIconBytes": 9107212,
+      "floraBackgroundWebpCount": 8,
+      "faunaRupestreWebp": 31,
+      "comparisonToFaunaAuditV2": {
+        "identicalSHA256": 26,
+        "divergent": 5,
+        "divergentCodes": [
+          "FAU-003",
+          "FAU-014",
+          "FAU-023",
+          "FAU-027",
+          "FAU-031"
+        ]
+      },
+      "status": "ARCHIVAL_BASELINE_NOT_APPROVED_REPLACEMENT_FOR_0475_OPTIMIZED_FLORA"
+    },
+    "comparisonDefects": {
+      "emptyAuditV2WebpAlternates": [
+        {
+          "code": "FAU-003",
+          "auditV2Bytes": 0,
+          "stage073Bytes": 168396,
+          "stage073Sha256": "c42ec1e8fee662565077db71b2bfbab643e8fac44d53a3b87eb1efbf91c87ab5",
+          "historicalNoChangeSha256": "a5f418074209715ceb383ba53c4fc0974e9c68375b0dd02aa487c9b62775049d",
+          "condition": "VISUAL_APPROVAL_EXISTS__EXACT_APPROVED_BINARY_NEEDS_COMPARISON"
+        },
+        {
+          "code": "FAU-014",
+          "auditV2Bytes": 0,
+          "stage073Bytes": 89094,
+          "stage073Sha256": "f846ad1e1ad9b127c88c2147c20c4e7f02cbd42157d8533f5b911773eb77718f",
+          "condition": "PRESELECTED__REPAIR_SOURCE_PENDING_APPROVAL"
+        },
+        {
+          "code": "FAU-031",
+          "auditV2Bytes": 0,
+          "stage073Bytes": 76406,
+          "stage073Sha256": "d63a86789868fe8d88c6a2df976c2ae1b91216eacb08a076c9925866c8f84a4c",
+          "condition": "PRESELECTED__REPAIR_SOURCE_PENDING_APPROVAL"
+        }
+      ],
+      "otherDivergentCandidates": [
+        {
+          "code": "FAU-023",
+          "auditV2Sha256": "eebcb0ad7c9116dbedbcfd0c4b7ac77f0f5fb9b78f8c2b607d72c64d4beeed44",
+          "stage073Sha256": "aa009a49d8aafe03bc8f8ea3d597636472aa77e2ef97bd22c4c053816285e9ae",
+          "condition": "REVISAR; propuesta FAU-023 v2 aparte NO aprobada"
+        },
+        {
+          "code": "FAU-027",
+          "auditV2Sha256": "090422b9738e1ccec2405762a27042250cc61fa4804ffaeb42f76d06dc82cdc2",
+          "stage073Sha256": "22ed437c831df3fa7a9c6329c79476f4c517516aa2419d6435ccdc214b6e22fa",
+          "condition": "PRESELECTED; preserve version distinction"
+        }
+      ]
+    },
+    "optimizedFlora0475": {
+      "originalName": "HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB.zip",
+      "sourceSHA256": "c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e",
+      "bytesCurrentlyAccessible": false,
+      "originalIconsOptimizedCount": 40,
+      "status": "PHYSICAL_SOURCE_PENDING__DO_NOT_USE_0473_AS_FINAL"
+    },
+    "isolatedRecoveryPack": {
+      "name": "CI137_FAU_5_APROBADOS_VERIFICADOS_WEBP512_20261123.zip",
+      "bytes": 843406,
+      "sha256": "abcb89aaff196631ccc77d81d129adbef6d2438a1794364a1da21358351d41b0",
+      "status": "CREATED_LOCALLY_WITH_FIVE_UNCHANGED_APPROVED_WEBP_AND_PROVENANCE__NOT_COMMITTED_TO_GITHUB"
+    },
+    "repoChanges": {
+      "runtimeAssetsAdded": 0,
+      "sourceJSONEdited": 0,
+      "compendiumItemsCreated": 0,
+      "remoteBinaryTransfer": "NOT_EXECUTED",
+      "releaseGate": "BLOCKED"
+    }
+  }
 }
