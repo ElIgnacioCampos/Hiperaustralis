@@ -35,6 +35,54 @@ jobs:
         run: |
           python -m py_compile tools/foundry/ci137_pipeline.py tools/foundry/assert_single_compendium.py tools/foundry/ci137_template_gate.py tools/foundry/ci137_equipo_20_transfer.py
           python tools/foundry/assert_single_compendium.py --self-test
+          python - <<'PY'
+          # Synthetic-only proof of approval gate; no Item/asset persisted or published.
+          import copy
+          import hashlib
+          import importlib.util
+          import json
+          import tempfile
+          from pathlib import Path
+
+          script = Path("tools/foundry/ci137_pipeline.py")
+          spec = importlib.util.spec_from_file_location("ci137_pipeline", script)
+          ci = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(ci)
+          entries = json.loads(Path("manifests/ci137-selected-source-137-historical-ids.json").read_text(encoding="utf-8"))["entries"]
+          assert not any(r.get("approvedAssetTransport") for r in entries)
+          assert ci.verified_additional_approved_asset_remaps(entries, Path(".")) == {}
+          row = copy.deepcopy(next(r for r in entries if r["id"] == "1dhUgcpr5U3wAQ1l"))
+          original = json.loads(Path(row["source"]).read_text(encoding="utf-8"))
+          input_path = "module/assets/_staging/instrumentos-erh/webp_256/kakel_kultrung_ERH_256.webp"
+          source_bytes = Path(input_path).read_bytes()
+          approved = {
+              "status": "FINAL_ART_APPROVED_FOR_CI137",
+              "visualIdentityApproved": True,
+              "approvedForTransport": True,
+              "approvalReference": "SYNTHETIC_TEST_ONLY_NOT_EDITORIAL_APPROVAL",
+              "originalImg": original["img"],
+              "sourcePath": input_path,
+              "targetMember": "assets/instrumentos/CI137_SYNTHETIC_PROBE.webp",
+              "sha256": hashlib.sha256(source_bytes).hexdigest(),
+              "updateBackground": original.get("flags", {}).get("hiperaustralis-sheet", {}).get("background") == original["img"],
+          }
+          row["approvedAssetTransport"] = approved
+          with tempfile.TemporaryDirectory() as temp_dir:
+              output = Path(temp_dir)
+              mapped = ci.verified_additional_approved_asset_remaps([row], output)
+              assert mapped[row["id"]]["sha256"] == approved["sha256"]
+              assert (output / approved["targetMember"]).read_bytes() == source_bytes
+              for key, wrong in (("visualIdentityApproved", False), ("sha256", "0" * 64)):
+                  bad = copy.deepcopy(row)
+                  bad["approvedAssetTransport"][key] = wrong
+                  try:
+                      ci.verified_additional_approved_asset_remaps([bad], output)
+                  except ValueError as err:
+                      assert "CI137_BLOCKED" in str(err)
+                  else:
+                      raise AssertionError("unapproved/modified image was accepted: " + key)
+          print("CI137 synthetic approval gate: positive + rejection cases PASS; actual approved remaps: 0")
+          PY
       - name: Prepare exactly 136 selected real sources - no asset changes
         run: python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/ci137-prepared"
       - name: Static CSB template compatibility — evidence only, never runtime approval
