@@ -191,7 +191,23 @@ jobs:
           assert (old["floraWebpIconCount"],old["floraBackgroundWebpCount"],old["faunaRupestreWebp"])==(40,8,31)
           assert (old["zipMembers"],old["bytes"],old["comparisonToFaunaAuditV2"]["identicalSHA256"])==(357,45575239,26)
           assert old["comparisonToFaunaAuditV2"]["divergentCodes"]==["FAU-003","FAU-014","FAU-023","FAU-027","FAU-031"]
-          assert d["releaseGate"]["territorialIconsUploadedToGitHub"]==0
+          assert d["releaseGate"]["territorialIconsUploadedToGitHub"]==5
+          import hashlib
+          approved=d["recoveryAudit20261123"]["faunaAuditV2"]["approvedWebpValidAndExact"]
+          assert len(approved)==5
+          for rec in approved:
+              assert rec["presentInGitHubCI137"] is True
+              path=Path(rec["gitHubPath"])
+              assert str(path).startswith("source-original/ci137-territorial/fau-approved/")
+              raw=path.read_bytes()
+              assert len(raw)==rec["bytes"]
+              assert hashlib.sha256(raw).hexdigest()==rec["sha256"]
+              assert hashlib.sha1(b"blob "+str(len(raw)).encode()+b"\0"+raw).hexdigest()==rec["gitBlobSha1"]
+              assert raw[:4]==b"RIFF" and raw[8:12]==b"WEBP"
+              assert int.from_bytes(raw[4:8],"little")+8==len(raw)
+          assert d["fauna"]["iconFilesRecoveredToCI137"]==5
+          assert sum(t["assetsVerifiedInRepository"] for t in d["territories"])==5
+          assert d["releaseGate"]["territorialRuntimeImgRemaps"]==0
           assert d["releaseGate"]["territorialIconBinariesAuditedLocally"]==79
           assert len([r for r in A.values() if r["recoveryStatus"].startswith("VISUAL_APPROVED_WEBP512_")])==5
           print({"territories":8,"floraItems":40,"floraRefs":45,"faunaItems":50,"faunaJournalRefs":32,"unassignedFauna":18,"verifiedTerritorialWebP":0,"productionChanges":0})

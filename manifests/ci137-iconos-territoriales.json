@@ -1,6 +1,6 @@
 {
   "schema": "ci137-territorial-icons-inventory-v01",
-  "status": "DOCUMENTARY_CROSSWALK_AND_EXTERNAL_BINARY_SOURCE_AUDIT__NO_TERRITORIAL_GITHUB_ASSETS",
+  "status": "DOCUMENTARY_CROSSWALK_PLUS_5_FAUNA_APPROVED_SOURCE_WEBP_STAGED__NO_RUNTIME_DEPLOY",
   "boundary": "CI137_TERRITORY_SEPARATE_FROM_136_EQUIPMENT_ITEMS",
   "preparedDate": "2026-11-23",
   "sourceAuthorities": {
@@ -12,7 +12,7 @@
     "faunaJournal": "Library: fauna_journal.json (32 entries), read-only",
     "faunaJournalNote": "Journal figures use hiperaustralis-fauna URLs and sources/credits. They are not the Foundry Item rupestre icons.",
     "floraIcons": "docs/AUDITORIA_HASHES_FLORA_0.4.68_vs_0.4.75_2026-11-12.md (40 optimized 0.4.75 accepted as source, binary not in GitHub)",
-    "binaryApproval": "No territorial asset binary (FAU/FLO/BIO-RUP) currently present as verified GitHub CI137 source; no invented paths or SHAs"
+    "binaryApproval": "Five historically approved FAU WebP512 staged in source-original with SHA256 and GitBlob proof; runtime unmapped; Flora v0475, remaining FAU and BIO-RUP remain unverified."
   },
   "taxonomy": {
     "JournalEntry": {
@@ -67,7 +67,7 @@
       },
       "floraRefsCount": 4,
       "faunaJournalRefsCount": 4,
-      "assetsVerifiedInRepository": 0,
+      "assetsVerifiedInRepository": 3,
       "approvedTerritorialIconPayloads": 0,
       "journalAndItemStructuresSeparate": true
     },
@@ -96,7 +96,7 @@
       },
       "floraRefsCount": 6,
       "faunaJournalRefsCount": 4,
-      "assetsVerifiedInRepository": 0,
+      "assetsVerifiedInRepository": 1,
       "approvedTerritorialIconPayloads": 0,
       "journalAndItemStructuresSeparate": true
     },
@@ -265,7 +265,7 @@
       },
       "floraRefsCount": 5,
       "faunaJournalRefsCount": 4,
-      "assetsVerifiedInRepository": 0,
+      "assetsVerifiedInRepository": 1,
       "approvedTerritorialIconPayloads": 0,
       "journalAndItemStructuresSeparate": true
     }
@@ -920,9 +920,13 @@
         "editorialStatus": "HISTORICALLY_APPROVED",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
         "readyForTransport": false,
-        "recoveryStatus": "VISUAL_APPROVED_WEBP512_INTEGRITY_VERIFIED_LOCALLY_NOT_IN_GITHUB",
+        "recoveryStatus": "VISUAL_APPROVED_WEBP512_SOURCE_STAGED_IN_GITHUB__NO_RUNTIME_MAPPING",
         "recoveredLocalSourceSha256": "fded6a73797db59a519f9a2fc30df387001551f096129e4c032c58ee2b5605b3",
-        "recoveredLocalSourceBytes": 152446
+        "recoveredLocalSourceBytes": 152446,
+        "sourceOriginalGithubPath": "source-original/ci137-territorial/fau-approved/FAU-001_Rollandia_microptera.webp",
+        "githubSourceBlobSha1": "e40ad8ec03356501116bc7972e2645335067c6a4",
+        "sourceSha256": "fded6a73797db59a519f9a2fc30df387001551f096129e4c032c58ee2b5605b3",
+        "sourceBytes": 152446
       },
       {
         "code": "FAU-002",
@@ -938,9 +942,13 @@
         "editorialStatus": "HISTORICALLY_APPROVED",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
         "readyForTransport": false,
-        "recoveryStatus": "VISUAL_APPROVED_WEBP512_INTEGRITY_VERIFIED_LOCALLY_NOT_IN_GITHUB",
+        "recoveryStatus": "VISUAL_APPROVED_WEBP512_SOURCE_STAGED_IN_GITHUB__NO_RUNTIME_MAPPING",
         "recoveredLocalSourceSha256": "f50620b8b0beafe8e43696524561ed207118860634d71202b4f3bb696f0dc372",
-        "recoveredLocalSourceBytes": 193196
+        "recoveredLocalSourceBytes": 193196,
+        "sourceOriginalGithubPath": "source-original/ci137-territorial/fau-approved/FAU-002_Telmatobius_culeus.webp",
+        "githubSourceBlobSha1": "8af762caad6e305f57274d07ee9dfc695658329f",
+        "sourceSha256": "f50620b8b0beafe8e43696524561ed207118860634d71202b4f3bb696f0dc372",
+        "sourceBytes": 193196
       },
       {
         "code": "FAU-003",
@@ -973,9 +981,13 @@
         "editorialStatus": "HISTORICALLY_APPROVED",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
         "readyForTransport": false,
-        "recoveryStatus": "VISUAL_APPROVED_WEBP512_INTEGRITY_VERIFIED_LOCALLY_NOT_IN_GITHUB",
+        "recoveryStatus": "VISUAL_APPROVED_WEBP512_SOURCE_STAGED_IN_GITHUB__NO_RUNTIME_MAPPING",
         "recoveredLocalSourceSha256": "2910c0c0c9d00cb84ab816df8e4eec5c9b272b9102f2bcb651471e06f83ba62a",
-        "recoveredLocalSourceBytes": 153204
+        "recoveredLocalSourceBytes": 153204,
+        "sourceOriginalGithubPath": "source-original/ci137-territorial/fau-approved/FAU-004_Vicugna_vicugna.webp",
+        "githubSourceBlobSha1": "5fee68fe15cbef3825a8648085223e697da1b230",
+        "sourceSha256": "2910c0c0c9d00cb84ab816df8e4eec5c9b272b9102f2bcb651471e06f83ba62a",
+        "sourceBytes": 153204
       },
       {
         "code": "FAU-005",
@@ -991,9 +1003,13 @@
         "editorialStatus": "HISTORICALLY_APPROVED",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
         "readyForTransport": false,
-        "recoveryStatus": "VISUAL_APPROVED_WEBP512_INTEGRITY_VERIFIED_LOCALLY_NOT_IN_GITHUB",
+        "recoveryStatus": "VISUAL_APPROVED_WEBP512_SOURCE_STAGED_IN_GITHUB__NO_RUNTIME_MAPPING",
         "recoveredLocalSourceSha256": "99075146e175102aa5c11698d2c667f527aed1b992b04313d2651c4476ef2591",
-        "recoveredLocalSourceBytes": 191324
+        "recoveredLocalSourceBytes": 191324,
+        "sourceOriginalGithubPath": "source-original/ci137-territorial/fau-approved/FAU-005_Tremarctos_ornatus.webp",
+        "githubSourceBlobSha1": "68d5566d1b74f2ac5a470400bb7ec58f978344f3",
+        "sourceSha256": "99075146e175102aa5c11698d2c667f527aed1b992b04313d2651c4476ef2591",
+        "sourceBytes": 191324
       },
       {
         "code": "FAU-006",
@@ -1427,9 +1443,13 @@
         "editorialStatus": "APPROVAL_REQUIRES_RECENT_VERSION_CHECK",
         "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
         "readyForTransport": false,
-        "recoveryStatus": "VISUAL_APPROVED_WEBP512_INTEGRITY_VERIFIED_LOCALLY_NOT_IN_GITHUB",
+        "recoveryStatus": "VISUAL_APPROVED_WEBP512_SOURCE_STAGED_IN_GITHUB__NO_RUNTIME_MAPPING",
         "recoveredLocalSourceSha256": "ad6f2ac020589131d060beaacdb518a9e678fc75e14c8dfea8ea5f87938f9d40",
-        "recoveredLocalSourceBytes": 149334
+        "recoveredLocalSourceBytes": 149334,
+        "sourceOriginalGithubPath": "source-original/ci137-territorial/fau-approved/FAU-032_Stercorarius_maccormicki.webp",
+        "githubSourceBlobSha1": "d67f2028abe8f61ade7199879081c1053c1bf9d1",
+        "sourceSha256": "ad6f2ac020589131d060beaacdb518a9e678fc75e14c8dfea8ea5f87938f9d40",
+        "sourceBytes": 149334
       }
     ],
     "additionalFoundryItemsWithoutJournal": [
@@ -1624,7 +1644,7 @@
       "FAU-006"
     ],
     "journalTerritoryMatches": 32,
-    "iconFilesRecoveredToCI137": 0
+    "iconFilesRecoveredToCI137": 5
   },
   "funga": {
     "status": "SUBCATEGORY_DEFINED_NO_SEPARATE_APPROVED_ITEM_INVENTORY",
@@ -1659,7 +1679,8 @@
     "editionApproval": "MIXED_NOT_COMPLETE",
     "D3": "BLOCKED",
     "territorialIconBinariesAuditedLocally": 79,
-    "territorialIconsUploadedToGitHub": 0
+    "territorialIconsUploadedToGitHub": 5,
+    "territorialSourcesVerifiedByGitSha": 5
   },
   "todo": [
     "Recover exact source ZIP for 0.4.75 Flora optimized binaries and verify 40 per-image SHA and 8 shared background files",
@@ -1671,8 +1692,8 @@
     "Run isolated Foundry Client QA before deployment or distribution"
   ],
   "recoveryAudit20261123": {
-    "status": "RAW_ARCHIVES_RECOVERED_AND_HASHED_LOCALLY__NOT_IN_GITHUB",
-    "authoritativeProof": "Drive raw ZIP bytes read locally, complete SHA256 and CRC checked; no individual territorial image has been uploaded to repository.",
+    "status": "FIVE_APPROVED_FAUNA_WEBP512_STAGED_IN_GITHUB_BYTES_VERIFIED__FLORA0475_MISSING",
+    "authoritativeProof": "Five approved FAU WebP 512 recovered from authenticated Drive ZIP; local SHA256 and Git blob sha1 exactly matched remote GitHub uploaded blobs. Remaining art not promoted.",
     "faunaAuditV2": {
       "driveFolder": "https://drive.google.com/drive/folders/1inA3JFMSwsR1M28Bg6gRHoaBSrA4-wu_",
       "originalName": "HIPERAUSTRALIS_FAU_AUDITORIA_2026-10-10_v2.zip",
@@ -1709,7 +1730,9 @@
           "mode": "RGBA",
           "binaryProof": "AUDITORIA_V2_EQUALS_COMPENDIOS_0473_SHA256",
           "artApproval": "HISTORICALLY_APPROVED",
-          "presentInGitHubCI137": false
+          "presentInGitHubCI137": true,
+          "gitHubPath": "source-original/ci137-territorial/fau-approved/FAU-001_Rollandia_microptera.webp",
+          "gitBlobSha1": "e40ad8ec03356501116bc7972e2645335067c6a4"
         },
         {
           "code": "FAU-002",
@@ -1722,7 +1745,9 @@
           "mode": "RGBA",
           "binaryProof": "AUDITORIA_V2_EQUALS_COMPENDIOS_0473_SHA256",
           "artApproval": "HISTORICALLY_APPROVED",
-          "presentInGitHubCI137": false
+          "presentInGitHubCI137": true,
+          "gitHubPath": "source-original/ci137-territorial/fau-approved/FAU-002_Telmatobius_culeus.webp",
+          "gitBlobSha1": "8af762caad6e305f57274d07ee9dfc695658329f"
         },
         {
           "code": "FAU-004",
@@ -1735,7 +1760,9 @@
           "mode": "RGBA",
           "binaryProof": "AUDITORIA_V2_EQUALS_COMPENDIOS_0473_SHA256",
           "artApproval": "HISTORICALLY_APPROVED",
-          "presentInGitHubCI137": false
+          "presentInGitHubCI137": true,
+          "gitHubPath": "source-original/ci137-territorial/fau-approved/FAU-004_Vicugna_vicugna.webp",
+          "gitBlobSha1": "5fee68fe15cbef3825a8648085223e697da1b230"
         },
         {
           "code": "FAU-005",
@@ -1748,7 +1775,9 @@
           "mode": "RGBA",
           "binaryProof": "AUDITORIA_V2_EQUALS_COMPENDIOS_0473_SHA256",
           "artApproval": "HISTORICALLY_APPROVED",
-          "presentInGitHubCI137": false
+          "presentInGitHubCI137": true,
+          "gitHubPath": "source-original/ci137-territorial/fau-approved/FAU-005_Tremarctos_ornatus.webp",
+          "gitBlobSha1": "68d5566d1b74f2ac5a470400bb7ec58f978344f3"
         },
         {
           "code": "FAU-032",
@@ -1761,7 +1790,9 @@
           "mode": "RGBA",
           "binaryProof": "AUDITORIA_V2_EQUALS_COMPENDIOS_0473_SHA256",
           "artApproval": "HISTORICALLY_APPROVED",
-          "presentInGitHubCI137": false
+          "presentInGitHubCI137": true,
+          "gitHubPath": "source-original/ci137-territorial/fau-approved/FAU-032_Stercorarius_maccormicki.webp",
+          "gitBlobSha1": "d67f2028abe8f61ade7199879081c1053c1bf9d1"
         }
       ],
       "approvedButInvalidWebpCode": "FAU-003",
@@ -1851,14 +1882,16 @@
       "name": "CI137_FAU_5_APROBADOS_VERIFICADOS_WEBP512_20261123.zip",
       "bytes": 843406,
       "sha256": "abcb89aaff196631ccc77d81d129adbef6d2438a1794364a1da21358351d41b0",
-      "status": "CREATED_LOCALLY_WITH_FIVE_UNCHANGED_APPROVED_WEBP_AND_PROVENANCE__NOT_COMMITTED_TO_GITHUB"
+      "status": "LOCAL_BACKUP_ONLY_FIVE_INDIVIDUAL_WEBP_BLOBS_NOW_COMMITTED_IN_GITHUB"
     },
     "repoChanges": {
       "runtimeAssetsAdded": 0,
       "sourceJSONEdited": 0,
       "compendiumItemsCreated": 0,
-      "remoteBinaryTransfer": "NOT_EXECUTED",
-      "releaseGate": "BLOCKED"
+      "remoteBinaryTransfer": "FIVE_EXACT_GIT_BLOBS_STAGED_SOURCE_ORIGINAL",
+      "releaseGate": "BLOCKED",
+      "sourceStagingCount": 5,
+      "bytesStaged": 839504
     }
   }
 }
