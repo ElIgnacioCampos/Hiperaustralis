@@ -3,6 +3,29 @@
 **Estado ACTUAL (23-11-2026, D2):** **136/136 Items PASS con nombre final Cuchillo de piedra**, 20 Armas, nueve carpetas, cinco plantillas; **115/115 WebP transferidos PASS**. D3/Foundry **NO ACREDITADO**; publicación **BLOQUEADA**.
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
+## D2 — Reconciliación de 105 referencias en selección 136 (23-11-2026)
+
+**Prueba de lectura sobre el HEAD `0884091dc761` y árbol GitHub:** el manifiesto vigente de **136 IDs** se cotejó con la matriz histórica v05 de 137 entradas, descartando exclusivamente `HipArm01PackA000`. **136/136 IDs identificados, ninguno ausente**. La matriz v05 se conserva como documento histórico; NO es autoridad para seleccionar 137 ni autoriza cambios de imágenes.
+
+**Rutas gráficas de origen:** exactamente **79/79 nombres de WebP** históricos de las familias Armas (20), Parafernalia (22), Instrumentos (21), Rituales (8) y Defensas (8) están físicamente listados en `module/assets/_staging/ci137_v02_historico/`. El Cuchillo de piedra vigente (ID `c2L6T5w4S9OcgkDt`) ya utiliza fuera del staging el WebP previamente aprobado, con `img` y fondo remapeados; quedan **78/78 rutas históricas originales archivadas en GitHub**, no 78 archivos físicamente desaparecidos.
+
+| Familia | Rutas distintas no promovidas | Referencias `img`/fondo pendientes |
+| --- | ---: | ---: |
+| Armas, excluido Cuchillo de piedra vigente | 19 | 38 |
+| Parafernalia | 22 | 22 |
+| Instrumentos musicales | 21 | 21 |
+| Rituales | 8 | 16 |
+| Defensas | 8 | 8 |
+| **Total** | **78** | **105** |
+
+**Doble puerta de aprobación:** integridad/ubicación histórica **PASS 78/78 por ruta exacta**; autorización editorial de esas imágenes como arte final para reemplazar las referencias **NO ACREDITADA**. Los 79 archivos del staging histórico proceden de respaldos 0.4.72/0.4.73 y no se promocionan automáticamente, especialmente ARM-11/12/13 (prioridad a las versiones 256 px posteriores). El lote Parafernalia/Rituales continúa a la espera del cotejo con 0.4.75. Defensas/Instrumentos deben respetar sus variantes finales y los cruces de identidad comprobados. Sin remapeos gráficos nuevos en este corte.
+
+**Equipo común, frente distinto de los 105 enlaces:** los **29/29 IDs** de la matriz QA29 están dentro de los 40 Items históricos seleccionados y sus **29/29 WebP** están presentes en GitHub: 20 obras aprobadas en `module/assets/equipo-comun/` y nueve candidatos en `module/assets/_staging/equipo/webp256/`. **0/29 aprobaciones de reemplazo `img`** en el manifiesto de correspondencias; no alterar las fichas ni presentar el arte aprobado como un cambio de icono runtime. Los 11 Items restantes conservan iconos stock legítimos.
+
+**Próxima acción D2 en el mismo proceso:** resolver por evidencia y aprobación del arte final los 78 cruces pendientes; priorizar cotejo ARM‑11/12/13 y referencias finales Defensas/ERH, y verificar PF22/RIT08 contra el respaldo 0.4.75 si está disponible. Actualizar **solamente el manifiesto y pipeline actuales cuando exista una correspondencia aprobada**; repetir el workflow existente. D3 sigue BLOQUEADO por el incidente de carga de Foundry. Sin instaladores, ramas, módulos, workflows, fichas nuevas ni modificaciones al Estado Maestro.
+
+**Fuentes directas:** selección CI137 ACTUAL; `docs/CI137_MATRIZ_ITEMS_ASSETS_2026-11-21_v05.json` (referente histórico de rutas); árbol GitHub del commit señalado; `manifests/equipo-comun-29-cruces-candidatos-20261121.json`; `docs/CI137_ARM_11_13_Y_RESCATE_DEF08_INS21_2026-11-22.md`; `docs/CI137_GATE_075_CIERRE_LOTE_PF22_RIT08_2026-11-22.md`. **Datos/bytes de imágenes no modificados.**
+
 ## CORRECCIÓN DE NOMBRE FINAL — CUCHILLO DE PIEDRA (23-11-2026)
 **Decisión editorial explícita:** el nombre final del Item seleccionado es **Cuchillo de piedra**. Se conserva el ID histórico `c2L6T5w4S9OcgkDt` y se aplica el nombre solo al transporte CI137; `source/items/armas/01_cuchillo_litico.json` mantiene su nombre archivístico **Cuchillo lítico**. El duplicado `HipArm01PackA000` continúa excluido, con JSON fuente conservado. Mismo WebP aprobado, 136 Items, 20 Armas, nueve carpetas y cinco plantillas. **D2 revalidado PASS** en [GitHub Actions #45099633940](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45099633940), commit `68135981f425b68a3985e64eecf8ffb65056e0fa`; compilación/descompilación 136/136 y validación CSB PASS, release BLOCKED. **D3 sigue bloqueado.** Los nombres antiguos en el historial siguiente son evidencias documentales, no el nombre editorial vigente.
 
