@@ -1,0 +1,1615 @@
+{
+  "schema": "ci137-territorial-icons-inventory-v01",
+  "status": "DOCUMENTARY_CROSSWALK_PREPARED_NO_TERRITORIAL_ASSET_BYTES",
+  "boundary": "CI137_TERRITORY_SEPARATE_FROM_136_EQUIPMENT_ITEMS",
+  "preparedDate": "2026-11-23",
+  "sourceAuthorities": {
+    "territoryArchitecture": "docs/COMPENDIOS_TERRITORIO_PROCEDENCIA.md",
+    "territoryCatalog": "manifests/territorios-migracion.json",
+    "faunaFoundryIDs": "source/territorios/fauna/foundry-id-map.json",
+    "floraFoundryIDs": "source/territorios/flora/foundry-id-map.json",
+    "floraTerritorialRefs": "source/territorios/flora/manifest.json",
+    "faunaJournal": "Library: fauna_journal.json (32 entries), read-only",
+    "faunaJournalNote": "Journal figures use hiperaustralis-fauna URLs and sources/credits. They are not the Foundry Item rupestre icons.",
+    "floraIcons": "docs/AUDITORIA_HASHES_FLORA_0.4.68_vs_0.4.75_2026-11-12.md (40 optimized 0.4.75 accepted as source, binary not in GitHub)",
+    "binaryApproval": "No territorial asset binary (FAU/FLO/BIO-RUP) currently present as verified GitHub CI137 source; no invented paths or SHAs"
+  },
+  "taxonomy": {
+    "JournalEntry": {
+      "fromName": "Biomas",
+      "toName": "Territorios",
+      "migrationStatus": "NOT_MIGRATED",
+      "separateFromItems": true
+    },
+    "ItemFolder": {
+      "name": "Territorio",
+      "subfolders": [
+        "Flora",
+        "Fauna",
+        "Funga",
+        "Recetas"
+      ],
+      "migrationStatus": "NOT_MIGRATED"
+    },
+    "visualFamilies": [
+      "FAUNA_RUPESTRE_ITEM",
+      "FAUNA_JOURNAL_DOCUMENTAL",
+      "FLORA_ICON",
+      "BIO_RUP_BIOMA",
+      "FOTOGRAFIA_BIOMA"
+    ],
+    "separateKinds": [
+      "JournalEntry",
+      "Item"
+    ]
+  },
+  "territories": [
+    {
+      "id": "TITICACA",
+      "slug": "titicaca",
+      "name": "Titicaca",
+      "biome": "Altiplano lacustre",
+      "sections": {
+        "Flora": [
+          "FLO-001",
+          "FLO-009",
+          "FLO-021",
+          "FLO-025"
+        ],
+        "Fauna": [
+          "FAU-001",
+          "FAU-002",
+          "FAU-003",
+          "FAU-004"
+        ],
+        "Funga": [],
+        "Recetas": []
+      },
+      "floraRefsCount": 4,
+      "faunaJournalRefsCount": 4,
+      "assetsVerifiedInRepository": 0,
+      "approvedTerritorialIconPayloads": 0,
+      "journalAndItemStructuresSeparate": true
+    },
+    {
+      "id": "PAITITI",
+      "slug": "paititi",
+      "name": "Paititi",
+      "biome": "Bosque nublado",
+      "sections": {
+        "Flora": [
+          "FLO-002",
+          "FLO-010",
+          "FLO-017",
+          "FLO-022",
+          "FLO-026",
+          "FLO-030"
+        ],
+        "Fauna": [
+          "FAU-005",
+          "FAU-006",
+          "FAU-007",
+          "FAU-008"
+        ],
+        "Funga": [],
+        "Recetas": []
+      },
+      "floraRefsCount": 6,
+      "faunaJournalRefsCount": 4,
+      "assetsVerifiedInRepository": 0,
+      "approvedTerritorialIconPayloads": 0,
+      "journalAndItemStructuresSeparate": true
+    },
+    {
+      "id": "NGULUMAPU",
+      "slug": "ngulumapu",
+      "name": "Ngulumapu",
+      "biome": "Bosque lluvioso",
+      "sections": {
+        "Flora": [
+          "FLO-003",
+          "FLO-011",
+          "FLO-013",
+          "FLO-018",
+          "FLO-026",
+          "FLO-031",
+          "FLO-038",
+          "FLO-039",
+          "FLO-040"
+        ],
+        "Fauna": [
+          "FAU-009",
+          "FAU-010",
+          "FAU-011",
+          "FAU-012"
+        ],
+        "Funga": [],
+        "Recetas": []
+      },
+      "floraRefsCount": 9,
+      "faunaJournalRefsCount": 4,
+      "assetsVerifiedInRepository": 0,
+      "approvedTerritorialIconPayloads": 0,
+      "journalAndItemStructuresSeparate": true
+    },
+    {
+      "id": "PEWENMAPU",
+      "slug": "pewenmapu",
+      "name": "Pewenmapu",
+      "biome": "Cordillera volcánica",
+      "sections": {
+        "Flora": [
+          "FLO-004",
+          "FLO-012",
+          "FLO-013",
+          "FLO-023",
+          "FLO-027",
+          "FLO-034"
+        ],
+        "Fauna": [
+          "FAU-013",
+          "FAU-014",
+          "FAU-015",
+          "FAU-016"
+        ],
+        "Funga": [],
+        "Recetas": []
+      },
+      "floraRefsCount": 6,
+      "faunaJournalRefsCount": 4,
+      "assetsVerifiedInRepository": 0,
+      "approvedTerritorialIconPayloads": 0,
+      "journalAndItemStructuresSeparate": true
+    },
+    {
+      "id": "PATAGONIA_AUSTRAL",
+      "slug": "patagonia-austral",
+      "name": "Patagonia austral",
+      "sections": {
+        "Flora": [
+          "FLO-005",
+          "FLO-006",
+          "FLO-012",
+          "FLO-014",
+          "FLO-019",
+          "FLO-034"
+        ],
+        "Fauna": [
+          "FAU-017",
+          "FAU-018",
+          "FAU-019",
+          "FAU-020"
+        ],
+        "Funga": [],
+        "Recetas": []
+      },
+      "floraRefsCount": 6,
+      "faunaJournalRefsCount": 4,
+      "assetsVerifiedInRepository": 0,
+      "approvedTerritorialIconPayloads": 0,
+      "journalAndItemStructuresSeparate": true
+    },
+    {
+      "id": "TIERRA_DEL_FUEGO",
+      "slug": "tierra-del-fuego",
+      "name": "Tierra del Fuego",
+      "sections": {
+        "Flora": [
+          "FLO-006",
+          "FLO-011",
+          "FLO-015",
+          "FLO-016"
+        ],
+        "Fauna": [
+          "FAU-021",
+          "FAU-022",
+          "FAU-023",
+          "FAU-024"
+        ],
+        "Funga": [],
+        "Recetas": []
+      },
+      "floraRefsCount": 4,
+      "faunaJournalRefsCount": 4,
+      "assetsVerifiedInRepository": 0,
+      "approvedTerritorialIconPayloads": 0,
+      "journalAndItemStructuresSeparate": true
+    },
+    {
+      "id": "CANALES_AUSTRALES",
+      "slug": "canales-australes",
+      "name": "Canales australes",
+      "sections": {
+        "Flora": [
+          "FLO-007",
+          "FLO-011",
+          "FLO-015",
+          "FLO-024",
+          "FLO-035"
+        ],
+        "Fauna": [
+          "FAU-025",
+          "FAU-026",
+          "FAU-027",
+          "FAU-028"
+        ],
+        "Funga": [],
+        "Recetas": []
+      },
+      "floraRefsCount": 5,
+      "faunaJournalRefsCount": 4,
+      "assetsVerifiedInRepository": 0,
+      "approvedTerritorialIconPayloads": 0,
+      "journalAndItemStructuresSeparate": true
+    },
+    {
+      "id": "UMBRAL_POLAR",
+      "slug": "umbral-polar",
+      "name": "Umbral Polar",
+      "sections": {
+        "Flora": [
+          "FLO-008",
+          "FLO-020",
+          "FLO-028",
+          "FLO-032",
+          "FLO-036"
+        ],
+        "Fauna": [
+          "FAU-029",
+          "FAU-030",
+          "FAU-031",
+          "FAU-032"
+        ],
+        "Funga": [],
+        "Recetas": []
+      },
+      "floraRefsCount": 5,
+      "faunaJournalRefsCount": 4,
+      "assetsVerifiedInRepository": 0,
+      "approvedTerritorialIconPayloads": 0,
+      "journalAndItemStructuresSeparate": true
+    }
+  ],
+  "flora": {
+    "items": [
+      {
+        "code": "FLO-001",
+        "seedId": "flora-01",
+        "foundryId": "8QxkLEqZyWoZwQuE",
+        "uuid": "Item.8QxkLEqZyWoZwQuE",
+        "name": "Totora",
+        "territoryRefs": [
+          "titicaca"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-002",
+        "seedId": "flora-02",
+        "foundryId": "kPTRbEpIKnNKD22G",
+        "uuid": "Item.kPTRbEpIKnNKD22G",
+        "name": "Orquídea andina",
+        "territoryRefs": [
+          "paititi"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-003",
+        "seedId": "flora-03",
+        "foundryId": "hrHdYmhradICCOAg",
+        "uuid": "Item.hrHdYmhradICCOAg",
+        "name": "Ulmo",
+        "territoryRefs": [
+          "ngulumapu"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-004",
+        "seedId": "flora-04",
+        "foundryId": "D8DUTJF1Et3urear",
+        "uuid": "Item.D8DUTJF1Et3urear",
+        "name": "Pewen",
+        "territoryRefs": [
+          "pewenmapu"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-005",
+        "seedId": "flora-05",
+        "foundryId": "obsN2rPwUuDCO9R1",
+        "uuid": "Item.obsN2rPwUuDCO9R1",
+        "name": "Calafate",
+        "territoryRefs": [
+          "patagonia-austral"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-006",
+        "seedId": "flora-06",
+        "foundryId": "AjK8zQYvQReR5Dej",
+        "uuid": "Item.AjK8zQYvQReR5Dej",
+        "name": "Lenga",
+        "territoryRefs": [
+          "patagonia-austral",
+          "tierra-del-fuego"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-007",
+        "seedId": "flora-07",
+        "foundryId": "uj4l7qa0LFq7wBXp",
+        "uuid": "Item.uj4l7qa0LFq7wBXp",
+        "name": "Ciprés de las Guaitecas",
+        "territoryRefs": [
+          "canales-australes"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-008",
+        "seedId": "flora-08",
+        "foundryId": "RAFdBdh3zkbnLfFQ",
+        "uuid": "Item.RAFdBdh3zkbnLfFQ",
+        "name": "Pasto antártico",
+        "territoryRefs": [
+          "umbral-polar"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-009",
+        "seedId": "flora-09",
+        "foundryId": "AqSaHtDOp4paD2OA",
+        "uuid": "Item.AqSaHtDOp4paD2OA",
+        "name": "Llacho",
+        "territoryRefs": [
+          "titicaca"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-010",
+        "seedId": "flora-10",
+        "foundryId": "bgNINDolymBTkMDy",
+        "uuid": "Item.bgNINDolymBTkMDy",
+        "name": "Bromelia",
+        "territoryRefs": [
+          "paititi"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-011",
+        "seedId": "flora-11",
+        "foundryId": "HRtAN5hQLFY2YhwT",
+        "uuid": "Item.HRtAN5hQLFY2YhwT",
+        "name": "Canelo",
+        "territoryRefs": [
+          "ngulumapu",
+          "tierra-del-fuego",
+          "canales-australes"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-012",
+        "seedId": "flora-12",
+        "foundryId": "ZGD5Ju34FhFSWGCp",
+        "uuid": "Item.ZGD5Ju34FhFSWGCp",
+        "name": "Ñirre",
+        "territoryRefs": [
+          "pewenmapu",
+          "patagonia-austral"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-013",
+        "seedId": "flora-13",
+        "foundryId": "FxSyHzkYd6xLmkC0",
+        "uuid": "Item.FxSyHzkYd6xLmkC0",
+        "name": "Coigüe",
+        "territoryRefs": [
+          "ngulumapu",
+          "pewenmapu"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-014",
+        "seedId": "flora-14",
+        "foundryId": "bWNDctTwgVuBN8ma",
+        "uuid": "Item.bWNDctTwgVuBN8ma",
+        "name": "Coirón",
+        "territoryRefs": [
+          "patagonia-austral"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-015",
+        "seedId": "flora-15",
+        "foundryId": "TvWyolfUzBJ4KWUY",
+        "uuid": "Item.TvWyolfUzBJ4KWUY",
+        "name": "Guindo",
+        "territoryRefs": [
+          "tierra-del-fuego",
+          "canales-australes"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-016",
+        "seedId": "flora-16",
+        "foundryId": "1QDhWgJwPAuLX5Rs",
+        "uuid": "Item.1QDhWgJwPAuLX5Rs",
+        "name": "Esfagno",
+        "territoryRefs": [
+          "tierra-del-fuego"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-017",
+        "seedId": "flora-17",
+        "foundryId": "QcEq2xpc5io1q7vD",
+        "uuid": "Item.QcEq2xpc5io1q7vD",
+        "name": "Helecho arborescente",
+        "territoryRefs": [
+          "paititi"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-018",
+        "seedId": "flora-18",
+        "foundryId": "EAKZGHAPhvoHXnzY",
+        "uuid": "Item.EAKZGHAPhvoHXnzY",
+        "name": "Avellano",
+        "territoryRefs": [
+          "ngulumapu"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-019",
+        "seedId": "flora-19",
+        "foundryId": "If11MHBVELSdsaQ9",
+        "uuid": "Item.If11MHBVELSdsaQ9",
+        "name": "Chaura",
+        "territoryRefs": [
+          "patagonia-austral"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-020",
+        "seedId": "flora-20",
+        "foundryId": "OglJ4jmNql2edLh6",
+        "uuid": "Item.OglJ4jmNql2edLh6",
+        "name": "Liquen polar",
+        "territoryRefs": [
+          "umbral-polar"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-021",
+        "seedId": "flora-21",
+        "foundryId": "wKqymf6A6W8aCRiE",
+        "uuid": "Item.wKqymf6A6W8aCRiE",
+        "name": "Junco",
+        "territoryRefs": [
+          "titicaca"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-022",
+        "seedId": "flora-22",
+        "foundryId": "24LkJ0uBiyQWBJml",
+        "uuid": "Item.24LkJ0uBiyQWBJml",
+        "name": "Bambú",
+        "territoryRefs": [
+          "paititi"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-023",
+        "seedId": "flora-23",
+        "foundryId": "07hNf7vg5bHgJXh2",
+        "uuid": "Item.07hNf7vg5bHgJXh2",
+        "name": "Mañío",
+        "territoryRefs": [
+          "pewenmapu"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-024",
+        "seedId": "flora-24",
+        "foundryId": "YZmZVSVFTjl4hYud",
+        "uuid": "Item.YZmZVSVFTjl4hYud",
+        "name": "Macroalga",
+        "territoryRefs": [
+          "canales-australes"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-025",
+        "seedId": "flora-25",
+        "foundryId": "JId9z6VBRmBOlXs7",
+        "uuid": "Item.JId9z6VBRmBOlXs7",
+        "name": "Lenteja de agua",
+        "territoryRefs": [
+          "titicaca"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-026",
+        "seedId": "flora-26",
+        "foundryId": "OiLM8P1RIhCLROSv",
+        "uuid": "Item.OiLM8P1RIhCLROSv",
+        "name": "Musgo de bosque",
+        "territoryRefs": [
+          "paititi",
+          "ngulumapu"
+        ],
+        "territoryStatus": "PARTIALLY_PROVISIONAL",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-027",
+        "seedId": "flora-27",
+        "foundryId": "WXw4KQcmzDupTAJL",
+        "uuid": "Item.WXw4KQcmzDupTAJL",
+        "name": "Ciprés de cordillera",
+        "territoryRefs": [
+          "pewenmapu"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-028",
+        "seedId": "flora-28",
+        "foundryId": "l2u4hl0dxPmqflYF",
+        "uuid": "Item.l2u4hl0dxPmqflYF",
+        "name": "Fungosidades",
+        "territoryRefs": [
+          "umbral-polar"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-029",
+        "seedId": "flora-29",
+        "foundryId": "immVDHHU9IRjrKh1",
+        "uuid": "Item.immVDHHU9IRjrKh1",
+        "name": "Helecho de agua",
+        "territoryRefs": [],
+        "territoryStatus": "PENDING_TERRITORY",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-030",
+        "seedId": "flora-30",
+        "foundryId": "zKZ9w91iyVBmsi1Z",
+        "uuid": "Item.zKZ9w91iyVBmsi1Z",
+        "name": "Epífita",
+        "territoryRefs": [
+          "paititi"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-031",
+        "seedId": "flora-31",
+        "foundryId": "6bRCFwRxDAig1TJO",
+        "uuid": "Item.6bRCFwRxDAig1TJO",
+        "name": "Trepadora",
+        "territoryRefs": [
+          "ngulumapu"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-032",
+        "seedId": "flora-32",
+        "foundryId": "Gyk8U4yhhoZSckcb",
+        "uuid": "Item.Gyk8U4yhhoZSckcb",
+        "name": "Alga polar",
+        "territoryRefs": [
+          "umbral-polar"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-033",
+        "seedId": "flora-33",
+        "foundryId": "xgKE2gvAnDTcuCGt",
+        "uuid": "Item.xgKE2gvAnDTcuCGt",
+        "name": "Helecho terrestre",
+        "territoryRefs": [],
+        "territoryStatus": "PENDING_TERRITORY",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-034",
+        "seedId": "flora-34",
+        "foundryId": "FP8NfVhSk4nLXZiw",
+        "uuid": "Item.FP8NfVhSk4nLXZiw",
+        "name": "Gramínea cordillerana",
+        "territoryRefs": [
+          "pewenmapu",
+          "patagonia-austral"
+        ],
+        "territoryStatus": "PARTIALLY_PROVISIONAL",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-035",
+        "seedId": "flora-35",
+        "foundryId": "azGKtoLz76hPNUwZ",
+        "uuid": "Item.azGKtoLz76hPNUwZ",
+        "name": "Vegetación litoral",
+        "territoryRefs": [
+          "canales-australes"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-036",
+        "seedId": "flora-36",
+        "foundryId": "kol0TUekULuAIgkj",
+        "uuid": "Item.kol0TUekULuAIgkj",
+        "name": "Musgo polar",
+        "territoryRefs": [
+          "umbral-polar"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-037",
+        "seedId": "flora-37",
+        "foundryId": "AgJPeKku9aQbjp4R",
+        "uuid": "Item.AgJPeKku9aQbjp4R",
+        "name": "Yareta",
+        "territoryRefs": [],
+        "territoryStatus": "PENDING_TERRITORY",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-038",
+        "seedId": "flora-38",
+        "foundryId": "MV5XYAZDXi7NYtQP",
+        "uuid": "Item.MV5XYAZDXi7NYtQP",
+        "name": "Copihue",
+        "territoryRefs": [
+          "ngulumapu"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-039",
+        "seedId": "flora-39",
+        "foundryId": "mPmQ3MtNIZi3H10C",
+        "uuid": "Item.mPmQ3MtNIZi3H10C",
+        "name": "Nalca",
+        "territoryRefs": [
+          "ngulumapu"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      },
+      {
+        "code": "FLO-040",
+        "seedId": "flora-40",
+        "foundryId": "awe2EdrtmyFQnOzh",
+        "uuid": "Item.awe2EdrtmyFQnOzh",
+        "name": "Chilco",
+        "territoryRefs": [
+          "ngulumapu"
+        ],
+        "territoryStatus": "MAPPED_FROM_EDITORIAL_MANIFEST",
+        "legacyIconStatus": "0.4.75_OPTIMIZED_ACCEPTED_AS_SOURCE_NOT_RECOVERED",
+        "legacyIconPath": null,
+        "assetSha256": null,
+        "readyForTransport": false
+      }
+    ],
+    "count": 40,
+    "foundryIdentityMapped": 40,
+    "territorialReferences": 45,
+    "uniqueAssigned": 37,
+    "unassigned": [
+      "FLO-029",
+      "FLO-033",
+      "FLO-037"
+    ],
+    "conditional": [
+      "FLO-026",
+      "FLO-034"
+    ],
+    "acceptedOptimizedIconSourceVersion": "0.4.75",
+    "iconFilesRecoveredToCI137": 0
+  },
+  "fauna": {
+    "foundryItems": 50,
+    "foundryIdentityMapped": 50,
+    "journalPageEntries": [
+      {
+        "code": "FAU-001",
+        "foundryId": "MYBvmQTY5ka6CYOA",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.MYBvmQTY5ka6CYOA",
+        "visibleJournalTitle": "FAU-001 · Keñola · Zambullidor del Titicaca",
+        "scientificName": "Rollandia microptera",
+        "territory": "titicaca",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/01_Titicaca/FAU-001_Rollandia_microptera.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rollandia_Microptera.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "HISTORICALLY_APPROVED",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-002",
+        "foundryId": "ghbWSzAV3A8PUmOj",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.ghbWSzAV3A8PUmOj",
+        "visibleJournalTitle": "FAU-002 · Rana gigante del Titicaca",
+        "scientificName": "Telmatobius culeus",
+        "territory": "titicaca",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/01_Titicaca/FAU-002_Telmatobius_culeus.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Telmatobius_culeus_5579.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "HISTORICALLY_APPROVED",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-003",
+        "foundryId": "8U49t6TXIzBEXBja",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.8U49t6TXIzBEXBja",
+        "visibleJournalTitle": "FAU-003 · Choka · Gallareta andina",
+        "scientificName": "Fulica ardesiaca",
+        "territory": "titicaca",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/01_Titicaca/FAU-003_Fulica_ardesiaca.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fulica_Ardesiaca.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "HISTORICALLY_APPROVED",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-004",
+        "foundryId": "vpvHVQOGukREGu7l",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.vpvHVQOGukREGu7l",
+        "visibleJournalTitle": "FAU-004 · Vicuña",
+        "scientificName": "Vicugna vicugna",
+        "territory": "titicaca",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/01_Titicaca/FAU-004_Vicugna_vicugna.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:VICU%C3%91A_DE_JUN%C3%8DN.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "HISTORICALLY_APPROVED",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-005",
+        "foundryId": "ht3BGgYN4Qpv6Jxh",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.ht3BGgYN4Qpv6Jxh",
+        "visibleJournalTitle": "FAU-005 · Oso andino · Jucumari",
+        "scientificName": "Tremarctos ornatus",
+        "territory": "paititi",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/02_Paititi/FAU-005_Tremarctos_ornatus.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tremarctos_ornatus.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "HISTORICALLY_APPROVED",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-006",
+        "foundryId": "sJUb33WwcLgPb3PQ",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.sJUb33WwcLgPb3PQ",
+        "visibleJournalTitle": "FAU-006 · Gallito de las rocas",
+        "scientificName": "Rupicola peruvianus",
+        "territory": "paititi",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/02_Paititi/FAU-006_Rupicola_peruvianus.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rupicola_peruvianus_Gallito_de_roca_andino_Andean-Cock-of-the-Rock_(male)_(13975950606).jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "LEGACY_RETIRED",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-007",
+        "foundryId": "zfH73rgloB8L6pSM",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.zfH73rgloB8L6pSM",
+        "visibleJournalTitle": "FAU-007 · Tapir · Sachavaca",
+        "scientificName": "Tapirus terrestris",
+        "territory": "paititi",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/02_Paititi/FAU-007_Tapirus_terrestris.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tapirus_terrestris01.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-008",
+        "foundryId": "jeBv1DPoIY1lX2zq",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.jeBv1DPoIY1lX2zq",
+        "visibleJournalTitle": "FAU-008 · Otorongo · Jaguar",
+        "scientificName": "Panthera onca",
+        "territory": "paititi",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/02_Paititi/FAU-008_Panthera_onca.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panthera_onca_137131744.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-009",
+        "foundryId": "5NdmuLKi7ZMHzjfX",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.5NdmuLKi7ZMHzjfX",
+        "visibleJournalTitle": "FAU-009 · Pudú",
+        "scientificName": "Pudu puda",
+        "territory": "ngulumapu",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/03_Ngulumapu/FAU-009_Pudu_puda.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pud%C3%BA_(Pudu_puda).jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-010",
+        "foundryId": "fHQnZGjmSOlu4qa8",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.fHQnZGjmSOlu4qa8",
+        "visibleJournalTitle": "FAU-010 · Güiña",
+        "scientificName": "Leopardus guigna",
+        "territory": "ngulumapu",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/03_Ngulumapu/FAU-010_Leopardus_guigna.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leopardus_guigna_guigna_676041972.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-011",
+        "foundryId": "9rgDjzvFGvWNfeKu",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.9rgDjzvFGvWNfeKu",
+        "visibleJournalTitle": "FAU-011 · Monito del monte",
+        "scientificName": "Dromiciops gliroides",
+        "territory": "ngulumapu",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/03_Ngulumapu/FAU-011_Dromiciops_gliroides.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dromiciops_gliroides_I.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-012",
+        "foundryId": "CWlLMol2AZpujPx7",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.CWlLMol2AZpujPx7",
+        "visibleJournalTitle": "FAU-012 · Ranita de Darwin",
+        "scientificName": "Rhinoderma darwinii",
+        "territory": "ngulumapu",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/03_Ngulumapu/FAU-012_Rhinoderma_darwinii.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rhinoderma_darwinii.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-013",
+        "foundryId": "DnbzqhzAdXN1r3kW",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.DnbzqhzAdXN1r3kW",
+        "visibleJournalTitle": "FAU-013 · Puma",
+        "scientificName": "Puma concolor",
+        "territory": "pewenmapu",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/04_Pewenmapu/FAU-013_Puma_concolor.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_Torres_del_Paine_-_XII_Region_de_Magallanes_y_La_Antartica_Chilena_-_Puma_Concolor_Atardecer.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-014",
+        "foundryId": "VUtnqenmd6OCLomn",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.VUtnqenmd6OCLomn",
+        "visibleJournalTitle": "FAU-014 · Zorro culpeo",
+        "scientificName": "Lycalopex culpaeus",
+        "territory": "pewenmapu",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/04_Pewenmapu/FAU-014_Lycalopex_culpaeus.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lycalopex_culpaeus_00.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-015",
+        "foundryId": "gIDtNyJSYWIXOAp5",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.gIDtNyJSYWIXOAp5",
+        "visibleJournalTitle": "FAU-015 · Cóndor andino",
+        "scientificName": "Vultur gryphus",
+        "territory": "pewenmapu",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/04_Pewenmapu/FAU-015_Vultur_gryphus.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Condor_(Vultur_gryphus)_(34468171955).jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-016",
+        "foundryId": "usQ73nSvGhNkSDSu",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.usQ73nSvGhNkSDSu",
+        "visibleJournalTitle": "FAU-016 · Carpintero negro · Carpintero magallánico",
+        "scientificName": "Campephilus magellanicus",
+        "territory": "pewenmapu",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/04_Pewenmapu/FAU-016_Campephilus_magellanicus.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Campephilus_magellanicus_508036780.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-017",
+        "foundryId": "xBWLbeiR1eoLoRNB",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.xBWLbeiR1eoLoRNB",
+        "visibleJournalTitle": "FAU-017 · Guanaco",
+        "scientificName": "Lama guanicoe",
+        "territory": "patagonia-austral",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/05_Patagonia_austral/FAU-017_Lama_guanicoe.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guanaco_(Lama_guanicoe)_en_el_Parque_Nacional_Patagonia.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-018",
+        "foundryId": "nmg6fpR6xYf8oZdL",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.nmg6fpR6xYf8oZdL",
+        "visibleJournalTitle": "FAU-018 · Huemul",
+        "scientificName": "Hippocamelus bisulcus",
+        "territory": "patagonia-austral",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/05_Patagonia_austral/FAU-018_Hippocamelus_bisulcus.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hippocamelus_bisulcus,_Parque_Nacional_Torres_del_Paine,_Chile.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-019",
+        "foundryId": "OpHPHxq5nQDijZ7p",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.OpHPHxq5nQDijZ7p",
+        "visibleJournalTitle": "FAU-019 · Choique · Ñandú petiso",
+        "scientificName": "Rhea pennata",
+        "territory": "patagonia-austral",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/05_Patagonia_austral/FAU-019_Rhea_pennata.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rhea_pennata_pennata_365102653.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-020",
+        "foundryId": "8fqHkodlT8RvP0BS",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.8fqHkodlT8RvP0BS",
+        "visibleJournalTitle": "FAU-020 · Caiquén · Cauquén común",
+        "scientificName": "Chloephaga picta",
+        "territory": "patagonia-austral",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/05_Patagonia_austral/FAU-020_Chloephaga_picta.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chloephaga_picta,_Parque_Nacional_del_Paine,_Chile2.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-021",
+        "foundryId": "Hy0GGLcD0eOhzq9W",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.Hy0GGLcD0eOhzq9W",
+        "visibleJournalTitle": "FAU-021 · Yowen · Guanaco",
+        "scientificName": "Lama guanicoe guanicoe",
+        "territory": "tierra-del-fuego",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/06_Tierra_del_Fuego/FAU-021_Lama_guanicoe_guanicoe.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guanacos_en_isla_Gde._de_T.del_Fuego_(sector_de_Chile)_(5).PNG",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-022",
+        "foundryId": "xYZgtFASxeIFpToR",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.xYZgtFASxeIFpToR",
+        "visibleJournalTitle": "FAU-022 · Huillín",
+        "scientificName": "Lontra provocax",
+        "territory": "tierra-del-fuego",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/06_Tierra_del_Fuego/FAU-022_Lontra_provocax.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lontra_provocax_73250025.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-023",
+        "foundryId": "ExYEwc3Ap4yp1hnX",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.ExYEwc3Ap4yp1hnX",
+        "visibleJournalTitle": "FAU-023 · Caranca",
+        "scientificName": "Chloephaga hybrida",
+        "territory": "tierra-del-fuego",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/06_Tierra_del_Fuego/FAU-023_Chloephaga_hybrida.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chloephaga_hybrida_380910079.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "APPROVAL_REQUIRES_RECENT_VERSION_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-024",
+        "foundryId": "N4GmaJdfHlqloRZq",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.N4GmaJdfHlqloRZq",
+        "visibleJournalTitle": "FAU-024 · Quetro no volador",
+        "scientificName": "Tachyeres pteneres",
+        "territory": "tierra-del-fuego",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/06_Tierra_del_Fuego/FAU-024_Tachyeres_pteneres.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tachyeres_pteneres_376747553.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-025",
+        "foundryId": "wSNmNqNKH8EHbp44",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.wSNmNqNKH8EHbp44",
+        "visibleJournalTitle": "FAU-025 · Lobo marino común",
+        "scientificName": "Otaria byronia (sin. O. flavescens)",
+        "territory": "canales-australes",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/07_Canales_australes/FAU-025_Otaria_byronia_sin_O_flavescens.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ejemplar_de_lobo_marino_sudamericano_(Otaria_flavescens)._Islotes_de_Pu%C3%B1ihuil._Isla_Grande_de_Chilo%C3%A9._Chile.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-026",
+        "foundryId": "kb0XKfjLsXLerl6F",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.kb0XKfjLsXLerl6F",
+        "visibleJournalTitle": "FAU-026 · Lobo fino austral",
+        "scientificName": "Arctocephalus australis",
+        "territory": "canales-australes",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/07_Canales_australes/FAU-026_Arctocephalus_australis.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arctophoca_australis_australis_(5).JPG",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-027",
+        "foundryId": "nUYY5ux1kkLbNsiI",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.nUYY5ux1kkLbNsiI",
+        "visibleJournalTitle": "FAU-027 · Delfín austral · Tonina",
+        "scientificName": "Lagenorhynchus australis",
+        "territory": "canales-australes",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/07_Canales_australes/FAU-027_Lagenorhynchus_australis.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lagenorhynchus_australis.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-028",
+        "foundryId": "us4NecHuL6WQXwMc",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.us4NecHuL6WQXwMc",
+        "visibleJournalTitle": "FAU-028 · Cormorán imperial",
+        "scientificName": "Leucocarbo atriceps",
+        "territory": "canales-australes",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/07_Canales_australes/FAU-028_Leucocarbo_atriceps.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phalacrocorax_atriceps.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-029",
+        "foundryId": "YU8cxHhyveeveNAn",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.YU8cxHhyveeveNAn",
+        "visibleJournalTitle": "FAU-029 · Krill antártico",
+        "scientificName": "Euphausia superba",
+        "territory": "umbral-polar",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/08_Umbral_Polar/FAU-029_Euphausia_superba.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Euphausia_superba.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-030",
+        "foundryId": "huZeixaINs1rrugH",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.huZeixaINs1rrugH",
+        "visibleJournalTitle": "FAU-030 · Pingüino de Adelia",
+        "scientificName": "Pygoscelis adeliae",
+        "territory": "umbral-polar",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/08_Umbral_Polar/FAU-030_Pygoscelis_adeliae.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ad%C3%A9lie_Penguin_(2).jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-031",
+        "foundryId": "DqpmHU2SZaEQ0IQe",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.DqpmHU2SZaEQ0IQe",
+        "visibleJournalTitle": "FAU-031 · Foca de Weddell",
+        "scientificName": "Leptonychotes weddellii",
+        "territory": "umbral-polar",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/08_Umbral_Polar/FAU-031_Leptonychotes_weddellii.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leptonychotes_weddellii_NOAA.jpg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "PENDING_EDITORIAL_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-032",
+        "foundryId": "rv4P8LZ6pKAhtV0F",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.rv4P8LZ6pKAhtV0F",
+        "visibleJournalTitle": "FAU-032 · Skúa polar del sur",
+        "scientificName": "Stercorarius maccormicki",
+        "territory": "umbral-polar",
+        "journalFigureLegacyPath": "modules/hiperaustralis-fauna/assets/fauna/08_Umbral_Polar/FAU-032_Stercorarius_maccormicki.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stercorarius_maccormicki_-_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9_%D0%9B%D0%BE%D0%B3%D0%B8%D0%BD%D0%BE%D0%B2_-_465080580.jpeg",
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "editorialStatus": "APPROVAL_REQUIRES_RECENT_VERSION_CHECK",
+        "migrationStatus": "IMAGE_BINARY_NOT_PRESENT_IN_CI137",
+        "readyForTransport": false
+      }
+    ],
+    "additionalFoundryItemsWithoutJournal": [
+      {
+        "code": "FAU-033",
+        "foundryId": "KbtOX3hJ5s6hx3MV",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.KbtOX3hJ5s6hx3MV",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-034",
+        "foundryId": "8LZSIGm6glTvjx8F",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.8LZSIGm6glTvjx8F",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-035",
+        "foundryId": "pwpLirKw2V1zdpX7",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.pwpLirKw2V1zdpX7",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-036",
+        "foundryId": "ty5vxa5YdStMLiDb",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.ty5vxa5YdStMLiDb",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-037",
+        "foundryId": "vqydUWKetUA4uMwD",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.vqydUWKetUA4uMwD",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-038",
+        "foundryId": "UWNOWOmcjnTU3TKM",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.UWNOWOmcjnTU3TKM",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-039",
+        "foundryId": "eG8Fv70VMWfPn9ND",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.eG8Fv70VMWfPn9ND",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-040",
+        "foundryId": "jSNogolHCojEoXVv",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.jSNogolHCojEoXVv",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-045",
+        "foundryId": "1ZG2udTbA0CmXejm",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.1ZG2udTbA0CmXejm",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-046",
+        "foundryId": "wS747C9NmBt7XFrg",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.wS747C9NmBt7XFrg",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-047",
+        "foundryId": "exWEvQTUZT0S0hY4",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.exWEvQTUZT0S0hY4",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-048",
+        "foundryId": "8qnBtUxCb8VYiSzp",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.8qnBtUxCb8VYiSzp",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-049",
+        "foundryId": "yDxgobX0LZ1B8pff",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.yDxgobX0LZ1B8pff",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-050",
+        "foundryId": "NpLnnFUGIb4QtU67",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.NpLnnFUGIb4QtU67",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-051",
+        "foundryId": "Uo01VqsJ2QxRunBJ",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.Uo01VqsJ2QxRunBJ",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-052",
+        "foundryId": "Ns2E8Uvsz8cPKJVt",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.Ns2E8Uvsz8cPKJVt",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-053",
+        "foundryId": "t8fwdSxU650cW8DG",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.t8fwdSxU650cW8DG",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      },
+      {
+        "code": "FAU-054",
+        "foundryId": "6dbWEBG1uRnGI28V",
+        "uuid": "Compendium.world.hiperaustralis-naturaleza-items.Item.6dbWEBG1uRnGI28V",
+        "territory": null,
+        "iconRupestreSourcePath": null,
+        "iconSha256": null,
+        "reason": "PRESENT_IN_FOUNDRY_EXPORT_NOT_IN_32_PAGE_JOURNAL",
+        "readyForTransport": false
+      }
+    ],
+    "unobservedCodes": [
+      "FAU-041",
+      "FAU-042",
+      "FAU-043",
+      "FAU-044"
+    ],
+    "historicalRetiredCodes": [
+      "FAU-006"
+    ],
+    "journalTerritoryMatches": 32,
+    "iconFilesRecoveredToCI137": 0
+  },
+  "funga": {
+    "status": "SUBCATEGORY_DEFINED_NO_SEPARATE_APPROVED_ITEM_INVENTORY",
+    "items": [],
+    "assetFilesRecoveredToCI137": 0,
+    "notes": "Do not relabel FLO-028 Fungosidades by inference; Flora/Funga editorial separation remains pending."
+  },
+  "recetas": {
+    "status": "SUBCATEGORY_DEFINED_NO_CANONICAL_ICON_INVENTORY",
+    "items": [],
+    "assetFilesRecoveredToCI137": 0
+  },
+  "biomeIcons": {
+    "codes": [
+      "BIO-001",
+      "BIO-002",
+      "BIO-003",
+      "BIO-004",
+      "BIO-005",
+      "BIO-006",
+      "BIO-007",
+      "BIO-008"
+    ],
+    "sourceStatus": "CANDIDATE_NOT_PUBLISHABLE",
+    "assetFilesRecoveredToCI137": 0
+  },
+  "releaseGate": {
+    "sourceJSONItemsCreated": 0,
+    "territorialIconsPublished": 0,
+    "territorialRuntimeImgRemaps": 0,
+    "foundryClientQA": "NOT_EXECUTED",
+    "editionApproval": "MIXED_NOT_COMPLETE",
+    "D3": "BLOCKED"
+  },
+  "todo": [
+    "Recover exact source ZIP for 0.4.75 Flora optimized binaries and verify 40 per-image SHA and 8 shared background files",
+    "Recover and compare approved FAU rupestre icon assets independently from journal documentary figures, including newer FAU-033_036 and codes 045-054",
+    "Do not reintroduce FAU-006, and do not invent FAU-041 to 044",
+    "Resolve fauna territorial placements for 18 Foundry Items absent in the 32-page Journal; preserve individual editorial approvals",
+    "Reconcile independent Funga/Recetas catalogs only if source documents exist",
+    "Create only verified Item links and JournalEntry references, avoiding duplicate Item documents across territories",
+    "Run isolated Foundry Client QA before deployment or distribution"
+  ]
+}

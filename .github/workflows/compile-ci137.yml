@@ -11,6 +11,7 @@ on:
       - 'tools/foundry/assert_single_compendium.py'
       - 'manifests/ci137-selected-source-137-historical-ids.json'
       - 'manifests/ci137-parafernalia22-rituales8-recovery.json'
+      - 'manifests/ci137-iconos-territoriales.json'
       - 'source/items/**'
       - 'source-pending/**'
       - 'source-original/foundry-templates/**'
@@ -142,6 +143,43 @@ jobs:
           assert len(archive) == 148, len(archive)
           assert sum(p.stat().st_size for p in archive) == 6654130
           print({"runtimeWebps":44, "archivedWebps":148, "archivedBytes":6654130})
+          PY
+      - name: Validate 8-territory fauna/flora icon crosswalk (read-only; no art promoted)
+        run: |
+          python - <<'PY'
+          import json
+          from collections import Counter
+          from pathlib import Path
+          root=Path(".")
+          d=json.loads((root/"manifests/ci137-iconos-territoriales.json").read_text(encoding="utf-8"))
+          fauna=json.loads((root/"source/territorios/fauna/foundry-id-map.json").read_text(encoding="utf-8"))
+          flora=json.loads((root/"source/territorios/flora/foundry-id-map.json").read_text(encoding="utf-8"))
+          flora_map=json.loads((root/"source/territorios/flora/manifest.json").read_text(encoding="utf-8"))
+          territories=json.loads((root/"manifests/territorios-migracion.json").read_text(encoding="utf-8"))
+          F={x["code"]:x for x in d["flora"]["items"]}
+          A={x["code"]:x for x in d["fauna"]["journalPageEntries"]}
+          extra=d["fauna"]["additionalFoundryItemsWithoutJournal"]
+          assert len(d["territories"])==len(territories["territories"])==8
+          assert len(F)==len(flora["items"])==40
+          assert len(A)==32 and len(extra)==18 and len(fauna["items"])==50
+          assert set(F)=={x["codigo"] for x in flora["items"]}
+          assert {x["code"] for x in A.values()} | {x["code"] for x in extra}=={x["code"] for x in fauna["items"]}
+          assert len({x["foundryId"] for x in F.values()})==40
+          assert len({x["foundryId"] for x in A.values()})==32
+          assert sum(len(t["sections"]["Flora"]) for t in d["territories"])==45
+          assert sum(len(t["sections"]["Fauna"]) for t in d["territories"])==32
+          assert all(set(t["sections"]["Flora"])==set(flora_map["territories"][t["slug"]]) for t in d["territories"])
+          assert all(not t["sections"]["Funga"] and not t["sections"]["Recetas"] for t in d["territories"])
+          assert all(len(t["sections"]["Fauna"])==4 for t in d["territories"])
+          assert all(A[code]["territory"]==t["slug"] for t in d["territories"] for code in t["sections"]["Fauna"])
+          assert A["FAU-006"]["editorialStatus"]=="LEGACY_RETIRED"
+          assert d["fauna"]["unobservedCodes"]==["FAU-041","FAU-042","FAU-043","FAU-044"]
+          assert d["flora"]["unassigned"]==["FLO-029","FLO-033","FLO-037"]
+          assert all(row["iconSha256"] is None and not row["readyForTransport"] for row in A.values())
+          assert all(row["assetSha256"] is None and not row["readyForTransport"] for row in F.values())
+          assert d["releaseGate"]["territorialIconsPublished"]==0
+          assert d["releaseGate"]["territorialRuntimeImgRemaps"]==0
+          print({"territories":8,"floraItems":40,"floraRefs":45,"faunaItems":50,"faunaJournalRefs":32,"unassignedFauna":18,"verifiedTerritorialWebP":0,"productionChanges":0})
           PY
       - name: Prepare exactly 136 selected real sources - no asset changes
         run: python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/ci137-prepared"

@@ -13,6 +13,11 @@
 - `source-original/HIPERAUSTRALIS_RELIQUIAS_ASSETS_16_WEBP_v01.zip`: fuente aprobada de Reliquias necesaria para las pruebas.
 - `source/`, `source-pending/`, `manifests/`: fuentes y evidencias. `tools/foundry/ci137_pipeline.py` + `.github/workflows/compile-ci137.yml`: única compilación aislada CI137, sin instalador.
 
+## Iconos y contenidos por territorio
+- `manifests/ci137-iconos-territoriales.json`: catálogo de ocho territorios (40 Flora con 45 referencias; 50 Fauna, 32 con Journal y 18 por cotejar). Funga y Recetas siguen diferenciados.
+- El catálogo no sustituye archivos binarios ni crea Items: iconos Flora 0.4.75, rupestres FAU y BIO-RUP permanecen pendientes de recuperación/verificación editorial. Figuras documentales del Journal ≠ iconos de Items.
+- El workflow CI137 valida identidad y referencias del catálogo sin modificar los 136 Items ni publicar el módulo.
+
 ## Salvaguardas
 - [Respaldo completo anterior a limpieza](https://github.com/ElIgnacioCampos/Hiperaustralis/tree/backup/ci137-prelimpieza-20261123): `feafa4ac62cacf2c1a327afd1de57d461d074a43`.
 - Importador CI137 de una sola ejecución, su workflow y matrices v01–v04 quedan solo en ese respaldo; v05 y checkpoint ACTUAL continúan aquí.
