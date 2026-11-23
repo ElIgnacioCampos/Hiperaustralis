@@ -229,6 +229,79 @@ def verified_shared_knife(rows, output):
     dest.write_bytes(data)
     return {item_id: {"old": old, "new": SHARED_KNIFE_URL, "sha256": SHARED_KNIFE_SHA256}}
 
+def verified_additional_approved_asset_remaps(rows, output):
+    """Transport only exact, individually approved final images; source JSON stays immutable.
+
+    A recovered historic image is NOT approval. No default remapping and no
+    transformation, scaling, or new illustration is permitted here.
+    """
+    mapped = {}
+    destinations = set()
+    for row in rows:
+        approved = row.get("approvedAssetTransport")
+        if approved is None:
+            continue
+        item_id = row["id"]
+        if (item_id in SHARED_KNIFE_IDS or row["family"].startswith("Reliquias")
+                or row.get("archivedImage") is None):
+            fail("asset approval applied outside unresolved historical Item scope " + item_id)
+        if (approved.get("status") != "FINAL_ART_APPROVED_FOR_CI137"
+                or approved.get("visualIdentityApproved") is not True
+                or approved.get("approvedForTransport") is not True
+                or not isinstance(approved.get("approvalReference"), str)
+                or not approved["approvalReference"].strip()):
+            fail("Item image lacks explicit final identity and transport approval " + item_id)
+        source = read_json(ROOT / row["source"])
+        original = row["archivedImage"]["originalPath"]
+        if (approved.get("originalImg") != original
+                or source.get("img") != original):
+            fail("approved final image not tied to original Item identity " + item_id)
+        staged = approved.get("sourcePath")
+        member = approved.get("targetMember")
+        sha = approved.get("sha256")
+        if (not isinstance(staged, str) or
+                not staged.startswith("module/assets/_staging/") or
+                not isinstance(member, str) or
+                not member.startswith("assets/") or
+                not isinstance(sha, str) or len(sha) != 64):
+            fail("invalid approved final image source, target or hash " + item_id)
+        source_rel = Path(staged)
+        member_rel = Path(member)
+        if (".." in source_rel.parts or ".." in member_rel.parts
+                or len(member_rel.parts) != 3 or member_rel.parts[1] == "_staging"
+                or source_rel.suffix.lower() != ".webp"
+                or member_rel.suffix.lower() != ".webp"
+                or str(member_rel) in destinations):
+            fail("unsafe or duplicate approved artwork target " + item_id)
+        if member_rel.parts[1] not in ("armas", "defensas", "instrumentos", "iconos_aprobados", "rituales"):
+            fail("unexpected final art family directory " + item_id)
+        destinations.add(str(member_rel))
+        binary = ROOT / source_rel
+        if not binary.is_file():
+            fail("approved image not present in verified GitHub staging " + item_id)
+        raw = binary.read_bytes()
+        if (digest(raw) != sha or raw[:4] != b"RIFF"
+                or raw[8:12] != b"WEBP"
+                or int.from_bytes(raw[4:8], "little") + 8 != len(raw)):
+            fail("approved final image bytes differ from SHA/RIFF " + item_id)
+        destination = output / member_rel
+        if destination.exists():
+            fail("refusing overwrite of an existing approved graphic " + str(member_rel))
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(raw)
+        bg = source.get("flags", {}).get("hiperaustralis-sheet", {}).get("background")
+        if bg is not None and bg != original:
+            fail("Item background does not match the original image " + item_id)
+        if bool(approved.get("updateBackground")) != (bg == original):
+            fail("Item background mapping approval does not match original " + item_id)
+        mapped[item_id] = {"old": original,
+                           "new": "modules/hiperaustralis-compendios-prototype/" + member,
+                           "sha256": sha, "member": member,
+                           "background": bg == original,
+                           "approvalReference": approved["approvalReference"]}
+    return mapped
+
+
 def verify_historical_staging(rows):
     """Audit 79 already recovered historical WebP files, without authorizing art promotion.
 
@@ -468,10 +541,12 @@ def prepare(output):
         )
     approved_relics = verified_relic_remaps(output)
     shared_knives = verified_shared_knife(rows, output)
+    extra_mappings = verified_additional_approved_asset_remaps(rows, output)
     records = []
     legacy = []
     remapped = []
     shared_remapped = []
+    extra_remapped = []
     original_legacy_count = 0
     historic_by_id = {r["id"]: r for r in historical_staging}
     for row, doc, source_sha, folder in item_data(rows):
@@ -509,6 +584,17 @@ def prepare(output):
                  "to": shared["new"], "sha256": shared["sha256"]}
                 for field in ("img", "flags.hiperaustralis-sheet.background")
             ])
+        extra = extra_mappings.get(row["id"])
+        if extra is not None:
+            transport["img"] = extra["new"]
+            extra_remapped.append({"id": row["id"], "field": "img",
+                                   "from": extra["old"], "to": extra["new"], "sha256": extra["sha256"]})
+            if extra["background"]:
+                transport["flags"]["hiperaustralis-sheet"]["background"] = extra["new"]
+                extra_remapped.append({"id": row["id"],
+                                       "field": "flags.hiperaustralis-sheet.background",
+                                       "from": extra["old"], "to": extra["new"],
+                                       "sha256": extra["sha256"]})
         target = itemroot.joinpath(*folder.split("/"), row["id"] + ".json")
         target.write_text(
             json.dumps(transport, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -531,17 +617,20 @@ def prepare(output):
     if len([r for r in records if r["name"] == "Cuchillo de piedra"]) != 1:
         fail("final editorial name is missing or duplicated")
     if (original_legacy_count != 139 or len(remapped) != 32
-            or len(shared_remapped) != 2 or len(legacy) != 105
-            or len({x["path"] for x in legacy}) != 78):
-        fail("unplanned count of approved remaps or unresolved legacy links")
+            or len(shared_remapped) != 2
+            or len(legacy) + len(extra_remapped) != 105
+            or len({x["path"] for x in legacy}) + len(extra_mappings) != 78):
+        fail("unplanned approved remaps or unresolved historic image dependencies")
     report = {
         "schema": "ci137-transport-preflight-v04",
-        "status": "136_REAL_SOURCES_PREPARED__16_RELIC_ASSETS__1_HISTORICAL_KNIFE__105_LEGACY_REFS",
+        "status": "136_REAL_SOURCES_PREPARED__16_RELIC_ASSETS__1_HISTORICAL_KNIFE__" + str(len(legacy)) + "_LEGACY_REFS",
         "count": len(records), "uniqueIds": len(set(r["id"] for r in records)),
         "folders": 9, "templates": 5,
         "originalLegacyReferences": original_legacy_count,
         "approvedRemaps": remapped, "approvedAssetCount": len(approved_relics),
         "sharedKnifeRemaps": shared_remapped, "sharedKnifeAssetCount": 1,
+        "additionalApprovedAssetRemaps": extra_remapped,
+        "additionalApprovedAssetCount": len(extra_mappings),
         "legacyAssetReferences": legacy,
         "historicalStagingAssets": historical_staging,
         "historicalStagingVerifiedCount": len(historical_staging),
@@ -576,10 +665,21 @@ def verify(prepared, unpacked):
             or manifest.get("historicalStagingShaMatched") != 30
             or manifest.get("historicalStagingPromotedCount") != 0):
         fail("historical staging audit changed between prepare and verify")
+    extra_rows = [row for row in source_rows if row.get("approvedAssetTransport")]
+    extra_remaps = manifest.get("additionalApprovedAssetRemaps", [])
     if (len(manifest.get("approvedRemaps", [])) != 32
             or len(manifest.get("sharedKnifeRemaps", [])) != 2
-            or len(manifest.get("legacyAssetReferences", [])) != 105):
-        fail("expected 32 relic remaps, 2 historical knife remaps and 105 unresolved legacy references")
+            or manifest.get("additionalApprovedAssetCount") != len(extra_rows)
+            or len(manifest.get("legacyAssetReferences", [])) + len(extra_remaps) != 105):
+        fail("approved remap count does not reconcile with 105 original unresolved refs")
+    for row in extra_rows:
+        approved = row["approvedAssetTransport"]
+        member = approved["targetMember"]
+        path = prepared / member
+        if (not path.is_file() or digest(path.read_bytes()) != approved["sha256"]
+                or not any(x["id"] == row["id"] and x["to"].endswith("/" + member)
+                           for x in extra_remaps)):
+            fail("approved additional final WebP was not preserved in transport " + row["id"])
     knife_image = prepared / SHARED_KNIFE_MEMBER
     if (not knife_image.is_file() or digest(knife_image.read_bytes()) != SHARED_KNIFE_SHA256
             or {x["id"] for x in manifest["sharedKnifeRemaps"]} != SHARED_KNIFE_IDS
@@ -639,6 +739,8 @@ def verify(prepared, unpacked):
         "semanticFieldsChecked": list(PRESERVED_FIELDS),
         "legacyReferenceCount": len(manifest["legacyAssetReferences"]),
         "sharedKnifeReferencesRemapped": len(manifest["sharedKnifeRemaps"]),
+        "additionalApprovedAssetRemaps": len(extra_remaps),
+        "additionalApprovedAssetCount": manifest["additionalApprovedAssetCount"],
         "approvedRelicAssetCount": manifest["approvedAssetCount"],
         "archivalWebpsVerified": len(stage_rows),
         "archivalWebpsShaCompared": 30,
@@ -646,7 +748,7 @@ def verify(prepared, unpacked):
         "defensasInstrumentosCrosswalk": crosswalk,
         "parafernaliaRitualesCrosswalk": pfrit,
         "approvedRelicReferencesRemapped": len(manifest["approvedRemaps"]),
-        "note": "16 historical relic WebP and one approved knife mapped; 79 historical WebP audited (30 archived SHA checked), eight COM approved-source SHA verified; 17 unique named ERH candidates not approved for transport; 105 legacy references remain; no Foundry client QA",
+        "note": "16 historical relic WebP and one approved knife mapped; 79 historical WebP audited; 30 PF/RIT and 29 DEF/ERH crosswalks retained without default art substitutions; " + str(len(manifest["legacyAssetReferences"])) + " legacy references remain; no Foundry runtime QA",
     }
     (prepared / "ci137-roundtrip.json").write_text(
         json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"

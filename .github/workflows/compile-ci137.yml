@@ -77,7 +77,13 @@ jobs:
           templates = {r["template"] for r in pre["records"]}
           assert pre["count"] == rt["items"] == 136
           assert pre["folders"] == rt["folders"] == 9
-          assert len(refs) == 105 and len(unique_paths) == 78 and len(templates) == 5
+          extra = pre["additionalApprovedAssetRemaps"]
+          assert len(refs) + len(extra) == 105 and len(templates) == 5
+          assert len(unique_paths) + pre["additionalApprovedAssetCount"] == 78
+          assert pre["additionalApprovedAssetCount"] == rt["additionalApprovedAssetCount"]
+          assert len(extra) == rt["additionalApprovedAssetRemaps"]
+          assert len({x["id"] for x in extra}) == pre["additionalApprovedAssetCount"]
+          assert all(x["to"].startswith("modules/hiperaustralis-compendios-prototype/assets/") for x in extra)
           assert len(pre["sharedKnifeRemaps"]) == 2 and pre["sharedKnifeAssetCount"] == 1
           assert pre["approvedAssetCount"] == 16
           assert len(pre["approvedRemaps"]) == 32
@@ -99,6 +105,7 @@ jobs:
             "D2": "ROUNDTRIP_PASS",
             "itemCount": 136,
             "legacyImageRefs": len(refs),
+            "additionalApprovedAssetRemaps": len(extra),
             "legacyUniquePaths": len(unique_paths),
             "historicalWebpsPhysicallyAudited": pre["historicalStagingVerifiedCount"],
             "historicalWebpsShaMatched": pre["historicalStagingShaMatched"],
@@ -109,7 +116,7 @@ jobs:
             "D3": "FAILED_OR_UNVERIFIED",
             "installableArtifactProduced": False,
             "releaseDecision": "BLOCKED",
-            "reason": "105 unresolved historic image references; 5 CSB templates require real-world QA; the prior CI137 installer coincided with a world-load stall",
+            "reason": str(len(refs)) + " unresolved historic image references; 5 CSB templates require real-world QA; the prior CI137 installer coincided with a world-load stall",
             "nextStep": "Resolve approved asset dependencies and reproduce Foundry client loading before any packaging"
           }
           (temp / "ci137-prepared/ci137-release-gate.json").write_text(
@@ -123,8 +130,7 @@ jobs:
           name: ci137-real-136-preflight-and-roundtrip
           path: |
             ${{ runner.temp }}/ci137-prepared/ci137-*.json
-            ${{ runner.temp }}/ci137-prepared/assets/reliquias/**
-            ${{ runner.temp }}/ci137-prepared/assets/armas/**
+            ${{ runner.temp }}/ci137-prepared/assets/**
             ${{ runner.temp }}/ci137-packs/ha-proto-items/**
           if-no-files-found: warn
           retention-days: 30
