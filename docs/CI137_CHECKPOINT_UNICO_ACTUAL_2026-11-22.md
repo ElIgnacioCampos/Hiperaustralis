@@ -34,7 +34,17 @@
 
 **Advertencia:** estas verificaciones prueban consistencia de metadatos, NO presencia de plantillas en el mundo ni hidratación de fichas, compatibilidad del cliente CSB instalado, apertura de mundos o causalidad del bloqueo D3.
 
-## 4. Otros pendientes legítimos, sin reabrir inventarios
+## 4. Dependencia externa histórica — cotejo físico 22-11-2026
+
+**Fuentes binarias reabiertas:** ZIP `HIPERAUSTRALIS_COMPENDIOS_0.4.72_REPARACION_BIO_LAB.zip` (SHA256 `437b263f40c0c1e18cd24d0bcb996a4e1769a3830978133d0c839a0dbe1b228c`) y ZIP `HIPERAUSTRALIS_COMPENDIOS_0.4.73_BIO_TEXTOS_LAB.zip` (SHA256 `2d8830d5a18b7d6ff7ba4eee469214fef7b7efdf7164b552464620a0580a5329`). Ambos contienen `hiperaustralis-rituales/module.json` con ID de módulo real `hiperaustralis-rituales`. Se cruzaron por **ruta exacta** contra las 109 entradas `legacyAssetReferences` de `ci137-preflight.json`.
+
+**Resultado verificable:** **107/109 referencias** (79/80 archivos distintos) existen físicamente en **ambos** ZIP. Comparación byte a byte de esos 79 archivos entre v0.4.72 y v0.4.73: **79/79 idénticos; cero diferencias**. Las únicas dos referencias que no resuelven (el `img` y el fondo) comparten una sola ruta: `modules/hiperaustralis-rituales/assets/armas/01_cuchillo_piedra.webp`. No confundir con `01_cuchillo_litico.webp`.
+
+**Decisión técnica:** no tratar las 109 referencias externas como 109 imágenes perdidas. Para una prueba de compatibilidad puede mantenerse el módulo histórico, siempre que **esté realmente instalado y sirva esas rutas en el cliente**. Esto no vuelve autónomo CI137: faltan 2 referencias al mismo recurso, el QA de carga del cliente y la acreditación de dependencias. Los 79 son **binarios históricos presentes**, no 79 aprobaciones editoriales de gráfica final ni autorización para promover v0.4.72/73 sobre arte posterior.
+
+**Transferencia de 20 WebP de Equipo común:** también se comprobó vía API GitHub si los 20 hashes Git-blob de los binarios aprobados ya existían en el almacén de objetos del repositorio; **20/20 no encontrados**. No es posible reutilizarlos por SHA con `create_tree`; sigue siendo necesaria una vía de subida binaria autorizada. No se simuló transferencia ni se escribió ningún blob sustitutivo.
+
+## 5. Otros pendientes legítimos, sin reabrir inventarios
 
 - **Historias del staging v02:** antecedente offline de 137 Items/9 carpetas/96 WebP/141 de 143 referencias; **ZIP completo no localizable en este corte**. No volver a buscar por nombre ni reproducirlo con imágenes antiguas; permanecer como evidencia histórica.
 - **Gráfica Armas/otras familias:** 79/80 candidatos antiguos localizados en 0.4.72–0.4.73, no aprobados automáticamente como finales. Cuchillo de piedra `HipArm01PackA000` tiene icono propio no acreditado. ARM-11–13 requieren priorizar arte posterior 256px. Los 20 gráficos de Equipo común son un frente distinto y no restan de las **109 referencias heredadas**.
@@ -42,14 +52,14 @@
 - **D3:** prueba del cliente V14+CSB, carga de mundo, renderizado de fichas, fondos, carpetas, UUID y persistencia. **No aprobado**. D4 solo tras autorización del usuario.
 - **Bridge, Actors, Journals, Territorios, Fauna, `main`, Forge productivo y Estado Maestro:** fuera de esta operación, intactos.
 
-## 5. Método operativo
+## 6. Método operativo
 
 1. Reutilizar **el manifiesto de identidades único** y el registro de QA29 existente. No crear otro compendio, otra matriz ni otro inventario.
 2. **Fuente → bytes/ID/hash → decisión editorial → cambio en transporte → prueba en cliente.** Una prueba offline nunca sustituye D3.
 3. Un lote debe entregar un cambio material verificable y registrar su límite. No producir instaladores ni activar releases mientras el gate esté BLOQUEADO.
 4. No pedir de nuevo los ZIP que ya están en BBTECA. Para cambios gráficos usar únicamente los bytes ya aprobados y sus respaldos persistentes.
 
-## 6. Decisiones / Pendientes / Fuentes / Maestro
+## 7. Decisiones / Pendientes / Fuentes / Maestro
 
 **Decisiones:** mantener un único HA Prototipo y sus tres packs; congelar el instalador fallido; los 20 WebP de Equipo común son recuperados/validados en Biblioteca, sin promoción runtime.
 **Pendientes:** transferencia autenticada de los 20 binarios exactos al repositorio (transferidor preparado, no aplicado); QA29 cliente; cerrar imágenes históricas restantes; verificar disponibilidad efectiva e hidratación de cinco plantillas CSB en cliente; diagnosticar carga de Foundry; pasar D3 antes de nueva distribución.
