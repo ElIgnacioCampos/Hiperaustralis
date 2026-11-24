@@ -107,6 +107,59 @@ def main():
          m["families"]["equipo"]["newItemDocsAuthorized"] == 0 and
          m["families"]["equipo"]["newIconReplacementDocsAuthorized"] == 0,
          "40 historical Equipo Items do not become 69 new Items or auto image changes")
+    # Explicitly preserve the instrument/relic identity counts already in QA5.
+    selected = read("manifests/ci137-selected-source-137-historical-ids.json")
+    by_family = {}
+    for entry in selected["entries"]:
+        by_family[entry["family"]] = by_family.get(entry["family"], 0) + 1
+    gate(len(selected["entries"]) == 136 and
+         by_family.get("Instrumentos musicales") == 21 and
+         by_family.get("Reliquias legendarias") == 8 and
+         by_family.get("Reliquias cotidianas") == 8 and
+         by_family.get("Reliquias") == 1,
+         "QA5 selected corpus 136/21/8+8/1 Tokicura drift")
+    i = m["families"]["instrumentos"]
+    relic = m["families"]["reliquias"]
+    gate(i["historicalItemsInQA5"] == 21 and
+         i["approvedERHVisualRemapsInQA5"] == 6 and
+         i["otherHistoricalInstrumentRemapsPending"] == 15 and
+         i["runtimeAddsAuthorized"] == 0 and
+         i["itemDragAndDrop"] == "MUST_PASS_IN_REAL_CLIENT_NOT_YET_VALIDATED",
+         "21 instrument records and actual 6/21 remaps must stay distinct")
+    erh = read("manifests/instrumentos-erh-assets.json")
+    gate(erh["ci137SixInstruments"]["approvedItemRemaps"] == 6 and
+         erh["ci137SixInstruments"]["clientFoundryQA"] == "NOT_EXECUTED",
+         "instrument ERH D2/D3 claim changed")
+    src_relic = read("manifests/reliquias-assets.json")
+    gate(len(src_relic["records"]) == 16 and
+         relic["historicalItemsInQA5"] == 16 and relic["cotidianas"] == 8 and
+         relic["legendarias"] == 8 and relic["tokicuraIndependent"] is True and
+         relic["assetsIncludedInQA5"]["everyHistoricalRelicImage"] == 16 and
+         relic["assetsIncludedInQA5"]["tokicuraSeparateImage"] == 1 and
+         relic["runtimeAddsAuthorized"] == 0 and
+         relic["itemDragAndDrop"] == "MUST_PASS_IN_REAL_CLIENT_NOT_YET_VALIDATED",
+         "16 historic reliquias + one separate Tokicura image must remain intact")
+    recipe = m["targetPacks"]["ha-proto-items"]["recipeContract"]
+    recfam = m["families"]["recetas"]
+    gate(recipe["documentType"] == "Item" and recipe["separateFromFFF"] is True and
+         recipe["countedInFFF"] is False and
+         recipe["dragAndDrop"]["required"] is True and
+         "Kona" in recipe["dragAndDrop"]["target"] and
+         recipe["approvedSourceRecordsConfirmed"] == 0 and
+         recipe["itemRecordsCreated"] == 0,
+         "recipes must not become non-draggable Journals or fabricated Items")
+    gate(recfam["notFFF"] is True and
+         recfam["typeRequirement"].startswith("Native Foundry Item") and
+         recfam["installation"].startswith("BLOCKED_UNTIL"),
+         "recipe drag and drop gate cannot be lifted by manifest text")
+    for row in t:
+        rr = row["fff"]["recipes"]
+        gate(rr["sibling"] is True and rr["excludedFromQuota"] is True and
+             rr["foundryDocumentType"] == "Item" and
+             rr["dragDropRequired"] is True and
+             rr["candidateItemIds"] == [] and
+             rr["status"] == "PENDING_APPROVED_RECIPE_ITEMS",
+             "territorial recipes must be real Item documents, not FFF slots")
     equipment_candidates = read("manifests/equipo-comun-29-cruces-candidatos-20261121.json")
     gate(equipment_candidates["historicalItemCount"] == 40 and
          len(equipment_candidates["items"]) == 29 and
@@ -195,6 +248,13 @@ def main():
         "fffTargetTotal":108,
         "fffCurrentFloraAssignmentsInNineCore":0,
         "fffCurrentFungaAssignmentsInNineCore":0,
+        "instrumentosHistoricalItems":21,
+        "instrumentosERHApprovedRemaps":6,
+        "reliquiasHistoricalItems":16,
+        "reliquiasTokicuraIndependent":True,
+        "recetasFolders":len(t),
+        "recetasDraggableItemDocsInstalled":0,
+        "recetasDragDropClientQA":"PENDING",
         "equipoHistoricalItems":40,
         "equipoImageCandidateCrosswalk":29,
         "equipoFunctionalSeparationPendingMigration":True,
