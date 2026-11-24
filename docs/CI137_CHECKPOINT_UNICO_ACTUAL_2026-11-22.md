@@ -4,6 +4,16 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## CI137 / Cotejo Defensas-Flora — auditoría 8+9 y 40/40 (24-11-2026)
+
+**Resultado auditado:** desde ZIP 0.4.75 real, 8 Defensas históricas cotejadas por `seedId` y 8 `_id` preservados en QA5. No son automáticamente los mismos objetos que las **9 nuevas entradas** DEF-01–09 (8 COM con imagen aprobada, COM-09 Tañaña pendiente). Solapamientos funcionales de las entradas DEF-04, DEF-05 y DEF-08 con algunos cascos/corazas existentes requieren decisión por ficha, sin merge. Fuente: [cotejo específico](CI137_COTEJO_DEFENSAS_FLORA_2026-11-24_v01.md).
+
+**Flora:** 40/40 coincidencias por código, nombre y `seedId` contra mapa de 40 IDs Foundry de 16 caracteres. De los 40 WebP históricos 0.4.75, **0/40 SHA-256 coincide con su hash declarado en `flora_y_funga_40.json`** (bytes optimizados distintos, CRC ZIP PASS, no imputar corrupción); hay 33 fichas con fondo de Totora por arrastre. No sustituir ninguna imagen hasta resolver linaje/hash y aprobación. No duplicar FLO por Territorio; antiguo índice de 8 bandas debe adaptarse con cautela a 9 Territorios CORE.
+
+**Nuevas fuentes durables:** [crosswalk 8+9+40](../manifests/ci137-defensas-flora-crosswalk-20261124-v01.json) y [CI solo lectura #45465836786](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45465836786) **PASS** (guard de IDs/estados/solapamientos). **H7 permanece con QA5; sin nueva instalación**.
+
+**Pendientes:** revisar assets COM-09 y defensas equivalentes con payload definitivo; cosechar las variantes originales de 40 iconos FLO o registrar transformación aceptada; cotejo contextual de 33 fondos; después ampliar sólo documentos aprobados y probar el módulo en mundo aislado. **Estado Maestro, main, Bridge, Forge, H6/H7:** sin cambio.
+
 ## H7 — Reinicio persistente con QA5 y ampliación a preparar (24-11-2026)
 
 **Confirmación autoral nueva:** «reaparecieron», refiriéndose a los tres compendios tras reiniciar H7 con CI137 QA5 activado. **Reinicio y persistencia de packs PASS informados**, adicional al PASS visual anterior de apertura/9 carpetas. No se afirma conteo íntegro de 136, todas las imágenes, ni un segundo reinicio adicional no reportado.
