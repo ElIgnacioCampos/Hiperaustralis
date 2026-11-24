@@ -25,8 +25,13 @@
 
 ```text
 ha-proto-items — Objetos (preservar los 136 existentes)
-├─ Armas / Defensas / Equipo común / Instrumentos musicales
-├─ Parafernalia / Rituales / Reliquias (Cotidianas, Legendarias)
+├─ Armas / Defensas / Parafernalia / Rituales
+├─ Equipo común (sólo material transversal; distribución pendiente)
+├─ Equipo cultural (material adscrito; distribución pendiente)
+│  ├─ Mapuche / Aymara / Nórdicos
+│  └─ Lickanantay / Chinchorro / Selk’nam
+├─ Instrumentos musicales (familia separada)
+├─ Reliquias (Cotidianas / Legendarias)
 └─ Territorio
    ├─ 01 Atacama / Lickanantay
    ├─ 02 Pikunmapu
@@ -37,7 +42,7 @@ ha-proto-items — Objetos (preservar los 136 existentes)
    ├─ 07 Tierra del Fuego
    ├─ 08 Canales australes
    └─ 09 Umbral Polar
-       [cada Territorio: Fauna / Flora / Funga / Recetas]
+       [cada Territorio: 4 Flora + 4 Fauna + 4 Funga; Recetas fuera de cupo]
 ha-proto-actors — Adversarios (preservar Ladrón oportunista)
 ├─ Habitantes
 │  └─ Amenyi
