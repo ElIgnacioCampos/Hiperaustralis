@@ -100,11 +100,13 @@ def inspect(bridge_js):
             "instrument IDs differ from historical source")
     for item in selected_instruments:
         candidate = by_id[item["id"]]
+        source_status = item.get("editorialCrosswalk", {}).get("status")
         expected_status = (
             "APPROVED_ERH_REMAP" if item.get("approvedAssetTransport")
+            else "AUTHOR_VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECH"
+            if source_status == "VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECHNICAL_QA"
             else "NAME_MATCH_ONLY_CANDIDATE"
-            if item.get("editorialCrosswalk", {}).get("status")
-                 == "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE"
+            if source_status == "ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE"
             else "AMBIGUOUS_NOT_MAPPED"
         )
         require(candidate["approval"] == expected_status,
@@ -116,15 +118,38 @@ def inspect(bridge_js):
                 "approved image path drift: " + item["id"])
         require(candidate["changeAuthorized"] is bool(item.get("approvedAssetTransport")),
                 "unapproved instrument graphical replacement: " + item["id"])
+    approval = json_at(ROOT / "manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json")
+    choices = {x["id"]: x for x in approval["selectedRows"]}
+    require(len(choices) == 4 and
+            set(choices) == {x["id"] for x in instruments
+                            if x["approval"] == "AUTHOR_VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECH"},
+            "the four new visual author approvals must match their exact 16-char IDs")
+    for iid, choice in choices.items():
+        row = by_id[iid]
+        candidate_source = next(x for x in selected_instruments if x["id"] == iid)
+        crosswalk = candidate_source["editorialCrosswalk"]
+        require(row["approvedVisualSHA256"] == choice["sha256"] and
+                row["approvedVisualAsset"] == choice["source"] and
+                row["approvedVisualBytes"] == choice["bytes"] and
+                crosswalk["approvedCandidateSHA256"] == choice["sha256"] and
+                crosswalk["approvedCandidateStagedPath"] == choice["source"] and
+                crosswalk["approvedForTransport"] is False and
+                row["changeAuthorized"] is False and
+                choice["notDeployed"] is True,
+                "author choice is exact visual source ONLY, not released to Forge: " + iid)
     status_counts = {
         k: sum(x["approval"] == k for x in instruments)
         for k in ("APPROVED_ERH_REMAP", "NAME_MATCH_ONLY_CANDIDATE",
-                  "AMBIGUOUS_NOT_MAPPED")
+                  "AUTHOR_VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECH")
     }
     require(status_counts == {"APPROVED_ERH_REMAP": 6,
                               "NAME_MATCH_ONLY_CANDIDATE": 11,
-                              "AMBIGUOUS_NOT_MAPPED": 4},
-            "approved/candidate/ambiguous triage changed")
+                              "AUTHOR_VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECH": 4},
+            "approved/candidate/author visual selection triage changed")
+    require(cross["instruments"]["authorVisualApprovedERHSecondOptions"] == 4 and
+            cross["instruments"]["runtimeTransportApprovedAndPresentInQA5"] == 6 and
+            cross["instruments"]["visualApprovalsNotYetTransported"] == 4,
+            "visual approval incorrectly counted as delivered Item transport")
     reliq = [x for x in selected if x["family"].startswith("Reliquias")]
     require(len(reliq) == 17 and
             sum(x["family"] == "Reliquias cotidianas" for x in reliq) == 8 and
