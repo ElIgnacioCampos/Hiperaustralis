@@ -1,0 +1,35 @@
+# CORE / MELIAZ LAB — Ataque por arma y Crítico · 24-11-2026
+
+## Decisiones autorales de esta conversación
+- Clic en arma equipada inicia ataque de Ñeque mediante MELIAZ, no apertura ordinaria del Item.
+- La consecuencia de Herida cuando proceda se determina según arma y situación. Pendiente actualización del catálogo arma → Herida.
+- Tipos definidos: Inconsciente, Envenenado, Asfixia, Fractura, Mutilación. No recuperar tipos viejos ni asignar por intuición como canon.
+- Conservar regla cerrada de Armadura: interposición material pertinente evita Herida, inutiliza Armadura; no elimina desgaste. No revierte veneno inoculado ni asfixia en curso.
+- Usuario solicita incluir este frente antes de probar nueva hoja. Descendiente 0.24.205 D2 PASS, no D3. Códigos pendiente de implementación. No despliegue.
+
+## Autoridad recuperada
+Estado Maestro ACTUAL 24-11, líneas 120-140, 660-664, registros Puede Herir y Armadura; CORE_CHECKPOINT_MELIAZ_ARMADURA_CIERRE_2026-11-24_v04.md.
+- 1 Desastre: lado sin Ventaja impone intención, complicación adicional pertinente.
+- 2 Fallo: ninguna intención se impone.
+- 3 Éxito: lado con Ventaja impone intención.
+- 4 Crítico: lado con Ventaja impone intención, consecuencia favorable adicional. Crítico de ataque puede causar Herida.
+- Capacidad efectiva inferior al Peso del Rival no permite imposición directa; sin Prueba de Azar hasta cambiar situación.
+- Si intención implica desgaste: Kona pierde una parte de Aguante; Rival pierde 1 Peso. Herida independiente.
+- Puede Herir: en 1 Desastre con Ventaja Kona, Rival con medio concreto puede causar Herida si efectivamente alcanza al Kona, sin pérdida adicional automática de Aguante ni tirada extra.
+- No trasladar literalmente checkpoint septiembre si contradice Maestro actual.
+
+## Auditoría real de Bridge 0.24.203 fuente LAB
+module/meliaz-bridge/bridge.js:
+- renderHiperaNequeLoadout ~5436: un arma y armadura, fila data-ha-neque-row, ID de Item embebido.
+- installHiperaNequeLoadout ~5517: clic fila abre item.sheet.render(true); retiro, reparación, picker y contextmenu tienen sus rutas. Cambiar exclusivamente clic arma equipada; preservar retiro, defensa y acceso a ficha (propuesta: Shift+clic abre Item; no alterar clic derecho existente).
+- installKonaRollCenterShield ~6660: zona Ñeque ya llama startAction(actor.uuid,"neque").
+- startAction ~8559: selecciona objetivo único, Peso, Manifestación, Exaltar, intervención y tarjeta pendiente. No conserva intención ataque ni arma en snapshot de acción. Extender con contexto opcional de ataque (ID/UUID, nombre, Herida validada); llamada ordinaria sin contexto permanece idéntica. No iniciar segundo d4.
+- resolveAction ~9377: etiquetas DESASTRE/FALLO/ÉXITO/CRÍTICO ya correctas; control de marcar -1 Peso hoy se presenta si targetActorUuid existe, sin filtrar imposición. Revisar guard para que sólo proceda cuando intención y resultado permitan desgaste; no aplicar a toda acción ni duplicar pérdida.
+- Arma sin clasificación nueva: informar Herida pendiente de cotejo, no inferir tipo ni impedir ataque básico. Crítico sólo ofrece consecuencia lesiva pertinente, no efecto automático. Registrar en tarjeta de chat el arma y resultado; propuesta de confirmación humana de Herida/Armadura antes de aplicar consecuencia. PNJ no recibe recurso numérico adicional.
+- Exaltar Azar garantizado produce éxito raso, no Crítico. Su actualización actual es frente separado de reglas; no reintroducir antigua ventana de intervención por este cambio.
+
+## Próximo paso
+1. Recuperar 20 armas canónicas de CI137 QA5 y sus campos reales, matriz de 5 tipos por arma y cotejo con medios lesivos de Rival; actualizar fuentes sólo con aprobación de clasificación.
+2. Construir candidato integrado LAB sin cambiar IDs, fondos, geometría o compendio estable; probar clic arma, clic ordinario Ñeque, selector, retiro, defensa, resultados 1-4 y ausencia de doble tirada, persistencia del contexto de ataque, ausencia de Herida automática, Armadura pertinente.
+3. Completar Códigos conforme checkpoint previo y confirmar plantilla; consolidar D2 antes de prueba D3.
+Estado Maestro, QA5, Bridge instalado, Forge: intactos. No nuevo ZIP en este paso.
