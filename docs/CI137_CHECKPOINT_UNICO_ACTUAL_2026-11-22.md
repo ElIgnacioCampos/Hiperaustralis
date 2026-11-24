@@ -4,6 +4,16 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## CI137 — Corrección de alcance FFF y Equipo (24-11-2026)
+
+**Fe de erratas del lote expansión:** el primer staging registraba sólo **9×4 = 36 asignaciones Fauna**. La regla autorizada es **9 × (4 Flora + 4 Fauna + 4 Funga) = 108 posiciones objetivo**; Recetas es subcarpeta territorial adicional y ajena a esos cupos. No inferir aprobación de 36 Flora o 36 Funga, ni crear especies para llenar cupos. Mantener UID canónico y referencias entre territorios. Se recuerda autorización previa de `FUN-01..04` para Tierra del Fuego, pero **su fuente/IDs activos faltan por verificar**.
+
+**Equipo común NO se congela como una única carpeta homogénea:** los 40 Items existentes deberán cotejarse para distinguir material transversal (`Equipo común`) y material de adscripción (`Equipo cultural` con seis grupos históricos), manteniendo Instrumentos musicales separado. Los 29 iconos candidatos son una selección **dentro de esos 40 Items**, nunca Items adicionales. El legado 0.4.97 agrupaba culturas directamente bajo Equipo común; el criterio de separación del 11-11 prevalece para la preparación, sin reparentar fichas antes del cotejo individual.
+
+**Cambios técnicos efectuados sólo en rama `work/ci137-expansion-familias-20261124`:** corregidos [manifiesto de expansión](../manifests/ci137-expansion-territorios-habitantes-culturas-v01.json) y [guard de solo lectura](../tools/foundry/ci137_expansion_gate.py), [Actions #45468986756](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45468986756) **PASS**. **Cero documentos nuevos, cero ZIP de actualización y cero cambios en Forge/QA5/H6/H7/Bridge/main/Maestro**.
+
+**Pendientes:** cotejo de adscripción Equipo 40, 29 imágenes; completar matrices FFF por nueve Territorios, recuperar activos y fichas de Funga sin rellenar huecos.
+
 ## CI137 / Procedencia recuperada — Flora binaria 48/48; Defensas sin fusión (24-11-2026)
 
 **Segundo cotejo, con los bytes originales recuperados:** fuente `HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB(1).zip`, SHA `c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e`, y rescate `CI137_FUENTE_FLORA_075_40_ICONOS_8_FONDOS_SOLO_RESCATE_20261123.zip`, SHA `5816ee481dfb3bd9620d2c4604c365cc2ed11f7899a973da3a1e6ea7c8cbb4ba`. **48/48 archivos gráficos comunes (40 iconos + 8 fondos) idénticos byte a byte**. Iconos **40/40 512×512 RGBA**. **0/40 SHA catalogados** y **0/40 tamaños catalogados** coinciden con los binarios optimizados 0.4.75. Binarios reales suman **3.641.622 B**, declarados en catálogo **9.107.212 B**. No se recuperó la variante con hashes declarados, ni corresponde atribuir la diferencia a una técnica concreta. `data/flora_items.json` demuestra **33/40 fondos referenciados a Totora**, no corregir por inferencia. [Acta forense](CI137_DEF_FLORA_PROCEDENCIA_BINARIA_Y_EQUIVALENCIAS_2026-11-24_v02.md).
