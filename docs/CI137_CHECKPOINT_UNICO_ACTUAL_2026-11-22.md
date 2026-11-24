@@ -4,6 +4,16 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## CI137 / Forge Wizard — auditoría de anidamiento del ZIP (24-11-2026)
+
+**Hallazgo de entrega:** el archivo compartido `CI137_QA3_LIMPIO_SOLO_DIAGNOSTICO_20261124.zip` **no es un módulo de Foundry**: es el contenedor de GitHub Actions con seis entradas (tres ZIP internos de MIN/ITEMS/FULL y tres JSON de resultados), **sin `module.json` en su raíz**. El Import Wizard de Forge espera identificar un módulo por su `module.json`; su soporte de archivos ZIP anidados no debe presumirse. El usuario no afirmó haber subido específicamente este contenedor: **es un defecto de entrega detectable, no causa confirmada de la ausencia de módulo en H7**.
+
+**Corrección operativa:** se extrajo íntegro el ZIP interior **`CI137_QA3_full_NO_INSTALAR_SIN_QA.zip`**, 2.670.564 bytes, SHA-256 exacto `f14bb7458d5240369ef0536fe11e2e8d0e9b1346474c6885ecf64b10ce754428`. Validación física local de archivo: `module.json` en raíz, id `hiperaustralis-compendios-prototype`, versión `0.1.6-ci137qa.3.2`, **3 packs** `ha-proto-items` / `ha-proto-actors` / `ha-proto-journals` con rutas exactas y CURRENT/MANIFEST/SST, **44 WebP**; CRC ZIP PASS, cero ficheros transitorios `LOCK/LOG`.
+
+**Guías Forge verificadas:** [Uploading modified packages](https://forums.forge-vtt.com/t/how-to-upload-a-modified-version-of-a-module-system/10510) y [Backing Up Your Forge Content](https://forums.forge-vtt.com/t/backing-up-your-forge-content/16215). Usar `My Foundry → Table Tools → Summon Import Wizard → ZIP File → Analyze Files`. En análisis debe mostrar **exactamente el módulo** id existente y su versión; no pulsar `Import Selection` mientras se realiza sólo reconocimiento. Desmarcar `Install found packages from the Bazaar` para el ZIP personalizado. Si se decide importar en entorno verdaderamente aislado, el mismo ID **reemplaza el módulo a nivel de cuenta** y requiere respaldo y reinicio; no exponer H6.
+
+**Resultado:** diagnóstico de *estructura del ZIP* PASS. **Ninguna ejecución real del Wizard ni D3 en Forge realizada por este control**. H7 sigue estable y sin CI137. **Decisiones:** conservar MIN/ITEMS/FULL como banco técnico, entregar siempre el ZIP individual en lugar del contenedor de Actions. **Pendientes:** resultado de pantalla Analyze y prueba D3 sólo tras autorización de entorno. **Maestro, main, Forge, H6/H7, Bridge:** sin cambios.
+
 ## H7 — Estabilidad CONFIRMADA SIN CI137 instalado (24-11-2026)
 
 **Rectificación explícita del usuario:** «tenemos hoja correcta, pero no se instaló ningún módulo ni compendio. Los Items anteriores funcionan, el reinicio no genera problemas». La afirmación anterior «funciona el mundo» debe leerse **estrictamente** como H7 abre y conserva hoja Kona/Items anteriores y reinicio; **NO** como éxito del paquete QA3. No hay un módulo CI137 nuevo instalado, por lo que la ausencia de nuevos compendios es esperable.
