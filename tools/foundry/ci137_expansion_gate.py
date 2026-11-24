@@ -45,8 +45,25 @@ def main():
         "04_PEWENMAPU", "05_WILLIMAPU", "06_PATAGONIA_AUSTRAL",
         "07_TIERRA_DEL_FUEGO", "08_CANALES_AUSTRALES", "09_UMBRAL_POLAR"],
         "old eight-band geography or new unapproved TERRITORIOS")
-    gate(all(x["subfolders"] == ["Fauna", "Flora", "Funga", "Recetas"] for x in t),
-         "territorial subfolders changed")
+    gate(all(x["subfolders"] == ["Flora", "Fauna", "Funga", "Recetas"] for x in t),
+         "approved FFF and Recetas sibling folders changed")
+    fff = m["territorialIndex"]["fffStandard"]
+    quota = {"Flora": 4, "Fauna": 4, "Funga": 4}
+    gate(fff["label"] == "FFF 4×4×4" and
+         fff["targetPerTerritory"] == quota and
+         fff["numberOfCoreTerritories"] == 9 and
+         fff["totalTarget"] == {"Flora": 36, "Fauna": 36, "Funga": 36, "combined": 108} and
+         fff["earlierEightTerritoryTarget"] == 96,
+         "FFF target must be 9 × (4 Flora + 4 Fauna + 4 Funga) = 108")
+    for x in t:
+        actual = x["fff"]["assignedReferences"]
+        gate(x["fff"]["target"] == quota and
+             x["fff"]["recipeSlotsOutsideFFF"] is True and
+             actual["Fauna"] == x["fauna"] and len(actual["Fauna"]) == 4 and
+             actual["Flora"] == [] and actual["Funga"] == [],
+             "incomplete FFF slots must remain explicit, not fabricated: " + x["code"])
+    gate(sum(sum(x["fff"]["target"].values()) for x in t) == 108,
+         "FFF allocation capacity total changed")
     codes = [c for x in t for c in x["fauna"]]
     gate(len(codes) == 36 and all(len(x["fauna"]) == 4 and len(set(x["fauna"])) == 4
                                  for x in t), "FAU 9x4 principal allocation drift")
@@ -69,7 +86,33 @@ def main():
          m["families"]["fauna"]["legacyProtected"] == ["FAU-006"],
          "FAUNA_MAESTRO approved versus legacy status drift")
     gate(m["families"]["funga"]["independentlyApprovedItems"] == 0,
-         "unapproved funga records introduced")
+         "unverified Funga runtime records introduced")
+    historical_funga = m["families"]["funga"]["priorApprovedHistoricalFunga"]
+    gate(historical_funga["codes"] == ["FUN-01", "FUN-02", "FUN-03", "FUN-04"] and
+         historical_funga["runtimePromotions"] == 0,
+         "Tierra del Fuego Funga approvals are prior-source only, not installed")
+    equipment = m["targetPacks"]["ha-proto-items"]["equipmentStructure"]
+    gate(equipment["status"] ==
+         "APPROVED_FUNCTIONAL_SEPARATION_PENDING_FOLDER_ID_CROSSWALK",
+         "unverified equipment folder changes introduced")
+    gate(equipment["transversal"]["folder"] == "Equipo común" and
+         equipment["cultural"]["folder"] == "Equipo cultural" and
+         equipment["musical"]["folder"] == "Instrumentos musicales",
+         "common, culturally specific and musical equipment must remain distinct")
+    culture_folders = ["Mapuche", "Aymara", "Nórdicos", "Lickanantay", "Chinchorro", "Selk’nam"]
+    gate(equipment["cultural"]["subfolders"] == culture_folders,
+         "six named equipment cultural groups changed")
+    gate(equipment["historicalItemCount"] == 40 and
+         equipment["imageCandidatesCrosswalkCount"] == 29 and
+         m["families"]["equipo"]["newItemDocsAuthorized"] == 0 and
+         m["families"]["equipo"]["newIconReplacementDocsAuthorized"] == 0,
+         "40 historical Equipo Items do not become 69 new Items or auto image changes")
+    equipment_candidates = read("manifests/equipo-comun-29-cruces-candidatos-20261121.json")
+    gate(equipment_candidates["historicalItemCount"] == 40 and
+         len(equipment_candidates["items"]) == 29 and
+         len({x["id"] for x in equipment_candidates["items"]}) == 29 and
+         all(VALID.fullmatch(x["id"]) for x in equipment_candidates["items"]),
+         "Equipo historical 40 / candidate 29 crosswalk mismatch")
     defenses = read("manifests/defensas-assets.json")
     newdef = m["families"]["newDefenses"]
     gate(len(defenses["items"]) == 9 and len(newdef["catalogCodes"]) == 9,
@@ -148,6 +191,13 @@ def main():
         "nativePacks":3,
         "territories":len(t),
         "faunaTerritorialReferences":len(codes),
+        "fffSlotsPerTerritory":{"Flora":4,"Fauna":4,"Funga":4},
+        "fffTargetTotal":108,
+        "fffCurrentFloraAssignmentsInNineCore":0,
+        "fffCurrentFungaAssignmentsInNineCore":0,
+        "equipoHistoricalItems":40,
+        "equipoImageCandidateCrosswalk":29,
+        "equipoFunctionalSeparationPendingMigration":True,
         "uniqueFaunaCodesInSelections":len(set(codes)),
         "foundryFaunaIdentityRows":len(faus),
         "foundryFloraIdentityRows":len(flos),
