@@ -1,4 +1,4 @@
-# CORE / MELIAZ LAB — Ataque por arma y Crítico · 24-11-2026
+# CORE / MELIAZ LAB — Resolver Intercambio, armas y Heridas · 24-11-2026
 
 ## Decisiones autorales de esta conversación
 - Clic en arma equipada inicia ataque de Ñeque mediante MELIAZ, no apertura ordinaria del Item.
@@ -7,7 +7,13 @@
 - Conservar regla cerrada de Armadura: interposición material pertinente evita Herida, inutiliza Armadura; no elimina desgaste. No revierte veneno inoculado ni asfixia en curso.
 - Usuario solicita incluir este frente antes de probar nueva hoja. Descendiente 0.24.205 D2 PASS, no D3. Códigos pendiente de implementación. No despliegue.
 
-## Autoridad recuperada
+## Rectificación autoral posterior — prevalece sobre la escala histórica
+- Tirada de combate: **Resolver Intercambio**, aplicación de la Prueba de Azar universal, una sola tirada bilateral; no ataque y defensa separados.
+- Caras definitivas para esta implementación: **1 Revés · 2 Empate · 3 Avance · 4 Quiebre**. La fuente `CORE_MELIAZ_RESOLVER_INTERCAMBIO_NOMBRE_Y_REDACCION_2026-11-24_v01.md` conserva Impacto en la cara 3; la corrección explícita de esta conversación lo sustituye por Avance. No aplicar un renombrado global al azar no bélico sin cotejo.
+- `Crítico` designa el campo del arma (tipo de Herida posible), no la cara 4. El Quiebre no obliga a Herida si la intención o medio no lo permiten. Revés se lee desde el lado con Ventaja, no necesariamente desde el atacante.
+- La respuesta del Rival en el mismo intercambio no agrega dado ni intervención adicional. El caso de Rival con Ventaja que inicia ataque y el orden sin Emparejamientos se conservan como laboratorio según la fuente recuperada; no cerrar por inferencia.
+
+## Autoridad recuperada (terminología histórica anterior a la rectificación)
 Estado Maestro ACTUAL 24-11, líneas 120-140, 660-664, registros Puede Herir y Armadura; CORE_CHECKPOINT_MELIAZ_ARMADURA_CIERRE_2026-11-24_v04.md.
 - 1 Desastre: lado sin Ventaja impone intención, complicación adicional pertinente.
 - 2 Fallo: ninguna intención se impone.
@@ -25,8 +31,8 @@ module/meliaz-bridge/bridge.js:
 - installKonaRollCenterShield ~6660: zona Ñeque ya llama startAction(actor.uuid,"neque").
 - startAction ~8559: selecciona objetivo único, Peso, Manifestación, Exaltar, intervención y tarjeta pendiente. No conserva intención ataque ni arma en snapshot de acción. Extender con contexto opcional de ataque (ID/UUID, nombre, Herida validada); llamada ordinaria sin contexto permanece idéntica. No iniciar segundo d4.
 - resolveAction ~9377: etiquetas DESASTRE/FALLO/ÉXITO/CRÍTICO ya correctas; control de marcar -1 Peso hoy se presenta si targetActorUuid existe, sin filtrar imposición. Revisar guard para que sólo proceda cuando intención y resultado permitan desgaste; no aplicar a toda acción ni duplicar pérdida.
-- Arma sin clasificación nueva: informar Herida pendiente de cotejo, no inferir tipo ni impedir ataque básico. Crítico sólo ofrece consecuencia lesiva pertinente, no efecto automático. Registrar en tarjeta de chat el arma y resultado; propuesta de confirmación humana de Herida/Armadura antes de aplicar consecuencia. PNJ no recibe recurso numérico adicional.
-- Exaltar Azar garantizado produce éxito raso, no Crítico. Su actualización actual es frente separado de reglas; no reintroducir antigua ventana de intervención por este cambio.
+- Arma sin clasificación nueva: informar Herida pendiente de cotejo, no inferir tipo ni impedir ataque básico. Quiebre sólo ofrece consecuencia lesiva pertinente, no efecto automático. Registrar en tarjeta de chat el arma y resultado; propuesta de confirmación humana de Herida/Armadura antes de aplicar consecuencia. PNJ no recibe recurso numérico adicional.
+- Exaltar Azar garantizado no produce Quiebre; cotejar regla actual antes de renombrar o modificar su efecto. Su actualización actual es frente separado de reglas; no reintroducir antigua ventana de intervención por este cambio.
 
 ## Próximo paso
 1. Recuperar 20 armas canónicas de CI137 QA5 y sus campos reales, matriz de 5 tipos por arma y cotejo con medios lesivos de Rival; actualizar fuentes sólo con aprobación de clasificación.
