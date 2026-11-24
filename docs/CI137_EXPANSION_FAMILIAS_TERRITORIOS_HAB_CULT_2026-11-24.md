@@ -9,6 +9,12 @@
 - **No crear otro módulo ni otros identificadores de pack**; extender contenidos del módulo ya registrado: `ha-proto-items`, `ha-proto-actors`, `ha-proto-journals`.
 - Este checkpoint amplía el **alcance técnico** anterior (17-11) que excluía Territorios. La nueva solicitud autoral del 24-11 autoriza **preparar** la inclusión territorial, no a promocionar candidatos de imágenes o inventar fichas.
 
+## 1 ter. Instrumentos, Reliquias y Recetas drag-and-drop (24-11-2026)
+
+**Inventario real de QA5:** dentro de los 136 Items: **21 Instrumentos musicales, 8 Reliquias cotidianas, 8 legendarias y Tokicura independiente**. Los 6 remapeos ERH aprobados no representan actualización completa de 21/21 iconos de Instrumentos; los 16 WebP de Reliquias y la imagen de Tokicura sí están incluidos en el paquete. El drag-and-drop de esos Items a Kona no se ha probado específicamente.
+
+**Recetas:** cuarto grupo por Territorio, `Territorio/<CORE>/Recetas/`, **fuera de FFF**, y cada receta aprobada debe ser un Item real de `ha-proto-items` que se pueda arrastrar a la hoja Kona con CSB 6.1.2/MELIAZ Bridge 0.24.203, conservando campos y persistencia. Sin fuentes exactas de Items Receta recuperadas en el ZIP 0.4.75 ni QA5, **no hay Recetas instaladas** y no se rellena con placeholders. Antes de incluir: recuperar contenido aprobado, plantilla CSB compatible, UUID/ID válido, destino de drop ya autorizado, probar en cliente y verificar reinicio sin alteración. Referencia: [acta puntual](CI137_INSTRUMENTOS_RELIQUIAS_RECETAS_DND_20261124_v01.md), [Actions #45470344571](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45470344571) **PASS de guard estático**, NO prueba D3.
+
 ## 1 bis. Fe de erratas — FFF 4×4×4 y Equipo (24-11-2026)
 
 **Corrección solicitada por el autor:** el primer manifiesto de expansión sólo preveía 9×4 referencias de Fauna: **era incompleto**. El diseño vigente por Territorio CORE sigue la matriz **4 Flora + 4 Fauna + 4 Funga = 12 posiciones de curaduría**. Hay **9 territorios CORE**, por lo tanto **36/36/36 = 108 asignaciones objetivo**, NO 108 Item JSON únicos y NO 108 especies obligatorias. Las ocho bandas histórico-ecológicas producían un objetivo antiguo de 96; **no trasladar automáticamente** su selección a los nueve territorios histórico-culturales. Se permite referencia del mismo UUID en varios territorios, sin duplicar Items.
