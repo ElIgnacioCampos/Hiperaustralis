@@ -1,0 +1,71 @@
+{
+  "name": "Gramínea cordillerana",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/flora-y-funga/iconos/FLO-034_Graminea_cordillerana.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "flora",
+      "codigo": "FLO-034",
+      "descripcion": "Gramínea reunida en una mata de hojas estrechas y tallos ligeros. «Cordillerana» describe aquí el ambiente de trabajo, sin atribuirle todavía una localidad precisa.",
+      "ambito": "Cordillera (territorio por definir)",
+      "apartado": "Flora y Funga"
+    },
+    "template": "HipFloraTpl00001",
+    "templateSystemUniqueVersion": 201001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "flora"
+    },
+    "hiperaustralis-flora-item": {
+      "seedId": "flora-34",
+      "codigo": "FLO-034",
+      "version": "0.4.68"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/flora/biomas/totora_schoenoplectus_californicus.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "fqRoZg8otQGiJaoS",
+  "_id": "FP8NfVhSk4nLXZiw",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754988701,
+    "modifiedTime": 1791755494792,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!FP8NfVhSk4nLXZiw"
+}

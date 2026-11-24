@@ -1,0 +1,75 @@
+{
+  "name": "Caranca",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-023_Chloephaga_hybrida.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Ganso marino de las costas australes. El macho es casi completamente blanco y la hembra oscura y barrada; las parejas se alimentan cerca de la línea de marea entre rocas, algas y playas.",
+      "en_escena": "Una pareja sobre rocas negras y algas puede marcar visualmente la costa; sus movimientos siguen de cerca el ritmo de la marea.",
+      "bioma": "Tierra del Fuego — Estepa, bosque austral y turbera",
+      "cientifico": "Chloephaga hybrida"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-023",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Tierra del Fuego — Estepa, bosque austral y turbera",
+      "cientifico": "Chloephaga hybrida",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chloephaga_hybrida_380910079.jpg",
+      "peso_sugerido": 1,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/06_Tierra_del_Fuego/FAU-023_Chloephaga_hybrida.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "ExYEwc3Ap4yp1hnX",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754996084,
+    "modifiedTime": 1791755516519,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ExYEwc3Ap4yp1hnX"
+}

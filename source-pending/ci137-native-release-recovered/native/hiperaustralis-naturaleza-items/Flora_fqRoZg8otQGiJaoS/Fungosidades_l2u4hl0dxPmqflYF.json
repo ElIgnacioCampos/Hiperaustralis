@@ -1,0 +1,71 @@
+{
+  "name": "Fungosidades",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/flora-y-funga/iconos/FLO-028_Fungosidades.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "flora",
+      "codigo": "FLO-028",
+      "descripcion": "Conjunto de formas de aspecto fungoso, con cuerpos abiertos como pequeñas copas y pigmentación terrosa. «Fungosidades» conserva aquí un sentido descriptivo; no identifica una especie ni un fenómeno sobrenatural concreto.",
+      "ambito": "Umbral Polar — encuadre específico por determinar",
+      "apartado": "Flora y Funga"
+    },
+    "template": "HipFloraTpl00001",
+    "templateSystemUniqueVersion": 201001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "flora"
+    },
+    "hiperaustralis-flora-item": {
+      "seedId": "flora-28",
+      "codigo": "FLO-028",
+      "version": "0.4.68"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/flora/biomas/totora_schoenoplectus_californicus.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "fqRoZg8otQGiJaoS",
+  "_id": "l2u4hl0dxPmqflYF",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754987381,
+    "modifiedTime": 1791755490404,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!l2u4hl0dxPmqflYF"
+}

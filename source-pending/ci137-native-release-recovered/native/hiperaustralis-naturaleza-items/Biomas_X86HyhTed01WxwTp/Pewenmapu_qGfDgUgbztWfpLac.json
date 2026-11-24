@@ -1,0 +1,68 @@
+{
+  "name": "Pewenmapu",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/biomas/iconos/BIO-004.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "bioma",
+      "codigo": "BIO-004",
+      "descripcion": "Los pewen recortan sus copas contra laderas, rocas y montañas. El suelo cambia de textura: raíces, ceniza, piedra suelta y pendientes abiertas reclaman distintas maneras de avanzar. El bosque ofrece refugio y referencias; más arriba, la exposición al viento y los materiales volcánicos convierten el traslado de cargas en una decisión cuidadosa.",
+      "en_escena": "Para alcanzar el paso hay que atravesar una franja de roca volcánica inestable con el equipo a cuestas. ¿Dividir la carga, buscar suelo firme, retroceder o construir ayuda para subir?",
+      "bioma": "Bosque de pewen y cordillera volcánica",
+      "cientifico": "Atravesar un talud volcánico con carga",
+      "apartado": "Biomas"
+    },
+    "template": "HipBiomaTpl00001",
+    "templateSystemUniqueVersion": 201003,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "6.0.5"
+    },
+    "meliaz-bridge": {
+      "kind": "bioma"
+    },
+    "hiperaustralis-bioma-item": {
+      "seedId": "BIO-004",
+      "version": "1"
+    }
+  },
+  "folder": "X86HyhTed01WxwTp",
+  "_id": "qGfDgUgbztWfpLac",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791756239163,
+    "modifiedTime": 1791756695525,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!qGfDgUgbztWfpLac"
+}

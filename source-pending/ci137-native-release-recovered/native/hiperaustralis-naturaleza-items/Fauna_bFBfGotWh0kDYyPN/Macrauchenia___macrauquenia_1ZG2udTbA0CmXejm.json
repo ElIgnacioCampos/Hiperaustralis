@@ -1,0 +1,69 @@
+{
+  "name": "Macrauchenia · macrauquenia",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-045_Macrauchenia_patachonica.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Mamífero sudamericano extinguido, de cuello largo, extremidades esbeltas y cuerpo alto. La forma exacta de su hocico sigue siendo incierta; no conviene representarlo con una trompa confirmada. Sus restos pertenecen a la megafauna del final del Pleistoceno.",
+      "en_escena": "A través de la estepa cruza una silueta de cuello largo; varias huellas se superponen junto a un bebedero. Si se asusta, una carrera desordenada puede cerrar el paso o separar al grupo; no es un depredador.",
+      "bioma": "Patagonia austral · estepas abiertas y mosaicos de bosque",
+      "cientifico": "Macrauchenia patachonica"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-045",
+      "version": "0.4.83",
+      "bioma": "Patagonia austral · estepas abiertas y mosaicos de bosque",
+      "cientifico": "Macrauchenia patachonica",
+      "origen": "Integración de fauna prehistórica Rival 0.4.83"
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "1ZG2udTbA0CmXejm",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1792689722755,
+    "modifiedTime": 1793380545662,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1ZG2udTbA0CmXejm"
+}

@@ -1,0 +1,71 @@
+{
+  "name": "Pewen",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/flora-y-funga/iconos/FLO-004_Pewen.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "flora",
+      "codigo": "FLO-004",
+      "descripcion": "El pewen se reconoce por su tronco recto, las ramas distribuidas por pisos y las masas de hojas hacia sus extremos. Su silueta distingue los bosques y laderas de Pewenmapu.",
+      "ambito": "Pewenmapu",
+      "apartado": "Flora y Funga"
+    },
+    "template": "HipFloraTpl00001",
+    "templateSystemUniqueVersion": 201001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "flora"
+    },
+    "hiperaustralis-flora-item": {
+      "seedId": "flora-04",
+      "codigo": "FLO-004",
+      "version": "0.4.68"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/flora/biomas/pewen_araucaria_araucaria_araucana.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "fqRoZg8otQGiJaoS",
+  "_id": "D8DUTJF1Et3urear",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754981849,
+    "modifiedTime": 1791755473236,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!D8DUTJF1Et3urear"
+}

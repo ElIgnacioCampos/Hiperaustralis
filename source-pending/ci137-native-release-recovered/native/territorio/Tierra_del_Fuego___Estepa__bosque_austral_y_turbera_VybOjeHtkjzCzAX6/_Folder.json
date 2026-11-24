@@ -1,0 +1,22 @@
+{
+  "name": "Tierra del Fuego — Estepa, bosque austral y turbera",
+  "type": "JournalEntry",
+  "folder": null,
+  "sorting": "m",
+  "sort": 6000,
+  "_id": "VybOjeHtkjzCzAX6",
+  "description": "",
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1794169735258,
+    "modifiedTime": 1794169735258,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!VybOjeHtkjzCzAX6"
+}

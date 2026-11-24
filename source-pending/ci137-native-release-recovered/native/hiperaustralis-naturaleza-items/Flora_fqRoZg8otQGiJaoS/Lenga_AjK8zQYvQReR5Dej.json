@@ -1,0 +1,71 @@
+{
+  "name": "Lenga",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/flora-y-funga/iconos/FLO-006_Lenga.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "flora",
+      "codigo": "FLO-006",
+      "descripcion": "Árbol caducifolio de los bosques australes, con ramificación extendida y follaje que puede teñirse de ocres y rojos. La lenga acompaña los cambios de estación en Patagonia y Tierra del Fuego.",
+      "ambito": "Patagonia austral / Tierra del Fuego",
+      "apartado": "Flora y Funga"
+    },
+    "template": "HipFloraTpl00001",
+    "templateSystemUniqueVersion": 201001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "flora"
+    },
+    "hiperaustralis-flora-item": {
+      "seedId": "flora-06",
+      "codigo": "FLO-006",
+      "version": "0.4.68"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/flora/biomas/lenga_nothofagus_pumilio.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "fqRoZg8otQGiJaoS",
+  "_id": "AjK8zQYvQReR5Dej",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754982293,
+    "modifiedTime": 1791755474654,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!AjK8zQYvQReR5Dej"
+}

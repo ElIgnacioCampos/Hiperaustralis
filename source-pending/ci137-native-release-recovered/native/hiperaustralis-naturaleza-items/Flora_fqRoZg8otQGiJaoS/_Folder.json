@@ -1,0 +1,22 @@
+{
+  "name": "Flora",
+  "type": "Item",
+  "folder": null,
+  "sorting": "a",
+  "sort": 100000,
+  "_id": "fqRoZg8otQGiJaoS",
+  "description": "",
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754980943,
+    "modifiedTime": 1791754980943,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!fqRoZg8otQGiJaoS"
+}

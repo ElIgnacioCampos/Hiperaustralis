@@ -1,0 +1,74 @@
+{
+  "name": "Gallito de las rocas",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/iconos/FAU-006_Rupicola_peruvianus.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "El macho destaca por su intenso plumaje rojo anaranjado y su gran cresta semicircular. En determinados claros del bosque varios machos se reúnen para exhibirse, llenando la vegetación de saltos, movimiento y llamados.",
+      "en_escena": "Un lek puede convertir un claro aparentemente ordinario en un punto ruidoso y lleno de color, visible o audible desde bastante antes de llegar.",
+      "bioma": "Paititi — Bosque nublado de la vertiente oriental",
+      "cientifico": "Rupicola peruvianus"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-006",
+      "version": "1.0",
+      "bioma": "Paititi — Bosque nublado de la vertiente oriental",
+      "cientifico": "Rupicola peruvianus",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rupicola_peruvianus_Gallito_de_roca_andino_Andean-Cock-of-the-Rock_(male)_(13975950606).jpg",
+      "documentaryPhotoPreserved": true
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/02_Paititi/FAU-006_Rupicola_peruvianus.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "sJUb33WwcLgPb3PQ",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754992251,
+    "modifiedTime": 1793380558322,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!sJUb33WwcLgPb3PQ"
+}

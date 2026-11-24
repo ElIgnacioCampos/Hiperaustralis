@@ -1,0 +1,69 @@
+{
+  "name": "Vizcacha de montaña",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-038_Lagidium_sp.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Roedor de orejas relativamente largas y grandes patas posteriores, ágil entre paredones y roquedos. La determinación de especie regional permanece abierta.",
+      "en_escena": "Una cola larga sobresale desde una grieta. La vizcacha salta a otra roca.",
+      "bioma": "Puna y roqueríos altos",
+      "cientifico": "Lagidium sp."
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-038",
+      "version": "0.4.76-source-2026-10-15",
+      "bioma": "Puna y roqueríos altos",
+      "cientifico": "Lagidium sp.",
+      "origen": "HIPERAUSTRALIS_FAUNA_FAU001_052_ICONOS_Y_DESCRIP_FOUNDRY(1).zip"
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "UWNOWOmcjnTU3TKM",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1792627922161,
+    "modifiedTime": 1793380552333,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!UWNOWOmcjnTU3TKM"
+}

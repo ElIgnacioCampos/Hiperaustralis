@@ -1,0 +1,75 @@
+{
+  "name": "Quetro no volador",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-024_Tachyeres_pteneres.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Pato marino robusto e incapaz de volar. Cuando acelera bate violentamente alas y patas contra la superficie, avanzando entre espuma por bahías, costas y canales.",
+      "en_escena": "Su carrera sobre el agua es muy visible y ruidosa: una buena forma de animar una bahía calma o una costa ventosa.",
+      "bioma": "Tierra del Fuego — Estepa, bosque austral y turbera",
+      "cientifico": "Tachyeres pteneres"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-024",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Tierra del Fuego — Estepa, bosque austral y turbera",
+      "cientifico": "Tachyeres pteneres",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tachyeres_pteneres_376747553.jpg",
+      "peso_sugerido": 2,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/06_Tierra_del_Fuego/FAU-024_Tachyeres_pteneres.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "N4GmaJdfHlqloRZq",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754996312,
+    "modifiedTime": 1791755517212,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!N4GmaJdfHlqloRZq"
+}

@@ -1,0 +1,1616 @@
+{
+  "name": "Culturas — Hiperaustralis",
+  "pages": [
+    {
+      "name": "Mapuche",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Mapuche</h1>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-heading",
+          "culture": "Mapuche"
+        }
+      },
+      "_id": "dAVlXFXkgA0nZEO8",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831098,
+        "modifiedTime": 1794181831136,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.dAVlXFXkgA0nZEO8"
+    },
+    {
+      "name": "Bosque de Nahuelbuta",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:P.N.Nahuelbuta1.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/01_MAPUCHE/M1_Nahuelbuta.webp\" alt=\"Bosque de Nahuelbuta\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>Bosque, piedra y araucarias: un territorio que se aprende recorriendo antes de poder nombrarlo.</em>\n</figcaption>\n</figure>\n<p>El bosque se cierra sobre quebradas, lomas y cursos de agua. Antes de que un camino tenga nombre, el territorio ya ofrece refugios, pasos, alimento y lugares donde conviene detenerse.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> scott. Zona · 2010 · CC BY 2.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:P.N.Nahuelbuta1.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Mapuche",
+          "sourceFile": "M1_Nahuelbuta.txt"
+        }
+      },
+      "_id": "HOT1TRymWxqSSrz3",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831099,
+        "modifiedTime": 1794181831136,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.HOT1TRymWxqSSrz3"
+    },
+    {
+      "name": "Ruka",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Una_ruka.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/01_MAPUCHE/M2_Ruka.webp\" alt=\"Ruka\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>Fuego, herramientas, alimento y conversación comparten el mismo centro doméstico.</em>\n</figcaption>\n</figure>\n<p>Una casa es también un centro de relaciones: fuego, herramientas, alimento, conversación, descanso y trabajo comparten un mismo espacio. Habitar un territorio significa conocer cómo sostener la vida dentro de él.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Odber Heffer · ca. 1890–1900 · Dominio público<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Una_ruka.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Mapuche",
+          "sourceFile": "M2_Ruka.txt"
+        }
+      },
+      "_id": "mMz53gKHi49RByVu",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831100,
+        "modifiedTime": 1794181831137,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.mMz53gKHi49RByVu"
+    },
+    {
+      "name": "Hilado",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Mapuche_hilando_lana.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/01_MAPUCHE/M3_Hilado_Mapuche.webp\" alt=\"Hilado\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>La fibra se vuelve hilo; el hilo, abrigo, intercambio y memoria material.</em>\n</figcaption>\n</figure>\n<p>Las manos convierten la fibra en hilo y el hilo en abrigo, intercambio y memoria material. Muchas de las cosas que sostienen una comunidad comienzan en trabajos cotidianos que rara vez necesitan convertirse en hazaña.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Odber Heffer · 1908 · Dominio público<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Mapuche_hilando_lana.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Mapuche",
+          "sourceFile": "M3_Hilado_Mapuche.txt"
+        }
+      },
+      "_id": "2zwZKin1Jae8rPiW",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831101,
+        "modifiedTime": 1794181831137,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.2zwZKin1Jae8rPiW"
+    },
+    {
+      "name": "Aymara",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Aymara</h1>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-heading",
+          "culture": "Aymara"
+        }
+      },
+      "_id": "UlXOXnegOLkhBvSA",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831102,
+        "modifiedTime": 1794181831137,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.UlXOXnegOLkhBvSA"
+    },
+    {
+      "name": "Altura y llamas",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:El_Sajama_y_las_llamas.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/02_AYMARA/A1_Sajama_Llamas.webp\" alt=\"Altura y llamas\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>Moverse entre agua, pastos y alturas también puede ser una forma de pertenecer.</em>\n</figcaption>\n</figure>\n<p>En el altiplano, desplazarse también es pertenecer. Los rebaños enlazan agua, pastos, comunidades y rutas que atraviesan territorios de alturas distintas.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Fernando Suárez Saavedra · 2016 · CC BY-SA 4.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:El_Sajama_y_las_llamas.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Aymara",
+          "sourceFile": "A1_Sajama_Llamas.txt"
+        }
+      },
+      "_id": "sJpsbG36OeoCFnyB",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831102,
+        "modifiedTime": 1794181831137,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.sJpsbG36OeoCFnyB"
+    },
+    {
+      "name": "Tejedora",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Tejedora_aymara_por_Guaman_Poma.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/02_AYMARA/A2_Tejedora_Aymara.webp\" alt=\"Tejedora\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>El conocimiento textil transforma fibra, tiempo y trabajo en superficie, abrigo y signo.</em>\n</figcaption>\n</figure>\n<p>El hilo pasa de una mano a otra, se tensa y vuelve convertido en superficie, abrigo y signo. El conocimiento textil pertenece al trabajo aprendido y transmitido, antes de cualquier significado extraordinario que una pieza pueda llegar a contener.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Felipe Guamán Poma de Ayala · ca. 1615 · Dominio público<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Tejedora_aymara_por_Guaman_Poma.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Aymara",
+          "sourceFile": "A2_Tejedora_Aymara.txt"
+        }
+      },
+      "_id": "6YKt8IhXV4qUeMxG",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831103,
+        "modifiedTime": 1794181831137,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.6YKt8IhXV4qUeMxG"
+    },
+    {
+      "name": "Totorales del Titicaca",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Totorales_del_Titicaca.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/02_AYMARA/A3_Totorales_Titicaca.webp\" alt=\"Totorales del Titicaca\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>El lago ofrece agua, materiales y rutas; no es un vacío entre comunidades.</em>\n</figcaption>\n</figure>\n<p>Donde el agua encuentra orilla crecen también materiales para trabajar, reparar y habitar. El lago no es un vacío entre comunidades: forma parte del territorio que las comunica y sostiene.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Abel Christian Apaza Amanqui · 2025 · CC BY-SA 4.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Totorales_del_Titicaca.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Aymara",
+          "sourceFile": "A3_Totorales_Titicaca.txt"
+        }
+      },
+      "_id": "SaZIRczAwOrjdf95",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831104,
+        "modifiedTime": 1794181831138,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.SaZIRczAwOrjdf95"
+    },
+    {
+      "name": "Nórdicos",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Nórdicos</h1>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-heading",
+          "culture": "Nórdicos"
+        }
+      },
+      "_id": "Rh9Ip4WROIiXUc9P",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831105,
+        "modifiedTime": 1794181831138,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.Rh9Ip4WROIiXUc9P"
+    },
+    {
+      "name": "Casa nórdica",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Reconstructed_Viking_House.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/03_NORDICOS/N1_Casa_Nordica.webp\" alt=\"Casa nórdica\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>La expedición comienza en un mundo que primero necesita ser sostenido.</em>\n</figcaption>\n</figure>\n<p>La vida nórdica transcurre también bajo techo: junto al fuego, entre alimentos almacenados, herramientas, animales, telas y obligaciones domésticas. La expedición comienza en un mundo que primero necesita ser sostenido.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Anjali Kiggal · 2015 · CC BY-SA 4.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Reconstructed_Viking_House.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Nórdicos",
+          "sourceFile": "N1_Casa_Nordica.txt"
+        }
+      },
+      "_id": "y5OdZ9QS5RTOILZb",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831106,
+        "modifiedTime": 1794181831138,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.y5OdZ9QS5RTOILZb"
+    },
+    {
+      "name": "Nave",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Viking-ship-reconstruction.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/03_NORDICOS/N2_Nave_Vikinga.webp\" alt=\"Nave\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>Madera, vela y conocimiento del horizonte prolongan el territorio mucho más allá de la costa.</em>\n</figcaption>\n</figure>\n<p>Una embarcación prolonga el territorio mucho más allá de la costa conocida. Comercio, migración, guerra y exploración dependen tanto de la madera y las velas como del conocimiento del mar, el viento y los signos del horizonte.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Jakub T. Jankiewicz · 2004 · CC BY 3.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Viking-ship-reconstruction.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Nórdicos",
+          "sourceFile": "N2_Nave_Vikinga.txt"
+        }
+      },
+      "_id": "O2RUrotQWO9ptvlP",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831107,
+        "modifiedTime": 1794181831138,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.O2RUrotQWO9ptvlP"
+    },
+    {
+      "name": "Piedra rúnica",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:G_208.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/03_NORDICOS/N3_Piedra_Runica_G208.webp\" alt=\"Piedra rúnica\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>La piedra conserva nombres, memoria y relaciones mucho después de quienes la grabaron.</em>\n</figcaption>\n</figure>\n<p>Una inscripción puede conservar un nombre, una muerte, un viaje o una obligación mucho después de quienes la hicieron. Las runas son escritura antes que hechicería; algunas Tramas comienzan precisamente allí, cuando la materia sigue guardando relaciones que todavía pueden ser comprendidas.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Bauer. Corp · 2025 · CC0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:G_208.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Nórdicos",
+          "sourceFile": "N3_Piedra_Runica_G208.txt"
+        }
+      },
+      "_id": "t9RMJH35iRyd8klc",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831109,
+        "modifiedTime": 1794181831138,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.t9RMJH35iRyd8klc"
+    },
+    {
+      "name": "Chinchorro",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Chinchorro</h1>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-heading",
+          "culture": "Chinchorro"
+        }
+      },
+      "_id": "D80RyIP4DV7uC1BE",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831109,
+        "modifiedTime": 1794181831139,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.D80RyIP4DV7uC1BE"
+    },
+    {
+      "name": "Mar y agua dulce",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Caleta_Camarones,_Comuna_de_Camarones,_Region_de_Arica_y_Parinacota,_Chile_02.JPG\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/04_CHINCHORRO/C1_Caleta_Camarones.webp\" alt=\"Mar y agua dulce\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>El mar sostiene la abundancia; el agua dulce decide dónde una comunidad puede permanecer.</em>\n</figcaption>\n</figure>\n<p>El desierto termina contra un mar abundante, pero permanecer depende del agua dulce. Desembocaduras, humedales, playas y quebradas forman juntos el mundo vivido de estas comunidades costeras.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Yastay · 2015 · CC BY-SA 4.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Caleta_Camarones,_Comuna_de_Camarones,_Region_de_Arica_y_Parinacota,_Chile_02.JPG\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Chinchorro",
+          "sourceFile": "C1_Caleta_Camarones.txt"
+        }
+      },
+      "_id": "jG3Tx5Y6UvGwPeDn",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831110,
+        "modifiedTime": 1794181831139,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.jG3Tx5Y6UvGwPeDn"
+    },
+    {
+      "name": "Los muertos",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Momias_Chinchorro.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/04_CHINCHORRO/C2_Momias_Chinchorro_Conjunto.webp\" alt=\"Los muertos\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>El cuidado de los muertos fue también conocimiento técnico, trabajo y memoria comunitaria.</em>\n</figcaption>\n</figure>\n<p>Algunos cuerpos recibieron cuidados largos y técnicamente complejos. Abrir, reforzar, modelar o reparar a un muerto pertenece primero al conocimiento humano de una comunidad; en Hiperaustralis, ninguna práctica funeraria se convierte automáticamente en Ritual.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Makarena Celedón · 2021 · CC0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Momias_Chinchorro.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Chinchorro",
+          "sourceFile": "C2_Momias_Chinchorro_Conjunto.txt"
+        }
+      },
+      "_id": "iar9uVspmsxVUd33",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831112,
+        "modifiedTime": 1794181831139,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.iar9uVspmsxVUd33"
+    },
+    {
+      "name": "Cuerpo preparado",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Chinchorro_mummy,_south_coast_of_Peru_or_north_coast_of_Chile,_5000-2000_BC_-_San_Diego_Museum_of_Man_-_DSC06921.JPG\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/04_CHINCHORRO/C3_Momia_Chinchorro_Museo.webp\" alt=\"Cuerpo preparado\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>Materia, fibras y cuidado prolongan la relación entre una comunidad y sus muertos.</em>\n</figcaption>\n</figure>\n<p>El cuerpo preparado conserva señales de una práctica minuciosa sobre materia, fibras y forma. Para el juego importa la relación humana que la técnica sostiene: memoria, cuidado y continuidad, antes que convertir la arqueología en hechicería.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Daderot · 2013 · CC0 1.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Chinchorro_mummy,_south_coast_of_Peru_or_north_coast_of_Chile,_5000-2000_BC_-_San_Diego_Museum_of_Man_-_DSC06921.JPG\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Chinchorro",
+          "sourceFile": "C3_Momia_Chinchorro_Museo.txt"
+        }
+      },
+      "_id": "fiY2zCE64W5JoTCq",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831113,
+        "modifiedTime": 1794181831139,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.fiY2zCE64W5JoTCq"
+    },
+    {
+      "name": "Lickanantay",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Lickanantay</h1>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-heading",
+          "culture": "Lickanantay"
+        }
+      },
+      "_id": "QViNr1U7V1OUYtv5",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831113,
+        "modifiedTime": 1794181831139,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.QViNr1U7V1OUYtv5"
+    },
+    {
+      "name": "Desierto y movilidad",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Llamas,_volcan_Licancabur,_Atacama,_Chile.JPG\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/05_LICKANANTAY/L1_Licancabur_Llamas.webp\" alt=\"Desierto y movilidad\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>En el desierto, reconocer una ruta puede ser tan importante como reconocer una casa.</em>\n</figcaption>\n</figure>\n<p>El desierto no está vacío. Animales, vertientes, volcanes, quebradas y pasos permiten enlazar lugares separados por extensiones donde reconocer una ruta puede ser tan importante como reconocer una casa.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Claire Provost · 2013 · CC BY-SA 3.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Llamas,_volcan_Licancabur,_Atacama,_Chile.JPG\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Lickanantay",
+          "sourceFile": "L1_Licancabur_Llamas.txt"
+        }
+      },
+      "_id": "gFa25zeTYDmxlX8q",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831116,
+        "modifiedTime": 1794181831140,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.gFa25zeTYDmxlX8q"
+    },
+    {
+      "name": "Huellas en el desierto",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Geoglyphs_Chug-Chug.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/05_LICKANANTAY/L2_Geoglifos_Chug_Chug.webp\" alt=\"Huellas en el desierto\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>Viajar también deja marcas capaces de permanecer cuando ya no vemos a quienes recorrieron la ruta.</em>\n</figcaption>\n</figure>\n<p>Hay caminos que pueden leerse incluso cuando nadie los está recorriendo. Figuras trazadas sobre la tierra permanecen junto a rutas antiguas y recuerdan que viajar también deja marcas en el territorio.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Woreczko Jan · 2019 · CC BY-SA 4.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Geoglyphs_Chug-Chug.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Lickanantay",
+          "sourceFile": "L2_Geoglifos_Chug_Chug.txt"
+        }
+      },
+      "_id": "exbOEekalvXqBtBU",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831117,
+        "modifiedTime": 1794181831140,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.exbOEekalvXqBtBU"
+    },
+    {
+      "name": "Tulor",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Aldea_Tulor_salar_de_Atacama.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/05_LICKANANTAY/L3_Aldea_Tulor.webp\" alt=\"Tulor\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>La ruina conserva la forma de un lugar que alguna vez estuvo lleno de vida cotidiana.</em>\n</figcaption>\n</figure>\n<p>Muros bajos conservan la forma de espacios que alguna vez estuvieron llenos de cuerpos, herramientas, alimentos y conversaciones. Una ruina no muestra una cultura completa, pero permite reconocer que el desierto fue también un lugar densamente habitado.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Roberto Araya Barckhahn · 2005 · CC BY-SA 3.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Aldea_Tulor_salar_de_Atacama.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Lickanantay",
+          "sourceFile": "L3_Aldea_Tulor.txt"
+        }
+      },
+      "_id": "J9vcwB4CqTHalVVy",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831119,
+        "modifiedTime": 1794181831140,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.J9vcwB4CqTHalVVy"
+    },
+    {
+      "name": "Selk’nam",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Selk’nam</h1>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-heading",
+          "culture": "Selk’nam"
+        }
+      },
+      "_id": "QgS3CUFQEGUByZYh",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831119,
+        "modifiedTime": 1794181831140,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.QgS3CUFQEGUByZYh"
+    },
+    {
+      "name": "Tierra del Fuego",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Tierra_del_Fuego_Steppe_(3305934587).jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/06_SELKNAM/S1_Estepa_Tierra_del_Fuego.webp\" alt=\"Tierra del Fuego\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>Viento, distancia y horizonte condicionan cada desplazamiento, refugio y encuentro.</em>\n</figcaption>\n</figure>\n<p>El viento atraviesa una extensión donde la escala humana parece reducirse. Estepa, frío y distancia no forman un fondo vacío: condicionan cada desplazamiento, cada refugio y cada encuentro.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Jason Hollinger · 2009 · CC BY 2.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Tierra_del_Fuego_Steppe_(3305934587).jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Selk’nam",
+          "sourceFile": "S1_Estepa_Tierra_del_Fuego.txt"
+        }
+      },
+      "_id": "79TclqV8VDq67581",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831120,
+        "modifiedTime": 1794181831140,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.79TclqV8VDq67581"
+    },
+    {
+      "name": "Junto al agua",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Selknam_playa_1930.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/06_SELKNAM/S2_Selknam_Playa.webp\" alt=\"Junto al agua\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>Costa, viento, cuerpos y distancia pertenecen a una misma escena territorial.</em>\n</figcaption>\n</figure>\n<p>Personas y territorio pertenecen a la misma imagen: costa, viento, cuerpos y distancia. La fotografía conserva un momento tardío de una historia mucho más extensa, ya profundamente atravesada por la colonización.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Autor desconocido · 1930 · Dominio público<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Selknam_playa_1930.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Selk’nam",
+          "sourceFile": "S2_Selknam_Playa.txt"
+        }
+      },
+      "_id": "SZHcAmZk7HRJepGp",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831120,
+        "modifiedTime": 1794181831141,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.SZHcAmZk7HRJepGp"
+    },
+    {
+      "name": "Rapa Nui / Polinesia",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Rapa Nui / Polinesia</h1>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-heading",
+          "culture": "Rapa Nui / Polinesia"
+        }
+      },
+      "_id": "xQEeZiLMtoPMsf61",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831121,
+        "modifiedTime": 1794181831141,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.xQEeZiLMtoPMsf61"
+    },
+    {
+      "name": "Caza",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Selknam_cazando.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/06_SELKNAM/S3_Selknam_Cazando.webp\" alt=\"Caza\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>Seguir una presa exige leer rastros, viento, distancia y comportamiento animal.</em>\n</figcaption>\n</figure>\n<p>Seguir una presa exige leer rastros, viento, distancia y comportamiento animal antes de actuar. La subsistencia depende de conocimientos situados que solo se vuelven extraordinarios cuando la escena exige ir más allá de lo que una persona competente ya sabe hacer.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Alberto Maria de Agostini · 1930 · Dominio público<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Selknam_cazando.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Selk’nam",
+          "sourceFile": "S3_Selknam_Cazando.txt"
+        }
+      },
+      "_id": "1zohfX5BrDWkuhNO",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831122,
+        "modifiedTime": 1794181831141,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.1zohfX5BrDWkuhNO"
+    },
+    {
+      "name": "Isla",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Rapa-Nui-Landscape.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/07_RAPA_NUI/R1_Paisaje_Rapa_Nui.webp\" alt=\"Isla\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>Tierra y océano forman un mismo territorio de pendientes, viento, costa y horizonte.</em>\n</figcaption>\n</figure>\n<p>En una isla, tierra y océano nunca están realmente separados. Pendientes volcánicas, costa, viento y horizonte forman un territorio cuya escala se aprende recorriéndolo y mirando continuamente hacia el mar.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Bjørn Christian Tørrissen · 2013 · CC BY-SA 3.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Rapa-Nui-Landscape.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Rapa Nui / Polinesia",
+          "sourceFile": "R1_Paisaje_Rapa_Nui.txt"
+        }
+      },
+      "_id": "O7xGJu9ScbZVRjXX",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831124,
+        "modifiedTime": 1794181831142,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.O7xGJu9ScbZVRjXX"
+    },
+    {
+      "name": "Rano Raraku",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Rano_Raraku_quarry.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/07_RAPA_NUI/R2_Rano_Raraku.webp\" alt=\"Rano Raraku\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>La montaña conserva cuerpos de piedra todavía unidos a la materia de la que surgieron.</em>\n</figcaption>\n</figure>\n<p>La montaña conserva cuerpos de piedra todavía unidos a ella. Extraer, tallar y desplazar una figura monumental exige materia, conocimiento, trabajo organizado y relaciones sociales que ninguna estatua aislada alcanza a explicar por sí sola.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Rivi · 2006 · CC BY-SA 3.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Rano_Raraku_quarry.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Rapa Nui / Polinesia",
+          "sourceFile": "R2_Rano_Raraku.txt"
+        }
+      },
+      "_id": "MUiX0Viq3G0FPEC1",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831125,
+        "modifiedTime": 1794181831142,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.MUiX0Viq3G0FPEC1"
+    },
+    {
+      "name": "Una mirada desde 1775",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Hodges_easter-island.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/07_RAPA_NUI/R3_Hodges_Rapa_Nui_1775.webp\" alt=\"Una mirada desde 1775\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>La imagen conserva tanto un paisaje de Rapa Nui como la mirada europea que intentó representarlo.</em>\n</figcaption>\n</figure>\n<p>Esta isla fue dibujada por ojos llegados desde otro océano. La imagen conserva tanto un paisaje de Rapa Nui como la mirada europea que intentó comprenderlo y representarlo.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> William Hodges · 1775 · Dominio público<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Hodges_easter-island.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Rapa Nui / Polinesia",
+          "sourceFile": "R3_Hodges_Rapa_Nui_1775.txt"
+        }
+      },
+      "_id": "VLV3kojOxQuBBKLt",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831127,
+        "modifiedTime": 1794181831142,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.VLV3kojOxQuBBKLt"
+    },
+    {
+      "name": "Aónikenk",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Aónikenk</h1>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-heading",
+          "culture": "Aónikenk"
+        }
+      },
+      "_id": "pxCkuNRKKYnNzqQC",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831127,
+        "modifiedTime": 1794181831142,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.pxCkuNRKKYnNzqQC"
+    },
+    {
+      "name": "Guanaco y estepa",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Guanaco_in_the_Patagonian_Steppe.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/08_AONIKENK/AO1_Guanaco_Estepa.webp\" alt=\"Guanaco y estepa\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>La estepa se vuelve una red de señales para quien sabe leer animales, agua y terreno.</em>\n</figcaption>\n</figure>\n<p>El guanaco atraviesa la estepa como parte de un territorio de grandes distancias. Seguir animales, encontrar agua y reconocer cambios en el terreno convierte el paisaje abierto en una red de señales para quien sabe leerla.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> ThartmannWiki · 2013 · CC BY-SA 4.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Guanaco_in_the_Patagonian_Steppe.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Aónikenk",
+          "sourceFile": "AO1_Guanaco_Estepa.txt"
+        }
+      },
+      "_id": "c2FcXuygj11DehYQ",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831129,
+        "modifiedTime": 1794181831143,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.c2FcXuygj11DehYQ"
+    },
+    {
+      "name": "Wáki y el puma",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:W%C3%A1ki-killing-a-Puma.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/08_AONIKENK/AO2_Waki_Puma.webp\" alt=\"Wáki y el puma\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>La caza aparece aquí convertida en relato visual por una mirada decimonónica.</em>\n</figcaption>\n</figure>\n<p>La escena representa un encuentro entre cazador y puma convertido en relato visual. Conviene leerla como testimonio de una mirada decimonónica sobre la vida aónikenk, no como una ventana transparente hacia siglos anteriores.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> George Chaworth Musters · 1870–1871 · Dominio público<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:W%C3%A1ki-killing-a-Puma.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Aónikenk",
+          "sourceFile": "AO2_Waki_Puma.txt"
+        }
+      },
+      "_id": "SIrV63LW9CK5Mky9",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831130,
+        "modifiedTime": 1794181831143,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.SIrV63LW9CK5Mky9"
+    },
+    {
+      "name": "Toldería de Kankel",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Tolder%C3%ADa_del_Cacique_Tehuelche_Kankel,_con_la_bandera_argentina_flameando.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/08_AONIKENK/AO3_Tolderia_Kankel.webp\" alt=\"Toldería de Kankel\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>Viviendas, personas y objetos transforman la estepa abierta en un lugar habitado.</em>\n</figcaption>\n</figure>\n<p>Viviendas, personas y objetos transforman la estepa en un lugar habitado. La bandera visible pertenece al momento histórico de la fotografía y recuerda que este documento registra también el avance de nuevas fronteras políticas sobre Patagonia.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Autor desconocido · ca. 1870–1880 · Dominio público<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Tolder%C3%ADa_del_Cacique_Tehuelche_Kankel,_con_la_bandera_argentina_flameando.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Aónikenk",
+          "sourceFile": "AO3_Tolderia_Kankel.txt"
+        }
+      },
+      "_id": "8Nmv6HFIkNhxm4Ga",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831131,
+        "modifiedTime": 1794181831143,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.8Nmv6HFIkNhxm4Ga"
+    },
+    {
+      "name": "Kawésqar",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Kawésqar</h1>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-heading",
+          "culture": "Kawésqar"
+        }
+      },
+      "_id": "UrAXighBXGD9lLM6",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831132,
+        "modifiedTime": 1794181831143,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.UrAXighBXGD9lLM6"
+    },
+    {
+      "name": "Maritorio",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Alacalufes_NR_Magallanes_Chile_Dec_2018_Ale_Gallo.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/09_KAWESQAR/K1_Maritorio_Kawesqar.webp\" alt=\"Maritorio\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>Canales, islas, montañas y lluvia forman un territorio que se conoce navegándolo.</em>\n</figcaption>\n</figure>\n<p>Aquí la tierra aparece fragmentada entre canales, islas, montañas y lluvias. Navegar no significa abandonar el territorio: para quienes viven entre estos canales, el mar forma parte de él.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Alejandra Javiera Gallo · 2018 · CC BY-SA 4.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Alacalufes_NR_Magallanes_Chile_Dec_2018_Ale_Gallo.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Kawésqar",
+          "sourceFile": "K1_Maritorio_Kawesqar.txt"
+        }
+      },
+      "_id": "KmZO0IdrAF62HpzF",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831132,
+        "modifiedTime": 1794181831144,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.KmZO0IdrAF62HpzF"
+    },
+    {
+      "name": "Navegar",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Grupo_kaweshkar_navegando_en_una_dalca_1895.png\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/09_KAWESQAR/K2_Kawesqar_Navegando.webp\" alt=\"Navegar\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>La embarcación reúne personas, herramientas y conocimiento en un espacio mínimo rodeado de agua.</em>\n</figcaption>\n</figure>\n<p>La embarcación reúne personas, herramientas y conocimiento en un espacio mínimo rodeado de agua. Corrientes, costas, viento y lugares de desembarco forman una geografía que se conoce moviéndose a través de ella.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Ing. Bauer · 1895 · Dominio público<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Grupo_kaweshkar_navegando_en_una_dalca_1895.png\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Kawésqar",
+          "sourceFile": "K2_Kawesqar_Navegando.txt"
+        }
+      },
+      "_id": "Iq3D9AG6TpxNcXZg",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831133,
+        "modifiedTime": 1794181831144,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.Iq3D9AG6TpxNcXZg"
+    },
+    {
+      "name": "Canoa",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<figure style=\"margin:0 0 1rem 0\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Canoa_Kaw%C3%A9sqar_MNHN_1.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">\n<img src=\"modules/hiperaustralis-rituales/assets/culturas/09_KAWESQAR/K3_Canoa_Kawesqar_Museo.webp\" alt=\"Canoa\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\">\n</a>\n<figcaption style=\"text-align:center;margin-top:.35rem\">\n<em>Una embarcación pequeña concentra tecnología, materiales y conocimiento de un territorio de canales.</em>\n</figcaption>\n</figure>\n<p>La canoa concentra decisiones sobre madera, ligaduras, forma y estabilidad hechas para moverse por un maritorio fragmentado. Su importancia no está solo en el objeto: cobra sentido dentro de las rutas, desembarcos y saberes que permiten usarlo.</p>\n<hr>\n<p style=\"font-size:.85em\"><strong>Crédito:</strong> Gmagno · 2016 · CC BY-SA 3.0<br>\n<strong>Fuente:</strong> <a href=\"https://commons.wikimedia.org/wiki/File:Canoa_Kaw%C3%A9sqar_MNHN_1.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir fuente y licencia</a></p>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Kawésqar",
+          "sourceFile": "K3_Canoa_Kawesqar_Museo.txt"
+        }
+      },
+      "_id": "5cd9ioeRApMMKuaN",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181831135,
+        "modifiedTime": 1794181831144,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.5cd9ioeRApMMKuaN"
+    },
+    {
+      "name": "Turianos",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-cultura\">\n<p>Esta entrada registra cuatro representaciones visuales aprobadas de los Turianos, organizadas por oficio: cantor o tamborilero, viajero, sabio pregonero y guerrero de lanza. La documentación incorporada en esta versión es visual; no añade afirmaciones sobre organización social, prácticas rituales ni costumbres que no estén respaldadas por una fuente específica.</p>\n<figure style=\"margin:1rem 0\"><img src=\"modules/hiperaustralis-compendios/assets/turianos/01_Turiano_Cantor_TOKEN_512.png\" alt=\"Cantor / tamborilero\" style=\"display:block;max-width:320px;width:100%;height:auto;margin:0 auto\"><figcaption style=\"text-align:center\"><strong>Cantor / tamborilero</strong></figcaption></figure>\n<figure style=\"margin:1rem 0\"><img src=\"modules/hiperaustralis-compendios/assets/turianos/02_Turiano_Viajero_TOKEN_512.png\" alt=\"Viajero\" style=\"display:block;max-width:320px;width:100%;height:auto;margin:0 auto\"><figcaption style=\"text-align:center\"><strong>Viajero</strong></figcaption></figure>\n<figure style=\"margin:1rem 0\"><img src=\"modules/hiperaustralis-compendios/assets/turianos/03_Turiano_Sabio_Pregonero_TOKEN_512.png\" alt=\"Sabio pregonero\" style=\"display:block;max-width:320px;width:100%;height:auto;margin:0 auto\"><figcaption style=\"text-align:center\"><strong>Sabio pregonero</strong></figcaption></figure>\n<figure style=\"margin:1rem 0\"><img src=\"modules/hiperaustralis-compendios/assets/turianos/04_Turiano_Guerrero_Lanza_TOKEN_512.png\" alt=\"Guerrero de lanza\" style=\"display:block;max-width:320px;width:100%;height:auto;margin:0 auto\"><figcaption style=\"text-align:center\"><strong>Guerrero de lanza</strong></figcaption></figure>\n</section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "cultura-entry",
+          "culture": "Turianos",
+          "sourceFile": "TURIANOS_CUATRO_OFICIOS_APROBADOS_v02",
+          "status": "visual-source-only"
+        }
+      },
+      "_id": "ME6dfcxG53a8Odja",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 1000,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794370000000,
+        "modifiedTime": 1794370000000,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!48YG3G7eaXO96CyE.ME6dfcxG53a8Odja"
+    }
+  ],
+  "flags": {
+    "hiperaustralis-journals": {
+      "seedId": "journal-culturas-banco-v1",
+      "version": "1",
+      "category": "culturas",
+      "images": 27,
+      "cultures": 9,
+      "source": "HIPERAUSTRALIS_CULTURAS_WEBP_DESCRIPCIONES_v1"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "_id": "48YG3G7eaXO96CyE",
+  "categories": [],
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791640875991,
+    "modifiedTime": 1791755822019,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!journal!48YG3G7eaXO96CyE"
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Mara patagónica",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-052_Dolichotis_patagonum.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Roedor patagónico de patas largas, orejas prominentes y grupa clara. Recuerda superficialmente a una liebre, pero pertenece a un linaje distinto.",
+      "en_escena": "Dos animales pardos cruzan el espacio abierto con zancadas rápidas. Se detienen erguidos un instante y vuelven a correr entre los arbustos bajos.",
+      "bioma": "Patagonia austral · estepa oriental",
+      "cientifico": "Dolichotis patagonum"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-052",
+      "version": "0.4.76-source-2026-10-15",
+      "bioma": "Patagonia austral · estepa oriental",
+      "cientifico": "Dolichotis patagonum",
+      "origen": "HIPERAUSTRALIS_FAUNA_FAU001_052_ICONOS_Y_DESCRIP_FOUNDRY(1).zip"
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "Ns2E8Uvsz8cPKJVt",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1792627924061,
+    "modifiedTime": 1793380551590,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Ns2E8Uvsz8cPKJVt"
+}

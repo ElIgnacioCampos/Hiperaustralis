@@ -1,0 +1,68 @@
+{
+  "name": "Titicaca",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/biomas/iconos/BIO-001.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "bioma",
+      "codigo": "BIO-001",
+      "descripcion": "El lago ocupa el horizonte, y el viento altera su superficie con rapidez. Entre extensiones de agua abierta aparecen orillas bajas, totorales y pasos estrechos. La distancia engaña: una travesía aparentemente corta obliga a reconocer el canal adecuado, la dirección del viento y los lugares donde detenerse. Las comunidades ribereñas conocen recorridos que la vista sola no revela.",
+      "en_escena": "Un paso entre totorales se abre en dos brazos, mientras la luz cae y el viento cambia. ¿Continuar, buscar guía, esperar o regresar a una orilla conocida?",
+      "bioma": "Altiplano lacustre",
+      "cientifico": "Navegar un canal entre totorales",
+      "apartado": "Biomas"
+    },
+    "template": "HipBiomaTpl00001",
+    "templateSystemUniqueVersion": 201003,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "6.0.5"
+    },
+    "meliaz-bridge": {
+      "kind": "bioma"
+    },
+    "hiperaustralis-bioma-item": {
+      "seedId": "BIO-001",
+      "version": "1"
+    }
+  },
+  "folder": "X86HyhTed01WxwTp",
+  "_id": "1L6xluNiPetnCBMh",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791756238411,
+    "modifiedTime": 1791756693176,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1L6xluNiPetnCBMh"
+}

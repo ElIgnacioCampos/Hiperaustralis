@@ -1,0 +1,69 @@
+{
+  "name": "Taruca",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-037_Hippocamelus_antisensis.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Ciervo andino de ambientes montanos secos, diferente del huemul austral. Los machos poseen astas simples y bifurcadas.",
+      "en_escena": "Un ciervo de ladera rocosa levanta la cabeza y se aparta con rapidez.",
+      "bioma": "Puna y cordillera árida",
+      "cientifico": "Hippocamelus antisensis"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-037",
+      "version": "0.4.76-source-2026-10-15",
+      "bioma": "Puna y cordillera árida",
+      "cientifico": "Hippocamelus antisensis",
+      "origen": "HIPERAUSTRALIS_FAUNA_FAU001_052_ICONOS_Y_DESCRIP_FOUNDRY(1).zip"
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "vqydUWKetUA4uMwD",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1792627921903,
+    "modifiedTime": 1793380561294,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!vqydUWKetUA4uMwD"
+}

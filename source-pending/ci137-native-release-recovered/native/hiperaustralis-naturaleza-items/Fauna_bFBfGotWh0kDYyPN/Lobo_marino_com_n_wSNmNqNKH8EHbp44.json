@@ -1,0 +1,75 @@
+{
+  "name": "Lobo marino común",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-025_Otaria_byronia.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Gran mamífero marino social que descansa en playas, islotes y roqueríos. Sus colonias son ruidosas y densas; una lobera puede oírse y olerse antes de ser visible entre la lluvia o la bruma.",
+      "en_escena": "Una colonia convierte un islote en un lugar lleno de cuerpos, gritos y movimiento; en niebla, el sonido puede preceder por mucho a la visión.",
+      "bioma": "Canales australes — Maritorio archipelágico",
+      "cientifico": "Otaria byronia (sin. O. flavescens)"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-025",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Canales australes — Maritorio archipelágico",
+      "cientifico": "Otaria byronia (sin. O. flavescens)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ejemplar_de_lobo_marino_sudamericano_(Otaria_flavescens)._Islotes_de_Pu%C3%B1ihuil._Isla_Grande_de_Chilo%C3%A9._Chile.jpg",
+      "peso_sugerido": 3,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/07_Canales_australes/FAU-025_Otaria_byronia_sin_O_flavescens.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "wSNmNqNKH8EHbp44",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754996535,
+    "modifiedTime": 1791755517917,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!wSNmNqNKH8EHbp44"
+}

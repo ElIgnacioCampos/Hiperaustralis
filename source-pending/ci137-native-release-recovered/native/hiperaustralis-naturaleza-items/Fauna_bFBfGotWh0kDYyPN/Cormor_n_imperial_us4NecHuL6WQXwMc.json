@@ -1,0 +1,75 @@
+{
+  "name": "Cormorán imperial",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-028_Leucocarbo_atriceps.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Ave marina negra y blanca que forma grandes colonias sobre rocas, islotes y acantilados. Se zambulle en busca de peces y sus lugares de nidificación pueden transformar por completo un promontorio aparentemente deshabitado.",
+      "en_escena": "Las colonias aportan ruido, olor y movimiento aéreo; desde lejos pueden hacer que una roca parezca cubierta por una masa negra y blanca.",
+      "bioma": "Canales australes — Maritorio archipelágico",
+      "cientifico": "Leucocarbo atriceps"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-028",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Canales australes — Maritorio archipelágico",
+      "cientifico": "Leucocarbo atriceps",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phalacrocorax_atriceps.jpg",
+      "peso_sugerido": 1,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/07_Canales_australes/FAU-028_Leucocarbo_atriceps.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "us4NecHuL6WQXwMc",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754997223,
+    "modifiedTime": 1791755520092,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!us4NecHuL6WQXwMc"
+}

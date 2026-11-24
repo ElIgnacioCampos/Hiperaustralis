@@ -1,0 +1,68 @@
+{
+  "name": "Umbral Polar",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/biomas/iconos/BIO-008.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "bioma",
+      "codigo": "BIO-008",
+      "descripcion": "La luz altera el relieve hasta confundir distancia, sombra y superficie. Una extensión blanca aparentemente continua puede esconder grietas y cambios de nivel. El avance exige comunicación, referencias compartidas y pausas para comprobar lo que el ojo no distingue. Aquí la extrañeza narrativa surge de la dificultad para leer el mundo, no de atribuirle voluntad hostil a la nieve.",
+      "en_escena": "El hielo muestra discontinuidades y el grupo debe decidir si cruza encordado, busca otro paso o renuncia a la dirección directa.",
+      "bioma": "Territorio liminal de hielo",
+      "cientifico": "Cruzar grietas glaciares con cuerdas",
+      "apartado": "Biomas"
+    },
+    "template": "HipBiomaTpl00001",
+    "templateSystemUniqueVersion": 201003,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "6.0.5"
+    },
+    "meliaz-bridge": {
+      "kind": "bioma"
+    },
+    "hiperaustralis-bioma-item": {
+      "seedId": "BIO-008",
+      "version": "1"
+    }
+  },
+  "folder": "X86HyhTed01WxwTp",
+  "_id": "PxPpVGJTu6Wgowg0",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791756240166,
+    "modifiedTime": 1791756698685,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!PxPpVGJTu6Wgowg0"
+}

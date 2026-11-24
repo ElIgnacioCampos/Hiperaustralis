@@ -1,0 +1,76 @@
+{
+  "name": "Oso andino · Jucumari",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-005_Tremarctos_ornatus.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Oso de pelaje oscuro con manchas claras variables alrededor del rostro y el pecho. Recorre bosques montanos y quebradas en busca de frutos y vegetación, y suele delatarse primero por ramas quebradas, huellas o plataformas construidas entre los árboles.",
+      "en_escena": "Conviene anunciarlo mediante rastros antes de mostrarlo: vegetación aplastada, cortezas marcadas o una silueta pesada cruzando entre la niebla.",
+      "bioma": "Paititi — Bosque nublado de la vertiente oriental",
+      "cientifico": "Tremarctos ornatus"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-005",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Paititi — Bosque nublado de la vertiente oriental",
+      "cientifico": "Tremarctos ornatus",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tremarctos_ornatus.jpg",
+      "documentaryPhotoPreserved": true,
+      "peso_sugerido": 4,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/02_Paititi/FAU-005_Tremarctos_ornatus.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "ht3BGgYN4Qpv6Jxh",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754992011,
+    "modifiedTime": 1793380556092,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ht3BGgYN4Qpv6Jxh"
+}

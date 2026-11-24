@@ -1,0 +1,967 @@
+{
+  "name": "Hiperaustralis · Bestiario sobrenatural",
+  "pages": [
+    {
+      "name": "00 · Índice",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Hiperaustralis · Bestiario sobrenatural</h1><p>Compendio jugable de habitantes extraordinarios. <strong>Escena primero; regla después.</strong></p><p>Las entradas no presuponen hostilidad. Peso se usa sólo cuando existe oposición significativa y puede variar entre encuentros.</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "sort": 0,
+      "flags": {
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-01",
+          "version": "0.5.13",
+          "code": null
+        }
+      },
+      "_id": "zWWk2zjDjbGXGyCQ",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1794177640490,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!p1Ditj5HvsgNiTrd.zWWk2zjDjbGXGyCQ"
+    },
+    {
+      "name": "HAB-001 · Quesintuu y Umantuu",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-001_Quesintuu_Umantuu.webp\" alt=\"Quesintuu y Umantuu\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Titicaca — Altiplano lacustre<br><strong>Tipo:</strong> Otros habitantes</p><p>Dos figuras femeninas pisciformes ligadas al lago y a su memoria. Su presencia pertenece al Titicaca: no es necesario convertirlas en una especie universal de «sirenas» para ponerlas en juego.</p><h3>En escena</h3><p>Pueden aparecer entre totorales, junto a una embarcación o bajo aguas transparentes donde nadie esperaba encontrar a una persona. Funcionan especialmente bien como encuentro, interlocución o misterio antes que como amenaza automática.</p><h3>En juego</h3><p>No presupongas hostilidad. Si una acción concreta las convierte en oposición corporal, asigna Peso a ese encuentro según la situación. Conversar, seguirlas, interpretar su aparición o rechazar una invitación pueden ser resoluciones tan importantes como combatir.</p><p><strong>Peso:</strong> Según encuentro</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-001",
+          "biome": "01_Titicaca",
+          "biomeLabel": "Titicaca — Altiplano lacustre",
+          "entityType": "Otros habitantes",
+          "sceneUse": "Pueden aparecer entre totorales, junto a una embarcación o bajo aguas transparentes donde nadie esperaba encontrar a una persona. Funcionan especialmente bien como encuentro, interlocución o misterio antes que como amenaza automática.",
+          "gameUse": "No presupongas hostilidad. Si una acción concreta las convierte en oposición corporal, asigna Peso a ese encuentro según la situación. Conversar, seguirlas, interpretar su aparición o rechazar una invitación pueden ser resoluciones tan importantes como combatir.",
+          "weight": "Según encuentro",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-001_Quesintuu_Umantuu.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-001",
+          "version": "0.5.13",
+          "code": "HAB-001"
+        }
+      },
+      "sort": 100000,
+      "_id": "dqJlaUV7wE432QSe",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1794177640742,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!p1Ditj5HvsgNiTrd.dqJlaUV7wE432QSe"
+    },
+    {
+      "name": "HAB-002 · Qatiqati",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-002_Qatiqati.webp\" alt=\"Qatiqati\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Titicaca — Altiplano lacustre<br><strong>Tipo:</strong> Otro habitante / aparición</p><p>Una cabeza humana que vuela durante la noche. Su aparición anuncia desgracia y vuelve extraño un trayecto conocido por poblados, orillas o totorales.</p><h3>En escena</h3><p>Puede divisarse primero como una forma imposible que cruza la oscuridad. Sólo al acercarse resulta evidente que aquello que vuela es una cabeza. Su presencia basta para transformar la escena aun cuando nunca ataque.</p><h3>En juego</h3><p>Úsalo como aparición, persecución o presagio. Si bloquea un paso, persigue a alguien o entra en oposición física, define el Peso de esa escena; no necesita un valor universal de especie.</p><p><strong>Peso:</strong> Según encuentro</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-002",
+          "biome": "01_Titicaca",
+          "biomeLabel": "Titicaca — Altiplano lacustre",
+          "entityType": "Otro habitante / aparición",
+          "sceneUse": "Puede divisarse primero como una forma imposible que cruza la oscuridad. Sólo al acercarse resulta evidente que aquello que vuela es una cabeza. Su presencia basta para transformar la escena aun cuando nunca ataque.",
+          "gameUse": "Úsalo como aparición, persecución o presagio. Si bloquea un paso, persigue a alguien o entra en oposición física, define el Peso de esa escena; no necesita un valor universal de especie.",
+          "weight": "Según encuentro",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-002_Qatiqati.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-002",
+          "version": "0.5.13",
+          "code": "HAB-002"
+        }
+      },
+      "sort": 200000,
+      "_id": "gbvMwsrEf0bV6h2z",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1794177640988,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!p1Ditj5HvsgNiTrd.gbvMwsrEf0bV6h2z"
+    },
+    {
+      "name": "HAB-003 · Katari",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-003_Katari.webp\" alt=\"Katari\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Titicaca — Altiplano lacustre<br><strong>Tipo:</strong> Otro habitante</p><p>Serpiente enorme vinculada al entorno acuático y los totorales. Su forma concreta puede variar con el relato local; no representa una única deidad panandina ni necesita una taxonomía cerrada.</p><h3>En escena</h3><p>Una embarcación se mueve sin viento, las totoras se abren en una dirección imposible o algo largo desplaza el agua bajo la superficie. En el canal de totoras, Katari ocupa el paso y mantiene a los viajeros fuera.</p><h3>En juego</h3><p>En el encuentro del canal de totoras usa <strong>Peso 4 — II · Excepcional</strong>. Es un valor de ese encuentro, no de toda aparición de Katari. Desviarlo, retroceder, cruzar por otra vía o comprender qué mantiene cerrado el paso son alternativas válidas.</p><p><strong>Peso:</strong> 4 — II · Excepcional</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-003",
+          "biome": "01_Titicaca",
+          "biomeLabel": "Titicaca — Altiplano lacustre",
+          "entityType": "Otro habitante",
+          "sceneUse": "Una embarcación se mueve sin viento, las totoras se abren en una dirección imposible o algo largo desplaza el agua bajo la superficie. En el canal de totoras, Katari ocupa el paso y mantiene a los viajeros fuera.",
+          "gameUse": "En el encuentro del canal de totoras usa <strong>Peso 4 — II · Excepcional</strong>. Es un valor de ese encuentro, no de toda aparición de Katari. Desviarlo, retroceder, cruzar por otra vía o comprender qué mantiene cerrado el paso son alternativas válidas.",
+          "weight": "4 — II · Excepcional",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-003_Katari.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-003",
+          "version": "0.5.13",
+          "code": "HAB-003"
+        }
+      },
+      "sort": 300000,
+      "_id": "raatgaNsJwtB88HG",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1793759768501,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!p1Ditj5HvsgNiTrd.raatgaNsJwtB88HG"
+    },
+    {
+      "name": "HAB-004 · Trülkewekufü",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-004_Trulkewekufu.webp\" alt=\"Trülkewekufü\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Ngulumapu — Bosque templado lluvioso<br><strong>Tipo:</strong> Otro habitante</p><p>Ser acuático cuya forma recuerda un cuero o una piel extendida, de contorno irregular y con pequeñas garras en el perímetro. Permanece asociado a aguas profundas o aparentemente tranquilas.</p><h3>En escena</h3><p>Primero puede confundirse con un cuero que flota o una forma inmóvil bajo el agua. La escena cambia cuando el borde se mueve, aparecen las garras o aquello que parecía inerte comienza a acercarse.</p><h3>En juego</h3><p>No tiene Peso fijo cerrado. Antes de asignarlo, determina qué quiere en esa escena, qué parte del agua controla y qué pueden hacer los Kona además de enfrentarlo: cambiar el cruce, atraerlo, reconocer el peligro o abandonar la orilla.</p><p><strong>Peso:</strong> Sin Peso fijo</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-004",
+          "biome": "03_Ngulumapu",
+          "biomeLabel": "Ngulumapu — Bosque templado lluvioso",
+          "entityType": "Otro habitante",
+          "sceneUse": "Primero puede confundirse con un cuero que flota o una forma inmóvil bajo el agua. La escena cambia cuando el borde se mueve, aparecen las garras o aquello que parecía inerte comienza a acercarse.",
+          "gameUse": "No tiene Peso fijo cerrado. Antes de asignarlo, determina qué quiere en esa escena, qué parte del agua controla y qué pueden hacer los Kona además de enfrentarlo: cambiar el cruce, atraerlo, reconocer el peligro o abandonar la orilla.",
+          "weight": "Sin Peso fijo",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-004_Trulkewekufu.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-004",
+          "version": "0.5.13",
+          "code": "HAB-004"
+        }
+      },
+      "sort": 400000,
+      "_id": "7cZ7huVtdCOC68O8",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1793759768742,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!p1Ditj5HvsgNiTrd.7cZ7huVtdCOC68O8"
+    },
+    {
+      "name": "HAB-005 · Ngürüfilu",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-005_Ngurufilu.webp\" alt=\"Ngürüfilu\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Ngulumapu — Bosque templado lluvioso<br><strong>Tipo:</strong> Otro habitante</p><p>Ser de rasgos vulpinos y cuerpo serpentiforme ligado a remolinos y al arrastre hacia el fondo. Su silueta y conducta lo distinguen del Trülkewekufü.</p><h3>En escena</h3><p>Un río comienza a girar donde la corriente debería seguir recta; dentro del remolino aparece por un instante una forma larga con cabeza de zorro y vuelve a hundirse. Puede disputar una persona, una embarcación o el paso por el agua.</p><h3>En juego</h3><p>No tiene Peso fijo cerrado. El remolino puede funcionar como Obstáculo y el propio Ngürüfilu como oposición corporal si la acción lo exige. Define ambos sólo cuando produzcan decisiones distintas en mesa.</p><p><strong>Peso:</strong> Sin Peso fijo</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-005",
+          "biome": "03_Ngulumapu",
+          "biomeLabel": "Ngulumapu — Bosque templado lluvioso",
+          "entityType": "Otro habitante",
+          "sceneUse": "Un río comienza a girar donde la corriente debería seguir recta; dentro del remolino aparece por un instante una forma larga con cabeza de zorro y vuelve a hundirse. Puede disputar una persona, una embarcación o el paso por el agua.",
+          "gameUse": "No tiene Peso fijo cerrado. El remolino puede funcionar como Obstáculo y el propio Ngürüfilu como oposición corporal si la acción lo exige. Define ambos sólo cuando produzcan decisiones distintas en mesa.",
+          "weight": "Sin Peso fijo",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-005_Ngurufilu.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-005",
+          "version": "0.5.13",
+          "code": "HAB-005"
+        }
+      },
+      "sort": 500000,
+      "_id": "dHVNPrbgdY5VB1TP",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1794177641712,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!p1Ditj5HvsgNiTrd.dHVNPrbgdY5VB1TP"
+    },
+    {
+      "name": "HAB-006 · Kawa Kawa",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-006_Kawa_Kawa.webp\" alt=\"Kawa Kawa\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Pewenmapu — Bosque de pewen y cordillera volcánica<br><strong>Tipo:</strong> Otro habitante</p><p>Gran ser serpentiforme o híbrido del monte y la cordillera. Las versiones conservan anatomías distintas; algunas permiten una cabeza equina o bovina y rasgos de crin, pero no conviene fijarlos como zoología universal.</p><h3>En escena</h3><p>Algo demasiado grande atraviesa el bosque sin seguir el paso de un animal conocido. Ramas quebradas, desplazamientos entre pewenes o una forma larga cruzando una ladera pueden anunciarlo antes de que se muestre por completo.</p><h3>En juego</h3><p>Define primero la manifestación local, su intención y la relación con el lugar. Sólo después asigna Peso si existe oposición significativa. La variación de la criatura forma parte del encuentro y no debe resolverse con una ficha racial única.</p><p><strong>Peso:</strong> Según encuentro</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-006",
+          "biome": "04_Pewenmapu",
+          "biomeLabel": "Pewenmapu — Bosque de pewen y cordillera volcánica",
+          "entityType": "Otro habitante",
+          "sceneUse": "Algo demasiado grande atraviesa el bosque sin seguir el paso de un animal conocido. Ramas quebradas, desplazamientos entre pewenes o una forma larga cruzando una ladera pueden anunciarlo antes de que se muestre por completo.",
+          "gameUse": "Define primero la manifestación local, su intención y la relación con el lugar. Sólo después asigna Peso si existe oposición significativa. La variación de la criatura forma parte del encuentro y no debe resolverse con una ficha racial única.",
+          "weight": "Según encuentro",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-006_Kawa_Kawa.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-006",
+          "version": "0.5.13",
+          "code": "HAB-006"
+        }
+      },
+      "sort": 600000,
+      "_id": "HRCn9bg8DB5jHPbX",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1794177641940,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!p1Ditj5HvsgNiTrd.HRCn9bg8DB5jHPbX"
+    },
+    {
+      "name": "HAB-007 · Chélep",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-007_Chelep.webp\" alt=\"Chélep\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Patagonia austral — Estepa, bosque subantártico y campos de hielo<br><strong>Tipo:</strong> Otro habitante / pueblo legendario</p><p>Pequeños habitantes velludos asociados a cuevas o viviendas de piedra, con lengua y costumbres propias. Hiperaustralis no determina de antemano si son otro pueblo humano, habitantes extraordinarios o memoria transformada de encuentros antiguos.</p><h3>En escena</h3><p>Pueden observar a los viajeros antes de dejarse ver, abandonar rastros alrededor de una cueva o responder desde detrás de las piedras en una lengua desconocida. El báculo y el abrigo de piel ayudan a reconocer su presencia sin volverlos monstruos.</p><h3>En juego</h3><p>No uses un Peso racial universal. Un individuo sólo necesita Peso si se opone de forma concreta; varios Chélep pueden funcionar como Piño cuando realmente actúan coordinados. Hablar, intercambiar, seguir señales o retirarse deben seguir siendo opciones de escena.</p><p><strong>Peso:</strong> Según encuentro / Piño si corresponde</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-007",
+          "biome": "05_Patagonia_austral",
+          "biomeLabel": "Patagonia austral — Estepa, bosque subantártico y campos de hielo",
+          "entityType": "Otro habitante / pueblo legendario",
+          "sceneUse": "Pueden observar a los viajeros antes de dejarse ver, abandonar rastros alrededor de una cueva o responder desde detrás de las piedras en una lengua desconocida. El báculo y el abrigo de piel ayudan a reconocer su presencia sin volverlos monstruos.",
+          "gameUse": "No uses un Peso racial universal. Un individuo sólo necesita Peso si se opone de forma concreta; varios Chélep pueden funcionar como Piño cuando realmente actúan coordinados. Hablar, intercambiar, seguir señales o retirarse deben seguir siendo opciones de escena.",
+          "weight": "Según encuentro / Piño si corresponde",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-007_Chelep.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-007",
+          "version": "0.5.13",
+          "code": "HAB-007"
+        }
+      },
+      "sort": 700000,
+      "_id": "w1DYxAh9oi0pb9RF",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1793759769411,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!p1Ditj5HvsgNiTrd.w1DYxAh9oi0pb9RF"
+    },
+    {
+      "name": "HAB-008 · Milodón relicto",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-008_Milodon_Relicto.webp\" alt=\"Milodón relicto\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Patagonia austral — Estepa, bosque subantártico y campos de hielo<br><strong>Tipo:</strong> Fauna extraordinaria</p><p>Un gran perezoso terrestre de otro tiempo que todavía sobrevive en sectores apartados del extremo austral. En Hiperaustralis es fauna relicta: lo prehistórico irrumpe como animal vivo, no como mito Aónikenk disfrazado.</p><h3>En escena</h3><p>Huellas enormes aparecen sobre barro reciente, la vegetación ha sido arrancada a una altura improbable o una masa pesada ocupa la entrada de un refugio. En el refugio, el animal pretende conservar ese lugar y hacer retroceder a los viajeros.</p><h3>En juego</h3><p>Para el encuentro del refugio usa <strong>Peso 4 — II · Excepcional</strong>. Es un valor de esa escena, no de todos los milodones. El conflicto puede resolverse haciendo retroceder al animal, desviándolo, abandonando el refugio o modificando las condiciones del encuentro.</p><p><strong>Peso:</strong> 4 — II · Excepcional</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-008",
+          "biome": "05_Patagonia_austral",
+          "biomeLabel": "Patagonia austral — Estepa, bosque subantártico y campos de hielo",
+          "entityType": "Fauna extraordinaria",
+          "sceneUse": "Huellas enormes aparecen sobre barro reciente, la vegetación ha sido arrancada a una altura improbable o una masa pesada ocupa la entrada de un refugio. En el refugio, el animal pretende conservar ese lugar y hacer retroceder a los viajeros.",
+          "gameUse": "Para el encuentro del refugio usa <strong>Peso 4 — II · Excepcional</strong>. Es un valor de esa escena, no de todos los milodones. El conflicto puede resolverse haciendo retroceder al animal, desviándolo, abandonando el refugio o modificando las condiciones del encuentro.",
+          "weight": "4 — II · Excepcional",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-008_Milodon_Relicto.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-008",
+          "version": "0.5.13",
+          "code": "HAB-008"
+        }
+      },
+      "sort": 800000,
+      "_id": "dqPsw5FM04olMM2O",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1793759769631,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!p1Ditj5HvsgNiTrd.dqPsw5FM04olMM2O"
+    }
+  ],
+  "flags": {
+    "hiperaustralis-bestiario-journal": {
+      "seedId": "journal-bestiario-sobrenatural-v1",
+      "version": "0.5.13"
+    }
+  },
+  "_id": "p1Ditj5HvsgNiTrd",
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1793495406911,
+    "modifiedTime": 1793759767421,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "page_ids": [
+    "zWWk2zjDjbGXGyCQ",
+    "dqJlaUV7wE432QSe",
+    "gbvMwsrEf0bV6h2z",
+    "raatgaNsJwtB88HG",
+    "7cZ7huVtdCOC68O8",
+    "dHVNPrbgdY5VB1TP",
+    "HRCn9bg8DB5jHPbX",
+    "w1DYxAh9oi0pb9RF",
+    "dqPsw5FM04olMM2O"
+  ],
+  "pages_expanded": [
+    {
+      "name": "00 · Índice",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Hiperaustralis · Bestiario sobrenatural</h1><p>Compendio jugable de habitantes extraordinarios. <strong>Escena primero; regla después.</strong></p><p>Las entradas no presuponen hostilidad. Peso se usa sólo cuando existe oposición significativa y puede variar entre encuentros.</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "sort": 0,
+      "flags": {
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-01",
+          "version": "0.5.13",
+          "code": null
+        }
+      },
+      "_id": "zWWk2zjDjbGXGyCQ",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1794177640490,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "HAB-001 · Quesintuu y Umantuu",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-001_Quesintuu_Umantuu.webp\" alt=\"Quesintuu y Umantuu\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Titicaca — Altiplano lacustre<br><strong>Tipo:</strong> Otros habitantes</p><p>Dos figuras femeninas pisciformes ligadas al lago y a su memoria. Su presencia pertenece al Titicaca: no es necesario convertirlas en una especie universal de «sirenas» para ponerlas en juego.</p><h3>En escena</h3><p>Pueden aparecer entre totorales, junto a una embarcación o bajo aguas transparentes donde nadie esperaba encontrar a una persona. Funcionan especialmente bien como encuentro, interlocución o misterio antes que como amenaza automática.</p><h3>En juego</h3><p>No presupongas hostilidad. Si una acción concreta las convierte en oposición corporal, asigna Peso a ese encuentro según la situación. Conversar, seguirlas, interpretar su aparición o rechazar una invitación pueden ser resoluciones tan importantes como combatir.</p><p><strong>Peso:</strong> Según encuentro</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-001",
+          "biome": "01_Titicaca",
+          "biomeLabel": "Titicaca — Altiplano lacustre",
+          "entityType": "Otros habitantes",
+          "sceneUse": "Pueden aparecer entre totorales, junto a una embarcación o bajo aguas transparentes donde nadie esperaba encontrar a una persona. Funcionan especialmente bien como encuentro, interlocución o misterio antes que como amenaza automática.",
+          "gameUse": "No presupongas hostilidad. Si una acción concreta las convierte en oposición corporal, asigna Peso a ese encuentro según la situación. Conversar, seguirlas, interpretar su aparición o rechazar una invitación pueden ser resoluciones tan importantes como combatir.",
+          "weight": "Según encuentro",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-001_Quesintuu_Umantuu.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-001",
+          "version": "0.5.13",
+          "code": "HAB-001"
+        }
+      },
+      "sort": 100000,
+      "_id": "dqJlaUV7wE432QSe",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1794177640742,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "HAB-002 · Qatiqati",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-002_Qatiqati.webp\" alt=\"Qatiqati\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Titicaca — Altiplano lacustre<br><strong>Tipo:</strong> Otro habitante / aparición</p><p>Una cabeza humana que vuela durante la noche. Su aparición anuncia desgracia y vuelve extraño un trayecto conocido por poblados, orillas o totorales.</p><h3>En escena</h3><p>Puede divisarse primero como una forma imposible que cruza la oscuridad. Sólo al acercarse resulta evidente que aquello que vuela es una cabeza. Su presencia basta para transformar la escena aun cuando nunca ataque.</p><h3>En juego</h3><p>Úsalo como aparición, persecución o presagio. Si bloquea un paso, persigue a alguien o entra en oposición física, define el Peso de esa escena; no necesita un valor universal de especie.</p><p><strong>Peso:</strong> Según encuentro</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-002",
+          "biome": "01_Titicaca",
+          "biomeLabel": "Titicaca — Altiplano lacustre",
+          "entityType": "Otro habitante / aparición",
+          "sceneUse": "Puede divisarse primero como una forma imposible que cruza la oscuridad. Sólo al acercarse resulta evidente que aquello que vuela es una cabeza. Su presencia basta para transformar la escena aun cuando nunca ataque.",
+          "gameUse": "Úsalo como aparición, persecución o presagio. Si bloquea un paso, persigue a alguien o entra en oposición física, define el Peso de esa escena; no necesita un valor universal de especie.",
+          "weight": "Según encuentro",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-002_Qatiqati.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-002",
+          "version": "0.5.13",
+          "code": "HAB-002"
+        }
+      },
+      "sort": 200000,
+      "_id": "gbvMwsrEf0bV6h2z",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1794177640988,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "HAB-003 · Katari",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-003_Katari.webp\" alt=\"Katari\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Titicaca — Altiplano lacustre<br><strong>Tipo:</strong> Otro habitante</p><p>Serpiente enorme vinculada al entorno acuático y los totorales. Su forma concreta puede variar con el relato local; no representa una única deidad panandina ni necesita una taxonomía cerrada.</p><h3>En escena</h3><p>Una embarcación se mueve sin viento, las totoras se abren en una dirección imposible o algo largo desplaza el agua bajo la superficie. En el canal de totoras, Katari ocupa el paso y mantiene a los viajeros fuera.</p><h3>En juego</h3><p>En el encuentro del canal de totoras usa <strong>Peso 4 — II · Excepcional</strong>. Es un valor de ese encuentro, no de toda aparición de Katari. Desviarlo, retroceder, cruzar por otra vía o comprender qué mantiene cerrado el paso son alternativas válidas.</p><p><strong>Peso:</strong> 4 — II · Excepcional</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-003",
+          "biome": "01_Titicaca",
+          "biomeLabel": "Titicaca — Altiplano lacustre",
+          "entityType": "Otro habitante",
+          "sceneUse": "Una embarcación se mueve sin viento, las totoras se abren en una dirección imposible o algo largo desplaza el agua bajo la superficie. En el canal de totoras, Katari ocupa el paso y mantiene a los viajeros fuera.",
+          "gameUse": "En el encuentro del canal de totoras usa <strong>Peso 4 — II · Excepcional</strong>. Es un valor de ese encuentro, no de toda aparición de Katari. Desviarlo, retroceder, cruzar por otra vía o comprender qué mantiene cerrado el paso son alternativas válidas.",
+          "weight": "4 — II · Excepcional",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-003_Katari.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-003",
+          "version": "0.5.13",
+          "code": "HAB-003"
+        }
+      },
+      "sort": 300000,
+      "_id": "raatgaNsJwtB88HG",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1793759768501,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "HAB-004 · Trülkewekufü",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-004_Trulkewekufu.webp\" alt=\"Trülkewekufü\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Ngulumapu — Bosque templado lluvioso<br><strong>Tipo:</strong> Otro habitante</p><p>Ser acuático cuya forma recuerda un cuero o una piel extendida, de contorno irregular y con pequeñas garras en el perímetro. Permanece asociado a aguas profundas o aparentemente tranquilas.</p><h3>En escena</h3><p>Primero puede confundirse con un cuero que flota o una forma inmóvil bajo el agua. La escena cambia cuando el borde se mueve, aparecen las garras o aquello que parecía inerte comienza a acercarse.</p><h3>En juego</h3><p>No tiene Peso fijo cerrado. Antes de asignarlo, determina qué quiere en esa escena, qué parte del agua controla y qué pueden hacer los Kona además de enfrentarlo: cambiar el cruce, atraerlo, reconocer el peligro o abandonar la orilla.</p><p><strong>Peso:</strong> Sin Peso fijo</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-004",
+          "biome": "03_Ngulumapu",
+          "biomeLabel": "Ngulumapu — Bosque templado lluvioso",
+          "entityType": "Otro habitante",
+          "sceneUse": "Primero puede confundirse con un cuero que flota o una forma inmóvil bajo el agua. La escena cambia cuando el borde se mueve, aparecen las garras o aquello que parecía inerte comienza a acercarse.",
+          "gameUse": "No tiene Peso fijo cerrado. Antes de asignarlo, determina qué quiere en esa escena, qué parte del agua controla y qué pueden hacer los Kona además de enfrentarlo: cambiar el cruce, atraerlo, reconocer el peligro o abandonar la orilla.",
+          "weight": "Sin Peso fijo",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-004_Trulkewekufu.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-004",
+          "version": "0.5.13",
+          "code": "HAB-004"
+        }
+      },
+      "sort": 400000,
+      "_id": "7cZ7huVtdCOC68O8",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1793759768742,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "HAB-005 · Ngürüfilu",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-005_Ngurufilu.webp\" alt=\"Ngürüfilu\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Ngulumapu — Bosque templado lluvioso<br><strong>Tipo:</strong> Otro habitante</p><p>Ser de rasgos vulpinos y cuerpo serpentiforme ligado a remolinos y al arrastre hacia el fondo. Su silueta y conducta lo distinguen del Trülkewekufü.</p><h3>En escena</h3><p>Un río comienza a girar donde la corriente debería seguir recta; dentro del remolino aparece por un instante una forma larga con cabeza de zorro y vuelve a hundirse. Puede disputar una persona, una embarcación o el paso por el agua.</p><h3>En juego</h3><p>No tiene Peso fijo cerrado. El remolino puede funcionar como Obstáculo y el propio Ngürüfilu como oposición corporal si la acción lo exige. Define ambos sólo cuando produzcan decisiones distintas en mesa.</p><p><strong>Peso:</strong> Sin Peso fijo</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-005",
+          "biome": "03_Ngulumapu",
+          "biomeLabel": "Ngulumapu — Bosque templado lluvioso",
+          "entityType": "Otro habitante",
+          "sceneUse": "Un río comienza a girar donde la corriente debería seguir recta; dentro del remolino aparece por un instante una forma larga con cabeza de zorro y vuelve a hundirse. Puede disputar una persona, una embarcación o el paso por el agua.",
+          "gameUse": "No tiene Peso fijo cerrado. El remolino puede funcionar como Obstáculo y el propio Ngürüfilu como oposición corporal si la acción lo exige. Define ambos sólo cuando produzcan decisiones distintas en mesa.",
+          "weight": "Sin Peso fijo",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-005_Ngurufilu.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-005",
+          "version": "0.5.13",
+          "code": "HAB-005"
+        }
+      },
+      "sort": 500000,
+      "_id": "dHVNPrbgdY5VB1TP",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1794177641712,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "HAB-006 · Kawa Kawa",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-006_Kawa_Kawa.webp\" alt=\"Kawa Kawa\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Pewenmapu — Bosque de pewen y cordillera volcánica<br><strong>Tipo:</strong> Otro habitante</p><p>Gran ser serpentiforme o híbrido del monte y la cordillera. Las versiones conservan anatomías distintas; algunas permiten una cabeza equina o bovina y rasgos de crin, pero no conviene fijarlos como zoología universal.</p><h3>En escena</h3><p>Algo demasiado grande atraviesa el bosque sin seguir el paso de un animal conocido. Ramas quebradas, desplazamientos entre pewenes o una forma larga cruzando una ladera pueden anunciarlo antes de que se muestre por completo.</p><h3>En juego</h3><p>Define primero la manifestación local, su intención y la relación con el lugar. Sólo después asigna Peso si existe oposición significativa. La variación de la criatura forma parte del encuentro y no debe resolverse con una ficha racial única.</p><p><strong>Peso:</strong> Según encuentro</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-006",
+          "biome": "04_Pewenmapu",
+          "biomeLabel": "Pewenmapu — Bosque de pewen y cordillera volcánica",
+          "entityType": "Otro habitante",
+          "sceneUse": "Algo demasiado grande atraviesa el bosque sin seguir el paso de un animal conocido. Ramas quebradas, desplazamientos entre pewenes o una forma larga cruzando una ladera pueden anunciarlo antes de que se muestre por completo.",
+          "gameUse": "Define primero la manifestación local, su intención y la relación con el lugar. Sólo después asigna Peso si existe oposición significativa. La variación de la criatura forma parte del encuentro y no debe resolverse con una ficha racial única.",
+          "weight": "Según encuentro",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-006_Kawa_Kawa.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-006",
+          "version": "0.5.13",
+          "code": "HAB-006"
+        }
+      },
+      "sort": 600000,
+      "_id": "HRCn9bg8DB5jHPbX",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1794177641940,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "HAB-007 · Chélep",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-007_Chelep.webp\" alt=\"Chélep\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Patagonia austral — Estepa, bosque subantártico y campos de hielo<br><strong>Tipo:</strong> Otro habitante / pueblo legendario</p><p>Pequeños habitantes velludos asociados a cuevas o viviendas de piedra, con lengua y costumbres propias. Hiperaustralis no determina de antemano si son otro pueblo humano, habitantes extraordinarios o memoria transformada de encuentros antiguos.</p><h3>En escena</h3><p>Pueden observar a los viajeros antes de dejarse ver, abandonar rastros alrededor de una cueva o responder desde detrás de las piedras en una lengua desconocida. El báculo y el abrigo de piel ayudan a reconocer su presencia sin volverlos monstruos.</p><h3>En juego</h3><p>No uses un Peso racial universal. Un individuo sólo necesita Peso si se opone de forma concreta; varios Chélep pueden funcionar como Piño cuando realmente actúan coordinados. Hablar, intercambiar, seguir señales o retirarse deben seguir siendo opciones de escena.</p><p><strong>Peso:</strong> Según encuentro / Piño si corresponde</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-007",
+          "biome": "05_Patagonia_austral",
+          "biomeLabel": "Patagonia austral — Estepa, bosque subantártico y campos de hielo",
+          "entityType": "Otro habitante / pueblo legendario",
+          "sceneUse": "Pueden observar a los viajeros antes de dejarse ver, abandonar rastros alrededor de una cueva o responder desde detrás de las piedras en una lengua desconocida. El báculo y el abrigo de piel ayudan a reconocer su presencia sin volverlos monstruos.",
+          "gameUse": "No uses un Peso racial universal. Un individuo sólo necesita Peso si se opone de forma concreta; varios Chélep pueden funcionar como Piño cuando realmente actúan coordinados. Hablar, intercambiar, seguir señales o retirarse deben seguir siendo opciones de escena.",
+          "weight": "Según encuentro / Piño si corresponde",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-007_Chelep.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-007",
+          "version": "0.5.13",
+          "code": "HAB-007"
+        }
+      },
+      "sort": 700000,
+      "_id": "w1DYxAh9oi0pb9RF",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1793759769411,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "HAB-008 · Milodón relicto",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/bestiario/HAB-008_Milodon_Relicto.webp\" alt=\"Milodón relicto\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Bioma:</strong> Patagonia austral — Estepa, bosque subantártico y campos de hielo<br><strong>Tipo:</strong> Fauna extraordinaria</p><p>Un gran perezoso terrestre de otro tiempo que todavía sobrevive en sectores apartados del extremo austral. En Hiperaustralis es fauna relicta: lo prehistórico irrumpe como animal vivo, no como mito Aónikenk disfrazado.</p><h3>En escena</h3><p>Huellas enormes aparecen sobre barro reciente, la vegetación ha sido arrancada a una altura improbable o una masa pesada ocupa la entrada de un refugio. En el refugio, el animal pretende conservar ese lugar y hacer retroceder a los viajeros.</p><h3>En juego</h3><p>Para el encuentro del refugio usa <strong>Peso 4 — II · Excepcional</strong>. Es un valor de esa escena, no de todos los milodones. El conflicto puede resolverse haciendo retroceder al animal, desviándolo, abandonando el refugio o modificando las condiciones del encuentro.</p><p><strong>Peso:</strong> 4 — II · Excepcional</p>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "flags": {
+        "hiperaustralis": {
+          "habitanteId": "HAB-008",
+          "biome": "05_Patagonia_austral",
+          "biomeLabel": "Patagonia austral — Estepa, bosque subantártico y campos de hielo",
+          "entityType": "Fauna extraordinaria",
+          "sceneUse": "Huellas enormes aparecen sobre barro reciente, la vegetación ha sido arrancada a una altura improbable o una masa pesada ocupa la entrada de un refugio. En el refugio, el animal pretende conservar ese lugar y hacer retroceder a los viajeros.",
+          "gameUse": "Para el encuentro del refugio usa <strong>Peso 4 — II · Excepcional</strong>. Es un valor de esa escena, no de todos los milodones. El conflicto puede resolverse haciendo retroceder al animal, desviándolo, abandonando el refugio o modificando las condiciones del encuentro.",
+          "weight": "4 — II · Excepcional",
+          "image": "modules/hiperaustralis-rituales/assets/bestiario/HAB-008_Milodon_Relicto.webp"
+        },
+        "hiperaustralis-bestiario-journal": {
+          "seedId": "bestiario-page-HAB-008",
+          "version": "0.5.13",
+          "code": "HAB-008"
+        }
+      },
+      "sort": 800000,
+      "_id": "dqPsw5FM04olMM2O",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1793495406911,
+        "modifiedTime": 1793759769631,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "_key": "!journal!p1Ditj5HvsgNiTrd"
+}

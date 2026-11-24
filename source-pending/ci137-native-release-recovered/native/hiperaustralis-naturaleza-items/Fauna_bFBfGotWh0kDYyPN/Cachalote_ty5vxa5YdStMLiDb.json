@@ -1,0 +1,69 @@
+{
+  "name": "Cachalote",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-036_Physeter_macrocephalus.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Gran cetáceo dentado con cabeza casi rectangular, mandíbula inferior estrecha y aleta dorsal reducida a una giba.",
+      "en_escena": "El lomo emerge lentamente y deja ver una cabeza maciza antes de sumergirse.",
+      "bioma": "Mar abierto · aguas profundas",
+      "cientifico": "Physeter macrocephalus"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-036",
+      "version": "0.4.76-source-2026-10-15",
+      "bioma": "Mar abierto · aguas profundas",
+      "cientifico": "Physeter macrocephalus",
+      "origen": "HIPERAUSTRALIS_FAUNA_FAU001_052_ICONOS_Y_DESCRIP_FOUNDRY(1).zip"
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "ty5vxa5YdStMLiDb",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1792627921639,
+    "modifiedTime": 1793380559801,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ty5vxa5YdStMLiDb"
+}

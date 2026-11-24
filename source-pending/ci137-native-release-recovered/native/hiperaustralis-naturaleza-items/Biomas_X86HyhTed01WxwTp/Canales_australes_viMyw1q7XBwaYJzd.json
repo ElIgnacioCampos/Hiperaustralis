@@ -1,0 +1,68 @@
+{
+  "name": "Canales australes",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/biomas/iconos/BIO-007.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "bioma",
+      "codigo": "BIO-007",
+      "descripcion": "Tierra y agua se enlazan en pasos angostos, brazos de mar, islotes y costas de abrigo desigual. En un canal la superficie parece quieta; unos metros después, corrientes opuestas tiran de una embarcación. El conocimiento de mareas, viento y lugares para esperar puede valer más que la fuerza de los remeros.",
+      "en_escena": "Un paso concentra corrientes encontradas y no deja margen para improvisar una maniobra tardía. ¿Esperar otra condición, reconocer el paso, buscar abrigo o cambiar de ruta?",
+      "bioma": "Maritorio archipelágico",
+      "cientifico": "Navegar un paso de corrientes contrapuestas",
+      "apartado": "Biomas"
+    },
+    "template": "HipBiomaTpl00001",
+    "templateSystemUniqueVersion": 201003,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "6.0.5"
+    },
+    "meliaz-bridge": {
+      "kind": "bioma"
+    },
+    "hiperaustralis-bioma-item": {
+      "seedId": "BIO-007",
+      "version": "1"
+    }
+  },
+  "folder": "X86HyhTed01WxwTp",
+  "_id": "viMyw1q7XBwaYJzd",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791756239920,
+    "modifiedTime": 1791756697900,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!viMyw1q7XBwaYJzd"
+}

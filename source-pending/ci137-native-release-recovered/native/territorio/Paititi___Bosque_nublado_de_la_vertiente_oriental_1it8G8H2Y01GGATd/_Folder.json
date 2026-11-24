@@ -1,0 +1,22 @@
+{
+  "name": "Paititi — Bosque nublado de la vertiente oriental",
+  "type": "JournalEntry",
+  "folder": null,
+  "sorting": "m",
+  "sort": 2000,
+  "_id": "1it8G8H2Y01GGATd",
+  "description": "",
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1794169731277,
+    "modifiedTime": 1794169731277,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!1it8G8H2Y01GGATd"
+}

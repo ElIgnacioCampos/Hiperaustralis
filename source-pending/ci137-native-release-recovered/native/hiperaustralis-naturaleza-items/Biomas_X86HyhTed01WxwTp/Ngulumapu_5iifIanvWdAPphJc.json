@@ -1,0 +1,68 @@
+{
+  "name": "Ngulumapu",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/biomas/iconos/BIO-003.webp",
+  "system": {
+    "props": {
+      "descripcion": "El bosque filtra la luz y vuelve cercanos el agua, la madera húmeda y los sonidos de aves. Bajo una cubierta vegetal densa, quebradas y ríos ordenan los recorridos más que una línea recta dibujada en el mapa. Tras lluvia intensa, un cauce conocido puede convertirse en una barrera nueva. Lo decisivo es leer el territorio antes de cruzarlo.",
+      "en_escena": "Un río ha crecido durante la noche y cubre las piedras del vado. ¿Esperar que disminuya, buscar otra pasada, improvisar un cruce o solicitar conocimiento del lugar?",
+      "bioma": "Bosque templado lluvioso",
+      "cientifico": "Cruzar un cauce crecido",
+      "hipera_tipo": "bioma",
+      "codigo": "BIO-003",
+      "apartado": "Biomas"
+    },
+    "template": "HipBiomaTpl00001",
+    "templateSystemUniqueVersion": 201003,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 540,
+      "height": 440,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "6.0.5"
+    },
+    "meliaz-bridge": {
+      "kind": "bioma"
+    },
+    "hiperaustralis-bioma-item": {
+      "seedId": "BIO-003",
+      "version": "1"
+    }
+  },
+  "folder": "X86HyhTed01WxwTp",
+  "_id": "5iifIanvWdAPphJc",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791756238908,
+    "modifiedTime": 1791759089637,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!5iifIanvWdAPphJc"
+}

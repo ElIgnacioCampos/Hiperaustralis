@@ -1,0 +1,75 @@
+{
+  "name": "Güiña",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-010_Leopardus_guigna.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Pequeño felino moteado de cola gruesa y movimientos silenciosos. Caza animales pequeños entre bosques y matorrales densos, desplazándose tanto por el suelo como sobre troncos y ramas.",
+      "en_escena": "Puede cruzar fugazmente un tronco caído, observar desde una rama o dejar solo huellas y restos de una caza pequeña.",
+      "bioma": "Ngulumapu — Bosque templado lluvioso",
+      "cientifico": "Leopardus guigna"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-010",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Ngulumapu — Bosque templado lluvioso",
+      "cientifico": "Leopardus guigna",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leopardus_guigna_guigna_676041972.jpg",
+      "peso_sugerido": 1,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/03_Ngulumapu/FAU-010_Leopardus_guigna.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "fHQnZGjmSOlu4qa8",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754993147,
+    "modifiedTime": 1793377397075,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!fHQnZGjmSOlu4qa8"
+}

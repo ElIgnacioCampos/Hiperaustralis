@@ -1,0 +1,22 @@
+{
+  "name": "Titicaca — Altiplano lacustre",
+  "type": "JournalEntry",
+  "folder": null,
+  "sorting": "m",
+  "sort": 1000,
+  "_id": "eVExIbq23vJnGmNi",
+  "description": "",
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1794169730280,
+    "modifiedTime": 1794169730280,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!eVExIbq23vJnGmNi"
+}

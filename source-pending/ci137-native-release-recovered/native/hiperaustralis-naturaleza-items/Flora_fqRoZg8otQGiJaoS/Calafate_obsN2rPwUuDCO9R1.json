@@ -1,0 +1,71 @@
+{
+  "name": "Calafate",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/flora-y-funga/iconos/FLO-005_Calafate.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "flora",
+      "codigo": "FLO-005",
+      "descripcion": "Arbusto de ramas abundantes, hojas pequeñas y frutos oscuros. Entre el viento y los terrenos abiertos de Patagonia austral, sus matas aportan otra escala al paisaje.",
+      "ambito": "Patagonia austral",
+      "apartado": "Flora y Funga"
+    },
+    "template": "HipFloraTpl00001",
+    "templateSystemUniqueVersion": 201001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "flora"
+    },
+    "hiperaustralis-flora-item": {
+      "seedId": "flora-05",
+      "codigo": "FLO-005",
+      "version": "0.4.68"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/flora/biomas/calafate_berberis_microphylla.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "fqRoZg8otQGiJaoS",
+  "_id": "obsN2rPwUuDCO9R1",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754982076,
+    "modifiedTime": 1791755473965,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!obsN2rPwUuDCO9R1"
+}

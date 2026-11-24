@@ -1,0 +1,75 @@
+{
+  "name": "Guanaco",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-017_Lama_guanicoe.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Camélido alto y ligero que forma grupos sobre estepas, matorrales y bordes de bosque. Algunos individuos permanecen atentos mientras los demás se alimentan, y una alarma puede poner en movimiento a toda la tropilla.",
+      "en_escena": "Una tropilla corriendo puede cortar el horizonte de golpe; un solo animal inmóvil y atento puede indicar que algo ha alterado la calma de la estepa.",
+      "bioma": "Patagonia austral — Estepa, bosque subantártico y campos de hielo",
+      "cientifico": "Lama guanicoe"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-017",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Patagonia austral — Estepa, bosque subantártico y campos de hielo",
+      "cientifico": "Lama guanicoe",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guanaco_(Lama_guanicoe)_en_el_Parque_Nacional_Patagonia.jpg",
+      "peso_sugerido": 2,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/05_Patagonia_austral/FAU-017_Lama_guanicoe.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "xBWLbeiR1eoLoRNB",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754994728,
+    "modifiedTime": 1791755512250,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!xBWLbeiR1eoLoRNB"
+}

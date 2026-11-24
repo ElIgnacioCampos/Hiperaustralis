@@ -1,0 +1,75 @@
+{
+  "name": "Foca de Weddell",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-031_Leptonychotes_weddellii.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Gran foca moteada asociada al hielo costero antártico. Descansa sobre la superficie pero pasa largas horas bajo el hielo, utilizando aberturas que comunican el océano oculto con el aire exterior.",
+      "en_escena": "Puede aparecer inmóvil junto a un respiradero, desaparecer bajo una placa de hielo o emerger de improviso en una abertura aparentemente vacía.",
+      "bioma": "Umbral Polar",
+      "cientifico": "Leptonychotes weddellii"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-031",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Umbral Polar",
+      "cientifico": "Leptonychotes weddellii",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leptonychotes_weddellii_NOAA.jpg",
+      "peso_sugerido": 2,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/08_Umbral_Polar/FAU-031_Leptonychotes_weddellii.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "DqpmHU2SZaEQ0IQe",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754997980,
+    "modifiedTime": 1791755522559,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!DqpmHU2SZaEQ0IQe"
+}

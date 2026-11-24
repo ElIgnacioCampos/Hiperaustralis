@@ -1,0 +1,234 @@
+{
+  "name": "Tambor Turiano",
+  "type": "character",
+  "img": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/tambor-turiano.png",
+  "system": {
+    "body": {
+      "contents": [
+        {
+          "key": "peso",
+          "cssClass": "ha-rival-peso",
+          "role": 0,
+          "permission": 0,
+          "tooltip": "Peso del Rival en la situación",
+          "visibilityFormula": "",
+          "label": "Peso",
+          "defaultValue": "1",
+          "size": "full-size",
+          "allowDecimal": false,
+          "minVal": "0",
+          "maxVal": "9",
+          "allowRelative": true,
+          "showControls": true,
+          "controlsStyle": "hover",
+          "controlsCustomIncrements": "-1,1",
+          "inputStyle": "text",
+          "type": "numberField"
+        },
+        {
+          "key": "descripcion",
+          "cssClass": "ha-rival-descripcion",
+          "role": 0,
+          "editRole": 0,
+          "permission": 0,
+          "tooltip": "Descripción del Rival.",
+          "visibilityFormula": "",
+          "editableFormula": "",
+          "label": "Descripción",
+          "defaultValue": "",
+          "style": "dialog",
+          "type": "textArea"
+        },
+        {
+          "key": "en_escena",
+          "cssClass": "ha-rival-escena",
+          "role": 0,
+          "editRole": 0,
+          "permission": 0,
+          "tooltip": "Uso directo en escena.",
+          "visibilityFormula": "",
+          "editableFormula": "",
+          "label": "En escena",
+          "defaultValue": "",
+          "style": "dialog",
+          "type": "textArea"
+        },
+        {
+          "key": "nota_peso",
+          "cssClass": "ha-rival-nota-peso",
+          "role": 0,
+          "editRole": 0,
+          "permission": 0,
+          "tooltip": "Contexto del Peso sugerido de playtest.",
+          "visibilityFormula": "",
+          "editableFormula": "",
+          "label": "Nota de Peso",
+          "defaultValue": "",
+          "style": "dialog",
+          "type": "textArea"
+        }
+      ],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 520,
+      "height": 430,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "templateSystemUniqueVersion": 202001,
+    "attributeBar": {},
+    "statusEffects": {},
+    "props": {
+      "peso": "4",
+      "descripcion": "Turiano gorilesco dedicado al tambor y a la música de marcha. Su presencia ordena el ritmo del grupo y hace audible su avance.",
+      "en_escena": "Marchas, ceremonias, desplazamientos colectivos y escenas en que el sonido anuncia o acompaña la llegada de los turianos.",
+      "nota_peso": "Peso sugerido 2 · Ordinario. Rival de apoyo cuya oposición depende de sostener el ritmo, convocar o acompañar al grupo, no de imponerse individualmente por fuerza.",
+      "name": "Tambor Turiano",
+      "uuid": "Actor.1911d58042f44382",
+      "id": "1911d58042f44382",
+      "img": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/tambor-turiano.png"
+    },
+    "template": "HipRivalTpl00001",
+    "activeConditionalModifierGroups": []
+  },
+  "prototypeToken": {
+    "name": "Tambor Turiano",
+    "displayName": 30,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/tambor-turiano_token.png",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 30,
+    "bar1": {
+      "attribute": null
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "items": [],
+  "effects": [],
+  "flags": {
+    "custom-system-builder": {
+      "version": "6.0.2"
+    },
+    "hiperaustralis-rivales-turianos": {
+      "seedId": "tambor-turiano",
+      "version": "0.1",
+      "status": "PLAYTEST",
+      "pesoReferencia": 4,
+      "escala": "II · Excepcional",
+      "lote": "lote01",
+      "imagenFuente": "HIPERAUSTRALIS_TURIANOS_CUATRO_GORILESCOS_FUENTE_USUARIO_v02/03_MAESTROS_DERIVADOS_1024/01_Cantor_Tamborilero_Lote1_DERIVADO_1024.png",
+      "tokenFuente": "HIPERAUSTRALIS_TURIANOS_CUATRO_GORILESCOS_FUENTE_USUARIO_v02/02_TOKENS_FOUNDRY_512/01_Cantor_Tamborilero_Lote1_TOKEN_512.png",
+      "pesoConfirmado": true
+    },
+    "hiperaustralis-token": {
+      "mode": "avatar-token-separated",
+      "avatarUnchanged": true,
+      "prototypeUsesAvatarUntilTokenized": false,
+      "dynamicRingPreEnabled": false,
+      "reason": "El token usa un PNG 512 separado del retrato del actor.",
+      "tokenizerTarget": "prototype-token",
+      "version": "0.2"
+    }
+  },
+  "folder": null,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2"
+  },
+  "_id": "1911d58042f44382",
+  "ownership": {
+    "default": 0
+  }
+}

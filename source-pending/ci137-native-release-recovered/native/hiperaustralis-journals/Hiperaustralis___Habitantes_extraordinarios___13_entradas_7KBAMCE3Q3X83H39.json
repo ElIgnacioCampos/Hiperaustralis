@@ -1,0 +1,1420 @@
+{
+  "name": "Hiperaustralis · Habitantes extraordinarios — 13 entradas",
+  "pages": [
+    {
+      "name": "Índice",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Habitantes extraordinarios</h1><p>Presencias y seres de distintos territorios. Sus encuentros pueden abrir una relación, una advertencia, una búsqueda o un conflicto.</p>"
+      },
+      "sort": 0,
+      "flags": {
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-01",
+          "version": "0.4.78",
+          "code": null
+        }
+      },
+      "_id": "pVlptlWvVQz9R5m4",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432425,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!7KBAMCE3Q3X83H39.pVlptlWvVQz9R5m4"
+    },
+    {
+      "name": "Quesintuu y Umantuu",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-01_Quesintuu_y_Umantuu.webp\" style=\"max-width:100%;height:auto\" alt=\"Quesintuu y Umantuu\"></figure><p><strong>Territorio:</strong> Titicaca<br><strong>Tipo:</strong> Otros habitantes</p><p>Dos figuras femeninas pisciformes pertenecientes a la memoria del Titicaca. Su encuentro invita a comprender una relación con el lago, no a clasificarlas como sirenas universales.</p><h3>En escena</h3><p>Entre totorales se distingue una figura bajo el agua. Al acercarse una embarcación, aparece otra, silenciosa, a su costado.</p><h3>En juego</h3>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-001",
+          "territorio": "Titicaca",
+          "tipo": "Otros habitantes",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-01_Quesintuu_y_Umantuu.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-01_Quesintuu_y_Umantuu.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-02",
+          "version": "0.4.78",
+          "code": "HAB-001"
+        }
+      },
+      "sort": 100000,
+      "_id": "EjqZyOxyXn7jagMR",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380474571,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!7KBAMCE3Q3X83H39.EjqZyOxyXn7jagMR"
+    },
+    {
+      "name": "Qatiqati",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-02_Qatiqati.webp\" style=\"max-width:100%;height:auto\" alt=\"Qatiqati\"></figure><p><strong>Territorio:</strong> Titicaca<br><strong>Tipo:</strong> Otro habitante / aparición</p><p>Una cabeza que vuela de noche, asociada con presagios de desgracia. Su aparición trastorna un camino conocido incluso sin enfrentamiento.</p><h3>En escena</h3><p>Sobre los totorales cruza una forma oscura; al pasar frente a la luna, se comprende que no tiene cuerpo.</p><h3>En juego</h3>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-002",
+          "territorio": "Titicaca",
+          "tipo": "Otro habitante / aparición",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-02_Qatiqati.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-02_Qatiqati.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-03",
+          "version": "0.4.78",
+          "code": "HAB-002"
+        }
+      },
+      "sort": 200000,
+      "_id": "HYxb9sZnByPa8Pj9",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380474571,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!7KBAMCE3Q3X83H39.HYxb9sZnByPa8Pj9"
+    },
+    {
+      "name": "Mekalla",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-03_Mekalla.webp\" style=\"max-width:100%;height:auto\" alt=\"Mekalla\"></figure><p><strong>Territorio:</strong> Titicaca<br><strong>Tipo:</strong> Otro habitante / aparición</p><p>Aparición vinculada a bruma, sueño y desaparición de navegantes. Su relación con otras formas del nombre permanece ambigua; deja que los personajes interpreten lo que encuentran.</p><h3>En escena</h3><p>Una figura se insinúa entre bancos de niebla sobre las aguas. Cuando la embarcación intenta aproximarse, pierde la referencia de la costa.</p><h3>En juego</h3><p>La bruma puede separar a quienes viajan juntos o desdibujar el regreso a la costa. Mantén abierta su forma y su propósito; los personajes pueden seguir la figura, retirarse o buscar otra ruta.</p>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": null,
+          "territorio": "Titicaca",
+          "tipo": "Otro habitante / aparición",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-03_Mekalla.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-03_Mekalla.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-04",
+          "version": "0.4.78",
+          "code": null
+        }
+      },
+      "sort": 300000,
+      "_id": "REDwX8xcjoH6zN58",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432426,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!7KBAMCE3Q3X83H39.REDwX8xcjoH6zN58"
+    },
+    {
+      "name": "Katari",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-04_Katari.webp\" style=\"max-width:100%;height:auto\" alt=\"Katari\"></figure><p><strong>Territorio:</strong> Titicaca<br><strong>Tipo:</strong> Otro habitante</p><p>Serpiente enorme del entorno lacustre y de totorales. Su forma varía según el relato local; no representa una deidad panandina única.</p><h3>En escena</h3><p>Algo largo desplaza las totoras sin romperlas. Una embarcación se mueve en contra de la corriente.</p><h3>En juego</h3>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-003",
+          "territorio": "Titicaca",
+          "tipo": "Otro habitante",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-04_Katari.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-04_Katari.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-05",
+          "version": "0.4.78",
+          "code": "HAB-003"
+        }
+      },
+      "sort": 400000,
+      "_id": "skbLCyHKO2AZkEau",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380474571,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!7KBAMCE3Q3X83H39.skbLCyHKO2AZkEau"
+    },
+    {
+      "name": "Trülkewekufü",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-05_Trülkewekufü.webp\" style=\"max-width:100%;height:auto\" alt=\"Trülkewekufü\"></figure><p><strong>Territorio:</strong> Ngulumapu<br><strong>Tipo:</strong> Otro habitante</p><p>Ser de aguas profundas o mansas cuya forma recuerda un cuero o piel extendida, con bordes inquietantes.</p><h3>En escena</h3><p>Una piel inmóvil flota en una poza. Su borde se levanta y revela que el agua no estaba vacía.</p><h3>En juego</h3>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-004",
+          "territorio": "Ngulumapu",
+          "tipo": "Otro habitante",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-05_Trülkewekufü.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-05_Trülkewekufü.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-06",
+          "version": "0.4.78",
+          "code": "HAB-004"
+        }
+      },
+      "sort": 500000,
+      "_id": "dxY7zFqmt0b3SVDX",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380474571,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!7KBAMCE3Q3X83H39.dxY7zFqmt0b3SVDX"
+    },
+    {
+      "name": "Ngürüfilu",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-06_Ngürüfilu.webp\" style=\"max-width:100%;height:auto\" alt=\"Ngürüfilu\"></figure><p><strong>Territorio:</strong> Ngulumapu<br><strong>Tipo:</strong> Otro habitante</p><p>Ser serpentiforme de rasgos vulpinos asociado con remolinos y arrastre hacia el fondo. Distinto del Trülkewekufü por silueta y conducta.</p><h3>En escena</h3><p>El agua gira contra la corriente. Por un instante aparece una cabeza de zorro unida a un cuerpo largo.</p><h3>En juego</h3><p>El remolino puede ser Obstáculo y el ser una oposición corporal; aplicar ambas funciones solo si generan decisiones diferentes.</p>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-005",
+          "territorio": "Ngulumapu",
+          "tipo": "Otro habitante",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-06_Ngürüfilu.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-06_Ngürüfilu.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-07",
+          "version": "0.4.78",
+          "code": "HAB-005"
+        }
+      },
+      "sort": 600000,
+      "_id": "SlXBfUbno4yH9JvZ",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432426,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!7KBAMCE3Q3X83H39.SlXBfUbno4yH9JvZ"
+    },
+    {
+      "name": "Kawa Kawa",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-07_Kawa_Kawa.webp\" style=\"max-width:100%;height:auto\" alt=\"Kawa Kawa\"></figure><p><strong>Territorio:</strong> Pewenmapu<br><strong>Tipo:</strong> Otro habitante</p><p>Ser grande de forma serpentiforme o híbrida, ligado al monte y la cordillera. Su forma varía entre relatos; no todas las apariciones tienen por qué ser iguales.</p><h3>En escena</h3><p>El sendero entre araucarias muestra un surco demasiado ancho. Una forma se desplaza detrás de los troncos.</p><h3>En juego</h3>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-006",
+          "territorio": "Pewenmapu",
+          "tipo": "Otro habitante",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-07_Kawa_Kawa.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-07_Kawa_Kawa.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-08",
+          "version": "0.4.78",
+          "code": "HAB-006"
+        }
+      },
+      "sort": 700000,
+      "_id": "BUXx10nB6Gqiv9Cb",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380474571,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!7KBAMCE3Q3X83H39.BUXx10nB6Gqiv9Cb"
+    },
+    {
+      "name": "Chélep",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-08_Chélep.webp\" style=\"max-width:100%;height:auto\" alt=\"Chélep\"></figure><p><strong>Territorio:</strong> Patagonia austral<br><strong>Tipo:</strong> Otro habitante / pueblo legendario</p><p>Pequeños habitantes velludos de cuevas o viviendas de piedra, con lengua y costumbres distintas. Su identidad no se reduce a una especie fantástica.</p><h3>En escena</h3><p>Una voz extraña responde desde una entrada de roca; luego aparece una figura baja, envuelta en su propia vellosidad.</p><h3>En juego</h3><p>Puede abrir diálogo, intercambio o conflicto. El báculo de esta ilustración es un rasgo individual, no una marca de todo el pueblo.</p>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-007",
+          "territorio": "Patagonia austral",
+          "tipo": "Otro habitante / pueblo legendario",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-08_Chélep.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-08_Chélep.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-09",
+          "version": "0.4.78",
+          "code": "HAB-007"
+        }
+      },
+      "sort": 800000,
+      "_id": "L6eiYu5oMWQpwUJx",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432426,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!7KBAMCE3Q3X83H39.L6eiYu5oMWQpwUJx"
+    },
+    {
+      "name": "Milodón relicto",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-09_Milodón_relicto.webp\" style=\"max-width:100%;height:auto\" alt=\"Milodón relicto\"></figure><p><strong>Territorio:</strong> Patagonia austral<br><strong>Tipo:</strong> Fauna extraordinaria</p><p>Gran perezoso terrestre que ha sobrevivido en un rincón apartado. Es fauna extraordinaria y no un mito atribuido a los pueblos australes.</p><h3>En escena</h3><p>Una masa peluda bloquea el abrigo rocoso. Las marcas de garras en el suelo revelan su tamaño.</p><h3>En juego</h3>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-008",
+          "territorio": "Patagonia austral",
+          "tipo": "Fauna extraordinaria",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-09_Milodón_relicto.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-09_Milodón_relicto.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-10",
+          "version": "0.4.78",
+          "code": "HAB-008"
+        }
+      },
+      "sort": 900000,
+      "_id": "C10LuhDZLerhReqh",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380474571,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!7KBAMCE3Q3X83H39.C10LuhDZLerhReqh"
+    },
+    {
+      "name": "Cháskels",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-10_Cháskels.webp\" style=\"max-width:100%;height:auto\" alt=\"Cháskels\"></figure><p><strong>Territorio:</strong> Tierra del Fuego<br><strong>Tipo:</strong> Otro habitante mítico</p><p>Gigante antropófago del tiempo de los hoowin. Su relato conecta corporalidad extraordinaria y paisaje fueguino; el cabello abundante de esta imagen es licencia artística aceptada.</p><h3>En escena</h3><p>La silueta de una figura humana supera la altura del relieve próximo. Su avance revela una escala imposible.</p><h3>En juego</h3><p>El encuentro puede implicar huida, negociación improbable, estrategia o combate; no reducirlo a un rival ordinario.</p>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": null,
+          "territorio": "Tierra del Fuego",
+          "tipo": "Otro habitante mítico",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-10_Cháskels.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-10_Cháskels.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-11",
+          "version": "0.4.78",
+          "code": null
+        }
+      },
+      "sort": 1000000,
+      "_id": "J5ELyZxK7s5WzhpS",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432426,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!7KBAMCE3Q3X83H39.J5ELyZxK7s5WzhpS"
+    },
+    {
+      "name": "Quien sopla el viento",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-11_Quien_sopla_el_viento.webp\" style=\"max-width:100%;height:auto\" alt=\"Quien sopla el viento\"></figure><p><strong>Territorio:</strong> Canales australes<br><strong>Tipo:</strong> Otro habitante</p><p>Ser corporal y mortal cuya exhalación origina un viento devastador junto al agua. </p><h3>En escena</h3><p>En una orilla expuesta aparece una figura inclinada. Al exhalar, el oleaje cambia y el viento golpea la embarcación.</p><h3>En juego</h3><p>Los personajes pueden localizarlo por el viento, evitarlo o confrontarlo. Tratar el viento como condición u Obstáculo solo cuando importe a las decisiones de mesa.</p>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": null,
+          "territorio": "Canales australes",
+          "tipo": "Otro habitante",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-11_Quien_sopla_el_viento.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-11_Quien_sopla_el_viento.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-12",
+          "version": "0.4.78",
+          "code": null
+        }
+      },
+      "sort": 1100000,
+      "_id": "TcVYGgtF5US7dJgH",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432426,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!7KBAMCE3Q3X83H39.TcVYGgtF5US7dJgH"
+    },
+    {
+      "name": "Shoggot",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-12_Shoggot.webp\" style=\"max-width:100%;height:auto\" alt=\"Shoggot\"></figure><p><strong>Territorio:</strong> Umbral Polar<br><strong>Tipo:</strong> Otro habitante</p><p>Masa protoplásmica enorme, mutable, de anatomía imposible. Sus ojos surgen en distintas superficies mientras pseudópodos sin forma estable se extienden y retraen.</p><h3>En escena</h3><p>En las ruinas, el volumen oscuro parece primero una acumulación inerte. Se abren varios ojos y una prolongación adopta una forma que desaparece enseguida.</p><h3>En juego</h3><p>Escena de horror corporal: evitar, escapar, comprender la amenaza o buscar una salida. Deja que sus capacidades se revelen en la escena; los personajes pueden evitarla, escapar, intentar comprenderla o buscar una salida.</p>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": null,
+          "territorio": "Umbral Polar",
+          "tipo": "Otro habitante",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-12_Shoggot.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-12_Shoggot.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-13",
+          "version": "0.4.78",
+          "code": null
+        }
+      },
+      "sort": 1200000,
+      "_id": "SLeJjul6YhZonI8f",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432426,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!7KBAMCE3Q3X83H39.SLeJjul6YhZonI8f"
+    },
+    {
+      "name": "Constructores Estrellados",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-13_Constructores_Estrellados.webp\" style=\"max-width:100%;height:auto\" alt=\"Constructores Estrellados\"></figure><p><strong>Territorio:</strong> Umbral Polar<br><strong>Tipo:</strong> Habitantes pretéritos / huella</p><p>Los relieves y las edificaciones de una civilización no humana atestiguan una presencia pretérita. No se ha confirmado que sus habitantes sigan vivos.</p><h3>En escena</h3><p>Entre rocas y muros erosionados surgen relieves estrellados y una obra cuya escala no coincide con constructores humanos.</p><h3>En juego</h3><p>Presentar como pista arqueológica, misterio y memoria de una guerra antigua, no como combate con una especie presente.</p>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": null,
+          "territorio": "Umbral Polar",
+          "tipo": "Habitantes pretéritos / huella",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-13_Constructores_Estrellados.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-13_Constructores_Estrellados.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-14",
+          "version": "0.4.78",
+          "code": null
+        }
+      },
+      "sort": 1300000,
+      "_id": "947AX61PeP7axM4y",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432426,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!7KBAMCE3Q3X83H39.947AX61PeP7axM4y"
+    }
+  ],
+  "flags": {
+    "hiperaustralis-habitantes": {
+      "seedId": "journal-habitantes-13-v1",
+      "version": "0.4.78",
+      "entries": 13
+    }
+  },
+  "_id": "7KBAMCE3Q3X83H39",
+  "folder": null,
+  "categories": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1792627946390,
+    "modifiedTime": 1792627946392,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "page_ids": [
+    "pVlptlWvVQz9R5m4",
+    "EjqZyOxyXn7jagMR",
+    "HYxb9sZnByPa8Pj9",
+    "REDwX8xcjoH6zN58",
+    "skbLCyHKO2AZkEau",
+    "dxY7zFqmt0b3SVDX",
+    "SlXBfUbno4yH9JvZ",
+    "BUXx10nB6Gqiv9Cb",
+    "L6eiYu5oMWQpwUJx",
+    "C10LuhDZLerhReqh",
+    "J5ELyZxK7s5WzhpS",
+    "TcVYGgtF5US7dJgH",
+    "SLeJjul6YhZonI8f",
+    "947AX61PeP7axM4y"
+  ],
+  "pages_expanded": [
+    {
+      "name": "Índice",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Habitantes extraordinarios</h1><p>Presencias y seres de distintos territorios. Sus encuentros pueden abrir una relación, una advertencia, una búsqueda o un conflicto.</p>"
+      },
+      "sort": 0,
+      "flags": {
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-01",
+          "version": "0.4.78",
+          "code": null
+        }
+      },
+      "_id": "pVlptlWvVQz9R5m4",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432425,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Quesintuu y Umantuu",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-01_Quesintuu_y_Umantuu.webp\" style=\"max-width:100%;height:auto\" alt=\"Quesintuu y Umantuu\"></figure><p><strong>Territorio:</strong> Titicaca<br><strong>Tipo:</strong> Otros habitantes</p><p>Dos figuras femeninas pisciformes pertenecientes a la memoria del Titicaca. Su encuentro invita a comprender una relación con el lago, no a clasificarlas como sirenas universales.</p><h3>En escena</h3><p>Entre totorales se distingue una figura bajo el agua. Al acercarse una embarcación, aparece otra, silenciosa, a su costado.</p><h3>En juego</h3>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-001",
+          "territorio": "Titicaca",
+          "tipo": "Otros habitantes",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-01_Quesintuu_y_Umantuu.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-01_Quesintuu_y_Umantuu.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-02",
+          "version": "0.4.78",
+          "code": "HAB-001"
+        }
+      },
+      "sort": 100000,
+      "_id": "EjqZyOxyXn7jagMR",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380474571,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Qatiqati",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-02_Qatiqati.webp\" style=\"max-width:100%;height:auto\" alt=\"Qatiqati\"></figure><p><strong>Territorio:</strong> Titicaca<br><strong>Tipo:</strong> Otro habitante / aparición</p><p>Una cabeza que vuela de noche, asociada con presagios de desgracia. Su aparición trastorna un camino conocido incluso sin enfrentamiento.</p><h3>En escena</h3><p>Sobre los totorales cruza una forma oscura; al pasar frente a la luna, se comprende que no tiene cuerpo.</p><h3>En juego</h3>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-002",
+          "territorio": "Titicaca",
+          "tipo": "Otro habitante / aparición",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-02_Qatiqati.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-02_Qatiqati.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-03",
+          "version": "0.4.78",
+          "code": "HAB-002"
+        }
+      },
+      "sort": 200000,
+      "_id": "HYxb9sZnByPa8Pj9",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380474571,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Mekalla",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-03_Mekalla.webp\" style=\"max-width:100%;height:auto\" alt=\"Mekalla\"></figure><p><strong>Territorio:</strong> Titicaca<br><strong>Tipo:</strong> Otro habitante / aparición</p><p>Aparición vinculada a bruma, sueño y desaparición de navegantes. Su relación con otras formas del nombre permanece ambigua; deja que los personajes interpreten lo que encuentran.</p><h3>En escena</h3><p>Una figura se insinúa entre bancos de niebla sobre las aguas. Cuando la embarcación intenta aproximarse, pierde la referencia de la costa.</p><h3>En juego</h3><p>La bruma puede separar a quienes viajan juntos o desdibujar el regreso a la costa. Mantén abierta su forma y su propósito; los personajes pueden seguir la figura, retirarse o buscar otra ruta.</p>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": null,
+          "territorio": "Titicaca",
+          "tipo": "Otro habitante / aparición",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-03_Mekalla.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-03_Mekalla.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-04",
+          "version": "0.4.78",
+          "code": null
+        }
+      },
+      "sort": 300000,
+      "_id": "REDwX8xcjoH6zN58",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432426,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Katari",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-04_Katari.webp\" style=\"max-width:100%;height:auto\" alt=\"Katari\"></figure><p><strong>Territorio:</strong> Titicaca<br><strong>Tipo:</strong> Otro habitante</p><p>Serpiente enorme del entorno lacustre y de totorales. Su forma varía según el relato local; no representa una deidad panandina única.</p><h3>En escena</h3><p>Algo largo desplaza las totoras sin romperlas. Una embarcación se mueve en contra de la corriente.</p><h3>En juego</h3>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-003",
+          "territorio": "Titicaca",
+          "tipo": "Otro habitante",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-04_Katari.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-04_Katari.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-05",
+          "version": "0.4.78",
+          "code": "HAB-003"
+        }
+      },
+      "sort": 400000,
+      "_id": "skbLCyHKO2AZkEau",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380474571,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Trülkewekufü",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-05_Trülkewekufü.webp\" style=\"max-width:100%;height:auto\" alt=\"Trülkewekufü\"></figure><p><strong>Territorio:</strong> Ngulumapu<br><strong>Tipo:</strong> Otro habitante</p><p>Ser de aguas profundas o mansas cuya forma recuerda un cuero o piel extendida, con bordes inquietantes.</p><h3>En escena</h3><p>Una piel inmóvil flota en una poza. Su borde se levanta y revela que el agua no estaba vacía.</p><h3>En juego</h3>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-004",
+          "territorio": "Ngulumapu",
+          "tipo": "Otro habitante",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-05_Trülkewekufü.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-05_Trülkewekufü.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-06",
+          "version": "0.4.78",
+          "code": "HAB-004"
+        }
+      },
+      "sort": 500000,
+      "_id": "dxY7zFqmt0b3SVDX",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380474571,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Ngürüfilu",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-06_Ngürüfilu.webp\" style=\"max-width:100%;height:auto\" alt=\"Ngürüfilu\"></figure><p><strong>Territorio:</strong> Ngulumapu<br><strong>Tipo:</strong> Otro habitante</p><p>Ser serpentiforme de rasgos vulpinos asociado con remolinos y arrastre hacia el fondo. Distinto del Trülkewekufü por silueta y conducta.</p><h3>En escena</h3><p>El agua gira contra la corriente. Por un instante aparece una cabeza de zorro unida a un cuerpo largo.</p><h3>En juego</h3><p>El remolino puede ser Obstáculo y el ser una oposición corporal; aplicar ambas funciones solo si generan decisiones diferentes.</p>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-005",
+          "territorio": "Ngulumapu",
+          "tipo": "Otro habitante",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-06_Ngürüfilu.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-06_Ngürüfilu.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-07",
+          "version": "0.4.78",
+          "code": "HAB-005"
+        }
+      },
+      "sort": 600000,
+      "_id": "SlXBfUbno4yH9JvZ",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432426,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Kawa Kawa",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-07_Kawa_Kawa.webp\" style=\"max-width:100%;height:auto\" alt=\"Kawa Kawa\"></figure><p><strong>Territorio:</strong> Pewenmapu<br><strong>Tipo:</strong> Otro habitante</p><p>Ser grande de forma serpentiforme o híbrida, ligado al monte y la cordillera. Su forma varía entre relatos; no todas las apariciones tienen por qué ser iguales.</p><h3>En escena</h3><p>El sendero entre araucarias muestra un surco demasiado ancho. Una forma se desplaza detrás de los troncos.</p><h3>En juego</h3>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-006",
+          "territorio": "Pewenmapu",
+          "tipo": "Otro habitante",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-07_Kawa_Kawa.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-07_Kawa_Kawa.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-08",
+          "version": "0.4.78",
+          "code": "HAB-006"
+        }
+      },
+      "sort": 700000,
+      "_id": "BUXx10nB6Gqiv9Cb",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380474571,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Chélep",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-08_Chélep.webp\" style=\"max-width:100%;height:auto\" alt=\"Chélep\"></figure><p><strong>Territorio:</strong> Patagonia austral<br><strong>Tipo:</strong> Otro habitante / pueblo legendario</p><p>Pequeños habitantes velludos de cuevas o viviendas de piedra, con lengua y costumbres distintas. Su identidad no se reduce a una especie fantástica.</p><h3>En escena</h3><p>Una voz extraña responde desde una entrada de roca; luego aparece una figura baja, envuelta en su propia vellosidad.</p><h3>En juego</h3><p>Puede abrir diálogo, intercambio o conflicto. El báculo de esta ilustración es un rasgo individual, no una marca de todo el pueblo.</p>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-007",
+          "territorio": "Patagonia austral",
+          "tipo": "Otro habitante / pueblo legendario",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-08_Chélep.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-08_Chélep.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-09",
+          "version": "0.4.78",
+          "code": "HAB-007"
+        }
+      },
+      "sort": 800000,
+      "_id": "L6eiYu5oMWQpwUJx",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432426,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Milodón relicto",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-09_Milodón_relicto.webp\" style=\"max-width:100%;height:auto\" alt=\"Milodón relicto\"></figure><p><strong>Territorio:</strong> Patagonia austral<br><strong>Tipo:</strong> Fauna extraordinaria</p><p>Gran perezoso terrestre que ha sobrevivido en un rincón apartado. Es fauna extraordinaria y no un mito atribuido a los pueblos australes.</p><h3>En escena</h3><p>Una masa peluda bloquea el abrigo rocoso. Las marcas de garras en el suelo revelan su tamaño.</p><h3>En juego</h3>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": "HAB-008",
+          "territorio": "Patagonia austral",
+          "tipo": "Fauna extraordinaria",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-09_Milodón_relicto.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-09_Milodón_relicto.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-10",
+          "version": "0.4.78",
+          "code": "HAB-008"
+        }
+      },
+      "sort": 900000,
+      "_id": "C10LuhDZLerhReqh",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380474571,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Cháskels",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-10_Cháskels.webp\" style=\"max-width:100%;height:auto\" alt=\"Cháskels\"></figure><p><strong>Territorio:</strong> Tierra del Fuego<br><strong>Tipo:</strong> Otro habitante mítico</p><p>Gigante antropófago del tiempo de los hoowin. Su relato conecta corporalidad extraordinaria y paisaje fueguino; el cabello abundante de esta imagen es licencia artística aceptada.</p><h3>En escena</h3><p>La silueta de una figura humana supera la altura del relieve próximo. Su avance revela una escala imposible.</p><h3>En juego</h3><p>El encuentro puede implicar huida, negociación improbable, estrategia o combate; no reducirlo a un rival ordinario.</p>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": null,
+          "territorio": "Tierra del Fuego",
+          "tipo": "Otro habitante mítico",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-10_Cháskels.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-10_Cháskels.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-11",
+          "version": "0.4.78",
+          "code": null
+        }
+      },
+      "sort": 1000000,
+      "_id": "J5ELyZxK7s5WzhpS",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432426,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Quien sopla el viento",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-11_Quien_sopla_el_viento.webp\" style=\"max-width:100%;height:auto\" alt=\"Quien sopla el viento\"></figure><p><strong>Territorio:</strong> Canales australes<br><strong>Tipo:</strong> Otro habitante</p><p>Ser corporal y mortal cuya exhalación origina un viento devastador junto al agua. </p><h3>En escena</h3><p>En una orilla expuesta aparece una figura inclinada. Al exhalar, el oleaje cambia y el viento golpea la embarcación.</p><h3>En juego</h3><p>Los personajes pueden localizarlo por el viento, evitarlo o confrontarlo. Tratar el viento como condición u Obstáculo solo cuando importe a las decisiones de mesa.</p>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": null,
+          "territorio": "Canales australes",
+          "tipo": "Otro habitante",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-11_Quien_sopla_el_viento.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-11_Quien_sopla_el_viento.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-12",
+          "version": "0.4.78",
+          "code": null
+        }
+      },
+      "sort": 1100000,
+      "_id": "TcVYGgtF5US7dJgH",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432426,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Shoggot",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-12_Shoggot.webp\" style=\"max-width:100%;height:auto\" alt=\"Shoggot\"></figure><p><strong>Territorio:</strong> Umbral Polar<br><strong>Tipo:</strong> Otro habitante</p><p>Masa protoplásmica enorme, mutable, de anatomía imposible. Sus ojos surgen en distintas superficies mientras pseudópodos sin forma estable se extienden y retraen.</p><h3>En escena</h3><p>En las ruinas, el volumen oscuro parece primero una acumulación inerte. Se abren varios ojos y una prolongación adopta una forma que desaparece enseguida.</p><h3>En juego</h3><p>Escena de horror corporal: evitar, escapar, comprender la amenaza o buscar una salida. Deja que sus capacidades se revelen en la escena; los personajes pueden evitarla, escapar, intentar comprenderla o buscar una salida.</p>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": null,
+          "territorio": "Umbral Polar",
+          "tipo": "Otro habitante",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-12_Shoggot.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-12_Shoggot.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-13",
+          "version": "0.4.78",
+          "code": null
+        }
+      },
+      "sort": 1200000,
+      "_id": "SLeJjul6YhZonI8f",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432426,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Constructores Estrellados",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<figure><img src=\"modules/hiperaustralis-rituales/assets/habitantes/HAB-13_Constructores_Estrellados.webp\" style=\"max-width:100%;height:auto\" alt=\"Constructores Estrellados\"></figure><p><strong>Territorio:</strong> Umbral Polar<br><strong>Tipo:</strong> Habitantes pretéritos / huella</p><p>Los relieves y las edificaciones de una civilización no humana atestiguan una presencia pretérita. No se ha confirmado que sus habitantes sigan vivos.</p><h3>En escena</h3><p>Entre rocas y muros erosionados surgen relieves estrellados y una obra cuya escala no coincide con constructores humanos.</p><h3>En juego</h3><p>Presentar como pista arqueológica, misterio y memoria de una guerra antigua, no como combate con una especie presente.</p>"
+      },
+      "flags": {
+        "hiperaustralis": {
+          "code": null,
+          "territorio": "Umbral Polar",
+          "tipo": "Habitantes pretéritos / huella",
+          "image": "modules/hiperaustralis-rituales/assets/habitantes/HAB-13_Constructores_Estrellados.webp",
+          "token": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-13_Constructores_Estrellados.webp"
+        },
+        "hiperaustralis-habitantes": {
+          "seedId": "habitantes-page-14",
+          "version": "0.4.78",
+          "code": null
+        }
+      },
+      "sort": 1300000,
+      "_id": "947AX61PeP7axM4y",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1792627946390,
+        "modifiedTime": 1793380432426,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "_key": "!journal!7KBAMCE3Q3X83H39"
+}

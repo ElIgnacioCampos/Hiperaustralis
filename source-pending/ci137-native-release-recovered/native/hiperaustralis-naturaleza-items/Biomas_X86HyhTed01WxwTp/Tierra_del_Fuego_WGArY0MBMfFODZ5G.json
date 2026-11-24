@@ -1,0 +1,68 @@
+{
+  "name": "Tierra del Fuego",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/biomas/iconos/BIO-006.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "bioma",
+      "codigo": "BIO-006",
+      "descripcion": "Las distancias parecen claras en terreno abierto, pero el suelo puede volverse blando y profundamente húmedo sin anunciarlo. Bosques achaparrados, sectores de estepa y turberas cambian el ritmo de marcha. Una ruta recta no siempre es la más corta cuando hay que cuidar provisiones y reconocer dónde apoyar el peso.",
+      "en_escena": "La vegetación oculta zonas saturadas de agua, y la carga vuelve insegura la marcha. ¿Sondear suelo, bordear la turbera, redistribuir equipaje o buscar un paso conocido?",
+      "bioma": "Estepa, bosque y turbera",
+      "cientifico": "Atravesar una turbera con provisiones",
+      "apartado": "Biomas"
+    },
+    "template": "HipBiomaTpl00001",
+    "templateSystemUniqueVersion": 201003,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "6.0.5"
+    },
+    "meliaz-bridge": {
+      "kind": "bioma"
+    },
+    "hiperaustralis-bioma-item": {
+      "seedId": "BIO-006",
+      "version": "1"
+    }
+  },
+  "folder": "X86HyhTed01WxwTp",
+  "_id": "WGArY0MBMfFODZ5G",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791756239663,
+    "modifiedTime": 1791756697115,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!WGArY0MBMfFODZ5G"
+}

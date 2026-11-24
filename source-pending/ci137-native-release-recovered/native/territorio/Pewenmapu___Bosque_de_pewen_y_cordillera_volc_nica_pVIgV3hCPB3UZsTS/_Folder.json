@@ -1,0 +1,22 @@
+{
+  "name": "Pewenmapu — Bosque de pewen y cordillera volcánica",
+  "type": "JournalEntry",
+  "folder": null,
+  "sorting": "m",
+  "sort": 4000,
+  "_id": "pVIgV3hCPB3UZsTS",
+  "description": "",
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1794169733308,
+    "modifiedTime": 1794169733308,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!pVIgV3hCPB3UZsTS"
+}

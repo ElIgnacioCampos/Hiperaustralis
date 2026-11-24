@@ -1,0 +1,75 @@
+{
+  "name": "Lobo fino austral",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-026_Arctocephalus_australis.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Otárido de hocico fino y pelaje particularmente denso. Forma agrupaciones sobre costas rocosas y se mueve con mucha mayor agilidad en el agua que sobre tierra firme.",
+      "en_escena": "Puede verse entrando y saliendo de rompientes, descansando sobre rocas bajas o desapareciendo bajo una embarcación en aguas costeras.",
+      "bioma": "Canales australes — Maritorio archipelágico",
+      "cientifico": "Arctocephalus australis"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-026",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Canales australes — Maritorio archipelágico",
+      "cientifico": "Arctocephalus australis",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arctophoca_australis_australis_(5).JPG",
+      "peso_sugerido": 2,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/07_Canales_australes/FAU-026_Arctocephalus_australis.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "kb0XKfjLsXLerl6F",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754996754,
+    "modifiedTime": 1791755518635,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!kb0XKfjLsXLerl6F"
+}

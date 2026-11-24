@@ -1,0 +1,76 @@
+{
+  "name": "Keñola · Zambullidor del Titicaca",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-001_Rollandia_microptera.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Ave acuática compacta, de cuello corto y pico afilado, estrechamente ligada al Titicaca. Se sumerge en busca de alimento entre aguas abiertas y totorales; muchas veces solo se alcanza a ver una silueta oscura antes de que desaparezca bajo la superficie.",
+      "en_escena": "Funciona bien como señal de vida en el lago, como movimiento súbito entre totoras o como presencia difícil de seguir desde una embarcación.",
+      "bioma": "Titicaca — Altiplano lacustre",
+      "cientifico": "Rollandia microptera"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-001",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Titicaca — Altiplano lacustre",
+      "cientifico": "Rollandia microptera",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rollandia_Microptera.jpg",
+      "documentaryPhotoPreserved": true,
+      "peso_sugerido": 1,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/01_Titicaca/FAU-001_Rollandia_microptera.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "MYBvmQTY5ka6CYOA",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754990983,
+    "modifiedTime": 1793380550093,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!MYBvmQTY5ka6CYOA"
+}

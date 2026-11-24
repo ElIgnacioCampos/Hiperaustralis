@@ -1,0 +1,75 @@
+{
+  "name": "Caiquén · Cauquén común",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-020_Chloephaga_picta.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Ganso austral frecuente en vegas, praderas y bordes de agua. Machos y hembras presentan plumajes muy diferentes y suelen alimentarse en grupos sobre terrenos abiertos.",
+      "en_escena": "Bandadas pastando, levantando vuelo o protestando ante una aproximación dan vida inmediata a vegas, lagunas y praderas patagónicas.",
+      "bioma": "Patagonia austral — Estepa, bosque subantártico y campos de hielo",
+      "cientifico": "Chloephaga picta"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-020",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Patagonia austral — Estepa, bosque subantártico y campos de hielo",
+      "cientifico": "Chloephaga picta",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chloephaga_picta,_Parque_Nacional_del_Paine,_Chile2.jpg",
+      "peso_sugerido": 1,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/05_Patagonia_austral/FAU-020_Chloephaga_picta.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "8fqHkodlT8RvP0BS",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754995413,
+    "modifiedTime": 1791755514399,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!8fqHkodlT8RvP0BS"
+}

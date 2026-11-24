@@ -1,0 +1,75 @@
+{
+  "name": "Krill antártico",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-029_Euphausia_superba.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Pequeño crustáceo translúcido que forma inmensos enjambres en las aguas del océano Austral. Su abundancia sostiene a peces, pingüinos, focas y grandes cetáceos, convirtiéndolo en una de las bases de la vida antártica.",
+      "en_escena": "Rara vez importa como individuo: aparece como concentración en el agua, como alimento visible en redes o como causa de una súbita reunión de aves y mamíferos marinos.",
+      "bioma": "Umbral Polar",
+      "cientifico": "Euphausia superba"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-029",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Umbral Polar",
+      "cientifico": "Euphausia superba",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Euphausia_superba.jpg",
+      "peso_sugerido": 1,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/08_Umbral_Polar/FAU-029_Euphausia_superba.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "YU8cxHhyveeveNAn",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754997454,
+    "modifiedTime": 1791755521137,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!YU8cxHhyveeveNAn"
+}

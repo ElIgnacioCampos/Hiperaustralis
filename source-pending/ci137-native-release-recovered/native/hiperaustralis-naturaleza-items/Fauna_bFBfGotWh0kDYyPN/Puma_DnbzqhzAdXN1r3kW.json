@@ -1,0 +1,75 @@
+{
+  "name": "Puma",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-013_Puma_concolor.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Gran felino de pelaje uniforme capaz de atravesar bosque, roca, nieve y estepa sin hacerse notar. Caza al acecho y recorre territorios extensos, por lo que una huella fresca puede ser la única señal de que permanece cerca.",
+      "en_escena": "Es más eficaz como rastro que como aparición inmediata: pisadas, pelo, una presa arrastrada o una silueta que ya se aleja por la ladera.",
+      "bioma": "Pewenmapu — Bosque de pewen y cordillera volcánica",
+      "cientifico": "Puma concolor"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-013",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Pewenmapu — Bosque de pewen y cordillera volcánica",
+      "cientifico": "Puma concolor",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_Torres_del_Paine_-_XII_Region_de_Magallanes_y_La_Antartica_Chilena_-_Puma_Concolor_Atardecer.jpg",
+      "peso_sugerido": 3,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/04_Pewenmapu/FAU-013_Puma_concolor.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "DnbzqhzAdXN1r3kW",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754993813,
+    "modifiedTime": 1791755509416,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!DnbzqhzAdXN1r3kW"
+}

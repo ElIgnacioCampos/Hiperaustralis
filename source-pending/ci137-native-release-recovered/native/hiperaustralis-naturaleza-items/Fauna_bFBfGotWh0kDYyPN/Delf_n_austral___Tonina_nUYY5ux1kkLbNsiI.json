@@ -1,0 +1,75 @@
+{
+  "name": "Delfín austral · Tonina",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-027_Lagenorhynchus_australis.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Delfín pequeño de tonos negros, grises y blancos, frecuente en fiordos, bahías y canales costeros. Puede aproximarse a las embarcaciones y aparecer durante unos instantes entre el oleaje antes de volver a desaparecer.",
+      "en_escena": "Una aleta junto al bote, dos o tres cuerpos siguiendo la proa o un salto breve bastan para volver vivo un cruce de canal.",
+      "bioma": "Canales australes — Maritorio archipelágico",
+      "cientifico": "Lagenorhynchus australis"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-027",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Canales australes — Maritorio archipelágico",
+      "cientifico": "Lagenorhynchus australis",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lagenorhynchus_australis.jpg",
+      "peso_sugerido": 2,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/07_Canales_australes/FAU-027_Lagenorhynchus_australis.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "nUYY5ux1kkLbNsiI",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754996997,
+    "modifiedTime": 1791755519366,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!nUYY5ux1kkLbNsiI"
+}

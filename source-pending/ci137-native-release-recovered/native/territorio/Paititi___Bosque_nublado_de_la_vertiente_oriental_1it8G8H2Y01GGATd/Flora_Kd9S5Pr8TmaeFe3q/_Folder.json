@@ -1,0 +1,22 @@
+{
+  "name": "Flora",
+  "type": "JournalEntry",
+  "folder": "1it8G8H2Y01GGATd",
+  "sorting": "m",
+  "sort": 100,
+  "_id": "Kd9S5Pr8TmaeFe3q",
+  "description": "",
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1794169731522,
+    "modifiedTime": 1794169731522,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!Kd9S5Pr8TmaeFe3q"
+}

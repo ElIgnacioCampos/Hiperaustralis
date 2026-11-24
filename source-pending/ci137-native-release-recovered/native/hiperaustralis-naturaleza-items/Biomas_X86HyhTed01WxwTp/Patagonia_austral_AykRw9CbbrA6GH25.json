@@ -1,0 +1,68 @@
+{
+  "name": "Patagonia austral",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/biomas/iconos/BIO-005.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "bioma",
+      "codigo": "BIO-005",
+      "descripcion": "En la estepa, el horizonte es inmenso y el viento borra las referencias próximas. Los valles, las franjas de bosque y las montañas heladas no son tres decorados yuxtapuestos: su relación determina abrigo, agua y rutas posibles. Un trayecto puede comenzar expuesto, encontrar refugio en una depresión y terminar ante una lengua de hielo o una vertiente de montaña.",
+      "en_escena": "El viento oscurece la visibilidad y dificulta mantener dirección en una extensión abierta. ¿Guiarse por relieve, esperar al abrigo, retroceder o avanzar con referencias comprobables?",
+      "bioma": "Estepa, bosque subantártico y campos de hielo",
+      "cientifico": "Orientarse en estepa con fuertes vientos",
+      "apartado": "Biomas"
+    },
+    "template": "HipBiomaTpl00001",
+    "templateSystemUniqueVersion": 201003,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "6.0.5"
+    },
+    "meliaz-bridge": {
+      "kind": "bioma"
+    },
+    "hiperaustralis-bioma-item": {
+      "seedId": "BIO-005",
+      "version": "1"
+    }
+  },
+  "folder": "X86HyhTed01WxwTp",
+  "_id": "AykRw9CbbrA6GH25",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791756239413,
+    "modifiedTime": 1791756696325,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!AykRw9CbbrA6GH25"
+}

@@ -1,0 +1,1278 @@
+{
+  "status": "ARCHIVAL_SOURCES_ONLY_NOT_RUNTIME_APPROVAL",
+  "sourceRun": 45487311335,
+  "sourceArtifact": 14963828413,
+  "sourceArchives": [
+    "Hiperaustralis v1.0.0",
+    "Turianos v06"
+  ],
+  "transformations": [
+    "Remove per-user ownership and lastModifiedBy only; JSON reserialization"
+  ],
+  "records": [
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-journals/Auspicios___Hiperaustralis_ozu3vFfbERrwF2ri.json",
+      "originalSHA256": "7b6508757e4425b7a64bbebc05d64c22b3bbbf70a206d2e8a4beb4e8bf0999a5",
+      "stagedSHA256": "b1c751fbfacd25002fb44a388e15c57f2d7ba3ecf120c93623882cdbc4041c59",
+      "id": "ozu3vFfbERrwF2ri",
+      "name": "Auspicios — Hiperaustralis",
+      "type": null
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-journals/Culturas___Hiperaustralis_48YG3G7eaXO96CyE.json",
+      "originalSHA256": "82d94c96794e50b768e94383726f46181b5f09016262ea727e4b7b22ec89f6c7",
+      "stagedSHA256": "295505911b2ae49bfb670cf4ee08d0478d06002df016bab730c31e88b7bb47a3",
+      "id": "48YG3G7eaXO96CyE",
+      "name": "Culturas — Hiperaustralis",
+      "type": null
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-journals/Hiperaustralis___Bestiario_sobrenatural_p1Ditj5HvsgNiTrd.json",
+      "originalSHA256": "94ca0c71b90a6f20f93ddb70537d85428ef75f24547241bcf5e3ed1f5a7c65b1",
+      "stagedSHA256": "3560e9528def836a3b269164362194252bc79ba44d8d0657fd62425e601ada12",
+      "id": "p1Ditj5HvsgNiTrd",
+      "name": "Hiperaustralis · Bestiario sobrenatural",
+      "type": null
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-journals/Hiperaustralis___Habitantes_extraordinarios___13_entradas_7KBAMCE3Q3X83H39.json",
+      "originalSHA256": "bb852103ce2925668fab2aff07af6ac8f925d0975b23aec2ee2ac2f28f8695d1",
+      "stagedSHA256": "fcb5250ca790902ef01fc31bcd82461dce0cce01447b3f83fb6b29cb6d7d7660",
+      "id": "7KBAMCE3Q3X83H39",
+      "name": "Hiperaustralis · Habitantes extraordinarios — 13 entradas",
+      "type": null
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-journals/Hiperaustralis___Presencias_wPxQqMg7Hb9c2fmw.json",
+      "originalSHA256": "49308607decad0068aa0f9b6a06cec368303b9eb9015152335329de95fdd274f",
+      "stagedSHA256": "1e66e3a4f16356a78ced8c65f4d52fc60578d7d6cf7a376f66a35a81f7a4f217",
+      "id": "wPxQqMg7Hb9c2fmw",
+      "name": "Hiperaustralis · Presencias",
+      "type": null
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-journals/Naturaleza___Fauna__Flora_y_Funga_TZunJ7Ih1rLlKY5i.json",
+      "originalSHA256": "af0416829f1ec811e5b40443e79cc5c609f312357b7b53586ae961a07eec5d5d",
+      "stagedSHA256": "0945462ea2891ada70629ad25ce52c4977d732839261eb5099df87d2d2844df0",
+      "id": "TZunJ7Ih1rLlKY5i",
+      "name": "Naturaleza — Fauna, Flora y Funga",
+      "type": null
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Canales_australes___Maritorio_archipel_gico_V1g1Fl4gLf6IIGoU/Fauna_4LCyEx2djfc7rlXo/_Folder.json",
+      "originalSHA256": "0314111a4c822f76295ffb11853ee1b8bb2a525ce932c1a230557c90097b0bb5",
+      "stagedSHA256": "b6181f0fe23ec0076e9a7f06fdd2e1b2ef362250988e93275d3e50479a01ce8e",
+      "id": "4LCyEx2djfc7rlXo",
+      "name": "Fauna",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Canales_australes___Maritorio_archipel_gico_V1g1Fl4gLf6IIGoU/Flora_Z8dyuScS9HHXXBPq/_Folder.json",
+      "originalSHA256": "bfc616e2d5bf62ec2d1929b87181855c6edc545a4c9ffff4af40c8f3f57e1203",
+      "stagedSHA256": "33bba02009c5fb4ebfab47584d4d3952e40f0c572ae795eba363eaf93986114b",
+      "id": "Z8dyuScS9HHXXBPq",
+      "name": "Flora",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Canales_australes___Maritorio_archipel_gico_V1g1Fl4gLf6IIGoU/Funga_rndZMPsWg8AcPXOA/_Folder.json",
+      "originalSHA256": "ecbd6cfe0480d9049a0ff496c97349750aae93f757fc630528b516cecccb97f6",
+      "stagedSHA256": "9ec341611806371bdab5ecfc667cf9611ed110b4edb5acbda07c308f4d2f7fb6",
+      "id": "rndZMPsWg8AcPXOA",
+      "name": "Funga",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Canales_australes___Maritorio_archipel_gico_V1g1Fl4gLf6IIGoU/_Folder.json",
+      "originalSHA256": "0cb3c7dc0a9d59f96e4d904f06c4bac95103c4a24c006e6304069a28d608fbf6",
+      "stagedSHA256": "aa62550376eed0b26d3c71c5a94bdf6656cffb681bbea1076819d8f979685026",
+      "id": "V1g1Fl4gLf6IIGoU",
+      "name": "Canales australes — Maritorio archipelágico",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Ngulumapu___Bosque_templado_lluvioso_p0kXeorbBxlaG1lA/Fauna_nKzxsHSbSJVfrZ6n/_Folder.json",
+      "originalSHA256": "9a908c6e219d6d31773e0456021fc2a907a805f13620ed7bbafb01f85d2f562f",
+      "stagedSHA256": "822b7f4e897bbde3fadf94e4f8d703a5c3217c0aeb27c836569d9d75e08dcf08",
+      "id": "nKzxsHSbSJVfrZ6n",
+      "name": "Fauna",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Ngulumapu___Bosque_templado_lluvioso_p0kXeorbBxlaG1lA/Flora_aFKngqsmT0q4H159/_Folder.json",
+      "originalSHA256": "0fdfc1138624fec09f21d4b7614cbea65ba1aa14bb4cffac79e1349e20ecf6a0",
+      "stagedSHA256": "87a8a7b4a950d50b4c43c64f3b502d4c2ec65ca7dc9bd2d1a1b286f438997866",
+      "id": "aFKngqsmT0q4H159",
+      "name": "Flora",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Ngulumapu___Bosque_templado_lluvioso_p0kXeorbBxlaG1lA/Funga_Yg3jyO8XT4PN7Dni/_Folder.json",
+      "originalSHA256": "0470e73f0a5f0e23d83f3f2bb1d1c0b63be2f0deb1421885aa776b14d31bd257",
+      "stagedSHA256": "8d8d99dd2ef7ca5bdf332529116045d934db4c6b3cca2222d2812a4b9d30d54f",
+      "id": "Yg3jyO8XT4PN7Dni",
+      "name": "Funga",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Ngulumapu___Bosque_templado_lluvioso_p0kXeorbBxlaG1lA/_Folder.json",
+      "originalSHA256": "8b28be6e6aa4315023ddfa6eaa72d5bc9189c2f3ab582ed4ece54c6125d6edec",
+      "stagedSHA256": "2c9155a6bbcbc40d196ff2ca2fe03d3ca97ac14d40c6a213e2feb7f28d274d61",
+      "id": "p0kXeorbBxlaG1lA",
+      "name": "Ngulumapu — Bosque templado lluvioso",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Paititi___Bosque_nublado_de_la_vertiente_oriental_1it8G8H2Y01GGATd/Fauna_H0GRYQoBEBhCVgsL/_Folder.json",
+      "originalSHA256": "ecd1fcf74250dacefd63453aaf8edcb202ebbeea4a7ccfdc51bac7dacc8fe425",
+      "stagedSHA256": "41dd2aabd1492a68d13fa8626727e5591acbf79a5a998f8b28578824712f2ce8",
+      "id": "H0GRYQoBEBhCVgsL",
+      "name": "Fauna",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Paititi___Bosque_nublado_de_la_vertiente_oriental_1it8G8H2Y01GGATd/Flora_Kd9S5Pr8TmaeFe3q/_Folder.json",
+      "originalSHA256": "522539d0bf6137eb47bc44fb91fb6fc094e831f59168146e0342d4945bab391d",
+      "stagedSHA256": "d86583a6e859c27bcd1c72e428a3de81bdc8d6c0a051f6be5170d5647480071f",
+      "id": "Kd9S5Pr8TmaeFe3q",
+      "name": "Flora",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Paititi___Bosque_nublado_de_la_vertiente_oriental_1it8G8H2Y01GGATd/Funga_AcJi3oLDrvU7VBvU/_Folder.json",
+      "originalSHA256": "efb4736a99cfee0d0e9be3c191aafe5c9e5dd5bdeda55d348acd0a12797e0863",
+      "stagedSHA256": "399b1618b1f19e40c6e61b9cbcc5303262b43ca65b44b4064e6208b219b278f7",
+      "id": "AcJi3oLDrvU7VBvU",
+      "name": "Funga",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Paititi___Bosque_nublado_de_la_vertiente_oriental_1it8G8H2Y01GGATd/_Folder.json",
+      "originalSHA256": "64ef780713188de14288d649f7acf6d0c79d1657b07c6be01865b0f15df14a1a",
+      "stagedSHA256": "ae625d7b2a55ce687b5fa173be199f00c3df08cd89be0a49c25a5f8d60bc4fe2",
+      "id": "1it8G8H2Y01GGATd",
+      "name": "Paititi — Bosque nublado de la vertiente oriental",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Patagonia_austral___Estepa__bosque_subant_rtico_y_campos_de_hielo_KZI4KBSREHZl6CGc/Fauna_BSMW1cAAFxPEpZUi/_Folder.json",
+      "originalSHA256": "4db8891f3aff2934011eb89b12e80f6a34989308b78a541863d3848cee3b1f00",
+      "stagedSHA256": "5ea235bf9daecb64f1b651dab468ea2d673394a39458cfa8a029e7c6b625854d",
+      "id": "BSMW1cAAFxPEpZUi",
+      "name": "Fauna",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Patagonia_austral___Estepa__bosque_subant_rtico_y_campos_de_hielo_KZI4KBSREHZl6CGc/Flora_2fCtaFht9yjKA8MG/_Folder.json",
+      "originalSHA256": "79abc8e95b7a1139d28fd632e7e278093c093b75c8a5b11ac74e59605dd5dd37",
+      "stagedSHA256": "a32d8067462105cee2f82032b26a8ef1e804f0784ae008e501ffb152ce94e76f",
+      "id": "2fCtaFht9yjKA8MG",
+      "name": "Flora",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Patagonia_austral___Estepa__bosque_subant_rtico_y_campos_de_hielo_KZI4KBSREHZl6CGc/Funga_lFmHpjRxurjFY5BU/_Folder.json",
+      "originalSHA256": "deda0d3f43e228710eaf4fd7a8c0be529a3e5fd909b79734e0bdf3acd39d8701",
+      "stagedSHA256": "f49049797202b59b84a09a39d10c28d5c46d74a4c2f7489309d9b659767c7a21",
+      "id": "lFmHpjRxurjFY5BU",
+      "name": "Funga",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Patagonia_austral___Estepa__bosque_subant_rtico_y_campos_de_hielo_KZI4KBSREHZl6CGc/_Folder.json",
+      "originalSHA256": "d3d403abee40e347bc65ef36c26a84caf1403ae8bd4d66890677204a6f9c9964",
+      "stagedSHA256": "82ed9441f6236bcc2e3bc667e768b351ee16ded114bb8688b5177e9b72680194",
+      "id": "KZI4KBSREHZl6CGc",
+      "name": "Patagonia austral — Estepa, bosque subantártico y campos de hielo",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Pewenmapu___Bosque_de_pewen_y_cordillera_volc_nica_pVIgV3hCPB3UZsTS/Fauna_37ieEW77VAdynOv4/_Folder.json",
+      "originalSHA256": "db9dc0e71062c1b46969431d847cbc1cef3eb5a071d17fe4ac79d6fe8eceef58",
+      "stagedSHA256": "fee99f3ad1541f695a507ac69b78273a253bf1c53485ad077c9615f716e4baa7",
+      "id": "37ieEW77VAdynOv4",
+      "name": "Fauna",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Pewenmapu___Bosque_de_pewen_y_cordillera_volc_nica_pVIgV3hCPB3UZsTS/Flora_TNGJaGIAd8d1wYbv/_Folder.json",
+      "originalSHA256": "c072d51757b0016bc3f43cfc6968396d535ef93acb00a600891fb2685897dfb8",
+      "stagedSHA256": "1983fea4db2653e5633a50df515dc087005529e0bfa3468c8e90262a08d910a1",
+      "id": "TNGJaGIAd8d1wYbv",
+      "name": "Flora",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Pewenmapu___Bosque_de_pewen_y_cordillera_volc_nica_pVIgV3hCPB3UZsTS/Funga_2PvoVzeY4U1Rfcvn/_Folder.json",
+      "originalSHA256": "0fe14c6c57f442dd44277d62aee87fb44e108bb18f7d085b822b77c375ea56f1",
+      "stagedSHA256": "dc5c67578346ed51f7a00cb9d35534a500991503631b18f14275aa4fbac32316",
+      "id": "2PvoVzeY4U1Rfcvn",
+      "name": "Funga",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Pewenmapu___Bosque_de_pewen_y_cordillera_volc_nica_pVIgV3hCPB3UZsTS/_Folder.json",
+      "originalSHA256": "cc76df8803bf84fbc5921b2d7d8e13d8f4dca3291d4484bf45b6a0abe05ce940",
+      "stagedSHA256": "899531dd47790812339ba78d553b7727c718e48e8c4841c9338f09fa72e4d0b8",
+      "id": "pVIgV3hCPB3UZsTS",
+      "name": "Pewenmapu — Bosque de pewen y cordillera volcánica",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Tierra_del_Fuego___Estepa__bosque_austral_y_turbera_VybOjeHtkjzCzAX6/Fauna_s4mVRFsmv8O1eAYA/_Folder.json",
+      "originalSHA256": "9b3a613ec7343ba0c61c8c8a6dbfe9507e768d6e8b0c798558dce9d51c8f1eb9",
+      "stagedSHA256": "d257192c310af817644094e08d8392fc486402ee7d1b56ef4edb9b5dc1371ed7",
+      "id": "s4mVRFsmv8O1eAYA",
+      "name": "Fauna",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Tierra_del_Fuego___Estepa__bosque_austral_y_turbera_VybOjeHtkjzCzAX6/Flora_7RAvIZMO5DvHjhtE/_Folder.json",
+      "originalSHA256": "2f4d32580a80084c719a2a95e5206e0609dbf7aac3bc7c6c18c7658f3b25cd3e",
+      "stagedSHA256": "01ebab01d7ec5f43802abbe93734faa2f47c12a1fb33d274a896cc239a78e974",
+      "id": "7RAvIZMO5DvHjhtE",
+      "name": "Flora",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Tierra_del_Fuego___Estepa__bosque_austral_y_turbera_VybOjeHtkjzCzAX6/Funga_n8SlVDiOyvIBYghX/_Folder.json",
+      "originalSHA256": "87caa8077c986a5ab0c8e24af862be64ccdc8e480e33a58e229f60b6c8dce137",
+      "stagedSHA256": "4bba14236b4785a956c6544362058e3dc47392d3a071da711efb58fa87f6ca6e",
+      "id": "n8SlVDiOyvIBYghX",
+      "name": "Funga",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Tierra_del_Fuego___Estepa__bosque_austral_y_turbera_VybOjeHtkjzCzAX6/_Folder.json",
+      "originalSHA256": "6ca963b3904a0fe5834f4f7c21f61707ce55525d2bbe13219c3fe107375b6928",
+      "stagedSHA256": "f349861e1728d701bace0faff4482380f25bb94832eb0b4952040be2a00bc938",
+      "id": "VybOjeHtkjzCzAX6",
+      "name": "Tierra del Fuego — Estepa, bosque austral y turbera",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Titicaca___Altiplano_lacustre_eVExIbq23vJnGmNi/Fauna_3h5ycFq3P7Esojhw/_Folder.json",
+      "originalSHA256": "92252354393efc90478313221c6061e3293dd6b0c2bd11db4de283325beb208f",
+      "stagedSHA256": "4d5a5c3ffdb22500f514b26197be2ae1410f3e2f643a081db41127b1bac5fdd7",
+      "id": "3h5ycFq3P7Esojhw",
+      "name": "Fauna",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Titicaca___Altiplano_lacustre_eVExIbq23vJnGmNi/Flora_YhYQjFdEXeZuEMNE/_Folder.json",
+      "originalSHA256": "d8d289c7443437f0c4067bf830111e1226f59bc7d56b77dad7b836f988d6c05e",
+      "stagedSHA256": "f815394d56258bf7c04a6619a228bfe56454370b98ea81990c7915815242e1c6",
+      "id": "YhYQjFdEXeZuEMNE",
+      "name": "Flora",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Titicaca___Altiplano_lacustre_eVExIbq23vJnGmNi/Funga_RFe6eXTC7UG2eeyW/_Folder.json",
+      "originalSHA256": "69648a888593df92e9486e6992b594caf76e98c4daffd7044b3a4c06b50221ed",
+      "stagedSHA256": "8ca42d015baf703cbdded5620920c086a03cdccee96e907228bbd57a45dd0cab",
+      "id": "RFe6eXTC7UG2eeyW",
+      "name": "Funga",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Titicaca___Altiplano_lacustre_eVExIbq23vJnGmNi/_Folder.json",
+      "originalSHA256": "a3b807226e85848ed02811b030a16195e032cdf4bfd331d389c0828f1c959d50",
+      "stagedSHA256": "428bc1e82d70c25803f17abfe4a1afb1bae2f279b7715c69c0e75865dc9d6bcd",
+      "id": "eVExIbq23vJnGmNi",
+      "name": "Titicaca — Altiplano lacustre",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Umbral_Polar_R8m9lphBAtL8bQdG/Fauna_ocQ5FfY8NAYfF1Qt/_Folder.json",
+      "originalSHA256": "55fc20a5e886e08f5be45a480915cce7f9b06602276a5ecf79ac2d1a6cb2f41b",
+      "stagedSHA256": "1387cb9005e08da3b5a46e7cd28acffd5e7ceb2d539783efe9394950bcc3dd56",
+      "id": "ocQ5FfY8NAYfF1Qt",
+      "name": "Fauna",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Umbral_Polar_R8m9lphBAtL8bQdG/Flora_EglO6aaPCZKcn6Ji/_Folder.json",
+      "originalSHA256": "b46aca93dbc443211937896b5a665b4475c2ed18cee8c8502ce6292045646382",
+      "stagedSHA256": "937baeb20029a641b440e8a3a9dfac51494b25493b4132acdfa00337e0ba703c",
+      "id": "EglO6aaPCZKcn6Ji",
+      "name": "Flora",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Umbral_Polar_R8m9lphBAtL8bQdG/Funga_j3LasY6H4ZBZ9Lil/_Folder.json",
+      "originalSHA256": "81532a38941e6f1040fa7631509fc1843c8667359c417553d5453d68dfd23baa",
+      "stagedSHA256": "f8f06462b0b844715326c0ac951074512d5e6e614a5755ac111d0f0756464bb8",
+      "id": "j3LasY6H4ZBZ9Lil",
+      "name": "Funga",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/territorio/Umbral_Polar_R8m9lphBAtL8bQdG/_Folder.json",
+      "originalSHA256": "1d87889907922437180f8ff5a09ee1f51ee068f25f9ffd53ae8181bd220ec0be",
+      "stagedSHA256": "f042de23452c4616c6742fa3e2dcb884218bbda1a98a88907c127d8124f45200",
+      "id": "R8m9lphBAtL8bQdG",
+      "name": "Umbral Polar",
+      "type": "JournalEntry"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Canales_australes_viMyw1q7XBwaYJzd.json",
+      "originalSHA256": "156d8845f78e27cb4339150569b86f2195b98eebc613dffcc923d8b66b2d80e4",
+      "stagedSHA256": "881d57457cf2e6db1bea716ef8ea0605efb19e7b0ba438722d3d16e673cc325b",
+      "id": "viMyw1q7XBwaYJzd",
+      "name": "Canales australes",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Ngulumapu_5iifIanvWdAPphJc.json",
+      "originalSHA256": "5a92974f3d75c3b9511184e74e7e3af375b1a8001d1ecf348dd35b4e7b3ef83f",
+      "stagedSHA256": "898f19825108ff75613727f1837010ecd7961c989ddb8bed463a7c83c397e5fe",
+      "id": "5iifIanvWdAPphJc",
+      "name": "Ngulumapu",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Paititi_A9QZLy1IegmmhnJK.json",
+      "originalSHA256": "1660eff18353dcd851e26922989fcaeeb81f330f2820126b4dc35f9ee4957d88",
+      "stagedSHA256": "fb411fa7e26ad851e1a1415600e470c2f50e7491d59d56f374d419604b427b56",
+      "id": "A9QZLy1IegmmhnJK",
+      "name": "Paititi",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Patagonia_austral_AykRw9CbbrA6GH25.json",
+      "originalSHA256": "3797f5611b8959ed1c120bda2aaa2f539bd07e61fcd60ff2411db3584331fb12",
+      "stagedSHA256": "7ab7ad380b41034e67ced9adeb26c77c391e9e5387ddd510d847e3e68983e6f2",
+      "id": "AykRw9CbbrA6GH25",
+      "name": "Patagonia austral",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Pewenmapu_qGfDgUgbztWfpLac.json",
+      "originalSHA256": "f66a90323e61d405bdfcfdbd196c1f238a2a53c34434872b4eedc597e16d2466",
+      "stagedSHA256": "0a8369f25df18642082addbcc250695dad58001973a8f97d9e66049dc01d56c4",
+      "id": "qGfDgUgbztWfpLac",
+      "name": "Pewenmapu",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Tierra_del_Fuego_WGArY0MBMfFODZ5G.json",
+      "originalSHA256": "a8e49d753552b96f5747bea92e872de583383d1a80ba1627ab9aa805e4516250",
+      "stagedSHA256": "1d2e50b6c7cce34fd271ce9ce20ed06adf3d2cc90ae9e6238daea114dc4aa797",
+      "id": "WGArY0MBMfFODZ5G",
+      "name": "Tierra del Fuego",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Titicaca_1L6xluNiPetnCBMh.json",
+      "originalSHA256": "09b069fc10100ec4c73655e32cd782b016f5c60f0098d6c0eb451ccd75a9b483",
+      "stagedSHA256": "892610b817d5135b89f04400eb1ac2f1241a8080c0df7148e0e1945442e3bc8a",
+      "id": "1L6xluNiPetnCBMh",
+      "name": "Titicaca",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Umbral_Polar_PxPpVGJTu6Wgowg0.json",
+      "originalSHA256": "292810b492f1f732f021cbbc6c9d7243eee2e2f0cc17bb76785e3cd748a29cfc",
+      "stagedSHA256": "4b35e69be731e8ce98b5b2f7216bb5b40d962fd9e79ee024f714857917ad6e71",
+      "id": "PxPpVGJTu6Wgowg0",
+      "name": "Umbral Polar",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/_Folder.json",
+      "originalSHA256": "8ffefba013d4648d14d298f9d321421b05b271760485eb8d8a751be2b171842c",
+      "stagedSHA256": "175fce4b065cae29906a88f06d37a3770d13fa48674b13a9b27100bdc6a8b963",
+      "id": "X86HyhTed01WxwTp",
+      "name": "Biomas",
+      "type": "Item"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Armadillo_gigante_Uo01VqsJ2QxRunBJ.json",
+      "originalSHA256": "9b6274fc0c5777d07111be19037c7c28bfaacde1518a0cb69044ef827a2b041f",
+      "stagedSHA256": "38784dcae146847ffe0691fc7fbaf21b77460a532e608b9af34d543af3a8c053",
+      "id": "Uo01VqsJ2QxRunBJ",
+      "name": "Armadillo gigante",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Ballena_azul_KbtOX3hJ5s6hx3MV.json",
+      "originalSHA256": "919d8cd79c07b356857d916f2c777514de0e323e41e4ee6918976f68fb789d1e",
+      "stagedSHA256": "4aaca2e3bb16c2697cfa72a4c20dd0efddd9879ab5347aa06611b64ae3d60540",
+      "id": "KbtOX3hJ5s6hx3MV",
+      "name": "Ballena azul",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Ballena_franca_austral_pwpLirKw2V1zdpX7.json",
+      "originalSHA256": "a20c4989ca3471126dbe3f8c79987d265c8b5940efd94386330db8a39adf90ef",
+      "stagedSHA256": "447fccb923d52cd9cc72309538c3c41347da5ec390566fcc040150759394def7",
+      "id": "pwpLirKw2V1zdpX7",
+      "name": "Ballena franca austral",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Ballena_jorobada_8LZSIGm6glTvjx8F.json",
+      "originalSHA256": "513f6f0d2e0d5f81977620e7dc234b9f66ad4a513861bf064385841087e21cf4",
+      "stagedSHA256": "7efa0562d01fdeabbce32851dc6630e2778fba55222e0cc0f98c1121938d5bd4",
+      "id": "8LZSIGm6glTvjx8F",
+      "name": "Ballena jorobada",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/C_ndor_andino_gIDtNyJSYWIXOAp5.json",
+      "originalSHA256": "564561216eab5074df69f4a0be24865324399ab6db847fb44dcda4b2c50f4927",
+      "stagedSHA256": "9f054507751c4b76f9bef2e3c4f894c82fefcd8dc54cf7966b72d814e8d7729d",
+      "id": "gIDtNyJSYWIXOAp5",
+      "name": "Cóndor andino",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Cachalote_ty5vxa5YdStMLiDb.json",
+      "originalSHA256": "33b0d6d327c31b2e03d6a39cf98bab64f1884e180b3863bc08a76aadce3e8d73",
+      "stagedSHA256": "3a7821aa772dbdf9403a5d5667bc4e2287462e0cbf6d6f264661f29f3552bf12",
+      "id": "ty5vxa5YdStMLiDb",
+      "name": "Cachalote",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Caiqu_n___Cauqu_n_com_n_8fqHkodlT8RvP0BS.json",
+      "originalSHA256": "ff3adf321ec031aab5983033bf33abb7e77624e0fde79f5cf849d089dd7cfeb7",
+      "stagedSHA256": "1190e5fd4f9b3b276c26493134fd5305be1eb6e2bb5431ae908a6a228380c2c0",
+      "id": "8fqHkodlT8RvP0BS",
+      "name": "Caiquén · Cauquén común",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Capibara_8qnBtUxCb8VYiSzp.json",
+      "originalSHA256": "d3d76daa043417bf9e20af39c703ccf6e9ee3a8b3e7a03e02c795bc3a55bc860",
+      "stagedSHA256": "a0d9efd8a1fd374f92ca33204fd268a40b4d8ea15027e51f41c7af9ee922b252",
+      "id": "8qnBtUxCb8VYiSzp",
+      "name": "Capibara",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Caranca_ExYEwc3Ap4yp1hnX.json",
+      "originalSHA256": "73910fcddfb026e8edb863a17eb9d67870921e7206d89b45092c2470afcc6f00",
+      "stagedSHA256": "8fb1490be9db34e7d384a29f9f66624f6a14a59b60cc8efcf82db641ee0a507f",
+      "id": "ExYEwc3Ap4yp1hnX",
+      "name": "Caranca",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Carpintero_negro___Carpintero_magall_nico_usQ73nSvGhNkSDSu.json",
+      "originalSHA256": "ea1fa7178c46f800e77193a64fbe6ccadecdc0e8b98ef855d23cde0354653d1f",
+      "stagedSHA256": "de9d30e0851fec8f9731b718faa596f7fd44898ab1e68c6de93402f7fca6ede9",
+      "id": "usQ73nSvGhNkSDSu",
+      "name": "Carpintero negro · Carpintero magallánico",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Choique____and__petiso_OpHPHxq5nQDijZ7p.json",
+      "originalSHA256": "6662eb191d58b756990d85b703f72897418cbc89d307337df47ca44feb6598c5",
+      "stagedSHA256": "27a3b422e1d8cff1cb84455c863c8d951dae744f90e89b79470779dd0e50f2f7",
+      "id": "OpHPHxq5nQDijZ7p",
+      "name": "Choique · Ñandú petiso",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Choka___Gallareta_andina_8U49t6TXIzBEXBja.json",
+      "originalSHA256": "2497b2d9c247c5f318f75fff21fd4023fed80c7e021b3374e2aad7ae021a8d74",
+      "stagedSHA256": "0da95e6525bb8fd67405c3fe802567761e94435a241c1ac86533d2b1a932705a",
+      "id": "8U49t6TXIzBEXBja",
+      "name": "Choka · Gallareta andina",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Cormor_n_imperial_us4NecHuL6WQXwMc.json",
+      "originalSHA256": "13f36d84c3fc0166de276120f73d1a78b14dce846387a20622d6922a21a5543c",
+      "stagedSHA256": "ce2c86ad9c8aa43404a3d902e0a302780d9c6c62bca5750d27e03b5bfa2e451b",
+      "id": "us4NecHuL6WQXwMc",
+      "name": "Cormorán imperial",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Delf_n_austral___Tonina_nUYY5ux1kkLbNsiI.json",
+      "originalSHA256": "8f33dc81ac14f40afcab43020569b15d03d36f45abce0a0d9f57931d0e8ae9d4",
+      "stagedSHA256": "d986362ec81a4bfc559453db2fb55fb46d694b5078cc72a912ccedcf2d27d17a",
+      "id": "nUYY5ux1kkLbNsiI",
+      "name": "Delfín austral · Tonina",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Flamenco_andino_eG8Fv70VMWfPn9ND.json",
+      "originalSHA256": "44808dc9858ef392e74ca12bfc2316700c335ddaa96cc03aadf8d0638d64c9fb",
+      "stagedSHA256": "f30adc1ce636fc996426b5070759edba6f584df1e0d237fa7516b976d9b36f21",
+      "id": "eG8Fv70VMWfPn9ND",
+      "name": "Flamenco andino",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Foca_de_Weddell_DqpmHU2SZaEQ0IQe.json",
+      "originalSHA256": "bf6a6ec854f7bbd22deecbde422a6323950125e298a8c1c60b569390e8d189b5",
+      "stagedSHA256": "13a3fe849f1bf032262e71e4f2997fc45aa1d17467e65ff7fd5d49995ca43aa2",
+      "id": "DqpmHU2SZaEQ0IQe",
+      "name": "Foca de Weddell",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/G_i_a_fHQnZGjmSOlu4qa8.json",
+      "originalSHA256": "586a8c0777858ec91b9d92a3d36b526c2ef935977b3859b0aa35ca98d878bca1",
+      "stagedSHA256": "5bc3dc8094e7f3db9753f50e54589ca070bb49aad24dab47524002def462c198",
+      "id": "fHQnZGjmSOlu4qa8",
+      "name": "Güiña",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Gallito_de_las_rocas_sJUb33WwcLgPb3PQ.json",
+      "originalSHA256": "ea81ad35fbf40360f09da5dcaa133d810ef10a263945763e0ed1d08a2151ada2",
+      "stagedSHA256": "832679018a2b7d3a84a5fb7b3f687159ea43a2f485469434c331f4c875eed3e6",
+      "id": "sJUb33WwcLgPb3PQ",
+      "name": "Gallito de las rocas",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Gonfoterio___Notiomastodon_exWEvQTUZT0S0hY4.json",
+      "originalSHA256": "0593406f5c840332dbea039da66eeb65b2eff42b35517a4408ac8f901631b867",
+      "stagedSHA256": "2b0483a9b88a67a2f3ea1e288c133d9cb27021fa4e2a4abecdec273e9820091d",
+      "id": "exWEvQTUZT0S0hY4",
+      "name": "Gonfoterio · Notiomastodon",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Guanaco_xBWLbeiR1eoLoRNB.json",
+      "originalSHA256": "ca53e749ab79c8612e811d67625a26d4b1f23656ebc99a4fcc6c3e378be350fb",
+      "stagedSHA256": "f462714c0735a3118d955de065451de37235870c467aef0091ed99b98dd924f6",
+      "id": "xBWLbeiR1eoLoRNB",
+      "name": "Guanaco",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Hippidion___caballo_sudamericano_wS747C9NmBt7XFrg.json",
+      "originalSHA256": "0541b8215bbcf3be1b0d152c8124d7811d18c92cbdf906b4004b2d41dc80dcc8",
+      "stagedSHA256": "201c4618348e83963041e10611364ad55705bf4995f8f71c81cd6c5647cd8774",
+      "id": "wS747C9NmBt7XFrg",
+      "name": "Hippidion · caballo sudamericano",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Huemul_nmg6fpR6xYf8oZdL.json",
+      "originalSHA256": "5f4a61517e0622287b6748cfa02ca565c281475f785bec73fd68d45c464afeb0",
+      "stagedSHA256": "94532aa3454aa3fb88348fe3b5c9526990b49e520177bec8e61c6c05dda6b007",
+      "id": "nmg6fpR6xYf8oZdL",
+      "name": "Huemul",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Huill_n_xYZgtFASxeIFpToR.json",
+      "originalSHA256": "72c5abe8945d3903563ee027d234997a735ddacc6395b5d70393db411657e6db",
+      "stagedSHA256": "ca015e28f56ef866c4b0f77d5fd2708a42667076720d285ac5c5193c23bc8fa0",
+      "id": "xYZgtFASxeIFpToR",
+      "name": "Huillín",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Ke_ola___Zambullidor_del_Titicaca_MYBvmQTY5ka6CYOA.json",
+      "originalSHA256": "ce8e73e3bba5a44a7a45daf0236114a58c9661fbd24692fed323e4446f576bed",
+      "stagedSHA256": "6f374042a7a5ee6fbae8dcbc1c8f061db423658a1ad97dc5dad5e487a1d71941",
+      "id": "MYBvmQTY5ka6CYOA",
+      "name": "Keñola · Zambullidor del Titicaca",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Kelenken___ave_del_terror_6dbWEBG1uRnGI28V.json",
+      "originalSHA256": "ad04f3f8c33bd2af4afac8daf0bcd4a7f9a7b1b904c08952bd334edda504e391",
+      "stagedSHA256": "bcdf61632e681fa45c69a5d9500e45a72f629c16e2353c75efbc38a889ba3775",
+      "id": "6dbWEBG1uRnGI28V",
+      "name": "Kelenken · ave del terror",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Krill_ant_rtico_YU8cxHhyveeveNAn.json",
+      "originalSHA256": "60b80d9ceefc278776b6f675100b9c2583b803eface0613dfdddb6e32db367dd",
+      "stagedSHA256": "300d3a16a7a5414944a0b5bd9450940a6f7c86d75173c6e0b26ef2234806cf91",
+      "id": "YU8cxHhyveeveNAn",
+      "name": "Krill antártico",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Lobo_fino_austral_kb0XKfjLsXLerl6F.json",
+      "originalSHA256": "5219119d218bf89cce2f79e7b21263b73e6c3a57bcd54c1193906f51c9df6b59",
+      "stagedSHA256": "4cbeb1fc56022bee1e4a1229f93a80c5a426006ef55d694574a8ba21396e1408",
+      "id": "kb0XKfjLsXLerl6F",
+      "name": "Lobo fino austral",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Lobo_marino_com_n_wSNmNqNKH8EHbp44.json",
+      "originalSHA256": "fc6dd124e66a784e7fc0d344d2bd4da3ed1dea85df3db9f7bc7e085f999f8cc1",
+      "stagedSHA256": "99b7eea5f2f11ac4767d6ba542a32673c6914b406f4a100de2b13339d68d7b08",
+      "id": "wSNmNqNKH8EHbp44",
+      "name": "Lobo marino común",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Macrauchenia___macrauquenia_1ZG2udTbA0CmXejm.json",
+      "originalSHA256": "88b54d214278ade1a2a87565a5bf7105c74240a3854b8099fa56ac194e0dd28f",
+      "stagedSHA256": "8e178cbb6960c61eb2c3578c5793574b1d91097f95898b20b5c9a208f7e27dfd",
+      "id": "1ZG2udTbA0CmXejm",
+      "name": "Macrauchenia · macrauquenia",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Mara_patag_nica_Ns2E8Uvsz8cPKJVt.json",
+      "originalSHA256": "c74ea71372539d449daa16a14bfa8e87c3996e65db32d7ebdb74a0436bb2a975",
+      "stagedSHA256": "e6228f751a3a32227beb843ffaba1e212fa6ae7e8e8336a27523a394e2294909",
+      "id": "Ns2E8Uvsz8cPKJVt",
+      "name": "Mara patagónica",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Monito_del_monte_9rgDjzvFGvWNfeKu.json",
+      "originalSHA256": "d5087c2946f1b368f579667bb7c7556780f1759062ee8123241983731703e9b5",
+      "stagedSHA256": "522d5459f99172f459240ddda0101eac23bf619822cb8b62afdf19af0e67af0c",
+      "id": "9rgDjzvFGvWNfeKu",
+      "name": "Monito del monte",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Nutria_gigante_NpLnnFUGIb4QtU67.json",
+      "originalSHA256": "13c7acf43fb5a3d2e846b64b3d47dabbfd5b0840e7b1c394c7a46b9d757ed3e3",
+      "stagedSHA256": "5eb06b646b7ffc0582337a64570a5581713fe0a78d128f82cd25bae2691f102a",
+      "id": "NpLnnFUGIb4QtU67",
+      "name": "Nutria gigante",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Oso_andino___Jucumari_ht3BGgYN4Qpv6Jxh.json",
+      "originalSHA256": "ccd396593e3d10d2fc913f12ba075a0013fcd46f1041a2f065f773b9316cd417",
+      "stagedSHA256": "f670971516ceac1b16d7fb078bb4d7c3aec834aba41fa4836594952a771a48d9",
+      "id": "ht3BGgYN4Qpv6Jxh",
+      "name": "Oso andino · Jucumari",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Otorongo___Jaguar_jeBv1DPoIY1lX2zq.json",
+      "originalSHA256": "7b6d4c39c4f437cf8742b7cf3db0299385ba0845498f5a064e7d44bd4a42bc8c",
+      "stagedSHA256": "f807a12b2c354d51995319146a49bc60afd501206bda1afd0f6580e9e39ab707",
+      "id": "jeBv1DPoIY1lX2zq",
+      "name": "Otorongo · Jaguar",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Ping_ino_de_Adelia_huZeixaINs1rrugH.json",
+      "originalSHA256": "1d69f6f4d569f8f84c78f04b0d029016c92db2020e59e564d1d5d283c28efa1f",
+      "stagedSHA256": "93d64d12d5071dba6bd7ca5339282e7e7c644a95829af627f5f12755500293cd",
+      "id": "huZeixaINs1rrugH",
+      "name": "Pingüino de Adelia",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Pud__5NdmuLKi7ZMHzjfX.json",
+      "originalSHA256": "a1f0c4fe86e82771c5b7296c382ac599895d6a92c78efc943a6557096988b764",
+      "stagedSHA256": "d8a956c6f22654ce0c808f9697c4961e93a3855ef6bd36516e900c102850a5e3",
+      "id": "5NdmuLKi7ZMHzjfX",
+      "name": "Pudú",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Puma_DnbzqhzAdXN1r3kW.json",
+      "originalSHA256": "935d532680e12f64dad8d7a0da73a06816f8fe9ef454655a3ab63de05a3f13ed",
+      "stagedSHA256": "7b32e8a225f5a72324884e6a7873f09328eede0862b0446b264607898bdbcb74",
+      "id": "DnbzqhzAdXN1r3kW",
+      "name": "Puma",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Quetro_no_volador_N4GmaJdfHlqloRZq.json",
+      "originalSHA256": "b825cf988e6922b4d48b9a7ff40488d1f89a2f046e554085032080357bd460a2",
+      "stagedSHA256": "7aa3d9cc923d0ad653d415b01bd58f541575bf97a71e25577ebdceba19e821d4",
+      "id": "N4GmaJdfHlqloRZq",
+      "name": "Quetro no volador",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Rana_gigante_del_Titicaca_ghbWSzAV3A8PUmOj.json",
+      "originalSHA256": "c88187cee11034aad47a1741c1f72cc9170477724f70750e2d2ce90f079b4077",
+      "stagedSHA256": "b7436477d6896066e1a2709f4dd26de3512f4537aeb74ed568970a1f0fe8423d",
+      "id": "ghbWSzAV3A8PUmOj",
+      "name": "Rana gigante del Titicaca",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Ranita_de_Darwin_CWlLMol2AZpujPx7.json",
+      "originalSHA256": "9f92558acfa2f02966eec382ecb2a1f4dbba8964f54a1a48ae2ce509faad86bf",
+      "stagedSHA256": "2cbe8e03c4df0eb71338fd7709e36f9a6aa2fba067b4451d2ecd7a042d1a0e8b",
+      "id": "CWlLMol2AZpujPx7",
+      "name": "Ranita de Darwin",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Sk_a_polar_del_sur_rv4P8LZ6pKAhtV0F.json",
+      "originalSHA256": "94994e9b017cff23d0f9f0a7f9f72a243313ede1197497748d8fc3bb7289320c",
+      "stagedSHA256": "6fcc4d4b3e26ccccac47af71592964716d7a9dde5db4f22bd3b76c50a32728dd",
+      "id": "rv4P8LZ6pKAhtV0F",
+      "name": "Skúa polar del sur",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Smilodon___felino_de_colmillos_de_sable_t8fwdSxU650cW8DG.json",
+      "originalSHA256": "4ba9ce3b9c4bb1d0c2fae85e269c421e64e4858051940cba3709e0a29191eff7",
+      "stagedSHA256": "4949d03fa5eefed1831832e7247e9830c449230ec15f9d77a2343780f3707e79",
+      "id": "t8fwdSxU650cW8DG",
+      "name": "Smilodon · felino de colmillos de sable",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Tapir___Sachavaca_zfH73rgloB8L6pSM.json",
+      "originalSHA256": "36941c5ef16ff1f5fd9083d03225f818f2f16324b1db749029604022e03ce03b",
+      "stagedSHA256": "10abae1f813bcea61103581ffd0957b2e9b1c12ec51198cfe4554ff235b14840",
+      "id": "zfH73rgloB8L6pSM",
+      "name": "Tapir · Sachavaca",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Taruca_vqydUWKetUA4uMwD.json",
+      "originalSHA256": "435dbb3a79a68b1fb7a9119f7f64571dff6fff45d4f2b5482409e1ddc26dbc4b",
+      "stagedSHA256": "a242bcad684696d1e810ddc9e1174fb9b12a095f0adb0cc113b2294b12265ec1",
+      "id": "vqydUWKetUA4uMwD",
+      "name": "Taruca",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Vicu_a_vpvHVQOGukREGu7l.json",
+      "originalSHA256": "82f15c58e250210c33758f7c1a29270b590469cbce9b92503d1cb186fadcb513",
+      "stagedSHA256": "77063db1304b4646e50a942a80d84b698efd5ce1e9edfae9e6ac8b1dd5625d61",
+      "id": "vpvHVQOGukREGu7l",
+      "name": "Vicuña",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Vizcacha_de_monta_a_UWNOWOmcjnTU3TKM.json",
+      "originalSHA256": "924b8325a55d41dc244d85e6575cb43a8de9109172c97474ce0a066f562000a4",
+      "stagedSHA256": "f42f8c1c74878fd2b1db605bb971fc28665f0a16eb3a9d41727d464922dae50f",
+      "id": "UWNOWOmcjnTU3TKM",
+      "name": "Vizcacha de montaña",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Yowen___Guanaco_Hy0GGLcD0eOhzq9W.json",
+      "originalSHA256": "4808025d899e4184de1006b19e24b8b7ccfb009ce38cfaa84a980b8ca88d53f1",
+      "stagedSHA256": "5950bec142ec7f9f6a4296c534880e6949fa66d07173c19fa4d35e1fa99ad0b6",
+      "id": "Hy0GGLcD0eOhzq9W",
+      "name": "Yowen · Guanaco",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Zorro_chilla_jSNogolHCojEoXVv.json",
+      "originalSHA256": "ca3ccf882728b4ca67e2529006bb52fdc30ff82241f0e9246f1faa2ca8030932",
+      "stagedSHA256": "30c3a255770220d036231b09f0205de1665e588e312e42750369a8774967f4c5",
+      "id": "jSNogolHCojEoXVv",
+      "name": "Zorro chilla",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Zorro_culpeo_VUtnqenmd6OCLomn.json",
+      "originalSHA256": "6373b285f33ee89a1294905e8a8a00460e1f2ba30beb5392467045b6303dfbde",
+      "stagedSHA256": "1dd335a8dbb30bb0562908319109a18d160d6fe5e4a6ef4c12c8aa8f3362458e",
+      "id": "VUtnqenmd6OCLomn",
+      "name": "Zorro culpeo",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/_Folder.json",
+      "originalSHA256": "6001ebb30c775fa26c449bcbf59c8d79bacd0ba6ae8bf5034d9acf9fd513ffb9",
+      "stagedSHA256": "57e165a3e68297fb6c2da65d8cdc01859d5bd3b5e913823e44da4ff17adb6125",
+      "id": "bFBfGotWh0kDYyPN",
+      "name": "Fauna",
+      "type": "Item"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/_guila_harp_a_yDxgobX0LZ1B8pff.json",
+      "originalSHA256": "a2c636cd13e4ce2d8b0f18ded376709800131abe0276695f644e50db4999bcf7",
+      "stagedSHA256": "ef20ed2f9789215ec49b492144e515bc9c893a31b47db42959556fb588e66b75",
+      "id": "yDxgobX0LZ1B8pff",
+      "name": "Águila harpía",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Alga_polar_Gyk8U4yhhoZSckcb.json",
+      "originalSHA256": "b7975a59f731ecfaf0dc5f3ad729ce88776b8505abf1e690539b0a05c89ce0e0",
+      "stagedSHA256": "1ee61cc4357656a50a48a0d999186801b9da8a6d7350141d900857a5db3aaefd",
+      "id": "Gyk8U4yhhoZSckcb",
+      "name": "Alga polar",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Avellano_EAKZGHAPhvoHXnzY.json",
+      "originalSHA256": "bc5355ae907287692b6f362f0d68ceae98f42b79b16148728f562aee12e40691",
+      "stagedSHA256": "4c9b8a6cc5dbb2e6ab5494abd8a8690ace7e418c8ecf96c02172a8f9bcc9875f",
+      "id": "EAKZGHAPhvoHXnzY",
+      "name": "Avellano",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Bamb__24LkJ0uBiyQWBJml.json",
+      "originalSHA256": "5ba76eb72dd334a495dc2bd8b3fb778965de89f474d272eb6bb5a472bcabcf79",
+      "stagedSHA256": "5442090e6c95eaaaa908f7a966388df889cb5272fa76f82c11015f0a7118a5f1",
+      "id": "24LkJ0uBiyQWBJml",
+      "name": "Bambú",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Bromelia_bgNINDolymBTkMDy.json",
+      "originalSHA256": "88a3ef099c9ffd1911285fcc650951ebfe0c98e53ffb585b947b7d0697a11f59",
+      "stagedSHA256": "649e143e118d75fe0b8aac545b0dc1912a06457f46ae71876c954b23012fb2be",
+      "id": "bgNINDolymBTkMDy",
+      "name": "Bromelia",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Calafate_obsN2rPwUuDCO9R1.json",
+      "originalSHA256": "e98739a56a94cea85d61875fd4aa05e8120d7e01d1adb6275bea6f244f68fc03",
+      "stagedSHA256": "0239afe8fad00a3a578895c41edbb88c98c5cdf95ac25e5a8e11e45216b27fd3",
+      "id": "obsN2rPwUuDCO9R1",
+      "name": "Calafate",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Canelo_HRtAN5hQLFY2YhwT.json",
+      "originalSHA256": "4520a61eb0593b1410047fee910a33d93332aa2890aa9439761c51c2358a8704",
+      "stagedSHA256": "f141a2870e7698553ee9337d0b77bf3ed5594a34de3a2bdd7176d181a751395d",
+      "id": "HRtAN5hQLFY2YhwT",
+      "name": "Canelo",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Chaura_If11MHBVELSdsaQ9.json",
+      "originalSHA256": "7183df3f98300d2aef7d9cc38f46e7366538fa3f3e54ea14bc89ef1e5bcf303d",
+      "stagedSHA256": "86229e543f043e81713faf1bfeb0242c5e5026bde08601f7745157c3587ab459",
+      "id": "If11MHBVELSdsaQ9",
+      "name": "Chaura",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Chilco_awe2EdrtmyFQnOzh.json",
+      "originalSHA256": "08be0fc2e59e9a4cf9d288b1102a3db013c4549c35cc7bef63eba5b72b659c2c",
+      "stagedSHA256": "3b284e17410b9a39c70f40a7b2cec208538309cd6c4386651b56b1d3abdca676",
+      "id": "awe2EdrtmyFQnOzh",
+      "name": "Chilco",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Cipr_s_de_cordillera_WXw4KQcmzDupTAJL.json",
+      "originalSHA256": "84f6601e3a5e5e6b359e3c2666e6a784b957da6c9366b1d1bea0ac48f40d542b",
+      "stagedSHA256": "49c3a72c572cdd361b8695b9896d2083488bbc0590a281f6874ba0c33577b911",
+      "id": "WXw4KQcmzDupTAJL",
+      "name": "Ciprés de cordillera",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Cipr_s_de_las_Guaitecas_uj4l7qa0LFq7wBXp.json",
+      "originalSHA256": "f0f36ae95aa4bfbbcfdf5f491b02a67a8b04b6644c230cc28cea854e00ac2748",
+      "stagedSHA256": "115506dd4246445c3abb7ebf2815ec777325686ce3be01c57c5838f409397bd8",
+      "id": "uj4l7qa0LFq7wBXp",
+      "name": "Ciprés de las Guaitecas",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Coig_e_FxSyHzkYd6xLmkC0.json",
+      "originalSHA256": "559fabd328d41813c78ecfd10384d2f376cf1b29cea2f90dfeae30e02c0f7c38",
+      "stagedSHA256": "0e17a529a241c958d2b0c3cbe7c9e87b08aba6282a57b1811dbce4c753381235",
+      "id": "FxSyHzkYd6xLmkC0",
+      "name": "Coigüe",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Coir_n_bWNDctTwgVuBN8ma.json",
+      "originalSHA256": "a277bff0ac1fd443dfa06fea6049eccce6c6d2a686774135092a79192e61ccf9",
+      "stagedSHA256": "8b26502618d5577fe0d6c6f20d3f6e211645ade1fd881b3e2feee5a420975d13",
+      "id": "bWNDctTwgVuBN8ma",
+      "name": "Coirón",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Copihue_MV5XYAZDXi7NYtQP.json",
+      "originalSHA256": "04b995a423c42407f4cbb8ccfbfdf9808763f90dabb564099c71610479f69f3c",
+      "stagedSHA256": "0647c98200abe28ac961b41e7900f7046d79d516ff093ade592ee7563818c991",
+      "id": "MV5XYAZDXi7NYtQP",
+      "name": "Copihue",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Ep_fita_zKZ9w91iyVBmsi1Z.json",
+      "originalSHA256": "7bfc6e031d93b7b0dc6cfc44ac917479dbc14d1ecbd3a23147b63c5605036de0",
+      "stagedSHA256": "296605d983691f264427a7decd1128da064f1a77db15cccc40eb9a78654d216f",
+      "id": "zKZ9w91iyVBmsi1Z",
+      "name": "Epífita",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Esfagno_1QDhWgJwPAuLX5Rs.json",
+      "originalSHA256": "1c86e0833d78e02d73c965280bc4da2975e9406fcc7186c70d6f877f1fad0a28",
+      "stagedSHA256": "c80287375f9575dd9a269d0abca6a8234ef619a0393b78ae1836c289c4b14370",
+      "id": "1QDhWgJwPAuLX5Rs",
+      "name": "Esfagno",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Fungosidades_l2u4hl0dxPmqflYF.json",
+      "originalSHA256": "fd6b802c01008e1a634064b67d47786b35b2d147953c2670b8acf3e4d5efe8fe",
+      "stagedSHA256": "5a75ae54eddb3ad79dbfe57542f4cee54c18c23ffd4e332f3d2baae583b88814",
+      "id": "l2u4hl0dxPmqflYF",
+      "name": "Fungosidades",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Gram_nea_cordillerana_FP8NfVhSk4nLXZiw.json",
+      "originalSHA256": "3e0a84b0e97938fd449b5258b362f3efa21f4bf6347e2ae31e93c7a3d12cfad9",
+      "stagedSHA256": "bb05b11e5cb1bf89fd23da906390cc87a92c26dcc90f6cc8336a24ac135c829f",
+      "id": "FP8NfVhSk4nLXZiw",
+      "name": "Gramínea cordillerana",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Guindo_TvWyolfUzBJ4KWUY.json",
+      "originalSHA256": "b207685d7bf25321d9bd54b08c46fe65a87568eec01b69af78dfc009f9f4969f",
+      "stagedSHA256": "838c25c4d36abce64765fbb99812b48ad5529cfba153f3d3c1459a8db8bd6569",
+      "id": "TvWyolfUzBJ4KWUY",
+      "name": "Guindo",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Helecho_arborescente_QcEq2xpc5io1q7vD.json",
+      "originalSHA256": "16ad70dbc4cc16d6f34922cdc1d376f3837d519de7fd7992e6701a90b8edbb5f",
+      "stagedSHA256": "f59efd17eea28aff77ddd10522cb5114b4e6049d0acde8381e790ad8ffb905cf",
+      "id": "QcEq2xpc5io1q7vD",
+      "name": "Helecho arborescente",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Helecho_de_agua_immVDHHU9IRjrKh1.json",
+      "originalSHA256": "9ddc4d7351db18838ac0ca8a1ba57fe63ec7dba54cbe3b2c25851881ff3a6340",
+      "stagedSHA256": "bff572306825eb6d0b686f6b825febbcf78033a60576756a58ae491e5da5a978",
+      "id": "immVDHHU9IRjrKh1",
+      "name": "Helecho de agua",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Helecho_terrestre_xgKE2gvAnDTcuCGt.json",
+      "originalSHA256": "76252ab9617d0d9770698e6d832d2211fa02e6a613f93f5bd31741ca54ac06b3",
+      "stagedSHA256": "f2090d340b66728947cc1075772f994ad5f44a27d1788e67d411e524530d10f2",
+      "id": "xgKE2gvAnDTcuCGt",
+      "name": "Helecho terrestre",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Junco_wKqymf6A6W8aCRiE.json",
+      "originalSHA256": "e57b18bc87d2d3b043639f13d2da11ff8b0dcb7958b86ef09bd64c0dd355d025",
+      "stagedSHA256": "c554a2dc364ff693c5db1bd4ebd4c5af3149d18a0d541007527071804f7abbad",
+      "id": "wKqymf6A6W8aCRiE",
+      "name": "Junco",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Lenga_AjK8zQYvQReR5Dej.json",
+      "originalSHA256": "2a2419f8dfd1bea3ebc66c11414d68f2c52c668eee4afcba047dfe5917fdc43b",
+      "stagedSHA256": "6c91a39374e9504c0d75f7dcd75223b1097379415e09986267aff52659d9e141",
+      "id": "AjK8zQYvQReR5Dej",
+      "name": "Lenga",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Lenteja_de_agua_JId9z6VBRmBOlXs7.json",
+      "originalSHA256": "9921abeb07fd1789d5357eb55d350cba0814daa1f96135b27655921d23ac4d6f",
+      "stagedSHA256": "985dd40d1539bd41c7da5eb8ed3f36323a8a360aa457967613b194bd3f0115e6",
+      "id": "JId9z6VBRmBOlXs7",
+      "name": "Lenteja de agua",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Liquen_polar_OglJ4jmNql2edLh6.json",
+      "originalSHA256": "77d6a125ed4a018fd0b437a74ed9be27266b3a9c27d8a9a45bdead31a6cac09a",
+      "stagedSHA256": "ca2ffa736c23ffaa30ffdc55f9eddf4fb569e80217077052d8cfd815fb0100ea",
+      "id": "OglJ4jmNql2edLh6",
+      "name": "Liquen polar",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Llacho_AqSaHtDOp4paD2OA.json",
+      "originalSHA256": "c35c6b7a2fce70c54629c57b1bded06c241ed8d74e25fd0ded2a059338bc3439",
+      "stagedSHA256": "b41f9f8c57c261e0383d1326ea19c26ed2632aaf3708ed134e2bb6ceb30eca4c",
+      "id": "AqSaHtDOp4paD2OA",
+      "name": "Llacho",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Ma__o_07hNf7vg5bHgJXh2.json",
+      "originalSHA256": "36beecd9b97859d62b230c673329e36cf5bb4abcc9b1dbca43e2796ae186c5f9",
+      "stagedSHA256": "1d9e4df86254a93c8744ceec192acc90fefe6eedb763d0879864857d5475b885",
+      "id": "07hNf7vg5bHgJXh2",
+      "name": "Mañío",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Macroalga_YZmZVSVFTjl4hYud.json",
+      "originalSHA256": "41124616f9d4e22f11c7cba0215131ad7b025d0e14cf9888279bb54017b76691",
+      "stagedSHA256": "7de3c8ecb0f33bc7a257eaa8a9944da47adaf379a6373857d799dbb17837ab64",
+      "id": "YZmZVSVFTjl4hYud",
+      "name": "Macroalga",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Musgo_de_bosque_OiLM8P1RIhCLROSv.json",
+      "originalSHA256": "7b01c4e3c0d67de8f5198b1e150b355f053d9f71fa38d2e94888263fc5dcec8e",
+      "stagedSHA256": "919892b4c0cb30adbda7beb9e5b99210695252a29d756e0c30717ef1c2e4a756",
+      "id": "OiLM8P1RIhCLROSv",
+      "name": "Musgo de bosque",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Musgo_polar_kol0TUekULuAIgkj.json",
+      "originalSHA256": "73fb1c5a30c8b11a9b061d9b2d282a5e926dc8ea525bf2114b0a2fe1e934b55f",
+      "stagedSHA256": "d9107a30475b23a6afa4f9f0cede25f7436d81c29eee5a18b951446f2b1dcff7",
+      "id": "kol0TUekULuAIgkj",
+      "name": "Musgo polar",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Nalca_mPmQ3MtNIZi3H10C.json",
+      "originalSHA256": "bb495e34b7987af0c0a38a302af5ba1061cd81fd21b6808442dc4318f7ade03c",
+      "stagedSHA256": "a197251b09bfd6ce914a6b12f3b4dcb2b3354eb63fa482c0f641a1561d54437a",
+      "id": "mPmQ3MtNIZi3H10C",
+      "name": "Nalca",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Orqu_dea_andina_kPTRbEpIKnNKD22G.json",
+      "originalSHA256": "fd27fe6af17d0c45175d20ab87b35564f5a98be606899486c8d81734ee1c5d56",
+      "stagedSHA256": "390352d8e60a1a09c86f0db573fc3bf2c30d112c0eb92ace921cf043853ef099",
+      "id": "kPTRbEpIKnNKD22G",
+      "name": "Orquídea andina",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Pasto_ant_rtico_RAFdBdh3zkbnLfFQ.json",
+      "originalSHA256": "87ecf323a7b94da61d7d0567323288d3fc9d6391a816938198f9665568962288",
+      "stagedSHA256": "da0a732db36c50594ef14e105a22a09f9420cade4f6b4a947b40605b636965fd",
+      "id": "RAFdBdh3zkbnLfFQ",
+      "name": "Pasto antártico",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Pewen_D8DUTJF1Et3urear.json",
+      "originalSHA256": "a9aaf614dc5d34d2098725345198896c1aa5619b6145141e2bfb59c6b1182e87",
+      "stagedSHA256": "dfb6c8426540e2ce1a5f6a1c91c1d361ccad04ed0f4a8d39a51ae80dc2c783fa",
+      "id": "D8DUTJF1Et3urear",
+      "name": "Pewen",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Totora_8QxkLEqZyWoZwQuE.json",
+      "originalSHA256": "7c35d470b06a7247a817bc89ce46ccdbabb8c52b69f58b8b6140f5b3ad03343b",
+      "stagedSHA256": "9b51ad4ecf4cf8884775764622a36d5c525d78e30099cb8db62b82451120fdca",
+      "id": "8QxkLEqZyWoZwQuE",
+      "name": "Totora",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Trepadora_6bRCFwRxDAig1TJO.json",
+      "originalSHA256": "d6e1f39c9bf3caf7f29ba781bdbd9c6ce958de2f694fc0538b304a6b0c13fefb",
+      "stagedSHA256": "6f4444df736d220de19cd27c60ac9f726aa85dfe9f411da08c26959ba87251f1",
+      "id": "6bRCFwRxDAig1TJO",
+      "name": "Trepadora",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Ulmo_hrHdYmhradICCOAg.json",
+      "originalSHA256": "e311c8bbb23e89ebe06359561e4940beeb2bc251a2219bb37ee36623cbdae475",
+      "stagedSHA256": "3a32c36e2246c152e78e03dece8644143a8fae3099b847ce1abb28c97a6a7669",
+      "id": "hrHdYmhradICCOAg",
+      "name": "Ulmo",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Vegetaci_n_litoral_azGKtoLz76hPNUwZ.json",
+      "originalSHA256": "fb38f9043e2a97609a23463bddc7baaac3b40206fb478ea4ad6a358920f0ed5d",
+      "stagedSHA256": "159ba705e728b9f1f4b7f588d8ed7ae7064ac5dcc76a256e651571a2e47b4588",
+      "id": "azGKtoLz76hPNUwZ",
+      "name": "Vegetación litoral",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Yareta_AgJPeKku9aQbjp4R.json",
+      "originalSHA256": "6ff53be779e71f4812544539b51911567e8342ed4f170e283219346a9a58b582",
+      "stagedSHA256": "83a8dfe06bfe6cbce4cce51b3c9e1ca57046b7ee0c0667f271d4ae6b4f275f86",
+      "id": "AgJPeKku9aQbjp4R",
+      "name": "Yareta",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/_Folder.json",
+      "originalSHA256": "9b5394467cf798cd48c935b380e2ee536192ed4b2459c29f7771c1d6a9d0fabb",
+      "stagedSHA256": "83f028a726ead223797e2cb419b53de915b9e235a5699ee5820f8e775e3db2b9",
+      "id": "fqRoZg8otQGiJaoS",
+      "name": "Flora",
+      "type": "Item"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/_irre_ZGD5Ju34FhFSWGCp.json",
+      "originalSHA256": "c2d2af1f944715ce01daceeb4625e7142176cfdbc91aaa41fe94ce1bc4bbe135",
+      "stagedSHA256": "ee3eb053a5765e639d9dec0510b57ab6b47374b7ee6fbc538696e3ce1da580f9",
+      "id": "ZGD5Ju34FhFSWGCp",
+      "name": "Ñirre",
+      "type": "equippableItem"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/turianos-v06/adalid-turiano.json",
+      "originalSHA256": "5779dcfae6f0bd77e045ce34ccf6f4093d28102b0660eda1bf4506f1d37192dd",
+      "stagedSHA256": "5779dcfae6f0bd77e045ce34ccf6f4093d28102b0660eda1bf4506f1d37192dd",
+      "id": "a09f3b40b9414588",
+      "name": "Adalid Turiano",
+      "type": "character"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/turianos-v06/popr-conquistador-turiano.json",
+      "originalSHA256": "2ad5967d3ee0f65a2b5f00b54cd9925c4854c827ed2003f5fbc597d5033ba522",
+      "stagedSHA256": "2ad5967d3ee0f65a2b5f00b54cd9925c4854c827ed2003f5fbc597d5033ba522",
+      "id": "939dad09976d48cd",
+      "name": "Popr — Conquistador Turiano",
+      "type": "character"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/turianos-v06/pregonero-turiano.json",
+      "originalSHA256": "a7f8ae131a73825051e65b63a26e161b105e56798ef83840cddf556f4ce65e6f",
+      "stagedSHA256": "a7f8ae131a73825051e65b63a26e161b105e56798ef83840cddf556f4ce65e6f",
+      "id": "4b9f621a9edd4de5",
+      "name": "Pregonero Turiano",
+      "type": "character"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/turianos-v06/sangu-potentado-turiano.json",
+      "originalSHA256": "86772d5a5ce9f232fb2b7bf8bc43d5213a52a1b08e1978ba2597e5d20049bb37",
+      "stagedSHA256": "5b59dfce5b907b08158f7ee432a2da583081bbf0eb64758e709cc3a97ba0f560",
+      "id": "1dd86a387a28476e",
+      "name": "Sangu — Potentado Turiano",
+      "type": "character"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/turianos-v06/tambor-turiano.json",
+      "originalSHA256": "e4c8d20f2cb40de4d565fd82f799265b9a2eaad246da6505a03a35ad46925820",
+      "stagedSHA256": "e4c8d20f2cb40de4d565fd82f799265b9a2eaad246da6505a03a35ad46925820",
+      "id": "1911d58042f44382",
+      "name": "Tambor Turiano",
+      "type": "character"
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/turianos-v06/vigia-turiano.json",
+      "originalSHA256": "c842ccc32ec66f19121325e8a418fbc2dcc85adf8338b77a7d1778c1ebef4a55",
+      "stagedSHA256": "c842ccc32ec66f19121325e8a418fbc2dcc85adf8338b77a7d1778c1ebef4a55",
+      "id": "ec547af88c2e43ab",
+      "name": "Vigía Turiano",
+      "type": "character"
+    }
+  ],
+  "turianoAssets": [
+    {
+      "actorId": "a09f3b40b9414588",
+      "kind": "avatar",
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/adalid-turiano.png",
+      "archiveMember": "HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06/modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/adalid-turiano.png",
+      "sha256": "808087e7b10f28b90d098bc547a29d89ef3c5bc6b9216be4bf43a36339bb9967",
+      "bytes": 936474
+    },
+    {
+      "actorId": "a09f3b40b9414588",
+      "kind": "token",
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/adalid-turiano_token.png",
+      "archiveMember": "HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06/modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/adalid-turiano_token.png",
+      "sha256": "8ea5c24254bdbcd8bebfd3393e350e0c85a55207c45bc4ce1f8c3006594a96f7",
+      "bytes": 293538
+    },
+    {
+      "actorId": "939dad09976d48cd",
+      "kind": "avatar",
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/popr-conquistador-turiano.png",
+      "archiveMember": "HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06/modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/popr-conquistador-turiano.png",
+      "sha256": "7a42d91d1b8fb58e0e193fcd1f84aa55d0ea28492b587ff819a6bbcac89d12b3",
+      "bytes": 963023
+    },
+    {
+      "actorId": "939dad09976d48cd",
+      "kind": "token",
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/popr-conquistador-turiano_token_512.png",
+      "archiveMember": "HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06/modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/popr-conquistador-turiano_token_512.png",
+      "sha256": "d34ae0ae03b92553264b206a6db811fcb7e3be5fece4cf406aba11a219281f25",
+      "bytes": 225824
+    },
+    {
+      "actorId": "4b9f621a9edd4de5",
+      "kind": "avatar",
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/pregonero-turiano.png",
+      "archiveMember": "HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06/modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/pregonero-turiano.png",
+      "sha256": "ba883376971911ed948865768118462bb2c1dd8d5a4ceec0979222f35f1813fc",
+      "bytes": 1066907
+    },
+    {
+      "actorId": "4b9f621a9edd4de5",
+      "kind": "token",
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/pregonero-turiano_token.png",
+      "archiveMember": "HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06/modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/pregonero-turiano_token.png",
+      "sha256": "6a413d9ba2923ed2c10f511bed73aee0c5ae1ae13ef1d780c7708a161df30c18",
+      "bytes": 347701
+    },
+    {
+      "actorId": "1dd86a387a28476e",
+      "kind": "avatar",
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/sangu-potentado-turiano.png",
+      "archiveMember": "HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06/modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/sangu-potentado-turiano.png",
+      "sha256": "d74748fa78d780fd1c29b25a034290cdf2b2a03f97bb10f4f4945087deafdcbb",
+      "bytes": 937056
+    },
+    {
+      "actorId": "1dd86a387a28476e",
+      "kind": "token",
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/sangu-potentado-turiano_token_512.png",
+      "archiveMember": "HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06/modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/sangu-potentado-turiano_token_512.png",
+      "sha256": "5256c55176586c4a69f124d03b93450a919f387b4b1e88fa47ddf05e351516a3",
+      "bytes": 368641
+    },
+    {
+      "actorId": "1911d58042f44382",
+      "kind": "avatar",
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/tambor-turiano.png",
+      "archiveMember": "HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06/modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/tambor-turiano.png",
+      "sha256": "97062cd9e64f91dfcfaaecf1261f0889f26673475e167c2ac2be5598ede9329f",
+      "bytes": 1084082
+    },
+    {
+      "actorId": "1911d58042f44382",
+      "kind": "token",
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/tambor-turiano_token.png",
+      "archiveMember": "HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06/modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/tambor-turiano_token.png",
+      "sha256": "423b053c87b6ad0ca5dfe929d0e06055ce1a1b14a7bd9590a260afb2c342af8f",
+      "bytes": 333287
+    },
+    {
+      "actorId": "ec547af88c2e43ab",
+      "kind": "avatar",
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/vigia-turiano.png",
+      "archiveMember": "HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06/modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/vigia-turiano.png",
+      "sha256": "60c7603a59eca74e14dfa1e346920589d409c6468c458fb89317d068542c353b",
+      "bytes": 939769
+    },
+    {
+      "actorId": "ec547af88c2e43ab",
+      "kind": "token",
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/vigia-turiano_token.png",
+      "archiveMember": "HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06/modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/vigia-turiano_token.png",
+      "sha256": "9b9c9371c278bd705e5e48bbd69c8e4210d1c601cd2531910b6cf1346132a711",
+      "bytes": 297646
+    }
+  ],
+  "exclusions": [
+    "Four Atlante IDs excluded from active compilation; v100 Turiano aliases with those IDs not staged",
+    "Bestiario and Rivales already backed up by actor export",
+    "No PNG duplicated from public release; byte hashes and exact archive paths recorded"
+  ],
+  "runtimeBlocked": true
+}

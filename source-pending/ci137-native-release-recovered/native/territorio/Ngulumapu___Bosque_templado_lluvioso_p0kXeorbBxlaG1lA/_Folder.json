@@ -1,0 +1,22 @@
+{
+  "name": "Ngulumapu — Bosque templado lluvioso",
+  "type": "JournalEntry",
+  "folder": null,
+  "sorting": "m",
+  "sort": 3000,
+  "_id": "p0kXeorbBxlaG1lA",
+  "description": "",
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1794169732332,
+    "modifiedTime": 1794169732332,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!p0kXeorbBxlaG1lA"
+}

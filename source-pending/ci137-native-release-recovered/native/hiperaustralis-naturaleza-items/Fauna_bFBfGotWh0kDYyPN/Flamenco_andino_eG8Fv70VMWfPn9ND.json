@@ -1,0 +1,69 @@
+{
+  "name": "Flamenco andino",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-039_Phoenicoparrus_andinus.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Flamenco de altura, con cuello y patas largos y pico especializado para filtrar alimento en lagunas andinas.",
+      "en_escena": "Entre la sal y el agua somera, una silueta de cuello largo se inclina para alimentarse.",
+      "bioma": "Altiplano · lagunas salinas",
+      "cientifico": "Phoenicoparrus andinus"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-039",
+      "version": "0.4.76-source-2026-10-15",
+      "bioma": "Altiplano · lagunas salinas",
+      "cientifico": "Phoenicoparrus andinus",
+      "origen": "HIPERAUSTRALIS_FAUNA_FAU001_052_ICONOS_Y_DESCRIP_FOUNDRY(1).zip"
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "eG8Fv70VMWfPn9ND",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1792627922416,
+    "modifiedTime": 1793380553851,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!eG8Fv70VMWfPn9ND"
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Yowen · Guanaco",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-021_Lama_guanicoe_guanicoe.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "El guanaco fueguino recorre estepas, vegas y bordes de bosque en grupos atentos al viento y al movimiento. Senderos, revolcaderos y lugares de pastoreo muestran sus recorridos incluso cuando los animales están fuera de la vista.",
+      "en_escena": "Puede aparecer como presencia constante del territorio: rastros, sendas abiertas y grupos visibles a larga distancia que reaccionan antes que los viajeros.",
+      "bioma": "Tierra del Fuego — Estepa, bosque austral y turbera",
+      "cientifico": "Lama guanicoe guanicoe"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-021",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Tierra del Fuego — Estepa, bosque austral y turbera",
+      "cientifico": "Lama guanicoe guanicoe",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guanacos_en_isla_Gde._de_T.del_Fuego_(sector_de_Chile)_(5).PNG",
+      "peso_sugerido": 2,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/06_Tierra_del_Fuego/FAU-021_Lama_guanicoe_guanicoe.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "Hy0GGLcD0eOhzq9W",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754995639,
+    "modifiedTime": 1791755515125,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Hy0GGLcD0eOhzq9W"
+}

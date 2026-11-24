@@ -1,0 +1,2039 @@
+{
+  "name": "Auspicios — Hiperaustralis",
+  "pages": [
+    {
+      "name": "Mortales",
+      "type": "text",
+      "sort": 100000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Auspicios disponibles para personajes mortales. El Animal Tutelar puede funcionar como subtipo de Auspicio.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "section": true
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "gNFS5iaygBYCL0ON",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830141,
+        "modifiedTime": 1794181830245,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.gNFS5iaygBYCL0ON"
+    },
+    {
+      "_id": "jVE0IbUBy8yJNHHp",
+      "name": "Ngüru",
+      "type": "text",
+      "sort": 200000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Fox_Tierra_del_Fuego_Chile.jpg\" alt=\"Ngüru — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Zorro patagónico en terreno abierto; movimiento lateral y atención. — amanderson2 · CC BY 2.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Fox_Tierra_del_Fuego_Chile.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Representación faunística directa.</figcaption></figure><p><strong>Tipo:</strong> Animal Tutelar · Auspicio mortal</p><p><strong>Correspondencia:</strong> Fuego</p><p><strong>Resonancia:</strong> Encuentra una salida.</p><p><strong>Hilo de ficción:</strong> Astucia y desafío.</p><p><strong>Uso:</strong> Auspicio de un Kona mortal. En la lista básica funciona como Animal Tutelar y no como Ascendiente de Descendencia.</p><p><strong>Regla:</strong> el Auspicio no crea una mecánica nueva. Sirve como hilo de resonancia y cadena inicial de Correspondencias. Las Correspondencias no son un modificador universal.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Fox_Tierra_del_Fuego_Chile.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fox_Tierra_del_Fuego_Chile.jpg",
+            "credit": "amanderson2",
+            "license": "CC BY 2.0",
+            "editorialNote": "Representación faunística directa.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830147,
+        "modifiedTime": 1794181830245,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.jVE0IbUBy8yJNHHp"
+    },
+    {
+      "_id": "rHZ6ekwA7V0plYNo",
+      "name": "Arümko",
+      "type": "text",
+      "sort": 300000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Calyptocephalella_gayi_foto.jpg\" alt=\"Arümko — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Rana chilena; cuerpo húmedo, agua y quietud atenta. — José Grau de Puerto Montt · CC BY-SA 3.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Calyptocephalella_gayi_foto.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Representación faunística directa.</figcaption></figure><p><strong>Tipo:</strong> Animal Tutelar · Auspicio mortal</p><p><strong>Correspondencia:</strong> Agua</p><p><strong>Resonancia:</strong> Escucha y responde.</p><p><strong>Hilo de ficción:</strong> Memoria y retorno.</p><p><strong>Uso:</strong> Auspicio de un Kona mortal. En la lista básica funciona como Animal Tutelar y no como Ascendiente de Descendencia.</p><p><strong>Regla:</strong> el Auspicio no crea una mecánica nueva. Sirve como hilo de resonancia y cadena inicial de Correspondencias. Las Correspondencias no son un modificador universal.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Calyptocephalella_gayi_foto.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Calyptocephalella_gayi_foto.jpg",
+            "credit": "José Grau de Puerto Montt",
+            "license": "CC BY-SA 3.0",
+            "editorialNote": "Representación faunística directa.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830149,
+        "modifiedTime": 1794181830246,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.rHZ6ekwA7V0plYNo"
+    },
+    {
+      "_id": "fZ34ucBjA1dvPVka",
+      "name": "Choyke",
+      "type": "text",
+      "sort": 400000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Rhea_pennata_-Patagonia_-Chile-8.jpg\" alt=\"Choyke — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Choique en Patagonia; distancia, carrera y territorio abierto. — Jeremy Vandel · CC BY 2.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Rhea_pennata_-Patagonia_-Chile-8.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Representación faunística directa.</figcaption></figure><p><strong>Tipo:</strong> Animal Tutelar · Auspicio mortal</p><p><strong>Correspondencia:</strong> Viento</p><p><strong>Resonancia:</strong> Atraviesa la distancia.</p><p><strong>Hilo de ficción:</strong> Camino y movimiento.</p><p><strong>Uso:</strong> Auspicio de un Kona mortal. En la lista básica funciona como Animal Tutelar y no como Ascendiente de Descendencia.</p><p><strong>Regla:</strong> el Auspicio no crea una mecánica nueva. Sirve como hilo de resonancia y cadena inicial de Correspondencias. Las Correspondencias no son un modificador universal.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Rhea_pennata_-Patagonia_-Chile-8.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Rhea_pennata_-Patagonia_-Chile-8.jpg",
+            "credit": "Jeremy Vandel",
+            "license": "CC BY 2.0",
+            "editorialNote": "Representación faunística directa.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830151,
+        "modifiedTime": 1794181830246,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.fZ34ucBjA1dvPVka"
+    },
+    {
+      "_id": "L6NykB5sutir5CoI",
+      "name": "Filu",
+      "type": "text",
+      "sort": 500000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Philodryas_chamissonis_-_Culebra_de_cola_larga_(49045269986).jpg\" alt=\"Filu — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Culebra de cola larga fotografiada en Chile; contacto con suelo y desplazamiento bajo. — Gonzalo Arias / Chilensis · CC BY 2.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Philodryas_chamissonis_-_Culebra_de_cola_larga_(49045269986).jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Representación faunística directa.</figcaption></figure><p><strong>Tipo:</strong> Animal Tutelar · Auspicio mortal</p><p><strong>Correspondencia:</strong> Tierra</p><p><strong>Resonancia:</strong> Permanece y sostiene.</p><p><strong>Hilo de ficción:</strong> Límite, territorio y resistencia.</p><p><strong>Uso:</strong> Auspicio de un Kona mortal. En la lista básica funciona como Animal Tutelar y no como Ascendiente de Descendencia.</p><p><strong>Regla:</strong> el Auspicio no crea una mecánica nueva. Sirve como hilo de resonancia y cadena inicial de Correspondencias. Las Correspondencias no son un modificador universal.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Philodryas_chamissonis_-_Culebra_de_cola_larga_(49045269986).jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Philodryas_chamissonis_-_Culebra_de_cola_larga_(49045269986).jpg",
+            "credit": "Gonzalo Arias / Chilensis",
+            "license": "CC BY 2.0",
+            "editorialNote": "Representación faunística directa.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830152,
+        "modifiedTime": 1794181830247,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.L6NykB5sutir5CoI"
+    },
+    {
+      "name": "Thor",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-auspicio\"> <p style=\"text-align:center\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Viking_amulets,_including_Thor%27s_hammer_(42001857674).jpg\" target=\"_blank\" rel=\"noopener\">\n<img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Viking_amulets,_including_Thor%27s_hammer_(42001857674).jpg\" alt=\"Amuletos vikingos, incluido un martillo de Thor\" style=\"width:100%;max-height:520px;object-fit:cover;border:0\">\n</a>\n</p> <p style=\"text-align:center;font-size:0.85em\">\n<em>Referencia material de Mjölnir. La fotografía no establece una aparición canónica de Thor.</em>\n</p> <h2>Thor</h2>\n<p><strong>Auspicio nórdico</strong></p> <p><em>Cuando truena, algo recuerda a los hombres que el mundo habitado todavía tiene quien lo defienda.</em></p> <p>\n<strong>Thor</strong> es el portador de <strong>Mjölnir</strong>, asociado al trueno,\nla fuerza y la defensa frente a aquello que amenaza el mundo de los mortales.\nSu martillo aparece también como amuleto material en contextos de la Era Vikinga.\n</p> <p>\nEn <strong>Hiperaustralis</strong>, Thor sirve de Auspicio para Kona que ponen su\nfuerza entre el peligro y los demás: sostener una posición mientras el piño escapa,\nabrir paso donde nadie puede hacerlo, aceptar una confrontación frontal o permanecer\nen pie cuando abandonar el lugar significaría abandonar a otros.\n</p> <h3>Correspondencias</h3>\n<p>\n<strong>Mjölnir · trueno · relámpago · fuerza · protección · cabras ·\ngigantes · juramento · defensa.</strong>\n</p> <h3>En juego</h3>\n<p>\nElegir a Thor como Auspicio <strong>no concede dominio automático sobre el rayo</strong>\nni modifica el Elemento del Kona. Thor y sus relatos ofrecen Correspondencias:\nrelaciones que pueden adquirir importancia cuando una escena, una Gracia,\nun Ritual o una Reliquia las hace pertinentes.\n</p> <p>\nUn Kona puede tener <strong>Thor como Auspicio</strong>,\n<strong>Tierra como Elemento</strong> y expresar una Gracia como\n<strong>Rayo</strong>. Son tres capas distintas: Auspicio, Elemento y expresión\npersonal de la Gracia.\n</p> <hr> <p style=\"font-size:0.85em\">\n<strong>Imagen:</strong> amuletos vikingos, incluido un martillo de Thor,\nRoyal Ontario Museum. Fotografía de Thomas Quine, Wikimedia Commons,\nlicencia CC BY 2.0.\n<a href=\"https://commons.wikimedia.org/wiki/File:Viking_amulets,_including_Thor%27s_hammer_(42001857674).jpg\" target=\"_blank\" rel=\"noopener\">Abrir fuente y licencia</a>.\n</p> </section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "auspicio",
+          "source": "HIPERAUSTRALIS_FOUNDRY_AUSPICIOS_THOR_TREMPULKAWE"
+        }
+      },
+      "_id": "T6zJNPGnkzm5eO4f",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830154,
+        "modifiedTime": 1794181980835,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.T6zJNPGnkzm5eO4f"
+    },
+    {
+      "name": "Trempülkawe",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-auspicio\"> <p style=\"text-align:center\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Eubalaena_australis_260187622.jpg\" target=\"_blank\" rel=\"noopener\">\n<img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Eubalaena_australis_260187622.jpg\" alt=\"Ballena franca austral — imagen documental de resonancia para Trempülkawe\" style=\"width:100%;max-height:520px;object-fit:cover;border:0\">\n</a>\n</p> <p style=\"text-align:center;font-size:0.85em\">\n<em>Imagen documental de resonancia. No establece una apariencia canónica de las Trempülkawe.</em>\n</p> <h2>Trempülkawe</h2>\n<p><strong>Auspicio mapuche</strong></p> <p><em>Cuando alguien debe cruzar hacia donde los vivos ya no pueden acompañarlo,\nlas Trempülkawe conocen el camino.</em></p> <p>\nLas <strong>Trempülkawe</strong> aparecen en relatos mapuche como ancianas o\nantepasadas vinculadas al mar que toman forma de ballena y conducen a los muertos.\nSu viaje se dirige hacia el occidente y se encuentra especialmente asociado a\n<strong>Isla Mocha</strong>, vinculada en estas tradiciones al tránsito hacia el\nmundo de los muertos.\n</p> <p>\nEn <strong>Hiperaustralis</strong>, Trempülkawe sirve de Auspicio para Kona ligados\nal <strong>tránsito y el acompañamiento</strong>: quienes conducen a otros a través\nde un territorio peligroso, despiden a quien debe partir, sostienen a su comunidad\ndurante una pérdida o reconocen cuándo un camino exige dejar algo atrás.\n</p> <h3>Correspondencias</h3>\n<p>\n<strong>Ballena · mar · occidente · Isla Mocha · travesía · muertos ·\nantepasados · llanka · despedida · guía.</strong>\n</p> <h3>En juego</h3>\n<p>\nElegir Trempülkawe como Auspicio no convierte al Kona en descendiente de estos\nseres ni le concede autoridad automática sobre los muertos, las ballenas o el mar.\nEstas imágenes forman un campo de <strong>Correspondencias</strong> que adquiere\nimportancia cuando una escena, un Ritual, una Gracia o una Reliquia establece\nrealmente esa relación.\n</p> <p>\nUn Kona puede tener <strong>Trempülkawe como Auspicio</strong> y\n<strong>Agua como Elemento</strong>, pero ambas elecciones siguen siendo distintas:\nTrempülkawe orienta simbólicamente al personaje; Agua conserva su función propia\ndentro de la creación.\n</p> <hr> <p style=\"font-size:0.85em\">\n<strong>Grafía editorial:</strong> Trempülkawe.\n<strong>Variante histórica/castellanizada registrada:</strong> Trempulcahue.\n</p> <p style=\"font-size:0.85em\">\n<strong>Imagen:</strong> ballena franca austral (<em>Eubalaena australis</em>),\nfotografía de steve b, Wikimedia Commons, CC0.\n<a href=\"https://commons.wikimedia.org/wiki/File:Eubalaena_australis_260187622.jpg\" target=\"_blank\" rel=\"noopener\">Abrir fuente y licencia</a>.\n</p> </section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "auspicio",
+          "source": "HIPERAUSTRALIS_FOUNDRY_AUSPICIOS_THOR_TREMPULKAWE"
+        }
+      },
+      "_id": "PhuFZualidlpiTwg",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830157,
+        "modifiedTime": 1794181980835,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.PhuFZualidlpiTwg"
+    },
+    {
+      "name": "Descendientes",
+      "type": "text",
+      "sort": 600000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Ascendientes propios de Descendencia. Se mantienen conceptualmente separados de los Auspicios mortales.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "section": true
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "0VZ70QLeQRnEgpra",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830158,
+        "modifiedTime": 1794181830248,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.0VZ70QLeQRnEgpra"
+    },
+    {
+      "_id": "QPa2zqOH0EtWJ0Gz",
+      "name": "Tunupa",
+      "type": "text",
+      "sort": 700000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Tunupa_Volcano,_Bolivia.jpg\" alt=\"Tunupa — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Volcán Tunupa como presencia territorial monumental. — Mx. Granger · CC0 · <a href=\"https://commons.wikimedia.org/wiki/File:Tunupa_Volcano,_Bolivia.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Referencia territorial directa; no pretende fijar una forma antropomórfica.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Fuego</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Fuego.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Tunupa_Volcano,_Bolivia.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tunupa_Volcano,_Bolivia.jpg",
+            "credit": "Mx. Granger",
+            "license": "CC0",
+            "editorialNote": "Referencia territorial directa; no pretende fijar una forma antropomórfica.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830160,
+        "modifiedTime": 1794181830248,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.QPa2zqOH0EtWJ0Gz"
+    },
+    {
+      "_id": "toZq1KrCch74POF6",
+      "name": "Cherufe",
+      "type": "text",
+      "sort": 800000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Eruption_of_Villarrica_Volcano,_march_2015.jpg\" alt=\"Cherufe — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Actividad eruptiva del Villarrica; calor, expulsión y materia volcánica. — NASA Earth Observatory · Dominio público en EE. UU. (NASA) · <a href=\"https://commons.wikimedia.org/wiki/File:Eruption_of_Villarrica_Volcano,_march_2015.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Foto de resonancia natural; no representación literal del Cherufe.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Fuego</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Fuego.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Eruption_of_Villarrica_Volcano,_march_2015.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Eruption_of_Villarrica_Volcano,_march_2015.jpg",
+            "credit": "NASA Earth Observatory",
+            "license": "Dominio público en EE. UU. (NASA)",
+            "editorialNote": "Foto de resonancia natural; no representación literal del Cherufe.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830162,
+        "modifiedTime": 1794181830249,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.toZq1KrCch74POF6"
+    },
+    {
+      "_id": "jN1JGPyEJSaTz8xf",
+      "name": "Reginn",
+      "type": "text",
+      "sort": 900000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Gerrit_Lundens_-_Two_blacksmiths_at_work_in_a_forge.jpg\" alt=\"Reginn — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Ilustración histórica de resonancia: herreros trabajando en una forja; no representación literal de Reginn. — Gerrit Lundens · Public Domain · <a href=\"https://commons.wikimedia.org/wiki/File:Gerrit_Lundens_-_Two_blacksmiths_at_work_in_a_forge.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Fuego</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Fuego.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Gerrit_Lundens_-_Two_blacksmiths_at_work_in_a_forge.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gerrit_Lundens_-_Two_blacksmiths_at_work_in_a_forge.jpg",
+            "credit": "Gerrit Lundens",
+            "license": "Public Domain",
+            "editorialNote": "Ilustración histórica de resonancia: herreros trabajando en una forja; no representación literal de Reginn.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830164,
+        "modifiedTime": 1794181830249,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.jN1JGPyEJSaTz8xf"
+    },
+    {
+      "_id": "bHYr8RA6MBbJ44fT",
+      "name": "Shumpall",
+      "type": "text",
+      "sort": 1000000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Budi_Lake_06.jpg\" alt=\"Shumpall — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Lago Budi; agua quieta y territorio lafkenche. — Jorge Manriquez P. · CC BY-SA 3.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Budi_Lake_06.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Paisaje de resonancia; no representación literal del Shumpall.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Agua</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Agua.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Budi_Lake_06.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Budi_Lake_06.jpg",
+            "credit": "Jorge Manriquez P.",
+            "license": "CC BY-SA 3.0",
+            "editorialNote": "Paisaje de resonancia; no representación literal del Shumpall.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830166,
+        "modifiedTime": 1794181830249,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.bHYr8RA6MBbJ44fT"
+    },
+    {
+      "_id": "hjbZBSHZnfkBJTG4",
+      "name": "Kaikai Vilu",
+      "type": "text",
+      "sort": 1100000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Acantilado_y_Oc%C3%A9ano_Pac%C3%ADfico,_Puerto_Saavedra,_Chile_-_panoramio.jpg\" alt=\"Kaikai Vilu — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Océano Pacífico y acantilado en Puerto Saavedra; agua expansiva frente a tierra. — rodoluca · CC BY-SA 3.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Acantilado_y_Oc%C3%A9ano_Pac%C3%ADfico,_Puerto_Saavedra,_Chile_-_panoramio.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Paisaje de resonancia; enfatiza la oposición mar/tierra.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Agua</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Agua.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Acantilado_y_Oc%C3%A9ano_Pac%C3%ADfico,_Puerto_Saavedra,_Chile_-_panoramio.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Acantilado_y_Oc%C3%A9ano_Pac%C3%ADfico,_Puerto_Saavedra,_Chile_-_panoramio.jpg",
+            "credit": "rodoluca",
+            "license": "CC BY-SA 3.0",
+            "editorialNote": "Paisaje de resonancia; enfatiza la oposición mar/tierra.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830168,
+        "modifiedTime": 1794181830250,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.hjbZBSHZnfkBJTG4"
+    },
+    {
+      "_id": "lpWrzaPxEmtGk0Tn",
+      "name": "Jörmungandr",
+      "type": "text",
+      "sort": 1200000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Outside_the_Her%C3%B8yfjord_in_Sunnm%C3%B8re_in_January.jpg\" alt=\"Jörmungandr — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Mar noruego después de una tormenta; oleaje, horizonte y escala oceánica. — Odd Roar Aalborg · CC BY-SA 4.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Outside_the_Her%C3%B8yfjord_in_Sunnm%C3%B8re_in_January.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Foto de resonancia territorial; evita ilustración moderna de fantasía.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Agua</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Agua.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Outside_the_Her%C3%B8yfjord_in_Sunnm%C3%B8re_in_January.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Outside_the_Her%C3%B8yfjord_in_Sunnm%C3%B8re_in_January.jpg",
+            "credit": "Odd Roar Aalborg",
+            "license": "CC BY-SA 4.0",
+            "editorialNote": "Foto de resonancia territorial; evita ilustración moderna de fantasía.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830170,
+        "modifiedTime": 1794181830250,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.lpWrzaPxEmtGk0Tn"
+    },
+    {
+      "_id": "LmqMgGz450yKbvO4",
+      "name": "Wayra Tata",
+      "type": "text",
+      "sort": 1300000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Dust_Storm_over_Bolivia.jpg\" alt=\"Wayra Tata — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Fenómeno natural de resonancia: vientos intensos levantando polvo sobre el altiplano boliviano; no representación literal de Wayra Tata. — NASA / Earth Observatory · Public Domain (U.S. Government work) · <a href=\"https://commons.wikimedia.org/wiki/File:Dust_Storm_over_Bolivia.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Viento</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Viento.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Dust_Storm_over_Bolivia.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Dust_Storm_over_Bolivia.jpg",
+            "credit": "NASA / Earth Observatory",
+            "license": "Public Domain (U.S. Government work)",
+            "editorialNote": "Fenómeno natural de resonancia: vientos intensos levantando polvo sobre el altiplano boliviano; no representación literal de Wayra Tata.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830229,
+        "modifiedTime": 1794181830250,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.LmqMgGz450yKbvO4"
+    },
+    {
+      "_id": "GcWRC3uQm5dYAIKM",
+      "name": "Piwichen",
+      "type": "text",
+      "sort": 1400000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Bat_flying_in_the_darkness.jpg\" alt=\"Piwichen — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Fotografía nocturna de resonancia: murciélago en vuelo sobre fondo oscuro; no representación literal ni identificación zoológica de Piwichen. — Laverta.Dianthus · CC BY-SA 4.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Bat_flying_in_the_darkness.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Viento</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Viento.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Bat_flying_in_the_darkness.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bat_flying_in_the_darkness.jpg",
+            "credit": "Laverta.Dianthus",
+            "license": "CC BY-SA 4.0",
+            "editorialNote": "Fotografía nocturna de resonancia: murciélago en vuelo sobre fondo oscuro; no representación literal ni identificación zoológica de Piwichen.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830232,
+        "modifiedTime": 1794181830251,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.GcWRC3uQm5dYAIKM"
+    },
+    {
+      "_id": "DjS4esZ8nSHYDgpR",
+      "name": "Norðri",
+      "type": "text",
+      "sort": 1500000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Aurora_Iceland.jpg\" alt=\"Norðri — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Aurora sobre Islandia; norte, cielo y orientación. — Sean O Riordan · CC0 · <a href=\"https://commons.wikimedia.org/wiki/File:Aurora_Iceland.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Foto de resonancia direccional; no representación literal de Norðri.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Viento</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Viento.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Aurora_Iceland.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aurora_Iceland.jpg",
+            "credit": "Sean O Riordan",
+            "license": "CC0",
+            "editorialNote": "Foto de resonancia direccional; no representación literal de Norðri.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830236,
+        "modifiedTime": 1794181830251,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.DjS4esZ8nSHYDgpR"
+    },
+    {
+      "_id": "Klyg9YPZpLxjfcO0",
+      "name": "Trentren Vilu",
+      "type": "text",
+      "sort": 1600000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Andes_Mountain_View_from_Volcano_Sollipulli,_Araucania_Region,_Chile.jpg\" alt=\"Trentren Vilu — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Cordillera nevada vista desde Sollipulli, Araucanía; elevación y refugio terrestre. — Delahimalaya-alosandes · CC BY-SA 4.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Andes_Mountain_View_from_Volcano_Sollipulli,_Araucania_Region,_Chile.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Paisaje de resonancia; no representación literal de Trentren Vilu.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Tierra</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Tierra.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Andes_Mountain_View_from_Volcano_Sollipulli,_Araucania_Region,_Chile.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Andes_Mountain_View_from_Volcano_Sollipulli,_Araucania_Region,_Chile.jpg",
+            "credit": "Delahimalaya-alosandes",
+            "license": "CC BY-SA 4.0",
+            "editorialNote": "Paisaje de resonancia; no representación literal de Trentren Vilu.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830238,
+        "modifiedTime": 1794181830251,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.Klyg9YPZpLxjfcO0"
+    },
+    {
+      "_id": "8NhK7csr31NOX0M2",
+      "name": "Mallku",
+      "type": "text",
+      "sort": 1700000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Andean_condor_(Vultur_gryphus)_male_in_flight_Torres_del_Paine.jpg\" alt=\"Mallku — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Cóndor andino en vuelo; altura, montaña y soberanía del espacio vertical. — Charles J. Sharp · CC BY-SA 4.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Andean_condor_(Vultur_gryphus)_male_in_flight_Torres_del_Paine.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Foto de resonancia; no reduce Mallku al animal.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Tierra</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Tierra.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Andean_condor_(Vultur_gryphus)_male_in_flight_Torres_del_Paine.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Andean_condor_(Vultur_gryphus)_male_in_flight_Torres_del_Paine.jpg",
+            "credit": "Charles J. Sharp",
+            "license": "CC BY-SA 4.0",
+            "editorialNote": "Foto de resonancia; no reduce Mallku al animal.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830241,
+        "modifiedTime": 1794181830252,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.8NhK7csr31NOX0M2"
+    },
+    {
+      "_id": "aexFWjz5bflZgZX3",
+      "name": "Fenrir",
+      "type": "text",
+      "sort": 1800000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Wolves_in_Norway.jpg\" alt=\"Fenrir — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Lobos en Noruega; cuerpo, potencia y presencia terrestre. — Taral Jansen / Soldatnytt · CC BY 2.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Wolves_in_Norway.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Foto zoológica de resonancia; no representación literal del Fenrir mítico.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Tierra</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Tierra.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Wolves_in_Norway.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Wolves_in_Norway.jpg",
+            "credit": "Taral Jansen / Soldatnytt",
+            "license": "CC BY 2.0",
+            "editorialNote": "Foto zoológica de resonancia; no representación literal del Fenrir mítico.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830243,
+        "modifiedTime": 1794181830252,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.aexFWjz5bflZgZX3"
+    },
+    {
+      "name": "Mama Qocha",
+      "type": "text",
+      "sort": 1900000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\">\n<img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Cuevas_de_Anzota,_Arica,_Chile.JPG\" alt=\"Mama Qocha — paisaje litoral de resonancia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\">\n<figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\">\n<strong>Imagen:</strong> Paisaje litoral natural de Arica; resonancia de mar, costa y horizonte.\n— Yoyijorquera · CC BY-SA 3.0 ·\n<a href=\"https://commons.wikimedia.org/wiki/File:Cuevas_de_Anzota,_Arica,_Chile.JPG\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>.\nNo es una representación literal de Mama Qocha ni evidencia de culto chinchorro.\n</figcaption></figure> <p><strong>Tipo:</strong> Ascendiente · Descendencia</p>\n<p><strong>Correspondencia:</strong> Agua</p> <p><strong>Mama Qocha</strong> es la Madre de las Aguas. Su nombre reúne <em>mama</em>, madre, y\n<em>qocha</em> o <em>qucha</em>, voz andina vinculada al mar, los lagos y otros grandes cuerpos de agua.</p> <p>En <strong>Hiperaustralis</strong>, Mama Qocha puede ser el Ascendiente de un Descendiente ligado al\n<strong>Agua</strong>. Su presencia puede sentirse en el océano, las mareas, las lagunas, los manantiales\ny en el movimiento por el que unas aguas alcanzan a otras.</p> <p>Su linaje puede manifestarse como <strong>profundidad, flujo, retorno, marea, presión, sal, espuma\no comunicación entre aguas</strong>. No tiene una apariencia única: la forma de la Manifestación\npertenece al Descendiente.</p> <p>Mama Qocha no concede por sí misma un bonificador universal. Como todo Ascendiente, orienta el\nlinaje, sus Manifestaciones y las transformaciones que pueden aparecer en sus Secuelas.</p> <p><strong>Nota histórica.</strong> Su uso como Ascendiente de un personaje chinchorro es\nuna interpretación para el juego. No afirma que las comunidades Chinchorro históricas\nconocieran o veneraran a Mama Qocha.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Cuevas_de_Anzota,_Arica,_Chile.JPG",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cuevas_de_Anzota,_Arica,_Chile.JPG",
+            "credit": "Yoyijorquera",
+            "license": "CC BY-SA 3.0",
+            "editorialNote": "Paisaje litoral natural de resonancia, Arica; no representación literal de Mama Qocha ni evidencia de culto chinchorro.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "NQVNGaCrSSBLHWjb",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830244,
+        "modifiedTime": 1794181980835,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ozu3vFfbERrwF2ri.NQVNGaCrSSBLHWjb"
+    }
+  ],
+  "folder": null,
+  "flags": {
+    "hiperaustralis-journals": {
+      "seedId": "journal-auspicios-v1.4",
+      "version": "1.6",
+      "imageMode": "remote-url",
+      "category": "index",
+      "structure": "single-journal-two-levels",
+      "visualAudit": "v0.4.38"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "ozu3vFfbERrwF2ri",
+  "categories": [],
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791640875644,
+    "modifiedTime": 1793380432935,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "page_ids": [
+    "gNFS5iaygBYCL0ON",
+    "jVE0IbUBy8yJNHHp",
+    "rHZ6ekwA7V0plYNo",
+    "fZ34ucBjA1dvPVka",
+    "L6NykB5sutir5CoI",
+    "T6zJNPGnkzm5eO4f",
+    "PhuFZualidlpiTwg",
+    "0VZ70QLeQRnEgpra",
+    "QPa2zqOH0EtWJ0Gz",
+    "toZq1KrCch74POF6",
+    "jN1JGPyEJSaTz8xf",
+    "bHYr8RA6MBbJ44fT",
+    "hjbZBSHZnfkBJTG4",
+    "lpWrzaPxEmtGk0Tn",
+    "LmqMgGz450yKbvO4",
+    "GcWRC3uQm5dYAIKM",
+    "DjS4esZ8nSHYDgpR",
+    "Klyg9YPZpLxjfcO0",
+    "8NhK7csr31NOX0M2",
+    "aexFWjz5bflZgZX3",
+    "NQVNGaCrSSBLHWjb"
+  ],
+  "pages_expanded": [
+    {
+      "name": "Trempülkawe",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-auspicio\"> <p style=\"text-align:center\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Eubalaena_australis_260187622.jpg\" target=\"_blank\" rel=\"noopener\">\n<img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Eubalaena_australis_260187622.jpg\" alt=\"Ballena franca austral — imagen documental de resonancia para Trempülkawe\" style=\"width:100%;max-height:520px;object-fit:cover;border:0\">\n</a>\n</p> <p style=\"text-align:center;font-size:0.85em\">\n<em>Imagen documental de resonancia. No establece una apariencia canónica de las Trempülkawe.</em>\n</p> <h2>Trempülkawe</h2>\n<p><strong>Auspicio mapuche</strong></p> <p><em>Cuando alguien debe cruzar hacia donde los vivos ya no pueden acompañarlo,\nlas Trempülkawe conocen el camino.</em></p> <p>\nLas <strong>Trempülkawe</strong> aparecen en relatos mapuche como ancianas o\nantepasadas vinculadas al mar que toman forma de ballena y conducen a los muertos.\nSu viaje se dirige hacia el occidente y se encuentra especialmente asociado a\n<strong>Isla Mocha</strong>, vinculada en estas tradiciones al tránsito hacia el\nmundo de los muertos.\n</p> <p>\nEn <strong>Hiperaustralis</strong>, Trempülkawe sirve de Auspicio para Kona ligados\nal <strong>tránsito y el acompañamiento</strong>: quienes conducen a otros a través\nde un territorio peligroso, despiden a quien debe partir, sostienen a su comunidad\ndurante una pérdida o reconocen cuándo un camino exige dejar algo atrás.\n</p> <h3>Correspondencias</h3>\n<p>\n<strong>Ballena · mar · occidente · Isla Mocha · travesía · muertos ·\nantepasados · llanka · despedida · guía.</strong>\n</p> <h3>En juego</h3>\n<p>\nElegir Trempülkawe como Auspicio no convierte al Kona en descendiente de estos\nseres ni le concede autoridad automática sobre los muertos, las ballenas o el mar.\nEstas imágenes forman un campo de <strong>Correspondencias</strong> que adquiere\nimportancia cuando una escena, un Ritual, una Gracia o una Reliquia establece\nrealmente esa relación.\n</p> <p>\nUn Kona puede tener <strong>Trempülkawe como Auspicio</strong> y\n<strong>Agua como Elemento</strong>, pero ambas elecciones siguen siendo distintas:\nTrempülkawe orienta simbólicamente al personaje; Agua conserva su función propia\ndentro de la creación.\n</p> <hr> <p style=\"font-size:0.85em\">\n<strong>Grafía editorial:</strong> Trempülkawe.\n<strong>Variante histórica/castellanizada registrada:</strong> Trempulcahue.\n</p> <p style=\"font-size:0.85em\">\n<strong>Imagen:</strong> ballena franca austral (<em>Eubalaena australis</em>),\nfotografía de steve b, Wikimedia Commons, CC0.\n<a href=\"https://commons.wikimedia.org/wiki/File:Eubalaena_australis_260187622.jpg\" target=\"_blank\" rel=\"noopener\">Abrir fuente y licencia</a>.\n</p> </section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "auspicio",
+          "source": "HIPERAUSTRALIS_FOUNDRY_AUSPICIOS_THOR_TREMPULKAWE"
+        }
+      },
+      "_id": "PhuFZualidlpiTwg",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830157,
+        "modifiedTime": 1794181980835,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Thor",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<section class=\"hiperaustralis-auspicio\"> <p style=\"text-align:center\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Viking_amulets,_including_Thor%27s_hammer_(42001857674).jpg\" target=\"_blank\" rel=\"noopener\">\n<img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Viking_amulets,_including_Thor%27s_hammer_(42001857674).jpg\" alt=\"Amuletos vikingos, incluido un martillo de Thor\" style=\"width:100%;max-height:520px;object-fit:cover;border:0\">\n</a>\n</p> <p style=\"text-align:center;font-size:0.85em\">\n<em>Referencia material de Mjölnir. La fotografía no establece una aparición canónica de Thor.</em>\n</p> <h2>Thor</h2>\n<p><strong>Auspicio nórdico</strong></p> <p><em>Cuando truena, algo recuerda a los hombres que el mundo habitado todavía tiene quien lo defienda.</em></p> <p>\n<strong>Thor</strong> es el portador de <strong>Mjölnir</strong>, asociado al trueno,\nla fuerza y la defensa frente a aquello que amenaza el mundo de los mortales.\nSu martillo aparece también como amuleto material en contextos de la Era Vikinga.\n</p> <p>\nEn <strong>Hiperaustralis</strong>, Thor sirve de Auspicio para Kona que ponen su\nfuerza entre el peligro y los demás: sostener una posición mientras el piño escapa,\nabrir paso donde nadie puede hacerlo, aceptar una confrontación frontal o permanecer\nen pie cuando abandonar el lugar significaría abandonar a otros.\n</p> <h3>Correspondencias</h3>\n<p>\n<strong>Mjölnir · trueno · relámpago · fuerza · protección · cabras ·\ngigantes · juramento · defensa.</strong>\n</p> <h3>En juego</h3>\n<p>\nElegir a Thor como Auspicio <strong>no concede dominio automático sobre el rayo</strong>\nni modifica el Elemento del Kona. Thor y sus relatos ofrecen Correspondencias:\nrelaciones que pueden adquirir importancia cuando una escena, una Gracia,\nun Ritual o una Reliquia las hace pertinentes.\n</p> <p>\nUn Kona puede tener <strong>Thor como Auspicio</strong>,\n<strong>Tierra como Elemento</strong> y expresar una Gracia como\n<strong>Rayo</strong>. Son tres capas distintas: Auspicio, Elemento y expresión\npersonal de la Gracia.\n</p> <hr> <p style=\"font-size:0.85em\">\n<strong>Imagen:</strong> amuletos vikingos, incluido un martillo de Thor,\nRoyal Ontario Museum. Fotografía de Thomas Quine, Wikimedia Commons,\nlicencia CC BY 2.0.\n<a href=\"https://commons.wikimedia.org/wiki/File:Viking_amulets,_including_Thor%27s_hammer_(42001857674).jpg\" target=\"_blank\" rel=\"noopener\">Abrir fuente y licencia</a>.\n</p> </section>"
+      },
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "flags": {
+        "hiperaustralis-journals": {
+          "category": "auspicio",
+          "source": "HIPERAUSTRALIS_FOUNDRY_AUSPICIOS_THOR_TREMPULKAWE"
+        }
+      },
+      "_id": "T6zJNPGnkzm5eO4f",
+      "system": {},
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830154,
+        "modifiedTime": 1794181980835,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Mortales",
+      "type": "text",
+      "sort": 100000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Auspicios disponibles para personajes mortales. El Animal Tutelar puede funcionar como subtipo de Auspicio.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "section": true
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "gNFS5iaygBYCL0ON",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830141,
+        "modifiedTime": 1794181830245,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "jVE0IbUBy8yJNHHp",
+      "name": "Ngüru",
+      "type": "text",
+      "sort": 200000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Fox_Tierra_del_Fuego_Chile.jpg\" alt=\"Ngüru — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Zorro patagónico en terreno abierto; movimiento lateral y atención. — amanderson2 · CC BY 2.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Fox_Tierra_del_Fuego_Chile.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Representación faunística directa.</figcaption></figure><p><strong>Tipo:</strong> Animal Tutelar · Auspicio mortal</p><p><strong>Correspondencia:</strong> Fuego</p><p><strong>Resonancia:</strong> Encuentra una salida.</p><p><strong>Hilo de ficción:</strong> Astucia y desafío.</p><p><strong>Uso:</strong> Auspicio de un Kona mortal. En la lista básica funciona como Animal Tutelar y no como Ascendiente de Descendencia.</p><p><strong>Regla:</strong> el Auspicio no crea una mecánica nueva. Sirve como hilo de resonancia y cadena inicial de Correspondencias. Las Correspondencias no son un modificador universal.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Fox_Tierra_del_Fuego_Chile.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fox_Tierra_del_Fuego_Chile.jpg",
+            "credit": "amanderson2",
+            "license": "CC BY 2.0",
+            "editorialNote": "Representación faunística directa.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830147,
+        "modifiedTime": 1794181830245,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "rHZ6ekwA7V0plYNo",
+      "name": "Arümko",
+      "type": "text",
+      "sort": 300000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Calyptocephalella_gayi_foto.jpg\" alt=\"Arümko — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Rana chilena; cuerpo húmedo, agua y quietud atenta. — José Grau de Puerto Montt · CC BY-SA 3.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Calyptocephalella_gayi_foto.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Representación faunística directa.</figcaption></figure><p><strong>Tipo:</strong> Animal Tutelar · Auspicio mortal</p><p><strong>Correspondencia:</strong> Agua</p><p><strong>Resonancia:</strong> Escucha y responde.</p><p><strong>Hilo de ficción:</strong> Memoria y retorno.</p><p><strong>Uso:</strong> Auspicio de un Kona mortal. En la lista básica funciona como Animal Tutelar y no como Ascendiente de Descendencia.</p><p><strong>Regla:</strong> el Auspicio no crea una mecánica nueva. Sirve como hilo de resonancia y cadena inicial de Correspondencias. Las Correspondencias no son un modificador universal.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Calyptocephalella_gayi_foto.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Calyptocephalella_gayi_foto.jpg",
+            "credit": "José Grau de Puerto Montt",
+            "license": "CC BY-SA 3.0",
+            "editorialNote": "Representación faunística directa.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830149,
+        "modifiedTime": 1794181830246,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "fZ34ucBjA1dvPVka",
+      "name": "Choyke",
+      "type": "text",
+      "sort": 400000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Rhea_pennata_-Patagonia_-Chile-8.jpg\" alt=\"Choyke — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Choique en Patagonia; distancia, carrera y territorio abierto. — Jeremy Vandel · CC BY 2.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Rhea_pennata_-Patagonia_-Chile-8.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Representación faunística directa.</figcaption></figure><p><strong>Tipo:</strong> Animal Tutelar · Auspicio mortal</p><p><strong>Correspondencia:</strong> Viento</p><p><strong>Resonancia:</strong> Atraviesa la distancia.</p><p><strong>Hilo de ficción:</strong> Camino y movimiento.</p><p><strong>Uso:</strong> Auspicio de un Kona mortal. En la lista básica funciona como Animal Tutelar y no como Ascendiente de Descendencia.</p><p><strong>Regla:</strong> el Auspicio no crea una mecánica nueva. Sirve como hilo de resonancia y cadena inicial de Correspondencias. Las Correspondencias no son un modificador universal.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Rhea_pennata_-Patagonia_-Chile-8.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Rhea_pennata_-Patagonia_-Chile-8.jpg",
+            "credit": "Jeremy Vandel",
+            "license": "CC BY 2.0",
+            "editorialNote": "Representación faunística directa.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830151,
+        "modifiedTime": 1794181830246,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "L6NykB5sutir5CoI",
+      "name": "Filu",
+      "type": "text",
+      "sort": 500000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Philodryas_chamissonis_-_Culebra_de_cola_larga_(49045269986).jpg\" alt=\"Filu — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Culebra de cola larga fotografiada en Chile; contacto con suelo y desplazamiento bajo. — Gonzalo Arias / Chilensis · CC BY 2.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Philodryas_chamissonis_-_Culebra_de_cola_larga_(49045269986).jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Representación faunística directa.</figcaption></figure><p><strong>Tipo:</strong> Animal Tutelar · Auspicio mortal</p><p><strong>Correspondencia:</strong> Tierra</p><p><strong>Resonancia:</strong> Permanece y sostiene.</p><p><strong>Hilo de ficción:</strong> Límite, territorio y resistencia.</p><p><strong>Uso:</strong> Auspicio de un Kona mortal. En la lista básica funciona como Animal Tutelar y no como Ascendiente de Descendencia.</p><p><strong>Regla:</strong> el Auspicio no crea una mecánica nueva. Sirve como hilo de resonancia y cadena inicial de Correspondencias. Las Correspondencias no son un modificador universal.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Philodryas_chamissonis_-_Culebra_de_cola_larga_(49045269986).jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Philodryas_chamissonis_-_Culebra_de_cola_larga_(49045269986).jpg",
+            "credit": "Gonzalo Arias / Chilensis",
+            "license": "CC BY 2.0",
+            "editorialNote": "Representación faunística directa.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830152,
+        "modifiedTime": 1794181830247,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Descendientes",
+      "type": "text",
+      "sort": 600000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Ascendientes propios de Descendencia. Se mantienen conceptualmente separados de los Auspicios mortales.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "section": true
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "0VZ70QLeQRnEgpra",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830158,
+        "modifiedTime": 1794181830248,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "QPa2zqOH0EtWJ0Gz",
+      "name": "Tunupa",
+      "type": "text",
+      "sort": 700000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Tunupa_Volcano,_Bolivia.jpg\" alt=\"Tunupa — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Volcán Tunupa como presencia territorial monumental. — Mx. Granger · CC0 · <a href=\"https://commons.wikimedia.org/wiki/File:Tunupa_Volcano,_Bolivia.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Referencia territorial directa; no pretende fijar una forma antropomórfica.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Fuego</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Fuego.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Tunupa_Volcano,_Bolivia.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tunupa_Volcano,_Bolivia.jpg",
+            "credit": "Mx. Granger",
+            "license": "CC0",
+            "editorialNote": "Referencia territorial directa; no pretende fijar una forma antropomórfica.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830160,
+        "modifiedTime": 1794181830248,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "toZq1KrCch74POF6",
+      "name": "Cherufe",
+      "type": "text",
+      "sort": 800000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Eruption_of_Villarrica_Volcano,_march_2015.jpg\" alt=\"Cherufe — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Actividad eruptiva del Villarrica; calor, expulsión y materia volcánica. — NASA Earth Observatory · Dominio público en EE. UU. (NASA) · <a href=\"https://commons.wikimedia.org/wiki/File:Eruption_of_Villarrica_Volcano,_march_2015.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Foto de resonancia natural; no representación literal del Cherufe.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Fuego</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Fuego.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Eruption_of_Villarrica_Volcano,_march_2015.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Eruption_of_Villarrica_Volcano,_march_2015.jpg",
+            "credit": "NASA Earth Observatory",
+            "license": "Dominio público en EE. UU. (NASA)",
+            "editorialNote": "Foto de resonancia natural; no representación literal del Cherufe.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830162,
+        "modifiedTime": 1794181830249,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "jN1JGPyEJSaTz8xf",
+      "name": "Reginn",
+      "type": "text",
+      "sort": 900000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Gerrit_Lundens_-_Two_blacksmiths_at_work_in_a_forge.jpg\" alt=\"Reginn — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Ilustración histórica de resonancia: herreros trabajando en una forja; no representación literal de Reginn. — Gerrit Lundens · Public Domain · <a href=\"https://commons.wikimedia.org/wiki/File:Gerrit_Lundens_-_Two_blacksmiths_at_work_in_a_forge.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Fuego</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Fuego.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Gerrit_Lundens_-_Two_blacksmiths_at_work_in_a_forge.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gerrit_Lundens_-_Two_blacksmiths_at_work_in_a_forge.jpg",
+            "credit": "Gerrit Lundens",
+            "license": "Public Domain",
+            "editorialNote": "Ilustración histórica de resonancia: herreros trabajando en una forja; no representación literal de Reginn.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830164,
+        "modifiedTime": 1794181830249,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "bHYr8RA6MBbJ44fT",
+      "name": "Shumpall",
+      "type": "text",
+      "sort": 1000000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Budi_Lake_06.jpg\" alt=\"Shumpall — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Lago Budi; agua quieta y territorio lafkenche. — Jorge Manriquez P. · CC BY-SA 3.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Budi_Lake_06.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Paisaje de resonancia; no representación literal del Shumpall.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Agua</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Agua.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Budi_Lake_06.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Budi_Lake_06.jpg",
+            "credit": "Jorge Manriquez P.",
+            "license": "CC BY-SA 3.0",
+            "editorialNote": "Paisaje de resonancia; no representación literal del Shumpall.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830166,
+        "modifiedTime": 1794181830249,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "hjbZBSHZnfkBJTG4",
+      "name": "Kaikai Vilu",
+      "type": "text",
+      "sort": 1100000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Acantilado_y_Oc%C3%A9ano_Pac%C3%ADfico,_Puerto_Saavedra,_Chile_-_panoramio.jpg\" alt=\"Kaikai Vilu — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Océano Pacífico y acantilado en Puerto Saavedra; agua expansiva frente a tierra. — rodoluca · CC BY-SA 3.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Acantilado_y_Oc%C3%A9ano_Pac%C3%ADfico,_Puerto_Saavedra,_Chile_-_panoramio.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Paisaje de resonancia; enfatiza la oposición mar/tierra.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Agua</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Agua.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Acantilado_y_Oc%C3%A9ano_Pac%C3%ADfico,_Puerto_Saavedra,_Chile_-_panoramio.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Acantilado_y_Oc%C3%A9ano_Pac%C3%ADfico,_Puerto_Saavedra,_Chile_-_panoramio.jpg",
+            "credit": "rodoluca",
+            "license": "CC BY-SA 3.0",
+            "editorialNote": "Paisaje de resonancia; enfatiza la oposición mar/tierra.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830168,
+        "modifiedTime": 1794181830250,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "lpWrzaPxEmtGk0Tn",
+      "name": "Jörmungandr",
+      "type": "text",
+      "sort": 1200000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Outside_the_Her%C3%B8yfjord_in_Sunnm%C3%B8re_in_January.jpg\" alt=\"Jörmungandr — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Mar noruego después de una tormenta; oleaje, horizonte y escala oceánica. — Odd Roar Aalborg · CC BY-SA 4.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Outside_the_Her%C3%B8yfjord_in_Sunnm%C3%B8re_in_January.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Foto de resonancia territorial; evita ilustración moderna de fantasía.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Agua</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Agua.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Outside_the_Her%C3%B8yfjord_in_Sunnm%C3%B8re_in_January.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Outside_the_Her%C3%B8yfjord_in_Sunnm%C3%B8re_in_January.jpg",
+            "credit": "Odd Roar Aalborg",
+            "license": "CC BY-SA 4.0",
+            "editorialNote": "Foto de resonancia territorial; evita ilustración moderna de fantasía.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830170,
+        "modifiedTime": 1794181830250,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "LmqMgGz450yKbvO4",
+      "name": "Wayra Tata",
+      "type": "text",
+      "sort": 1300000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Dust_Storm_over_Bolivia.jpg\" alt=\"Wayra Tata — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Fenómeno natural de resonancia: vientos intensos levantando polvo sobre el altiplano boliviano; no representación literal de Wayra Tata. — NASA / Earth Observatory · Public Domain (U.S. Government work) · <a href=\"https://commons.wikimedia.org/wiki/File:Dust_Storm_over_Bolivia.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Viento</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Viento.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Dust_Storm_over_Bolivia.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Dust_Storm_over_Bolivia.jpg",
+            "credit": "NASA / Earth Observatory",
+            "license": "Public Domain (U.S. Government work)",
+            "editorialNote": "Fenómeno natural de resonancia: vientos intensos levantando polvo sobre el altiplano boliviano; no representación literal de Wayra Tata.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830229,
+        "modifiedTime": 1794181830250,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "GcWRC3uQm5dYAIKM",
+      "name": "Piwichen",
+      "type": "text",
+      "sort": 1400000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Bat_flying_in_the_darkness.jpg\" alt=\"Piwichen — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Fotografía nocturna de resonancia: murciélago en vuelo sobre fondo oscuro; no representación literal ni identificación zoológica de Piwichen. — Laverta.Dianthus · CC BY-SA 4.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Bat_flying_in_the_darkness.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Viento</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Viento.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Bat_flying_in_the_darkness.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bat_flying_in_the_darkness.jpg",
+            "credit": "Laverta.Dianthus",
+            "license": "CC BY-SA 4.0",
+            "editorialNote": "Fotografía nocturna de resonancia: murciélago en vuelo sobre fondo oscuro; no representación literal ni identificación zoológica de Piwichen.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830232,
+        "modifiedTime": 1794181830251,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "DjS4esZ8nSHYDgpR",
+      "name": "Norðri",
+      "type": "text",
+      "sort": 1500000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Aurora_Iceland.jpg\" alt=\"Norðri — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Aurora sobre Islandia; norte, cielo y orientación. — Sean O Riordan · CC0 · <a href=\"https://commons.wikimedia.org/wiki/File:Aurora_Iceland.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Foto de resonancia direccional; no representación literal de Norðri.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Viento</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Viento.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Aurora_Iceland.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aurora_Iceland.jpg",
+            "credit": "Sean O Riordan",
+            "license": "CC0",
+            "editorialNote": "Foto de resonancia direccional; no representación literal de Norðri.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830236,
+        "modifiedTime": 1794181830251,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "Klyg9YPZpLxjfcO0",
+      "name": "Trentren Vilu",
+      "type": "text",
+      "sort": 1600000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Andes_Mountain_View_from_Volcano_Sollipulli,_Araucania_Region,_Chile.jpg\" alt=\"Trentren Vilu — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Cordillera nevada vista desde Sollipulli, Araucanía; elevación y refugio terrestre. — Delahimalaya-alosandes · CC BY-SA 4.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Andes_Mountain_View_from_Volcano_Sollipulli,_Araucania_Region,_Chile.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Paisaje de resonancia; no representación literal de Trentren Vilu.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Tierra</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Tierra.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Andes_Mountain_View_from_Volcano_Sollipulli,_Araucania_Region,_Chile.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Andes_Mountain_View_from_Volcano_Sollipulli,_Araucania_Region,_Chile.jpg",
+            "credit": "Delahimalaya-alosandes",
+            "license": "CC BY-SA 4.0",
+            "editorialNote": "Paisaje de resonancia; no representación literal de Trentren Vilu.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830238,
+        "modifiedTime": 1794181830251,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "8NhK7csr31NOX0M2",
+      "name": "Mallku",
+      "type": "text",
+      "sort": 1700000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Andean_condor_(Vultur_gryphus)_male_in_flight_Torres_del_Paine.jpg\" alt=\"Mallku — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Cóndor andino en vuelo; altura, montaña y soberanía del espacio vertical. — Charles J. Sharp · CC BY-SA 4.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Andean_condor_(Vultur_gryphus)_male_in_flight_Torres_del_Paine.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Foto de resonancia; no reduce Mallku al animal.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Tierra</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Tierra.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Andean_condor_(Vultur_gryphus)_male_in_flight_Torres_del_Paine.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Andean_condor_(Vultur_gryphus)_male_in_flight_Torres_del_Paine.jpg",
+            "credit": "Charles J. Sharp",
+            "license": "CC BY-SA 4.0",
+            "editorialNote": "Foto de resonancia; no reduce Mallku al animal.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830241,
+        "modifiedTime": 1794181830252,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "aexFWjz5bflZgZX3",
+      "name": "Fenrir",
+      "type": "text",
+      "sort": 1800000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\"><img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Wolves_in_Norway.jpg\" alt=\"Fenrir — imagen de referencia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\"><figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\"><strong>Imagen:</strong> Lobos en Noruega; cuerpo, potencia y presencia terrestre. — Taral Jansen / Soldatnytt · CC BY 2.0 · <a href=\"https://commons.wikimedia.org/wiki/File:Wolves_in_Norway.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>. Foto zoológica de resonancia; no representación literal del Fenrir mítico.</figcaption></figure><p><strong>Tipo:</strong> Ascendiente · Descendencia</p><p><strong>Correspondencia:</strong> Tierra</p><p><strong>Estado:</strong> incluido en la lista básica de Ascendientes de Descendencia para Tierra.</p><p><strong>Uso:</strong> Ascendiente de un Descendiente, separado de la lista de Auspicios mortales.</p><p><strong>Regla:</strong> esta figura orienta la expresión del linaje, sus Manifestaciones y las transformaciones de sus Secuelas. No concede por sí sola un bono universal ni establece una cosmología cerrada.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Wolves_in_Norway.jpg",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Wolves_in_Norway.jpg",
+            "credit": "Taral Jansen / Soldatnytt",
+            "license": "CC BY 2.0",
+            "editorialNote": "Foto zoológica de resonancia; no representación literal del Fenrir mítico.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830243,
+        "modifiedTime": 1794181830252,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Mama Qocha",
+      "type": "text",
+      "sort": 1900000,
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1em 0\">\n<img src=\"https://commons.wikimedia.org/wiki/Special:Redirect/file/Cuevas_de_Anzota,_Arica,_Chile.JPG\" alt=\"Mama Qocha — paisaje litoral de resonancia\" style=\"width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:4px\">\n<figcaption style=\"font-size:0.82em;opacity:0.8;margin-top:0.35em\">\n<strong>Imagen:</strong> Paisaje litoral natural de Arica; resonancia de mar, costa y horizonte.\n— Yoyijorquera · CC BY-SA 3.0 ·\n<a href=\"https://commons.wikimedia.org/wiki/File:Cuevas_de_Anzota,_Arica,_Chile.JPG\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>.\nNo es una representación literal de Mama Qocha ni evidencia de culto chinchorro.\n</figcaption></figure> <p><strong>Tipo:</strong> Ascendiente · Descendencia</p>\n<p><strong>Correspondencia:</strong> Agua</p> <p><strong>Mama Qocha</strong> es la Madre de las Aguas. Su nombre reúne <em>mama</em>, madre, y\n<em>qocha</em> o <em>qucha</em>, voz andina vinculada al mar, los lagos y otros grandes cuerpos de agua.</p> <p>En <strong>Hiperaustralis</strong>, Mama Qocha puede ser el Ascendiente de un Descendiente ligado al\n<strong>Agua</strong>. Su presencia puede sentirse en el océano, las mareas, las lagunas, los manantiales\ny en el movimiento por el que unas aguas alcanzan a otras.</p> <p>Su linaje puede manifestarse como <strong>profundidad, flujo, retorno, marea, presión, sal, espuma\no comunicación entre aguas</strong>. No tiene una apariencia única: la forma de la Manifestación\npertenece al Descendiente.</p> <p>Mama Qocha no concede por sí misma un bonificador universal. Como todo Ascendiente, orienta el\nlinaje, sus Manifestaciones y las transformaciones que pueden aparecer en sus Secuelas.</p> <p><strong>Nota histórica.</strong> Su uso como Ascendiente de un personaje chinchorro es\nuna interpretación para el juego. No afirma que las comunidades Chinchorro históricas\nconocieran o veneraran a Mama Qocha.</p>",
+        "markdown": ""
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "visualSource": {
+            "commonsPage": "https://commons.wikimedia.org/wiki/File:Cuevas_de_Anzota,_Arica,_Chile.JPG",
+            "remoteImage": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cuevas_de_Anzota,_Arica,_Chile.JPG",
+            "credit": "Yoyijorquera",
+            "license": "CC BY-SA 3.0",
+            "editorialNote": "Paisaje litoral natural de resonancia, Arica; no representación literal de Mama Qocha ni evidencia de culto chinchorro.",
+            "delivery": "remote-url"
+          }
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "NQVNGaCrSSBLHWjb",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181830244,
+        "modifiedTime": 1794181980835,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "_key": "!journal!ozu3vFfbERrwF2ri"
+}

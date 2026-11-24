@@ -1,0 +1,68 @@
+{
+  "name": "Paititi",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/biomas/iconos/BIO-002.webp",
+  "system": {
+    "props": {
+      "descripcion": "La vegetación cierra el paso y la humedad se pega a la piel, las cuerdas y las provisiones. A intervalos, la bruma oculta la distancia entre dos laderas. Se escucha agua sin ver de dónde baja. La dificultad no es solamente avanzar: también es preservar el equipo, reconocer terreno firme y conservar la orientación cuando los hitos desaparecen tras el follaje.",
+      "en_escena": "El grupo llega a una húmeda donde el peso del equipaje vuelve insegura cada maniobra. ¿Descender unido, redistribuir carga, rodear la ladera o establecer un paso asistido?",
+      "bioma": "Bosque nublado",
+      "cientifico": "Descender una ladera húmeda con equipo",
+      "hipera_tipo": "bioma",
+      "codigo": "BIO-002",
+      "apartado": "Biomas"
+    },
+    "template": "HipBiomaTpl00001",
+    "templateSystemUniqueVersion": 201003,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 540,
+      "height": 440,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "6.0.5"
+    },
+    "meliaz-bridge": {
+      "kind": "bioma"
+    },
+    "hiperaustralis-bioma-item": {
+      "seedId": "BIO-002",
+      "version": "1"
+    }
+  },
+  "folder": "X86HyhTed01WxwTp",
+  "_id": "A9QZLy1IegmmhnJK",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791756238652,
+    "modifiedTime": 1793377300902,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!A9QZLy1IegmmhnJK"
+}

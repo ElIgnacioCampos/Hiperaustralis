@@ -1,0 +1,22 @@
+{
+  "name": "Umbral Polar",
+  "type": "JournalEntry",
+  "folder": null,
+  "sorting": "m",
+  "sort": 8000,
+  "_id": "R8m9lphBAtL8bQdG",
+  "description": "",
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1794169737263,
+    "modifiedTime": 1794169737263,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!R8m9lphBAtL8bQdG"
+}

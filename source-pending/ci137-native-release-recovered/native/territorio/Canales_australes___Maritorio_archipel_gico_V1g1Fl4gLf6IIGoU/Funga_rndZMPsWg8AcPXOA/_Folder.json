@@ -1,0 +1,22 @@
+{
+  "name": "Funga",
+  "type": "JournalEntry",
+  "folder": "V1g1Fl4gLf6IIGoU",
+  "sorting": "m",
+  "sort": 300,
+  "_id": "rndZMPsWg8AcPXOA",
+  "description": "",
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1794169737026,
+    "modifiedTime": 1794169737026,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!rndZMPsWg8AcPXOA"
+}

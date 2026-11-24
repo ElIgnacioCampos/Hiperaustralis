@@ -1,0 +1,1272 @@
+{
+  "name": "Hiperaustralis · Presencias",
+  "pages": [
+    {
+      "name": "Índice",
+      "type": "text",
+      "sort": 0,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h1>Hiperaustralis · Presencias</h1><p>Las Presencias actúan sobre un territorio y no presuponen un cuerpo ni una ficha de combate.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "category": "presencias-index"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "jj9az1PTEwyBznlF",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!wPxQqMg7Hb9c2fmw.jj9az1PTEwyBznlF"
+    },
+    {
+      "name": "Quta Jaqi",
+      "type": "text",
+      "sort": 100000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-001_512.webp\" alt=\"Quta Jaqi\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Territorio:</strong> Titicaca<br><strong>Tipo:</strong> Presencia</p><p>El propio lago adquiere agencia, relación y voluntad territorial.</p><h3>Descripción</h3><p>El lago no permanece ajeno a quienes lo recorren. En sus aguas, lluvias y orillas se reconoce una presencia con la que los habitantes del lugar mantienen relaciones y obligaciones.</p><h3>En juego</h3><p>Tratar como relación con el lago, no como especie ni «dios acuático» genérico.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-001",
+          "entityType": "Presencia",
+          "territory": "Titicaca",
+          "sceneUse": "El propio lago adquiere agencia, relación y voluntad territorial.",
+          "treatment": "Tratar como relación con el lago, no como especie ni «dios acuático» genérico.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-001_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-001_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "QGoPmiKqwVBrW5Ph",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!wPxQqMg7Hb9c2fmw.QGoPmiKqwVBrW5Ph"
+    },
+    {
+      "name": "Chuqilla",
+      "type": "text",
+      "sort": 200000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-002_512.webp\" alt=\"Chuqilla\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Territorio:</strong> Titicaca<br><strong>Tipo:</strong> Presencia</p><p>Vincula relieve sumergido, clima, lluvia, cosecha y rayo.</p><h3>Descripción</h3><p>Bajo el lago, una elevación guarda una presencia vinculada al cielo, la lluvia y las cosechas. Los rayos anuncian que el territorio y el tiempo atmosférico no actúan por separado.</p><h3>En juego</h3><p>Su acción se reconoce en el territorio y el tiempo; no necesita cuerpo fijo.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-002",
+          "entityType": "Presencia",
+          "territory": "Titicaca",
+          "sceneUse": "Vincula relieve sumergido, clima, lluvia, cosecha y rayo.",
+          "treatment": "Su acción se reconoce en el territorio y el tiempo; no necesita cuerpo fijo.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-002_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-002_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "k77Hp559idOvBpsJ",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!wPxQqMg7Hb9c2fmw.k77Hp559idOvBpsJ"
+    },
+    {
+      "name": "Ngen Mawiza",
+      "type": "text",
+      "sort": 300000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-003_512.webp\" alt=\"Ngen Mawiza\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Territorio:</strong> Ngulumapu<br><strong>Tipo:</strong> Presencia</p><p>El bosque o monte posee dueño/cuidador y exige relación con el lugar.</p><h3>Descripción</h3><p>En el monte, los árboles y senderos pertenecen a una trama de relaciones. Entrar, tomar o permanecer puede exigir reconocer al cuidador de ese lugar.</p><h3>En juego</h3><p>No usar como PNJ genérico repetible. Cada aparición pertenece a un territorio concreto.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-003",
+          "entityType": "Presencia",
+          "territory": "Ngulumapu",
+          "sceneUse": "El bosque o monte posee dueño/cuidador y exige relación con el lugar.",
+          "treatment": "No usar como PNJ genérico repetible. Cada aparición pertenece a un territorio concreto.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-003_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-003_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "hJyGDOWrk6dJbVfX",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!wPxQqMg7Hb9c2fmw.hJyGDOWrk6dJbVfX"
+    },
+    {
+      "name": "Ngen Ko",
+      "type": "text",
+      "sort": 400000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Ngulumapu<br><strong>Tipo:</strong> Presencia</p><p>Agua, vertiente, río o lago dejan de ser recursos neutrales.</p><h3>Descripción</h3><p>Una vertiente deja de ser solamente agua que fluye. Su presencia recuerda que cada cauce y cada orilla poseen historias y relaciones que conviene conocer antes de intervenir.</p><h3>En juego</h3><p>Relación y protocolo territorial antes que combate.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-004",
+          "entityType": "Presencia",
+          "territory": "Ngulumapu",
+          "sceneUse": "Agua, vertiente, río o lago dejan de ser recursos neutrales.",
+          "treatment": "Relación y protocolo territorial antes que combate.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-004_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-004_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "BcDjqkrNfN6PoaVo",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!wPxQqMg7Hb9c2fmw.BcDjqkrNfN6PoaVo"
+    },
+    {
+      "name": "Shumpall",
+      "type": "text",
+      "sort": 500000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Ngulumapu<br><strong>Tipo:</strong> Presencia / aparición acuática</p><p>Da forma personal o narrativa a la agencia del agua.</p><h3>Descripción</h3><p>A veces el agua se presenta con una forma que puede encontrarse y reconocerse. Los relatos de Shumpall no hablan de una sola apariencia: la relación entre las personas, el agua y lo que esta entrega adopta diversas formas.</p><h3>En juego</h3><p>Puede solaparse con Ngen Ko según territorio y relato; no fijarlo como especie de «sireno».</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-005",
+          "entityType": "Presencia / aparición acuática",
+          "territory": "Ngulumapu",
+          "sceneUse": "Da forma personal o narrativa a la agencia del agua.",
+          "treatment": "Puede solaparse con Ngen Ko según territorio y relato; no fijarlo como especie de «sireno».",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-005_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-005_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "PeJTsJlWl3shgCKO",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!wPxQqMg7Hb9c2fmw.PeJTsJlWl3shgCKO"
+    },
+    {
+      "name": "Trengtreng Filu",
+      "type": "text",
+      "sort": 600000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Ngulumapu / escala territorial<br><strong>Tipo:</strong> Presencia mayor</p><p>Eleva el conflicto desde un lugar concreto a una amenaza territorial o catastrófica.</p><h3>Descripción</h3><p>Cuando las aguas avanzan, el cuerpo de Trengtreng Filu arquea la tierra y eleva las alturas. Su acción puede ofrecer refugio frente a la inundación, pero transforma el territorio entero.</p><h3>En juego</h3><p>No tratar como encuentro ordinario ni criatura de igual escala que un Rival común.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-006",
+          "entityType": "Presencia mayor",
+          "territory": "Ngulumapu / escala territorial",
+          "sceneUse": "Eleva el conflicto desde un lugar concreto a una amenaza territorial o catastrófica.",
+          "treatment": "No tratar como encuentro ordinario ni criatura de igual escala que un Rival común.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-006_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-006_256.webp",
+          "editorialNote": "En la novela: Trentren Vilu."
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "B7HLPgjLszezwNZ4",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!wPxQqMg7Hb9c2fmw.B7HLPgjLszezwNZ4"
+    },
+    {
+      "name": "Ngen Pewenentu",
+      "type": "text",
+      "sort": 700000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Pewenmapu<br><strong>Tipo:</strong> Presencia</p><p>El bosque de pewen tiene cuidador, historia y condiciones de relación.</p><h3>Descripción</h3><p>Los bosques de pewen guardan más que alimento y caminos. Su cuidador se reconoce en la relación de las personas con el lugar, sus árboles y aquello que el bosque entrega.</p><h3>En juego</h3><p>faimpu puede ser un nombre o manifestación local; no duplicarlo como criatura aparte.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-007",
+          "entityType": "Presencia",
+          "territory": "Pewenmapu",
+          "sceneUse": "El bosque de pewen tiene cuidador, historia y condiciones de relación.",
+          "treatment": "faimpu puede ser un nombre o manifestación local; no duplicarlo como criatura aparte.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-007_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-007_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "cX2sFdM7n2e6fnWS",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!wPxQqMg7Hb9c2fmw.cX2sFdM7n2e6fnWS"
+    },
+    {
+      "name": "Ngen Wingkul",
+      "type": "text",
+      "sort": 800000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Pewenmapu<br><strong>Tipo:</strong> Presencia</p><p>Cerro y ladera actúan como territorio relacionado, no simple obstáculo.</p><h3>Descripción</h3><p>Un cerro se impone sobre el camino y el horizonte. Sus laderas no son solo terreno que vencer: el lugar tiene una presencia con la que es necesario relacionarse.</p><h3>En juego</h3><p>Presencia ligada a un cerro concreto; evitar «espíritu de montaña» genérico.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-008",
+          "entityType": "Presencia",
+          "territory": "Pewenmapu",
+          "sceneUse": "Cerro y ladera actúan como territorio relacionado, no simple obstáculo.",
+          "treatment": "Presencia ligada a un cerro concreto; evitar «espíritu de montaña» genérico.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-008_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-008_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "sISE0PzetZzote3O",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!wPxQqMg7Hb9c2fmw.sISE0PzetZzote3O"
+    },
+    {
+      "name": "Ngen Rüpü",
+      "type": "text",
+      "sort": 900000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Pewenmapu<br><strong>Tipo:</strong> Presencia</p><p>El sendero mismo puede implicar permiso, dirección y relación.</p><h3>Descripción</h3><p>La huella entre cerros conduce a quien sabe recorrerla. El paso también tiene su cuidador: avanzar puede depender tanto del trato con el lugar como de encontrar el sendero.</p><h3>En juego</h3><p>Ideal para viaje y paso sin crear un subsistema de exploración.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-009",
+          "entityType": "Presencia",
+          "territory": "Pewenmapu",
+          "sceneUse": "El sendero mismo puede implicar permiso, dirección y relación.",
+          "treatment": "Ideal para viaje y paso sin crear un subsistema de exploración.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-009_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-009_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "gahJavJ0c8VMYBKf",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!wPxQqMg7Hb9c2fmw.gahJavJ0c8VMYBKf"
+    },
+    {
+      "name": "Máip",
+      "type": "text",
+      "sort": 1000000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Patagonia austral<br><strong>Tipo:</strong> Presencia</p><p>Oscuridad, sombra, viento, mala suerte y proximidad de la muerte se vuelven territoriales.</p><h3>Descripción</h3><p>El viento trae una sombra que parece no pertenecer a cuerpo alguno. En ciertos relatos, Máip se vincula con la oscuridad, el temor y la proximidad de la desgracia.</p><h3>En juego</h3><p>No fijar anatomía ni traducir como «demonio»; funciona mejor como condición o presencia.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-010",
+          "entityType": "Presencia",
+          "territory": "Patagonia austral",
+          "sceneUse": "Oscuridad, sombra, viento, mala suerte y proximidad de la muerte se vuelven territoriales.",
+          "treatment": "No fijar anatomía ni traducir como «demonio»; funciona mejor como condición o presencia.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-010_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-010_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "8UjnA23HD79ENGaN",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!wPxQqMg7Hb9c2fmw.8UjnA23HD79ENGaN"
+    },
+    {
+      "name": "Ayayema",
+      "type": "text",
+      "sort": 1100000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Canales australes<br><strong>Tipo:</strong> Presencia</p><p>Tormenta, viento, podredumbre, enfermedad, accidente y miedo vuelven inhabitable un campamento.</p><h3>Descripción</h3><p>El viento se ensaña con la orilla y el campamento deja de ofrecer resguardo. A la amenaza del temporal se suman malos presagios, enfermedad y temor, hasta que permanecer allí deja de ser posible.</p><h3>En juego</h3><p>Tratar como Presencia o evento territorial; no como criatura con Aguante ordinario.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-011",
+          "entityType": "Presencia",
+          "territory": "Canales australes",
+          "sceneUse": "Tormenta, viento, podredumbre, enfermedad, accidente y miedo vuelven inhabitable un campamento.",
+          "treatment": "Tratar como Presencia o evento territorial; no como criatura con Aguante ordinario.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-011_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-011_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "xMcZdBXqlkATwjHh",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!wPxQqMg7Hb9c2fmw.xMcZdBXqlkATwjHh"
+    },
+    {
+      "name": "Guardián de la puerta",
+      "type": "text",
+      "sort": 1200000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Umbral Polar<br><strong>Tipo:</strong> Presencia</p><p>El viaje deja de ser exploración y se vuelve iniciación: algo custodia la entrada hacia Agartha.</p><h3>En juego</h3><p>Centinela o Presencia, no bestia ordinaria. Su identidad profunda permanece secreta para Dirección.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-012",
+          "entityType": "Presencia",
+          "territory": "Umbral Polar",
+          "sceneUse": "El viaje deja de ser exploración y se vuelve iniciación: algo custodia la entrada hacia Agartha.",
+          "treatment": "Centinela o Presencia, no bestia ordinaria. Su identidad profunda permanece secreta para Dirección.",
+          "weight": "Condicional / según escena",
+          "image": null
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "uYpDg4cHbBgUSYkm",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!wPxQqMg7Hb9c2fmw.uYpDg4cHbBgUSYkm"
+    }
+  ],
+  "folder": null,
+  "flags": {
+    "hiperaustralis-presencias": {
+      "seedId": "journal-presencias-v1",
+      "version": "1.1-LAB",
+      "category": "presencias",
+      "visualComplete": false,
+      "approvedIcons": 3,
+      "totalEntries": 12,
+      "integratedRatifiedV9": 11
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "wPxQqMg7Hb9c2fmw",
+  "categories": [],
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791640901946,
+    "modifiedTime": 1794181922498,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "page_ids": [
+    "jj9az1PTEwyBznlF",
+    "QGoPmiKqwVBrW5Ph",
+    "k77Hp559idOvBpsJ",
+    "hJyGDOWrk6dJbVfX",
+    "BcDjqkrNfN6PoaVo",
+    "PeJTsJlWl3shgCKO",
+    "B7HLPgjLszezwNZ4",
+    "cX2sFdM7n2e6fnWS",
+    "sISE0PzetZzote3O",
+    "gahJavJ0c8VMYBKf",
+    "8UjnA23HD79ENGaN",
+    "xMcZdBXqlkATwjHh",
+    "uYpDg4cHbBgUSYkm"
+  ],
+  "pages_expanded": [
+    {
+      "name": "Índice",
+      "type": "text",
+      "sort": 0,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h1>Hiperaustralis · Presencias</h1><p>Las Presencias actúan sobre un territorio y no presuponen un cuerpo ni una ficha de combate.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "category": "presencias-index"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "jj9az1PTEwyBznlF",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Quta Jaqi",
+      "type": "text",
+      "sort": 100000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-001_512.webp\" alt=\"Quta Jaqi\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Territorio:</strong> Titicaca<br><strong>Tipo:</strong> Presencia</p><p>El propio lago adquiere agencia, relación y voluntad territorial.</p><h3>Descripción</h3><p>El lago no permanece ajeno a quienes lo recorren. En sus aguas, lluvias y orillas se reconoce una presencia con la que los habitantes del lugar mantienen relaciones y obligaciones.</p><h3>En juego</h3><p>Tratar como relación con el lago, no como especie ni «dios acuático» genérico.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-001",
+          "entityType": "Presencia",
+          "territory": "Titicaca",
+          "sceneUse": "El propio lago adquiere agencia, relación y voluntad territorial.",
+          "treatment": "Tratar como relación con el lago, no como especie ni «dios acuático» genérico.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-001_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-001_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "QGoPmiKqwVBrW5Ph",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Chuqilla",
+      "type": "text",
+      "sort": 200000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-002_512.webp\" alt=\"Chuqilla\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Territorio:</strong> Titicaca<br><strong>Tipo:</strong> Presencia</p><p>Vincula relieve sumergido, clima, lluvia, cosecha y rayo.</p><h3>Descripción</h3><p>Bajo el lago, una elevación guarda una presencia vinculada al cielo, la lluvia y las cosechas. Los rayos anuncian que el territorio y el tiempo atmosférico no actúan por separado.</p><h3>En juego</h3><p>Su acción se reconoce en el territorio y el tiempo; no necesita cuerpo fijo.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-002",
+          "entityType": "Presencia",
+          "territory": "Titicaca",
+          "sceneUse": "Vincula relieve sumergido, clima, lluvia, cosecha y rayo.",
+          "treatment": "Su acción se reconoce en el territorio y el tiempo; no necesita cuerpo fijo.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-002_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-002_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "k77Hp559idOvBpsJ",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Ngen Mawiza",
+      "type": "text",
+      "sort": 300000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<figure style=\"margin:0 0 1rem 0\"><img src=\"modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-003_512.webp\" alt=\"Ngen Mawiza\" style=\"display:block;max-width:100%;height:auto;margin:0 auto\"></figure><p><strong>Territorio:</strong> Ngulumapu<br><strong>Tipo:</strong> Presencia</p><p>El bosque o monte posee dueño/cuidador y exige relación con el lugar.</p><h3>Descripción</h3><p>En el monte, los árboles y senderos pertenecen a una trama de relaciones. Entrar, tomar o permanecer puede exigir reconocer al cuidador de ese lugar.</p><h3>En juego</h3><p>No usar como PNJ genérico repetible. Cada aparición pertenece a un territorio concreto.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-003",
+          "entityType": "Presencia",
+          "territory": "Ngulumapu",
+          "sceneUse": "El bosque o monte posee dueño/cuidador y exige relación con el lugar.",
+          "treatment": "No usar como PNJ genérico repetible. Cada aparición pertenece a un territorio concreto.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-003_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-003_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "hJyGDOWrk6dJbVfX",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Ngen Ko",
+      "type": "text",
+      "sort": 400000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Ngulumapu<br><strong>Tipo:</strong> Presencia</p><p>Agua, vertiente, río o lago dejan de ser recursos neutrales.</p><h3>Descripción</h3><p>Una vertiente deja de ser solamente agua que fluye. Su presencia recuerda que cada cauce y cada orilla poseen historias y relaciones que conviene conocer antes de intervenir.</p><h3>En juego</h3><p>Relación y protocolo territorial antes que combate.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-004",
+          "entityType": "Presencia",
+          "territory": "Ngulumapu",
+          "sceneUse": "Agua, vertiente, río o lago dejan de ser recursos neutrales.",
+          "treatment": "Relación y protocolo territorial antes que combate.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-004_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-004_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "BcDjqkrNfN6PoaVo",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Shumpall",
+      "type": "text",
+      "sort": 500000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Ngulumapu<br><strong>Tipo:</strong> Presencia / aparición acuática</p><p>Da forma personal o narrativa a la agencia del agua.</p><h3>Descripción</h3><p>A veces el agua se presenta con una forma que puede encontrarse y reconocerse. Los relatos de Shumpall no hablan de una sola apariencia: la relación entre las personas, el agua y lo que esta entrega adopta diversas formas.</p><h3>En juego</h3><p>Puede solaparse con Ngen Ko según territorio y relato; no fijarlo como especie de «sireno».</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-005",
+          "entityType": "Presencia / aparición acuática",
+          "territory": "Ngulumapu",
+          "sceneUse": "Da forma personal o narrativa a la agencia del agua.",
+          "treatment": "Puede solaparse con Ngen Ko según territorio y relato; no fijarlo como especie de «sireno».",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-005_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-005_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "PeJTsJlWl3shgCKO",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Trengtreng Filu",
+      "type": "text",
+      "sort": 600000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Ngulumapu / escala territorial<br><strong>Tipo:</strong> Presencia mayor</p><p>Eleva el conflicto desde un lugar concreto a una amenaza territorial o catastrófica.</p><h3>Descripción</h3><p>Cuando las aguas avanzan, el cuerpo de Trengtreng Filu arquea la tierra y eleva las alturas. Su acción puede ofrecer refugio frente a la inundación, pero transforma el territorio entero.</p><h3>En juego</h3><p>No tratar como encuentro ordinario ni criatura de igual escala que un Rival común.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-006",
+          "entityType": "Presencia mayor",
+          "territory": "Ngulumapu / escala territorial",
+          "sceneUse": "Eleva el conflicto desde un lugar concreto a una amenaza territorial o catastrófica.",
+          "treatment": "No tratar como encuentro ordinario ni criatura de igual escala que un Rival común.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-006_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-006_256.webp",
+          "editorialNote": "En la novela: Trentren Vilu."
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "B7HLPgjLszezwNZ4",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Ngen Pewenentu",
+      "type": "text",
+      "sort": 700000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Pewenmapu<br><strong>Tipo:</strong> Presencia</p><p>El bosque de pewen tiene cuidador, historia y condiciones de relación.</p><h3>Descripción</h3><p>Los bosques de pewen guardan más que alimento y caminos. Su cuidador se reconoce en la relación de las personas con el lugar, sus árboles y aquello que el bosque entrega.</p><h3>En juego</h3><p>faimpu puede ser un nombre o manifestación local; no duplicarlo como criatura aparte.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-007",
+          "entityType": "Presencia",
+          "territory": "Pewenmapu",
+          "sceneUse": "El bosque de pewen tiene cuidador, historia y condiciones de relación.",
+          "treatment": "faimpu puede ser un nombre o manifestación local; no duplicarlo como criatura aparte.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-007_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-007_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "cX2sFdM7n2e6fnWS",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Ngen Wingkul",
+      "type": "text",
+      "sort": 800000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Pewenmapu<br><strong>Tipo:</strong> Presencia</p><p>Cerro y ladera actúan como territorio relacionado, no simple obstáculo.</p><h3>Descripción</h3><p>Un cerro se impone sobre el camino y el horizonte. Sus laderas no son solo terreno que vencer: el lugar tiene una presencia con la que es necesario relacionarse.</p><h3>En juego</h3><p>Presencia ligada a un cerro concreto; evitar «espíritu de montaña» genérico.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-008",
+          "entityType": "Presencia",
+          "territory": "Pewenmapu",
+          "sceneUse": "Cerro y ladera actúan como territorio relacionado, no simple obstáculo.",
+          "treatment": "Presencia ligada a un cerro concreto; evitar «espíritu de montaña» genérico.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-008_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-008_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "sISE0PzetZzote3O",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Ngen Rüpü",
+      "type": "text",
+      "sort": 900000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Pewenmapu<br><strong>Tipo:</strong> Presencia</p><p>El sendero mismo puede implicar permiso, dirección y relación.</p><h3>Descripción</h3><p>La huella entre cerros conduce a quien sabe recorrerla. El paso también tiene su cuidador: avanzar puede depender tanto del trato con el lugar como de encontrar el sendero.</p><h3>En juego</h3><p>Ideal para viaje y paso sin crear un subsistema de exploración.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-009",
+          "entityType": "Presencia",
+          "territory": "Pewenmapu",
+          "sceneUse": "El sendero mismo puede implicar permiso, dirección y relación.",
+          "treatment": "Ideal para viaje y paso sin crear un subsistema de exploración.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-009_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-009_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "gahJavJ0c8VMYBKf",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Máip",
+      "type": "text",
+      "sort": 1000000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Patagonia austral<br><strong>Tipo:</strong> Presencia</p><p>Oscuridad, sombra, viento, mala suerte y proximidad de la muerte se vuelven territoriales.</p><h3>Descripción</h3><p>El viento trae una sombra que parece no pertenecer a cuerpo alguno. En ciertos relatos, Máip se vincula con la oscuridad, el temor y la proximidad de la desgracia.</p><h3>En juego</h3><p>No fijar anatomía ni traducir como «demonio»; funciona mejor como condición o presencia.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-010",
+          "entityType": "Presencia",
+          "territory": "Patagonia austral",
+          "sceneUse": "Oscuridad, sombra, viento, mala suerte y proximidad de la muerte se vuelven territoriales.",
+          "treatment": "No fijar anatomía ni traducir como «demonio»; funciona mejor como condición o presencia.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-010_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-010_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "8UjnA23HD79ENGaN",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Ayayema",
+      "type": "text",
+      "sort": 1100000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Canales australes<br><strong>Tipo:</strong> Presencia</p><p>Tormenta, viento, podredumbre, enfermedad, accidente y miedo vuelven inhabitable un campamento.</p><h3>Descripción</h3><p>El viento se ensaña con la orilla y el campamento deja de ofrecer resguardo. A la amenaza del temporal se suman malos presagios, enfermedad y temor, hasta que permanecer allí deja de ser posible.</p><h3>En juego</h3><p>Tratar como Presencia o evento territorial; no como criatura con Aguante ordinario.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-011",
+          "entityType": "Presencia",
+          "territory": "Canales australes",
+          "sceneUse": "Tormenta, viento, podredumbre, enfermedad, accidente y miedo vuelven inhabitable un campamento.",
+          "treatment": "Tratar como Presencia o evento territorial; no como criatura con Aguante ordinario.",
+          "weight": "Condicional / según escena",
+          "image": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-011_512.webp",
+          "image256": "modules/hiperaustralis-rituales/assets/presencias/ratificadas_v9/PRES-011_256.webp"
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "xMcZdBXqlkATwjHh",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Guardián de la puerta",
+      "type": "text",
+      "sort": 1200000,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Territorio:</strong> Umbral Polar<br><strong>Tipo:</strong> Presencia</p><p>El viaje deja de ser exploración y se vuelve iniciación: algo custodia la entrada hacia Agartha.</p><h3>En juego</h3><p>Centinela o Presencia, no bestia ordinaria. Su identidad profunda permanece secreta para Dirección.</p>"
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "flags": {
+        "hiperaustralis": {
+          "presenceId": "PRES-012",
+          "entityType": "Presencia",
+          "territory": "Umbral Polar",
+          "sceneUse": "El viaje deja de ser exploración y se vuelve iniciación: algo custodia la entrada hacia Agartha.",
+          "treatment": "Centinela o Presencia, no bestia ordinaria. Su identidad profunda permanece secreta para Dirección.",
+          "weight": "Condicional / según escena",
+          "image": null
+        }
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_id": "uYpDg4cHbBgUSYkm",
+      "category": null,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "custom-system-builder",
+        "systemVersion": "6.0.2",
+        "createdTime": 1794181922498,
+        "modifiedTime": 1794181922498,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "_key": "!journal!wPxQqMg7Hb9c2fmw"
+}

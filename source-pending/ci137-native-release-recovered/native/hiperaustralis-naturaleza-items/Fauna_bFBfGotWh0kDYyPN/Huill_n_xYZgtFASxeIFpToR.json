@@ -1,0 +1,75 @@
+{
+  "name": "Huillín",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-022_Lontra_provocax.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "fauna",
+      "descripcion": "Nutria austral de cuerpo largo y pelaje oscuro, asociada a ríos, lagos y costas protegidas. Nada entre rocas, raíces y vegetación ribereña y deja huellas y restos de alimento en sus lugares habituales de paso.",
+      "en_escena": "Conviene mostrarla mediante ondas en el agua, restos sobre una roca o una cabeza que emerge un instante antes de sumergirse.",
+      "bioma": "Tierra del Fuego — Estepa, bosque austral y turbera",
+      "cientifico": "Lontra provocax"
+    },
+    "template": "HipFaunaTpl00001",
+    "templateSystemUniqueVersion": 201002,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": [],
+    "display": {
+      "width": 600,
+      "height": 600,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    }
+  },
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "fauna"
+    },
+    "hiperaustralis-fauna-item": {
+      "seedId": "FAU-022",
+      "version": "1.1-rupestre-autorizado",
+      "bioma": "Tierra del Fuego — Estepa, bosque austral y turbera",
+      "cientifico": "Lontra provocax",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lontra_provocax_73250025.jpg",
+      "peso_sugerido": 1,
+      "origen": "FAUNA_FOUNDRY_OPTIMIZADO_v1_1"
+    },
+    "hiperaustralis-sheet": {
+      "background": "modules/hiperaustralis-rituales/assets/fauna/06_Tierra_del_Fuego/FAU-022_Lontra_provocax.webp",
+      "backgroundOpacity": 0.25
+    }
+  },
+  "folder": "bFBfGotWh0kDYyPN",
+  "_id": "xYZgtFASxeIFpToR",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754995861,
+    "modifiedTime": 1791755515829,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!xYZgtFASxeIFpToR"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Fauna",
+  "type": "JournalEntry",
+  "folder": "p0kXeorbBxlaG1lA",
+  "sorting": "m",
+  "sort": 200,
+  "_id": "nKzxsHSbSJVfrZ6n",
+  "description": "",
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1794169732817,
+    "modifiedTime": 1794169732817,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!nKzxsHSbSJVfrZ6n"
+}

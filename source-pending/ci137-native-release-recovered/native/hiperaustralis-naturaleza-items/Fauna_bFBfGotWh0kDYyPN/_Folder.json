@@ -1,0 +1,22 @@
+{
+  "name": "Fauna",
+  "type": "Item",
+  "folder": null,
+  "sorting": "a",
+  "sort": 200000,
+  "_id": "bFBfGotWh0kDYyPN",
+  "description": "",
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "custom-system-builder",
+    "systemVersion": "6.0.2",
+    "createdTime": 1791754990758,
+    "modifiedTime": 1791754990758,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!bFBfGotWh0kDYyPN"
+}
