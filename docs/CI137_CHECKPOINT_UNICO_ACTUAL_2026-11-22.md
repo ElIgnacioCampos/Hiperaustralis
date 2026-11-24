@@ -4,6 +4,14 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## H7 — QA5: nueve carpetas verificadas visualmente (24-11-2026)
+
+**Evidencia:** captura de H7/Foundry V14.370 aportada por el usuario (24-11-2026, 15:42 Chile), compendio **HA · Prototipo · Objetos** desplegado hasta el nivel de Rituales. **9/9 carpetas visibles:** Armas, Defensas, Equipo común, Instrumentos musicales, Parafernalia, Reliquias y Rituales como categorías principales; dentro de Reliquias, subcarpetas **Cotidianas** y **Legendarias**. Jerarquía 7+2, navegación/expansión y visualización: **D3 VISUAL FOLDERS PASS**. La captura exhibe Items de Rituales **Atar, Consultar, Despedir, Lakutun · Legar, Renovar Arraigo y Restituir**, todos con iconos a la vista. No certificar por ello la existencia de los 8 rituales íntegros ni de los 136 Items: no se ven todos.
+
+**Consolidación acumulada:** H7 abre con módulo QA5 `0.1.7-ci137qa.5` activo; tres packs previamente visibles/abiertos (Objetos/Adversarios/Journals), y ahora **9 carpetas y jerarquía** verificadas. **Pendientes D3:** recuento 136/136 Items; apertura/persistencia de hoja Kona; dos reinicios normales del mundo con CI137 activo; imagen y fondo de 99 referencias heredadas; lectura completa de 21 páginas del Journal. Ninguna modificación sobre documentos ni otras instalaciones en este control.
+
+**Decisiones:** no recompilar ni borrar módulos; mantener QA5 como candidato funcional D3 parcial y H6 como respaldo. **Fuentes:** capturas Foundry H7 24-11-2026, CI QA5 #45457345135, Issue #2. **Estado Maestro, `main`, Bridge, Forge y H6/H7:** sin cambios desde este registro.
+
 ## H7 — QA5: captura de arranque con tres compendios abiertos (24-11-2026)
 
 **Evidencia visual aportada por usuario:** captura de H7 después de la instalación y activación del paquete **QA5** para Foundry 14.370 / CSB 6.1.2. El mundo **abre con el módulo activo**, y las tres ventanas de compendio son visibles simultáneamente: **HA · Prototipo · Objetos** (carpetas **Armas** y **Defensas**, con Items e ilustraciones en ambas), **HA · Prototipo · Adversarios** (registro **Ladrón oportunista**) y **HA · Prototipo · Journals** (entrada **Auspicios — Hiperaustralis**). La barra lateral muestra los tres packs identificados por el ID `hiperaustralis-compendios-prototype`, diferenciados de los packs del mundo H7. Esto es evidencia D3 visual **PASS de carga/lectura inicial**, con cliente Foundry funcional. No basta para acreditar recuento integral de 136 Items, los nueve folders, las 21 páginas de Journal, imágenes de los 99 vínculos legados ni segundo reinicio.
