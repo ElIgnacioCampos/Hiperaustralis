@@ -106,11 +106,22 @@
             "Close and reopen actor and world; verify persistence",
             "Check console/bridge errors"
           ],
-          "validation": "D3_PENDING_NO_ACTUAL_RECIPE_ITEM_SOURCE_CONFIRMED"
+          "validation": "D3_PENDING_NO_ACTUAL_RECIPE_ITEM_SOURCE_CONFIRMED",
+          "sourceBridgeVersion": "0.24.203",
+          "verifiedSupport": false,
+          "currentBlockers": [
+            "MELIAZ Bridge 0.24.203 inferHiperaItemKind excludes receta",
+            "KONA_COMPENDIUM_TARGETS.territorio excludes receta",
+            "hiperaNaturalezaItems and installHiperaBiomas ignore receta",
+            "Existing Kona target for recipes not explicitly decided",
+            "No approved recipe Item payloads and IDs in CI137/QA5"
+          ],
+          "proposedTypeMarker": "hipera_tipo=receta (PROVISIONAL ONLY, not runtime)"
         },
         "approvedSourceRecordsConfirmed": 0,
         "itemRecordsCreated": 0,
-        "shouldNotInventFromIngredients": true
+        "shouldNotInventFromIngredients": true,
+        "validation": "D2_BRIDGE_SOURCE_GAP_CONFIRMED_D3_BLOCKED"
       }
     },
     "ha-proto-actors": {
@@ -768,7 +779,13 @@
       "itemDragAndDrop": "MUST_PASS_IN_REAL_CLIENT_NOT_YET_VALIDATED",
       "targetPack": "ha-proto-items",
       "runtimeAddsAuthorized": 0,
-      "newVisualRemapsAuthorized": 0
+      "newVisualRemapsAuthorized": 0,
+      "candidatesBreakdown": {
+        "approved": 6,
+        "nameMatchOnly": 11,
+        "ambiguous": 4
+      },
+      "candidatesCrosswalk": "manifests/ci137-instrumentos-recetas-dnd-qa-20261124-v01.json"
     },
     "reliquias": {
       "historicalItemsInQA5": 16,
@@ -809,7 +826,16 @@
       "deduplication": "One canonical recipe Item ID; territorial cross references where applicable",
       "sameDocumentIdentityWhenDropped": true,
       "installation": "BLOCKED_UNTIL_APPROVED_ITEMS_AND_FOUNDRY_D3_DROP_QA",
-      "status": "STRUCTURE_AND_RUNTIME_CONTRACT_RECORDED_NO_RUNTIME_RECIPE_YET"
+      "status": "D2_SOURCE_GAP_AND_BRIDGE_TYPE_GAP_CONFIRMED_NO_RUNTIME_DOCUMENTS",
+      "bridgeCurrentVersion": "0.24.203",
+      "bridgeCurrentRecipeSupport": false,
+      "supportedExistingTargets": {
+        "instrumentos": "Sentir / Música",
+        "reliquias": "Temple / Reliquias",
+        "floraFaunaFunga": "Territorio",
+        "recetas": "NO ROUTE"
+      },
+      "nextGate": "RECOVER_APPROVED_SOURCE; DEFINE_RECEIVING_KONA_ZONE; PATCH_ONLY_ISOLATED_BRIDGE; STATIC_QA_THEN_D3_COPY"
     }
   },
   "recoveredSourceZip": {
@@ -847,7 +873,8 @@
       "Recetas are actual Item docs under Territorio/<territory>/Recetas; they must drag and drop into Kona with CSB/Bridge and persist, separate from 4x4x4 quotas",
       "Keep 21 historic Instrumentos and 16 historical Reliquias inside existing 136 QA5 Items; do not treat remapped images as new Items",
       "Six ERH instruments have approved transport remaps; remaining 15 require per-item mapping; do not claim all 21 visually updated",
-      "Keep reliquias in Cotidianas (8) and Legendarias (8), and Tokicura separate; do not merge with Equipo común or recetas"
+      "Keep reliquias in Cotidianas (8) and Legendarias (8), and Tokicura separate; do not merge with Equipo común or recetas",
+      "Bridge v0.24.203 explicitly excludes receta in kind inference, picker, nature list, and drop renderer; do NOT claim drag-and-drop supported until source and runtime QA"
     ],
     "runtimeD3": false
   }
