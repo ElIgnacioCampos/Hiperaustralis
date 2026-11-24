@@ -1,0 +1,64 @@
+{
+  "status": "BINARY_RECOVERY_VERIFIED_LIBRARY_BACKUP_ONLY",
+  "source": {
+    "filename": "HIPERAUSTRALIS_FOUNDRY_V14_COMPENDIOS_0.4.100_ADVERSARIOS_FIX_CANDIDATO.zip",
+    "sha256": "14c674d3e0ea42ecda068e0bdf071d929a90d30c455b756a3cca3a573b2a81fd"
+  },
+  "count": 193,
+  "rawBytes": 22083654,
+  "verification": [
+    "Source hashes match",
+    "Each member byte-identical in 0.4.98 and 0.4.100",
+    "PIL decode and dimensions checked",
+    "ZIP CRC and extracted member hashes verified"
+  ],
+  "archives": [
+    {
+      "filename": "CI137_ASSETS_04100_ACTORS_Y_FAUNA_COMPARTIDA_01.zip",
+      "count": 30,
+      "bytes": 1577440,
+      "sha256": "7a78a27b914323f65ecffda5fe1a4f248eee68274e90c43b3cb37a0593c82fe0"
+    },
+    {
+      "filename": "CI137_ASSETS_04100_NATURALEZA_01.zip",
+      "count": 100,
+      "bytes": 8947483,
+      "sha256": "0878789962456a0a8bee3436c8a92cc46dc350897410847344d8f8f37929b2a6"
+    },
+    {
+      "filename": "CI137_ASSETS_04100_NATURALEZA_02.zip",
+      "count": 19,
+      "bytes": 4175794,
+      "sha256": "fabc051f5c3f08ca4d09089a9e669d30803ffec2a4e21ab7fb5400e376ab9d9f"
+    },
+    {
+      "filename": "CI137_ASSETS_04100_CULTURAS_01.zip",
+      "count": 27,
+      "bytes": 7244746,
+      "sha256": "84aa839d345c966823b39a2043edc96f6d70cf7e60d5025df8edd5b8aff88335"
+    },
+    {
+      "filename": "CI137_ASSETS_04100_CANDIDATOS_BRIDGE_01.zip",
+      "count": 17,
+      "bytes": 192324,
+      "sha256": "6627a08d89b245fcc66c4dae6e3470a6f03a055c93921909e5dc21be7d49404d"
+    }
+  ],
+  "backup": "User Library, 5 archives + source manifest + index, uploads succeeded",
+  "githubBinaryTransfer": false,
+  "approval": "No asset promoted; 17 alternate-module candidates segregated.",
+  "pending": [
+    "Find 22 HAB portrait/token paths",
+    "Find 5 FAU prehistoric assets",
+    "Resolve EXO-009",
+    "Resolve 4 Turiano Journal refs",
+    "Binary transport to repository staging; direct connector upload unavailable",
+    "D3 runtime"
+  ],
+  "unchanged": [
+    "QA5",
+    "Bridge LAB",
+    "Forge",
+    "Estado Maestro"
+  ]
+}
