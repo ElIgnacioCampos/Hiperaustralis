@@ -233,7 +233,12 @@ def package(prepared, compiled, dest):
             if n == "CURRENT" or n == current or p.suffix in (".ldb", ".sst"):
                 members["packs/" + name + "/" + n] = p.read_bytes()
             elif n in ("LOCK", "LOG", "LOG.old") or p.suffix == ".log":
-                gate(not p.stat().st_size, "nonempty volatile pack file " + str(p))
+                # LevelDB LOG/LOG.old are mutable service diagnostics, often nonempty
+                # immediately after successful CLI packing. Never include them.
+                # Nonempty numbered .log files may carry unflushed transactions:
+                # refuse those, as QA5's durable-pack sanitizer does.
+                gate(not (p.suffix == ".log" and p.stat().st_size),
+                     "nonempty transaction .log may contain unflushed data " + str(p))
             else:
                 gate(False, "unexpected pack file " + str(p))
         gate(any(k.endswith((".ldb", ".sst")) for k in members), "empty SST " + name)
