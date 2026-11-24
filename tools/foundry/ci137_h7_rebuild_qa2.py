@@ -17,12 +17,12 @@ ID = "hiperaustralis-compendios-prototype"
 PAIRS = {"items": "ha-proto-items", "full": "ha-proto-items"}
 PACKS = ("ha-proto-items", "ha-proto-actors", "ha-proto-journals")
 STAGES = {"min": (), "items": PACKS[:1], "full": PACKS}
-VERSIONS = {"min": "0.1.6-ci137qa.2.0", "items": "0.1.6-ci137qa.2.1",
-            "full": "0.1.6-ci137qa.2.2"}
+VERSIONS = {"min": "0.1.6-ci137qa.3.0", "items": "0.1.6-ci137qa.3.1",
+            "full": "0.1.6-ci137qa.3.2"}
 
 
 def fail(why):
-    raise ValueError("QA2_REBUILD_BLOCKED: " + why)
+    raise ValueError("QA3_CLEAN_REBUILD_BLOCKED: " + why)
 
 
 def load(path):
@@ -43,7 +43,7 @@ def build(stage, preflight, compiled, destination):
         fail("base module ID/pack set drift")
     manifest = {
         "id": ID,
-        "title": "Hiperaustralis · CI137 QA2 " + stage.upper() + " (NO PUBLICAR)",
+        "title": "Hiperaustralis · CI137 QA3 " + stage.upper() + " (NO PUBLICAR)",
         "description": "Etapa " + stage + " de diagnóstico de arranque. NO instalar en mundos de juego.",
         "version": VERSIONS[stage],
         "authors": baseline["authors"],
@@ -58,7 +58,8 @@ def build(stage, preflight, compiled, destination):
                                    "manifest", "download")):
         fail("startup script/automatic update detected")
     files = {"module.json": (json.dumps(manifest, ensure_ascii=False, indent=2)+"\n").encode()}
-    record = {"schema": "CI137_QA2_REBUILD_V01", "stage": stage,
+    volatile_removed = []
+    record = {"schema": "CI137_QA3_DURABLE_ONLY_V01", "stage": stage,
               "version": VERSIONS[stage], "module": ID,
               "packNames": list(STAGES[stage]), "autorepair": False,
               "runtimeValidated": False, "installApproved": False,
@@ -83,9 +84,24 @@ def build(stage, preflight, compiled, destination):
                 fail("incomplete LevelDB manifest " + name)
             if not any(p.suffix == ".ldb" and p.stat().st_size for p in root.rglob("*.ldb")):
                 fail("LevelDB SST missing " + name)
-            for p in root.rglob("*"):
-                if p.is_file():
-                    files["packs/" + name + "/" + p.relative_to(root).as_posix()] = p.read_bytes()
+            for p in sorted(root.rglob("*")):
+                if not p.is_file():
+                    continue
+                key = p.relative_to(root).as_posix()
+                durable = (key == "CURRENT" or key == current or
+                           (p.suffix in (".ldb", ".sst") and "/" not in key))
+                if durable:
+                    files["packs/" + name + "/" + key] = p.read_bytes()
+                elif key in ("LOCK", "LOG", "LOG.old") or key.endswith(".log"):
+                    # Nonempty numbered logs can contain unflushed data: fail closed.
+                    if key.endswith(".log") and p.stat().st_size:
+                        fail("nonempty transaction log: " + name + "/" + key)
+                    volatile_removed.append(name + "/" + key)
+                else:
+                    fail("unexpected LevelDB file: " + name + "/" + key)
+            if not any(p.startswith("packs/" + name + "/") and p.endswith((".ldb", ".sst"))
+                       for p in files):
+                fail("no durable SST in " + name)
         remaps = (pre.get("approvedRemaps", []) + pre.get("sharedKnifeRemaps", [])
                   + pre.get("additionalApprovedAssetRemaps", []))
         if len(remaps) != 40:
@@ -147,11 +163,12 @@ def build(stage, preflight, compiled, destination):
             fail("Journal pack empty")
         record.update({"actors":1,"journals":1,"journalPages":21})
     files["QA/README.txt"] = (
-        "CI137 QA2 " + stage + " — stage-only diagnostic, not for use in active worlds.\n"
+        "CI137 QA3 " + stage + " — stage-only diagnostic, not for use in active worlds.\n"
         "Uses the EXISTING module ID; installing will replace it across Forge.\n"
         "No scripts, CSS injection, installer, Journal migration, release or auto update.\n"
         "Only run in an isolated disposable world after backing up current modules.\n"
         "Test stages in order: MIN, ITEMS, FULL. Stop at first failing load.\n"
+        "Only durable LevelDB files: CURRENT, MANIFEST and SST (no LOCK/LOG).\n"
         "99 legacy image references remain unresolved in ITEMS/FULL.\n"
     ).encode()
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -172,6 +189,9 @@ def build(stage, preflight, compiled, destination):
     record.update({"zipName": destination.name, "zipBytes": destination.stat().st_size,
                    "zipSHA256": digest(destination.read_bytes()),
                    "zipEntries": len(files)})
+    record["cleanLevelDB"] = True
+    record["volatileFilesExcluded"] = sorted(volatile_removed)
+    record["volatileFilesExcludedCount"] = len(volatile_removed)
     log = destination.parent/(stage.upper()+"_RESULT.json")
     log.write_text(json.dumps(record, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     print(json.dumps(record, ensure_ascii=False))
