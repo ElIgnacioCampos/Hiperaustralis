@@ -1,0 +1,926 @@
+{
+  "schema": "ci137-actors-selection-v01",
+  "date": "2026-11-24",
+  "status": "HISTORICAL_SELECTION_READY__RUNTIME_NOT_COMPILED",
+  "source": "source-pending/ci137-actors-historical-68/actors-2026-11-14.json",
+  "sourceCommit": "f7457cfbd3f3ecbf897259b9402e6adc9cbd24cd",
+  "authorDecision": "Retirar los cuatro Atlantes centauros del compendio; conservar respaldo histórico.",
+  "excluded": [
+    {
+      "id": "FVMpCnGQJlnB8G9X",
+      "name": "Atlante centauro · Cantor",
+      "disposition": "ARCHIVE_ONLY_NO_RUNTIME"
+    },
+    {
+      "id": "rzmPVGdFqE8RVKiL",
+      "name": "Atlante centauro · Guerrero",
+      "disposition": "ARCHIVE_ONLY_NO_RUNTIME"
+    },
+    {
+      "id": "kA0IfJGhHRaZ7gw9",
+      "name": "Atlante centauro · Sabio",
+      "disposition": "ARCHIVE_ONLY_NO_RUNTIME"
+    },
+    {
+      "id": "jHUrxTebvAOtDIqR",
+      "name": "Atlante centauro · Viajero",
+      "disposition": "ARCHIVE_ONLY_NO_RUNTIME"
+    }
+  ],
+  "counts": {
+    "Rivales": 16,
+    "Fauna": 19,
+    "Habitantes": 11,
+    "Familiares Exóticos": 8,
+    "Mascotas": 10
+  },
+  "selectedCount": 64,
+  "uniqueLegacyAssetPaths": 75,
+  "baselineReconciliation": {
+    "name": "Ladrón oportunista",
+    "seedId": "mapuche-adv-01",
+    "code": "RIV-01",
+    "existingQa5Id": "1ad8f2de41a35138",
+    "historicalId": "dm9nrrmBJzoiBgYY",
+    "proposedPolicy": "Preserve existing QA5 ID and current text to avoid breaking active references; historical ID retained in provenance only; do not compile a second Actor.",
+    "status": "PROPOSED_NOT_APPLIED"
+  },
+  "pesoNotes": [
+    {
+      "id": "cUpbmbg9VSg6uMnI",
+      "status": "PRESERVE_EMPTY_SOURCE_PENDING_RULE_COMPATIBILITY",
+      "reason": "Historical scene text explicitly makes strength depend on group size and coordination."
+    }
+  ],
+  "records": [
+    {
+      "id": "npdPcNTKe9KJ4m78",
+      "name": "Arquero",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.npdPcNTKe9KJ4m78",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "2",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-10_10_arquero_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "5KTErdwgVENf1dwn",
+      "name": "Combatiente defensivo",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.5KTErdwgVENf1dwn",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "2",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-12_12_combatiente_defensivo_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "r0PDzwkvx9QvZTic",
+      "name": "Custodia",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.r0PDzwkvx9QvZTic",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "2",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-04_04_custodia_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "dy3dsoYy8xnCIR2S",
+      "name": "Emboscador",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.dy3dsoYy8xnCIR2S",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "2",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-14_14_emboscador_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "HmxNtPIpubUjWWrw",
+      "name": "Emboscadora",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.HmxNtPIpubUjWWrw",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "2",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-02_02_emboscadora_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "1j2IdqIefYVmdjU8",
+      "name": "Guerrero de otra comunidad",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.1j2IdqIefYVmdjU8",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-03_03_guerrero_otra_comunidad_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "Dkabns46N07iK9ph",
+      "name": "Hondero",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.Dkabns46N07iK9ph",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "2",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-09_09_hondero_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "1nAObZRVJtrDjg8l",
+      "name": "Jefe de partida",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.1nAObZRVJtrDjg8l",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-08_08_jefe_de_partida_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "dm9nrrmBJzoiBgYY",
+      "name": "Ladrón oportunista",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.dm9nrrmBJzoiBgYY",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "2",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-01_01_ladron_oportunista_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "RECONCILE_WITH_EXISTING_QA5_NOT_DUPLICATE"
+    },
+    {
+      "id": "Uq5wazXjptC8WxvC",
+      "name": "Lancero",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.Uq5wazXjptC8WxvC",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-11_11_lancero_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "iEs5Kvbosau0cujM",
+      "name": "Luchador",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.iEs5Kvbosau0cujM",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-13_13_luchador_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "WnDrzRXoPpZdUAIk",
+      "name": "Navegante armado",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.WnDrzRXoPpZdUAIk",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "2",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-15_15_navegante_armado_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "cUpbmbg9VSg6uMnI",
+      "name": "Piño de guerreros",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.cUpbmbg9VSg6uMnI",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-16_16_pino_de_guerreros_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "Pm7WRaZA8kAa49IQ",
+      "name": "Rastreadora hostil",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.Pm7WRaZA8kAa49IQ",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "2",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-05_05_rastreadora_hostil_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "EuSbBbRWpyR4sc63",
+      "name": "Saqueadora",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.EuSbBbRWpyR4sc63",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "2",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-06_06_saqueadora_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "d64s3aT9JKD0hCg9",
+      "name": "Veterana",
+      "sourceUuid": "Compendium.world.hiperaustralis-adversarios-mapuche.Actor.d64s3aT9JKD0hCg9",
+      "family": "Rivales",
+      "template": "HipRivalTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-07_07_veterana_FOUNDRY_512.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "B3G24jKZL5s6qYgh",
+      "name": "Águila harpía",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.B3G24jKZL5s6qYgh",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-049_Harpia_harpyja.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "IPWS6morNxCeMbNQ",
+      "name": "Armadillo gigante",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.IPWS6morNxCeMbNQ",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-051_Priodontes_maximus.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "v4Q4MmCWsVrfvFcS",
+      "name": "Cachalote",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.v4Q4MmCWsVrfvFcS",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "4",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-036_Physeter_macrocephalus.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "mXTFN1vg76IQ2qa2",
+      "name": "Cháskels",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.mXTFN1vg76IQ2qa2",
+      "family": "Habitantes",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-10_Cháskels.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-10_Cháskels.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "wzsmN9i46PPX6xbq",
+      "name": "Chélep",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.wzsmN9i46PPX6xbq",
+      "family": "Habitantes",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-08_Chélep.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-08_Chélep.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "62cueeDAEFpwYyji",
+      "name": "Foca de Weddell",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.62cueeDAEFpwYyji",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "2",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-031_Leptonychotes_weddellii.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "AUi055skDxo3nCYF",
+      "name": "Gonfoterio · Notiomastodon",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.AUi055skDxo3nCYF",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "4",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-047_Notiomastodon_platensis.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "rF1LxbYuVYwMmfNe",
+      "name": "Guanaco",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.rF1LxbYuVYwMmfNe",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "2",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-017_Lama_guanicoe.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "alPU9feZe0k3VldY",
+      "name": "Güiña",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.alPU9feZe0k3VldY",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-010_Leopardus_guigna.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "i8Pv6mqeJkN6ierv",
+      "name": "Hippidion · caballo sudamericano",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.i8Pv6mqeJkN6ierv",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-046_Hippidion_saldiasi.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "wpaa4vskznxs19HL",
+      "name": "Huillín",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.wpaa4vskznxs19HL",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-022_Lontra_provocax.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "5JBwsUNnFYacodTJ",
+      "name": "Katari",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.5JBwsUNnFYacodTJ",
+      "family": "Habitantes",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-04_Katari.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-04_Katari.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "bCAVf76eJBauphje",
+      "name": "Kawa Kawa",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.bCAVf76eJBauphje",
+      "family": "Habitantes",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-07_Kawa_Kawa.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-07_Kawa_Kawa.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "uTQE6B8E0PiNUbDG",
+      "name": "Kelenken · ave del terror",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.uTQE6B8E0PiNUbDG",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "4",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-054_Kelenken_guillermoi.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "PbWfXgVH7R2xS4pQ",
+      "name": "Lobo marino común",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.PbWfXgVH7R2xS4pQ",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-025_Otaria_byronia.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "AkBZAyt3CImiIvdI",
+      "name": "Macrauchenia · macrauquenia",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.AkBZAyt3CImiIvdI",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-045_Macrauchenia_patachonica.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "gJy5tCsrAHMJvS8S",
+      "name": "Milodón relicto",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.gJy5tCsrAHMJvS8S",
+      "family": "Habitantes",
+      "template": "HipCriatTpl00001",
+      "peso": "4",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-09_Milodón_relicto.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-09_Milodón_relicto.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "SjikI34cg9ZuspEz",
+      "name": "Ngürüfilu",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.SjikI34cg9ZuspEz",
+      "family": "Habitantes",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-06_Ngürüfilu.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-06_Ngürüfilu.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "2iOWVO3YfUAu70HP",
+      "name": "Nutria gigante",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.2iOWVO3YfUAu70HP",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-050_Pteronura_brasiliensis.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "I9kEYPzEdlHmegol",
+      "name": "Oso andino · Jucumari",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.I9kEYPzEdlHmegol",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "4",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-005_Tremarctos_ornatus.webp"
+      ],
+      "assetCandidates": [
+        {
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-005_Tremarctos_ornatus.webp",
+          "repositoryPath": "source-original/ci137-territorial/fau-approved/FAU-005_Tremarctos_ornatus.webp",
+          "gitBlobSha": "68d5566d1b74f2ac5a470400bb7ec58f978344f3",
+          "status": "EXACT_BASENAME_ONLY__CHECK_APPROVED_VERSION_BEFORE_REMAP"
+        }
+      ],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "S271H47hRuZ1J4h1",
+      "name": "Otorongo · Jaguar",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.S271H47hRuZ1J4h1",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "4",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-008_Panthera_onca.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "a2UMZpS1rH0QLcEP",
+      "name": "Puma",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.a2UMZpS1rH0QLcEP",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-013_Puma_concolor.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "xCzi2ZnfvpiktUvY",
+      "name": "Qatiqati",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.xCzi2ZnfvpiktUvY",
+      "family": "Habitantes",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-02_Qatiqati.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-02_Qatiqati.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "4XR5qS710r8a7cJR",
+      "name": "Quesintuu y Umantuu",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.4XR5qS710r8a7cJR",
+      "family": "Habitantes",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-01_Quesintuu_y_Umantuu.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-01_Quesintuu_y_Umantuu.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "4WEwljZ2VjLUaRdJ",
+      "name": "Quien sopla el viento",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.4WEwljZ2VjLUaRdJ",
+      "family": "Habitantes",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-11_Quien_sopla_el_viento.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-11_Quien_sopla_el_viento.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "56qrc20XJSx0kOMH",
+      "name": "Rana gigante del Titicaca",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.56qrc20XJSx0kOMH",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-002_Telmatobius_culeus.webp"
+      ],
+      "assetCandidates": [
+        {
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-002_Telmatobius_culeus.webp",
+          "repositoryPath": "source-original/ci137-territorial/fau-approved/FAU-002_Telmatobius_culeus.webp",
+          "gitBlobSha": "8af762caad6e305f57274d07ee9dfc695658329f",
+          "status": "EXACT_BASENAME_ONLY__CHECK_APPROVED_VERSION_BEFORE_REMAP"
+        }
+      ],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "zrRIUDc3sD6aLwR0",
+      "name": "Shoggot",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.zrRIUDc3sD6aLwR0",
+      "family": "Habitantes",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-12_Shoggot.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-12_Shoggot.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "bP5Yg5wEUGif1rsc",
+      "name": "Smilodon · felino de colmillos de sable",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.bP5Yg5wEUGif1rsc",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "4",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-053_Smilodon_populator.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "OP7xlczxpAOCIfX1",
+      "name": "Tapir · Sachavaca",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.OP7xlczxpAOCIfX1",
+      "family": "Fauna",
+      "template": "HipCriatTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-007_Tapirus_terrestris.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "8U4xgO8CCjeNnxur",
+      "name": "Trülkewekufü",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.8U4xgO8CCjeNnxur",
+      "family": "Habitantes",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-05_Trülkewekufü.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-05_Trülkewekufü.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "6pTPJHbEJLeODFBv",
+      "name": "Anchimallén",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.6pTPJHbEJLeODFBv",
+      "family": "Familiares Exóticos",
+      "template": "HipCriatTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-002_Anchimallen.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "tVHCdcwMv1jz2pEm",
+      "name": "Imbunche",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.tVHCdcwMv1jz2pEm",
+      "family": "Familiares Exóticos",
+      "template": "HipCriatTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-008_Imbunche.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "jJ9N4oUCmmD4PBGt",
+      "name": "Kobold",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.jJ9N4oUCmmD4PBGt",
+      "family": "Familiares Exóticos",
+      "template": "HipCriatTpl00001",
+      "peso": "2",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-005_Kobold.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "NtOoatkkgH7sxAjY",
+      "name": "Kolo Kolo",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.NtOoatkkgH7sxAjY",
+      "family": "Familiares Exóticos",
+      "template": "HipCriatTpl00001",
+      "peso": "3",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-006_Kolo_Kolo.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "UmY99wnFGChXYDo6",
+      "name": "Macaco de Pikunmapu",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.UmY99wnFGChXYDo6",
+      "family": "Familiares Exóticos",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-009_Macaco_de_Pikunmapu.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "V4hkO2v24ouHE7Wd",
+      "name": "Mandao",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.V4hkO2v24ouHE7Wd",
+      "family": "Familiares Exóticos",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-003_Mandao.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "7d6GezL23i8PCPUB",
+      "name": "Monito del monte",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.7d6GezL23i8PCPUB",
+      "family": "Familiares Exóticos",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-007_Monito_del_Monte.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "gvOeY1GIYPFfEFHk",
+      "name": "Troll pétreo",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.gvOeY1GIYPFfEFHk",
+      "family": "Familiares Exóticos",
+      "template": "HipCriatTpl00001",
+      "peso": "2",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-004_Troll.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "01hgbx0UU76CiKsk",
+      "name": "Ave entrenada",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.01hgbx0UU76CiKsk",
+      "family": "Mascotas",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/MASC-AVE-ENTRENADA_Ave_entrenada.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "7rwEzFZqOD9W8uAz",
+      "name": "Ave yagán",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.7rwEzFZqOD9W8uAz",
+      "family": "Mascotas",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/animal-ave-mensajera-buscadora.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "ljLPLj4fZKTBhw1r",
+      "name": "Culpeo amansado",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.ljLPLj4fZKTBhw1r",
+      "family": "Mascotas",
+      "template": "HipCriatTpl00001",
+      "peso": "2",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/MASC-CULPEO_Culpeo_amansado.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "fkq43lUn7QdAdOUn",
+      "name": "Guiña compañera",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.fkq43lUn7QdAdOUn",
+      "family": "Mascotas",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/animal-guina-companera.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "6sOsXhQeXKtMZTSc",
+      "name": "Loro Atacameño",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.6sOsXhQeXKtMZTSc",
+      "family": "Mascotas",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/animal-loro-cautivo-atacama.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "KNAs3CxA9JtpnXis",
+      "name": "Ñarki — gato compañero",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.KNAs3CxA9JtpnXis",
+      "family": "Mascotas",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/MASC-NARKI_Narki_companero.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "cFFjV9AudILE6rGV",
+      "name": "Perro cazador de nutrias",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.cFFjV9AudILE6rGV",
+      "family": "Mascotas",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/MASC-PERRO-CAZADOR_Perro_cazador_nutrias.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "yGPS7CQOIwigBvss",
+      "name": "Perro lanudo de los Chonos",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.yGPS7CQOIwigBvss",
+      "family": "Mascotas",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/MASC-PERRO-LANUDO_Perro_lanudo_chono.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "rsP7bEX5B9cTSdHh",
+      "name": "Perro pescador de los Chonos",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.rsP7bEX5B9cTSdHh",
+      "family": "Mascotas",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/MASC-PERRO-PESCADOR_Perro_pescador_chono.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    },
+    {
+      "id": "M0my63fGNJGZgmGW",
+      "name": "Perro viajero canoero",
+      "sourceUuid": "Compendium.world.hiperaustralis-bestiario.Actor.M0my63fGNJGZgmGW",
+      "family": "Mascotas",
+      "template": "HipCriatTpl00001",
+      "peso": "1",
+      "assetPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/animal-perros-viajeros-canoeros.webp"
+      ],
+      "assetCandidates": [],
+      "disposition": "SOURCE_SELECTED_NOT_COMPILED"
+    }
+  ],
+  "buildGate": {
+    "status": "BLOCKED",
+    "reasons": [
+      "No Actor-family assets in current module/assets tree",
+      "Legacy image references require exact approved source recovery",
+      "Resolve RIV-01 identity before build",
+      "Current packager hard-codes one Actor and one Journal; extend in isolated build with roundtrip QA",
+      "Culturas Journal not yet recovered"
+    ],
+    "stableQa5Unchanged": true,
+    "bridgeUnchanged": true
+  }
+}
