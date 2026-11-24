@@ -1,0 +1,370 @@
+{
+  "schema": "ci137-family-expansion-preflight-v01",
+  "cut": "2026-11-24",
+  "status": "STAGING_NO_RUNTIME_PACKAGE",
+  "base": {
+    "repository": "ElIgnacioCampos/Hiperaustralis",
+    "branchFrom": "work/ci137-fix-ids-v14-20261124",
+    "moduleId": "hiperaustralis-compendios-prototype",
+    "version": "0.1.7-ci137qa.5",
+    "foundry": "14.370",
+    "csb": "6.1.2",
+    "restartWithModuleActive": "PASS_REPORTED",
+    "threePacksOpen": "PASS_REPORTED",
+    "nineItemFoldersVisible": "PASS_REPORTED"
+  },
+  "targetPacks": {
+    "ha-proto-items": {
+      "kind": "Item",
+      "preserveExisting": 136,
+      "addFamilies": [
+        "Defensas (catálogo nuevo, con cotejo anti-duplicados)",
+        "Territorio / Fauna",
+        "Territorio / Flora",
+        "Territorio / Funga",
+        "Territorio / Recetas"
+      ],
+      "newItemDocsAuthorized": 0
+    },
+    "ha-proto-actors": {
+      "kind": "Actor",
+      "preserveExisting": 1,
+      "folders": [
+        "Habitantes/Amenyi",
+        "Adversarios/Turianos"
+      ],
+      "newActorDocsAuthorized": 0
+    },
+    "ha-proto-journals": {
+      "kind": "JournalEntry",
+      "preserveExisting": 1,
+      "candidateJournal": "Culturas — Hiperaustralis",
+      "candidatePages": 36,
+      "newJournalDocsAuthorized": 0
+    }
+  },
+  "territorialIndex": {
+    "reference": "CORE_ESTANDAR_TERRITORIOS_HIPERAUSTRALIS_v01 (18-11-2026) / FAUNA_MAESTRO_ACTUAL.md",
+    "root": "Territorio",
+    "territories": [
+      {
+        "code": "01_ATACAMA_LICKANANTAY",
+        "label": "Atacama / Lickanantay",
+        "fauna": [
+          "FAU-039",
+          "FAU-014",
+          "FAU-015",
+          "FAU-013"
+        ],
+        "subfolders": [
+          "Fauna",
+          "Flora",
+          "Funga",
+          "Recetas"
+        ],
+        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+      },
+      {
+        "code": "02_PIKUNMAPU",
+        "label": "Pikunmapu",
+        "fauna": [
+          "FAU-014",
+          "FAU-040",
+          "FAU-015",
+          "FAU-013"
+        ],
+        "subfolders": [
+          "Fauna",
+          "Flora",
+          "Funga",
+          "Recetas"
+        ],
+        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+      },
+      {
+        "code": "03_NGULUMAPU",
+        "label": "Ngulumapu",
+        "fauna": [
+          "FAU-009",
+          "FAU-010",
+          "FAU-011",
+          "FAU-012"
+        ],
+        "subfolders": [
+          "Fauna",
+          "Flora",
+          "Funga",
+          "Recetas"
+        ],
+        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+      },
+      {
+        "code": "04_PEWENMAPU",
+        "label": "Pewenmapu",
+        "fauna": [
+          "FAU-009",
+          "FAU-013",
+          "FAU-015",
+          "FAU-016"
+        ],
+        "subfolders": [
+          "Fauna",
+          "Flora",
+          "Funga",
+          "Recetas"
+        ],
+        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+      },
+      {
+        "code": "05_WILLIMAPU",
+        "label": "Willimapu",
+        "fauna": [
+          "FAU-009",
+          "FAU-010",
+          "FAU-011",
+          "FAU-022"
+        ],
+        "subfolders": [
+          "Fauna",
+          "Flora",
+          "Funga",
+          "Recetas"
+        ],
+        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+      },
+      {
+        "code": "06_PATAGONIA_AUSTRAL",
+        "label": "Patagonia austral",
+        "fauna": [
+          "FAU-017",
+          "FAU-018",
+          "FAU-019",
+          "FAU-020"
+        ],
+        "subfolders": [
+          "Fauna",
+          "Flora",
+          "Funga",
+          "Recetas"
+        ],
+        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+      },
+      {
+        "code": "07_TIERRA_DEL_FUEGO",
+        "label": "Tierra del Fuego",
+        "fauna": [
+          "FAU-021",
+          "FAU-022",
+          "FAU-023",
+          "FAU-024"
+        ],
+        "subfolders": [
+          "Fauna",
+          "Flora",
+          "Funga",
+          "Recetas"
+        ],
+        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+      },
+      {
+        "code": "08_CANALES_AUSTRALES",
+        "label": "Canales australes",
+        "fauna": [
+          "FAU-025",
+          "FAU-026",
+          "FAU-027",
+          "FAU-028"
+        ],
+        "subfolders": [
+          "Fauna",
+          "Flora",
+          "Funga",
+          "Recetas"
+        ],
+        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+      },
+      {
+        "code": "09_UMBRAL_POLAR",
+        "label": "Umbral Polar",
+        "fauna": [
+          "FAU-029",
+          "FAU-030",
+          "FAU-031",
+          "FAU-032"
+        ],
+        "subfolders": [
+          "Fauna",
+          "Flora",
+          "Funga",
+          "Recetas"
+        ],
+        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+      }
+    ],
+    "complementaryPlaces": [
+      "Titicaca",
+      "Paititi"
+    ],
+    "historicalEightTerritories": "source/territorios/flora/manifest.json (older candidate layout, not mapped one-to-one)",
+    "constraints": [
+      "territory does not mean biome or culture",
+      "same FAU/FLO code has exactly one canonical Item",
+      "other territorial appearances use UUID references",
+      "no empty family records to satisfy quotas",
+      "no unapproved funga taxon assignment"
+    ]
+  },
+  "families": {
+    "newDefenses": {
+      "source": "manifests/defensas-assets.json / docs/AUDITORIA_DEFENSAS_2026-11-12.md",
+      "historicalNativeItems": 8,
+      "catalogCodes": [
+        "DEF-01",
+        "DEF-02",
+        "DEF-03",
+        "DEF-04",
+        "DEF-05",
+        "DEF-06",
+        "DEF-07",
+        "DEF-08",
+        "DEF-09"
+      ],
+      "approvedGraphics": [
+        "COM-03",
+        "COM-05",
+        "COM-06",
+        "COM-07",
+        "COM-08",
+        "COM-10",
+        "COM-11",
+        "COM-12"
+      ],
+      "missingAsset": "COM-09 (Tañaña)",
+      "sourcePayload": "legacy 0.4.75 data/defensas.json includes eight prior Defensas without stable _id",
+      "decision": "reconcile by source export UUID/seedId before adding; DEF/COM codes are not one namespace",
+      "status": "PAUSED_UNTIL_ID_MATCH_AND_ASSET_DECISIONS"
+    },
+    "fauna": {
+      "authority": "FAUNA_MAESTRO_ACTUAL.md 2026-11-18",
+      "documented": 45,
+      "active": 44,
+      "legacyProtected": [
+        "FAU-006"
+      ],
+      "graphicApprovals": 16,
+      "pendingVisualApprovals": 28,
+      "currentFoundryIdentity": "source/territorios/fauna/foundry-id-map.json (50 existing docs in world compendium, not equal to approved bank)",
+      "historicalLegacyPayload": "hiperaustralis-rituales/data/fauna_items.json (32, without _id)",
+      "excludedFiller": [
+        "FAU-041",
+        "FAU-042",
+        "FAU-043",
+        "FAU-044",
+        "FAU-045",
+        "FAU-046",
+        "FAU-047"
+      ],
+      "status": "ID_AND_APPROVAL_RECONCILIATION_REQUIRED"
+    },
+    "flora": {
+      "authority": "source/territorios/flora/foundry-id-map.json (40 validated IDs)",
+      "candidateCodes": "FLO-001..FLO-040",
+      "candidateCount": 40,
+      "historicalLegacyPayload": "hiperaustralis-rituales/data/flora_items.json (40, without _id)",
+      "approval": "40 candidate taxa; 0 final replacements authorized",
+      "oldEightTerritoryIndex": "source/territorios/flora/manifest.json",
+      "knownConflict": "old eight-territory index lists Titicaca and Paititi instead of nine operational CORE; do not auto-relabel",
+      "status": "ID_READY_TERRITORIAL_MAPPING_AND_GRAPHIC_APPROVAL_PENDING"
+    },
+    "funga": {
+      "authority": "Flora/Funga candidate source 0.4.75 and recent CORE territorial standard",
+      "independentlyApprovedItems": 0,
+      "examplesRequiringTaxonomicReview": [
+        "FLO-020 Liquen polar",
+        "FLO-028 Fungosidades"
+      ],
+      "status": "SEPARATE_FOLDER_ALLOWED_NO_AUTO_ACTOR_OR_ITEM_CREATION"
+    },
+    "habitantes": {
+      "targetFolder": "Habitantes/Amenyi",
+      "namingAuthority": "ADV_AMENYI_ACTA_NOMENCLATURA_Y_CONTINUIDAD_v01.md",
+      "preserve": "Amenyi people vs Epeche legend; Küripe/Bokita and Albos/Ribereños names",
+      "sourceActorsFoundryIds": "NOT_VERIFIED",
+      "noRename": [
+        "Epeche Rüpü",
+        "La Copa Epeche historical manuscript",
+        "Kemkemtrew",
+        "Kavi",
+        "Kari"
+      ],
+      "status": "EDITORIAL_DESTINATION_APPROVED_ACTOR_DATA_PENDING"
+    },
+    "adversarios": {
+      "targetFolder": "Adversarios/Turianos",
+      "source": "manifests/turianos-assets.json",
+      "sourceCodes": [
+        "TUR-01",
+        "TUR-02",
+        "TUR-03",
+        "TUR-04",
+        "TUR-05",
+        "TUR-06"
+      ],
+      "assetRecoveredCount": 6,
+      "identitiesWithSheetPending": [
+        "TUR-01",
+        "TUR-02",
+        "TUR-03",
+        "TUR-04"
+      ],
+      "runtimeExcluded": [
+        "TUR-05 Sangu",
+        "TUR-06 Popr"
+      ],
+      "historicalMetadataNotApproved": "GORILESCOS",
+      "sourceActorsFoundryIds": "NOT_VERIFIED",
+      "status": "ACTOR_ID_PAYLOAD_CROSSWALK_REQUIRED"
+    },
+    "culturas": {
+      "targetPack": "ha-proto-journals",
+      "source": "hiperaustralis-rituales/data/journals.json",
+      "journal": "Culturas — Hiperaustralis",
+      "pages": 36,
+      "sourcePersistentId": "NOT_PRESENT_IN_0_4_75",
+      "existingAuspiciosJournal": "preserve existing 21-page journal",
+      "status": "PENDING_PERSISTENT_ID_AND_36_PAGE_CONTENT_AUDIT"
+    }
+  },
+  "recoveredSourceZip": {
+    "filename": "HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB(1).zip",
+    "sha256": "c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e",
+    "crc": "PASS",
+    "memberRoot": "hiperaustralis-rituales/",
+    "memberDataCounts": {
+      "defensas.json": 8,
+      "fauna_items.json": 32,
+      "flora_items.json": 40,
+      "flora_y_funga_40.json": 40,
+      "bestiario.json": 8,
+      "adversarios_mapuche.json": 16,
+      "journals.json": 4
+    }
+  },
+  "gates": {
+    "noAutoInstall": true,
+    "noNewModuleId": true,
+    "noNewCompendiumPackId": true,
+    "noMainEdits": true,
+    "noMasterEdits": true,
+    "beforeBuild": [
+      "verify exact Foundry _id and 16-char validation for each new doc",
+      "reconcile 50 exported FAU against 44 active / 45 documented bank",
+      "do not duplicate 136 existing Items or 8 historical Defensas",
+      "recover actual Amenyi and Turianos Actor payloads and UUIDs before creating Actor entries",
+      "reconcile legacy 36-page Culture Journal with existing entries",
+      "separate nine CORE territories from old eight-band historical index",
+      "verify every asset hash and user approval before moving"
+    ],
+    "runtimeD3": false
+  }
+}
