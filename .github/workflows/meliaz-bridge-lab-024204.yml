@@ -1,0 +1,78 @@
+name: MELIAZ Bridge LAB 0.24.204 - isolated ID, NO FORGE DEPLOY
+
+on:
+  push:
+    branches: [work/meliaz-bridge-lab-0.24.204-20261124]
+    paths:
+      - '.github/workflows/meliaz-bridge-lab-024204.yml'
+      - 'tools/foundry/meliaz_bridge_lab_build.py'
+      - 'module/meliaz-bridge/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  laboratory-module:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax-validate pristine 0.24.203 sources
+        run: |
+          set -euo pipefail
+          python -m py_compile tools/foundry/meliaz_bridge_lab_build.py
+          node --check module/meliaz-bridge/bridge.js
+          node --check module/meliaz-bridge/kona-token-icons.js
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          m=json.loads(Path("module/meliaz-bridge/module.json").read_text())
+          assert (m["id"],m["version"]) == ("meliaz-bridge","0.24.203")
+          print("PASS: stable 0.24.203 was only read, never edited")
+          PY
+      - name: Assemble distinct-ID LAB module without overwriting original
+        run: |
+          python tools/foundry/meliaz_bridge_lab_build.py \
+            --out "dist/meliaz-bridge-lab-0.24.204-lab.0-NO_H6_H7.zip" \
+            --report "dist/MELIAZ_LAB_024204_READONLY_BUILD_REPORT.json"
+      - name: Reopen LAB ZIP, verify effective script guards and JS syntax
+        run: |
+          set -euo pipefail
+          unzip -q dist/meliaz-bridge-lab-0.24.204-lab.0-NO_H6_H7.zip -d "$RUNNER_TEMP/meliaz-lab"
+          node --check "$RUNNER_TEMP/meliaz-lab/bridge.js"
+          node --check "$RUNNER_TEMP/meliaz-lab/kona-token-icons.js"
+          python - "$RUNNER_TEMP/meliaz-lab" <<'PY'
+          import json,sys
+          from pathlib import Path
+          d=Path(sys.argv[1])
+          m=json.loads((d/"module.json").read_text())
+          assert m["id"]=="meliaz-bridge-lab" and m["version"]=="0.24.204-lab.0"
+          assert m["esmodules"] == ["kona-token-icons.js","bridge.js"]
+          assert m["relationships"]["conflicts"] == [{"id":"meliaz-bridge","type":"module"}]
+          assert len([x for x in d.rglob("*") if x.is_file()])==168
+          assert len(list((d/"assets/kona-token-icons").glob("*.webp")))==40
+          for f in m["esmodules"]:
+              s=(d/f).read_text()
+              assert 'game.modules?.get("meliaz-bridge")?.active' in s
+              assert "meliaz-bridge-lab" in s
+          print("PASS: LAB distinct ID, runtime conflict guard, 40 original token icons, syntax")
+          PY
+      - name: Publish LAB diagnostic ZIP only, no installation or release
+        uses: actions/upload-artifact@v4
+        with:
+          name: MELIAZ-BRIDGE-LAB-024204-ISOLATED-NO-H6-H7
+          path: |
+            dist/meliaz-bridge-lab-0.24.204-lab.0-NO_H6_H7.zip
+            dist/MELIAZ_LAB_024204_READONLY_BUILD_REPORT.json
+          retention-days: 30
+          if-no-files-found: error
+
+# Distinct LAB ID avoids replacing stable meliaz-bridge on install.
+# Never enable both packages in the same world; LAB blocks itself if original is active.
+# This workflow has no access to user Forge, H6 or H7 worlds.
