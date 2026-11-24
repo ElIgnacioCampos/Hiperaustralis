@@ -1,0 +1,96 @@
+name: CI137 QA2 staged clean rebuild - do not publish
+
+on:
+  push:
+    branches: [work/ci137-qa2-rebuild-20261124]
+    paths:
+      - '.github/workflows/ci137-qa2-staged.yml'
+      - 'tools/foundry/ci137_h7_rebuild_qa2.py'
+      - 'tools/foundry/ci137_h7_packager.py'
+      - 'tools/foundry/ci137_pipeline.py'
+      - 'manifests/ci137-selected-source-137-historical-ids.json'
+      - 'manifests/ci137-parafernalia22-rituales8-recovery.json'
+      - 'source/**'
+      - 'source-pending/**'
+      - 'source-original/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Confirm QA2 builder syntax
+        run: |
+          set -euo pipefail
+          python -m py_compile tools/foundry/ci137_h7_rebuild_qa2.py tools/foundry/ci137_h7_packager.py tools/foundry/ci137_pipeline.py
+      - name: Reconstruct 136 original historical Items, read-only source inputs
+        run: python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/qa2-prepared"
+      - name: Reconstruct original Actor and Journal (21 pages)
+        run: python tools/foundry/ci137_h7_packager.py prepare-meta --out "$RUNNER_TEMP/qa2-metadata"
+      - name: Install official Foundry CLI
+        run: npm install --no-audit --no-fund --no-save --no-package-lock @foundryvtt/foundryvtt-cli@3.0.5
+      - name: Fresh native packs from JSON, no reused DB files
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/qa2-packs" "$RUNNER_TEMP/qa2-unpacked"
+          FVTT="./node_modules/.bin/fvtt"
+          "$FVTT" package pack -n ha-proto-items --inputDirectory "$RUNNER_TEMP/qa2-prepared/items" --outputDirectory "$RUNNER_TEMP/qa2-packs" --recursive
+          "$FVTT" package pack -n ha-proto-actors --inputDirectory "$RUNNER_TEMP/qa2-metadata/actors" --outputDirectory "$RUNNER_TEMP/qa2-packs"
+          "$FVTT" package pack -n ha-proto-journals --inputDirectory "$RUNNER_TEMP/qa2-metadata/journals" --outputDirectory "$RUNNER_TEMP/qa2-packs"
+          "$FVTT" package unpack -n ha-proto-items --inputDirectory "$RUNNER_TEMP/qa2-packs" --outputDirectory "$RUNNER_TEMP/qa2-unpacked" --folders
+          python tools/foundry/ci137_pipeline.py verify --prepared "$RUNNER_TEMP/qa2-prepared" --unpacked "$RUNNER_TEMP/qa2-unpacked"
+      - name: Build MIN, ITEMS, FULL with one unchanged module ID
+        run: |
+          set -euo pipefail
+          for stage in min items full; do
+            python tools/foundry/ci137_h7_rebuild_qa2.py \
+              --stage "$stage" \
+              --preflight "$RUNNER_TEMP/qa2-prepared" \
+              --compiled "$RUNNER_TEMP/qa2-packs" \
+              --out "dist/CI137_QA2_"$stage"_NO_INSTALAR_SIN_QA.zip"
+            unzip -t "dist/CI137_QA2_"$stage"_NO_INSTALAR_SIN_QA.zip" >/dev/null
+          done
+      - name: Fail closed: correct stage differentiation and approvals
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=Path("dist")
+          rows={s:json.loads((d/(s.upper()+"_RESULT.json")).read_text()) for s in ("min","items","full")}
+          assert [len(rows[s]["packNames"]) for s in rows]==[0,1,3]
+          assert len({r["module"] for r in rows.values()})==1
+          for r in rows.values():
+              assert r["module"]=="hiperaustralis-compendios-prototype"
+              assert r["autorepair"] is False
+              assert r["runtimeValidated"] is False
+              assert r["installApproved"] is False
+              assert r["worldModified"] is False
+          for s in ("items","full"):
+              assert rows[s]["items"]==136
+              assert rows[s]["pendingLegacyLinks"]==99
+              assert rows[s]["approvedRemaps"]==40
+              assert rows[s]["approvedVisualAssets"]==23
+          assert rows["full"]["actors"]==1 and rows["full"]["journals"]==1
+          assert rows["full"]["journalPages"]==21
+          assert rows["min"]["zipEntries"]==2
+          print("QA2 THREE STAGES STRUCTURAL PASS — still NOT runtime QA, no release")
+          PY
+      - name: Publish only three diagnostic builds and their hashes as CI artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CI137-QA2-THREE-STAGES-NO-INSTALL
+          path: dist/*
+          if-no-files-found: error
+          retention-days: 30
+
+# No merges, releases, installs, Forge changes or world modifications.
