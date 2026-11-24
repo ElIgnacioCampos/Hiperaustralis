@@ -83,5 +83,42 @@
     "assetHashProofRun": 45248811731,
     "workflowRun": 45249674230,
     "verifiedCommit": "39257fc3ba071b40aeb34c611e36dab74fd7f369"
+  },
+  "ci137FourAdditionalVisualApprovals": {
+    "date": "2026-11-24",
+    "authorChoice": "second ERH image for each of four shown comparisons",
+    "identities": [
+      {
+        "name": "Arpa de boca",
+        "id": "j7J6wcAttET8rJpB",
+        "sha256": "eae0fbc7330c34bea7a66a147e2929c54bc43d0f820031887e56b799431d09b8",
+        "technicalStatus": "RUNTIME_TECHNICAL_QA_PENDING"
+      },
+      {
+        "name": "Campana Lickanantay",
+        "id": "RzhInApxuwq1o651",
+        "sha256": "d52d5af9ecaf3eb7586e5f55cb61b01d3a272b63b8e6f6d3fefb7a1231166cb2",
+        "technicalStatus": "D2_D3_PENDING"
+      },
+      {
+        "name": "Cuerno musical nórdico",
+        "id": "INdG4JndLBl0sWto",
+        "sha256": "fd4562fb1fb2a3dfcced879c9ee8e66c1b8cea3c594a45bc233c54d03e5e9e8b",
+        "technicalStatus": "D2_D3_PENDING"
+      },
+      {
+        "name": "Flauta de hueso",
+        "id": "YfFAFtBpsdyU2l9R",
+        "sha256": "3f81addeee80ef03ea314e3b4887405d92cba2a12d893b4c7f6ef85ea51baa14",
+        "technicalStatus": "D2_D3_PENDING"
+      }
+    ],
+    "manifest": "manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json",
+    "status": "VISUAL_APPROVED_EXACT_SOURCE_STAGED_NOT_TRANSPORTED",
+    "previouslyMappedAndTransported": 6,
+    "newlyApprovedNotYetTransported": 4,
+    "historicalBinariesPreserved": true,
+    "runtimeModuleStillQa5": true,
+    "note": "Explicit approval of pictured second/ERH binary is not retroactive approval of proposals v0.1, template editing, Bridge changes or runtime installation."
   }
 }
