@@ -55,7 +55,7 @@ jobs:
           assert m["id"]=="meliaz-bridge-lab" and m["version"]=="0.24.204-lab.0"
           assert m["esmodules"] == ["kona-token-icons.js","bridge.js"]
           assert m["relationships"]["conflicts"] == [{"id":"meliaz-bridge","type":"module"}]
-          assert len([x for x in d.rglob("*") if x.is_file()])==168
+          assert len([x for x in d.rglob("*") if x.is_file()])==63
           assert len(list((d/"assets/kona-token-icons").glob("*.webp")))==40
           for f in m["esmodules"]:
               s=(d/f).read_text()
