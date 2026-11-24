@@ -4,6 +4,16 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## CI137 — Bridge 0.24.203: Recetas DnD ausente; Instrumentos 6/11/4 (24-11-2026)
+
+**Recuperación técnica ejecutada:** revisión del archivo real `module/meliaz-bridge/bridge.js` de la rama `work/meliaz-bridge-0.24.203-clean`: `inferHiperaItemKind` **no admite `receta`**; `KONA_COMPENDIUM_TARGETS.territorio`, `hiperaNaturalezaItems`, `installHiperaBiomas` e `installHiperaItemDrop` **tampoco reconocen/transportan/representan Recetas**. Instrumentos sí caen en Sentir/Música, Reliquias en Temple, FFF en Territorio. No declarar Recetas funcionales por tener previstas nueve carpetas: el codepath Bridge no existe y **el destino específico de Recetas en Kona no aparece fijado en fuente**. Tampoco se hallaron Items Recetas completos (ID/plantilla/payload) en CI137/QA5/0.4.75/export 19-11 fuentes inspeccionadas. No se crearon fichas de prueba ficticias.
+
+**ERH Instrumentos:** los **21 IDs históricos** en el manifiesto se clasificaron por `approvedAssetTransport` y `editorialCrosswalk`: **6 remapeos aprobados**, **11 correspondencias de nombre/cultura sólo candidatas**, **4 ambiguos: Arpa de boca, Campana Lickanantay, Cuerno musical nórdico y Flauta de hueso**. No autorizar sustituir imágenes de esos quince sin evidencia. **Reliquias:** 8 cotidianas + 8 legendarias y Tokicura independiente; la presencia de arte y el código Bridge de DnD no constituyen prueba D3 real de drop/persistencia.
+
+**Trabajo de rama aislada:** [matriz 21 IDs y Recetas](../manifests/ci137-instrumentos-recetas-dnd-qa-20261124-v01.json), [acta de cotejo](CI137_RECETAS_BRIDGE_DND_INSTRUMENTOS_21_20261124_v01.md), [gate read-only sobre Bridge](../tools/foundry/ci137_bridge_recetas_readonly_gate.py). [Actions #45471624420](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45471624420) **PASS de auditoría, `D2_SOURCE_AUDIT_PASS__RECIPE_DND_BLOCKED`**; [Actions #45471751251](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45471751251) **PASS** de invariantes de ampliación. El manifiesto fue ajustado para bloquear explícitamente recetas como tipo soportado sin patch real y QA.
+
+**Decisiones:** no diseñar slot de Recetas sin canon; no editar Bridge 0.24.203 ni generar ZIP CI137 sobre QA5 hasta tener fuente Receta y contrato DnD. **Pendientes:** fuente aprobada, destino receptor, patch aislado Bridge y prueba D3 en Actor duplicado. **Cambios Estado Maestro/main/H6/H7/Forge/Bridge runtime:** ninguno.
+
 ## CI137 — Instrumentos/Reliquias y Recetas como Items drag-and-drop (24-11-2026)
 
 **Aclaración autoral:** las **Recetas se incluyen en cada uno de los nueve Territorios** como cuarta subcarpeta junto a Flora, Fauna y Funga y **son Items arrastrables desde compendios hacia la hoja Kona**. No cuentan en el 4×4×4 FFF y no se reducen a JournalEntry ni a material gráfico. Deben conservar documento Item/ID/UUID/payload, lugar de origen y persistencia después de cerrar/abrir el Actor y reiniciar. No inventar secciones nuevas de ficha ni lógica de Bridge antes de comprobar un ejemplo real.
