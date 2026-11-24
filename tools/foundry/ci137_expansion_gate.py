@@ -150,8 +150,14 @@ def main():
          "recipes must not become non-draggable Journals or fabricated Items")
     gate(recfam["notFFF"] is True and
          recfam["typeRequirement"].startswith("Native Foundry Item") and
-         recfam["installation"].startswith("BLOCKED_UNTIL"),
-         "recipe drag and drop gate cannot be lifted by manifest text")
+         recfam["installation"].startswith("BLOCKED_UNTIL") and
+         recfam["bridgeCurrentVersion"] == "0.24.203" and
+         recfam["bridgeCurrentRecipeSupport"] is False and
+         recfam["supportedExistingTargets"]["recetas"] == "NO ROUTE" and
+         recipe["dragAndDrop"]["verifiedSupport"] is False and
+         recipe["dragAndDrop"]["sourceBridgeVersion"] == "0.24.203" and
+         len(recipe["dragAndDrop"]["currentBlockers"]) == 5,
+         "recipe drag and drop cannot be claimed working before Bridge support and actual approved recipe source")
     for row in t:
         rr = row["fff"]["recipes"]
         gate(rr["sibling"] is True and rr["excludedFromQuota"] is True and
