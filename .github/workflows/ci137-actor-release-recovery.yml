@@ -1,0 +1,66 @@
+name: CI137 - Actor release recovery (read only)
+on:
+  push:
+    branches: [work/ci137-expansion-familias-20261124]
+    paths: ['.github/workflows/ci137-actor-release-recovery.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and inspect historical packages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/ha-recovery reports/release-recovery
+          gh release download Turianos --repo "$GITHUB_REPOSITORY" --pattern 'HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06.zip' --dir /tmp/ha-recovery
+          gh release download Hiperaustralis --repo "$GITHUB_REPOSITORY" --pattern 'HIPERAUSTRALIS_COMPENDIOS_v1.0.0_FORGE.zip' --dir /tmp/ha-recovery
+          gh release download v0.1.5-forge-test --repo "$GITHUB_REPOSITORY" --pattern 'HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip' --dir /tmp/ha-recovery
+          python - <<'PY'
+          import json, hashlib, zipfile
+          from pathlib import Path, PurePosixPath
+          expected = {
+              'HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06.zip':'5880d34b0d614f3e7ec734f4a59fa88fe8b3264505c0bceed1302eeb71b15a15',
+              'HIPERAUSTRALIS_COMPENDIOS_v1.0.0_FORGE.zip':'ca610ae5cfb81d01a925af6fa2fcb03e942e9c4432530bfb3a711c8d0525a86a',
+              'HIPERAUSTRALIS_COMPENDIOS_PROTO_NATIVO_v0.1.5.zip':'604408322430f530b1bd341f6c6e038135e1f87f5a0ecadedd84771e889f1a94'
+          }
+          def sha(b): return hashlib.sha256(b).hexdigest()
+          selection=json.loads(Path('manifests/ci137-actors-selection-64-20261124-v01.json').read_text())
+          paths=sorted({p for r in selection['records'] for p in r['assetPaths']})
+          assert len(paths)==75 and selection['selectedCount']==64
+          report={'status':'SOURCE_INVENTORY_ONLY_NO_PROMOTION','archives':[], 'assets':{p:[] for p in paths}}
+          for name,digest in expected.items():
+              f=Path('/tmp/ha-recovery')/name
+              assert sha(f.read_bytes())==digest, name+' digest mismatch'
+              with zipfile.ZipFile(f) as z:
+                  assert z.testzip() is None
+                  infos=[i for i in z.infolist() if not i.is_dir()]
+                  assert len({i.filename for i in infos})==len(infos)
+                  inv=[]
+                  for i in infos:
+                      p=PurePosixPath(i.filename)
+                      assert not p.is_absolute() and '..' not in p.parts
+                      inv.append({'path':i.filename,'bytes':i.file_size})
+                      for legacy in paths:
+                          suffix=legacy.removeprefix('modules/hiperaustralis-rituales/')
+                          if i.filename==suffix or i.filename.endswith('/'+suffix):
+                              report['assets'][legacy].append({'archive':name,'member':i.filename,'sha256':sha(z.read(i)),'bytes':i.file_size,'match':'EXACT_RELATIVE_PATH_NOT_ART_APPROVAL'})
+                  report['archives'].append({'name':name,'sha256':digest,'entries':inv})
+          report['matchedPaths']=sum(bool(v) for v in report['assets'].values())
+          report['unmatchedPaths']=[p for p,v in report['assets'].items() if not v]
+          out=Path('reports/release-recovery/actor-release-inventory.json')
+          out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps({'matchedPaths':report['matchedPaths'],'missingPaths':len(report['unmatchedPaths']),'archives':[{ 'name':a['name'],'entries':len(a['entries'])} for a in report['archives']]},ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CI137-ACTOR-RELEASE-INVENTORY-READONLY
+          path: reports/release-recovery/actor-release-inventory.json
+          if-no-files-found: error
+          retention-days: 14
