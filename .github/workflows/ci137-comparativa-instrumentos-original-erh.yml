@@ -1,0 +1,39 @@
+name: CI137 - Empaquetar 4 pares de Instrumentos sin alterar arte
+on:
+  push:
+    branches:
+      - work/ci137-expansion-familias-20261124
+    paths:
+      - .github/workflows/ci137-comparativa-instrumentos-original-erh.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recover exact eight historical and staged WebP binaries
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p comparativa/original comparativa/erh
+          src=source-original/ci137-asset-staging/ci137_v02_historico/instrumentos
+          ehr=source-original/ci137-asset-staging/instrumentos-erh/webp_256
+          cp "$src/nordicos/21_arpa_de_boca.webp" comparativa/original/01_arpa_de_boca.webp
+          cp "$src/lickanantay/19_campana.webp" comparativa/original/02_campana_lickanantay.webp
+          cp "$src/nordicos/20_cuerno_musical.webp" comparativa/original/03_cuerno_musical_nordico.webp
+          cp "$src/nordicos/11_flauta_hueso.webp" comparativa/original/04_flauta_hueso_nordica.webp
+          cp "$ehr/ARPA_BOCA_NORDICA_ERH_256.webp" comparativa/erh/01_arpa_de_boca_ERH.webp
+          cp "$ehr/CAMPANA_PIRAMIDAL_ERH_256.webp" comparativa/erh/02_campana_ERH.webp
+          cp "$ehr/CUERNO_MUSICAL_ERH_256.webp" comparativa/erh/03_cuerno_ERH.webp
+          cp "$ehr/FLAUTA_HUESO_ERH_256.webp" comparativa/erh/04_flauta_ERH.webp
+          find comparativa -type f -name '*.webp' | sort | xargs sha256sum | tee comparativa/COTEJO_SHA256.txt
+          test "$(find comparativa -type f -name '*.webp' | wc -l)" -eq 8
+      - name: Upload only existing binaries without recompression of art
+        uses: actions/upload-artifact@v4
+        with:
+          name: CI137-4-INSTRUMENTOS-ORIGINAL-ERH-EXACTOS
+          path: comparativa/
+          retention-days: 30
+          if-no-files-found: error
