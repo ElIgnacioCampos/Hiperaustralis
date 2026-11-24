@@ -1,11 +1,11 @@
-name: CI137 - Recover native release documents (read only)
+name: CI137 - Recover and preserve native release sources
 on:
   push:
     branches: [work/ci137-expansion-familias-20261124]
     paths: ['.github/workflows/ci137-recover-native-release-documents.yml']
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   recover:
     runs-on: ubuntu-latest
@@ -99,3 +99,62 @@ jobs:
           path: recovery/
           if-no-files-found: error
           retention-days: 30
+      - name: Preserve source JSON in isolated branch; no runtime changes
+        if: github.ref == 'refs/heads/work/ci137-expansion-familias-20261124'
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, hashlib, os, zipfile
+          from pathlib import Path
+          src=Path('recovery')
+          dst=Path('source-pending/ci137-native-release-recovered')
+          inventory=json.loads((src/'recovery-inventory.json').read_text())
+          expected={'hiperaustralis-bestiario':50,'hiperaustralis-adversarios-mapuche':21,'hiperaustralis-journals':6,'territorio':32,'hiperaustralis-naturaleza-items':101}
+          assert {k:v['count'] for k,v in inventory['packs'].items()}==expected
+          assert all(line.endswith('PASS') for line in inventory['unpackStatus'].splitlines())
+          assert len(inventory['turianos'])==6
+          selected=['native/hiperaustralis-journals','native/territorio','native/hiperaustralis-naturaleza-items','turianos-v06']
+          def scrub(v):
+              if isinstance(v,list): return [scrub(x) for x in v]
+              if not isinstance(v,dict): return v
+              out={}
+              for k,x in v.items():
+                  if k=='lastModifiedBy': continue
+                  if k=='ownership' and isinstance(x,dict): out[k]={'default':x.get('default',0)}
+                  else: out[k]=scrub(x)
+              return out
+          def sha(x): return hashlib.sha256(x).hexdigest()
+          records=[]
+          for sub in selected:
+              for f in sorted((src/sub).rglob('*.json')):
+                  raw=f.read_bytes()
+                  d=scrub(json.loads(raw))
+                  out=dst/f.relative_to(src)
+                  out.parent.mkdir(parents=True,exist_ok=True)
+                  data=(json.dumps(d,ensure_ascii=False,indent=2)+'\n').encode()
+                  if out.exists(): assert out.read_bytes()==data, str(out)
+                  else: out.write_bytes(data)
+                  records.append({'path':str(out),'originalSHA256':sha(raw),'stagedSHA256':sha(data),'id':d.get('_id'),'name':d.get('name'),'type':d.get('type')})
+          assert len(records)==145
+          temp=Path(os.environ['RUNNER_TEMP'])
+          tur_zip=temp/'ha-source/HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06.zip'
+          with zipfile.ZipFile(tur_zip) as z:
+              assets=[]
+              for r in inventory['turianos']:
+                  d=json.loads((src/'turianos-v06'/r['file']).read_text())
+                  for kind,path in [('avatar',d['img']),('token',d['prototypeToken']['texture']['src'])]:
+                      matches=[n for n in z.namelist() if n.endswith('/'+path)]
+                      assert len(matches)==1, path
+                      raw=z.read(matches[0])
+                      assets.append({'actorId':r['id'],'kind':kind,'path':path,'archiveMember':matches[0],'sha256':sha(raw),'bytes':len(raw)})
+          assert len(assets)==12
+          manifest={'status':'ARCHIVAL_SOURCES_ONLY_NOT_RUNTIME_APPROVAL','sourceRun':45487311335,'sourceArtifact':14963828413,'sourceArchives':['Hiperaustralis v1.0.0','Turianos v06'],'transformations':['Remove per-user ownership and lastModifiedBy only; JSON reserialization'],'records':records,'turianoAssets':assets,'exclusions':['Four Atlante IDs excluded from active compilation; v100 Turiano aliases with those IDs not staged','Bestiario and Rivales already backed up by actor export','No PNG duplicated from public release; byte hashes and exact archive paths recorded'],'runtimeBlocked':True}
+          (dst/'PROVENANCE.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- source-pending/ci137-native-release-recovered
+          if ! git diff --cached --quiet; then
+            git commit -m "CI137 preserve verified native historical sources and Turiano asset hashes (staging only)"
+            git push origin HEAD:refs/heads/work/ci137-expansion-familias-20261124
+          fi
