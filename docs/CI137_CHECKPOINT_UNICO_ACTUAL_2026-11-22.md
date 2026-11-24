@@ -4,6 +4,16 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## H7 — QA4 instalado; falla al activar compendios (24-11-2026)
+
+**Evidencia nueva del usuario:** capturas de Forge Library (carpetas `hiperaustralis-ci137-qa6`, `hiperaustralis-compendios-prototype`), Foundry Setup V14.370 con tarjeta **CI137 `0.1.7-ci137qa.4` instalada**, y H7 detenido en `Downloading world data, please wait…` **después de activar ese módulo**. H7 funcionaba y reiniciaba normalmente sin CI137; persistían hoja Kona e Items anteriores. **QA4 instalación/registro PASS; activación/arranque FAIL informado; runtime D3 FAIL**, sin log disponible de la excepción. No confundir carpeta `qa6` presente en Assets Library con dependencia activada.
+
+**Auditoría reproducible sobre ZIP QA4 original:** SHA-256 `bb4f90d3432381758250d7b5c299b17538546a8adfff833903d5e80aa2314592`. `module.json` ID= `hiperaustralis-compendios-prototype`, tres packs declarados y existentes exactamente en `packs/ha-proto-items`, `packs/ha-proto-actors`, `packs/ha-proto-journals`; cada base con CURRENT, MANIFEST, SST. Unicidad, casing y navegación ZIP PASS, ningún archivo `LOCK`/`LOG`; compendios leídos por CLI, sin prueba real de servidor Foundry. 44 WebP; **cero menciones a `hiperaustralis-ci137-qa6` en contenido del paquete**. Subsisten 99 referencias editoriales de arte a módulo legado, pero no hay evidencia de que causen este bloqueo. **Ruteo interno del ZIP: PASS; ruteo/abrir archivos en Forge runtime: NO ACREDITADO**. Referencia de API Foundry V14: https://foundryvtt.com/api/v14/interfaces/foundry.packages.types.PackageCompendiumData.html.
+
+**Siguiente prueba determinante:** consultar `My Foundry → Table Tools → View Foundry Logs`, concretamente excepción/stack del intento de lanzamiento; si el servidor no muestra error, inspeccionar consola Chrome F12 durante pantalla detenida. No producir otra reconstrucción especulativa ni borrar las carpetas de Assets Library. Recuperar H7 con Safe Configuration desactivando sólo CI137. H6 respaldado permanece intacto. **Issue #2 abierto** (https://github.com/ElIgnacioCampos/Hiperaustralis/issues/2).
+
+**Decisiones:** bloquear distribución QA4 (activación falla); conservar rutas, IDs, contenido y art; separar hipótesis de prueba. **Pendientes:** error concreto del servidor o del cliente, causa y fix localizado, dos reinicios y packs 136/1/1. **Fuentes:** capturas 24-11-2026, QA4 ZIP SHA, CLI, docs V14. **Cambios al Estado Maestro, main, Bridge, Forge, H6/H7:** ninguno por asistente.
+
 ## CI137 / QA4 — Módulo actualizado para Foundry 14.370 (24-11-2026)
 
 **Solicitud:** el usuario confirma Foundry V14.370 y CSB 6.1.2 y pide actualizar efectivamente el módulo nativo para esa versión, por hipótesis de que compatibilidad antigua impide verlo. El **legado 0.4.103 sigue siendo otro módulo con otro ID**.
