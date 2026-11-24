@@ -60,7 +60,7 @@ jobs:
               --out "dist/CI137_QA2_"$stage"_NO_INSTALAR_SIN_QA.zip"
             unzip -t "dist/CI137_QA2_"$stage"_NO_INSTALAR_SIN_QA.zip" >/dev/null
           done
-      - name: Fail closed: correct stage differentiation and approvals
+      - name: Fail closed - correct stage differentiation and approvals
         run: |
           python - <<'PY'
           import json
