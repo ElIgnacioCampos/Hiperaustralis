@@ -774,18 +774,26 @@
         "A QA5 six approved ERH remaps do not make all 21 instruments visually updated",
         "Arpa de boca has unresolved technical runtime status",
         "do not replace descriptions with proposals v0.1",
-        "not every approved WebP has been mapped to a real CSB Item identity"
+        "not every approved WebP has been mapped to a real CSB Item identity",
+        "All four previously ambiguous candidates visually approved as second (ERH) option on 24-11-2026; source visual identity resolved, not a QA5 runtime update",
+        "Arpa de boca still needs specific technical runtime check, regardless of visual approval",
+        "Do not alter historic Item sources or show historic images as deleted; preserve both alternatives and exact ERH SHA256"
       ],
       "itemDragAndDrop": "MUST_PASS_IN_REAL_CLIENT_NOT_YET_VALIDATED",
       "targetPack": "ha-proto-items",
       "runtimeAddsAuthorized": 0,
       "newVisualRemapsAuthorized": 0,
       "candidatesBreakdown": {
-        "approved": 6,
+        "approvedERHInQA5": 6,
+        "visualERHAuthorApprovedThisTurnNotTransported": 4,
         "nameMatchOnly": 11,
-        "ambiguous": 4
+        "remainingAmbiguous": 0
       },
-      "candidatesCrosswalk": "manifests/ci137-instrumentos-recetas-dnd-qa-20261124-v01.json"
+      "candidatesCrosswalk": "manifests/ci137-instrumentos-recetas-dnd-qa-20261124-v01.json",
+      "authorVisualApprovedERHOption2": 4,
+      "authorApprovalManifest": "manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json",
+      "runtimeRemapsPreparedFromTheseFour": 0,
+      "runtimeItemIDsChanged": 0
     },
     "reliquias": {
       "historicalItemsInQA5": 16,
@@ -874,7 +882,8 @@
       "Keep 21 historic Instrumentos and 16 historical Reliquias inside existing 136 QA5 Items; do not treat remapped images as new Items",
       "Six ERH instruments have approved transport remaps; remaining 15 require per-item mapping; do not claim all 21 visually updated",
       "Keep reliquias in Cotidianas (8) and Legendarias (8), and Tokicura separate; do not merge with Equipo común or recetas",
-      "Bridge v0.24.203 explicitly excludes receta in kind inference, picker, nature list, and drop renderer; do NOT claim drag-and-drop supported until source and runtime QA"
+      "Bridge v0.24.203 explicitly excludes receta in kind inference, picker, nature list, and drop renderer; do NOT claim drag-and-drop supported until source and runtime QA",
+      "honor user approval 24-11 of second/ERH image in four comparisons without changing QA5 or relabeling them as technically validated before D2/D3"
     ],
     "runtimeD3": false
   }
