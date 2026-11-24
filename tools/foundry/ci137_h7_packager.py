@@ -173,6 +173,7 @@ def assemble(prepared, packed, out):
     write_json(working/"module.json",updated)
     out.parent.mkdir(parents=True,exist_ok=True)
     result_sha=zip_files(out,working)
+    shutil.rmtree(working)  # Keep only the QA ZIP, manifest and SHA256 in dist/
     report={
         "schema":"CI137_H7_QA_BUNDLE_v01","status":"BUILT_FOR_ISOLATED_D3_QA_NOT_APPROVED_RELEASE",
         "filename":out.name,"sha256":result_sha,"bytes":out.stat().st_size,
