@@ -11,7 +11,7 @@ from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[2]
 ID = "hiperaustralis-compendios-prototype"
-VERSION = "0.1.7-ci137qa.4"
+VERSION = "0.1.7-ci137qa.5"
 CORE = "14.370"
 CSB = "6.1.2"
 PACKS = (("ha-proto-items", "Item"),
@@ -76,7 +76,7 @@ def prepare(source, destination):
         gate(next(p for p in baseline["packs"] if p["name"] == name)["path"] == db.rstrip("/"),
              "pack path changed in " + name)
     upgraded = dict(baseline)
-    upgraded["title"] = "Hiperaustralis · Compendios CI137 (V14.370 · QA)"
+    upgraded["title"] = "Hiperaustralis · Compendios CI137 (V14.370 · QA5 IDs)"
     data["module.json"] = (json.dumps(upgraded, ensure_ascii=False, indent=2) + "\n").encode()
     data["QA/README.txt"] = (
         "CI137 Foundry V14.370 / CSB 6.1.2, manifest and package rebuilt. Version " + VERSION + "\n"
@@ -84,7 +84,9 @@ def prepare(source, destination):
         "The compatibility fields express the target, not a completed Foundry/Forge D3 test.\n"
         "The module ID is unchanged and importing may replace an existing module globally.\n"
         "No scripts, auto migrations, startup hooks, downloads or installer code.\n"
-        "Includes 136 historical Items, 1 Actor, 1 Journal with 21 pages, 44 original WebP.\n"
+        "Includes 136 Items; 9 corrected folder IDs; Tokicura has a 16-char transport ID.\n"
+        "Tokicura original historical _id is retained in its provenance flag.\n"
+        "Includes 1 Actor, 1 Journal with 21 pages, 44 original WebP.\n"
         "99 legacy graphic references remain unresolved pending editorial approval.\n"
         "Back up current prototype and worlds. Verify import registration and 2 clean restarts.\n"
     ).encode()
@@ -109,6 +111,8 @@ def prepare(source, destination):
         "packs": [p[0] for p in PACKS],
         "items": 136, "actors": 1, "journals": 1, "journalPages": 21,
         "preservedWebPCount": len(webps),
+        "runtimeFolderIdsValidated": 9,
+        "protectedItemTransportIdAlias": {"TokicuraRel0001": "TokicuraRel00010"},
         "legacyGraphicReferences": 99,
         "noStartupScripts": True, "runtimeD3": False, "forgeImportVerified": False,
         "zip": destination.name, "bytes": destination.stat().st_size,
