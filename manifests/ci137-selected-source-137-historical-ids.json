@@ -444,15 +444,23 @@
       },
       "editorialCrosswalk": {
         "sourceName": null,
-        "visualIdentityVerified": false,
+        "visualIdentityVerified": true,
         "approvedForTransport": false,
-        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
-        "reviewedDate": "2026-11-23",
-        "status": "AMBIGUOUS_NOT_MAPPED",
+        "scope": "EXPLICIT_AUTHOR_APPROVAL_VISUAL_ONLY_NO_RUNTIME_TRANSPORT",
+        "reviewedDate": "2026-11-24",
+        "status": "VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECHNICAL_QA",
         "relatedStagedPaths": [
           "source-original/ci137-asset-staging/instrumentos-erh/webp_256/ARPA_BOCA_NORDICA_ERH_256.webp"
         ],
-        "reason": "Instrumento nórdico; el WebP ARPA_BOCA_NORDICA existe, pero su ficha ERH registra pendiente técnico runtime."
+        "reason": null,
+        "preApprovalAmbiguityReason": "Instrumento nórdico; el WebP ARPA_BOCA_NORDICA existe, pero su ficha ERH registra pendiente técnico runtime.",
+        "authorChoice": "SECOND_ERH_FOR_EACH_2026_11_24",
+        "approvedCandidateStagedPath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/ARPA_BOCA_NORDICA_ERH_256.webp",
+        "approvedCandidateSHA256": "eae0fbc7330c34bea7a66a147e2929c54bc43d0f820031887e56b799431d09b8",
+        "approvedCandidateBytes": 34724,
+        "approvalManifest": "manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json",
+        "transportStatus": "PREEXISTING_PENDING_RUNTIME_ARPA_BOCA",
+        "historicalAssetPreserved": true
       }
     },
     {
@@ -468,15 +476,23 @@
       },
       "editorialCrosswalk": {
         "sourceName": null,
-        "visualIdentityVerified": false,
+        "visualIdentityVerified": true,
         "approvedForTransport": false,
-        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
-        "reviewedDate": "2026-11-23",
-        "status": "AMBIGUOUS_NOT_MAPPED",
+        "scope": "EXPLICIT_AUTHOR_APPROVAL_VISUAL_ONLY_NO_RUNTIME_TRANSPORT",
+        "reviewedDate": "2026-11-24",
+        "status": "VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECHNICAL_QA",
         "relatedStagedPaths": [
           "source-original/ci137-asset-staging/instrumentos-erh/webp_256/CAMPANA_PIRAMIDAL_ERH_256.webp"
         ],
-        "reason": "Campana de cobre irregular Lickanantay; la ilustración disponible representa una campana piramidal, sin identidad material probada."
+        "reason": null,
+        "preApprovalAmbiguityReason": "Campana de cobre irregular Lickanantay; la ilustración disponible representa una campana piramidal, sin identidad material probada.",
+        "authorChoice": "SECOND_ERH_FOR_EACH_2026_11_24",
+        "approvedCandidateStagedPath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/CAMPANA_PIRAMIDAL_ERH_256.webp",
+        "approvedCandidateSHA256": "d52d5af9ecaf3eb7586e5f55cb61b01d3a272b63b8e6f6d3fefb7a1231166cb2",
+        "approvedCandidateBytes": 46010,
+        "approvalManifest": "manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json",
+        "transportStatus": "PENDING_D2_TRANSPORT_AND_D3",
+        "historicalAssetPreserved": true
       }
     },
     {
@@ -492,15 +508,23 @@
       },
       "editorialCrosswalk": {
         "sourceName": null,
-        "visualIdentityVerified": false,
+        "visualIdentityVerified": true,
         "approvedForTransport": false,
-        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
-        "reviewedDate": "2026-11-23",
-        "status": "AMBIGUOUS_NOT_MAPPED",
+        "scope": "EXPLICIT_AUTHOR_APPROVAL_VISUAL_ONLY_NO_RUNTIME_TRANSPORT",
+        "reviewedDate": "2026-11-24",
+        "status": "VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECHNICAL_QA",
         "relatedStagedPaths": [
           "source-original/ci137-asset-staging/instrumentos-erh/webp_256/CUERNO_MUSICAL_ERH_256.webp"
         ],
-        "reason": "Cuerno musical nórdico; coincidencia de nombre genérico no verifica que el dibujo ERH represente el mismo instrumento."
+        "reason": null,
+        "preApprovalAmbiguityReason": "Cuerno musical nórdico; coincidencia de nombre genérico no verifica que el dibujo ERH represente el mismo instrumento.",
+        "authorChoice": "SECOND_ERH_FOR_EACH_2026_11_24",
+        "approvedCandidateStagedPath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/CUERNO_MUSICAL_ERH_256.webp",
+        "approvedCandidateSHA256": "fd4562fb1fb2a3dfcced879c9ee8e66c1b8cea3c594a45bc233c54d03e5e9e8b",
+        "approvedCandidateBytes": 31852,
+        "approvalManifest": "manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json",
+        "transportStatus": "PENDING_D2_TRANSPORT_AND_D3",
+        "historicalAssetPreserved": true
       }
     },
     {
@@ -516,15 +540,23 @@
       },
       "editorialCrosswalk": {
         "sourceName": null,
-        "visualIdentityVerified": false,
+        "visualIdentityVerified": true,
         "approvedForTransport": false,
-        "scope": "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION",
-        "reviewedDate": "2026-11-23",
-        "status": "AMBIGUOUS_NOT_MAPPED",
+        "scope": "EXPLICIT_AUTHOR_APPROVAL_VISUAL_ONLY_NO_RUNTIME_TRANSPORT",
+        "reviewedDate": "2026-11-24",
+        "status": "VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECHNICAL_QA",
         "relatedStagedPaths": [
           "source-original/ci137-asset-staging/instrumentos-erh/webp_256/FLAUTA_HUESO_ERH_256.webp"
         ],
-        "reason": "Flauta de hueso de origen nórdico; dibujo ERH genérico no acredita pertenencia cultural ni forma exacta."
+        "reason": null,
+        "preApprovalAmbiguityReason": "Flauta de hueso de origen nórdico; dibujo ERH genérico no acredita pertenencia cultural ni forma exacta.",
+        "authorChoice": "SECOND_ERH_FOR_EACH_2026_11_24",
+        "approvedCandidateStagedPath": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/FLAUTA_HUESO_ERH_256.webp",
+        "approvedCandidateSHA256": "3f81addeee80ef03ea314e3b4887405d92cba2a12d893b4c7f6ef85ea51baa14",
+        "approvedCandidateBytes": 20346,
+        "approvalManifest": "manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json",
+        "transportStatus": "PENDING_D2_TRANSPORT_AND_D3",
+        "historicalAssetPreserved": true
       }
     },
     {
