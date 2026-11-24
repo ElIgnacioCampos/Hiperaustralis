@@ -107,9 +107,39 @@ def build(stage, preflight, compiled, destination):
             if not source.is_file() or digest(source.read_bytes()) != expected:
                 fail("source artwork does not match explicit approval SHA: " + rel)
             files[rel] = source.read_bytes()
+        # A diagnostic rebuild must never drop bytes already present in the existing
+        # prototype. Reuse only the version-controlled runtime asset tree; no
+        # staging resources, new visuals or semantic alias inference.
+        baseline_dir = ROOT / "module/assets"
+        baseline = sorted(p for p in baseline_dir.rglob("*.webp") if p.is_file())
+        if len(baseline) != 44:
+            fail("baseline runtime asset inventory drift (44 expected)")
+        for p in baseline:
+            rel = "assets/" + p.relative_to(baseline_dir).as_posix()
+            old = p.read_bytes()
+            if rel in files:
+                if files[rel] != old:
+                    fail("approved asset conflicts with existing prototype asset: "+rel)
+            else:
+                files[rel] = old
+        from ci137_pipeline import FOLDERS
+        identity = {
+            "schema":"ci137-h7-isolated-readonly-qa-v01",
+            "module": ID, "pack": ID+".ha-proto-items",
+            "items":136, "folders":9, "templates":5, "legacyLinks":99,
+            "expectedIds":[{"id":r["id"],"folder":r["folder"],
+                "folderId":FOLDERS[r["folder"]][0], "template":r["template"]}
+                for r in pre["records"]]
+        }
+        files["QA/expected_136.json"] = (
+            json.dumps(identity, ensure_ascii=False, indent=2)+"\n").encode()
+        files["QA/CI137_H7_READONLY_QA.js"] = (
+            ROOT / "tools/foundry/ci137_h7_readonly.js").read_bytes()
         record.update({"items":136,"folders":9,"templates":5,
-                       "pendingLegacyLinks":99,
-                       "approvedRemaps":40,"approvedVisualAssets":len(unique_assets)})
+                       "pendingLegacyLinks":99, "approvedRemaps":40,
+                       "approvedVisualAssets":len(unique_assets),
+                       "preservedBaselineAssets":len(baseline),
+                       "QAReadOnlyScriptIncluded":True})
     if stage == "full":
         if any(p.startswith("packs/ha-proto-actors/") for p in files) is False:
             fail("Actors pack empty")
