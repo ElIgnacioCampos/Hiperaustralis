@@ -4,6 +4,20 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## CI137 / QA3 — LevelDB durable y reapertura validada (24-11-2026)
+
+**Hallazgo físico:** QA1/QA2 incluyen archivos operativos `LOCK`, `LOG`, `LOG.old` y `*.log` dentro de los packs LevelDB. El artículo técnico de Forge [Multiple Levels of Challenges](https://blog.forge-vtt.com/multiple-levels-of-challenge/) documenta problemas históricos de locks y corrupción/lectura en compendios compartidos; **no demuestra que ese sea el origen del bloqueo H7**. El defecto debe atribuirse sólo tras prueba cliente/log.
+
+**Trabajo real:** rama aislada `work/ci137-qa2-rebuild-20261124`, [Actions #45443496173](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45443496173) **PASS**. Las tres etapas QA3 se recompilaron desde fuentes originales, conservando el ID `hiperaustralis-compendios-prototype`, IDs de los 136 Items, 44 WebP exactos, tres packs (en etapa FULL), nueve carpetas, cinco plantillas y 99 referencias al legado sin modificar. **Se omiten exclusivamente archivos transitorios de LevelDB tras flushear con Foundry CLI**. CI vuelve a abrir los packs sanitizados de los ZIP de ITEMS y FULL usando CLI y verifica la igualdad semántica de los Items. `module.json` en raíz; ningún hook, instalador ni actualización automática. **D3 en Foundry/Forge NO ejecutado**.
+
+**Lote vigente:** artefacto `CI137-QA3-DURABLE-STAGES-NO-INSTALL` de Actions #45443496173 (no usar los lotes previos para instalar):
+- MIN `0.1.6-ci137qa.3.0`: 893 bytes, SHA `5c05b8580cd086c8f2e81d09b426066f2c2fd013e035ee0fc227eec2a1e0dfbf`, cero compendios.
+- ITEMS `0.1.6-ci137qa.3.1`: 2.655.266 bytes, SHA `a535820d5077044e2ed5c7e137d96cf63eb285e856c51409310f5758aa99adac`, un compendio de 136 Items.
+- FULL `0.1.6-ci137qa.3.2`: 2.670.564 bytes, SHA `f14bb7458d5240369ef0536fe11e2e8d0e9b1346474c6885ecf64b10ce754428`, tres compendios.
+Tres ZIP verificados físicamente: CRC PASS, **cero LOCK/LOG**, SST presentes y rutas coherentes.
+
+**Decisión:** investigación y paquete diagnóstico listos; **cualquier despliegue sigue bloqueado** hasta entorno autónomo separado de H6/H7, logs y dos reinicios reales. **Pendiente:** aislamiento de fallo en Foundry runtime, luego 99 referencias artísticas, pruebas de hoja Kona y autorización de promoción. **Fuentes:** archivos ZIP, CI, [Issue #2](https://github.com/ElIgnacioCampos/Hiperaustralis/issues/2). **Maestro, `main`, Bridge, Forge, H6/H7:** intactos.
+
 ## CI137 / QA2 — Lote corregido, 44 WebP preservados (24-11-2026)
 
 **Paquete definitivo del ciclo de QA2 (todavía NO apto para instalar en H7):** [GitHub Actions #45441275181](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45441275181) **PASS**, artefacto `CI137-QA2-THREE-STAGES-NO-INSTALL`. **SUSTITUYE al ZIP de ensayo #45440705987**: el primer ensayo omitía 21 recursos originales de módulo y la macro QA; queda descartado para cualquier instalación. El ciclo corregido preserva **los 44 WebP exactos del módulo v0.1.5** más los 23 destinos de arte con SHA aprobado (incluidos en esos 44), y añade control QA sólo lectura.
