@@ -1,7 +1,7 @@
 {
   "schema": "ci137-family-expansion-preflight-v01",
   "cut": "2026-11-24",
-  "status": "STAGING_CORRECTED_FFF_4_4_4_AND_EQUIPO_STRUCTURE",
+  "status": "STAGING_CORRECTED_FFF_EQUIPO_INSTRUMENTOS_RELIQUIAS_RECETAS_DND",
   "base": {
     "repository": "ElIgnacioCampos/Hiperaustralis",
     "branchFrom": "work/ci137-fix-ids-v14-20261124",
@@ -11,7 +11,21 @@
     "csb": "6.1.2",
     "restartWithModuleActive": "PASS_REPORTED",
     "threePacksOpen": "PASS_REPORTED",
-    "nineItemFoldersVisible": "PASS_REPORTED"
+    "nineItemFoldersVisible": "PASS_REPORTED",
+    "observedQa5PackInventory": {
+      "historicalItems": 136,
+      "instrumentosItems": 21,
+      "reliquiasHistoricasItems": 16,
+      "reliquiasSeparadas": {
+        "cotidianas": 8,
+        "legendarias": 8
+      },
+      "tokicura": {
+        "sourceItem": "INDEPENDIENTE",
+        "isPartOfRelic16": false
+      },
+      "nota": "Contar los 21 instrumentos y 16 reliquias dentro de los 136; NO son altas nuevas. D3 de arrastre individual no acreditado."
+    }
   },
   "targetPacks": {
     "ha-proto-items": {
@@ -60,6 +74,43 @@
           "Do not move Toki tool to Reliquias; Tokicura is distinct",
           "Do not replace img based on unapproved 29 candidate WebPs"
         ]
+      },
+      "recipeContract": {
+        "scope": "ONE_FOUNDRY_ITEM_DOCUMENT_PER_APPROVED_RECIPE",
+        "territoryLocation": "Territorio/{CORE_territory}/Recetas",
+        "separateFromFFF": true,
+        "countedInFFF": false,
+        "family": "Recetas",
+        "documentType": "Item",
+        "dragAndDrop": {
+          "required": true,
+          "source": "ha-proto-items",
+          "target": "Hoja Kona / flujo existente CSB+MELIAZ Bridge",
+          "mustPreserve": [
+            "recipe Item ID and UUID",
+            "recipe name",
+            "source territory",
+            "item payload",
+            "form compatibility with receiving actor"
+          ],
+          "mustNot": [
+            "treat recipe as JournalEntry only",
+            "create a synthetic sheet slot without approved configuration",
+            "change Bridge runtime merely for folder hierarchy",
+            "duplicate recipe docs across territories"
+          ],
+          "qa": [
+            "Open valid approved recipe from compendium",
+            "Drag and drop Item onto Kona sheet",
+            "Verify item appears in authorized destination and data intact",
+            "Close and reopen actor and world; verify persistence",
+            "Check console/bridge errors"
+          ],
+          "validation": "D3_PENDING_NO_ACTUAL_RECIPE_ITEM_SOURCE_CONFIRMED"
+        },
+        "approvedSourceRecordsConfirmed": 0,
+        "itemRecordsCreated": 0,
+        "shouldNotInventFromIngredients": true
       }
     },
     "ha-proto-actors": {
@@ -118,7 +169,15 @@
           "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
           "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
           "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
-          "recipeSlotsOutsideFFF": true
+          "recipeSlotsOutsideFFF": true,
+          "recipes": {
+            "sibling": true,
+            "excludedFromQuota": true,
+            "foundryDocumentType": "Item",
+            "dragDropRequired": true,
+            "candidateItemIds": [],
+            "status": "PENDING_APPROVED_RECIPE_ITEMS"
+          }
         }
       },
       {
@@ -156,7 +215,15 @@
           "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
           "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
           "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
-          "recipeSlotsOutsideFFF": true
+          "recipeSlotsOutsideFFF": true,
+          "recipes": {
+            "sibling": true,
+            "excludedFromQuota": true,
+            "foundryDocumentType": "Item",
+            "dragDropRequired": true,
+            "candidateItemIds": [],
+            "status": "PENDING_APPROVED_RECIPE_ITEMS"
+          }
         }
       },
       {
@@ -194,7 +261,15 @@
           "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
           "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
           "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
-          "recipeSlotsOutsideFFF": true
+          "recipeSlotsOutsideFFF": true,
+          "recipes": {
+            "sibling": true,
+            "excludedFromQuota": true,
+            "foundryDocumentType": "Item",
+            "dragDropRequired": true,
+            "candidateItemIds": [],
+            "status": "PENDING_APPROVED_RECIPE_ITEMS"
+          }
         }
       },
       {
@@ -232,7 +307,15 @@
           "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
           "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
           "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
-          "recipeSlotsOutsideFFF": true
+          "recipeSlotsOutsideFFF": true,
+          "recipes": {
+            "sibling": true,
+            "excludedFromQuota": true,
+            "foundryDocumentType": "Item",
+            "dragDropRequired": true,
+            "candidateItemIds": [],
+            "status": "PENDING_APPROVED_RECIPE_ITEMS"
+          }
         }
       },
       {
@@ -270,7 +353,15 @@
           "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
           "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
           "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
-          "recipeSlotsOutsideFFF": true
+          "recipeSlotsOutsideFFF": true,
+          "recipes": {
+            "sibling": true,
+            "excludedFromQuota": true,
+            "foundryDocumentType": "Item",
+            "dragDropRequired": true,
+            "candidateItemIds": [],
+            "status": "PENDING_APPROVED_RECIPE_ITEMS"
+          }
         }
       },
       {
@@ -308,7 +399,15 @@
           "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
           "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
           "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
-          "recipeSlotsOutsideFFF": true
+          "recipeSlotsOutsideFFF": true,
+          "recipes": {
+            "sibling": true,
+            "excludedFromQuota": true,
+            "foundryDocumentType": "Item",
+            "dragDropRequired": true,
+            "candidateItemIds": [],
+            "status": "PENDING_APPROVED_RECIPE_ITEMS"
+          }
         }
       },
       {
@@ -346,7 +445,15 @@
           "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
           "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
           "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
-          "recipeSlotsOutsideFFF": true
+          "recipeSlotsOutsideFFF": true,
+          "recipes": {
+            "sibling": true,
+            "excludedFromQuota": true,
+            "foundryDocumentType": "Item",
+            "dragDropRequired": true,
+            "candidateItemIds": [],
+            "status": "PENDING_APPROVED_RECIPE_ITEMS"
+          }
         }
       },
       {
@@ -384,7 +491,15 @@
           "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
           "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
           "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
-          "recipeSlotsOutsideFFF": true
+          "recipeSlotsOutsideFFF": true,
+          "recipes": {
+            "sibling": true,
+            "excludedFromQuota": true,
+            "foundryDocumentType": "Item",
+            "dragDropRequired": true,
+            "candidateItemIds": [],
+            "status": "PENDING_APPROVED_RECIPE_ITEMS"
+          }
         }
       },
       {
@@ -422,7 +537,15 @@
           "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
           "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
           "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
-          "recipeSlotsOutsideFFF": true
+          "recipeSlotsOutsideFFF": true,
+          "recipes": {
+            "sibling": true,
+            "excludedFromQuota": true,
+            "foundryDocumentType": "Item",
+            "dragDropRequired": true,
+            "candidateItemIds": [],
+            "status": "PENDING_APPROVED_RECIPE_ITEMS"
+          }
         }
       }
     ],
@@ -461,7 +584,15 @@
       "floraAndFungaAssignedInNineCore": "NOT_YET_MAPPED_DO_NOT_AUTO_FILL",
       "faunaAssignmentsStatus": "CANDIDATE_TERRITORIAL_REFERENCES_ONLY",
       "multiTerritoryItems": "SINGLE_ITEM_CANONICAL_ID_MULTIPLE_REFERENCES",
-      "recipes": "SEPARATE_SUBFOLDER_OUTSIDE_FFF_COUNT",
+      "recipes": {
+        "siblingFolderPerTerritory": "Recetas",
+        "countedInFFF": false,
+        "sourceType": "Item",
+        "dragDropToKonaRequired": true,
+        "numberOfCoreTerritories": 9,
+        "approvedItemDocsVerified": 0,
+        "avoidConfusion": "Recetas is not merely a Journal/illustration/recipe text; must be an actual draggable Item document."
+      },
       "sources": [
         "author approval 2026-11-10/14: four flora, four fauna, four funga per territorial unit",
         "later nine CORE territorial standard 2026-11-18"
@@ -619,6 +750,66 @@
       "migrationStatus": "PREPARE_ONLY_PENDING_40_ITEM_CLASSIFICATION_AND_EXISTING_FOLDER_IDS",
       "newItemDocsAuthorized": 0,
       "newIconReplacementDocsAuthorized": 0
+    },
+    "instrumentos": {
+      "historicalItemsInQA5": 21,
+      "currentItemFolder": "Instrumentos musicales",
+      "structureStatus": "EXISTING_FOLDER_PRESERVED_NO_NEW_RESTRUCTURE_APPROVED",
+      "approvedERHVisualRemapsInQA5": 6,
+      "otherHistoricalInstrumentRemapsPending": 15,
+      "source": "docs/AUDITORIA_INSTRUMENTOS_ERH_2026-11-13.md / manifests/instrumentos-erh-assets.json",
+      "editorialAuthority": "CATALOGO_INSTRUMENTOS_ERH_DESCRIPCIONES_CONSOLIDADO_v04.md",
+      "caveats": [
+        "A QA5 six approved ERH remaps do not make all 21 instruments visually updated",
+        "Arpa de boca has unresolved technical runtime status",
+        "do not replace descriptions with proposals v0.1",
+        "not every approved WebP has been mapped to a real CSB Item identity"
+      ],
+      "itemDragAndDrop": "MUST_PASS_IN_REAL_CLIENT_NOT_YET_VALIDATED",
+      "targetPack": "ha-proto-items",
+      "runtimeAddsAuthorized": 0,
+      "newVisualRemapsAuthorized": 0
+    },
+    "reliquias": {
+      "historicalItemsInQA5": 16,
+      "cotidianas": 8,
+      "legendarias": 8,
+      "currentFolder": "Reliquias",
+      "subfolders": [
+        "Cotidianas",
+        "Legendarias"
+      ],
+      "tokicuraIndependent": true,
+      "assetsIncludedInQA5": {
+        "everyHistoricalRelicImage": 16,
+        "tokicuraSeparateImage": 1
+      },
+      "sources": [
+        "docs/CHECKPOINT_RELIQUIAS_ASSETS_PIPELINE_2026-11-14.md",
+        "docs/RECUPERACION_RELIQUIAS_16_ITEMS_2026-11-14.md",
+        "manifests/reliquias-assets.json"
+      ],
+      "keepFields": [
+        "system.template",
+        "system.props.historia",
+        "system.props.correspondencias",
+        "system.props.resonancia",
+        "system.props.notas"
+      ],
+      "idPolicy": "keep 16 historical IDs; Tokicura has separate V14 technical alias documented in QA5",
+      "itemDragAndDrop": "MUST_PASS_IN_REAL_CLIENT_NOT_YET_VALIDATED",
+      "runtimeAddsAuthorized": 0,
+      "noMergeWithEquipo": true
+    },
+    "recetas": {
+      "placement": "Each CORE territory has Recetas as fourth sibling folder",
+      "notFFF": true,
+      "sourceStatus": "NO_CURRENT_RECIPES_ITEM_PAYLOADS_LOCATED_IN_CI137_REPO_OR_LEGACY_0_4_75",
+      "typeRequirement": "Native Foundry Item compatible with CSB/Bridge and draggable from compendium to Kona",
+      "deduplication": "One canonical recipe Item ID; territorial cross references where applicable",
+      "sameDocumentIdentityWhenDropped": true,
+      "installation": "BLOCKED_UNTIL_APPROVED_ITEMS_AND_FOUNDRY_D3_DROP_QA",
+      "status": "STRUCTURE_AND_RUNTIME_CONTRACT_RECORDED_NO_RUNTIME_RECIPE_YET"
     }
   },
   "recoveredSourceZip": {
@@ -652,7 +843,11 @@
       "verify every asset hash and user approval before moving",
       "enforce FFF allocation target per nine CORE territories 4 Flora+4 Fauna+4 Funga = 108 capacity, not 36 Fauna-only",
       "new Equipo común: separate transversal Items from culture-specific Equipment; historical 40 Items/29 candidate icons must not duplicate or automatically change folders",
-      "source-verify previously approved FUN-01..04 before adding V14 Items or assigning them to Funga/Tierra del Fuego"
+      "source-verify previously approved FUN-01..04 before adding V14 Items or assigning them to Funga/Tierra del Fuego",
+      "Recetas are actual Item docs under Territorio/<territory>/Recetas; they must drag and drop into Kona with CSB/Bridge and persist, separate from 4x4x4 quotas",
+      "Keep 21 historic Instrumentos and 16 historical Reliquias inside existing 136 QA5 Items; do not treat remapped images as new Items",
+      "Six ERH instruments have approved transport remaps; remaining 15 require per-item mapping; do not claim all 21 visually updated",
+      "Keep reliquias in Cotidianas (8) and Legendarias (8), and Tokicura separate; do not merge with Equipo común or recetas"
     ],
     "runtimeD3": false
   }
