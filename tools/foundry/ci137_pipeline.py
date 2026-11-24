@@ -417,6 +417,17 @@ def verify_defensas_instrumentos_crosswalk(rows):
         "JZUzx0bNMoDj6xs5": "inst-16-pututu",
     }
     approved_ids = set()
+    approval_manifest = read_json(ROOT / "manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json")
+    if (approval_manifest.get("decision") != "La 2da opcion cada vez"
+            or approval_manifest.get("invariants", {}).get("visualApprovedCount") != 4
+            or approval_manifest.get("invariants", {}).get("additionalApprovedRuntimeTransportCount") != 0):
+        fail("missing explicit 4-ERH visual-only source approval")
+    selected_visual = {x["id"]: x for x in approval_manifest.get("selectedRows", [])}
+    if len(selected_visual) != 4 or set(selected_visual) != {
+            "j7J6wcAttET8rJpB", "RzhInApxuwq1o651",
+            "INdG4JndLBl0sWto", "YfFAFtBpsdyU2l9R"}:
+        fail("visual approval must be exactly the four shown historical Instrument IDs")
+    visual_ids = set()
     for row in selected:
         entry = row.get("editorialCrosswalk", {})
         status = entry.get("status")
@@ -427,6 +438,14 @@ def verify_defensas_instrumentos_crosswalk(rows):
                     or entry.get("visualIdentityVerified") is not True
                     or entry.get("approvedForTransport") is not True):
                 fail("ERH approval not tied to one of six confirmed identities " + row["id"])
+        elif status == "VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECHNICAL_QA":
+            if (row["family"] != "Instrumentos musicales"
+                    or row["id"] not in selected_visual
+                    or entry.get("scope") != "EXPLICIT_AUTHOR_APPROVAL_VISUAL_ONLY_NO_RUNTIME_TRANSPORT"
+                    or entry.get("visualIdentityVerified") is not True
+                    or entry.get("approvedForTransport") is not False
+                    or row.get("approvedAssetTransport")):
+                fail("author-chosen 4 ERH images wrongly promoted to runtime " + row["id"])
         elif (entry.get("scope") != "D2_IDENTITY_TRIAGE_NO_IMAGE_PROMOTION"
                 or entry.get("visualIdentityVerified") is not False
                 or entry.get("approvedForTransport") is not False
@@ -468,6 +487,32 @@ def verify_defensas_instrumentos_crosswalk(rows):
                         or entry.get("sha256") != digest(raw)):
                     fail("ERH visual approval missing exact seed, path or SHA256 " + row["id"])
                 approved_ids.add(row["id"])
+        elif status == "VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECHNICAL_QA":
+            choice = selected_visual[row["id"]]
+            staged_path = choice["source"]
+            if (entry.get("approvedCandidateStagedPath") != staged_path
+                    or entry.get("approvedCandidateSHA256") != choice["sha256"]
+                    or entry.get("approvedCandidateBytes") != choice["bytes"]
+                    or entry.get("approvalManifest") != "manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json"
+                    or entry.get("authorChoice") != "SECOND_ERH_FOR_EACH_2026_11_24"
+                    or entry.get("transportStatus") != choice["technicalStatus"]
+                    or entry.get("historicalAssetPreserved") is not True
+                    or staged_path not in entry.get("relatedStagedPaths", [])
+                    or choice.get("approvedChoice") != 2
+                    or choice.get("visualApproval") != "EXPLICIT_USER_APPROVAL_OF_THIS_EXACT_ERH_BINARY"
+                    or choice.get("notDeployed") is not True):
+                fail("author-approved second image correspondence drift " + row["id"])
+            target = ROOT / staged_path
+            if (".." in Path(staged_path).parts
+                    or not staged_path.startswith("source-original/ci137-asset-staging/instrumentos-erh/webp_256/")
+                    or not target.is_file()):
+                fail("missing exact user-selected ERH art " + row["id"])
+            raw = target.read_bytes()
+            if (digest(raw) != choice["sha256"] or len(raw) != choice["bytes"]
+                    or raw[:4] != b"RIFF" or raw[8:12] != b"WEBP"
+                    or int.from_bytes(raw[4:8], "little") + 8 != len(raw)):
+                fail("approved ERH image bytes no longer match displayed option 2 " + row["id"])
+            visual_ids.add(row["id"])
         elif status == "AMBIGUOUS_NOT_MAPPED":
             if entry.get("candidateStagedPath") or not entry.get("reason"):
                 fail("ambiguous candidate was mapped without approval " + row["id"])
@@ -486,10 +531,12 @@ def verify_defensas_instrumentos_crosswalk(rows):
         counts[status] += 1
     if (counts != Counter({"ONE_TO_ONE_EDITORIAL_NAME_CANDIDATE": 11,
                           "APPROVED_ERH_SEED_RECONCILED_ISOLATED": 6,
-                          "AMBIGUOUS_NOT_MAPPED": 8,
+                          "VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECHNICAL_QA": 4,
+                          "AMBIGUOUS_NOT_MAPPED": 4,
                           "NO_IDENTICAL_FINAL_ART_CANDIDATE": 4})
             or len(candidate_ids) != 17 or len(unique_paths) != 17
-            or approved_ids != set(approved_seeds)):
+            or approved_ids != set(approved_seeds)
+            or visual_ids != set(selected_visual)):
         fail("Defensas/Instrumentos approved identity correspondence drift")
     # Existing COM catalog is approved artwork; approval never establishes
     # identity with eight different historical defense Items.
