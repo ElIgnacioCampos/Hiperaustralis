@@ -4,6 +4,16 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## CI137 QA6 — cuatro imágenes ERH integradas en paquete aislado, D2 PASS (24-11-2026)
+
+**Trabajo ejecutado, mismo módulo/3 packs:** rama aislada `work/ci137-qa6-erh4-isolated-20261124` derivada de la ampliación; user visual approval «la 2da opcion cada vez» para Arpa de boca, Campana Lickanantay, Cuerno musical nórdico y Flauta de hueso. [Acta QA6 con fuentes, IDs, hashes y controles](CI137_QA6_ERH4_D2_CHECKPOINT_2026-11-24.md).
+
+[GitHub Actions #45477919784](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45477919784) **PASS D2**. Se recompilaron los tres packs Foundry CLI (Idem QA5) desde 136 fuentes; **exactamente 4 cambios `img`**, sin variar los otros 132 Items ni sus campos semánticos y sin alterar `_id` ni las 9 carpetas. Se agregaron cuatro WebP ERH validados SHA, 256×256 RGBA; 44 WebP de QA5 preservados byte a byte. Actor 1, Journal 1/21 páginas, referencias gráficas legadas bajan de 99 a **95**. Arpa de boca **JSON/template/D2 icon PASS**, no hay prueba D3 de hoja/drop. LevelDB sanitized sin LOG/LOCK; reabierto con CLI desde ZIP final. No hay scripts automáticos, ZIP anidado ni modificación de Bridge.
+
+**Candidato NO INSTALAR / NO PROMOCIONAR:** `HIPERAUSTRALIS_CI137_QA6_ERH4_AISLADO_NO_INSTALAR.zip`, **2.801.791 bytes**, SHA256 `bd61d913c76c827ba389dd4e6742de82478fcaf0859a44b7554d3c28d2676420`, versión `0.1.7-ci137qa.6`. Como usa mismo ID `hiperaustralis-compendios-prototype`, instalarlo en Forge reemplazaría QA5 globalmente. D3 únicamente con instancia realmente aislada, no H7/H6. Prohibido declarar aprobada la instalación final antes de ver carga, miniatura, hoja, arrastre y persistencia.
+
+**Decisiones:** cuatro aprobaciones de arte aplicadas sólo a paquete aislado; original histórico preservado; **QA5 en H7 intacta**. **Pendientes:** QA D3 y posterior inclusión en futura ampliación CI137; mantener diferencia con familia Recetas (Bridge sin soporte). **Estado Maestro/main/Bridge/Forge/H6/H7:** sin cambios.
+
 ## CI137 — Aprobación de cuatro segundas imágenes ERH (24-11-2026)
 
 **Decisión autoral explícita después de cuatro comparativas originales/ERH:** «**la 2da opcion cada vez**». Se elige la **segunda imagen a la derecha (ERH)** para los cuatro Items musicales identificados por UUID/ID histórico: **Arpa de boca** `j7J6wcAttET8rJpB` → `ARPA_BOCA_NORDICA_ERH_256.webp`; **Campana Lickanantay** `RzhInApxuwq1o651` → `CAMPANA_PIRAMIDAL_ERH_256.webp`; **Cuerno musical nórdico** `INdG4JndLBl0sWto` → `CUERNO_MUSICAL_ERH_256.webp`; **Flauta de hueso** `YfFAFtBpsdyU2l9R` → `FLAUTA_HUESO_ERH_256.webp`. Las **cuatro ambigüedades visuales quedan RESUELTAS por aprobación explícita**, sin cambiar los nombres ni 21 IDs existentes. Las versiones históricas se conservan como respaldo sin borrar ni reescribir su contenido.
