@@ -9,6 +9,18 @@
 - **No crear otro módulo ni otros identificadores de pack**; extender contenidos del módulo ya registrado: `ha-proto-items`, `ha-proto-actors`, `ha-proto-journals`.
 - Este checkpoint amplía el **alcance técnico** anterior (17-11) que excluía Territorios. La nueva solicitud autoral del 24-11 autoriza **preparar** la inclusión territorial, no a promocionar candidatos de imágenes o inventar fichas.
 
+## 1 bis. Fe de erratas — FFF 4×4×4 y Equipo (24-11-2026)
+
+**Corrección solicitada por el autor:** el primer manifiesto de expansión sólo preveía 9×4 referencias de Fauna: **era incompleto**. El diseño vigente por Territorio CORE sigue la matriz **4 Flora + 4 Fauna + 4 Funga = 12 posiciones de curaduría**. Hay **9 territorios CORE**, por lo tanto **36/36/36 = 108 asignaciones objetivo**, NO 108 Item JSON únicos y NO 108 especies obligatorias. Las ocho bandas histórico-ecológicas producían un objetivo antiguo de 96; **no trasladar automáticamente** su selección a los nueve territorios histórico-culturales. Se permite referencia del mismo UUID en varios territorios, sin duplicar Items.
+
+**Cuatro subcarpetas hermanas por Territorio:** `Flora/`, `Fauna/`, `Funga/`, `Recetas/`; Recetas no cuenta en FFF. La matriz conserva **36 referencias de Fauna candidatas** del lote anterior, no asegura todavía que todas las asignaciones estén editorialmente cerradas. **Flora y Funga carecen de matriz reconciliada para los nueve territorios**: dejar listas vacías con objetivo 4/4, sin crear relleno. Del banco anterior hay aprobación documental de `FUN-01` a `FUN-04` para Tierra del Fuego; **eso no equivale** a documentos Foundry V14 con IDs, assets y asignación dentro de los nueve territorios verificados. Recuperar su fuente antes de darlos por instalables.
+
+**Equipo común — separación de funciones:** la carpeta plana de QA5 contiene **40 Items históricos**, con un banco de **29 candidatos gráficos / cruces de identidad**, no 69 objetos. Hay dos arreglos históricos: el legado 0.4.97 agrupaba por seis culturas **dentro** de `Equipo común`; una decisión posterior (11-11) distinguió explícitamente **Equipo común transversal** de **Equipo cultural adscrito**, manteniendo **Instrumentos musicales** como familia separada. Para staging, los destinos se expresan `Equipo común/` (transversal), `Equipo cultural/{Mapuche,Aymara,Nórdicos,Lickanantay,Chinchorro,Selk’nam}/` (cultural) e `Instrumentos musicales/`. **No mover ni duplicar los 40 Items todavía**; antes comprobar un Item por vez con sus IDs y su última función aprobada. No confundir cultura del asset con categoría del Item. La decisión de subcarpetas se valida en el cotejo de la nueva estructura, sin resucitar automáticamente la versión anterior.
+
+**Manifest y gate corregidos:** `manifests/ci137-expansion-territorios-habitantes-culturas-v01.json` incorpora `fffStandard`, metas 108 y separación funcional de Equipo. `tools/foundry/ci137_expansion_gate.py` bloquea un preflight que retroceda a 9×4 Fauna o que confunda 40 Items con 29 imágenes. [CI #45468986756](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45468986756) **PASS**.
+
+**Decisiones:** objetivo 4×4×4 por Territorio; separar transversales/culturales; no inventar faltantes. **Pendientes:** matrices Flora y Funga por nueve Territorios, FUN-01..04 fuente + IDs, revisión de adscripción de los 40 Items y ruta de 29 iconos. **Fuentes:** decisiones de usuario del 10/14/24-11; estándares territoriales; checkpoint `CORE_EQUIPO_COMUN_QA29_OVERLAY_AISLADO_PREPARADO_20261121_v10.md`; matriz `CORE_MATRIZ_EQUIPO_COMUN_40x29_2026-11-21_v02.csv`. **Estado Maestro/main/Forge/H6/H7/Bridge:** sin cambios.
+
 ## 2. Árbol de destino
 
 ```text
