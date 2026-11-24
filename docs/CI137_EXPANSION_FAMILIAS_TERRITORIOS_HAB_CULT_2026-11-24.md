@@ -9,6 +9,17 @@
 - **No crear otro módulo ni otros identificadores de pack**; extender contenidos del módulo ya registrado: `ha-proto-items`, `ha-proto-actors`, `ha-proto-journals`.
 - Este checkpoint amplía el **alcance técnico** anterior (17-11) que excluía Territorios. La nueva solicitud autoral del 24-11 autoriza **preparar** la inclusión territorial, no a promocionar candidatos de imágenes o inventar fichas.
 
+## 1 quáter. Diagnóstico ejecutado: soporte Recetas ausente en Bridge (24-11-2026)
+
+**Codecheck real** sobre rama `work/meliaz-bridge-0.24.203-clean`:
+- El Bridge sí procesa `instrumento` → Sentir/Música, `reliquia` → Temple, `flora/fauna/funga/bioma` → Territorio.
+- La función `inferHiperaItemKind`, el selector `KONA_COMPENDIUM_TARGETS.territorio`, el colector `hiperaNaturalezaItems` y el render/handler `installHiperaBiomas` no incluyen `receta`. Una carpeta o etiqueta de Item no repara el recorrido DnD por sí sola.
+- **No consta en la fuente** el destino receptor exacto para Recetas en la hoja Kona; no inventarlo, no insertar una quinta casilla en Territorio, no alterar las existentes.
+- La propia referencia interna del Bridge enumera ocho bandas `KONA_TERRITORY_BIOMAS` del diseño histórico; el módulo territorial de CI137 actual contempla nueve Territorios CORE. **Auditar correspondencia** antes de refactorizar el picker de Journal Territorio; no deducir que ambos son la misma entidad.
+- CI137 no dispone todavía de un Item Receta fuente validado, con ID y plantilla CSB. Se mantiene bloqueada su compilación runtime.
+
+**Instrumentos:** 21 históricos = 6 remapeos ERH aprobados, 11 candidatos por nombre y 4 casos ambiguos, según matriz `manifests/ci137-instrumentos-recetas-dnd-qa-20261124-v01.json`. **Reliquias:** 16 históricas + Tokicura independiente, DnD de Bridge presente pero D3 individual pendiente. [Acta completa](CI137_RECETAS_BRIDGE_DND_INSTRUMENTOS_21_20261124_v01.md); [CI #45471624420](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45471624420) **PASS** de análisis, pero reporta Recetas como **BLOQUEADAS**, no funcionales. Ninguna instalación.
+
 ## 1 ter. Instrumentos, Reliquias y Recetas drag-and-drop (24-11-2026)
 
 **Inventario real de QA5:** dentro de los 136 Items: **21 Instrumentos musicales, 8 Reliquias cotidianas, 8 legendarias y Tokicura independiente**. Los 6 remapeos ERH aprobados no representan actualización completa de 21/21 iconos de Instrumentos; los 16 WebP de Reliquias y la imagen de Tokicura sí están incluidos en el paquete. El drag-and-drop de esos Items a Kona no se ha probado específicamente.
