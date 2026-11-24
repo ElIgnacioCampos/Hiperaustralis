@@ -9,23 +9,47 @@ import argparse
 import copy
 import hashlib
 import json
+import re
 import zipfile
 from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 MANIFEST = ROOT / "manifests/ci137-selected-source-137-historical-ids.json"
+# Foundry V14 requires EXACTLY 16 alphanumeric characters for all Document IDs.
+# The previous transport used nine 14/15-char folder IDs: server rejected them.
+# These replacements are isolated CI transport IDs; source/canon is not edited.
 FOLDERS = {
-    "Armas": ("HAObjArmas0001", None),
-    "Defensas": ("HAObjDefensa001", None),
-    "Equipo común": ("HAObjEquipo0001", None),
-    "Instrumentos musicales": ("HAObjInstrum001", None),
-    "Parafernalia": ("HAObjParafer001", None),
-    "Rituales": ("HAObjRitual0001", None),
-    "Reliquias": ("HAObjReliq0001", None),
-    "Reliquias/Cotidianas": ("HAObjRelCot001", "HAObjReliq0001"),
-    "Reliquias/Legendarias": ("HAObjRelLeg001", "HAObjReliq0001"),
+    "Armas": ("HAObjArmas000100", None),
+    "Defensas": ("HAObjDefensa0010", None),
+    "Equipo común": ("HAObjEquipo00010", None),
+    "Instrumentos musicales": ("HAObjInstrum0010", None),
+    "Parafernalia": ("HAObjParafer0010", None),
+    "Rituales": ("HAObjRitual00010", None),
+    "Reliquias": ("HAObjReliq000100", None),
+    "Reliquias/Cotidianas": ("HAObjRelCot00100", "HAObjReliq000100"),
+    "Reliquias/Legendarias": ("HAObjRelLeg00100", "HAObjReliq000100"),
 }
+FOLDER_ID_CROSSWALK = {
+    "HAObjArmas0001": "HAObjArmas000100",
+    "HAObjDefensa001": "HAObjDefensa0010",
+    "HAObjEquipo0001": "HAObjEquipo00010",
+    "HAObjInstrum001": "HAObjInstrum0010",
+    "HAObjParafer001": "HAObjParafer0010",
+    "HAObjRitual0001": "HAObjRitual00010",
+    "HAObjReliq0001": "HAObjReliq000100",
+    "HAObjRelCot001": "HAObjRelCot00100",
+    "HAObjRelLeg001": "HAObjRelLeg00100",
+}
+# Original Tokicura ID is 15 characters. Preserve original in source and
+# an explicit provenance flag; use a valid 16-char ID only in CI transport.
+ITEM_ID_CROSSWALK = {"TokicuraRel0001": "TokicuraRel00010"}
+PACKAGE_ID = "hiperaustralis-compendios-prototype"
+
+
+def valid_foundry_id(value):
+    return isinstance(value, str) and re.fullmatch(r"[A-Za-z0-9]{16}", value) is not None
+
 FAMILY_FOLDER = {
     "Armas": "Armas",
     "Defensas": "Defensas",
@@ -95,6 +119,21 @@ def validate_selection():
         fail("unexpected family counts")
     if len(set(v[0] for v in FOLDERS.values())) != 9:
         fail("duplicate folder IDs")
+    all_folder_ids = {v[0] for v in FOLDERS.values()}
+    if len(FOLDER_ID_CROSSWALK) != 9 or set(FOLDER_ID_CROSSWALK.values()) != all_folder_ids:
+        fail("unapproved folder ID transport mapping")
+    if any(not valid_foundry_id(x) for x in all_folder_ids):
+        fail("invalid 16-char folder ID")
+    if any(parent is not None and parent not in all_folder_ids for _, parent in FOLDERS.values()):
+        fail("invalid folder ancestry")
+    invalid_historical_ids = {x for x in ids if not valid_foundry_id(x)}
+    if invalid_historical_ids != set(ITEM_ID_CROSSWALK):
+        fail("new or missing invalid historical Item ID: " + repr(invalid_historical_ids))
+    runtime_ids = [ITEM_ID_CROSSWALK.get(x, x) for x in ids]
+    if (len(set(runtime_ids)) != 136 or
+            any(not valid_foundry_id(x) for x in runtime_ids) or
+            ITEM_ID_CROSSWALK != {"TokicuraRel0001": "TokicuraRel00010"}):
+        fail("runtime ID mapping is not exactly one protected Tokicura alias")
     relics = [r for r in rows if r["family"].startswith("Reliquias ")]
     if len(relics) != 16 or len([r for r in relics if r.get("prototypeAlias") and r.get("oldUuid")]) != 16:
         fail("historical relic identity mapping incomplete")
@@ -596,12 +635,21 @@ def prepare(output):
                 fail("historical source img mismatch for " + row["id"])
         folder_id = FOLDERS[folder][0]
         transport = copy.deepcopy(doc)
+        transport_id = ITEM_ID_CROSSWALK.get(row["id"], row["id"])
+        if not valid_foundry_id(transport_id):
+            fail("transport Item has invalid V14 ID: " + row["id"])
+        if transport_id != row["id"]:
+            provenance = transport.setdefault("flags", {}).setdefault(PACKAGE_ID, {})
+            if "historicalSourceId" in provenance:
+                fail("source already defines historicalSourceId flag")
+            provenance["historicalSourceId"] = row["id"]
+            transport["_id"] = transport_id
         if row.get("editorialName"):
             if row.get("sourceName") != doc.get("name"):
                 fail("original historical source name changed: " + row["id"])
             transport["name"] = row["editorialName"]
         transport["folder"] = folder_id
-        transport["_key"] = "!items!" + row["id"]
+        transport["_key"] = "!items!" + transport_id
         approved = approved_relics.get(row["id"])
         if approved is not None:
             if doc.get("img") != approved["old"]:
@@ -635,7 +683,7 @@ def prepare(output):
                                        "field": "flags.hiperaustralis-sheet.background",
                                        "from": extra["old"], "to": extra["new"],
                                        "sha256": extra["sha256"]})
-        target = itemroot.joinpath(*folder.split("/"), row["id"] + ".json")
+        target = itemroot.joinpath(*folder.split("/"), transport_id + ".json")
         target.write_text(
             json.dumps(transport, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
@@ -650,7 +698,8 @@ def prepare(output):
             if isinstance(value, str) and value.startswith("modules/hiperaustralis-rituales/"):
                 legacy.append({"id": row["id"], "field": field, "path": value})
         records.append({
-            "id": row["id"], "source": row["source"], "sha256": source_sha,
+            "id": transport_id, "historicalSourceId": row["id"],
+            "source": row["source"], "sha256": source_sha,
             "name": transport["name"],
             "folder": folder, "template": doc["system"]["template"],
         })
@@ -666,6 +715,8 @@ def prepare(output):
         "status": "136_REAL_SOURCES_PREPARED__16_RELIC_ASSETS__1_HISTORICAL_KNIFE__" + str(len(legacy)) + "_LEGACY_REFS",
         "count": len(records), "uniqueIds": len(set(r["id"] for r in records)),
         "folders": 9, "templates": 5,
+        "folderIdCrosswalk": FOLDER_ID_CROSSWALK,
+        "itemTransportIdCrosswalk": ITEM_ID_CROSSWALK,
         "originalLegacyReferences": original_legacy_count,
         "approvedRemaps": remapped, "approvedAssetCount": len(approved_relics),
         "sharedKnifeRemaps": shared_remapped, "sharedKnifeAssetCount": 1,
@@ -691,6 +742,9 @@ def verify(prepared, unpacked):
     manifest = read_json(prepared / "ci137-preflight.json")
     if manifest.get("count") != 136:
         fail("prepared corpus not 136")
+    if (manifest.get("folderIdCrosswalk") != FOLDER_ID_CROSSWALK or
+            manifest.get("itemTransportIdCrosswalk") != ITEM_ID_CROSSWALK):
+        fail("explicit V14 legacy ID crosswalk changed")
     source_rows = validate_selection()
     stage_rows = verify_historical_staging(source_rows)
     crosswalk = verify_defensas_instrumentos_crosswalk(source_rows)
@@ -756,6 +810,13 @@ def verify(prepared, unpacked):
     if len(expected) != 136 or set(actual) != set(expected):
         fail("roundtrip IDs differ: missing=" + repr(sorted(set(expected) - set(actual))) +
              " extra=" + repr(sorted(set(actual) - set(expected))))
+    if ("TokicuraRel00010" not in expected or
+            expected["TokicuraRel00010"].get("flags", {})
+            .get(PACKAGE_ID, {}).get("historicalSourceId") != "TokicuraRel0001"):
+        fail("Tokicura provenance and runtime ID mismatch")
+    if any(not valid_foundry_id(x) for x in actual):
+        fail("invalid V14 runtime Item ID")
+
     expected_folders = {v[0]: (k.split("/")[-1], v[1]) for k, v in FOLDERS.items()}
     if set(folders) != set(expected_folders):
         fail("roundtrip folder IDs differ")
@@ -776,6 +837,8 @@ def verify(prepared, unpacked):
     result = {
         "status": "CI137_ROUNDTRIP_136_PASS__ASSETS_AND_RUNTIME_PENDING",
         "items": len(actual), "folders": len(folders),
+        "folderIdCrosswalk": FOLDER_ID_CROSSWALK,
+        "itemTransportIdCrosswalk": ITEM_ID_CROSSWALK,
         "semanticFieldsChecked": list(PRESERVED_FIELDS),
         "legacyReferenceCount": len(manifest["legacyAssetReferences"]),
         "sharedKnifeReferencesRemapped": len(manifest["sharedKnifeRemaps"]),
