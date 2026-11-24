@@ -78,9 +78,10 @@ def inspect(bridge_js):
             'if (kind === "arma")' in drop and
             'if (kind === "defensa")' in drop,
             "other working DnD destinations were changed")
-    require('kind === "ritual"' in drop and
-            'kind === "reliquia"' in drop,
-            "existing Temple Item routes changed")
+    require('const field = hiperaDropFieldAtPointer(canvas, event)' in drop and
+            'if (kind !== field)' in drop and
+            'await embedHiperaItemFromDrop(canvas, actor, event)' in drop,
+            "existing Temple Ritual/Reliquia drop gate changed")
     # Avoid falsely declaring recipe support just because the word appears in a comment.
     recipe_support = any("receta" in s.lower()
                          for s in (classifier, targets, nature, renderer, drop))
