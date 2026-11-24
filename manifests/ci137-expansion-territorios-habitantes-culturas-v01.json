@@ -1,7 +1,7 @@
 {
   "schema": "ci137-family-expansion-preflight-v01",
   "cut": "2026-11-24",
-  "status": "STAGING_NO_RUNTIME_PACKAGE",
+  "status": "STAGING_CORRECTED_FFF_4_4_4_AND_EQUIPO_STRUCTURE",
   "base": {
     "repository": "ElIgnacioCampos/Hiperaustralis",
     "branchFrom": "work/ci137-fix-ids-v14-20261124",
@@ -24,7 +24,43 @@
         "Territorio / Funga",
         "Territorio / Recetas"
       ],
-      "newItemDocsAuthorized": 0
+      "newItemDocsAuthorized": 0,
+      "equipmentStructure": {
+        "status": "APPROVED_FUNCTIONAL_SEPARATION_PENDING_FOLDER_ID_CROSSWALK",
+        "transversal": {
+          "folder": "Equipo común",
+          "kind": "ONLY_CROSS_CULTURAL_GENERAL_ITEMS",
+          "migration": "NO_AUTO_MOVE"
+        },
+        "cultural": {
+          "folder": "Equipo cultural",
+          "kind": "CULTURALLY_SPECIFIC_EQUIPMENT",
+          "subfolders": [
+            "Mapuche",
+            "Aymara",
+            "Nórdicos",
+            "Lickanantay",
+            "Chinchorro",
+            "Selk’nam"
+          ],
+          "migration": "NO_AUTO_MOVE_OR_RENAME"
+        },
+        "musical": {
+          "folder": "Instrumentos musicales",
+          "kind": "CULTURALLY_SPECIFIC_INSTRUMENTS",
+          "migration": "KEEP_SEPARATE"
+        },
+        "historical41": false,
+        "historicalItemCount": 40,
+        "imageCandidatesCrosswalkCount": 29,
+        "crosswalk": "docs/CORE_MATRIZ_EQUIPO_COMUN_40x29_2026-11-21_v02.csv",
+        "notes": [
+          "The old 40 historical Equipment Items are not 29 plus 40; 29 are candidate images/identity matches, not new documents",
+          "A former six-cultural-folder layout under Equipo común exists in legacy 0.4.97 but Nov11 later distinguished transversal vs cultural; avoid moving 40 Items under culturally named branches without validating the latest explicit rule and each Item",
+          "Do not move Toki tool to Reliquias; Tokicura is distinct",
+          "Do not replace img based on unapproved 29 candidate WebPs"
+        ]
+      }
     },
     "ha-proto-actors": {
       "kind": "Actor",
@@ -57,12 +93,33 @@
           "FAU-013"
         ],
         "subfolders": [
-          "Fauna",
           "Flora",
+          "Fauna",
           "Funga",
           "Recetas"
         ],
-        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+        "faunaAssignmentKind": "CANDIDATE_REFERENCE_ONLY_NEVER_COUNTS_AS_FFF_COMPLETE",
+        "fff": {
+          "target": {
+            "Flora": 4,
+            "Fauna": 4,
+            "Funga": 4
+          },
+          "assignedReferences": {
+            "Flora": [],
+            "Fauna": [
+              "FAU-039",
+              "FAU-014",
+              "FAU-015",
+              "FAU-013"
+            ],
+            "Funga": []
+          },
+          "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
+          "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
+          "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
+          "recipeSlotsOutsideFFF": true
+        }
       },
       {
         "code": "02_PIKUNMAPU",
@@ -74,12 +131,33 @@
           "FAU-013"
         ],
         "subfolders": [
-          "Fauna",
           "Flora",
+          "Fauna",
           "Funga",
           "Recetas"
         ],
-        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+        "faunaAssignmentKind": "CANDIDATE_REFERENCE_ONLY_NEVER_COUNTS_AS_FFF_COMPLETE",
+        "fff": {
+          "target": {
+            "Flora": 4,
+            "Fauna": 4,
+            "Funga": 4
+          },
+          "assignedReferences": {
+            "Flora": [],
+            "Fauna": [
+              "FAU-014",
+              "FAU-040",
+              "FAU-015",
+              "FAU-013"
+            ],
+            "Funga": []
+          },
+          "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
+          "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
+          "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
+          "recipeSlotsOutsideFFF": true
+        }
       },
       {
         "code": "03_NGULUMAPU",
@@ -91,12 +169,33 @@
           "FAU-012"
         ],
         "subfolders": [
-          "Fauna",
           "Flora",
+          "Fauna",
           "Funga",
           "Recetas"
         ],
-        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+        "faunaAssignmentKind": "CANDIDATE_REFERENCE_ONLY_NEVER_COUNTS_AS_FFF_COMPLETE",
+        "fff": {
+          "target": {
+            "Flora": 4,
+            "Fauna": 4,
+            "Funga": 4
+          },
+          "assignedReferences": {
+            "Flora": [],
+            "Fauna": [
+              "FAU-009",
+              "FAU-010",
+              "FAU-011",
+              "FAU-012"
+            ],
+            "Funga": []
+          },
+          "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
+          "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
+          "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
+          "recipeSlotsOutsideFFF": true
+        }
       },
       {
         "code": "04_PEWENMAPU",
@@ -108,12 +207,33 @@
           "FAU-016"
         ],
         "subfolders": [
-          "Fauna",
           "Flora",
+          "Fauna",
           "Funga",
           "Recetas"
         ],
-        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+        "faunaAssignmentKind": "CANDIDATE_REFERENCE_ONLY_NEVER_COUNTS_AS_FFF_COMPLETE",
+        "fff": {
+          "target": {
+            "Flora": 4,
+            "Fauna": 4,
+            "Funga": 4
+          },
+          "assignedReferences": {
+            "Flora": [],
+            "Fauna": [
+              "FAU-009",
+              "FAU-013",
+              "FAU-015",
+              "FAU-016"
+            ],
+            "Funga": []
+          },
+          "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
+          "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
+          "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
+          "recipeSlotsOutsideFFF": true
+        }
       },
       {
         "code": "05_WILLIMAPU",
@@ -125,12 +245,33 @@
           "FAU-022"
         ],
         "subfolders": [
-          "Fauna",
           "Flora",
+          "Fauna",
           "Funga",
           "Recetas"
         ],
-        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+        "faunaAssignmentKind": "CANDIDATE_REFERENCE_ONLY_NEVER_COUNTS_AS_FFF_COMPLETE",
+        "fff": {
+          "target": {
+            "Flora": 4,
+            "Fauna": 4,
+            "Funga": 4
+          },
+          "assignedReferences": {
+            "Flora": [],
+            "Fauna": [
+              "FAU-009",
+              "FAU-010",
+              "FAU-011",
+              "FAU-022"
+            ],
+            "Funga": []
+          },
+          "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
+          "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
+          "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
+          "recipeSlotsOutsideFFF": true
+        }
       },
       {
         "code": "06_PATAGONIA_AUSTRAL",
@@ -142,12 +283,33 @@
           "FAU-020"
         ],
         "subfolders": [
-          "Fauna",
           "Flora",
+          "Fauna",
           "Funga",
           "Recetas"
         ],
-        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+        "faunaAssignmentKind": "CANDIDATE_REFERENCE_ONLY_NEVER_COUNTS_AS_FFF_COMPLETE",
+        "fff": {
+          "target": {
+            "Flora": 4,
+            "Fauna": 4,
+            "Funga": 4
+          },
+          "assignedReferences": {
+            "Flora": [],
+            "Fauna": [
+              "FAU-017",
+              "FAU-018",
+              "FAU-019",
+              "FAU-020"
+            ],
+            "Funga": []
+          },
+          "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
+          "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
+          "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
+          "recipeSlotsOutsideFFF": true
+        }
       },
       {
         "code": "07_TIERRA_DEL_FUEGO",
@@ -159,12 +321,33 @@
           "FAU-024"
         ],
         "subfolders": [
-          "Fauna",
           "Flora",
+          "Fauna",
           "Funga",
           "Recetas"
         ],
-        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+        "faunaAssignmentKind": "CANDIDATE_REFERENCE_ONLY_NEVER_COUNTS_AS_FFF_COMPLETE",
+        "fff": {
+          "target": {
+            "Flora": 4,
+            "Fauna": 4,
+            "Funga": 4
+          },
+          "assignedReferences": {
+            "Flora": [],
+            "Fauna": [
+              "FAU-021",
+              "FAU-022",
+              "FAU-023",
+              "FAU-024"
+            ],
+            "Funga": []
+          },
+          "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
+          "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
+          "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
+          "recipeSlotsOutsideFFF": true
+        }
       },
       {
         "code": "08_CANALES_AUSTRALES",
@@ -176,12 +359,33 @@
           "FAU-028"
         ],
         "subfolders": [
-          "Fauna",
           "Flora",
+          "Fauna",
           "Funga",
           "Recetas"
         ],
-        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+        "faunaAssignmentKind": "CANDIDATE_REFERENCE_ONLY_NEVER_COUNTS_AS_FFF_COMPLETE",
+        "fff": {
+          "target": {
+            "Flora": 4,
+            "Fauna": 4,
+            "Funga": 4
+          },
+          "assignedReferences": {
+            "Flora": [],
+            "Fauna": [
+              "FAU-025",
+              "FAU-026",
+              "FAU-027",
+              "FAU-028"
+            ],
+            "Funga": []
+          },
+          "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
+          "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
+          "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
+          "recipeSlotsOutsideFFF": true
+        }
       },
       {
         "code": "09_UMBRAL_POLAR",
@@ -193,12 +397,33 @@
           "FAU-032"
         ],
         "subfolders": [
-          "Fauna",
           "Flora",
+          "Fauna",
           "Funga",
           "Recetas"
         ],
-        "faunaAssignmentKind": "REFERENCE_ONLY_NO_DUPLICATE_ITEMS"
+        "faunaAssignmentKind": "CANDIDATE_REFERENCE_ONLY_NEVER_COUNTS_AS_FFF_COMPLETE",
+        "fff": {
+          "target": {
+            "Flora": 4,
+            "Fauna": 4,
+            "Funga": 4
+          },
+          "assignedReferences": {
+            "Flora": [],
+            "Fauna": [
+              "FAU-029",
+              "FAU-030",
+              "FAU-031",
+              "FAU-032"
+            ],
+            "Funga": []
+          },
+          "floraStatus": "PENDING_CURATED_NINE_TERRITORY_MAP",
+          "faunaStatus": "CANDIDATE_EXISTING_REFERENCE_NO_DUPLICATE",
+          "fungaStatus": "PENDING_APPROVED_SOURCE_AND_TERRITORIAL_CROSSWALK",
+          "recipeSlotsOutsideFFF": true
+        }
       }
     ],
     "complementaryPlaces": [
@@ -211,8 +436,38 @@
       "same FAU/FLO code has exactly one canonical Item",
       "other territorial appearances use UUID references",
       "no empty family records to satisfy quotas",
-      "no unapproved funga taxon assignment"
-    ]
+      "no unapproved funga taxon assignment",
+      "FFF 4x4x4 applies to EACH of 9 territories = 108 target slots (36 per Flora, Fauna, Funga), not 36 Fauna refs only",
+      "Do not claim 4 Flora or 4 Funga selected until source-backed; empty assignment lists are incomplete, never create filler",
+      "Recetas is a sibling folder, never included in the 4x4x4 allotment"
+    ],
+    "fffStandard": {
+      "label": "FFF 4×4×4",
+      "interpretation": "Per Territorio: 4 Flora + 4 Fauna + 4 Funga; exactly 12 editorial allocation slots, not 4 categories of 4 items",
+      "targetPerTerritory": {
+        "Flora": 4,
+        "Fauna": 4,
+        "Funga": 4
+      },
+      "numberOfCoreTerritories": 9,
+      "totalTarget": {
+        "Flora": 36,
+        "Fauna": 36,
+        "Funga": 36,
+        "combined": 108
+      },
+      "earlierEightTerritoryTarget": 96,
+      "type": "EDITORIAL_CAPACITY_NOT_INVENTORY_OR_AUTO_CREATION",
+      "floraAndFungaAssignedInNineCore": "NOT_YET_MAPPED_DO_NOT_AUTO_FILL",
+      "faunaAssignmentsStatus": "CANDIDATE_TERRITORIAL_REFERENCES_ONLY",
+      "multiTerritoryItems": "SINGLE_ITEM_CANONICAL_ID_MULTIPLE_REFERENCES",
+      "recipes": "SEPARATE_SUBFOLDER_OUTSIDE_FFF_COUNT",
+      "sources": [
+        "author approval 2026-11-10/14: four flora, four fauna, four funga per territorial unit",
+        "later nine CORE territorial standard 2026-11-18"
+      ],
+      "reconciliation": "8 historical ecological bands are not 9 current historical-cultural CORE territories; never auto-transfer old regional allocation"
+    }
   },
   "families": {
     "newDefenses": {
@@ -283,7 +538,19 @@
         "FLO-020 Liquen polar",
         "FLO-028 Fungosidades"
       ],
-      "status": "SEPARATE_FOLDER_ALLOWED_NO_AUTO_ACTOR_OR_ITEM_CREATION"
+      "status": "SEPARATE_FOLDER_ALLOWED_NO_AUTO_ACTOR_OR_ITEM_CREATION",
+      "priorApprovedHistoricalFunga": {
+        "codes": [
+          "FUN-01",
+          "FUN-02",
+          "FUN-03",
+          "FUN-04"
+        ],
+        "territoryInOldEcoregions": "Tierra del Fuego",
+        "status": "PRIOR_APPROVAL_RECALLED_SOURCE_AND_FOUNDRY_ID_NOT_YET_VERIFIED_FOR_NINE_CORE_ARCHITECTURE",
+        "runtimePromotions": 0
+      },
+      "independentlyApprovedItemsMeaning": "ZERO CURRENT V14 FOUNDRY ID/ART VERIFIED DOCS, NOT ZERO PRIOR EDITORIAL APPROVALS"
     },
     "habitantes": {
       "targetFolder": "Habitantes/Amenyi",
@@ -333,6 +600,25 @@
       "sourcePersistentId": "NOT_PRESENT_IN_0_4_75",
       "existingAuspiciosJournal": "preserve existing 21-page journal",
       "status": "PENDING_PERSISTENT_ID_AND_36_PAGE_CONTENT_AUDIT"
+    },
+    "equipo": {
+      "source": "docs/CORE_EQUIPO_COMUN_QA29_OVERLAY_AISLADO_PREPARADO_20261121_v10.md / CORE_MATRIZ_EQUIPO_COMUN_40x29_2026-11-21_v02.csv",
+      "historicalItems": 40,
+      "candidateIconCrosswalk": 29,
+      "currentBase": "QA5 already contains 40 original Equipo común Items",
+      "approvedEditorialSplit": "transversal Equipo común vs culturally specific Equipo cultural; Instrumentos musicales separate",
+      "cultureGroups": [
+        "Mapuche",
+        "Aymara",
+        "Nórdicos",
+        "Lickanantay",
+        "Chinchorro",
+        "Selk’nam"
+      ],
+      "oldVersionConflict": "0.4.97 used Equipo común/6 cultural subfolders; 2026-11-11 user distinguished common and cultural; resolve folder naming before migration, do not restore legacy hierarchy automatically",
+      "migrationStatus": "PREPARE_ONLY_PENDING_40_ITEM_CLASSIFICATION_AND_EXISTING_FOLDER_IDS",
+      "newItemDocsAuthorized": 0,
+      "newIconReplacementDocsAuthorized": 0
     }
   },
   "recoveredSourceZip": {
@@ -363,7 +649,10 @@
       "recover actual Amenyi and Turianos Actor payloads and UUIDs before creating Actor entries",
       "reconcile legacy 36-page Culture Journal with existing entries",
       "separate nine CORE territories from old eight-band historical index",
-      "verify every asset hash and user approval before moving"
+      "verify every asset hash and user approval before moving",
+      "enforce FFF allocation target per nine CORE territories 4 Flora+4 Fauna+4 Funga = 108 capacity, not 36 Fauna-only",
+      "new Equipo común: separate transversal Items from culture-specific Equipment; historical 40 Items/29 candidate icons must not duplicate or automatically change folders",
+      "source-verify previously approved FUN-01..04 before adding V14 Items or assigning them to Funga/Tierra del Fuego"
     ],
     "runtimeD3": false
   }
