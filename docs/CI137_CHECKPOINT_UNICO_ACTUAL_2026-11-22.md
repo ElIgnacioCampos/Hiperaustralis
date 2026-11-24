@@ -4,6 +4,14 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## H7 — Confirmación de arranque informada por usuario (24-11-2026)
+
+**Evidencia directa comunicada:** «funciona el mundo», tras el trabajo de empaquetado QA3 durable. **Estado de este control: ARRANQUE INFORMADO PASS.** No existe aquí captura de la versión instalada, ni identificación del módulo activo ni logs de Foundry: por tanto **no declarar** causalidad confirmada QA3 → reparación, ni D3 completo, ni pruebas de todas las fichas o packs.
+
+**Control siguiente (no destructivo):** anotar versión efectiva de `hiperaustralis-compendios-prototype`; abrir Actor Kona, abrir Items/Actor/Journal de los tres packs, verificar imágenes y referencias, cerrar e iniciar normalmente dos veces, comprobar persistencia. Conservar H6 y no actualizar MELIAZ Bridge 0.24.203 ni mover `main`. Si la versión comprobada es QA3 `0.1.6-ci137qa.3.2`, clasificar como primer PASS de apertura con QA3; sólo después de pruebas restantes considerar D3.
+
+**Decisiones:** registrar éxito parcial y mantener bloqueo de publicación. **Pendientes:** versión instalada confirmada, QA D3, doble reinicio, 99 enlaces gráficos heredados. **Maestro, main, Forge, H6 y Bridge:** sin intervenciones desde este registro.
+
 ## CI137 / QA3 — LevelDB durable y reapertura validada (24-11-2026)
 
 **Hallazgo físico:** QA1/QA2 incluyen archivos operativos `LOCK`, `LOG`, `LOG.old` y `*.log` dentro de los packs LevelDB. El artículo técnico de Forge [Multiple Levels of Challenges](https://blog.forge-vtt.com/multiple-levels-of-challenge/) documenta problemas históricos de locks y corrupción/lectura en compendios compartidos; **no demuestra que ese sea el origen del bloqueo H7**. El defecto debe atribuirse sólo tras prueba cliente/log.
