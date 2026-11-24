@@ -1,0 +1,101 @@
+name: CI137 - Recover native release documents (read only)
+on:
+  push:
+    branches: [work/ci137-expansion-familias-20261124]
+    paths: ['.github/workflows/ci137-recover-native-release-documents.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Download exact historical sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/ha-source" "$RUNNER_TEMP/ha-native" recovery
+          gh release download Hiperaustralis --repo "$GITHUB_REPOSITORY" --pattern HIPERAUSTRALIS_COMPENDIOS_v1.0.0_FORGE.zip --dir "$RUNNER_TEMP/ha-source"
+          gh release download Turianos --repo "$GITHUB_REPOSITORY" --pattern HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06.zip --dir "$RUNNER_TEMP/ha-source"
+          python - <<'PY'
+          import hashlib, zipfile, os, shutil
+          from pathlib import Path, PurePosixPath
+          temp=Path(os.environ['RUNNER_TEMP'])
+          sources={
+            'HIPERAUSTRALIS_COMPENDIOS_v1.0.0_FORGE.zip':'ca610ae5cfb81d01a925af6fa2fcb03e942e9c4432530bfb3a711c8d0525a86a',
+            'HIPERAUSTRALIS_RIVALES_TURIANOS_INTEGRACION_NATIVA_v06.zip':'5880d34b0d614f3e7ec734f4a59fa88fe8b3264505c0bceed1302eeb71b15a15'}
+          for n,digest in sources.items():
+              f=temp/'ha-source'/n
+              assert hashlib.sha256(f.read_bytes()).hexdigest()==digest
+              with zipfile.ZipFile(f) as z:
+                  assert z.testzip() is None
+                  for i in z.infolist():
+                      p=PurePosixPath(i.filename)
+                      assert not p.is_absolute() and '..' not in p.parts
+                      if i.is_dir(): continue
+                      if n.startswith('HIPERAUSTRALIS_COMPENDIOS'):
+                          if p.parts[0]=='packs':
+                              assert len(p.parts)>2
+                              target=temp/'ha-native'/Path(*p.parts)
+                          elif p.name in ('BUILD_MANIFEST.json','module.json','ESTADO_TURIANOS.md'):
+                              target=Path('recovery/v100-meta')/p.name
+                          else: continue
+                      else:
+                          if 'ACTORES_JSON' in p.parts and p.suffix=='.json':
+                              target=Path('recovery/turianos-v06')/p.name
+                          elif p.name in ('AUDITORIA_INTEGRACION.json','MANIFIESTO.json','FICHAS_RIVALES.md','LEEME_INSTALACION.md'):
+                              target=Path('recovery/turianos-v06-meta')/p.name
+                          else: continue
+                      target.parent.mkdir(parents=True,exist_ok=True)
+                      target.write_bytes(z.read(i))
+          assert len(list(Path('recovery/turianos-v06').glob('*.json')))==6
+          PY
+      - name: Install pinned Foundry CLI
+        run: npm install --no-audit --no-fund --no-save --no-package-lock @foundryvtt/foundryvtt-cli@3.0.5
+      - name: Recover native documents without loading module or scripts
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p recovery/native
+          : > recovery/unpack-status.tsv
+          for pack in hiperaustralis-bestiario hiperaustralis-adversarios-mapuche hiperaustralis-journals territorio hiperaustralis-naturaleza-items; do
+            mkdir -p "recovery/native/$pack"
+            if ./node_modules/.bin/fvtt package unpack -n "$pack" --inputDirectory "$RUNNER_TEMP/ha-native/packs" --outputDirectory "recovery/native/$pack" --folders; then
+              printf '%s\tPASS\n' "$pack" >> recovery/unpack-status.tsv
+            else
+              printf '%s\tFAIL\n' "$pack" >> recovery/unpack-status.tsv
+            fi
+          done
+      - name: Inventory recovered records, no runtime approval
+        run: |
+          python - <<'PY'
+          import json, hashlib
+          from pathlib import Path
+          root=Path('recovery')
+          out={'status':'RECOVERY_ONLY_NOT_COMPILED','packs':{},'turianos':[]}
+          for p in sorted((root/'native').iterdir()):
+              rec=[]
+              for f in sorted(p.rglob('*.json')):
+                  d=json.loads(f.read_text())
+                  if isinstance(d,dict):
+                      rec.append({'file':str(f.relative_to(root)),'id':d.get('_id'),'name':d.get('name'),'type':d.get('type'),'pages':len(d.get('pages',[])),'img':d.get('img'),'folder':d.get('folder'),'sha256':hashlib.sha256(f.read_bytes()).hexdigest()})
+              out['packs'][p.name]={'count':len(rec),'records':rec}
+          for f in sorted((root/'turianos-v06').glob('*.json')):
+              d=json.loads(f.read_text())
+              out['turianos'].append({'file':f.name,'id':d.get('_id'),'name':d.get('name'),'sha256':hashlib.sha256(f.read_bytes()).hexdigest()})
+          out['unpackStatus']=(root/'unpack-status.tsv').read_text()
+          (root/'recovery-inventory.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps({'packs':{k:v['count'] for k,v in out['packs'].items()},'turianos':len(out['turianos']),'unpackStatus':out['unpackStatus']},ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CI137-NATIVE-RELEASE-RECOVERY-DOCUMENTS
+          path: recovery/
+          if-no-files-found: error
+          retention-days: 30
