@@ -1,12 +1,14 @@
 # CI137 — Estándar operativo de recursos Foundry · 24-11-2026
 
 ## Decisión autoral
-Optimizar el conjunto para Foundry: preferentemente WebP 256 px, sin redundancias.
+Optimizar el conjunto para Foundry: WebP 256 px para iconos, tokens y retratos, sin redundancias. Corrección autoral posterior: fondos y mapas deben mantener una resolución mayor.
 
 ## Aplicación técnica
 - Iconos, tokens y retratos: lado mayor máximo 256 px; cuadrado 256×256 cuando ya lo sea. Sin recorte, deformación ni ampliación.
 - Conservar transparencia, silueta, composición y geometría. Redimensionar con Lanczos, WebP calidad 87, alfa exacto a resolución de destino. Conservar bytes de archivos ya conformes.
-- Originales de respaldo fuera del módulo runtime. Mapas, fondos y documentación: 256 px por defecto; excepción justificada si su legibilidad exige resolución superior.
+- Originales de respaldo fuera del módulo runtime.
+- **Fondos y mapas: excluidos del límite de 256 px.** Conservar la resolución original útil, la relación de aspecto y la geometría del mapa; optimizar peso mediante WebP sin reducir dimensiones por defecto. Cualquier reducción debe justificarse por el uso real y comprobar legibilidad, detalles y escala de escena. No imponer una resolución fija sin cotejo.
+- Imágenes documentales: resolución según legibilidad; 256 px sólo para miniaturas, no para material que necesite ampliación.
 - Una sola copia por recurso idéntico, referencias compartidas entre fichas. Comprobar hashes y píxeles exactos; no fusionar variantes por parecido, no mezclar candidatos con aprobados.
 - Los 40 tokens Kona permanecen en Bridge; no duplicar.
 - Remapear referencias sólo tras validar destino, procedencia y aprobación. No sustituir arte ni cambiar IDs por optimización.
@@ -18,7 +20,7 @@ Originales 22.083.654 bytes; staging WebP256 4.434.816 bytes (-79,92%).
 193 binarios únicos; no se encontraron duplicados exactos dentro de cada ámbito de procedencia. Archivos ya 256 conservados.
 ZIP CI137_ASSETS_WEBP256_STAGING_20261124.zip, 4.655.032 bytes, SHA256 4a95bc340c81a7ef6d366ab79fb07044d0821757fac00ffe4d08fbc3faa04295. CRC, hashes, dimensiones y alfa comprobados; cotejo visual de siete ejemplos.
 El ZIP contiene MANIFEST.json con rutas, transformaciones, hashes originales/destino y referencias pendientes. No instalable ni aprobación de arte.
-Los 27 recursos documentales Culturas y fotografías de fondo son previews 256; revisar legibilidad antes de promover.
+Los 27 recursos documentales Culturas y fotografías de fondo son previews 256; no promover fondos o mapas de este lote. Recuperar sus versiones de mayor resolución desde los originales preservados y comprobar legibilidad documental. El ahorro del ensayo no representa el tamaño final del módulo corregido.
 
 ## Pendientes
 Recuperar 22 HAB, 5 FAU prehistóricos, EXO-009 y 4 Turiano Journal refs. Cotejar recursos restantes QA5 y QA6, normalización Turianos v06 y Bridge de forma separada. Integrar remapeos y auditar rutas completas, D2/D3.
