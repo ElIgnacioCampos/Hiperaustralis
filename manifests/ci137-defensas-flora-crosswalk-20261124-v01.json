@@ -715,7 +715,17 @@
     "floraBackgroundPathsHaveOnly8DistinctFiles": true,
     "legacyTotoraBackgroundRefs": 33,
     "sourceImageAnalysis": "Optimized ZIP icon SHA mismatch vs editorial source table: review original-source/transform lineage, not binary integrity failure",
-    "note": "40 candidate Flora source records labeled INCLUSION_AUTORIZADA_NO_INSTALADA in historical 0.4.75; not equivalent to 40 new contemporary visual approvals."
+    "note": "40 candidate Flora source records labeled INCLUSION_AUTORIZADA_NO_INSTALADA in historical 0.4.75; not equivalent to 40 new contemporary visual approvals.",
+    "exactBinRescue48Of48": true,
+    "floraIcon512RGBA": 40,
+    "floraIconActualTotalBytes": 3641622,
+    "floraCatalogClaimedTotalBytes": 9107212,
+    "floraIconSourceDoesNotMatchClaimedHashCount": 40,
+    "floraRescuedImageFilesByteIdenticalTo075": 48,
+    "floraRecoveryZipSha256": "5816ee481dfb3bd9620d2c4604c365cc2ed11f7899a973da3a1e6ea7c8cbb4ba",
+    "sourceCatalogImageVersionUnknown": true,
+    "graphicBinaryAuditReportSha256": "01f67ca9746f265d25d242ca3658aa55ebe566174831d49b148727c9e857694f",
+    "assetReencodingNotAuthorized": true
   },
   "gates": {
     "allRuntimeUpdatesBlocked": true,
@@ -724,14 +734,16 @@
       "obtain full payload for DEF catalog entries",
       "determine semantic equivalence to existing eight historical Items",
       "preserve current IDs when truly same item",
-      "resolve COM-09 asset independently"
+      "resolve COM-09 asset independently",
+      "COM graphics catalog hashes alone do not prove that actual approved binaries were recovered; defer copying until exact bytes available"
     ],
     "beforeFloraItemCreation": [
       "cross-check current Foundry Items vs 0.4.75 40 records by codigo, seedId, name, payload",
       "resolve actual icon hashes against source originals before copy",
       "do not duplicate same FLO code in multiple territories",
       "do not rewrite sheet background for 33 without authorial decision",
-      "map 8 old territory labels to 9 CORE without auto-relabeling"
+      "map 8 old territory labels to 9 CORE without auto-relabeling",
+      "do not assume older catalog hashes describe optimized 0.4.75; 48/48 recoverable binaries match optimized original exactly"
     ]
   }
 }
