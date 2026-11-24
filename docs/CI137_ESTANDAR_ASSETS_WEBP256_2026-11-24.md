@@ -25,3 +25,10 @@ Los 27 recursos documentales Culturas y fotografías de fondo son previews 256; 
 ## Pendientes
 Recuperar 22 HAB, 5 FAU prehistóricos, EXO-009 y 4 Turiano Journal refs. Cotejar recursos restantes QA5 y QA6, normalización Turianos v06 y Bridge de forma separada. Integrar remapeos y auditar rutas completas, D2/D3.
 QA5, Bridge, Forge y Estado Maestro intactos.
+
+## Ensayo corregido v02 — resolución mixta (24-11-2026)
+- 193 recursos; 126 iconos/tokens/retratos <=256 px, 67 fotografías documentales/fondos restaurados byte a byte desde 0.4.100 (27 Culturas, 32 Fauna fotográfica, 8 Flora de bioma). Los 17 candidatos siguen aislados.
+- Todos WebP; CRC, decodificación, dimensiones y SHA256 de cada miembro comprobados. No se han alterado los 126 binarios pequeños del primer ensayo.
+- 22.083.654 bytes originales -> 17.982.426 bytes operativos de staging (-18,57%).
+- ZIP local CI137_ASSETS_OPTIMIZADOS_RESOLUCION_MIXTA_20261124_v02.zip, 18.204.828 bytes, SHA256 a5d6a0297e0e97b872ccf799a7790657f667533b01cb480d3f9e9c4e06a139a4. Sustituye al ensayo global 256 como candidato, no instalable. No subir ZIP duplicado al repositorio; originales ya respaldados en Biblioteca y manifiesto interno. No implica aprobación artística ni D3.
+- QA5, Bridge, Forge y Estado Maestro intactos. Próximo frente: HAB, FAU prehistórica, EXO-009 y rutas Turiano Journal.
