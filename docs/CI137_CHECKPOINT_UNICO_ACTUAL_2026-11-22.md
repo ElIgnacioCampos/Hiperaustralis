@@ -4,13 +4,15 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
-## H7 — Confirmación de arranque informada por usuario (24-11-2026)
+## H7 — Estabilidad CONFIRMADA SIN CI137 instalado (24-11-2026)
 
-**Evidencia directa comunicada:** «funciona el mundo», tras el trabajo de empaquetado QA3 durable. **Estado de este control: ARRANQUE INFORMADO PASS.** No existe aquí captura de la versión instalada, ni identificación del módulo activo ni logs de Foundry: por tanto **no declarar** causalidad confirmada QA3 → reparación, ni D3 completo, ni pruebas de todas las fichas o packs.
+**Rectificación explícita del usuario:** «tenemos hoja correcta, pero no se instaló ningún módulo ni compendio. Los Items anteriores funcionan, el reinicio no genera problemas». La afirmación anterior «funciona el mundo» debe leerse **estrictamente** como H7 abre y conserva hoja Kona/Items anteriores y reinicio; **NO** como éxito del paquete QA3. No hay un módulo CI137 nuevo instalado, por lo que la ausencia de nuevos compendios es esperable.
 
-**Control siguiente (no destructivo):** anotar versión efectiva de `hiperaustralis-compendios-prototype`; abrir Actor Kona, abrir Items/Actor/Journal de los tres packs, verificar imágenes y referencias, cerrar e iniciar normalmente dos veces, comprobar persistencia. Conservar H6 y no actualizar MELIAZ Bridge 0.24.203 ni mover `main`. Si la versión comprobada es QA3 `0.1.6-ci137qa.3.2`, clasificar como primer PASS de apertura con QA3; sólo después de pruebas restantes considerar D3.
+**Estado H7:** PASS arranque normal, PASS hoja Kona, PASS Items previamente existentes, PASS reinicio normal. **Instalación de CI137: NO REALIZADA. D3: NO INICIADO.** No atribuir recuperación del arranque a la eliminación de LOCK/LOG ni al contenido de QA3.
 
-**Decisiones:** registrar éxito parcial y mantener bloqueo de publicación. **Pendientes:** versión instalada confirmada, QA D3, doble reinicio, 99 enlaces gráficos heredados. **Maestro, main, Forge, H6 y Bridge:** sin intervenciones desde este registro.
+**Decisión operativa:** H7 pasa a **línea base estable sin CI137**; mantener H6 de respaldo, CSB y MELIAZ Bridge sin cambios. CI137 QA3 queda sólo como artefacto diagnóstico construido/CLI verificado, **NO INSTALAR ni publicar** sin condiciones de aislamiento y rollback. Próximo frente: diagnosticar proceso de instalación de Forge Wizard/identidad global/compendios, preferiblemente a partir de logs concretos o de una instancia realmente separada. No modificar mundos ni main.
+
+**Decisiones:** rectificar atribución previa; preservar dos mundos y fuentes existentes. **Pendientes:** conseguir evidencia runtime de instalación en instancia independiente, distinguir fallas de Wizard de carga de packs, 99 referencias artísticas. **Fuentes:** comunicación directa del usuario, CI #45443496173, Issue #2. **Estado Maestro:** sin cambios.
 
 ## CI137 / QA3 — LevelDB durable y reapertura validada (24-11-2026)
 
