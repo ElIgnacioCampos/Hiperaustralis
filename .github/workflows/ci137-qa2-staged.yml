@@ -1,4 +1,4 @@
-name: CI137 QA2 staged clean rebuild - do not publish
+name: CI137 QA3 durable LevelDB staged preflight - no Forge deployment
 
 on:
   push:
@@ -57,9 +57,53 @@ jobs:
               --stage "$stage" \
               --preflight "$RUNNER_TEMP/qa2-prepared" \
               --compiled "$RUNNER_TEMP/qa2-packs" \
-              --out "dist/CI137_QA2_"$stage"_NO_INSTALAR_SIN_QA.zip"
-            unzip -t "dist/CI137_QA2_"$stage"_NO_INSTALAR_SIN_QA.zip" >/dev/null
+              --out "dist/CI137_QA3_"$stage"_NO_INSTALAR_SIN_QA.zip"
+            unzip -t "dist/CI137_QA3_"$stage"_NO_INSTALAR_SIN_QA.zip" >/dev/null
           done
+      - name: Verify sanitized LevelDB packs re-open in official CLI
+        run: |
+          set -euo pipefail
+          FVTT="./node_modules/.bin/fvtt"
+          for stage in items full; do
+            ZIP="dist/CI137_QA3_"$stage"_NO_INSTALAR_SIN_QA.zip"
+            mkdir -p "$RUNNER_TEMP/qa3-zip-$stage" "$RUNNER_TEMP/qa3-verify-$stage"
+            unzip -q "$ZIP" -d "$RUNNER_TEMP/qa3-zip-$stage"
+            "$FVTT" package unpack -n ha-proto-items \
+              --inputDirectory "$RUNNER_TEMP/qa3-zip-$stage/packs" \
+              --outputDirectory "$RUNNER_TEMP/qa3-verify-$stage/items" --folders
+            python tools/foundry/ci137_pipeline.py verify \
+              --prepared "$RUNNER_TEMP/qa2-prepared" \
+              --unpacked "$RUNNER_TEMP/qa3-verify-$stage/items"
+            if [ "$stage" = full ]; then
+              "$FVTT" package unpack -n ha-proto-actors \
+                --inputDirectory "$RUNNER_TEMP/qa3-zip-full/packs" \
+                --outputDirectory "$RUNNER_TEMP/qa3-verify-full/actors"
+              "$FVTT" package unpack -n ha-proto-journals \
+                --inputDirectory "$RUNNER_TEMP/qa3-zip-full/packs" \
+                --outputDirectory "$RUNNER_TEMP/qa3-verify-full/journals"
+            fi
+          done
+      - name: Assert only durable LevelDB database files shipped
+        run: |
+          python - <<'PY'
+          import json, zipfile
+          from pathlib import Path
+          d=Path("dist")
+          for stage in ("min","items","full"):
+              name=f"CI137_QA3_{stage}_NO_INSTALAR_SIN_QA.zip"
+              with zipfile.ZipFile(d/name) as z:
+                  assert z.testzip() is None
+                  paths=z.namelist()
+                  transient=[p for p in paths if p.startswith("packs/") and (
+                      p.endswith("/LOCK") or p.endswith("/LOG") or
+                      p.endswith("/LOG.old") or p.endswith(".log"))]
+                  assert not transient, transient
+                  if stage != "min":
+                      assert any(p.endswith(".ldb") for p in paths)
+                  else:
+                      assert len(paths)==2
+          print("QA3 durable LevelDB ZIP hygiene PASS: no LOCK/LOG in all stages")
+          PY
       - name: Fail closed - correct stage differentiation and approvals
         run: |
           python - <<'PY'
@@ -75,6 +119,7 @@ jobs:
               assert r["runtimeValidated"] is False
               assert r["installApproved"] is False
               assert r["worldModified"] is False
+              assert r["cleanLevelDB"] is True
           for s in ("items","full"):
               assert rows[s]["items"]==136
               assert rows[s]["pendingLegacyLinks"]==99
@@ -85,12 +130,14 @@ jobs:
           assert rows["full"]["actors"]==1 and rows["full"]["journals"]==1
           assert rows["full"]["journalPages"]==21
           assert rows["min"]["zipEntries"]==2
+          assert rows["full"]["volatileFilesExcludedCount"]>=3
+          assert rows["items"]["volatileFilesExcludedCount"]>=1
           print("QA2 THREE STAGES STRUCTURAL PASS — still NOT runtime QA, no release")
           PY
       - name: Publish only three diagnostic builds and their hashes as CI artifact
         uses: actions/upload-artifact@v4
         with:
-          name: CI137-QA2-THREE-STAGES-NO-INSTALL
+          name: CI137-QA3-DURABLE-STAGES-NO-INSTALL
           path: dist/*
           if-no-files-found: error
           retention-days: 30
