@@ -80,6 +80,8 @@ jobs:
               assert rows[s]["pendingLegacyLinks"]==99
               assert rows[s]["approvedRemaps"]==40
               assert rows[s]["approvedVisualAssets"]==23
+              assert rows[s]["preservedBaselineAssets"]==44
+              assert rows[s]["QAReadOnlyScriptIncluded"] is True
           assert rows["full"]["actors"]==1 and rows["full"]["journals"]==1
           assert rows["full"]["journalPages"]==21
           assert rows["min"]["zipEntries"]==2
