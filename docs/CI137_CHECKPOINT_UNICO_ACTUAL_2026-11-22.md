@@ -4,6 +4,24 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## H7 — QA5: captura de arranque con tres compendios abiertos (24-11-2026)
+
+**Evidencia visual aportada por usuario:** captura de H7 después de la instalación y activación del paquete **QA5** para Foundry 14.370 / CSB 6.1.2. El mundo **abre con el módulo activo**, y las tres ventanas de compendio son visibles simultáneamente: **HA · Prototipo · Objetos** (carpetas **Armas** y **Defensas**, con Items e ilustraciones en ambas), **HA · Prototipo · Adversarios** (registro **Ladrón oportunista**) y **HA · Prototipo · Journals** (entrada **Auspicios — Hiperaustralis**). La barra lateral muestra los tres packs identificados por el ID `hiperaustralis-compendios-prototype`, diferenciados de los packs del mundo H7. Esto es evidencia D3 visual **PASS de carga/lectura inicial**, con cliente Foundry funcional. No basta para acreditar recuento integral de 136 Items, los nueve folders, las 21 páginas de Journal, imágenes de los 99 vínculos legados ni segundo reinicio.
+
+**Origen del bloqueo resuelto:** error explícito de servidor `_id`/`folder` de longitud no válida. QA5 contiene crosswalk cerrado de nueve carpetas y alias técnico de Tokicura sin tocar fuente histórica; el funcionamiento observado confirma que las bases se pudieron abrir al activarse. Atribuir **resolución operacional** al parche de validación; reservar causalidad exhaustiva para revisión de logs sin errores.
+
+**Matriz parcial de QA real:**
+- H7 inicia con CI137 QA5 activo: **PASS VISUAL**.
+- Tres compendios (Objetos, Adversarios, Journals) abiertos: **PASS VISUAL**.
+- Al menos Armas/Defensas, Ladrón oportunista y Auspicios visibles: **PASS VISUAL**.
+- Conteo Items 136/136 y folders 9/9: **PENDIENTE**.
+- Validación de los 99 enlaces gráficos heredados: **PENDIENTE**.
+- Lectura Journal 21 páginas: **PENDIENTE**.
+- Dos reinicios completos **con CI137 activo** y persistencia de hoja Kona: **PENDIENTE**.
+- Publicación / promoción a `main`: **BLOQUEADA** hasta concluir D3 y aprobación explícita.
+
+**Decisiones:** no generar otra versión de módulo ni tocar estructura en esta fase; inspeccionar integridad funcional antes de normalización de imágenes; conservar H6 como respaldo. **Fuentes:** screenshot H7 24-11-2026 15:35 Chile, QA5 CI #45457345135, log servidor inicial. **Maestro, `main`, Forge, H6, Bridge:** sin cambios desde este registro.
+
 ## H7 — CI137 QA5: corrección de identificadores V14.370 (24-11-2026)
 
 **Evidencia original:** log Forge 24-11-2026 18:04:25 `SchemaField#_validateRecursive: _id must be a valid 16-character alphanumeric ID; folder must be a valid 16-character alphanumeric ID`. A las 18:04:24 el servidor informó conexión a **los tres compendios CI137** (Items, Actors, Journals): por lo tanto el empaquetado/ruteo basta para abrir bases, y el fallo evidenciado es validación de documentos por Foundry V14, no la ausencia del módulo. `Created 0 Folder documents` aparece en el log; no confundir ese contador con una importación completa.
