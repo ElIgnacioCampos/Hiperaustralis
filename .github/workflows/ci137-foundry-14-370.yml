@@ -1,12 +1,13 @@
-name: CI137 Foundry 14.370 and CSB 6.1.2 - one direct QA module ZIP
+name: CI137 V14.370 QA5 - strict 16-character Document IDs
 
 on:
   push:
-    branches: [work/ci137-foundry-14-370-20261124]
+    branches: [work/ci137-fix-ids-v14-20261124]
     paths:
       - '.github/workflows/ci137-foundry-14-370.yml'
       - 'module/module.json'
       - 'tools/foundry/ci137_foundry14_370.py'
+      - 'tools/foundry/ci137_v14_id_preflight.py'
       - 'tools/foundry/ci137_h7_rebuild_qa2.py'
       - 'tools/foundry/ci137_h7_packager.py'
       - 'tools/foundry/ci137_pipeline.py'
@@ -31,11 +32,17 @@ jobs:
         with:
           node-version: '22'
       - name: Validate Python source
-        run: python -m py_compile tools/foundry/ci137_foundry14_370.py tools/foundry/ci137_h7_rebuild_qa2.py tools/foundry/ci137_h7_packager.py tools/foundry/ci137_pipeline.py
+        run: python -m py_compile tools/foundry/ci137_foundry14_370.py tools/foundry/ci137_v14_id_preflight.py tools/foundry/ci137_h7_rebuild_qa2.py tools/foundry/ci137_h7_packager.py tools/foundry/ci137_pipeline.py
       - name: Prepare 136 historical Items without changing IDs
         run: python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/ci137-prepared"
       - name: Prepare existing Actor and Journal
         run: python tools/foundry/ci137_h7_packager.py prepare-meta --out "$RUNNER_TEMP/ci137-meta"
+      - name: V14 schema preflight for 136 Items, 9 folders, Actor, Journal and 21 pages
+        run: |
+          python tools/foundry/ci137_v14_id_preflight.py \
+            --prepared "$RUNNER_TEMP/ci137-prepared" \
+            --metadata "$RUNNER_TEMP/ci137-meta" \
+            --report "dist/CI137_V14_370_ID_VALIDATION.json"
       - name: Install official Foundry compendium CLI
         run: npm install --no-audit --no-fund --no-save --no-package-lock @foundryvtt/foundryvtt-cli@3.0.5
       - name: Compile three clean LevelDB packs from canonical JSON
@@ -59,13 +66,13 @@ jobs:
         run: |
           python tools/foundry/ci137_foundry14_370.py \
             --source "$RUNNER_TEMP/CI137_QA3_full_INTERNAL.zip" \
-            --out "dist/HIPERAUSTRALIS_CI137_V14_370_QA4_DIRECTO_FORGE.zip"
+            --out "dist/HIPERAUSTRALIS_CI137_V14_370_QA5_IDS_CORREGIDOS_FORGE.zip"
       - name: Read actual final ZIP LevelDB with official CLI
         run: |
           set -euo pipefail
           mkdir -p "$RUNNER_TEMP/ci137-final" "$RUNNER_TEMP/ci137-final-items" \
                    "$RUNNER_TEMP/ci137-final-actors" "$RUNNER_TEMP/ci137-final-journals"
-          unzip -q dist/HIPERAUSTRALIS_CI137_V14_370_QA4_DIRECTO_FORGE.zip -d "$RUNNER_TEMP/ci137-final"
+          unzip -q dist/HIPERAUSTRALIS_CI137_V14_370_QA5_IDS_CORREGIDOS_FORGE.zip -d "$RUNNER_TEMP/ci137-final"
           FVTT="./node_modules/.bin/fvtt"
           "$FVTT" package unpack -n ha-proto-items --inputDirectory "$RUNNER_TEMP/ci137-final/packs" --outputDirectory "$RUNNER_TEMP/ci137-final-items" --folders
           python tools/foundry/ci137_pipeline.py verify --prepared "$RUNNER_TEMP/ci137-prepared" --unpacked "$RUNNER_TEMP/ci137-final-items"
@@ -76,7 +83,7 @@ jobs:
           python - <<'PY'
           import json, zipfile
           from pathlib import Path
-          zpath=Path("dist/HIPERAUSTRALIS_CI137_V14_370_QA4_DIRECTO_FORGE.zip")
+          zpath=Path("dist/HIPERAUSTRALIS_CI137_V14_370_QA5_IDS_CORREGIDOS_FORGE.zip")
           with zipfile.ZipFile(zpath) as z:
               assert z.testzip() is None
               names=z.namelist()
@@ -84,9 +91,14 @@ jobs:
               assert "module.json" in names and not any(n.endswith(".zip") for n in names)
               j=json.loads(z.read("module.json"))
               assert j["id"]=="hiperaustralis-compendios-prototype"
-              assert j["version"]=="0.1.7-ci137qa.4"
+              assert j["version"]=="0.1.7-ci137qa.5"
               assert j["compatibility"]=={"minimum":"14.370","verified":"14.370"}
               assert j["relationships"]["systems"][0]["compatibility"]=={"minimum":"6.1.2","verified":"6.1.2"}
+              checks=json.loads(Path("dist/CI137_V14_370_ID_VALIDATION.json").read_text())
+              assert checks["items"]==136 and checks["folders"]==9
+              assert checks["allRuntimeIdsAre16CharAlphanumeric"]
+              assert checks["itemSourceIdAlias"]=={"TokicuraRel0001":"TokicuraRel00010"}
+              assert checks["journalPages"]==21
               assert [(p["name"],p["type"]) for p in j["packs"]]==[
                   ("ha-proto-items","Item"),("ha-proto-actors","Actor"),
                   ("ha-proto-journals","JournalEntry")]
@@ -95,15 +107,18 @@ jobs:
               assert not any(n in j for n in ("scripts","esmodules","styles","manifest","download"))
           r=json.loads(Path("dist/CI137_V14_370_QA_REPORT.json").read_text())
           assert r["noStartupScripts"] and not r["runtimeD3"] and not r["forgeImportVerified"]
+          assert r["runtimeFolderIdsValidated"]==9
+          assert r["protectedItemTransportIdAlias"]=={"TokicuraRel0001":"TokicuraRel00010"}
           print("CI137 v14.370 direct module ZIP PASS: static validation and 3 LevelDB CLI readbacks; D3 pending")
           PY
       - name: Keep only one direct module ZIP and its checksums as QA artifact
         uses: actions/upload-artifact@v4
         with:
-          name: CI137-FOUNDRY-14-370-DIRECT-FORGE-QA4
+          name: CI137-FOUNDRY-14-370-QA5-IDS-VALIDOS
           path: |
-            dist/HIPERAUSTRALIS_CI137_V14_370_QA4_DIRECTO_FORGE.zip
+            dist/HIPERAUSTRALIS_CI137_V14_370_QA5_IDS_CORREGIDOS_FORGE.zip
             dist/CI137_V14_370_QA_REPORT.json
+            dist/CI137_V14_370_ID_VALIDATION.json
           if-no-files-found: error
           retention-days: 30
 
