@@ -4,6 +4,22 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## H7 — CI137 QA5: corrección de identificadores V14.370 (24-11-2026)
+
+**Evidencia original:** log Forge 24-11-2026 18:04:25 `SchemaField#_validateRecursive: _id must be a valid 16-character alphanumeric ID; folder must be a valid 16-character alphanumeric ID`. A las 18:04:24 el servidor informó conexión a **los tres compendios CI137** (Items, Actors, Journals): por lo tanto el empaquetado/ruteo basta para abrir bases, y el fallo evidenciado es validación de documentos por Foundry V14, no la ausencia del módulo. `Created 0 Folder documents` aparece en el log; no confundir ese contador con una importación completa.
+
+**Auditoría reproducible de `ci137_pipeline.py`:** 9 carpetas de Items usaban `_id` de 14/15 caracteres. También sus referencias `folder` apuntaban a esos IDs inválidos. **135 de los 136 Item IDs históricos eran válidos**; Tokicura tenía `TokicuraRel0001` (15 caracteres). Faltaba una puerta de validación estática de 16 caracteres; la compilación CLI hacía roundtrip sin validar el DataModel del servidor V14.
+
+**QA5 corregido en rama** `work/ci137-fix-ids-v14-20261124`:
+- Se asignaron **9 IDs técnicos válidos de 16 caracteres** a carpetas y sus referencias de parentesco. `folderIdCrosswalk` recoge exactamente las nueve correspondencias.
+- **Tokicura**: conservar ID histórico `TokicuraRel0001` en fuente original/canon y en `flags["hiperaustralis-compendios-prototype"].historicalSourceId`; transportar el documento en Foundry con ID técnico `TokicuraRel00010`. La excepción aparece en `itemTransportIdCrosswalk` y es la **única diferencia** de Item ID entre fuente y compendio. Los otros 135 ID históricos están intactos, y todos los 136 Items son conservados.
+- Nuevo guard `tools/foundry/ci137_v14_id_preflight.py`, más validaciones en `ci137_pipeline.py`: 9 Folder IDs y referencias, 136 IDs y folder refs de Items, actor, journal y 21 páginas, archivos `_key`, unicidad, listas de alias cerradas, existencia de metadatos de procedencia. Un futuro ID inválido bloquea la compilación.
+- `module.json` v**0.1.7-ci137qa.5**, Foundry **14.370** / CSB **6.1.2**, mismo ID `hiperaustralis-compendios-prototype` y mismos 3 packs.
+- [Actions #45457345135](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45457345135) **PASS**: guard de IDs V14, 136/9/1/1/21, todos packs recién compilados y vueltos a abrir con CLI, 44 WebP aprobados no alterados, CRC. **Prueba runtime D3 en Forge PENDIENTE.**
+- ZIP individual directo `HIPERAUSTRALIS_CI137_V14_370_QA5_IDS_CORREGIDOS_FORGE.zip`, **2.670.853 bytes**, SHA-256 **`ce07567e823e617d03397a9b99c8988eae7b356ed80ea4d8855cf3ec20212a9b`**. Manifiesto raíz, 3 packs, 57 entradas, ningún ZIP anidado ni scripts de arranque/auto migración. El antiguo QA4 queda superado y bloqueado.
+
+**Decisión técnica:** reparar datos e identificadores sin reescribir canon; conservar un crosswalk histórico exacto y trazable para Tokicura. **Pendientes:** instalar QA5 en Forge con respaldo y servidor detenido, activar sólo en H7; inspeccionar compendios, hojas, imágenes y dos reinicios; 99 referencias gráficas antiguas siguen pendientes. Si la activación vuelve a detener el cliente, buscar nuevos logs (no suponer mismo error). **Fuentes:** logs de usuario, fichero de fuentes CI137, Actions #45457345135, [Issue #2](https://github.com/ElIgnacioCampos/Hiperaustralis/issues/2). **Estado Maestro, `main`, Bridge, H6/H7 y Forge:** sin modificación por el asistente.
+
 ## H7 — QA4 instalado; falla al activar compendios (24-11-2026)
 
 **Evidencia nueva del usuario:** capturas de Forge Library (carpetas `hiperaustralis-ci137-qa6`, `hiperaustralis-compendios-prototype`), Foundry Setup V14.370 con tarjeta **CI137 `0.1.7-ci137qa.4` instalada**, y H7 detenido en `Downloading world data, please wait…` **después de activar ese módulo**. H7 funcionaba y reiniciaba normalmente sin CI137; persistían hoja Kona e Items anteriores. **QA4 instalación/registro PASS; activación/arranque FAIL informado; runtime D3 FAIL**, sin log disponible de la excepción. No confundir carpeta `qa6` presente en Assets Library con dependencia activada.
