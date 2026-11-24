@@ -1,0 +1,52 @@
+name: CI137 - Read-only Recipe DnD and Instrument/Requilia bridge crosswalk
+
+on:
+  push:
+    branches: [work/ci137-expansion-familias-20261124]
+    paths:
+      - '.github/workflows/ci137-bridge-recetas-audit.yml'
+      - 'tools/foundry/ci137_bridge_recetas_readonly_gate.py'
+      - 'manifests/ci137-instrumentos-recetas-dnd-qa-20261124-v01.json'
+      - 'manifests/ci137-selected-source-137-historical-ids.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout CI137 expansion (no edit)
+        uses: actions/checkout@v4
+        with:
+          path: ci137
+      - name: Checkout exact MELIAZ Bridge 0.24.203 clean branch (no edit)
+        uses: actions/checkout@v4
+        with:
+          ref: work/meliaz-bridge-0.24.203-clean
+          path: bridge-source
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate both scripts are readable
+        run: |
+          python -m py_compile ci137/tools/foundry/ci137_bridge_recetas_readonly_gate.py
+          node --check bridge-source/module/meliaz-bridge/bridge.js
+      - name: Inspect actual Bridge source and historical Item crosswalk
+        run: |
+          python ci137/tools/foundry/ci137_bridge_recetas_readonly_gate.py \
+            --bridge bridge-source/module/meliaz-bridge/bridge.js \
+            --out ci137/dist/CI137_BRIDGE_RECETAS_DND_READONLY_REPORT.json
+      - name: Publish diagnostic report only, not an installable module
+        uses: actions/upload-artifact@v4
+        with:
+          name: CI137-BRIDGE-RECETAS-READONLY-AUDIT
+          path: ci137/dist/CI137_BRIDGE_RECETAS_DND_READONLY_REPORT.json
+          retention-days: 30
+          if-no-files-found: error
+
+# Neither Bridge, QA5 nor H6/H7/Forge nor main is modified or deployed by this workflow.
