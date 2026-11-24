@@ -58,7 +58,7 @@ def build(output, report):
          baseline["relationships"]["systems"][0]["id"] == "custom-system-builder",
          "system or SocketLib dependencies changed")
     assets = sorted(p for p in SOURCE.rglob("*") if p.is_file())
-    gate(len(assets) == 168, "reference inventory 168 source files changed")
+    gate(len(assets) == 63, "exact 0.24.203 installable ZIP has 63 files (65 entries with 2 directories); reference changed")
     webps = [p for p in assets if p.suffix.lower() == ".webp"]
     gate(len([p for p in webps if p.parent.name == "kona-token-icons"]) == 40,
          "Kona 40 token WebP inventory changed")
@@ -105,7 +105,7 @@ def build(output, report):
         else:
             files[rel] = raw
 
-    gate(len(files) == 168 and set(x["path"] for x in changes) ==
+    gate(len(files) == 63 and set(x["path"] for x in changes) ==
          {"module.json", "bridge.js", "kona-token-icons.js"},
          "only three runtime text files may change")
     for p in assets:
@@ -134,7 +134,7 @@ def build(output, report):
             info.compress_type = zipfile.ZIP_DEFLATED
             z.writestr(info, content)
     with zipfile.ZipFile(output) as z:
-        gate(z.testzip() is None and len(z.namelist()) == 168,
+        gate(z.testzip() is None and len(z.namelist()) == 63,
              "generated module CRC / inventory changed")
         m = json.loads(z.read("module.json"))
         gate(m["id"] == LAB and m["version"] == VERSION and
