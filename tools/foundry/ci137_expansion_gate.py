@@ -85,7 +85,7 @@ def main():
          "Turianos TUR01-06 codes changed")
     gate(m["families"]["adversarios"]["runtimeExcluded"] ==
          ["TUR-05 Sangu", "TUR-06 Popr"], "premature Turianos migration")
-    gate(m["families"]["culturas"]["candidatePages"] == 36 and
+    gate(m["targetPacks"]["ha-proto-journals"]["candidatePages"] == 36 and
          m["families"]["culturas"]["sourcePersistentId"] == "NOT_PRESENT_IN_0_4_75",
          "Culture Journal identity unverified")
     report = {
