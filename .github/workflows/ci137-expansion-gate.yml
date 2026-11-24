@@ -1,0 +1,29 @@
+name: CI137 Expansion - read-only catalog and identity gate
+
+on:
+  push:
+    branches: [work/ci137-expansion-familias-20261124]
+    paths:
+      - '.github/workflows/ci137-expansion-gate.yml'
+      - 'tools/foundry/ci137_expansion_gate.py'
+      - 'manifests/ci137-expansion-territorios-habitantes-culturas-v01.json'
+      - 'manifests/defensas-assets.json'
+      - 'manifests/turianos-assets.json'
+      - 'source/territorios/fauna/foundry-id-map.json'
+      - 'source/territorios/flora/foundry-id-map.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate staging manifest against existing authoritative identity maps
+        run: |
+          python -m py_compile tools/foundry/ci137_expansion_gate.py
+          python tools/foundry/ci137_expansion_gate.py
+# Never build a runtime ZIP or deploy automatically. Existing QA5 remains untouched.
