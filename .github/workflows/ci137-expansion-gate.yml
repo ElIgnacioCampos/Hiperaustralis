@@ -7,6 +7,10 @@ on:
       - '.github/workflows/ci137-expansion-gate.yml'
       - 'tools/foundry/ci137_expansion_gate.py'
       - 'manifests/ci137-expansion-territorios-habitantes-culturas-v01.json'
+      - 'manifests/ci137-selected-source-137-historical-ids.json'
+      - 'manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json'
+      - 'manifests/ci137-instrumentos-recetas-dnd-qa-20261124-v01.json'
+      - 'tools/foundry/ci137_pipeline.py'
       - 'manifests/defensas-assets.json'
       - 'manifests/turianos-assets.json'
       - 'source/territorios/fauna/foundry-id-map.json'
@@ -26,4 +30,16 @@ jobs:
         run: |
           python -m py_compile tools/foundry/ci137_expansion_gate.py
           python tools/foundry/ci137_expansion_gate.py
+      - name: Validate original 136-item transport mapping without building a Forge module
+        run: |
+          python -m py_compile tools/foundry/ci137_pipeline.py
+          python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/ci137-approved-image-check"
+          python - "$RUNNER_TEMP/ci137-approved-image-check" <<'PY'
+          import json,sys
+          from pathlib import Path
+          p=Path(sys.argv[1])
+          data=json.loads((p/"ci137-preflight.json").read_text())
+          assert data["count"]==136 and data["folders"]==9, "CI137 cardinality drift"
+          print("PASS 136 Items + 9 folders; 4 ERH visual approvals validated without transport")
+          PY
 # Never build a runtime ZIP or deploy automatically. Existing QA5 remains untouched.
