@@ -4,6 +4,14 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## H7 — CI137 listo como ZIP de prueba, NO publicado (24-11-2026)
+
+- **Base H7 jugable:** Foundry 14.367 / CSB 6.1.2 + `socketlib` + MELIAZ Bridge 0.24.203. Safe Configuration recuperó acceso; después de habilitar esos dos módulos la hoja Kona recuperó renderizado y conservó datos. No actualizar versiones esta noche.
+- **Artefacto preparado:** [CI137 H7 QA — GitHub Actions #45294118318](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45294118318) **PASS**. Descargar artefacto `CI137-H7-136-ISOLATED-QA-NO-PUBLICAR`, extraer dentro el ZIP `HIPERA7_CI137_QA_136_NO_PUBLICAR_v01.zip` y SHA256. Módulo existente `hiperaustralis-compendios-prototype` v0.1.6-ci137qa.1; 3 packs nativos: **136 Items, 1 Actor y 1 Journal de 21 páginas**, 9 carpetas, 5 plantillas. Código de compilación, QA solo lectura y manifiesto incluidos en rama aislada. Ningún instalador/migración automática, despliegue ni cambio en `main`.
+- **Bloqueo pendiente:** 99 referencias a imágenes del módulo legado y D3 visual/cliente no realizado. Forge reemplaza el módulo del mismo ID a nivel de cuenta, por lo que puede afectar otros mundos: **no instalar en H7 de juego directamente**.
+- **Mañana:** respaldo y clon desechable; revisar impacto global antes de importar ZIP; habilitar CI137 solo allí; comprobar tres packs, Kona, imágenes, macro `QA/CI137_H7_READONLY_QA.js` y dos reinicios. Si falla, restaurar respaldo. Sólo promover con D3 PASS y aprobación explícita.
+- **Decisiones:** paquete QA técnicamente compilado; publicación retenida. **Fuentes:** Actions #45294118318 y manifest CI137. **Estado Maestro, main, Bridge, Forge y H7:** intactos.
+
 ## H7 — Recuperación de arranque y criterio de subida (23-11-2026)
 
 **Incidencia de runtime informada por usuario:** Hipera 7, clonado de Hipera 5, **NO abre**, incluso con el módulo CI137 desactivado. Hipera 6 quedó inutilizable. **No existe evidencia que permita responsabilizar sólo a CI137**, ni afirmar que el mundo H7 está estabilizado.
