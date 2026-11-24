@@ -4,6 +4,14 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## CI137 / Procedencia recuperada — Flora binaria 48/48; Defensas sin fusión (24-11-2026)
+
+**Segundo cotejo, con los bytes originales recuperados:** fuente `HIPERAUSTRALIS_COMPENDIOS_0.4.75_OPTIMIZADO_LAB(1).zip`, SHA `c195fd0caf440ab3599a05780c0a7fbc7ebea9311ff85a89ac493f27f04f645e`, y rescate `CI137_FUENTE_FLORA_075_40_ICONOS_8_FONDOS_SOLO_RESCATE_20261123.zip`, SHA `5816ee481dfb3bd9620d2c4604c365cc2ed11f7899a973da3a1e6ea7c8cbb4ba`. **48/48 archivos gráficos comunes (40 iconos + 8 fondos) idénticos byte a byte**. Iconos **40/40 512×512 RGBA**. **0/40 SHA catalogados** y **0/40 tamaños catalogados** coinciden con los binarios optimizados 0.4.75. Binarios reales suman **3.641.622 B**, declarados en catálogo **9.107.212 B**. No se recuperó la variante con hashes declarados, ni corresponde atribuir la diferencia a una técnica concreta. `data/flora_items.json` demuestra **33/40 fondos referenciados a Totora**, no corregir por inferencia. [Acta forense](CI137_DEF_FLORA_PROCEDENCIA_BINARIA_Y_EQUIVALENCIAS_2026-11-24_v02.md).
+
+**Defensas:** cotejo de los ocho Items históricos con nueve candidatos por nombre/ámbito/material. `DEF-04` (casco) puede cruzar con defensas históricas `01/02/03`, `DEF-05` y `DEF-08` con `defensa-05` (coraza Lasana); ninguna identidad 1:1 acreditada. **Seis entradas sin par documental probado**, pero tampoco tienen fichas completas ni `_id` que habiliten instalación inmediata. Los COM aprobados de catálogo no tienen binarios finales cotejables en la fuente 0.4.75; `COM-09` permanece pendiente. **No hubo merge, sobreescritura ni nueva alta**.
+
+**Artefacto per-file creado en conversación:** `CI137_PRUEBA_PROCEDENCIA_FLORA_DEFENSAS_20261124_v02.json`, SHA `01f67ca9746f265d25d242ca3658aa55ebe566174831d49b148727c9e857694f`. El crosswalk `manifests/ci137-defensas-flora-crosswalk-20261124-v01.json` agrega la paridad 48/48 y deja bloqueados reemplazos o reexportaciones gráficas. [CI guard #45467114466](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45467114466) (verificar resultado antes de declarar PASS). El H7 en QA5, H6, Bridge y main **siguen intactos**. Maestro sin cambios.
+
 ## CI137 / Cotejo Defensas-Flora — auditoría 8+9 y 40/40 (24-11-2026)
 
 **Resultado auditado:** desde ZIP 0.4.75 real, 8 Defensas históricas cotejadas por `seedId` y 8 `_id` preservados en QA5. No son automáticamente los mismos objetos que las **9 nuevas entradas** DEF-01–09 (8 COM con imagen aprobada, COM-09 Tañaña pendiente). Solapamientos funcionales de las entradas DEF-04, DEF-05 y DEF-08 con algunos cascos/corazas existentes requieren decisión por ficha, sin merge. Fuente: [cotejo específico](CI137_COTEJO_DEFENSAS_FLORA_2026-11-24_v01.md).
