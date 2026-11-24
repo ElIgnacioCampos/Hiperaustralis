@@ -88,6 +88,49 @@ def main():
     gate(m["targetPacks"]["ha-proto-journals"]["candidatePages"] == 36 and
          m["families"]["culturas"]["sourcePersistentId"] == "NOT_PRESENT_IN_0_4_75",
          "Culture Journal identity unverified")
+    # Gate the new 8+9 Defensas / 40 Flora crosswalk against actual repository sources.
+    crosswalk = read("manifests/ci137-defensas-flora-crosswalk-20261124-v01.json")
+    gate(crosswalk["status"] == "AUDIT_ONLY_NO_APPROVED_DOCUMENT_UPDATES", "crosswalk prematurely promoted")
+    old_defenses = crosswalk["historicalDefenses"]
+    new_defenses = crosswalk["newDefenses"]
+    flora_records = crosswalk["flora"]
+    gate(len(old_defenses) == 8 and len(new_defenses) == 9 and
+         len(flora_records) == 40, "8+9+40 crosswalk cardinality drift")
+    gate(len({x["id"] for x in old_defenses}) == 8 and
+         all(VALID.fullmatch(x["id"]) for x in old_defenses),
+         "invalid historical Defense runtime ID")
+    gate(len({x["seedId"] for x in old_defenses}) == 8, "duplicate Defense source seed")
+    gate({x["catalogCode"] for x in new_defenses} ==
+         {x["catalogCode"] for x in defenses["items"]}, "catalog DEF codes mismatch")
+    for new in new_defenses:
+        source = next(x for x in defenses["items"] if x["catalogCode"] == new["catalogCode"])
+        gate(new["catalogName"] == source["name"] and
+             new["assetCode"] == source["assetCode"] and
+             new["graphicStatus"] == source["status"] and
+             new["runtimeId"] is None, "DEF entry promoted or altered: " + new["catalogCode"])
+        gate(all(seed in {x["seedId"] for x in old_defenses}
+                 for seed in new["possibleOverlapWithHistoricalSeeds"]),
+             "DEF overlap points outside historical items")
+    by_code = {x["codigo"]:x for x in flora_records}
+    gate(len(by_code) == 40 and set(by_code) == flo_codes, "FLO code identity mismatch")
+    for row in flos:
+        x = by_code[row["codigo"]]
+        gate(x["foundryId"] == row["foundryId"] and
+             x["seedId"] == row["seedId"] and
+             x["foundryName"] == row["nombre"] and
+             x["sourceNameFromZip075"] == row["nombre"] and
+             x["sourceUUID"] == row["uuid"],
+             "FLO source/name/ID/UUID mismatch: " + row["codigo"])
+        gate(x["sourceMatch"] == "NAME_CODE_SEED_MATCH_0_4_75" and
+             x["territoryMigration"] == "REFERENCE_ONLY_PENDING_9_CORE_MAP",
+             "FLO candidate status incorrectly promoted")
+    gate(crosswalk["sourceAudit"]["floraIconsRecomputedHashMatchesEditorial"] == 0 and
+         crosswalk["sourceAudit"]["floraBackgroundPathsHaveOnly8DistinctFiles"] is True and
+         crosswalk["sourceAudit"]["legacyTotoraBackgroundRefs"] == 33,
+         "historical binary audit status changed; inspect actual source ZIP first")
+    gate(crosswalk["gates"]["allRuntimeUpdatesBlocked"] and
+         crosswalk["gates"]["noMutationsToQA5"],
+         "runtime gate cannot be lifted by audit")
     report = {
         "status":"CI137_EXPANSION_STAGING_PREFLIGHT_PASS",
         "runtimeInstallation":False,
@@ -103,7 +146,12 @@ def main():
         "turianosCandidates":len(tur["actors"]),
         "amenyiFolder":"Habitantes/Amenyi",
         "turianosFolder":"Adversarios/Turianos",
-        "newRuntimeDocumentsInstalled":0
+        "newRuntimeDocumentsInstalled":0,
+        "crosswalkDefensasHistorical":len(old_defenses),
+        "crosswalkDefensasNewCatalog":len(new_defenses),
+        "crosswalkFloraRecords":len(flora_records),
+        "crosswalkFloraMatchedWithFoundryIds":len(flora_records),
+        "sourceZipImageHashesDivergeFromEditorial":40
     }
     print(json.dumps(report, ensure_ascii=False, indent=2))
 
