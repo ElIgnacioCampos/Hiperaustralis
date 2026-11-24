@@ -4,6 +4,23 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## CI137 / QA2 — Reconstrucción escalonada, sin despliegue (24-11-2026)
+
+**Incidente abierto:** [#2](https://github.com/ElIgnacioCampos/Hiperaustralis/issues/2). El ZIP QA1 anterior `0.1.6-ci137qa.1` pasó CRC/compilación pero H7 no abrió tras instalarlo. El usuario informa que la actualización de Foundry y Safe Configuration no recuperaron H7. La causa de runtime **NO está demostrada**; no afirmar que se deba exclusivamente a un LevelDB dañado, a una versión de Foundry o al compendio sin logs.
+
+**QA2 reconstruido desde fuentes, rama separada `work/ci137-qa2-rebuild-20261124`:** [Actions #45440705987](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45440705987) **PASS**. Se compilaron de nuevo, con Foundry CLI, los 136 Items y packs nativos de un Actor y un JournalEntry de 21 páginas; todos los checks de identidad y round-trip PASS. El empaquetador QA2 **no copia** ZIP, LevelDB ni `module.json` generados en QA1 y conserva el ID exacto `hiperaustralis-compendios-prototype`. Unicamente remapeos gráficos explícitos ya aprobados: 23 WebP que cubren 40 rutas; los 99 enlaces gráficos al módulo legado siguen sin resolver, sin suplencia ni reemplazo editorial.
+
+**Tres ZIP diagnósticos de un único artefacto Actions `CI137-QA2-THREE-STAGES-NO-INSTALL` (no publicados):**
+1. `CI137_QA2_min_NO_INSTALAR_SIN_QA.zip` — v0.1.6-ci137qa.2.0; módulo mínimo, sin packs; SHA256 `34819396552d5132151a0605a05b16a652a7dddfb414c2cbc5dc2604160a1c1e`, 842 bytes.
+2. `CI137_QA2_items_NO_INSTALAR_SIN_QA.zip` — v0.1.6-ci137qa.2.1; pack Items completo de 136, SHA256 `0af96eb0cc991643eab96fb3ef2f2c30b55aa9fcc0b31826af46b5ec9a481c35`, 1.526.162 bytes.
+3. `CI137_QA2_full_NO_INSTALAR_SIN_QA.zip` — v0.1.6-ci137qa.2.2; 3 packs y arte aprobado, SHA256 `a84ba871a058ef3c4847d36a0563dae79f744023b009ed6cf5cb9cd7968ade64`, 1.542.728 bytes.
+
+Todos tienen CRC PASS, manifiesto en raíz y **ningún script, hook, descarga, actualización automática, release ni publicación**. El pipeline verificó separación 0/1/3 compendios y conserva bloqueo de distribución. **No se ha realizado prueba real de arranque D3**. Los tres paquetes usan el mismo ID: instalarlos en Forge reemplaza a nivel de cuenta el prototipo de otros mundos; NO probar en H6/H7 ni en un Forge compartido sin plan de rollback.
+
+**Puerta de diagnóstico futura:** probar MIN en instancia desechable estrictamente aislada → comprobar arranque; si PASS, probar ITEMS con 136 → comprobar arranque, F12 y reentrada; si PASS, FULL con Actor y Journal → dos reinicios y revisión manual. Parar en la primera etapa fallida y recoger logs. Sólo entonces corregir el componente identificado; no diseñar de nuevo a ciegas.
+
+**Decisiones:** mismas identidades históricas, ninguna imagen modificada, reconstrucción por etapas verificables. **Pendientes:** D3 real, origen preciso de caída, 99 referencias, decisión de publicación. **Fuentes:** ZIP QA1 original, nuevas fuentes de compilación, Actions #45440705987. **Cambios al Estado Maestro, main, Bridge, Forge, H6, H7:** ninguno.
+
 ## H7 — CI137 listo como ZIP de prueba, NO publicado (24-11-2026)
 
 - **Base H7 jugable:** Foundry 14.367 / CSB 6.1.2 + `socketlib` + MELIAZ Bridge 0.24.203. Safe Configuration recuperó acceso; después de habilitar esos dos módulos la hoja Kona recuperó renderizado y conservó datos. No actualizar versiones esta noche.
