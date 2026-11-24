@@ -128,6 +128,16 @@ def main():
          crosswalk["sourceAudit"]["floraBackgroundPathsHaveOnly8DistinctFiles"] is True and
          crosswalk["sourceAudit"]["legacyTotoraBackgroundRefs"] == 33,
          "historical binary audit status changed; inspect actual source ZIP first")
+    binary = crosswalk["sourceAudit"]
+    gate(binary["exactBinRescue48Of48"] and
+         binary["floraRescuedImageFilesByteIdenticalTo075"] == 48 and
+         binary["floraIcon512RGBA"] == 40 and
+         binary["floraIconActualTotalBytes"] == 3641622 and
+         binary["floraCatalogClaimedTotalBytes"] == 9107212 and
+         binary["floraIconSourceDoesNotMatchClaimedHashCount"] == 40 and
+         binary["sourceCatalogImageVersionUnknown"] and
+         binary["assetReencodingNotAuthorized"],
+         "Flora source binary audit or editorial gate drift")
     gate(crosswalk["gates"]["allRuntimeUpdatesBlocked"] and
          crosswalk["gates"]["noMutationsToQA5"],
          "runtime gate cannot be lifted by audit")
