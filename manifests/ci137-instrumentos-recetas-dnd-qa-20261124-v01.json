@@ -1,0 +1,352 @@
+{
+  "schema": "ci137-bridge-recetas-dnd-static-audit-v01",
+  "cut": "2026-11-24",
+  "status": "SOURCE_COTEJO_NO_PATCH_NO_INSTALL",
+  "module": {
+    "id": "hiperaustralis-compendios-prototype",
+    "version": "0.1.7-ci137qa.5",
+    "foundry": "14.370",
+    "csb": "6.1.2",
+    "source": "manifests/ci137-selected-source-137-historical-ids.json"
+  },
+  "bridge": {
+    "ref": "work/meliaz-bridge-0.24.203-clean",
+    "version": "0.24.203",
+    "source": "module/meliaz-bridge/bridge.js",
+    "verifiedCurrentBehavior": {
+      "recognizedKindsIncludesReceta": false,
+      "territorioAcceptedItemKinds": [
+        "flora",
+        "fauna",
+        "funga",
+        "bioma"
+      ],
+      "instrumentDropTarget": "SENTIR",
+      "relicDropTarget": "RELIQUIAS",
+      "journalTerritorio": "world.territorio",
+      "recipeItemDragDropSupported": false
+    },
+    "requiredChange": "TYPE_RECOGNITION_PLUS_DROP_TARGET_AND_RENDER_ROUTE_NEED_AUTHORIAL_TARGET_CLARIFICATION",
+    "runtimePatchPrepared": false
+  },
+  "instruments": {
+    "count": 21,
+    "approvedRemaps": 6,
+    "nameOnlyCandidates": 11,
+    "ambiguous": 4,
+    "entries": [
+      {
+        "id": "Aobt60Pl1vy7i7MU",
+        "name": "Antara Lickanantay",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/Aobt60Pl1vy7i7MU.json",
+        "kind": "instrumento",
+        "approval": "NAME_MATCH_ONLY_CANDIDATE",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/04_antara_lickanantay.webp",
+        "approvedAsset": null,
+        "assetSHA256": null,
+        "identityWarning": null,
+        "changeAuthorized": false
+      },
+      {
+        "id": "zSsH0T0CZzJ4nNQB",
+        "name": "Antara Tiwanaku",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/zSsH0T0CZzJ4nNQB.json",
+        "kind": "instrumento",
+        "approval": "NAME_MATCH_ONLY_CANDIDATE",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/02_antara_tiwanaku.webp",
+        "approvedAsset": null,
+        "assetSHA256": null,
+        "identityWarning": null,
+        "changeAuthorized": false
+      },
+      {
+        "id": "j7J6wcAttET8rJpB",
+        "name": "Arpa de boca",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/j7J6wcAttET8rJpB.json",
+        "kind": "instrumento",
+        "approval": "AMBIGUOUS_NOT_MAPPED",
+        "candidateAsset": null,
+        "approvedAsset": null,
+        "assetSHA256": null,
+        "identityWarning": "Instrumento nórdico; el WebP ARPA_BOCA_NORDICA existe, pero su ficha ERH registra pendiente técnico runtime.",
+        "changeAuthorized": false
+      },
+      {
+        "id": "RzhInApxuwq1o651",
+        "name": "Campana Lickanantay",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/RzhInApxuwq1o651.json",
+        "kind": "instrumento",
+        "approval": "AMBIGUOUS_NOT_MAPPED",
+        "candidateAsset": null,
+        "approvedAsset": null,
+        "assetSHA256": null,
+        "identityWarning": "Campana de cobre irregular Lickanantay; la ilustración disponible representa una campana piramidal, sin identidad material probada.",
+        "changeAuthorized": false
+      },
+      {
+        "id": "INdG4JndLBl0sWto",
+        "name": "Cuerno musical nórdico",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/INdG4JndLBl0sWto.json",
+        "kind": "instrumento",
+        "approval": "AMBIGUOUS_NOT_MAPPED",
+        "candidateAsset": null,
+        "approvedAsset": null,
+        "assetSHA256": null,
+        "identityWarning": "Cuerno musical nórdico; coincidencia de nombre genérico no verifica que el dibujo ERH represente el mismo instrumento.",
+        "changeAuthorized": false
+      },
+      {
+        "id": "YfFAFtBpsdyU2l9R",
+        "name": "Flauta de hueso",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/YfFAFtBpsdyU2l9R.json",
+        "kind": "instrumento",
+        "approval": "AMBIGUOUS_NOT_MAPPED",
+        "candidateAsset": null,
+        "approvedAsset": null,
+        "assetSHA256": null,
+        "identityWarning": "Flauta de hueso de origen nórdico; dibujo ERH genérico no acredita pertenencia cultural ni forma exacta.",
+        "changeAuthorized": false
+      },
+      {
+        "id": "R1exJG9q2EP8URHe",
+        "name": "Flauta traversa de Coyo",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/R1exJG9q2EP8URHe.json",
+        "kind": "instrumento",
+        "approval": "NAME_MATCH_ONLY_CANDIDATE",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/FLAUTA_COYO_ERH_256.webp",
+        "approvedAsset": null,
+        "assetSHA256": null,
+        "identityWarning": null,
+        "changeAuthorized": false
+      },
+      {
+        "id": "1dhUgcpr5U3wAQ1l",
+        "name": "Kakel-kultrung",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/1dhUgcpr5U3wAQ1l.json",
+        "kind": "instrumento",
+        "approval": "NAME_MATCH_ONLY_CANDIDATE",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/kakel_kultrung_ERH_256.webp",
+        "approvedAsset": null,
+        "assetSHA256": null,
+        "identityWarning": null,
+        "changeAuthorized": false
+      },
+      {
+        "id": "vr5gUbTNMU8tj3zL",
+        "name": "Kaskawilla",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/vr5gUbTNMU8tj3zL.json",
+        "kind": "instrumento",
+        "approval": "APPROVED_ERH_REMAP",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/kaskawilla_erh_256.webp",
+        "approvedAsset": "assets/instrumentos/kaskawilla_erh_256.webp",
+        "assetSHA256": "99d04f3c8d65226cfb8e10a1bbdb168e37bd1e41ed4cd3d78e00aec5668377e6",
+        "identityWarning": null,
+        "changeAuthorized": true
+      },
+      {
+        "id": "K7d2oqF6P7DB0Kpt",
+        "name": "Kultrung",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/K7d2oqF6P7DB0Kpt.json",
+        "kind": "instrumento",
+        "approval": "APPROVED_ERH_REMAP",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/kultrung_erh_256.webp",
+        "approvedAsset": "assets/instrumentos/kultrung_erh_256.webp",
+        "assetSHA256": "f6871ff1e0f968dbf7e745461364dccd68ed79f3dd92063026bdee65bf470be2",
+        "identityWarning": null,
+        "changeAuthorized": true
+      },
+      {
+        "id": "7yTC2u73mcFuQrx2",
+        "name": "Lira nórdica",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/7yTC2u73mcFuQrx2.json",
+        "kind": "instrumento",
+        "approval": "NAME_MATCH_ONLY_CANDIDATE",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/LIRA_ERH_256.webp",
+        "approvedAsset": null,
+        "assetSHA256": null,
+        "identityWarning": null,
+        "changeAuthorized": false
+      },
+      {
+        "id": "IG8DW7Wr30mg1jqx",
+        "name": "Pifüllka",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/IG8DW7Wr30mg1jqx.json",
+        "kind": "instrumento",
+        "approval": "APPROVED_ERH_REMAP",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/pifullka_erh_256.webp",
+        "approvedAsset": "assets/instrumentos/pifullka_erh_256.webp",
+        "assetSHA256": "c4e1aeec786511dff44f84e9a8f80897e84ee43fbf991c12970fd59d6afa748d",
+        "identityWarning": null,
+        "changeAuthorized": true
+      },
+      {
+        "id": "KpK5mqDdleRnemjh",
+        "name": "Piloilo",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/KpK5mqDdleRnemjh.json",
+        "kind": "instrumento",
+        "approval": "APPROVED_ERH_REMAP",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/piloilo_erh_256.webp",
+        "approvedAsset": "assets/instrumentos/piloilo_erh_256.webp",
+        "assetSHA256": "44fe741c96bbcdc185fe45b225dbf4aa13764d2abc039539eb8ad207cef81fe4",
+        "identityWarning": null,
+        "changeAuthorized": true
+      },
+      {
+        "id": "JZUzx0bNMoDj6xs5",
+        "name": "Pututu",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/JZUzx0bNMoDj6xs5.json",
+        "kind": "instrumento",
+        "approval": "APPROVED_ERH_REMAP",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/pututu_erh_256.webp",
+        "approvedAsset": "assets/instrumentos/pututu_erh_256.webp",
+        "assetSHA256": "c85f79ac0e51f2194be355b76b6bc679ffb9163c3e2db116d7ef559aed333e77",
+        "identityWarning": null,
+        "changeAuthorized": true
+      },
+      {
+        "id": "K4BKDYp47LohrxuD",
+        "name": "Siku",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/K4BKDYp47LohrxuD.json",
+        "kind": "instrumento",
+        "approval": "NAME_MATCH_ONLY_CANDIDATE",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/SIKU_ERH_256.webp",
+        "approvedAsset": null,
+        "assetSHA256": null,
+        "identityWarning": null,
+        "changeAuthorized": false
+      },
+      {
+        "id": "VMdFQpCaienOgLV4",
+        "name": "Sonaja Aymara",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/VMdFQpCaienOgLV4.json",
+        "kind": "instrumento",
+        "approval": "NAME_MATCH_ONLY_CANDIDATE",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/03_sonaja_aymara.webp",
+        "approvedAsset": null,
+        "assetSHA256": null,
+        "identityWarning": null,
+        "changeAuthorized": false
+      },
+      {
+        "id": "RiMXmUYNYn5VRKrx",
+        "name": "Sonajero de hierro",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/RiMXmUYNYn5VRKrx.json",
+        "kind": "instrumento",
+        "approval": "NAME_MATCH_ONLY_CANDIDATE",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/SONAJERO_HIERRO_ERH_256.webp",
+        "approvedAsset": null,
+        "assetSHA256": null,
+        "identityWarning": null,
+        "changeAuthorized": false
+      },
+      {
+        "id": "tvgKf9WGkUmy6GJi",
+        "name": "Sonajero Lickanantay",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/tvgKf9WGkUmy6GJi.json",
+        "kind": "instrumento",
+        "approval": "NAME_MATCH_ONLY_CANDIDATE",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/06_sonajero_lickanantay.webp",
+        "approvedAsset": null,
+        "assetSHA256": null,
+        "identityWarning": null,
+        "changeAuthorized": false
+      },
+      {
+        "id": "Akd70OCwmrJ0az3P",
+        "name": "Trompeta monóxila",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/Akd70OCwmrJ0az3P.json",
+        "kind": "instrumento",
+        "approval": "NAME_MATCH_ONLY_CANDIDATE",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/05_trompeta_monoxila.webp",
+        "approvedAsset": null,
+        "assetSHA256": null,
+        "identityWarning": null,
+        "changeAuthorized": false
+      },
+      {
+        "id": "FvfW6Ug0yCyR7VjF",
+        "name": "Wankara",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/FvfW6Ug0yCyR7VjF.json",
+        "kind": "instrumento",
+        "approval": "NAME_MATCH_ONLY_CANDIDATE",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/01_wankara.webp",
+        "approvedAsset": null,
+        "assetSHA256": null,
+        "identityWarning": null,
+        "changeAuthorized": false
+      },
+      {
+        "id": "gp4b3XE6mJGvqE9X",
+        "name": "Waza",
+        "source": "source-pending/ci137-historicos-99/instrumentos-musicales/gp4b3XE6mJGvqE9X.json",
+        "kind": "instrumento",
+        "approval": "APPROVED_ERH_REMAP",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/waza_erh_256.webp",
+        "approvedAsset": "assets/instrumentos/waza_erh_256.webp",
+        "assetSHA256": "42516d8a32aa293a146639ac844a515d1b6aa751362e6dcba858d3a7109e42d5",
+        "identityWarning": null,
+        "changeAuthorized": true
+      }
+    ]
+  },
+  "relics": {
+    "historical": 16,
+    "subgroups": {
+      "cotidianas": 8,
+      "legendarias": 8,
+      "tokicura": 1
+    },
+    "sourceIDs": [
+      "q3HXoB750L6j6XHK",
+      "CtMcaOnMjw23zWmq",
+      "frD3BIM7bklCxPle",
+      "z8BEvJ4uHgLSZePS",
+      "a9NdZq068ANs5hnR",
+      "u5Vbl3gGUL4kJJQ2",
+      "sdQeeQDV2W6EVl2w",
+      "tr9AQooUcnTtAxO3",
+      "TADm8tlCkyns4iwE",
+      "T0yw5ZsA7WtDOB9G",
+      "3Rjv67wd9g9rVwka",
+      "NSOxLP5BMpfX7L57",
+      "ik1kdfVoqQbbTAmH",
+      "UrZNB1QgdnAghNQb",
+      "607Y5Z4vouHf8vEi",
+      "sRDyvzOfCVjdHJ0D",
+      "TokicuraRel0001"
+    ],
+    "approvedVisualsInQAZip": 16,
+    "typicalItemTemplate": "HipRelqTpl000001",
+    "dropImplemented": "TEMPLE_RELIQUIAS",
+    "tokicuraSeparate": true,
+    "d3DropNotTested": true
+  },
+  "recipes": {
+    "confirmedSourceItemsInGitHub": 0,
+    "confirmedSourceItemsInQA5": 0,
+    "approvedItemIds": [],
+    "territoryFolderCount": 9,
+    "folder": "Territorio/{territory}/Recetas",
+    "outsideFFF": true,
+    "documentType": "Item",
+    "dragDropRequired": true,
+    "destinationInKona": "NOT_EXPLICITLY_APPROVED_DO_NOT_DESIGN_NEW_SLOT",
+    "currentBridgeRecognition": false,
+    "clientQa": "BLOCKED_BY_SOURCE_AND_BRIDGE",
+    "sourceNotFound": [
+      "source tree CI137 at 2026-11-24",
+      "QA5 full ZIP",
+      "Foundry export 2026-11-19"
+    ],
+    "noFabricatedDocs": true
+  },
+  "gates": {
+    "noAutoMigration": true,
+    "noVisualRegeneration": true,
+    "noQA5Replacement": true,
+    "noBridgeMutation": true,
+    "onlyCitableSourceIDs": true,
+    "approveRecipeTargetBeforeRuntimePatch": true,
+    "sourceImageSpecificApprovalRequired": true
+  }
+}
