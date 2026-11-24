@@ -4,6 +4,20 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## CI137 / QA2 — Lote corregido, 44 WebP preservados (24-11-2026)
+
+**Paquete definitivo del ciclo de QA2 (todavía NO apto para instalar en H7):** [GitHub Actions #45441275181](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45441275181) **PASS**, artefacto `CI137-QA2-THREE-STAGES-NO-INSTALL`. **SUSTITUYE al ZIP de ensayo #45440705987**: el primer ensayo omitía 21 recursos originales de módulo y la macro QA; queda descartado para cualquier instalación. El ciclo corregido preserva **los 44 WebP exactos del módulo v0.1.5** más los 23 destinos de arte con SHA aprobado (incluidos en esos 44), y añade control QA sólo lectura.
+
+| Etapa | Versión | Contenido | Bytes | SHA-256 |
+|---|---|---|---:|---|
+| MIN | `0.1.6-ci137qa.2.0` | Sin packs ni arte, diagnóstico de carga base; **sólo instancia desechable, afectaría al ID compartido** | 842 | `34819396552d5132151a0605a05b16a652a7dddfb414c2cbc5dc2604160a1c1e` |
+| ITEMS | `0.1.6-ci137qa.2.1` | 136 Items, 44 WebP existentes, QA sólo lectura | 2.656.081 | `808026a9db24d71a071227d2c47178c2ccb93157213e6c31fe7245e899634e1d` |
+| FULL | `0.1.6-ci137qa.2.2` | 136 Items + 1 Actor + 1 Journal de 21 páginas, 44 WebP, QA sólo lectura | 2.672.644 | `7c650bbac991a056eb2fc1a015d8fcf29d008765e94958d55fcb8fcf7f4` |
+
+Los tres ZIP reales fueron descargados desde Actions y revisados adicionalmente con CRC PASS, entradas 2/55/67, un solo `module.json` de ID correcto, 0/1/3 packs, **sin scripts de arranque ni migraciones**. Conservar el ID del prototipo implica **impacto global en Forge**: no probar este material en una instalación compartida con H6 ni H7 sin entorno aislado. **La identidad del contenido LevelDB de QA2 frente a QA1 sigue siendo idéntica**, salvo archivos LOG. La compilación no es reparación demostrada.
+
+**Decisiones:** preservar todo arte y datos históricos, unificar todos los scripts bajo rama aislada, bloquear release/instalación general. **Pendientes:** arranque Foundry real por etapas y logs de fallo, QA D3, 99 referencias heredadas. **Maestro, main, Bridge, Forge, H6/H7:** no alterados.
+
 ## CI137 / QA2 — Reconstrucción escalonada, sin despliegue (24-11-2026)
 
 **Incidente abierto:** [#2](https://github.com/ElIgnacioCampos/Hiperaustralis/issues/2). El ZIP QA1 anterior `0.1.6-ci137qa.1` pasó CRC/compilación pero H7 no abrió tras instalarlo. El usuario informa que la actualización de Foundry y Safe Configuration no recuperaron H7. La causa de runtime **NO está demostrada**; no afirmar que se deba exclusivamente a un LevelDB dañado, a una versión de Foundry o al compendio sin logs.
