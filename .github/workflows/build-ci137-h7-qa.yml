@@ -82,6 +82,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         name: CI137-H7-136-ISOLATED-QA-NO-PUBLICAR
         with:
+          name: CI137-H7-136-ISOLATED-QA-NO-PUBLICAR
           path: dist/*
           if-no-files-found: error
           retention-days: 30
