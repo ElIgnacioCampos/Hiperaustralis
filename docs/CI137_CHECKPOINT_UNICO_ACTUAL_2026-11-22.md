@@ -4,6 +4,16 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## H7 — Reinicio persistente con QA5 y ampliación a preparar (24-11-2026)
+
+**Confirmación autoral nueva:** «reaparecieron», refiriéndose a los tres compendios tras reiniciar H7 con CI137 QA5 activado. **Reinicio y persistencia de packs PASS informados**, adicional al PASS visual anterior de apertura/9 carpetas. No se afirma conteo íntegro de 136, todas las imágenes, ni un segundo reinicio adicional no reportado.
+
+**Nueva orden de alcance (24-11-2026):** completar Defensas nuevas, Fauna/Flora/Funga por Territorio, Habitantes y Culturas; colocar **Amenyi bajo Habitantes** y **Turianos bajo Adversarios**. Se abrió **rama derivada aislada** `work/ci137-expansion-familias-20261124`; fuente de implementación: [manifiesto de ampliación](../manifests/ci137-expansion-territorios-habitantes-culturas-v01.json), [checkpoint de alcance y fuentes](CI137_EXPANSION_FAMILIAS_TERRITORIOS_HAB_CULT_2026-11-24.md), guard de solo lectura `tools/foundry/ci137_expansion_gate.py`.
+
+**QA preflight de estructura histórica y crosswalk**: [GitHub Actions #45463836502](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45463836502) **PASS**, cero documentos añadidos. El guard coteja nueve territorios, 36 referencias principales FAU, mapa Foundry de 50 FAU y 40 FLO, nueve DEF de catálogo, ocho COM con archivo, seis TUR candidatos, ubicación Amenyi/Turianos y bloqueos editoriales. **No es un módulo ampliado ni una prueba D3 de familias nuevas.**
+
+**Decisión y salvaguarda:** QA5 permanece operativa, **ningún nuevo ZIP instalado en Forge**; no confundir los ocho registros antiguos de Defensas con nueve DEF nuevos, ni 50 FAU de Foundry con 44 activos del banco; no trasladar Funga sin clasificación; Turianos TUR-05/Sangu queda fuera de runtime. El catálogo técnico territorial sigue los 9 Territorios CORE posteriores, no confunde Titicaca/Paititi con sus reemplazos. **Pendientes:** recuperar payloads/IDs canónicos para actores y culturas, verificar imagen aprobada y familias por territorio, integrar en lote testable con V14-IDs y regresión QA5. **Estado Maestro, main, H6, H7, Bridge, Forge:** intactos desde este registro.
+
 ## H7 — QA5: nueve carpetas verificadas visualmente (24-11-2026)
 
 **Evidencia:** captura de H7/Foundry V14.370 aportada por el usuario (24-11-2026, 15:42 Chile), compendio **HA · Prototipo · Objetos** desplegado hasta el nivel de Rituales. **9/9 carpetas visibles:** Armas, Defensas, Equipo común, Instrumentos musicales, Parafernalia, Reliquias y Rituales como categorías principales; dentro de Reliquias, subcarpetas **Cotidianas** y **Legendarias**. Jerarquía 7+2, navegación/expansión y visualización: **D3 VISUAL FOLDERS PASS**. La captura exhibe Items de Rituales **Atar, Consultar, Despedir, Lakutun · Legar, Renovar Arraigo y Restituir**, todos con iconos a la vista. No certificar por ello la existencia de los 8 rituales íntegros ni de los 136 Items: no se ven todos.
