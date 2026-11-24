@@ -22,6 +22,16 @@
 
 **ZIP LAB:** `meliaz-bridge-lab-0.24.204-lab.0-NO_H6_H7.zip`, **5.004.440 bytes**, SHA256 `6e6001d3b99fd4621e366838af592dd86acc7cc1cbfb9ecabb8cd4fe042da9c8`. Archivo externo del artefacto: `MELIAZ_BRIDGE_LAB_024204_D2_AISLADO_20261124.zip`.
 
+### Verificación forense independiente del artefacto original vs LAB
+
+Desde el runtime local se extrajeron **ambos ZIP instalables exactos** del archivo GitHub Actions. Al eliminar *sólo* el guardia LAB y revertir `meliaz-bridge-lab` → `meliaz-bridge` en las dos cadenas JavaScript nuevas, **`bridge.js` y `kona-token-icons.js` resultan byte a byte idénticos** a los respectivos JS del ZIP original 0.24.203. La hoja WebP y la placa PNG son también **idénticas byte a byte**. El resto de activos permanece intacto. La única diferencia incidental entre la fuente GitHub limpia y el ZIP original es el fichero **documental** `QA_RUNTIME_0.24.203_FORGE.md`, sin repercusión en código de ejecución.
+
+Los ZIP instalables directos se extrajeron y verificaron:
+- Original estable: `MELIAZ_BRIDGE_0.24.203_RESPALDO_VERIFICADO.zip`, 5.001.596 B, SHA `57748ab63d90675311b92dec258d0d5ab232477eefd394edf0757d51df457ea5`.
+- Laboratorio: `MELIAZ_BRIDGE_LAB_0.24.204_NO_H6_H7.zip`, 5.004.440 B, SHA `6e6001d3b99fd4621e366838af592dd86acc7cc1cbfb9ecabb8cd4fe042da9c8`.
+
+Esto **prueba conservación binaria del original** y transformaciones delimitadas del LAB; **no prueba todavía arranque ni funcionalidad** en Foundry/Forge D3. Los archivos de respaldo se entregan desde la conversación, sin modificar ninguna instalación.
+
 ## 2. Funciones existentes y límites de prueba
 
 | Área | Comportamiento en el JS fuente 0.24.203 | Estado |
