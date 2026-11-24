@@ -1,8 +1,8 @@
 {
   "id": "hiperaustralis-compendios-prototype",
-  "title": "Hiperaustralis · Compendios CI137 (V14.370 · QA)",
-  "description": "CI137 candidato para Foundry V14.370 y Custom System Builder 6.1.2; 136 Items históricos. No publicar hasta QA de runtime en Forge.",
-  "version": "0.1.7-ci137qa.4",
+  "title": "Hiperaustralis · Compendios CI137 (V14.370 · QA5 IDs)",
+  "description": "CI137 con validación estricta de IDs Foundry V14.370 y CSB 6.1.2; 136 Items históricos, un alias técnico documentado (Tokicura). QA runtime pendiente.",
+  "version": "0.1.7-ci137qa.5",
   "authors": [
     {
       "name": "Hiperaustralis RPG"
