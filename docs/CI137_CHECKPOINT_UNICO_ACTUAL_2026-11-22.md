@@ -4,6 +4,21 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## CI137 / QA4 — Módulo actualizado para Foundry 14.370 (24-11-2026)
+
+**Solicitud:** el usuario confirma Foundry V14.370 y CSB 6.1.2 y pide actualizar efectivamente el módulo nativo para esa versión, por hipótesis de que compatibilidad antigua impide verlo. El **legado 0.4.103 sigue siendo otro módulo con otro ID**.
+
+**Cambio ejecutado en rama aislada** `work/ci137-foundry-14-370-20261124`:
+- Fuente `module/module.json`: mismo `id = hiperaustralis-compendios-prototype`; nueva versión **`0.1.7-ci137qa.4`**, título explícito V14.370, compatibilidad Foundry `minimum=14.370, verified=14.370`, Custom System Builder `minimum=6.1.2, verified=6.1.2`. Se eliminaron URL `manifest`/`download` anticuadas que seguían apuntando a v0.1.5. **Nota de precisión:** `verified` es la declaración del manifiesto y aún no acredita prueba real de Foundry/Forge D3.
+- Nuevo ensamblador `tools/foundry/ci137_foundry14_370.py`: toma una **recompilación QA3 FULL de este mismo CI**, conserva los 136 Items e IDs históricos, 9 carpetas, 5 plantillas, Actor y Journal original (21 páginas), 44 imágenes WebP aprobadas y 99 referencias a legado pendientes. No inserta hooks, scripts, instaladores ni migración automática.
+- Nuevo workflow aislado `.github/workflows/ci137-foundry-14-370.yml` [Actions #45453764801](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45453764801) **PASS**: Foundry CLI v3.0.5 recompiló desde JSON y abrió los tres compendios LevelDB **después** de extraer el ZIP final; prueba 136/136 Items, CRC/manifest/rutas sin colisiones/LOCK/LOG, 44 WebP.
+
+**Un único archivo ZIP instalable directamente**: `HIPERAUSTRALIS_CI137_V14_370_QA4_DIRECTO_FORGE.zip`, **2.670.680 bytes**, SHA-256 **`bb4f90d3432381758250d7b5c299b17538546a8adfff833903d5e80aa2314592`**. Recibido y verificado físicamente contra el artefacto GitHub #14948907947; 57 entradas, **`module.json` en raíz**, 0 archivos ZIP anidados, 0 ficheros transitorios; tres packs `ha-proto-items`, `ha-proto-actors`, `ha-proto-journals`, 44 WebP, CRC PASS. No confundir con ZIP envoltorio de GitHub Actions.
+
+**Resultado:** **QA estático/CLI PASS**; **instalación y visibilidad en Forge NO VERIFICADAS**, **Foundry runtime D3 PENDIENTE**. El usuario conservó H6 como respaldo y reportó H7 estable sin CI137. No se tocó H6, H7, Forge, Bridge ni `main`. El artefacto comparte el ID con prototipo antiguo: Forge puede sobrescribir globalmente dicho módulo. El siguiente ensayo debe completar `Import` (no sólo Analyze), registrar resultado del Wizard, Stop Server → Start Server y comprobar en H7 Module Management/3 packs/hoja Kona/dos reinicios. Si no aparece, View Data Storage / Foundry Logs.
+
+**Decisiones:** actualizar manifest y paquete explícitamente a Foundry 14.370; ZIP directo único, sin reescritura editorial ni arte nuevo. **Pendientes:** D3 Forge, visibilidad, runtime, imagen histórica, resolver 99 enlaces. **Fuentes:** rama QA4, Actions #45453764801, SHA físico, comunicación del usuario. **Cambios Maestro / main / Bridge / Forge / H6/H7:** ninguno.
+
 ## H7 / Registro de módulo — captura 14.370 (24-11-2026)
 
 **Hecho observado:** captura Foundry 14.370, CSB 6.1.2, Module Management 84 módulos, 3 activos. `Hiperaustralis · Compendios` **0.4.103** es el módulo **legado** `hiperaustralis-rituales`, **no una versión previa de CI137**. Visibles Bridge 0.24.203 (activo), Reparación Kona 1.0.3 y Cetáceos FAU-033–036 1.2.0. **No aparece** `hiperaustralis-compendios-prototype` ni `Hiperaustralis · CI137 QA3 FULL`. Contraste con la captura anterior Import Wizard: allí Forge **sí identifica** el ZIP individual como un módulo de compendios, pero esa pantalla sólo acredita análisis, no Import exitoso. No hay evidencia en chat de completar Import ni de reiniciar el **servidor** después de hacerlo.
