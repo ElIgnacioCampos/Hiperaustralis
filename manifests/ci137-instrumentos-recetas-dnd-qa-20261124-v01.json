@@ -1,7 +1,7 @@
 {
   "schema": "ci137-bridge-recetas-dnd-static-audit-v01",
   "cut": "2026-11-24",
-  "status": "SOURCE_COTEJO_NO_PATCH_NO_INSTALL",
+  "status": "AUTHOR_VISUAL_APPROVAL_4_ERH_STAGE_ONLY_DND_RECIPES_BLOCKED",
   "module": {
     "id": "hiperaustralis-compendios-prototype",
     "version": "0.1.7-ci137qa.5",
@@ -33,7 +33,7 @@
     "count": 21,
     "approvedRemaps": 6,
     "nameOnlyCandidates": 11,
-    "ambiguous": 4,
+    "ambiguous": 0,
     "entries": [
       {
         "id": "Aobt60Pl1vy7i7MU",
@@ -64,48 +64,68 @@
         "name": "Arpa de boca",
         "source": "source-pending/ci137-historicos-99/instrumentos-musicales/j7J6wcAttET8rJpB.json",
         "kind": "instrumento",
-        "approval": "AMBIGUOUS_NOT_MAPPED",
-        "candidateAsset": null,
+        "approval": "AUTHOR_VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECH",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/ARPA_BOCA_NORDICA_ERH_256.webp",
         "approvedAsset": null,
         "assetSHA256": null,
-        "identityWarning": "Instrumento nórdico; el WebP ARPA_BOCA_NORDICA existe, pero su ficha ERH registra pendiente técnico runtime.",
-        "changeAuthorized": false
+        "identityWarning": "Superada por selección visual explícita de la segunda imagen. Pendiente transporte técnico y QA runtime.",
+        "changeAuthorized": false,
+        "approvedVisualAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/ARPA_BOCA_NORDICA_ERH_256.webp",
+        "approvedVisualSHA256": "eae0fbc7330c34bea7a66a147e2929c54bc43d0f820031887e56b799431d09b8",
+        "approvedVisualBytes": 34724,
+        "visualApprovalReference": "manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json",
+        "technicalStatus": "PREEXISTING_PENDING_RUNTIME_ARPA_BOCA"
       },
       {
         "id": "RzhInApxuwq1o651",
         "name": "Campana Lickanantay",
         "source": "source-pending/ci137-historicos-99/instrumentos-musicales/RzhInApxuwq1o651.json",
         "kind": "instrumento",
-        "approval": "AMBIGUOUS_NOT_MAPPED",
-        "candidateAsset": null,
+        "approval": "AUTHOR_VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECH",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/CAMPANA_PIRAMIDAL_ERH_256.webp",
         "approvedAsset": null,
         "assetSHA256": null,
-        "identityWarning": "Campana de cobre irregular Lickanantay; la ilustración disponible representa una campana piramidal, sin identidad material probada.",
-        "changeAuthorized": false
+        "identityWarning": "Superada por selección visual explícita de la segunda imagen. Pendiente transporte técnico y QA runtime.",
+        "changeAuthorized": false,
+        "approvedVisualAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/CAMPANA_PIRAMIDAL_ERH_256.webp",
+        "approvedVisualSHA256": "d52d5af9ecaf3eb7586e5f55cb61b01d3a272b63b8e6f6d3fefb7a1231166cb2",
+        "approvedVisualBytes": 46010,
+        "visualApprovalReference": "manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json",
+        "technicalStatus": "PENDING_D2_TRANSPORT_AND_D3"
       },
       {
         "id": "INdG4JndLBl0sWto",
         "name": "Cuerno musical nórdico",
         "source": "source-pending/ci137-historicos-99/instrumentos-musicales/INdG4JndLBl0sWto.json",
         "kind": "instrumento",
-        "approval": "AMBIGUOUS_NOT_MAPPED",
-        "candidateAsset": null,
+        "approval": "AUTHOR_VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECH",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/CUERNO_MUSICAL_ERH_256.webp",
         "approvedAsset": null,
         "assetSHA256": null,
-        "identityWarning": "Cuerno musical nórdico; coincidencia de nombre genérico no verifica que el dibujo ERH represente el mismo instrumento.",
-        "changeAuthorized": false
+        "identityWarning": "Superada por selección visual explícita de la segunda imagen. Pendiente transporte técnico y QA runtime.",
+        "changeAuthorized": false,
+        "approvedVisualAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/CUERNO_MUSICAL_ERH_256.webp",
+        "approvedVisualSHA256": "fd4562fb1fb2a3dfcced879c9ee8e66c1b8cea3c594a45bc233c54d03e5e9e8b",
+        "approvedVisualBytes": 31852,
+        "visualApprovalReference": "manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json",
+        "technicalStatus": "PENDING_D2_TRANSPORT_AND_D3"
       },
       {
         "id": "YfFAFtBpsdyU2l9R",
         "name": "Flauta de hueso",
         "source": "source-pending/ci137-historicos-99/instrumentos-musicales/YfFAFtBpsdyU2l9R.json",
         "kind": "instrumento",
-        "approval": "AMBIGUOUS_NOT_MAPPED",
-        "candidateAsset": null,
+        "approval": "AUTHOR_VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECH",
+        "candidateAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/FLAUTA_HUESO_ERH_256.webp",
         "approvedAsset": null,
         "assetSHA256": null,
-        "identityWarning": "Flauta de hueso de origen nórdico; dibujo ERH genérico no acredita pertenencia cultural ni forma exacta.",
-        "changeAuthorized": false
+        "identityWarning": "Superada por selección visual explícita de la segunda imagen. Pendiente transporte técnico y QA runtime.",
+        "changeAuthorized": false,
+        "approvedVisualAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/FLAUTA_HUESO_ERH_256.webp",
+        "approvedVisualSHA256": "3f81addeee80ef03ea314e3b4887405d92cba2a12d893b4c7f6ef85ea51baa14",
+        "approvedVisualBytes": 20346,
+        "visualApprovalReference": "manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json",
+        "technicalStatus": "PENDING_D2_TRANSPORT_AND_D3"
       },
       {
         "id": "R1exJG9q2EP8URHe",
@@ -287,7 +307,12 @@
         "identityWarning": null,
         "changeAuthorized": true
       }
-    ]
+    ],
+    "authorVisualApprovedERHSecondOptions": 4,
+    "visualApprovedForStagingTotal": 10,
+    "runtimeTransportApprovedAndPresentInQA5": 6,
+    "visualApprovalsNotYetTransported": 4,
+    "authorChoiceManifest": "manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json"
   },
   "relics": {
     "historical": 16,
@@ -347,6 +372,10 @@
     "noBridgeMutation": true,
     "onlyCitableSourceIDs": true,
     "approveRecipeTargetBeforeRuntimePatch": true,
-    "sourceImageSpecificApprovalRequired": true
+    "sourceImageSpecificApprovalRequired": true,
+    "authorVisualChoiceOfFourIsNotTransportApproval": true,
+    "allFourOriginalArtPreserved": true,
+    "arpaDeBocaRuntimeTechnicalCheckStillRequired": true,
+    "noNewQA5BuildFromVisualApprovalAlone": true
   }
 }
