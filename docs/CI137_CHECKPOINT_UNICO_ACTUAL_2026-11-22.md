@@ -4,6 +4,14 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## H7 / Registro de módulo — captura 14.370 (24-11-2026)
+
+**Hecho observado:** captura Foundry 14.370, CSB 6.1.2, Module Management 84 módulos, 3 activos. `Hiperaustralis · Compendios` **0.4.103** es el módulo **legado** `hiperaustralis-rituales`, **no una versión previa de CI137**. Visibles Bridge 0.24.203 (activo), Reparación Kona 1.0.3 y Cetáceos FAU-033–036 1.2.0. **No aparece** `hiperaustralis-compendios-prototype` ni `Hiperaustralis · CI137 QA3 FULL`. Contraste con la captura anterior Import Wizard: allí Forge **sí identifica** el ZIP individual como un módulo de compendios, pero esa pantalla sólo acredita análisis, no Import exitoso. No hay evidencia en chat de completar Import ni de reiniciar el **servidor** después de hacerlo.
+
+**Diagnóstico priorizado:** (1) Import Wizard: completar Import y confirmar pantalla final; (2) salir de H7 → Forge My Foundry → Stop Server → iniciar servidor → H7 Module Management, tal como exige [la guía de Forge sobre módulos personalizados](https://forums.forge-vtt.com/t/how-to-upload-a-modified-version-of-a-module-system/10510); (3) si ausente, Forge View Data Storage → Modules: buscar `hiperaustralis-compendios-prototype`; (4) si carpeta existe, revisar Forge View Foundry Logs / consola; si no existe, la importación quedó sin registrar. **No probar nuevos ZIP, modificar imágenes o volver a reconstruir compendios** antes de resolver esta puerta.
+
+**Control de manifiesto auditado:** ZIP QA3 individual local `module.json` legible/JSON válido con id `hiperaustralis-compendios-prototype`, `version=0.1.6-ci137qa.3.2`, compatibilidad minimum 14 y 3 packs; no se ha encontrado defecto manifiesto que acredite ocultamiento. **H7:** línea base estable con hoja Kona, Items antiguos y reinicio normal; sin CI137 visible. **H6:** respaldo preservado. **Decisiones:** separar carga del servidor, instalación y registro; bloqueo D3/pública. **Maestro, main, Bridge, Forge, H6/H7:** sin cambios.
+
 ## CI137 / Forge Wizard — auditoría de anidamiento del ZIP (24-11-2026)
 
 **Hallazgo de entrega:** el archivo compartido `CI137_QA3_LIMPIO_SOLO_DIAGNOSTICO_20261124.zip` **no es un módulo de Foundry**: es el contenedor de GitHub Actions con seis entradas (tres ZIP internos de MIN/ITEMS/FULL y tres JSON de resultados), **sin `module.json` en su raíz**. El Import Wizard de Forge espera identificar un módulo por su `module.json`; su soporte de archivos ZIP anidados no debe presumirse. El usuario no afirmó haber subido específicamente este contenedor: **es un defecto de entrega detectable, no causa confirmada de la ausencia de módulo en H7**.
