@@ -4,6 +4,14 @@
 **Autoridad:** Estado Maestro ACTUAL para canon; `manifests/ci137-selected-source-137-historical-ids.json` para las 136 identidades seleccionadas; este checkpoint para implementación técnica. Sin cambios al Maestro.
 
 
+## CI137 — Instrumentos/Reliquias y Recetas como Items drag-and-drop (24-11-2026)
+
+**Aclaración autoral:** las **Recetas se incluyen en cada uno de los nueve Territorios** como cuarta subcarpeta junto a Flora, Fauna y Funga y **son Items arrastrables desde compendios hacia la hoja Kona**. No cuentan en el 4×4×4 FFF y no se reducen a JournalEntry ni a material gráfico. Deben conservar documento Item/ID/UUID/payload, lugar de origen y persistencia después de cerrar/abrir el Actor y reiniciar. No inventar secciones nuevas de ficha ni lógica de Bridge antes de comprobar un ejemplo real.
+
+**Auditoría del ZIP QA5 real y fuente de identidades:** `manifests/ci137-selected-source-137-historical-ids.json` contiene **21 Instrumentos musicales**, **16 Reliquias históricas** (8 Cotidianas, 8 Legendarias) y **Tokicura** adicional e independiente, todos incluidos entre los 136 Items, no nuevos registros. El ZIP QA5 contiene **6 WebP de Instrumentos ERH** remapeados/validados por CI, **16 WebP de Reliquias y 1 de Tokicura**, por lo que **NO se ha actualizado gráficamente 21/21 Instrumentos**. El catálogo de Instrumentos ERH v04 permanece como autoridad descriptiva. La persistencia/drag-and-drop específico de estas familias sigue **sin D3**.
+
+**Recetas actuales:** `0` Items con identidad y payload aprobados recuperados en 0.4.75 o QA5; la carpeta de cada Territorio tiene destino validado en el plan, pero **no se han instalado documentos Receta**. Nuevo [documento de control](CI137_INSTRUMENTOS_RELIQUIAS_RECETAS_DND_20261124_v01.md), [manifiesto](../manifests/ci137-expansion-territorios-habitantes-culturas-v01.json) y guard solo lectura [Actions #45470344571](https://github.com/ElIgnacioCampos/Hiperaustralis/actions/runs/45470344571) **PASS**. **No se modificaron QA5/H6/H7/Bridge/Forge/main ni Estado Maestro.**
+
 ## CI137 — Corrección de alcance FFF y Equipo (24-11-2026)
 
 **Fe de erratas del lote expansión:** el primer staging registraba sólo **9×4 = 36 asignaciones Fauna**. La regla autorizada es **9 × (4 Flora + 4 Fauna + 4 Funga) = 108 posiciones objetivo**; Recetas es subcarpeta territorial adicional y ajena a esos cupos. No inferir aprobación de 36 Flora o 36 Funga, ni crear especies para llenar cupos. Mantener UID canónico y referencias entre territorios. Se recuerda autorización previa de `FUN-01..04` para Tierra del Fuego, pero **su fuente/IDs activos faltan por verificar**.
