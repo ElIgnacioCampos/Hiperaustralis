@@ -1380,7 +1380,7 @@
             "companionWeight": 1
           },
           "actorId": null,
-          "gate": "Function closed. Recover or allocate one collision-checked Actor ID and validate CSB payload; approved a/b variants share one logical entry. No deploy yet."
+          "gate": "New Actor staged; D2 roundtrip and runtime asset transport pending. No deployment."
         },
         "companionFunction": {
           "status": "AUTHOR_APPROVED",
@@ -1397,6 +1397,21 @@
           ],
           "limits": "Situated narrative utility; no automatic bonus, damage, Aguante loss, Herida or additional subsystem; no changes to encounter Fauna.",
           "companionWeight": 1
+        },
+        "actorCandidate": {
+          "id": "82ee3a3ec88dcd5d",
+          "status": "STAGED_D2_PENDING_NO_DEPLOY",
+          "idProvenance": "New deterministic technical ID SHA256('CI137:Actor:Companion:EXO-001') first 16 hex; no historical ID found; checked against 176 exported Actor records and 68 staged source records.",
+          "path": "source-pending/ci137-companeros-volador/EXO-001.actor.json",
+          "template": "HipCriatTpl00001",
+          "templateExampleId": "7d6GezL23i8PCPUB",
+          "assetPaths": [
+            "modules/hiperaustralis-compendios-prototype/assets/companeros/exoticos/EXO-001a_volador_vuelo.webp",
+            "modules/hiperaustralis-compendios-prototype/assets/companeros/exoticos/EXO-001b_volador_terrestre.webp"
+          ],
+          "assetTransport": "Exact approved files verified locally, not committed to runtime paths; variant metadata only, no switching UI implemented.",
+          "sourceCommit": "b5fa326a61521d817c184c3b43123077bafe322f",
+          "workflowCommit": "ea3f721a6aaf53269f9e664f79a0bfe00b1f2984"
         }
       },
       "policy": "Peso 1 exclusively as provisional mechanical convention for Compañeros. No inference about body mass or natural strength. Preserve all other Fauna and encounter weights, historical IDs, functions and graphics; no global taxon-based weight migration.",
