@@ -1,0 +1,33 @@
+name: CI137 recover native Flora and territory tree
+on:
+  push:
+    branches: [work/ci137-expansion-familias-20261124]
+    paths: ['.github/workflows/ci137-recover-flora-structure.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python - <<'PY'
+          import json, shutil, hashlib
+          from pathlib import Path
+          out=Path('dist');out.mkdir()
+          p=Path('source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS')
+          rows=[x for x in p.glob('*.json') if x.name!='_Folder.json']
+          assert len(rows)==40
+          m=json.loads(Path('source/territorios/flora/foundry-id-map.json').read_text())
+          assert {json.loads(x.read_text())['_id'] for x in rows}=={x['foundryId'] for x in m['items']}
+          shutil.copytree(p,out/'flora')
+          for s,n in [('manifests/ci137-expansion-territorios-habitantes-culturas-v01.json','territory.json'),('source/territorios/flora/foundry-id-map.json','flora-id-map.json'),('source/territorios/fauna/foundry-id-map.json','fauna-id-map.json'),('manifests/ci137-defense-migration-staging-v02.json','defense-staging.json')]:
+              shutil.copyfile(s,out/n)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CI137-NATIVE-FLORA40-STRUCTURE
+          path: dist/
+          if-no-files-found: error
+          retention-days: 30
