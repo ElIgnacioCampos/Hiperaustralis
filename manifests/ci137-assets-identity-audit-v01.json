@@ -63,7 +63,7 @@
     "newDefenseCandidates": 9,
     "turianoRecords": 6,
     "relicSourceReadbacks": 17,
-    "equipmentSourceReadbacks": 28
+    "equipmentSourceReadbacks": 40
   },
   "arms": [
     {
@@ -2702,6 +2702,138 @@
       "culture": "Lickanantay",
       "canonicalCode": null,
       "sourceSha": "fc59ac8b4c12192ed21315f7f297fc182154ca19"
+    },
+    {
+      "id": "MX9mAxfkdCwvEvkZ",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/MX9mAxfkdCwvEvkZ.json",
+      "name": "Punzón de hueso",
+      "legacyPath": "icons/commodities/bones/tooth-spiked-brown.webp",
+      "legacySeed": "eq-chin-punzon",
+      "culture": "Chinchorro",
+      "canonicalCode": null,
+      "sourceSha": "92b1d43406113b2f443f780134e05906f47641d5"
+    },
+    {
+      "id": "g2YB821BybKVvqgK",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/g2YB821BybKVvqgK.json",
+      "name": "Q'ipi · Bulto de carga",
+      "legacyPath": "icons/containers/bags/sack-cloth-brown.webp",
+      "legacySeed": "eq-aym-qipi",
+      "culture": "Aymara",
+      "canonicalCode": null,
+      "sourceSha": "aad4f3fa7a1a165bfdb8f77ccc4149bb66a76aa1"
+    },
+    {
+      "id": "Qbf0kVDqbeWvJ0ty",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/Qbf0kVDqbeWvJ0ty.json",
+      "name": "Q'urawa · Honda",
+      "legacyPath": "icons/svg/item-bag.svg",
+      "legacySeed": "eq-aym-qurawa",
+      "culture": "Aymara",
+      "canonicalCode": null,
+      "sourceSha": "2d62398a2205b23d3ef32eaee7a063fd72e79665"
+    },
+    {
+      "id": "SbBJa9ACdFH2z86D",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/SbBJa9ACdFH2z86D.json",
+      "name": "Qapu · Huso",
+      "legacyPath": "icons/commodities/cloth/thread-spindle-grey.webp",
+      "legacySeed": "eq-aym-qapu",
+      "culture": "Aymara",
+      "canonicalCode": null,
+      "sourceSha": "59e648367ed59ad9b3d8c0d45274c42cc4f1f29a"
+    },
+    {
+      "id": "MVaSt17DYFT5CP5R",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/MVaSt17DYFT5CP5R.json",
+      "name": "Rali · Plato",
+      "legacyPath": "icons/containers/kitchenware/bowl-clay-brown.webp",
+      "legacySeed": "eq-map-rali",
+      "culture": "Mapuche",
+      "canonicalCode": null,
+      "sourceSha": "7262142e4ea3d0bdbbb8044a7cbd1a9bf0b89ed6"
+    },
+    {
+      "id": "89egEPGh4AtrOMS0",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/89egEPGh4AtrOMS0.json",
+      "name": "Saba · Saco",
+      "legacyPath": "icons/containers/bags/sack-cloth-orange.webp",
+      "legacySeed": "eq-lick-saba",
+      "culture": "Lickanantay",
+      "canonicalCode": null,
+      "sourceSha": "bdde72370faa0c0790b5c626e086bfd5afceb613"
+    },
+    {
+      "id": "VOtfeqh5KvQw6eF1",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/VOtfeqh5KvQw6eF1.json",
+      "name": "Saum-nál · Aguja de coser",
+      "legacyPath": "icons/tools/hand/needle-grey.webp",
+      "legacySeed": "eq-nor-saumnal",
+      "culture": "Nórdicos",
+      "canonicalCode": null,
+      "sourceSha": "04b99994a48896c51ff219762903e9a9c9fd30d9"
+    },
+    {
+      "id": "w9DvGQFnGfW8GsiW",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/w9DvGQFnGfW8GsiW.json",
+      "name": "Snælda · Huso",
+      "legacyPath": "icons/commodities/cloth/thread-spindle-white-grey.webp",
+      "legacySeed": "eq-nor-snaelda",
+      "culture": "Nórdicos",
+      "canonicalCode": null,
+      "sourceSha": "04513f6492a8b8bbcfcf32987713c809905f5188"
+    },
+    {
+      "id": "rZ5JztozLP6qqf7u",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/rZ5JztozLP6qqf7u.json",
+      "name": "Toki · Hacha de piedra",
+      "legacyPath": "icons/weapons/axes/axe-tomahawk-simple-black.webp",
+      "legacySeed": "eq-map-toki",
+      "culture": "Mapuche",
+      "canonicalCode": null,
+      "sourceSha": "09d40c1c8cd0b3780e8c3d5a49e6940fb6244900"
+    },
+    {
+      "id": "tfOpt8w3B1dFl6qS",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/tfOpt8w3B1dFl6qS.json",
+      "name": "Uysu · Arado de pie",
+      "legacyPath": "icons/tools/hand/pickaxe-simple-stone-brown.webp",
+      "legacySeed": "eq-aym-uysu",
+      "culture": "Aymara",
+      "canonicalCode": null,
+      "sourceSha": "0d0c71394f54a0b10da9070524c427eb7d145efa"
+    },
+    {
+      "id": "iqLSPRD0g34ZMqTi",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/iqLSPRD0g34ZMqTi.json",
+      "name": "Wakulla · Cántaro",
+      "legacyPath": "icons/containers/kitchenware/vase-clay-etched-brown.webp",
+      "legacySeed": "eq-aym-wakulla",
+      "culture": "Aymara",
+      "canonicalCode": null,
+      "sourceSha": "839a046c50f35d1e071bc9457fc4374fc89f02fb"
+    },
+    {
+      "id": "5nFewbreKtldDFdL",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/5nFewbreKtldDFdL.json",
+      "name": "Witrü · Cuchara de madera",
+      "legacyPath": "icons/tools/cooking/soup-ladle.webp",
+      "legacySeed": "eq-map-witru",
+      "culture": "Mapuche",
+      "canonicalCode": null,
+      "sourceSha": "f02f9c42437fcc0bea3747a247235696b0d25548"
     }
   ]
 }
