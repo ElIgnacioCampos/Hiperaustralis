@@ -1,0 +1,81 @@
+name: MELIAZ LAB 0.24.206 - Resolver Intercambio v13 D2 NO DEPLOY
+on:
+  push:
+    branches: [work/meliaz-bridge-lab-0.24.204-20261124]
+    paths: ['.github/workflows/meliaz-bridge-lab-024206-intercambio.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Derive original LAB candidate without changing source
+        run: |
+          python tools/foundry/meliaz_bridge_lab_build.py --out "$RUNNER_TEMP/base.zip" --report "$RUNNER_TEMP/base-report.json"
+          mkdir -p dist "$RUNNER_TEMP/check"
+          python - <<'PY'
+          import json, os, zipfile, hashlib
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])
+          out=Path('dist/MELIAZ_BRIDGE_LAB_0.24.206_INTERCAMBIO_D2_NO_DEPLOY.zip')
+          with zipfile.ZipFile(root/'base.zip') as base:
+              assert base.testzip() is None
+              files={i.filename:base.read(i) for i in base.infolist()}
+          original=files.copy()
+          js=files['bridge.js'].decode()
+          anchor='    .ha-kona-sheet.ha-kona-experimental-sheet :is(\n      .ha-equipo-grid-cell, .ha-biomas-row, .ha-sentir-instrumento-row,'
+          assert js.count(anchor)==1
+          # Existing shared z-index 120 lets the later-appended mascot intercept
+          # the overlapping Descendiente area. Give the visible marker priority
+          # without moving, resizing, or changing any data handler.
+          patch='''    /* 0.24.205 LAB — Descendiente must win its own hitbox above Mascota.
+               The locked marker remains disabled and pointer-events:none. */
+              .ha-kona-sheet.ha-kona-experimental-sheet > .ha-descendiente-marker {
+                z-index: 121 !important;
+              }
+              .ha-kona-sheet.ha-kona-experimental-sheet > .ha-descendiente-marker:disabled {
+                pointer-events: none !important;
+              }
+          '''
+          assert 'marker.disabled = locked;' in js and 'marker.style.pointerEvents = locked ? "none" : "";' in js
+          assert 'const locked = Boolean(actor.getFlag?.(MODULE_ID, "capacidadesLocked"));' in js
+          js=js.replace(anchor,patch+anchor)
+          delta=json.loads(Path('manifests/meliaz-lab-intercambio-v13-patch-v01.json').read_text())
+          for i,(before,after) in enumerate(delta['patches']):
+              assert js.count(before)==1, (i,before,js.count(before))
+              js=js.replace(before,after,1)
+          assert delta['rules'] in js
+          (root/'check'/'exchange-test.js').write_text(delta['rules']+'\n'+delta['test']+'\n')
+          files['bridge.js']=js.encode()
+          m=json.loads(files['module.json'])
+          assert m['id']=='meliaz-bridge-lab' and m['version']=='0.24.204-lab.0'
+          m['version']='0.24.206-lab.0'
+          files['module.json']=(json.dumps(m,ensure_ascii=False,indent=2)+'\n').encode()
+          assert {k for k in files if original[k]!=files[k]}=={'bridge.js','module.json'}
+          with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
+              for n,b in sorted(files.items()):
+                  z.writestr(n,b)
+          with zipfile.ZipFile(out) as z:
+              assert z.testzip() is None and len(z.namelist())==63
+              assert all(z.read(n)==b for n,b in files.items())
+              for n in ['bridge.js','kona-token-icons.js']:
+                  (root/'check'/n).write_bytes(z.read(n))
+          report={'status':'D2_CANDIDATE_NO_DEPLOY','moduleId':m['id'],'version':m['version'],'changes':['preserve Descendiente hitbox','combat-only v13 outcome mapping','explicit reactive entry','Quiebre context and single claimed Peso marking','Incapacitado label','version'], 'remaining':['D3 real Foundry','Exaltar Azar post-dado','Códigos UI and storage','Piño consequence','Aguante and Armadura','Manifestar'], 'unchanged':['Mascota handler','Descendiente persistence','Auspicio','40 tokens','all graphics','CSB template','original Bridge'], 'sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'bytes':out.stat().st_size,'runtimeTested':False}
+          Path('dist/REPORT.json').write_text(json.dumps(report,indent=2)+'\n')
+          print(json.dumps(report))
+          PY
+          node --check "$RUNNER_TEMP/check/bridge.js"
+          node --check "$RUNNER_TEMP/check/kona-token-icons.js"
+          node "$RUNNER_TEMP/check/exchange-test.js"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MELIAZ-LAB-024206-INTERCAMBIO-D2-NO-DEPLOY
+          path: dist/
+          if-no-files-found: error
+          retention-days: 30
