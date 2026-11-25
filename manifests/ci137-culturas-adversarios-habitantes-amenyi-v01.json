@@ -139,5 +139,118 @@
       "Do not put Kavi, Kari and Cucas in Amenyi; separate ADV opposition files, existing source weights 4/5/3."
     ]
   },
-  "noLiveChanges": true
+  "noLiveChanges": true,
+  "habitantesTerritorial": {
+    "status": "AUTHOR_FOLDER_ORDER__D2_PENDING",
+    "source": "source-pending/ci137-actors-historical-68/actors-2026-11-14.json",
+    "sourceBlob": "b0cf59d8ddd19e5cce5a401f0858a8f9e011811a",
+    "records": [
+      {
+        "id": "mXTFN1vg76IQ2qa2",
+        "name": "Cháskels",
+        "territory": "Tierra del Fuego",
+        "editorialCode": "HAB-PEND",
+        "path": "Habitantes/Tierra del Fuego",
+        "reason": "Verified source territory",
+        "keepProps": true
+      },
+      {
+        "id": "wzsmN9i46PPX6xbq",
+        "name": "Chélep",
+        "territory": "Patagonia austral",
+        "editorialCode": "HAB-007",
+        "path": "Habitantes/Patagonia austral",
+        "reason": "Verified source territory",
+        "keepProps": true
+      },
+      {
+        "id": "5JBwsUNnFYacodTJ",
+        "name": "Katari",
+        "territory": "Titicaca",
+        "editorialCode": "HAB-003",
+        "path": "Habitantes/Titicaca",
+        "reason": "Verified source territory",
+        "keepProps": true
+      },
+      {
+        "id": "bCAVf76eJBauphje",
+        "name": "Kawa Kawa",
+        "territory": "Pewenmapu",
+        "editorialCode": "HAB-006",
+        "path": "Habitantes/Pewenmapu",
+        "reason": "Verified source territory",
+        "keepProps": true
+      },
+      {
+        "id": "gJy5tCsrAHMJvS8S",
+        "name": "Milodón relicto",
+        "territory": "Patagonia austral",
+        "editorialCode": "HAB-008",
+        "path": "Bestiario",
+        "reason": "Prior author reclassification to Fauna; preserve historic code and ID",
+        "keepProps": true
+      },
+      {
+        "id": "SjikI34cg9ZuspEz",
+        "name": "Ngürüfilu",
+        "territory": "Ngulumapu",
+        "editorialCode": "HAB-005",
+        "path": "Habitantes/Ngulumapu",
+        "reason": "Verified source territory",
+        "keepProps": true
+      },
+      {
+        "id": "xCzi2ZnfvpiktUvY",
+        "name": "Qatiqati",
+        "territory": "Titicaca",
+        "editorialCode": "HAB-002",
+        "path": "Habitantes/Titicaca",
+        "reason": "Verified source territory",
+        "keepProps": true
+      },
+      {
+        "id": "4XR5qS710r8a7cJR",
+        "name": "Quesintuu y Umantuu",
+        "territory": "Titicaca",
+        "editorialCode": "HAB-001",
+        "path": "Habitantes/Titicaca",
+        "reason": "Verified source territory",
+        "keepProps": true
+      },
+      {
+        "id": "4WEwljZ2VjLUaRdJ",
+        "name": "Quien sopla el viento",
+        "territory": "Canales australes",
+        "editorialCode": "HAB-PEND",
+        "path": "Habitantes/Canales australes",
+        "reason": "Verified source territory",
+        "keepProps": true
+      },
+      {
+        "id": "zrRIUDc3sD6aLwR0",
+        "name": "Shoggot",
+        "territory": "Umbral Polar",
+        "editorialCode": "HAB-PEND",
+        "path": "Habitantes/Umbral Polar",
+        "reason": "Verified source territory",
+        "keepProps": true
+      },
+      {
+        "id": "8U4xgO8CCjeNnxur",
+        "name": "Trülkewekufü",
+        "territory": "Ngulumapu",
+        "editorialCode": "HAB-004",
+        "path": "Habitantes/Ngulumapu",
+        "reason": "Verified source territory",
+        "keepProps": true
+      }
+    ],
+    "amenyiPath": "Habitantes/Amenyi",
+    "rules": [
+      "Use verified territory, keep complementary Titicaca.",
+      "Do not duplicate inhabitants across territories.",
+      "Do not create placeholder actors.",
+      "Existing actor props, code, image and token unchanged; Peso audit separate."
+    ]
+  }
 }
