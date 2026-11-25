@@ -1,0 +1,36 @@
+name: CI137 recover exact four archived Turiano images
+on:
+  push:
+    branches: [work/ci137-acumulativo-qa7-20261125]
+    paths: ['.github/workflows/ci137-turianos-recover-exact.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify exact approved archive SHA and export unchanged
+        run: |
+          python - <<'PY'
+          import json, hashlib, shutil
+          from pathlib import Path
+          m=json.loads(Path('manifests/turianos-assets.json').read_text())
+          out=Path('dist');out.mkdir(exist_ok=True)
+          rows=[]
+          for r in m['actors'][:4]:
+              p=Path('source-original/ci137-asset-staging/turianos')/r['asset']
+              b=p.read_bytes()
+              assert hashlib.sha256(b).hexdigest()==r['sha256']
+              assert b[:4]==b'RIFF' and b[8:12]==b'WEBP'
+              shutil.copyfile(p,out/p.name)
+              rows.append({**r,'bytes':len(b),'source':str(p)})
+          (out/'PROVENANCE.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CI137-TURIANOS-ORIGINALS-4
+          path: dist/
+          if-no-files-found: error
+          retention-days: 30
