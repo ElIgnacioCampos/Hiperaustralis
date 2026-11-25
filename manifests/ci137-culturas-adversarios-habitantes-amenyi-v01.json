@@ -1019,6 +1019,200 @@
           "policy": "Preserve v04 source, do not roll back v05 variants; EXO-009 exact historical Chilecebus image recovered, later Macaco rename/visual candidate requires crosswalk. Ave entrenada retains candidate status. No automatic promotion of 12 extra Kona. No livestock tokens in archive."
         }
       }
+    },
+    "companionAudit": {
+      "status": "READ_ONLY_EXACT_BINARY_CROSSWALK__NO_RUNTIME_CHANGE",
+      "source": "CI137_COMPANEROS_COTEJO_IDS_Y_ASSETS_v01.json",
+      "reportSHA256": "8ba3f7b180aed3062c98d3e2dd2525e0bd76becc4ca83cdda8cf09c217f94810",
+      "reportBytes": 29075,
+      "counts": {
+        "historicalActors": 18,
+        "expectedCatalog": 19,
+        "identicalBytesAndDecodedPixels": 7,
+        "differentExport": 4,
+        "approvedLaterMissing": 5,
+        "candidate": 1,
+        "renamedIdentityPending": 1
+      },
+      "classificationSource": "CORE_CHECKPOINT_RUBRICA_ICONOS_COMPANEROS_2026-11-19_v04.md",
+      "classificationCounts": {
+        "domesticos": 5,
+        "exoticos": 8,
+        "familiares": 6
+      },
+      "rows": [
+        {
+          "id": "6pTPJHbEJLeODFBv",
+          "name": "Anchimallén",
+          "code": "EXO-002",
+          "category": "Familiares",
+          "legacyWeight": 3,
+          "companionWeight": 2,
+          "assetStatus": "EXACT_SHARED_BYTES"
+        },
+        {
+          "id": "tVHCdcwMv1jz2pEm",
+          "name": "Imbunche",
+          "code": "EXO-008",
+          "category": "Familiares",
+          "legacyWeight": 3,
+          "companionWeight": 2,
+          "assetStatus": "EXACT_SHARED_BYTES"
+        },
+        {
+          "id": "jJ9N4oUCmmD4PBGt",
+          "name": "Kobold",
+          "code": "EXO-005",
+          "category": "Familiares",
+          "legacyWeight": 2,
+          "companionWeight": 2,
+          "assetStatus": "EXACT_SHARED_BYTES"
+        },
+        {
+          "id": "NtOoatkkgH7sxAjY",
+          "name": "Kolo Kolo",
+          "code": "EXO-006",
+          "category": "Familiares",
+          "legacyWeight": 3,
+          "companionWeight": 2,
+          "assetStatus": "EXACT_SHARED_BYTES"
+        },
+        {
+          "id": "UmY99wnFGChXYDo6",
+          "name": "Macaco de Pikunmapu",
+          "code": "EXO-009",
+          "category": "Exóticos",
+          "legacyWeight": 1,
+          "companionWeight": 1,
+          "assetStatus": "IDENTITY_CROSSWALK_PENDING"
+        },
+        {
+          "id": "V4hkO2v24ouHE7Wd",
+          "name": "Mandao",
+          "code": "EXO-003",
+          "category": "Familiares",
+          "legacyWeight": 1,
+          "companionWeight": 2,
+          "assetStatus": "EXACT_SHARED_BYTES"
+        },
+        {
+          "id": "7d6GezL23i8PCPUB",
+          "name": "Monito del monte",
+          "code": "EXO-007",
+          "category": "Exóticos",
+          "legacyWeight": 1,
+          "companionWeight": 1,
+          "assetStatus": "EXACT_SHARED_BYTES"
+        },
+        {
+          "id": "gvOeY1GIYPFfEFHk",
+          "name": "Troll pétreo",
+          "code": "EXO-004",
+          "category": "Familiares",
+          "legacyWeight": 2,
+          "companionWeight": 2,
+          "assetStatus": "EXACT_SHARED_BYTES"
+        },
+        {
+          "id": "01hgbx0UU76CiKsk",
+          "name": "Ave entrenada",
+          "code": "MASC-AVE-ENTRENADA",
+          "category": "Exóticos",
+          "legacyWeight": 1,
+          "companionWeight": 1,
+          "assetStatus": "CANDIDATE_NOT_APPROVED"
+        },
+        {
+          "id": "7rwEzFZqOD9W8uAz",
+          "name": "Ave yagán",
+          "code": "MASC-AVE-YAGAN",
+          "category": "Exóticos",
+          "legacyWeight": 1,
+          "companionWeight": 1,
+          "assetStatus": "DIFFERENT_EXPORT_VERIFY_VISUAL_ROLE"
+        },
+        {
+          "id": "ljLPLj4fZKTBhw1r",
+          "name": "Culpeo amansado",
+          "code": "MASC-CULPEO",
+          "category": "Exóticos",
+          "legacyWeight": 2,
+          "companionWeight": 1,
+          "assetStatus": "DIFFERENT_EXPORT_VERIFY_VISUAL_ROLE"
+        },
+        {
+          "id": "fkq43lUn7QdAdOUn",
+          "name": "Guiña compañera",
+          "code": "MASC-GUINA",
+          "category": "Exóticos",
+          "legacyWeight": 1,
+          "companionWeight": 1,
+          "assetStatus": "DIFFERENT_EXPORT_VERIFY_VISUAL_ROLE"
+        },
+        {
+          "id": "6sOsXhQeXKtMZTSc",
+          "name": "Loro Atacameño",
+          "code": "MASC-LORO-ATACAMA",
+          "category": "Exóticos",
+          "legacyWeight": 1,
+          "companionWeight": 1,
+          "assetStatus": "DIFFERENT_EXPORT_VERIFY_VISUAL_ROLE"
+        },
+        {
+          "id": "KNAs3CxA9JtpnXis",
+          "name": "Ñarki — gato compañero",
+          "code": "MASC-NARKI",
+          "category": "Domésticos",
+          "legacyWeight": 1,
+          "companionWeight": 1,
+          "assetStatus": "APPROVED_LATER_VERSION_MISSING"
+        },
+        {
+          "id": "cFFjV9AudILE6rGV",
+          "name": "Perro cazador de nutrias",
+          "code": "MASC-PERRO-CAZADOR",
+          "category": "Domésticos",
+          "legacyWeight": 1,
+          "companionWeight": 1,
+          "assetStatus": "APPROVED_LATER_VERSION_MISSING"
+        },
+        {
+          "id": "yGPS7CQOIwigBvss",
+          "name": "Perro lanudo de los Chonos",
+          "code": "MASC-PERRO-LANUDO",
+          "category": "Domésticos",
+          "legacyWeight": 1,
+          "companionWeight": 1,
+          "assetStatus": "APPROVED_LATER_VERSION_MISSING"
+        },
+        {
+          "id": "rsP7bEX5B9cTSdHh",
+          "name": "Perro pescador de los Chonos",
+          "code": "MASC-PERRO-PESCADOR",
+          "category": "Domésticos",
+          "legacyWeight": 1,
+          "companionWeight": 1,
+          "assetStatus": "APPROVED_LATER_VERSION_MISSING"
+        },
+        {
+          "id": "M0my63fGNJGZgmGW",
+          "name": "Perro viajero canoero",
+          "code": "MASC-PERRO-VIAJERO",
+          "category": "Domésticos",
+          "legacyWeight": 1,
+          "companionWeight": 1,
+          "assetStatus": "APPROVED_LATER_VERSION_MISSING"
+        }
+      ],
+      "domeykodactylus": {
+        "code": "EXO-001",
+        "expectedSHA256": "5c9d46b6be440aba847733f28738ffa8ef6a291c889e0cc4543ebbf703b44226",
+        "alternateSHA256": "f6c53e5bcf8c068a94cf5ad7e99913fafeadc84d72b8c28cd2ace6414251eea9",
+        "alternatePath": "meliaz-bridge/assets/familiares-exoticos/EXO-001.webp",
+        "actorId": null,
+        "status": "NOT_EXACT_APPROVED_SOURCE"
+      },
+      "policy": "18 existing Actors retain IDs and props in current D2; compare role-specific Peso, do not overwrite encounter weights blindly. Exact 7 binaries already backed up; no duplicate ZIP. No promotion of candidate or superseded version."
     }
   },
   "latestD2": {
