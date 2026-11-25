@@ -851,7 +851,7 @@
           "status": "NO_COMPLETE_PRECOLONIAL_LOT_CONFIRMED"
         }
       ],
-      "companionAuthority": "19 Nov checkpoint remains classification source (5 domestic, 8 exotic, 6 familiar); 24 Nov explicit author decision supersedes Peso 1/1/2: all companions Peso 1 provisionally. Livestock excluded from this rule.",
+      "companionAuthority": "19 Nov classification remains; 24 Nov author decision supersedes 1/1/2 only for mechanical Companion role. All Compañeros Peso 1 provisionally; no changes to other Fauna or livestock, including their encounter weights or physical attributes.",
       "checks": [
         "Current mounted 0.4.100 archive filename inventory: no distinct livestock/corral token paths; culture images A1_Sajama_Llamas and L1_Licancabur_Llamas are not isolated tokens.",
         "14 Nov Actor export: no matching separate domestic livestock Actor names; prehistoric Hippidion and Tapir not domestics.",
@@ -1231,12 +1231,12 @@
         "status": "NOT_EXACT_APPROVED_SOURCE",
         "companionWeight": 1
       },
-      "policy": "All companions have Peso 1 provisionally. Preserve historical weights as provenance, IDs, functions, assets and categories. Do not alter unrelated encounter or livestock actors. No image promotion or live deployment.",
+      "policy": "Peso 1 exclusively as provisional mechanical convention for Compañeros. No inference about body mass or natural strength. Preserve all other Fauna and encounter weights, historical IDs, functions and graphics; no global taxon-based weight migration.",
       "weightDecision": {
         "date": "2026-11-24",
         "authority": "Explicit user decision: all pets Peso 1 for now, including exotic pets.",
         "status": "AUTHOR_APPROVED_PROVISIONAL",
-        "scope": "All 19 companions: domestic, exotic and familiar. Not all fauna or livestock; not unrelated encounter actors.",
+        "scope": "All Compañeros (Domésticos, Exóticos, Familiares) exclusively when represented in the Companion role. No change to other Fauna.",
         "previousRule": "1/1/2",
         "currentRule": {
           "domesticos": 1,
@@ -1283,7 +1283,8 @@
           }
         ],
         "missingActor": "EXO-001 Domeykodactylus",
-        "runtime": "PENDING_ISOLATED_IMPLEMENTATION_AND_QA"
+        "runtime": "PENDING_ISOLATED_IMPLEMENTATION_AND_QA; update only verified Companion documents or role-specific value; if shared with non-Companion encounter, separate role-specific mechanical value without changing its independent Peso.",
+        "clarification": "Peso 1 is a provisional mechanical convention of the Companion role, independent of body mass, size, species, strength or encounter Peso. Do not change other Fauna, including domestic livestock, prehistoric fauna, or independent Actors representing a species or encounter."
       }
     }
   },
