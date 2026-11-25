@@ -1,0 +1,476 @@
+name: CI137 - remapped compiled packs and template preflight (NO INSTALL)
+on:
+  push:
+    branches: [work/ci137-expansion-familias-20261124]
+    paths: ['.github/workflows/ci137-remapped-packs-d2.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prepare existing 136 Items and reconcile all 98 Nature identities
+        run: |
+          set -euo pipefail
+          python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/base-items"
+          python tools/foundry/ci137_h7_packager.py prepare-meta --out "$RUNNER_TEMP/base-meta"
+          python tools/foundry/ci137_v14_id_preflight.py --prepared "$RUNNER_TEMP/base-items" --metadata "$RUNNER_TEMP/base-meta"
+          python - <<'PY'
+          import json, hashlib, os, shutil, re, collections
+          from pathlib import Path
+          t=Path(os.environ['RUNNER_TEMP'])
+          dst=t/'combined'
+          dst.mkdir()
+          shutil.copytree(t/'base-items/items',dst/'candidate')
+          reserved=dst/'reserve'
+          reserved.mkdir()
+          m=json.loads(Path('manifests/ci137-naturaleza-vigencia-crosswalk-v01.json').read_text())
+          prov=json.loads(Path('source-pending/ci137-native-release-recovered/PROVENANCE.json').read_text())
+          nature={r['id']:r for r in prov['records'] if '/hiperaustralis-naturaleza-items/' in r['path'] and not r['path'].endswith('_Folder.json')}
+          rows=m['fauna']+m['flora']+m['biomas']
+          assert len(rows)==len(nature)==98 and set(nature)=={r['id'] for r in rows}
+          def read(root):
+              result={}
+              for p in root.rglob('*.json'):
+                  d=json.loads(p.read_text())
+                  assert d['_id'] not in result
+                  result[d['_id']]=(p.name=='_Folder.json',d)
+              return result
+          base=read(dst/'candidate')
+          assert sum(not f for f,d in base.values())==136
+          assert not set(base)&set(nature)
+          valid=lambda s:isinstance(s,str) and re.fullmatch('[A-Za-z0-9]{16}',s)
+          def write(p,d):
+              p.parent.mkdir(parents=True,exist_ok=True)
+              p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+          used=set(base)|set(nature)
+          def folder(root,name,id,parent=None):
+              assert valid(id) and id not in used
+              used.add(id)
+              write(root/'_Folder.json',{'_id':id,'_key':'!folders!'+id,'name':name,'type':'Item','folder':parent,'sorting':'a','sort':0,'flags':{},'description':''})
+          def gen(s): return hashlib.sha256(('CI137:Item:'+s).encode()).hexdigest()[:16]
+          active=dst/'candidate'/'Naturaleza'
+          rootid=gen('Naturaleza')
+          folder(active,'Naturaleza',rootid)
+          old_folders={r['name']:r['id'] for r in prov['records'] if '/hiperaustralis-naturaleza-items/' in r['path'] and r['path'].endswith('_Folder.json')}
+          assert set(old_folders)=={'Fauna','Flora','Biomas'}
+          folder(active/'Fauna','Fauna',old_folders['Fauna'],rootid)
+          folder(reserved/'Fauna prehistórica','Fauna prehistórica',gen('Reserva/Fauna prehistórica'))
+          folder(reserved/'Flora','Flora',old_folders['Flora'])
+          folder(reserved/'Biomas','Biomas',old_folders['Biomas'])
+          counts=collections.Counter()
+          excluded=[]
+          for r in rows:
+              s=nature[r['id']]
+              raw=Path(s['path']).read_bytes()
+              assert hashlib.sha256(raw).hexdigest()==s['stagedSHA256']==r['sourceSHA256']
+              d=json.loads(raw)
+              assert valid(d['_id']) and d['_id']==r['id']
+              before=json.loads(raw)
+              status=r['status']
+              counts[status]+=1
+              if status=='LEGACY_EXCLUDED':
+                  excluded.append(d['_id']); continue
+              if status in ('CORE_TERRITORIAL_PRIMARY','CORE_ACTIVE_NONPRIMARY'):
+                  directory=active/'Fauna'; folder_id=old_folders['Fauna']
+              elif status=='PREHISTORIC_SEPARATE_CANDIDATE':
+                  directory=reserved/'Fauna prehistórica';folder_id=gen('Reserva/Fauna prehistórica')
+              elif status=='HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED':
+                  directory=reserved/'Flora';folder_id=old_folders['Flora']
+              elif status in ('CORE_TERRITORY_HISTORICAL_BIOME_REFERENCE','COMPLEMENTARY_HISTORICAL_BIOME'):
+                  directory=reserved/'Biomas';folder_id=old_folders['Biomas']
+              else: raise ValueError(status)
+              d['folder']=folder_id
+              d['_key']='!items!'+d['_id']
+              assert {k:v for k,v in d.items() if k not in ('folder','_key')}=={k:v for k,v in before.items() if k not in ('folder','_key')}
+              write(directory/(d['_id']+'.json'),d)
+          a,b=read(dst/'candidate'),read(reserved)
+          assert all(a[i]==v for i,v in base.items())
+          assert not set(a)&set(b)
+          assert sum(not f for f,d in a.values())==180
+          assert sum(not f for f,d in b.values())==53
+          assert len(excluded)==1 and excluded==['sJUb33WwcLgPb3PQ']
+          assert not set(excluded)&(set(a)|set(b))
+          report={'status':'PREPARED_NO_INSTALL','coreItems':136,'activeFauna':44,'candidateItems':180,'reserveItems':53,'historicalExcluded':excluded,'counts':dict(counts),'sourceItemsAccountedFor':234,'candidateFolders':sum(f for f,d in a.values()),'reserveFolders':sum(f for f,d in b.values()),'restrictions':['Reserve is not player-facing release','No visual substitution or new statistics','No template/runtime compatibility claim','No module ZIP or deployment']}
+          (dst/'selection-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          print(report)
+          PY
+      - name: Apply exact accepted Quiebre playtest delta to isolated candidate only
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, copy, os
+          from pathlib import Path
+          t=Path(os.environ['RUNNER_TEMP'])/'combined'
+          m=json.loads(Path('manifests/ci137-quiebre-defensas-traspaso-v07.json').read_text())
+          rows=m['arms']
+          assert len(rows)==21 and len({r['id'] for r in rows})==21
+          assert sum(r['template']=='HipArmaTpl000001' for r in rows)==20
+          assert sum(r['template']=='HipRelqTpl000001' for r in rows)==1
+          index={}
+          for p in (t/'candidate').rglob('*.json'):
+              if p.name=='_Folder.json': continue
+              d=json.loads(p.read_text())
+              assert d['_id'] not in index
+              index[d['_id']]=(p,d)
+          assert len(index)==180
+          assert set(r['id'] for r in rows)<=set(index)
+          report=[]
+          for r in rows:
+              p,d=index[r['id']]
+              assert d['system']['template']==r['template'],r['id']
+              props=d['system']['props']
+              previous=props.get('quiebre')
+              assert previous in (None,'',r['quiebre']),(r['id'],previous)
+              before=copy.deepcopy(d)
+              props['quiebre']=r['quiebre']
+              check=copy.deepcopy(d)
+              if 'quiebre' in before['system']['props']:
+                  check['system']['props']['quiebre']=previous
+              else:
+                  check['system']['props'].pop('quiebre')
+              assert check==before
+              p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+              report.append({'id':r['id'],'template':r['template'],'previous':previous,'quiebre':r['quiebre']})
+          (t/'quiebre-delta.json').write_text(json.dumps({'status':'PLAYTEST_DATA_PREPARED_ONLY','count':len(report),'field':'system.props.quiebre','changes':report,'templateRenderValidated':False,'runtimePersistenceValidated':False,'noOtherPropertyChanges':True},ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Prepare unchanged QA5 and isolated catalog extension
+        run: |
+          set -euo pipefail
+          ln -s "$RUNNER_TEMP/base-meta" "$RUNNER_TEMP/ci137-base-meta"
+          python - <<'PY'
+          import json, re, hashlib, os, copy
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])
+          source=Path('source-pending/ci137-actors-historical-68/actors-2026-11-14.json')
+          selection=json.loads(Path('manifests/ci137-actors-selection-64-20261124-v01.json').read_text())
+          recovered=Path('source-pending/ci137-native-release-recovered')
+          prov=json.loads((recovered/'PROVENANCE.json').read_text())
+          assert len(prov['records'])==145
+          valid=lambda s: isinstance(s,str) and re.fullmatch(r'[A-Za-z0-9]{16}',s)
+          write=lambda p,d: (p.parent.mkdir(parents=True,exist_ok=True),p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n'))
+          raw=json.loads(source.read_text())
+          selected={r['id']:r for r in selection['records']}
+          excluded={r['id'] for r in selection['excluded']}
+          assert len(selected)==64 and len(excluded)==4 and not selected.keys()&excluded
+          baseline_actor=json.loads(next((root/'ci137-base-meta/actors').glob('*.json')).read_text())
+          baseline_journal=json.loads(next((root/'ci137-base-meta/journals').glob('*.json')).read_text())
+          actor_root=root/'ci137-expanded/actors'
+          journal_root=root/'ci137-expanded/journals'
+          folder_paths={}
+          folder_ids={}
+          def folder(name,parent=None,ident=None):
+              key=(parent+'/'+name) if parent else name
+              ident=ident or hashlib.sha256(('CI137:Actor:'+key).encode()).hexdigest()[:16]
+              assert valid(ident) and ident not in folder_ids.values()
+              folder_ids[key]=ident
+              p=(folder_paths[parent] if parent else actor_root)/(name.replace(' ','_')+'_'+ident)
+              folder_paths[key]=p
+              write(p/'_Folder.json',{'_id':ident,'_key':'!folders!'+ident,'name':name,'type':'Actor','folder':folder_ids[parent] if parent else None,'sorting':'a','sort':0,'flags':{},'description':''})
+              return key
+          folder('Habitantes')
+          folder('Bestiario',ident='YTPlfIpMNGkqzMA6')
+          folder('Fauna','Bestiario')
+          folder('Prehistórica','Bestiario/Fauna')
+          folder('Compañeros','Bestiario')
+          folder('Domésticos','Bestiario/Compañeros')
+          folder('Exóticos','Bestiario/Compañeros')
+          folder('Familiares','Bestiario/Compañeros')
+          folder('Adversarios')
+          folder('Rivales','Adversarios',ident=hashlib.sha256(b'CI137:Actor:Rivales').hexdigest()[:16])
+          folder('Turianos','Adversarios')
+          structure=json.loads(Path('manifests/ci137-culturas-adversarios-habitantes-amenyi-v01.json').read_text())
+          hab={r['id']:r for r in structure['habitantesTerritorial']['records']}
+          fauna={r['id']:r for r in structure['bestiario']['records']}
+          companions={r['id']:r for r in structure['bestiario']['companionAudit']['rows']}
+          assert len(companions)==18 and not companions.keys() & fauna.keys()
+          assert all(r['companionWeight']==1 for r in companions.values())
+          assert {c:sum(r['category']==c for r in companions.values()) for c in ('Domésticos','Exóticos','Familiares')}=={'Domésticos':5,'Exóticos':7,'Familiares':6}
+          assert {i for i,r in selected.items() if r['family'] in ('Mascotas','Familiares Exóticos')}==set(companions)
+          changed=[]
+          assert len(fauna)==20
+          assert len(hab)==11
+          for territory in sorted({r['territory'] for r in hab.values() if r['path'].startswith('Habitantes/')}):
+              folder(territory,'Habitantes')
+          folder('Amenyi','Habitantes')
+          family_paths={'Rivales':'Adversarios/Rivales','Habitantes':'Habitantes','Fauna':'Bestiario/Fauna','Familiares Exóticos':'Bestiario/Compañeros','Mascotas':'Bestiario/Compañeros'}
+          actors={}
+          def actor(d,key,source_id):
+              d=copy.deepcopy(d)
+              ident=d['_id']
+              assert valid(ident) and ident not in actors and ident not in excluded
+              assert d['type']=='character' and not d.get('items') and not d.get('effects')
+              d['folder']=folder_ids[key];d['_key']='!actors!'+ident
+              actors[ident]={'name':d['name'],'folder':d['folder'],'sourceId':source_id,'props':d['system']['props'],'img':d['img'],'token':d['prototypeToken']['texture']['src']}
+              write(folder_paths[key]/(ident+'.json'),d)
+          for r in raw['records']:
+              ident=r['documentId']
+              if ident not in selected: continue
+              d=r['document']
+              if r['name']=='Ladrón oportunista':
+                  assert d['_id']=='dm9nrrmBJzoiBgYY' and baseline_actor['_id']=='1ad8f2de41a35138'
+                  d=baseline_actor
+              key=family_paths[selected[ident]['family']]
+              if ident in hab:
+                  assert d['flags']['hiperaustralis-habitantes']['territorio']==hab[ident]['territory']
+                  key=hab[ident]['path']
+              if ident in fauna:
+                  key=fauna[ident]['folder']
+                  assert d['img']==fauna[ident]['legacyImg'] and d['prototypeToken']['texture']['src']==fauna[ident]['legacyToken']
+              if ident in companions:
+                  row=companions[ident]
+                  assert d['flags']['hiperaustralis-bestiario']['sourceKind'] in ('mascota','familiar-exotico')
+                  assert str(d['system']['props']['peso'])==str(row['legacyWeight'])
+                  d=copy.deepcopy(d)
+                  if d['system']['props']['peso']!='1': changed.append(ident)
+                  d['system']['props']['peso']='1'
+                  key='Bestiario/Compañeros/'+row['category']
+              else:
+                  assert not key.startswith('Bestiario/Compañeros')
+              actor(d,key,ident)
+              if ident in fauna:
+                  assert actors[ident]['props']==r['document']['system']['props']
+          assert set(changed)=={i for i,r in companions.items() if r['legacyWeight']!=1} and len(changed)==6
+          assert all(actors[i]['props']['peso']=='1' for i in companions)
+          assert len(actors)==64
+          assert len([i for i in hab if actors[i]['folder'] in {v for k,v in folder_ids.items() if k.startswith('Habitantes/')}])==10
+          assert actors['gJy5tCsrAHMJvS8S']['folder']==folder_ids['Bestiario/Fauna/Prehistórica']
+          assert sum(v['folder']==folder_ids['Bestiario/Fauna'] for v in actors.values())==14
+          assert sum(v['folder']==folder_ids['Bestiario/Fauna/Prehistórica'] for v in actors.values())==6
+          assert len(folder_ids)==19
+          tur_candidates={'a09f3b40b9414588','4b9f621a9edd4de5','1911d58042f44382','ec547af88c2e43ab'}
+          for p in sorted((recovered/'turianos-v06').glob('*.json')):
+              d=json.loads(p.read_text())
+              if d['_id'] not in tur_candidates: continue
+              assert d['system']['props']['peso']=='4'
+              # Keep archived notes untouched; D2 payload is exact recovered content,
+              # NOT an approved mechanical revision or playable release.
+              actor(d,'Adversarios/Turianos',d['_id'])
+          assert len(actors)==68 and set(actors)&tur_candidates==tur_candidates
+          volador=json.loads(Path('source-pending/ci137-companeros-volador/EXO-001.actor.json').read_text())
+          vid=volador['_id']
+          assert vid=='82ee3a3ec88dcd5d' and vid not in actors and vid not in {r['documentId'] for r in raw['records']}
+          assert volador['name']=='Volador' and volador['system']['template']=='HipCriatTpl00001'
+          assert volador['system']['props']['peso']=='1'
+          assert volador['system']['props']['id']==vid and volador['system']['props']['name']=='Volador'
+          assert 'sin causarle daño' in volador['system']['props']['en_escena']
+          assert volador['system']['props']['img']==volador['img']==volador['prototypeToken']['texture']['src']
+          vf=volador['flags']['hiperaustralis-bestiario']
+          assert vf['seedId']=='EXO-001' and vf['defaultVariant']=='a'
+          assert set(vf['variants'])=={'a','b'} and vf['variants']['a']==volador['img'] and vf['variants']['a']!=vf['variants']['b']
+          assert all(p.startswith('modules/hiperaustralis-compendios-prototype/assets/companeros/exoticos/') for p in vf['variants'].values())
+          actor(volador,'Bestiario/Compañeros/Exóticos',vid)
+          assert len(actors)==69
+          cultures_record=next(r for r in prov['records'] if r['id']=='48YG3G7eaXO96CyE')
+          p=Path(cultures_record['path'])
+          assert hashlib.sha256(p.read_bytes()).hexdigest()==cultures_record['stagedSHA256']
+          cultures=json.loads(p.read_text())
+          assert len(cultures['pages'])==37 and cultures['name']=='Culturas — Hiperaustralis'
+          journals={}
+          for d in [baseline_journal,cultures]:
+              ident=d['_id'];assert valid(ident) and ident not in journals
+              d['_key']='!journal!'+ident; d['folder']=None
+              pages=d['pages'];ids=[p['_id'] for p in pages]
+              assert len(ids)==len(set(ids)) and all(valid(i) for i in ids)
+              for p in pages: p['_key']='!journal.pages!'+ident+'.'+p['_id']
+              journals[ident]={'name':d['name'],'pageIds':ids}
+              write(journal_root/(ident+'.json'),d)
+          assert sum(len(v['pageIds']) for v in journals.values())==58
+          write(root/'ci137-expanded/expected.json',{'status':'D2_CANDIDATE_NO_INSTALL','actors':actors,'folders':folder_ids,'journals':journals,'excludedAtlantes':sorted(excluded),'excludedSpecialTurianos':['1dd86a387a28476e','939dad09976d48cd'],'companionIds':sorted(set(companions)|{vid}),'companionWeightChanges':sorted(changed),'pending':['Volador source Actor included; approved asset bytes transport pending (not installable)','Unresolved legacy art paths; no asset promotion','Turiano note/weight compatibility','Territory 9 CORE crosswalk','CSB client validation'],'baselineItemCount':136})
+          PY
+      - name: Assemble single source tree and enumerate every runtime dependency
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, os, re, hashlib, shutil, collections, html
+          from pathlib import Path
+          t=Path(os.environ['RUNNER_TEMP'])
+          dst=t/'ci137-unified'
+          dst.mkdir()
+          groups={'items':t/'combined/candidate','actors':t/'ci137-expanded/actors','journals':t/'ci137-expanded/journals'}
+          for key,src in groups.items(): shutil.copytree(src,dst/'source'/key)
+          shutil.copytree(t/'base-items/assets',dst/'approved-assets')
+          # Preserve the already validated sources, not the 53 reserve Items or GM-only journals.
+          refs=collections.defaultdict(list)
+          templates=collections.defaultdict(list)
+          counts=collections.Counter()
+          ids={}
+          pattern=re.compile(r'(?:modules|systems)/[^\s"<>\[\]\)]+?\.(?:webp|png|jpg|jpeg|svg|gif|avif|js|mp3|ogg|wav|webm|mp4)',re.I)
+          def walk(v,field=''):
+              if isinstance(v,dict):
+                  for k,x in v.items(): yield from walk(x,field+'.'+k if field else k)
+              elif isinstance(v,list):
+                  for i,x in enumerate(v): yield from walk(x,field+'['+str(i)+']')
+              elif isinstance(v,str):
+                  for match in pattern.finditer(html.unescape(v)): yield field,match.group(0)
+          for family in groups:
+              ids[family]=set()
+              for p in (dst/'source'/family).rglob('*.json'):
+                  d=json.loads(p.read_text())
+                  if p.name=='_Folder.json':
+                      counts[family+'Folders']+=1
+                      continue
+                  ident=d['_id']
+                  assert ident not in ids[family]
+                  ids[family].add(ident)
+                  counts[family]+=1
+                  if family=='journals': counts['journalPages']+=len(d['pages'])
+                  assert ident!='wPxQqMg7Hb9c2fmw'
+                  if family=='journals': assert not any(x['_id']=='uYpDg4cHbBgUSYkm' for x in d['pages'])
+                  template=d.get('system',{}).get('template')
+                  if template: templates[template].append({'family':family,'id':ident})
+                  for field,ref in sorted(set(walk(d))): refs[ref].append({'family':family,'id':ident,'field':field})
+          assert (counts['items'],counts['actors'],counts['journals'],counts['journalPages'])==(180,69,2,58)
+          prefix='modules/hiperaustralis-compendios-prototype/'
+          out=[]
+          for ref,uses in sorted(refs.items()):
+              status='LEGACY_OR_EXTERNAL_PATH__CHECK_LOCAL_ARCHIVES'
+              sha=None
+              if ref.startswith(prefix):
+                  rel=ref[len(prefix):]
+                  candidates=[t/'base-items'/rel,Path('module')/rel]
+                  available=next((p for p in candidates if p.is_file()),None)
+                  if available:
+                      status='PRESENT_IN_VALIDATED_PREPARATION_OR_BASELINE'
+                      sha=hashlib.sha256(available.read_bytes()).hexdigest()
+                      dstfile=dst/'approved-assets'/Path(rel).relative_to('assets') if rel.startswith('assets/') else None
+                      if dstfile and not dstfile.exists():
+                          dstfile.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(available,dstfile)
+                  else: status='MODULE_PATH_MISSING_IN_CI__CHECK_LOCAL_ARCHIVES'
+              out.append({'path':ref,'status':status,'sha256':sha,'uses':uses})
+          report={'status':'CANDIDATE_SOURCE_EXPORT_ONLY__NO_INSTALL','counts':dict(counts),'uniqueDependencyPaths':len(out),'dependencies':out,'templates':dict(templates),'sourceWorkflowBlobs':{'items':'07b61eba0ed4ab84b9d301e304beedeec7b5c917','actors':'b2d88f37e2a151d69a4bc5c1636ed949ef4e4c73'},'excluded':['53 reserve Items','FAU-006','4 excluded Atlante Actors','2 special Turianos','GM-only Presence pages'],'notes':['Quiebre props included, render and persistence still D3','No public Presence or HAB journals','Do not use this export as an installable module']}
+          (dst/'DEPENDENCIES.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          for p in [t/'combined/selection-report.json',t/'combined/quiebre-delta.json',t/'ci137-expanded/expected.json',t/'base-items/ci137-preflight.json']:
+              shutil.copy2(p,dst/p.name)
+          print(json.dumps({'counts':dict(counts),'dependencies':len(out),'templates':len(templates)},ensure_ascii=False))
+          PY
+      - name: Remap all verified references and validate template dependencies
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,os,re,collections,copy,hashlib,shutil
+          from pathlib import Path
+          t=Path(os.environ['RUNNER_TEMP'])
+          src=t/'ci137-unified'
+          out=t/'ci137-remapped'
+          out.mkdir()
+          shutil.copytree(src/'source',out/'source')
+          m=json.loads(Path('manifests/ci137-route-map-compilation-v02.json').read_text())
+          deps=json.loads((src/'DEPENDENCIES.json').read_text())
+          mapping={r['oldPath']:r['target'] for r in m['remaps']}
+          unresolved={r['path'] for r in m['pending']}
+          assert len(mapping)==227 and len(unresolved)==46 and not set(mapping)&unresolved
+          assert set(mapping)|unresolved=={r['path'] for r in deps['dependencies']}
+          pat=re.compile('|'.join(re.escape(x) for x in sorted(mapping,key=len,reverse=True)))
+          def walk(v):
+              if isinstance(v,str): return pat.sub(lambda x:mapping[x.group()],v)
+              if isinstance(v,list): return [walk(x) for x in v]
+              if isinstance(v,dict): return {k:walk(x) for k,x in v.items()}
+              return v
+          templates={}
+          for file in ('item-templates-2026-11-19.json','actor-templates-2026-11-14.json'):
+              j=json.loads((Path('source-pending/ci137-templates-recovered')/file).read_text())
+              for r in j['records']:
+                  assert r['id']==r['document']['_id'] and r['id'] not in templates
+                  templates[r['id']]=r['document']
+          original_templates=copy.deepcopy(templates)
+          delta=json.loads(Path('source-pending/ci137-templates-recovered/item-templates-quiebre-candidate.json').read_text())
+          for r in delta['candidates']:
+              d=r['document']
+              base=templates[r['id']]
+              check=copy.deepcopy(d)
+              component=check['system']['body']['contents'].pop()
+              assert component['key']=='quiebre' and component['type']=='textArea'
+              check['system']['templateSystemUniqueVersion']=base['system']['templateSystemUniqueVersion']
+              assert check==base
+              templates[r['id']]=d
+          assert len(templates)==8
+          used=collections.Counter()
+          counts=collections.Counter()
+          affected=collections.defaultdict(set)
+          written=0
+          for p in sorted((out/'source').rglob('*.json')):
+              family=p.relative_to(out/'source').parts[0]
+              d=json.loads(p.read_text())
+              after=walk(d)
+              assert d['_id']==after['_id']
+              if p.name!='_Folder.json':
+                  counts[family]+=1
+                  for r in unresolved:
+                      if r in json.dumps(after,ensure_ascii=False): affected[family].add(d['_id'])
+                  template=after.get('system',{}).get('template')
+                  if template:
+                      assert template in templates,template
+                      used[template]+=1
+                  if family=='journals':
+                      counts['journalPages']+=len(d['pages'])
+                      assert not any(x['_id']=='uYpDg4cHbBgUSYkm' for x in d['pages'])
+              p.write_text(json.dumps(after,ensure_ascii=False,indent=2)+'\n')
+              written+=1
+          assert written==281
+          assert (counts['items'],counts['actors'],counts['journals'],counts['journalPages'])==(180,69,2,58)
+          assert sum(used.values())==249 and set(used)==set(templates)
+          assert {k:len(v) for k,v in affected.items()}=={'actors':31,'journals':1}
+          # Templates are sidecar documents, NOT installed automatically or packed with ordinary Items/Actors.
+          (out/'template-sources').mkdir()
+          for name,data in [('historical',original_templates),('quiebre-candidate',templates)]:
+              (out/'template-sources'/f'{name}.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+          shutil.copy2(Path('manifests/ci137-route-map-compilation-v02.json'),out/'ROUTE_MAP.json')
+          report={'status':'PREPARED_FOR_ROUNDTRIP__NOT_INSTALLABLE','counts':dict(counts),'templateDependencies':dict(used),'remappedPaths':len(mapping),'unresolvedPaths':len(unresolved),'affectedDocuments':{k:sorted(v) for k,v in affected.items()},'binaryAssetsBundled':False,'runtimeTemplateRefreshValidated':False,'d3':False,'notes':['No substitution of unresolved art','Preserve all 69 Actors and both Journals; no player-facing GM-only page','No live migration; historical templates must be compared with actual world before update']}
+          (out/'REPORT.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          print(report)
+          PY
+      - name: Compile and roundtrip remapped data packs
+        run: |
+          set -euo pipefail
+          npm install --no-audit --no-fund --no-save --no-package-lock @foundryvtt/foundryvtt-cli@3.0.5
+          T="$RUNNER_TEMP/ci137-remapped"
+          mkdir -p "$T/packs" "$RUNNER_TEMP/ci137-remapped-check"
+          for name in items actors journals; do
+            ./node_modules/.bin/fvtt package pack -n "ha-proto-$name" --inputDirectory "$T/source/$name" --outputDirectory "$T/packs" --recursive
+            mkdir -p "$RUNNER_TEMP/ci137-remapped-check/$name"
+            ./node_modules/.bin/fvtt package unpack -n "ha-proto-$name" --inputDirectory "$T/packs" --outputDirectory "$RUNNER_TEMP/ci137-remapped-check/$name" --folders
+          done
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          t=Path(os.environ['RUNNER_TEMP'])
+          out=t/'ci137-remapped'
+          def load(p):
+              result={}
+              for f in p.rglob('*.json'):
+                  d=json.loads(f.read_text())
+                  assert d['_id'] not in result
+                  result[d['_id']]=(f.name=='_Folder.json',d)
+              return result
+          for name,count in [('items',180),('actors',69),('journals',2)]:
+              a=load(out/'source'/name);b=load(t/'ci137-remapped-check'/name)
+              assert set(a)==set(b) and sum(not f for f,d in a.values())==count
+              for i,(folder,d) in a.items():
+                  assert folder==b[i][0]
+                  for k in ('name','type','folder','system','img','flags','ownership','pages','prototypeToken','items','effects'):
+                      assert d.get(k)==b[i][1].get(k),(name,i,k)
+          for p in (out/'packs').rglob('*'):
+              if p.is_file() and (p.name=='LOCK' or p.name.startswith('LOG')): p.unlink()
+          report=json.loads((out/'REPORT.json').read_text())
+          report['status']='PASS_D2_REMAPPED_PACKS__NO_INSTALL'
+          report['roundtrip']=True
+          (out/'REPORT.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          print(report)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CI137-REMAPPED-COMPILED-PACKS-NO-INSTALL
+          path: |
+            ${{ runner.temp }}/ci137-remapped/packs/
+            ${{ runner.temp }}/ci137-remapped/template-sources/
+            ${{ runner.temp }}/ci137-remapped/ROUTE_MAP.json
+            ${{ runner.temp }}/ci137-remapped/REPORT.json
+          if-no-files-found: error
+          retention-days: 30
