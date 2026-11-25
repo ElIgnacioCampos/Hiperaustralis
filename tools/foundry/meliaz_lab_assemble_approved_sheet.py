@@ -7,7 +7,7 @@ BASE_SHA = "e972f99ce35ca2775a7ad57f534f6564be5b635671530eab0fa0362775ed5fd0"
 ASSET_SHA = "fb9d84709b9303457f0c06efd6a9c8364c62fb2b03870358b3f73c940b9aeafe"
 OLD_ASSET_SHA = "8c27fc45a9e1d8b0543099379419c90a2cb6e94e47562915a755528a112c8bd7"
 ASSET = "assets/hoja-kona-experimental-v2.webp"
-VERSION = "0.24.206-lab.1"
+VERSION = "0.24.206-lab.2"
 def digest(data):
     return hashlib.sha256(data).hexdigest()
 def main():
@@ -31,7 +31,13 @@ def main():
     m["version"]=VERSION
     files["module.json"]=(json.dumps(m,ensure_ascii=False,indent=2)+"\n").encode()
     files[ASSET]=approved
-    assert {n for n in files if files[n]!=old[n]}=={ASSET,"module.json"}
+    # Author D3 lab.1: tighten Descanso to text, shift down exactly 5 CSS px.
+    css_before = "      left: 43.25% !important;\n      top: 48.65% !important;\n      width: 13.5% !important;\n      height: 2.75% !important;\n      min-width: 0 !important;\n      min-height: 0 !important;\n      margin: 0 !important;\n      padding: 0 !important;"
+    css_after = "      left: 50% !important;\n      top: calc(48.65% + 5px) !important;\n      transform: translateX(-50%) !important;\n      width: max-content !important;\n      height: 2.75% !important;\n      min-width: 0 !important;\n      min-height: 0 !important;\n      margin: 0 !important;\n      padding: 0 6px !important;"
+    js = files["bridge.js"].decode("utf-8")
+    assert js.count(css_before)==1
+    files["bridge.js"]=js.replace(css_before,css_after,1).encode("utf-8")
+    assert {n for n in files if files[n]!=old[n]}=={ASSET,"module.json","bridge.js"}
     with zipfile.ZipFile(a.out,"w",zipfile.ZIP_DEFLATED,compresslevel=6) as z:
         for n,b in sorted(files.items()):
             info=zipfile.ZipInfo(n,(2026,11,25,0,0,0))
@@ -40,7 +46,7 @@ def main():
     with zipfile.ZipFile(a.out) as z:
         assert z.testzip() is None and len(z.namelist())==63
         assert all(z.read(n)==b for n,b in files.items())
-    report={"status":"D2_CODE_PASS_LOCAL_ASSET_ASSEMBLY_PASS_D3_PENDING_NO_DEPLOY","baseRun":45546313921,"baseSha256":BASE_SHA,"approvedAssetSha256":ASSET_SHA,"moduleId":m["id"],"version":VERSION,"changed":[ASSET,"module.json: version only"],"entries":63,"bytes":a.out.stat().st_size,"sha256":digest(a.out.read_bytes()),"runtimeTested":False}
+    report={"status":"D2_BASE_PASS_LAB1_AUTHOR_FUNCTIONAL_PASS_LAB2_VISUAL_QA_PENDING_NO_DEPLOY","baseRun":45546313921,"baseSha256":BASE_SHA,"approvedAssetSha256":ASSET_SHA,"moduleId":m["id"],"version":VERSION,"changed":[ASSET,"module.json: version only","bridge.js: Descanso CSS only"],"entries":63,"bytes":a.out.stat().st_size,"sha256":digest(a.out.read_bytes()),"runtimeTested":False}
     a.report.write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
     print(json.dumps(report,indent=2))
 if __name__=="__main__":
