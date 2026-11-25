@@ -1,6 +1,6 @@
 {
   "schema": "hipera-asset-identity-audit-v01",
-  "status": "AUDIT_ONLY_NO_RENAMES_OR_NEW_IDS",
+  "status": "IDENTITY_INVENTORY_EXPANDED__ALLOCATION_AND_PATH_MAP_PENDING",
   "date": "2026-11-24",
   "sources": [
     {
@@ -63,7 +63,10 @@
     "newDefenseCandidates": 9,
     "turianoRecords": 6,
     "relicSourceReadbacks": 17,
-    "equipmentSourceReadbacks": 40
+    "equipmentSourceReadbacks": 40,
+    "presences": 12,
+    "fungaDocumentedVisualApprovals": 8,
+    "codesDocumentedApprovedAssets": 7
   },
   "arms": [
     {
@@ -2386,12 +2389,11 @@
     }
   ],
   "pending": [
-    "Full 40 equipment names and historical COM aliases; distinguish equipo cultural without splitting by default.",
-    "Recover authoritative code allocations for instruments, relics, parafernalia, rituals, presences, codes and Funga; FUN-01..04 and FUN-17..20 established, reservations elsewhere; do not invent sequence.",
-    "Verify 40 PJ codes on Bridge and preserve namespace; no duplicate assets in compendium.",
-    "Resolve DEF-04/08, DEF-05 name, Tañaña missing asset.",
-    "Resolve HAB uncoded, Milodón reclassification, RIV-01 active QA5 ID vs historical alias; do not promote graphic numbers to catalog IDs.",
-    "After exact binary verification, draft reversible path map and run D2 path/ID checks."
+    "Approve code policy for uncoded families, especially equipo and instruments; no numbering by alphabetical order.",
+    "Resolve DEF-04/08 identity, DEF-05 name, Tañaña missing asset.",
+    "HAB uncoded and Milodón reclassification; RIV-01 preserve active ID alias.",
+    "Check 40 PJ from LAB and reconcile code aliases in runtime.",
+    "Build reversible path map only after binary and editorial identity checks. No change to graphic approval or persistent IDs."
   ],
   "revision": 2,
   "equipmentSourceReadbacks": [
@@ -2835,5 +2837,221 @@
       "canonicalCode": null,
       "sourceSha": "f02f9c42437fcc0bea3747a247235696b0d25548"
     }
-  ]
+  ],
+  "presences": {
+    "source": "ACTA_COTEJO_EDITORIAL_Y_CONSERVACION_PRESENCIAS_20261121.md",
+    "records": [
+      {
+        "code": "PRES-001",
+        "name": "Quta Jaqi",
+        "publication": "EDITORIAL_REVIEW_PENDING"
+      },
+      {
+        "code": "PRES-002",
+        "name": "Chuqilla",
+        "publication": "EDITORIAL_REVIEW_PENDING"
+      },
+      {
+        "code": "PRES-003",
+        "name": "Ngen Mawiza",
+        "publication": "EDITORIAL_REVIEW_PENDING"
+      },
+      {
+        "code": "PRES-004",
+        "name": "Ngen Ko",
+        "publication": "EDITORIAL_REVIEW_PENDING"
+      },
+      {
+        "code": "PRES-005",
+        "name": "Shumpall",
+        "publication": "EDITORIAL_REVIEW_PENDING"
+      },
+      {
+        "code": "PRES-006",
+        "name": "Trengtreng Filu",
+        "publication": "EDITORIAL_REVIEW_PENDING"
+      },
+      {
+        "code": "PRES-007",
+        "name": "Ngen Pewenentu",
+        "publication": "EDITORIAL_REVIEW_PENDING"
+      },
+      {
+        "code": "PRES-008",
+        "name": "Ngen Wingkul",
+        "publication": "EDITORIAL_REVIEW_PENDING"
+      },
+      {
+        "code": "PRES-009",
+        "name": "Ngen Rüpü",
+        "publication": "EDITORIAL_REVIEW_PENDING"
+      },
+      {
+        "code": "PRES-010",
+        "name": "Máip",
+        "publication": "EDITORIAL_REVIEW_PENDING"
+      },
+      {
+        "code": "PRES-011",
+        "name": "Ayayema",
+        "publication": "EDITORIAL_REVIEW_PENDING"
+      },
+      {
+        "code": "PRES-012",
+        "name": "Guardián de la puerta",
+        "publication": "GM_ONLY_RETAINED"
+      }
+    ],
+    "warning": "Do not promote PRES-012 to player-visible pack. Keep backups and permissions gate."
+  },
+  "funga": {
+    "source": "CORE_FUNGA_INVENTARIO_TERRITORIAL_Y_SELECCION_L01_v06_2026-11-19.md; CHECKPOINT_FUNGA_v32.md",
+    "records": [
+      {
+        "legacyCode": "FUN-01",
+        "normalizedCandidate": "FUN-001",
+        "name": "Cyttaria darwinii",
+        "status": "VISUAL_APPROVAL_DOCUMENTED_BINARY_NOT_RECHECKED"
+      },
+      {
+        "legacyCode": "FUN-02",
+        "normalizedCandidate": "FUN-002",
+        "name": "Nothophellinus andinopatagonicus",
+        "status": "VISUAL_APPROVAL_DOCUMENTED_BINARY_NOT_RECHECKED"
+      },
+      {
+        "legacyCode": "FUN-03",
+        "normalizedCandidate": "FUN-003",
+        "name": "Russula fuegiana",
+        "status": "VISUAL_APPROVAL_DOCUMENTED_BINARY_NOT_RECHECKED"
+      },
+      {
+        "legacyCode": "FUN-04",
+        "normalizedCandidate": "FUN-004",
+        "name": "Amanita ushuaiensis",
+        "status": "VISUAL_APPROVAL_DOCUMENTED_BINARY_NOT_RECHECKED"
+      },
+      {
+        "legacyCode": "FUN-17",
+        "normalizedCandidate": "FUN-017",
+        "name": "Cyttaria hariotii",
+        "status": "VISUAL_APPROVAL_DOCUMENTED_BINARY_NOT_RECHECKED"
+      },
+      {
+        "legacyCode": "FUN-18",
+        "normalizedCandidate": "FUN-018",
+        "name": "Fistulina antarctica",
+        "status": "VISUAL_APPROVAL_DOCUMENTED_BINARY_NOT_RECHECKED"
+      },
+      {
+        "legacyCode": "FUN-19",
+        "normalizedCandidate": "FUN-019",
+        "name": "Ramaria patagonica",
+        "status": "VISUAL_APPROVAL_DOCUMENTED_BINARY_NOT_RECHECKED"
+      },
+      {
+        "legacyCode": "FUN-20",
+        "normalizedCandidate": "FUN-020",
+        "name": "Cortinarius magellanicus",
+        "status": "VISUAL_APPROVAL_DOCUMENTED_BINARY_NOT_RECHECKED"
+      }
+    ],
+    "reserved": [
+      {
+        "range": "FUN-05–08",
+        "status": "ARCHIVE_PLAN_PAITITI"
+      },
+      {
+        "range": "FUN-09–12",
+        "status": "NGULUMAPU_RESERVE"
+      },
+      {
+        "range": "FUN-13–16",
+        "status": "PEWENMAPU_RESERVE"
+      },
+      {
+        "range": "FUN-21–24",
+        "status": "ALIASES_OF_FUN-01–04"
+      },
+      {
+        "range": "FUN-25–28",
+        "status": "PROVISIONAL_NO_OVERWRITE"
+      },
+      {
+        "range": "FUN-29–32",
+        "status": "MAR_AUSTRAL_GROUPING_ALIASES_NO_NEW_SPECIES"
+      }
+    ],
+    "sharedTerritory08": [
+      "FUN-01",
+      "FUN-18"
+    ]
+  },
+  "codes": {
+    "source": "CORE_CODIGOS_ICONOS_INTEGRACION_CHECKPOINT_v55_2026-11-24.md",
+    "records": [
+      {
+        "code": "IN-01",
+        "family": "INSCRIBIR",
+        "name": "Piedra rúnica ᚱᚢᚾ",
+        "legacyAsset": "assets/codigos/INSCRIBIR/INSCRIBIR_NORDICO_RUN_FOUNDRY_256_lossless.webp",
+        "status": "APPROVED_ART_STAGING_DOCUMENTED"
+      },
+      {
+        "code": "IN-02",
+        "family": "INSCRIBIR",
+        "name": "Khipu Wari",
+        "legacyAsset": "assets/codigos/INSCRIBIR/INSCRIBIR_WARI_KHIPU_FOUNDRY_256_lossless.webp",
+        "status": "APPROVED_ART_STAGING_DOCUMENTED"
+      },
+      {
+        "code": "IN-03",
+        "family": "INSCRIBIR",
+        "name": "Püron",
+        "legacyAsset": "assets/codigos/INSCRIBIR/INSCRIBIR_MAPUCHE_PURON_FOUNDRY_256_lossless.webp",
+        "status": "APPROVED_ART_STAGING_DOCUMENTED"
+      },
+      {
+        "code": "CV-01",
+        "family": "CONVOCAR",
+        "name": "Matriz general",
+        "legacyAsset": "assets/codigos/CONVOCAR/CONVOCAR_CV01_MATRIZ_FOUNDRY_256_lossless.webp",
+        "status": "APPROVED_ART_STAGING_DOCUMENTED"
+      },
+      {
+        "code": "CV-02",
+        "family": "CONVOCAR",
+        "name": "Flecha y pron",
+        "legacyAsset": "assets/codigos/CONVOCAR/CONVOCAR_CV02_MAPUCHE_PRON_FOUNDRY_256_lossless.webp",
+        "status": "APPROVED_ART_STAGING_DOCUMENTED"
+      },
+      {
+        "code": "CV-03",
+        "family": "CONVOCAR",
+        "name": "Pututu",
+        "legacyAsset": "assets/codigos/CONVOCAR/CONVOCAR_CV03_ANDINO_PUTUTU_FOUNDRY_256_lossless.webp",
+        "status": "APPROVED_ART_STAGING_DOCUMENTED"
+      },
+      {
+        "code": "CV-04",
+        "family": "CONVOCAR",
+        "name": "Herǫr",
+        "legacyAsset": "assets/codigos/CONVOCAR/CONVOCAR_CV04_NORDICO_HEROR_FOUNDRY_256_lossless.webp",
+        "status": "APPROVED_ART_STAGING_DOCUMENTED"
+      }
+    ],
+    "unresolved": [
+      "SEÑALIZAR: 5 approved originals not recovered",
+      "SIGNIFICAR: no approved functional icon; FT-01 candidate; FT-02 missing",
+      "CV-05 NO-GO"
+    ],
+    "warning": "Graphic ID is not a learned practice ID or cupo. Do not impose a new COD series by default."
+  },
+  "proposedSeries": {
+    "relics": "REL-L-001..008 and REL-C-001..008 preserve source subseries; Tokicura allocation open",
+    "equipment": "Keep eq-{culture}-{slug} as stable historical alias; 8 per culture, no automatic COM/EQU split",
+    "instruments": "ERH is graphic style, not verified ordinal catalogue; propose INS only after existing allocations recovered",
+    "rituals": "RIT-001..008 proposed from source basename 01–08; no allocation yet",
+    "parafernalia": "PAR prefix candidate, keep irregular original numbers and culture aliases"
+  }
 }
