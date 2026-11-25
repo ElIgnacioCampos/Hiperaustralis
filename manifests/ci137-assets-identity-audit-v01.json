@@ -61,7 +61,8 @@
     "flora": 40,
     "faunaItemIds": 50,
     "newDefenseCandidates": 9,
-    "turianoRecords": 6
+    "turianoRecords": 6,
+    "relicSourceReadbacks": 17
   },
   "arms": [
     {
@@ -1706,104 +1707,220 @@
       "id": "q3HXoB750L6j6XHK",
       "family": "Reliquias legendarias",
       "source": "source-pending/ci137-reliquias-historicas-16/legendarias/q3HXoB750L6j6XHK.json",
-      "canonicalCode": null
+      "prototypeAlias": "KvinnebyRel00001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.q3HXoB750L6j6XHK",
+      "name": "Amuleto rúnico de Kvinneby",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/08_AMULETO_RUNICO_DE_KVINNEBY.webp",
+      "legacySlug": "amuleto-runico-kvinneby",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/08_AMULETO_RUNICO_DE_KVINNEBY.webp",
+      "canonicalCode": null,
+      "sourceSha": "63cc599b3b3e21b8e24ae0a3c2a25381b53d949a"
     },
     {
       "id": "CtMcaOnMjw23zWmq",
       "family": "Reliquias legendarias",
       "source": "source-pending/ci137-reliquias-historicas-16/legendarias/CtMcaOnMjw23zWmq.json",
-      "canonicalCode": null
+      "prototypeAlias": "AntukuraReliq001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.CtMcaOnMjw23zWmq",
+      "name": "Antükura",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/02_ANTUKURA.webp",
+      "legacySlug": "antukura",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/02_ANTUKURA.webp",
+      "canonicalCode": null,
+      "sourceSha": "67107b5553a3a3a8f187afb521c848f4c33d814f"
     },
     {
       "id": "frD3BIM7bklCxPle",
       "family": "Reliquias cotidianas",
       "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/frD3BIM7bklCxPle.json",
-      "canonicalCode": null
+      "prototypeAlias": "CencerroMadRel01",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.frD3BIM7bklCxPle",
+      "name": "Cencerro de madera",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/08_cencerro_de_madera.webp",
+      "legacySlug": "cencerro-de-madera",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/08_cencerro_de_madera.webp",
+      "canonicalCode": null,
+      "sourceSha": "df156e695593928f730c2cb48bf0cfd6017ba325"
     },
     {
       "id": "z8BEvJ4uHgLSZePS",
       "family": "Reliquias cotidianas",
       "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/z8BEvJ4uHgLSZePS.json",
-      "canonicalCode": null
+      "prototypeAlias": "ChallaHeredRel001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.z8BEvJ4uHgLSZePS",
+      "name": "Challa heredada",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/01_challa_heredada.webp",
+      "legacySlug": "challa-heredada",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/01_challa_heredada.webp",
+      "canonicalCode": null,
+      "sourceSha": "632c62f9db99692ffec50865fb36eed813f24b1d"
     },
     {
       "id": "a9NdZq068ANs5hnR",
       "family": "Reliquias legendarias",
       "source": "source-pending/ci137-reliquias-historicas-16/legendarias/a9NdZq068ANs5hnR.json",
-      "canonicalCode": null
+      "prototypeAlias": "ChayancoRel00001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.a9NdZq068ANs5hnR",
+      "name": "Chayanco de Chillpila",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/06_CHAYANCO_DE_CHILLPILA.webp",
+      "legacySlug": "chayanco-de-chillpila",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/06_CHAYANCO_DE_CHILLPILA.webp",
+      "canonicalCode": null,
+      "sourceSha": "0918cef0c9fc07f4212dffa175865b84acd57c47"
     },
     {
       "id": "u5Vbl3gGUL4kJJQ2",
       "family": "Reliquias cotidianas",
       "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/u5Vbl3gGUL4kJJQ2.json",
-      "canonicalCode": null
+      "prototypeAlias": "ChuspaCamRel0001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.u5Vbl3gGUL4kJJQ2",
+      "name": "Chuspa de camino",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/03_chuspa_de_camino.webp",
+      "legacySlug": "chuspa-de-camino",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/03_chuspa_de_camino.webp",
+      "canonicalCode": null,
+      "sourceSha": "f81bc965f04b7f4773e62cfe04a76e7588289eb1"
     },
     {
       "id": "sdQeeQDV2W6EVl2w",
       "family": "Reliquias cotidianas",
       "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/sdQeeQDV2W6EVl2w.json",
-      "canonicalCode": null
+      "prototypeAlias": "CuchChaniarRel01",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.sdQeeQDV2W6EVl2w",
+      "name": "Cuchara de chañar",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/07_cuchara_de_chanar.webp",
+      "legacySlug": "cuchara-de-chanar",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/07_cuchara_de_chanar.webp",
+      "canonicalCode": null,
+      "sourceSha": "061bacda17cc3cd16e70967b722959d8d972f438"
     },
     {
       "id": "tr9AQooUcnTtAxO3",
       "family": "Reliquias legendarias",
       "source": "source-pending/ci137-reliquias-historicas-16/legendarias/tr9AQooUcnTtAxO3.json",
-      "canonicalCode": null
+      "prototypeAlias": "DrakarUllmanRel01",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.tr9AQooUcnTtAxO3",
+      "name": "Drakar de Ullman",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/04_DRAKAR_DE_ULLMAN.webp",
+      "legacySlug": "drakar-de-ullman",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/04_DRAKAR_DE_ULLMAN.webp",
+      "canonicalCode": null,
+      "sourceSha": "1e618723a01aec125ded8dd7f181c885d630a1ff"
     },
     {
       "id": "TADm8tlCkyns4iwE",
       "family": "Reliquias cotidianas",
       "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/TADm8tlCkyns4iwE.json",
-      "canonicalCode": null
+      "prototypeAlias": "InkuniaRel000001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.TADm8tlCkyns4iwE",
+      "name": "Inkuña de ofrendas",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/04_inkuna_de_ofrendas.webp",
+      "legacySlug": "inkuna-de-ofrendas",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/04_inkuna_de_ofrendas.webp",
+      "canonicalCode": null,
+      "sourceSha": "c8322c18bb302057507b136fa68d962f1bc2cb17"
     },
     {
       "id": "T0yw5ZsA7WtDOB9G",
       "family": "Reliquias cotidianas",
       "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/T0yw5ZsA7WtDOB9G.json",
-      "canonicalCode": null
+      "prototypeAlias": "KMetaweFamRel01",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.T0yw5ZsA7WtDOB9G",
+      "name": "Kütru metawe familiar",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/02_kutru_metawe_familiar.webp",
+      "legacySlug": "kutru-metawe-familiar",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/02_kutru_metawe_familiar.webp",
+      "canonicalCode": null,
+      "sourceSha": "1f04ba4522e82f34a0e0b6b9c59384c0081b192e"
     },
     {
       "id": "3Rjv67wd9g9rVwka",
       "family": "Reliquias cotidianas",
       "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/3Rjv67wd9g9rVwka.json",
-      "canonicalCode": null
+      "prototypeAlias": "PeineAstaRel0001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.3Rjv67wd9g9rVwka",
+      "name": "Peine de asta heredado",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/05_peine_de_asta_heredado.webp",
+      "legacySlug": "peine-de-asta-heredado",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/05_peine_de_asta_heredado.webp",
+      "canonicalCode": null,
+      "sourceSha": "f7fffcd43b27ed5273954924e3961d9b7356d054"
     },
     {
       "id": "NSOxLP5BMpfX7L57",
       "family": "Reliquias cotidianas",
       "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/NSOxLP5BMpfX7L57.json",
-      "canonicalCode": null
+      "prototypeAlias": "AfilarViajeRel01",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.NSOxLP5BMpfX7L57",
+      "name": "Piedra de afilar del viaje",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/06_piedra_de_afilar_del_viaje.webp",
+      "legacySlug": "piedra-de-afilar-del-viaje",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_cotidianas/06_piedra_de_afilar_del_viaje.webp",
+      "canonicalCode": null,
+      "sourceSha": "1ade9654b0f47d2bdd608aecf840116b8078862d"
     },
     {
       "id": "ik1kdfVoqQbbTAmH",
       "family": "Reliquias legendarias",
       "source": "source-pending/ci137-reliquias-historicas-16/legendarias/ik1kdfVoqQbbTAmH.json",
-      "canonicalCode": null
+      "prototypeAlias": "PiedraPaititiRel1",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.ik1kdfVoqQbbTAmH",
+      "name": "Piedra Vieja de Paititi",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/05_PIEDRA_VIEJA_DE_PAITITI.webp",
+      "legacySlug": "piedra-vieja-paititi",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/05_PIEDRA_VIEJA_DE_PAITITI.webp",
+      "canonicalCode": null,
+      "sourceSha": "8ef4cc7054bfb83c4b5a1399b195cd2dbedbced5"
     },
     {
       "id": "UrZNB1QgdnAghNQb",
       "family": "Reliquias legendarias",
       "source": "source-pending/ci137-reliquias-historicas-16/legendarias/UrZNB1QgdnAghNQb.json",
-      "canonicalCode": null
+      "prototypeAlias": "TabHumFelRel0001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.UrZNB1QgdnAghNQb",
+      "name": "Tableta del Hombre-Felino",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/07_TABLETA_DEL_HOMBRE_FELINO.webp",
+      "legacySlug": "tableta-hombre-felino",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/07_TABLETA_DEL_HOMBRE_FELINO.webp",
+      "canonicalCode": null,
+      "sourceSha": "6d5410b1726b10270d38d95f0aa2bec82139cffb"
     },
     {
       "id": "607Y5Z4vouHf8vEi",
       "family": "Reliquias legendarias",
       "source": "source-pending/ci137-reliquias-historicas-16/legendarias/607Y5Z4vouHf8vEi.json",
-      "canonicalCode": null
+      "prototypeAlias": "TridUllmanRel001",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.607Y5Z4vouHf8vEi",
+      "name": "Tridente de Ullman",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/01_TRIDENTE_DE_ULLMAN.webp",
+      "legacySlug": "tridente-de-ullman",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/01_TRIDENTE_DE_ULLMAN.webp",
+      "canonicalCode": null,
+      "sourceSha": "aa08a75c50de571d27054911b292088862b52d35"
     },
     {
       "id": "sRDyvzOfCVjdHJ0D",
       "family": "Reliquias legendarias",
       "source": "source-pending/ci137-reliquias-historicas-16/legendarias/sRDyvzOfCVjdHJ0D.json",
-      "canonicalCode": null
+      "prototypeAlias": "YelHipolitaRel01",
+      "oldUuid": "Compendium.world.hiperaustralis-rituales.Item.sRDyvzOfCVjdHJ0D",
+      "name": "Yelmo de Hipólita",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/03_YELMO_DE_HIPOLITA.webp",
+      "legacySlug": "yelmo-de-hipolita",
+      "backgroundPath": "modules/hiperaustralis-rituales/assets/reliquias_legendarias/03_YELMO_DE_HIPOLITA.webp",
+      "canonicalCode": null,
+      "sourceSha": "cf543c0100bc8adab0381fed13bec45b7d0603ee"
     },
     {
       "id": "TokicuraRel0001",
       "family": "Reliquias",
       "source": "source/items/reliquias/tokicura.json",
+      "name": "Tokicura",
+      "legacyPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/tokicura_256.webp",
+      "legacySlug": "tokicura",
+      "backgroundPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/tokicura_256.webp",
       "canonicalCode": null,
-      "warning": "V14 active transport alias TokicuraRel00010; do not change either by normalization"
+      "sourceSha": "3a37a39809e28458c06eb6b90f6446c6500cf10f"
     }
   ],
   "parafernaliaRituals": [
@@ -2274,5 +2391,6 @@
     "Resolve DEF-04/08, DEF-05 name, Tañaña missing asset.",
     "Resolve HAB uncoded, Milodón reclassification, RIV-01 active QA5 ID vs historical alias; do not promote graphic numbers to catalog IDs.",
     "After exact binary verification, draft reversible path map and run D2 path/ID checks."
-  ]
+  ],
+  "revision": 2
 }
