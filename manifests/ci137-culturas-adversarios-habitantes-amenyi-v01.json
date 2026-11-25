@@ -141,7 +141,7 @@
   },
   "noLiveChanges": true,
   "habitantesTerritorial": {
-    "status": "AUTHOR_FOLDER_ORDER__D2_PENDING",
+    "status": "D2_FOLDER_ROUNDTRIP_PASS",
     "source": "source-pending/ci137-actors-historical-68/actors-2026-11-14.json",
     "sourceBlob": "b0cf59d8ddd19e5cce5a401f0858a8f9e011811a",
     "records": [
@@ -254,7 +254,7 @@
     ]
   },
   "bestiario": {
-    "status": "AUTHOR_HIERARCHY__D2_PENDING",
+    "status": "D2_FOLDER_ROUNDTRIP_PASS__SHARED_ASSET_TRANSFER_PENDING",
     "records": [
       {
         "id": "B3G24jKZL5s6qYgh",
@@ -453,6 +453,263 @@
       "js": "One implementation per shared behavior; reference/import the same JS, not per-folder copies. JSON source reused where the same document is referenced.",
       "pathStrategy": "Canonical module-relative asset URI; do not rely on filesystem symlinks in Forge; rewire all img, prototypeToken, flags, HTML and JS references through reversible mapping before retiring old path.",
       "noLiveChanges": true
+    },
+    "assetCrosswalk": {
+      "sourceArchives": [
+        "HIPERAUSTRALIS_FOUNDRY_ACTORS_2026-11-14T18-19-48-819Z.json",
+        "CI137-NATIVE-RELEASE-RECOVERY-DOCUMENTS.zip",
+        "HIPERAUSTRALIS_FOUNDRY_V14_COMPENDIOS_0.4.100_ADVERSARIOS_FIX_CANDIDATO.zip",
+        "CI137_ASSETS_OPTIMIZADOS_RESOLUCION_MIXTA_20261124_v02.zip"
+      ],
+      "sourceAudit": "Physically opened archives; CRC, original and optimized SHA256, WebP decode, dimensions 256x256 verified for available files. All 19 paired Actor img, Actor prototypeToken.texture.src and Item img exactly match. Not a visual approval or runtime transfer.",
+      "records": [
+        {
+          "code": "FAU-049",
+          "actorId": "B3G24jKZL5s6qYgh",
+          "itemId": "yDxgobX0LZ1B8pff",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-049_Harpia_harpyja.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-049_Harpia_harpyja.webp",
+          "sameThreeReferences": true,
+          "stagingPath": "exact-path/assets/fauna/rupestre/FAU-049_Harpia_harpyja.webp",
+          "sha256": "ba1274bd3742761b330678af58d660ebfc0a9a18b3ad53a92437980c1a238958",
+          "bytes": 25418,
+          "status": "BINARY_VERIFIED_LOCAL_NOT_PROMOTED"
+        },
+        {
+          "code": "FAU-051",
+          "actorId": "IPWS6morNxCeMbNQ",
+          "itemId": "Uo01VqsJ2QxRunBJ",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-051_Priodontes_maximus.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-051_Priodontes_maximus.webp",
+          "sameThreeReferences": true,
+          "stagingPath": "exact-path/assets/fauna/rupestre/FAU-051_Priodontes_maximus.webp",
+          "sha256": "a14958d7466c24039f22212de82dee1a7b906963594cef3db59a5e63273ae658",
+          "bytes": 24550,
+          "status": "BINARY_VERIFIED_LOCAL_NOT_PROMOTED"
+        },
+        {
+          "code": "FAU-036",
+          "actorId": "v4Q4MmCWsVrfvFcS",
+          "itemId": "ty5vxa5YdStMLiDb",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-036_Physeter_macrocephalus.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-036_Physeter_macrocephalus.webp",
+          "sameThreeReferences": true,
+          "stagingPath": "exact-path/assets/fauna/rupestre/FAU-036_Physeter_macrocephalus.webp",
+          "sha256": "2300cd02825930f694c8defabd58439dec02514cf939209fdd7c8a439ace41f5",
+          "bytes": 12902,
+          "status": "BINARY_VERIFIED_LOCAL_NOT_PROMOTED"
+        },
+        {
+          "code": "FAU-031",
+          "actorId": "62cueeDAEFpwYyji",
+          "itemId": "DqpmHU2SZaEQ0IQe",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-031_Leptonychotes_weddellii.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-031_Leptonychotes_weddellii.webp",
+          "sameThreeReferences": true,
+          "stagingPath": "exact-path/assets/fauna/rupestre/FAU-031_Leptonychotes_weddellii.webp",
+          "sha256": "2ff3ae277d95cf3b57c03d301b126f97e77756c13c7939359782ef7cdd7c797e",
+          "bytes": 20160,
+          "status": "BINARY_VERIFIED_LOCAL_NOT_PROMOTED"
+        },
+        {
+          "code": "FAU-047",
+          "actorId": "AUi055skDxo3nCYF",
+          "itemId": "exWEvQTUZT0S0hY4",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-047_Notiomastodon_platensis.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-047_Notiomastodon_platensis.webp",
+          "sameThreeReferences": true,
+          "stagingPath": null,
+          "sha256": null,
+          "bytes": null,
+          "status": "MISSING_BINARY"
+        },
+        {
+          "code": "FAU-017",
+          "actorId": "rF1LxbYuVYwMmfNe",
+          "itemId": "xBWLbeiR1eoLoRNB",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-017_Lama_guanicoe.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-017_Lama_guanicoe.webp",
+          "sameThreeReferences": true,
+          "stagingPath": "exact-path/assets/fauna/rupestre/FAU-017_Lama_guanicoe.webp",
+          "sha256": "e1eb1fe11606189c3ceae986bab0fa2aa51b565db4a16e2cb7b8f3dd0289a150",
+          "bytes": 23392,
+          "status": "BINARY_VERIFIED_LOCAL_NOT_PROMOTED"
+        },
+        {
+          "code": "FAU-010",
+          "actorId": "alPU9feZe0k3VldY",
+          "itemId": "fHQnZGjmSOlu4qa8",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-010_Leopardus_guigna.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-010_Leopardus_guigna.webp",
+          "sameThreeReferences": true,
+          "stagingPath": "exact-path/assets/fauna/rupestre/FAU-010_Leopardus_guigna.webp",
+          "sha256": "cd66be26fe6e9f3d526ea4f6e5d3f51e29ff36e869ea5bd307ba1249b6592fb4",
+          "bytes": 30916,
+          "status": "BINARY_VERIFIED_LOCAL_NOT_PROMOTED"
+        },
+        {
+          "code": "FAU-046",
+          "actorId": "i8Pv6mqeJkN6ierv",
+          "itemId": "wS747C9NmBt7XFrg",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-046_Hippidion_saldiasi.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-046_Hippidion_saldiasi.webp",
+          "sameThreeReferences": true,
+          "stagingPath": null,
+          "sha256": null,
+          "bytes": null,
+          "status": "MISSING_BINARY"
+        },
+        {
+          "code": "FAU-022",
+          "actorId": "wpaa4vskznxs19HL",
+          "itemId": "xYZgtFASxeIFpToR",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-022_Lontra_provocax.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-022_Lontra_provocax.webp",
+          "sameThreeReferences": true,
+          "stagingPath": "exact-path/assets/fauna/rupestre/FAU-022_Lontra_provocax.webp",
+          "sha256": "79af5e2c9a793a96e82540810b534c8876470761e489f4e9e219e5bc4b0717c1",
+          "bytes": 15484,
+          "status": "BINARY_VERIFIED_LOCAL_NOT_PROMOTED"
+        },
+        {
+          "code": "FAU-054",
+          "actorId": "uTQE6B8E0PiNUbDG",
+          "itemId": "6dbWEBG1uRnGI28V",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-054_Kelenken_guillermoi.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-054_Kelenken_guillermoi.webp",
+          "sameThreeReferences": true,
+          "stagingPath": null,
+          "sha256": null,
+          "bytes": null,
+          "status": "MISSING_BINARY"
+        },
+        {
+          "code": "FAU-025",
+          "actorId": "PbWfXgVH7R2xS4pQ",
+          "itemId": "wSNmNqNKH8EHbp44",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-025_Otaria_byronia.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-025_Otaria_byronia.webp",
+          "sameThreeReferences": true,
+          "stagingPath": "exact-path/assets/fauna/rupestre/FAU-025_Otaria_byronia.webp",
+          "sha256": "58a3fb7000a211bb3c0e236ac3e679bab5c021be91ad707781f638a775a806b5",
+          "bytes": 21668,
+          "status": "BINARY_VERIFIED_LOCAL_NOT_PROMOTED"
+        },
+        {
+          "code": "FAU-045",
+          "actorId": "AkBZAyt3CImiIvdI",
+          "itemId": "1ZG2udTbA0CmXejm",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-045_Macrauchenia_patachonica.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-045_Macrauchenia_patachonica.webp",
+          "sameThreeReferences": true,
+          "stagingPath": null,
+          "sha256": null,
+          "bytes": null,
+          "status": "MISSING_BINARY"
+        },
+        {
+          "code": "FAU-050",
+          "actorId": "2iOWVO3YfUAu70HP",
+          "itemId": "NpLnnFUGIb4QtU67",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-050_Pteronura_brasiliensis.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-050_Pteronura_brasiliensis.webp",
+          "sameThreeReferences": true,
+          "stagingPath": "exact-path/assets/fauna/rupestre/FAU-050_Pteronura_brasiliensis.webp",
+          "sha256": "c7cc007c90984c6375160ecfe0ee670a9e4e82833fc5373e277873ab8251ddc3",
+          "bytes": 19694,
+          "status": "BINARY_VERIFIED_LOCAL_NOT_PROMOTED"
+        },
+        {
+          "code": "FAU-005",
+          "actorId": "I9kEYPzEdlHmegol",
+          "itemId": "ht3BGgYN4Qpv6Jxh",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-005_Tremarctos_ornatus.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-005_Tremarctos_ornatus.webp",
+          "sameThreeReferences": true,
+          "stagingPath": "exact-path/assets/fauna/rupestre/FAU-005_Tremarctos_ornatus.webp",
+          "sha256": "811c5271a90dd8fdd32e65b4401b9f0ce511a469bd69ac8818c503bc17577813",
+          "bytes": 29914,
+          "status": "BINARY_VERIFIED_LOCAL_NOT_PROMOTED"
+        },
+        {
+          "code": "FAU-008",
+          "actorId": "S271H47hRuZ1J4h1",
+          "itemId": "jeBv1DPoIY1lX2zq",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-008_Panthera_onca.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-008_Panthera_onca.webp",
+          "sameThreeReferences": true,
+          "stagingPath": "exact-path/assets/fauna/rupestre/FAU-008_Panthera_onca.webp",
+          "sha256": "413321f994bed9b93a410ba78791725a0ae33f3c24dfb9d4265aeeb19a62a309",
+          "bytes": 33342,
+          "status": "BINARY_VERIFIED_LOCAL_NOT_PROMOTED"
+        },
+        {
+          "code": "FAU-013",
+          "actorId": "a2UMZpS1rH0QLcEP",
+          "itemId": "DnbzqhzAdXN1r3kW",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-013_Puma_concolor.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-013_Puma_concolor.webp",
+          "sameThreeReferences": true,
+          "stagingPath": "exact-path/assets/fauna/rupestre/FAU-013_Puma_concolor.webp",
+          "sha256": "9609453448a0de21c3fb0443079785c84871fa9f080dfeb635589db369f0d0b9",
+          "bytes": 21832,
+          "status": "BINARY_VERIFIED_LOCAL_NOT_PROMOTED"
+        },
+        {
+          "code": "FAU-002",
+          "actorId": "56qrc20XJSx0kOMH",
+          "itemId": "ghbWSzAV3A8PUmOj",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-002_Telmatobius_culeus.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-002_Telmatobius_culeus.webp",
+          "sameThreeReferences": true,
+          "stagingPath": "exact-path/assets/fauna/rupestre/FAU-002_Telmatobius_culeus.webp",
+          "sha256": "c5c06777a1714533d18452ca038317ab36a0cce359c6c64a12f104b1739bf13a",
+          "bytes": 31858,
+          "status": "BINARY_VERIFIED_LOCAL_NOT_PROMOTED"
+        },
+        {
+          "code": "FAU-053",
+          "actorId": "bP5Yg5wEUGif1rsc",
+          "itemId": "t8fwdSxU650cW8DG",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-053_Smilodon_populator.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-053_Smilodon_populator.webp",
+          "sameThreeReferences": true,
+          "stagingPath": null,
+          "sha256": null,
+          "bytes": null,
+          "status": "MISSING_BINARY"
+        },
+        {
+          "code": "FAU-007",
+          "actorId": "OP7xlczxpAOCIfX1",
+          "itemId": "zfH73rgloB8L6pSM",
+          "legacyPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-007_Tapirus_terrestris.webp",
+          "canonicalCandidate": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-007_Tapirus_terrestris.webp",
+          "sameThreeReferences": true,
+          "stagingPath": "exact-path/assets/fauna/rupestre/FAU-007_Tapirus_terrestris.webp",
+          "sha256": "be0fc9939477197b334d374e81d3ecce1f6da29fc5f7ed745135286a533ddca9",
+          "bytes": 27232,
+          "status": "BINARY_VERIFIED_LOCAL_NOT_PROMOTED"
+        }
+      ],
+      "counts": {
+        "paired": 19,
+        "available": 14,
+        "missing": 5,
+        "availableReferences": 42
+      },
+      "exclusion": "Milodón has no related Item ID and distinct portrait/token legacy paths; no merge.",
+      "canonicalCandidateNote": "Preserve established filenames for this candidate; only module prefix changes, not an approved mass rename."
     }
+  },
+  "latestD2": {
+    "run": 45520319675,
+    "commit": "be46fdf780e9c3f4842dbe6591d2d9335c0e1458",
+    "conclusion": "success",
+    "actorCount": 68,
+    "folderCount": 17,
+    "journalCount": 2,
+    "pageCount": 58,
+    "installable": false
   }
 }
