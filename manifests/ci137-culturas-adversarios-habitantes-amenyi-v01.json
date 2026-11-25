@@ -700,6 +700,57 @@
       },
       "exclusion": "Milodón has no related Item ID and distinct portrait/token legacy paths; no merge.",
       "canonicalCandidateNote": "Preserve established filenames for this candidate; only module prefix changes, not an approved mass rename."
+    },
+    "domesticos": {
+      "status": "HISTORICAL_WORK_RECOVERED__BINARIES_NOT_LOCATED",
+      "proposedFolder": "Bestiario/Fauna/Doméstica",
+      "notCompanions": true,
+      "sourceCut": "2026-11-12/13, archaeological cutoff 1000 CE for historical lots; preserve source decisions",
+      "lots": [
+        {
+          "name": "Aymara / Tiwanaku",
+          "records": [
+            {
+              "name": "Llama",
+              "documentedApproval": true,
+              "master": "HIPERAUSTRALIS_LLAMA_SELECCION_v02.png"
+            },
+            {
+              "name": "Alpaca",
+              "documentedApproval": true,
+              "master": "HIPERAUSTRALIS_ALPACA_SELECCION_v02.png"
+            },
+            {
+              "name": "Perro doméstico de Tiwanaku",
+              "status": "PENDING_FINAL_VALIDATION"
+            }
+          ],
+          "archiveLead": "HIPERAUSTRALIS_CAMELIDOS_FOUNDRY_256_WEBP.zip"
+        },
+        {
+          "name": "Nórdico",
+          "status": "HISTORICAL_LOT_MENTIONED__CONTENTS_AND_BYTES_UNVERIFIED"
+        },
+        {
+          "name": "Europeo",
+          "status": "HISTORICAL_LOT_MENTIONED__CONTENTS_AND_BYTES_UNVERIFIED"
+        },
+        {
+          "name": "Mapuche",
+          "status": "HISTORICAL_LOT_MENTIONED__CONTENTS_AND_BYTES_UNVERIFIED"
+        },
+        {
+          "name": "Patagonia / Canales australes",
+          "status": "NO_COMPLETE_PRECOLONIAL_LOT_CONFIRMED"
+        }
+      ],
+      "companionAuthority": "CORE_CHECKPOINT_RUBRICA_ICONOS_COMPANEROS_2026-11-19_v04.md distinguishes 5 domestic, 8 exotic, 6 familiar companions, 19 total; 18 historical actor records recovered; do not count livestock as companions or assume their Peso 1.",
+      "checks": [
+        "Current mounted 0.4.100 archive filename inventory: no distinct livestock/corral token paths; culture images A1_Sajama_Llamas and L1_Licancabur_Llamas are not isolated tokens.",
+        "14 Nov Actor export: no matching separate domestic livestock Actor names; prehistoric Hippidion and Tapir not domestics.",
+        "Library title/content and Drive filename searches did not recover exact camelid archive. Historical conversation is evidence of work, not binary verification."
+      ],
+      "next": "Recover exact approved original archives and metadata; deduplicate by approved asset hash, retain shared references across Culturas/Territorios/Bestiario; do not invent missing animals or actor statistics."
     }
   },
   "latestD2": {
