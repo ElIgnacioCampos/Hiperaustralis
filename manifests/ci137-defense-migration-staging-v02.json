@@ -1,0 +1,255 @@
+{
+  "schema": "ci137-defense-migration-staging-v02",
+  "date": "2026-11-25",
+  "status": "BLOCKED_EXACT_APPROVED_CATALOG_NOT_RECOVERED",
+  "target": {
+    "moduleId": "hiperaustralis-compendios-prototype",
+    "pack": "ha-proto-items",
+    "folder": "Defensas",
+    "template": "HipEquipTpl00001",
+    "type": "equippableItem",
+    "kind": "defensa"
+  },
+  "sources": {
+    "historical": "8 exact JSON files reopened from expansion branch",
+    "catalog": "CATALOGO_DEF_DESCRIPCIONES_2026-11-24_v02.md (prior chat reference only; exact bytes inaccessible)",
+    "originalZip": "CATALOGO_DEF_DESCRIPCIONES.zip",
+    "originalZipSha256": "5c20aca4c3fee3b8f9dd85305c00e64120a96783253978939fe776a4282b7441",
+    "assetManifest": "manifests/defensas-assets.json"
+  },
+  "historical": [
+    {
+      "id": "Id2dCZ4s4TPTMr8R",
+      "name": "Casco rígido de madera y fibras — Pica–Tarapacá",
+      "seedId": "defensa-01",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/Id2dCZ4s4TPTMr8R.json",
+      "blobSha": "a0bd59307101e79a350b0e5702e0dc120420e4a0",
+      "template": "HipEquipTpl00001",
+      "description": "Protección cerrada para la cabeza, hecha con madera, fibras vegetales y amarres de camélido. Reduce visión periférica, pero cubre bien coronilla, frente y laterales. Pasó por tres generaciones antes de cambiarse por dos llamas y un saco de sal; entre dos tablillas aún guarda un mechón de lana roja.",
+      "kind": "defensa",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/01_casco_rigido_pica_tarapaca.webp"
+    },
+    {
+      "id": "uM1FCC5l7Lbx8sRa",
+      "name": "Casco emplumado — Pica–Tarapacá",
+      "seedId": "defensa-02",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/uM1FCC5l7Lbx8sRa.json",
+      "blobSha": "0add126a1add6850ecef6dfb556a6987117630d3",
+      "template": "HipEquipTpl00001",
+      "description": "Casco rígido con plumas usadas como señal de rango, identidad o reconocimiento. Protege como el casco base, pero hace visible a su portador a distancia. Sus plumas actuales reemplazan las que perdió un antiguo dueño al regresar solo de una emboscada.",
+      "kind": "defensa",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/02_casco_emplumado_pica_tarapaca.webp"
+    },
+    {
+      "id": "ThGITBgBJNBwJ6o2",
+      "name": "Casco sobre capucha tejida — Pica–Tarapacá",
+      "seedId": "defensa-03",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/ThGITBgBJNBwJ6o2.json",
+      "blobSha": "68f14528c9379904a7e3f8733bb6d3db62b04e64",
+      "template": "HipEquipTpl00001",
+      "description": "Combina casco rígido y capucha gruesa de fibra de camélido: la madera recibe el golpe y el tejido amortigua y protege cuello y hombros. Perteneció a una guardiana de caravanas; su hermana tejió la capucha actual después de que la original quedara inutilizable.",
+      "kind": "defensa",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/03_casco_sobre_capucha_pica_tarapaca.webp"
+    },
+    {
+      "id": "pe9Bb6kzCsr5IUx1",
+      "name": "Capucha protectora de fibra de camélido — Pica–Tarapacá",
+      "seedId": "defensa-04",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/pe9Bb6kzCsr5IUx1.json",
+      "blobSha": "69dea68fb766d1a9b8ae497eb5ac475788d06505",
+      "template": "HipEquipTpl00001",
+      "description": "Defensa blanda para cabeza, cuello y hombros, útil sola o bajo un casco. También sirve como abrigo y prenda de viaje. Regresó a una familia sin la mujer para quien había sido tejida, y desde entonces acompaña a quienes deben partir lejos.",
+      "kind": "defensa",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/04_capucha_protectora_pica_tarapaca.webp"
+    },
+    {
+      "id": "aa9YXJm5fD4UF6oK",
+      "name": "Coraza de Lasana — Alto Loa",
+      "seedId": "defensa-05",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/aa9YXJm5fD4UF6oK.json",
+      "blobSha": "0c8defbde8557fcfb418014d39418047c718b0c3",
+      "template": "HipEquipTpl00001",
+      "description": "Protección pesada del torso hecha con cuero de caimán y recortes de piel de mono. Resiste cortes, impactos y proyectiles, y sus materiales hablan de intercambios a gran distancia. Cada propietario añadió una reparación, pero ninguno retiró las anteriores.",
+      "kind": "defensa",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/05_coraza_lasana.webp"
+    },
+    {
+      "id": "gftm3lDJ8r4YbOjh",
+      "name": "Peto grueso de cuero surandino",
+      "seedId": "defensa-06",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/gftm3lDJ8r4YbOjh.json",
+      "blobSha": "2954e1521f27787a0587dbab20631027e1110f0f",
+      "template": "HipEquipTpl00001",
+      "description": "Pieza frontal de cuero pesado que protege pecho y abdomen sin envolver completamente el torso. Es más ligera y sencilla que una coraza completa. Fue recortada y reajustada varias veces para distintos miembros de una misma familia.",
+      "kind": "defensa",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/06_peto_cuero_surandino.webp"
+    },
+    {
+      "id": "6z2oWVl5FstIDJKB",
+      "name": "Espaldar grueso de cuero surandino",
+      "seedId": "defensa-07",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/6z2oWVl5FstIDJKB.json",
+      "blobSha": "b4a5acf6e9ebd332277778db055cb85b0fc32e39",
+      "template": "HipEquipTpl00001",
+      "description": "Protección dorsal amplia, pensada para combinarse con un peto u otra defensa frontal. Cubre una zona difícil de proteger activamente. Fue encontrado entre cargas abandonadas junto a una pared de piedra; nadie sabe qué ocurrió con sus dueños.",
+      "kind": "defensa",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/07_espaldar_cuero_surandino.webp"
+    },
+    {
+      "id": "bMbwzRsasVa6zxAM",
+      "name": "Manta densa defensiva surandina",
+      "seedId": "defensa-08",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/bMbwzRsasVa6zxAM.json",
+      "blobSha": "83270fa3b7732200c9423a799c55f0f8b4c00b9a",
+      "template": "HipEquipTpl00001",
+      "description": "Manta gruesa de fibra de camélido que, enrollada en varias capas, amortigua golpes y complementa otras protecciones. Sigue sirviendo para dormir, abrigarse o envolver heridos. Una de sus esquinas conserva una quemadura cuyo origen nadie recuerda con certeza.",
+      "kind": "defensa",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/08_manta_densa_surandina.webp"
+    }
+  ],
+  "entries": [
+    {
+      "code": "DEF-01",
+      "assetCode": "COM-03",
+      "legacyCatalogName": "Makün — Manta Mapuche",
+      "recoveredCorrectedName": null,
+      "correctedNameStatus": null,
+      "approvedWebpSha256": "535cb7ca1244a81ab5174c51d18bf43813cbaaf7d59b396cb2a563d0c8716c4b",
+      "possibleHistoricalMatches": [],
+      "proposedOperation": "CANDIDATE_ADD_AFTER_SOURCE_VERIFIED",
+      "newRuntimeId": null,
+      "approvedDescription": null,
+      "sourceVerified": false,
+      "readyForBuild": false
+    },
+    {
+      "code": "DEF-02",
+      "assetCode": "COM-05",
+      "legacyCatalogName": "Capa Selk'nam",
+      "recoveredCorrectedName": null,
+      "correctedNameStatus": null,
+      "approvedWebpSha256": "632a2d21ab1f3a6efe2097efe7dd4f8d7d03c8e1d8dca0676543cc6ab476aa2b",
+      "possibleHistoricalMatches": [],
+      "proposedOperation": "CANDIDATE_ADD_AFTER_SOURCE_VERIFIED",
+      "newRuntimeId": null,
+      "approvedDescription": null,
+      "sourceVerified": false,
+      "readyForBuild": false
+    },
+    {
+      "code": "DEF-03",
+      "assetCode": "COM-06",
+      "legacyCatalogName": "Escudo nórdico",
+      "recoveredCorrectedName": null,
+      "correctedNameStatus": null,
+      "approvedWebpSha256": "d1015cdd974d6b6a5a04c15565e2369fd5d53662f11f542a8ccf46b0ad7bcb1e",
+      "possibleHistoricalMatches": [],
+      "proposedOperation": "CANDIDATE_ADD_AFTER_SOURCE_VERIFIED",
+      "newRuntimeId": null,
+      "approvedDescription": null,
+      "sourceVerified": false,
+      "readyForBuild": false
+    },
+    {
+      "code": "DEF-04",
+      "assetCode": "COM-07",
+      "legacyCatalogName": "Casco Pica-Tarapacá",
+      "recoveredCorrectedName": null,
+      "correctedNameStatus": null,
+      "approvedWebpSha256": "b0e32b13bc91c95f80954e2aabf50dcfa787d33e9a257804704fd5c204cf8920",
+      "possibleHistoricalMatches": [
+        "Id2dCZ4s4TPTMr8R",
+        "uM1FCC5l7Lbx8sRa",
+        "ThGITBgBJNBwJ6o2"
+      ],
+      "proposedOperation": "RECONCILE_IDENTITY_BEFORE_ADD_OR_UPDATE",
+      "newRuntimeId": null,
+      "approvedDescription": null,
+      "sourceVerified": false,
+      "readyForBuild": false
+    },
+    {
+      "code": "DEF-05",
+      "assetCode": "COM-08",
+      "legacyCatalogName": "Coraza Chiu-Chiu (pieza del primer lote)",
+      "recoveredCorrectedName": "Peto Chiu-Chiu",
+      "correctedNameStatus": "PRIOR_CONTEXT_NOT_EXACT_SOURCE",
+      "approvedWebpSha256": "2dfcfc0354bf1dee28989d4838fdeab6dd9b72561d9e70f5bf259fbed6bc254c",
+      "possibleHistoricalMatches": [
+        "gftm3lDJ8r4YbOjh"
+      ],
+      "proposedOperation": "RECONCILE_IDENTITY_BEFORE_ADD_OR_UPDATE",
+      "newRuntimeId": null,
+      "approvedDescription": null,
+      "sourceVerified": false,
+      "readyForBuild": false
+    },
+    {
+      "code": "DEF-06",
+      "assetCode": "COM-09",
+      "legacyCatalogName": "Tañaña — Coraza cónica mapuche",
+      "recoveredCorrectedName": null,
+      "correctedNameStatus": null,
+      "approvedWebpSha256": null,
+      "possibleHistoricalMatches": [],
+      "proposedOperation": "CANDIDATE_ADD_AFTER_SOURCE_VERIFIED",
+      "newRuntimeId": null,
+      "approvedDescription": null,
+      "sourceVerified": false,
+      "readyForBuild": false
+    },
+    {
+      "code": "DEF-07",
+      "assetCode": "COM-10",
+      "legacyCatalogName": "Celada — Casquete de cuero mapuche",
+      "recoveredCorrectedName": null,
+      "correctedNameStatus": null,
+      "approvedWebpSha256": "cc3f96a051df7ad9f52067e0c8b076da9eb0a25b2a1996e5622d6858b0933522",
+      "possibleHistoricalMatches": [],
+      "proposedOperation": "CANDIDATE_ADD_AFTER_SOURCE_VERIFIED",
+      "newRuntimeId": null,
+      "approvedDescription": null,
+      "sourceVerified": false,
+      "readyForBuild": false
+    },
+    {
+      "code": "DEF-08",
+      "assetCode": "COM-11",
+      "legacyCatalogName": "Coraza atacameña de cuero de caimán",
+      "recoveredCorrectedName": null,
+      "correctedNameStatus": null,
+      "approvedWebpSha256": "551991bbd4c946ecbf08f1a5e847a0cdd8c296742e256c13a50f646d31bbb556",
+      "possibleHistoricalMatches": [
+        "aa9YXJm5fD4UF6oK"
+      ],
+      "proposedOperation": "RECONCILE_IDENTITY_BEFORE_ADD_OR_UPDATE",
+      "newRuntimeId": null,
+      "approvedDescription": null,
+      "sourceVerified": false,
+      "readyForBuild": false
+    },
+    {
+      "code": "DEF-09",
+      "assetCode": "COM-12",
+      "legacyCatalogName": "Armadura acolchada Chimú",
+      "recoveredCorrectedName": null,
+      "correctedNameStatus": null,
+      "approvedWebpSha256": "f4a6bd39ac5d99ccab0bbdc60cb964e8653ffbf6b0c14fe57369917dc6c65245",
+      "possibleHistoricalMatches": [],
+      "proposedOperation": "CANDIDATE_ADD_AFTER_SOURCE_VERIFIED",
+      "newRuntimeId": null,
+      "approvedDescription": null,
+      "sourceVerified": false,
+      "readyForBuild": false
+    }
+  ],
+  "gates": {
+    "preserveHistoricalIds": true,
+    "noSyntheticDescription": true,
+    "noUnverifiedNewIDs": true,
+    "verifyCanonicalSourceAndGraphic": true,
+    "checkLiveIdCollisions": true,
+    "noRuntimeMutation": true,
+    "newItemsCreated": 0
+  }
+}
