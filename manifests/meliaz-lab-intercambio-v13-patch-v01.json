@@ -78,6 +78,22 @@
     [
       "    pesoButton.disabled = true;\n    try {\n      const result = await requestPesoLoss(actorUuid, 1);",
       "    const exchangeMessageId = pesoButton.dataset.exchangeMessage;\n    if (exchangeMessageId) {\n      const msg = game.messages.get(exchangeMessageId);\n      const state = msg?.getFlag(MODULE_ID,\"action\");\n      if (!state?.intercambio || state.ownerUserId !== game.user.id || state.targetActorUuid !== actorUuid ||\n          state.intercambioResult?.loss !== 1 || state.pesoClaimed || pesoButton.disabled) return;\n      pesoButton.disabled = true;\n      await msg.update({[`flags.${MODULE_ID}.action.pesoClaimed`]:true});\n      const result = await requestPesoLoss(actorUuid,1);\n      if (result?.ok) {\n        await msg.update({[`flags.${MODULE_ID}.action.pesoApplied`]:{before:result.before,after:result.after}});\n        pesoButton.textContent = `PESO ${result.before} → ${result.after}`;\n      } else {\n        ui.notifications.warn(\"MELIAZ: aplicación no confirmada. Revisar con Voz del Mundo antes de repetir.\");\n      }\n      return;\n    }\n    pesoButton.disabled = true;\n    try {\n      const result = await requestPesoLoss(actorUuid, 1);"
+    ],
+    [
+      "2: { label: \"II · Excepcional\", cost: 2, costText: \"la mitad\", battleBonus: 2 },",
+      "2: { label: \"II · Excepcional\", cost: 2, costText: \"la mitad\", battleBonus: 1 },"
+    ],
+    [
+      "3: { label: \"III · Legendaria\", cost: 3, costText: \"tres partes\", battleBonus: 3 }",
+      "3: { label: \"III · Legendaria\", cost: 3, costText: \"tres partes\", battleBonus: 1 }"
+    ],
+    [
+      "        <p><em>Este laboratorio registra el estado; todavía no aplica automáticamente el bono a las tiradas.</em></p>\n      </div>\n    `,\n    flags:",
+      "        <p><em>La Manifestación activa aporta +1 a las Capacidades durante el enfrentamiento; su grado determina el alcance.</em></p>\n      </div>\n    `,\n    flags:"
+    ],
+    [
+      "        <p><em>Este laboratorio registra el estado; todavía no aplica automáticamente el bono a las tiradas.</em></p>\n        <div class=\"meliaz-copy-row\">",
+      "        <p><em>La Manifestación activa aporta +1 a las Capacidades durante el enfrentamiento; su grado determina el alcance.</em></p>\n        <div class=\"meliaz-copy-row\">"
     ]
   ],
   "rules": "// CORE chapter V v13: combat only, never reinterpret universal tests.\nfunction hiperaIntercambioCanRoll(initiator, value, peso) {\n  return Number.isFinite(value) && Number.isFinite(peso) && peso > 0 &&\n    (initiator === \"rival\" || (initiator === \"kona\" && value > peso));\n}\nfunction hiperaIntercambioOutcome(face) {\n  return ({\n    1: {label:\"REVÉS\",loss:0,wound:false,note:\"El Rival se impone; complicación pertinente. Desgaste y Puede Herir según medio y escena.\"},\n    2: {label:\"EMPATE\",loss:0,wound:false,note:\"Ninguna parte se impone.\"},\n    3: {label:\"IMPACTO\",loss:1,wound:false,note:\"El Rival pierde 1 Peso.\"},\n    4: {label:\"QUIEBRE\",loss:1,wound:true,note:\"El Rival pierde 1 Peso y recibe una Herida; sin descontar Peso adicional.\"}\n  })[face] ?? null;\n}\nfunction hiperaIntercambioWeapon(item) {\n  return item ? {id:item.id,name:String(item.name ?? \"\"),quiebre:String(item.system?.props?.quiebre ?? \"\").trim()} : null;\n}\nfunction hiperaIntercambioLine(context) {\n  if (!context) return \"\";\n  return \"<p><strong>Resolver Intercambio:</strong> \" + (context.initiator === \"rival\" ? \"agresión del Rival\" : \"iniciativa del Kona\") +\n    (context.weapon ? \" · \" + escapeHiperaHtml(context.weapon.name) : \"\") + \"</p>\";\n}",
@@ -87,6 +103,20 @@
     "Exaltar Azar post-dado",
     "Códigos UI/storage",
     "Armadura and Aguante confirmation",
-    "manifestar review"
-  ]
+    "Manifestar D3: active duration, eligible grade, insufficient Newén, Descendiente, cooperation rule unresolved",
+    "Exaltar Azar: conflicting playtest sources; do not implement a new transformation without exact closure"
+  ],
+  "manifestar": {
+    "status": "AUTHOR_CORRECTION_RECOVERED_2026-11-23__LAB_ONLY",
+    "source": "Conversation recuperar reglas de Manifestar/Exaltar/Azar, direct author correction; ACTUAL still carries +grade from Oct 9",
+    "rule": "All grades grant +1 while active in combat; cost and scope unchanged. No other collaboration change.",
+    "preserve": [
+      "cost 1/2/3",
+      "descendant requirement",
+      "grade eligibility",
+      "existing activation and clear",
+      "no stacking with ordinary Exaltar or Prestar ropa pending separate cooperation closure"
+    ],
+    "test": "Read exact compiled MANIFESTACION_DATA and verify costs 1/2/3 and bonuses 1/1/1."
+  }
 }
