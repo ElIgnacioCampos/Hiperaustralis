@@ -1334,6 +1334,22 @@
           "checks": "Actual materialized ZIP: CRC pass, exactly two entries, both hashes and byte counts match record, WebP decoded 256x256 RGBA, alpha bbox match, visual inspection both poses.",
           "rule": "One logical code and one ficha, variant suffix a/b. No additional Actor ID or duplicate document.",
           "runtime": "Pending integration; no runtime path assigned; no change to other fauna."
+        },
+        "textRecovery": {
+          "status": "HISTORICAL_ENCOUNTER_TEXT_RECOVERED__COMPANION_FUNCTION_NOT_DEFINED",
+          "archive": "KIT_TRASPASO_HIPERAUSTRALIS_ANIMALITOS_KONA_v02_REENTREGA_20261029(1).zip",
+          "members": [
+            "FUENTES_DE_TRASPASO/FICHAS/FICHAS_EXOTICOS_MELIAZ_v02.md",
+            "FUENTES_DE_TRASPASO/FICHAS/FICHAS_ANIMALITOS_CONSOLIDADAS_v04_20261029.md",
+            "FUENTES_DE_TRASPASO/FICHAS/EXOTICOS_JOURNAL_SOURCE_v03.json"
+          ],
+          "descriptionLiteral": "Reptil volador extinto de cuerpo ligero y alas membranosas. El cráneo alargado y la silueta de vuelo lo distinguen de un ave. La reconstrucción anatómica concreta sigue subordinada al arte aprobado previamente; no añadir rasgos que no estén en esa fuente.",
+          "sceneLiteral": "Una sombra cruza una ladera o un desfiladero. El animal sobrevuela un paso estrecho y obliga al grupo a decidir entre ocultarse, esperar, avanzar bajo cobertura o cambiar la ruta.",
+          "historicalEncounterWeight": 3,
+          "scope": "Historical encounter playtest only; not current companion role; preserve text as provenance, no global Fauna change.",
+          "companionFunction": null,
+          "actorId": null,
+          "gate": "No historical Actor ID or companion utility found. New Actor only after companion function decision or explicit neutral entry approval; no fabricated ability."
         }
       },
       "policy": "Peso 1 exclusively as provisional mechanical convention for Compañeros. No inference about body mass or natural strength. Preserve all other Fauna and encounter weights, historical IDs, functions and graphics; no global taxon-based weight migration.",
@@ -1388,8 +1404,19 @@
           }
         ],
         "missingActor": "EXO-001 Domeykodactylus",
-        "runtime": "PENDING_ISOLATED_IMPLEMENTATION_AND_QA; update only verified Companion documents or role-specific value; if shared with non-Companion encounter, separate role-specific mechanical value without changing its independent Peso.",
+        "runtime": "PASS_D2_EXISTING_18_ONLY__NO_DEPLOY",
         "clarification": "Peso 1 is a provisional mechanical convention of the Companion role, independent of body mass, size, species, strength or encounter Peso. Do not change other Fauna, including domestic livestock, prehistoric fauna, or independent Actors representing a species or encounter."
+      },
+      "integrationD2": {
+        "status": "PASS",
+        "runId": 45528756104,
+        "commit": "2b986d9690de0091736141f372779ba9904ad63a",
+        "scope": "18 existing companion Actors only, six Peso changes, 20 other Fauna props preserved; no runtime deploy",
+        "folders": [
+          "Bestiario/Compañeros/Domésticos",
+          "Bestiario/Compañeros/Exóticos",
+          "Bestiario/Compañeros/Familiares"
+        ]
       }
     }
   },
