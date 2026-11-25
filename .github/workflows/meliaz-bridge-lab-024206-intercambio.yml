@@ -2,7 +2,7 @@ name: MELIAZ LAB 0.24.206 - Resolver Intercambio v13 D2 NO DEPLOY
 on:
   push:
     branches: [work/meliaz-bridge-lab-0.24.204-20261124]
-    paths: ['.github/workflows/meliaz-bridge-lab-024206-intercambio.yml']
+    paths: ['.github/workflows/meliaz-bridge-lab-024206-intercambio.yml', 'manifests/meliaz-lab-intercambio-v13-patch-v01.json']
   workflow_dispatch:
 permissions:
   contents: read
@@ -73,7 +73,7 @@ jobs:
               assert all(z.read(n)==b for n,b in files.items())
               for n in ['bridge.js','kona-token-icons.js']:
                   (root/'check'/n).write_bytes(z.read(n))
-          report={'status':'D2_CANDIDATE_NO_DEPLOY','moduleId':m['id'],'version':m['version'],'changes':['preserve Descendiente hitbox','combat-only v13 outcome mapping','explicit reactive entry','Quiebre context and single claimed Peso marking','Incapacitado label','Manifestar fixed +1 across grades','version'], 'remaining':['D3 real Foundry','Torcer D3 and provisional eligibility','Códigos UI and storage','Piño consequence','Aguante and Armadura','Manifestar D3 and Descendiente cooperation'], 'unchanged':['Mascota handler','Descendiente persistence','Auspicio','40 tokens','all graphics','CSB template','original Bridge'], 'sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'bytes':out.stat().st_size,'runtimeTested':False}
+          report={'status':'D2_CANDIDATE_NO_DEPLOY','moduleId':m['id'],'version':m['version'],'changes':['preserve Descendiente hitbox','combat-only v13 outcome mapping','explicit reactive entry','Quiebre context and single claimed Peso marking','Incapacitado label','Manifestar fixed +1 across grades','Arma click initiates Ñeque','final Revés confirmed armor interception, item flag and repair icon','version'], 'remaining':['D3 real Foundry','Torcer D3 and provisional eligibility','Códigos UI and storage','Piño consequence','Aguante consequence and Armadura D3 (including repair and icon refresh)','Manifestar D3 and Descendiente cooperation'], 'unchanged':['Mascota handler','Descendiente persistence','Auspicio','40 tokens','all graphics','CSB template','original Bridge'], 'sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'bytes':out.stat().st_size,'runtimeTested':False}
           Path('dist/REPORT.json').write_text(json.dumps(report,indent=2)+'\n')
           print(json.dumps(report))
           PY
