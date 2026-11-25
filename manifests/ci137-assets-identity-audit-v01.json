@@ -1,0 +1,2278 @@
+{
+  "schema": "hipera-asset-identity-audit-v01",
+  "status": "AUDIT_ONLY_NO_RENAMES_OR_NEW_IDS",
+  "date": "2026-11-24",
+  "sources": [
+    {
+      "path": "manifests/ci137-quiebre-defensas-traspaso-v07.json",
+      "gitBlob": "1b9c1a78f13b49bc9becea9b0aadcf1af1a6aec3"
+    },
+    {
+      "path": "manifests/ci137-actors-selection-64-20261124-v01.json",
+      "gitBlob": "1b0aecbf49e3400902dfc8a0a8e5d8f754b45a80"
+    },
+    {
+      "path": "manifests/ci137-iconos-territoriales.json",
+      "gitBlob": "24554b63e5a39d3abde04b833852fd9b5e7884ed"
+    },
+    {
+      "path": "manifests/ci137-instrumentos-recetas-dnd-qa-20261124-v01.json",
+      "gitBlob": "eb422ae457ab6b697cffc17ef17d46a4f927626a"
+    },
+    {
+      "path": "manifests/ci137-parafernalia22-rituales8-recovery.json",
+      "gitBlob": "ff91821df1ecdbf6a19bbba565eef4fb4a55b406"
+    },
+    {
+      "path": "manifests/ci137-selected-source-137-historical-ids.json",
+      "gitBlob": "40f60ae9a082218628900cda736f442b3cfec15c"
+    },
+    {
+      "path": "manifests/equipo-comun-29-cruces-candidatos-20261121.json",
+      "gitBlob": "24d4242791ab525669e4efb05c41b67cfb5837d0"
+    },
+    {
+      "path": "manifests/turianos-assets.json",
+      "gitBlob": "acd307cb7d4cfa876447464368fc5bb29d6069a6"
+    },
+    "CORE_MATRIZ_UNICA_VIGENCIA_MELIAZ_2026-11-21_v03.md M80–M82"
+  ],
+  "rules": [
+    "Distinguish catalog code, graphic code, persistent Foundry ID and actual asset hash.",
+    "Three digit display normalization only where identity is established; preserve old code as scoped alias.",
+    "Do not reuse retired or unresolved codes; no automatic allocations or merges.",
+    "One runtime file per verified equivalent approved asset; do not collapse distinct visual roles or approval scopes.",
+    "WebP <=256 for small assets; preserve useful resolution of backgrounds, maps and documentation."
+  ],
+  "coverage": {
+    "selectedItems": 136,
+    "itemFamilies": {
+      "Defensas": 8,
+      "Equipo común": 40,
+      "Instrumentos musicales": 21,
+      "Parafernalia · sanación · cultura material": 22,
+      "Rituales": 8,
+      "Armas": 20,
+      "Reliquias legendarias": 8,
+      "Reliquias cotidianas": 8,
+      "Reliquias": 1
+    },
+    "actors": 64,
+    "flora": 40,
+    "faunaItemIds": 50,
+    "newDefenseCandidates": 9,
+    "turianoRecords": 6
+  },
+  "arms": [
+    {
+      "id": "c2L6T5w4S9OcgkDt",
+      "name": "Cuchillo de piedra",
+      "legacyCatalogCode": "ARM-01",
+      "normalizedCandidate": "ARM-001",
+      "source": "source/items/armas/01_cuchillo_litico.json"
+    },
+    {
+      "id": "Iol01RpIqlQxSTMr",
+      "name": "Cuchillo de hueso",
+      "legacyCatalogCode": "ARM-02",
+      "normalizedCandidate": "ARM-002",
+      "source": "source/items/armas/02_cuchillo_hueso.json"
+    },
+    {
+      "id": "Ri1XmMCXqdIJbK3s",
+      "name": "Cuchillo metálico",
+      "legacyCatalogCode": "ARM-03",
+      "normalizedCandidate": "ARM-003",
+      "source": "source/items/armas/03_cuchillo_metalico.json"
+    },
+    {
+      "id": "n5lkb91fMyBzjvzX",
+      "name": "Seax / cuchillo largo",
+      "legacyCatalogCode": "ARM-04",
+      "normalizedCandidate": "ARM-004",
+      "source": "source/items/armas/04_seax.json"
+    },
+    {
+      "id": "tGW0xjpxQ9JnguU5",
+      "name": "Espada sencilla",
+      "legacyCatalogCode": "ARM-05",
+      "normalizedCandidate": "ARM-005",
+      "source": "source/items/armas/05_espada.json"
+    },
+    {
+      "id": "gf8C98EdlQSYUQh4",
+      "name": "Garrote",
+      "legacyCatalogCode": "ARM-06",
+      "normalizedCandidate": "ARM-006",
+      "source": "source/items/armas/06_garrote.json"
+    },
+    {
+      "id": "DYLtTWt2LeXGYvG7",
+      "name": "Bastón de combate",
+      "legacyCatalogCode": "ARM-07",
+      "normalizedCandidate": "ARM-007",
+      "source": "source/items/armas/07_baston_combate.json"
+    },
+    {
+      "id": "VM0QO1ULwgCp72UM",
+      "name": "Maza pétrea",
+      "legacyCatalogCode": "ARM-08",
+      "normalizedCandidate": "ARM-008",
+      "source": "source/items/armas/08_maza_petrea.json"
+    },
+    {
+      "id": "IIeIpAv4T4dD6hY1",
+      "name": "Hacha lítica",
+      "legacyCatalogCode": "ARM-09",
+      "normalizedCandidate": "ARM-009",
+      "source": "source/items/armas/09_hacha_litica.json"
+    },
+    {
+      "id": "yJ6TtE7h71JqcxlU",
+      "name": "Hacha metálica",
+      "legacyCatalogCode": "ARM-10",
+      "normalizedCandidate": "ARM-010",
+      "source": "source/items/armas/10_hacha_metalica.json"
+    },
+    {
+      "id": "utacTITGbR2IGTqs",
+      "name": "Hacha de dos manos",
+      "legacyCatalogCode": "ARM-11",
+      "normalizedCandidate": "ARM-011",
+      "source": "source/items/armas/11_hacha_dos_manos.json"
+    },
+    {
+      "id": "9gpIv2fgoOYUFOpf",
+      "name": "Hacha barbada",
+      "legacyCatalogCode": "ARM-12",
+      "normalizedCandidate": "ARM-012",
+      "source": "source/items/armas/12_hacha_barbada.json"
+    },
+    {
+      "id": "QxUldCoEJEOCXFnJ",
+      "name": "Lanza corta",
+      "legacyCatalogCode": "ARM-13",
+      "normalizedCandidate": "ARM-013",
+      "source": "source/items/armas/13_lanza_corta.json"
+    },
+    {
+      "id": "UEjClr8xQiDH77h1",
+      "name": "Lanza larga",
+      "legacyCatalogCode": "ARM-14",
+      "normalizedCandidate": "ARM-014",
+      "source": "source/items/armas/14_lanza_larga.json"
+    },
+    {
+      "id": "Rq6tY7rc6ktFEigy",
+      "name": "Jabalina",
+      "legacyCatalogCode": "ARM-15",
+      "normalizedCandidate": "ARM-015",
+      "source": "source/items/armas/15_jabalina.json"
+    },
+    {
+      "id": "8D8YGQR5iuPKMqo0",
+      "name": "Arco simple",
+      "legacyCatalogCode": "ARM-16",
+      "normalizedCandidate": "ARM-016",
+      "source": "source/items/armas/16_arco_simple.json"
+    },
+    {
+      "id": "mHTbGNwut0kzDCVg",
+      "name": "Flecha",
+      "legacyCatalogCode": "ARM-17",
+      "normalizedCandidate": "ARM-017",
+      "source": "source/items/armas/17_flecha.json"
+    },
+    {
+      "id": "18MnPw0iJrmMtvgV",
+      "name": "Honda",
+      "legacyCatalogCode": "ARM-18",
+      "normalizedCandidate": "ARM-018",
+      "source": "source/items/armas/18_honda.json"
+    },
+    {
+      "id": "3ssFdtyl81bRpdKc",
+      "name": "Mata’a",
+      "legacyCatalogCode": "ARM-19",
+      "normalizedCandidate": "ARM-019",
+      "source": "source/items/armas/19_mataa.json"
+    },
+    {
+      "id": "1uesBUeTeGjo9JQT",
+      "name": "Arpón",
+      "legacyCatalogCode": "ARM-20",
+      "normalizedCandidate": "ARM-020",
+      "source": "source/items/armas/20_arpon.json"
+    }
+  ],
+  "defenses": {
+    "historical": [
+      {
+        "id": "Id2dCZ4s4TPTMr8R",
+        "name": "Casco rígido de madera y fibras — Pica–Tarapacá",
+        "legacySeed": "defensa-01",
+        "legacyPath": "modules/hiperaustralis-rituales/assets/defensas/01_casco_rigido_pica_tarapaca.webp",
+        "canonicalCode": null
+      },
+      {
+        "id": "uM1FCC5l7Lbx8sRa",
+        "name": "Casco emplumado — Pica–Tarapacá",
+        "legacySeed": "defensa-02",
+        "legacyPath": "modules/hiperaustralis-rituales/assets/defensas/02_casco_emplumado_pica_tarapaca.webp",
+        "canonicalCode": null
+      },
+      {
+        "id": "ThGITBgBJNBwJ6o2",
+        "name": "Casco sobre capucha tejida — Pica–Tarapacá",
+        "legacySeed": "defensa-03",
+        "legacyPath": "modules/hiperaustralis-rituales/assets/defensas/03_casco_sobre_capucha_pica_tarapaca.webp",
+        "canonicalCode": null
+      },
+      {
+        "id": "pe9Bb6kzCsr5IUx1",
+        "name": "Capucha protectora de fibra de camélido — Pica–Tarapacá",
+        "legacySeed": "defensa-04",
+        "legacyPath": "modules/hiperaustralis-rituales/assets/defensas/04_capucha_protectora_pica_tarapaca.webp",
+        "canonicalCode": null
+      },
+      {
+        "id": "aa9YXJm5fD4UF6oK",
+        "name": "Coraza de Lasana — Alto Loa",
+        "legacySeed": "defensa-05",
+        "legacyPath": "modules/hiperaustralis-rituales/assets/defensas/05_coraza_lasana.webp",
+        "canonicalCode": null
+      },
+      {
+        "id": "gftm3lDJ8r4YbOjh",
+        "name": "Peto grueso de cuero surandino",
+        "legacySeed": "defensa-06",
+        "legacyPath": "modules/hiperaustralis-rituales/assets/defensas/06_peto_cuero_surandino.webp",
+        "canonicalCode": null
+      },
+      {
+        "id": "6z2oWVl5FstIDJKB",
+        "name": "Espaldar grueso de cuero surandino",
+        "legacySeed": "defensa-07",
+        "legacyPath": "modules/hiperaustralis-rituales/assets/defensas/07_espaldar_cuero_surandino.webp",
+        "canonicalCode": null
+      },
+      {
+        "id": "bMbwzRsasVa6zxAM",
+        "name": "Manta densa defensiva surandina",
+        "legacySeed": "defensa-08",
+        "legacyPath": "modules/hiperaustralis-rituales/assets/defensas/08_manta_densa_surandina.webp",
+        "canonicalCode": null
+      }
+    ],
+    "editorial": [
+      {
+        "legacyCatalogCode": "DEF-01",
+        "normalizedCandidate": "DEF-001",
+        "legacyGraphicCode": "COM-03",
+        "name": "Makün — Manta Mapuche",
+        "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-03_Manta_Mapuche_256.webp",
+        "decision": "DISTINCT_CANDIDATE_NO_RUNTIME_CREATE",
+        "id": null
+      },
+      {
+        "legacyCatalogCode": "DEF-02",
+        "normalizedCandidate": "DEF-002",
+        "legacyGraphicCode": "COM-05",
+        "name": "Capa Selk'nam",
+        "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-05_Capa_Selknam_Zorro_256.webp",
+        "decision": "DISTINCT_CANDIDATE_NO_RUNTIME_CREATE",
+        "id": null
+      },
+      {
+        "legacyCatalogCode": "DEF-03",
+        "normalizedCandidate": "DEF-003",
+        "legacyGraphicCode": "COM-06",
+        "name": "Escudo nórdico",
+        "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-06_Escudo_Nordico_256.webp",
+        "decision": "DISTINCT_CANDIDATE_NO_RUNTIME_CREATE",
+        "id": null
+      },
+      {
+        "legacyCatalogCode": "DEF-04",
+        "normalizedCandidate": "DEF-004",
+        "legacyGraphicCode": "COM-07",
+        "name": "Casco con insignia — Casco Pica-Tarapacá",
+        "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-07_Casco_Pica_Tarapaca_256.webp",
+        "decision": "IDENTITY_PENDING_COMPARE_3_HISTORICAL_HELMETS",
+        "id": null
+      },
+      {
+        "legacyCatalogCode": "DEF-05",
+        "normalizedCandidate": "DEF-005",
+        "legacyGraphicCode": "COM-08",
+        "name": "Escudo de cuero — Coraza Chiu-Chiu",
+        "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-08_Coraza_Chiu-Chiu_256.webp",
+        "decision": "DISTINCT_CANDIDATE_NAME_PENDING",
+        "id": null
+      },
+      {
+        "legacyCatalogCode": "DEF-06",
+        "normalizedCandidate": "DEF-006",
+        "legacyGraphicCode": "COM-09",
+        "name": "Tañaña — Coraza cónica mapuche",
+        "assetPath": null,
+        "decision": "DISTINCT_CANDIDATE_ASSET_MISSING",
+        "id": null
+      },
+      {
+        "legacyCatalogCode": "DEF-07",
+        "normalizedCandidate": "DEF-007",
+        "legacyGraphicCode": "COM-10",
+        "name": "Celada — Casquete de cuero mapuche",
+        "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-10_CELADA_MAPUCHE_256.webp",
+        "decision": "DISTINCT_CANDIDATE_NO_RUNTIME_CREATE",
+        "id": null
+      },
+      {
+        "legacyCatalogCode": "DEF-08",
+        "normalizedCandidate": "DEF-008",
+        "legacyGraphicCode": "COM-11",
+        "name": "Coraza atacameña de cuero de caimán",
+        "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-11_CORAZA_CHIU_CHIU_256.webp",
+        "decision": "PROBABLE_LASANA_DUPLICATE_NOT_MERGED",
+        "id": null
+      },
+      {
+        "legacyCatalogCode": "DEF-09",
+        "normalizedCandidate": "DEF-009",
+        "legacyGraphicCode": "COM-12",
+        "name": "Armadura acolchada Chimú",
+        "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-12_ARMADURA_ACOLCHADA_CHIMU_256.webp",
+        "decision": "DISTINCT_CANDIDATE_NO_RUNTIME_CREATE",
+        "id": null
+      }
+    ],
+    "warning": "Historical seed namespace differs from catalog. Do not normalize both to DEF-001..008. Resolve exact identities and reserve legacy seed aliases before allocating codes."
+  },
+  "actors": [
+    {
+      "id": "npdPcNTKe9KJ4m78",
+      "name": "Arquero",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-10_10_arquero_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-10",
+      "normalizedCandidate": "RIV-010",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "5KTErdwgVENf1dwn",
+      "name": "Combatiente defensivo",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-12_12_combatiente_defensivo_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-12",
+      "normalizedCandidate": "RIV-012",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "r0PDzwkvx9QvZTic",
+      "name": "Custodia",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-04_04_custodia_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-04",
+      "normalizedCandidate": "RIV-004",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "dy3dsoYy8xnCIR2S",
+      "name": "Emboscador",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-14_14_emboscador_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-14",
+      "normalizedCandidate": "RIV-014",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "HmxNtPIpubUjWWrw",
+      "name": "Emboscadora",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-02_02_emboscadora_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-02",
+      "normalizedCandidate": "RIV-002",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "1j2IdqIefYVmdjU8",
+      "name": "Guerrero de otra comunidad",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-03_03_guerrero_otra_comunidad_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-03",
+      "normalizedCandidate": "RIV-003",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "Dkabns46N07iK9ph",
+      "name": "Hondero",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-09_09_hondero_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-09",
+      "normalizedCandidate": "RIV-009",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "1nAObZRVJtrDjg8l",
+      "name": "Jefe de partida",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-08_08_jefe_de_partida_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-08",
+      "normalizedCandidate": "RIV-008",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "dm9nrrmBJzoiBgYY",
+      "name": "Ladrón oportunista",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-01_01_ladron_oportunista_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-01",
+      "normalizedCandidate": "RIV-001",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "Uq5wazXjptC8WxvC",
+      "name": "Lancero",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-11_11_lancero_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-11",
+      "normalizedCandidate": "RIV-011",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "iEs5Kvbosau0cujM",
+      "name": "Luchador",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-13_13_luchador_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-13",
+      "normalizedCandidate": "RIV-013",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "WnDrzRXoPpZdUAIk",
+      "name": "Navegante armado",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-15_15_navegante_armado_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-15",
+      "normalizedCandidate": "RIV-015",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "cUpbmbg9VSg6uMnI",
+      "name": "Piño de guerreros",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-16_16_pino_de_guerreros_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-16",
+      "normalizedCandidate": "RIV-016",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "Pm7WRaZA8kAa49IQ",
+      "name": "Rastreadora hostil",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-05_05_rastreadora_hostil_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-05",
+      "normalizedCandidate": "RIV-005",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "EuSbBbRWpyR4sc63",
+      "name": "Saqueadora",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-06_06_saqueadora_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-06",
+      "normalizedCandidate": "RIV-006",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "d64s3aT9JKD0hCg9",
+      "name": "Veterana",
+      "family": "Rivales",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-07_07_veterana_FOUNDRY_512.webp"
+      ],
+      "legacyGraphicCode": "RIV-07",
+      "normalizedCandidate": "RIV-007",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "B3G24jKZL5s6qYgh",
+      "name": "Águila harpía",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-049_Harpia_harpyja.webp"
+      ],
+      "legacyGraphicCode": "FAU-049",
+      "normalizedCandidate": "FAU-049",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "IPWS6morNxCeMbNQ",
+      "name": "Armadillo gigante",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-051_Priodontes_maximus.webp"
+      ],
+      "legacyGraphicCode": "FAU-051",
+      "normalizedCandidate": "FAU-051",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "v4Q4MmCWsVrfvFcS",
+      "name": "Cachalote",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-036_Physeter_macrocephalus.webp"
+      ],
+      "legacyGraphicCode": "FAU-036",
+      "normalizedCandidate": "FAU-036",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "mXTFN1vg76IQ2qa2",
+      "name": "Cháskels",
+      "family": "Habitantes",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-10_Cháskels.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-10_Cháskels.webp"
+      ],
+      "legacyGraphicCode": "HAB-10",
+      "normalizedCandidate": null,
+      "status": "EDITORIAL_CODE_OPEN"
+    },
+    {
+      "id": "wzsmN9i46PPX6xbq",
+      "name": "Chélep",
+      "family": "Habitantes",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-08_Chélep.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-08_Chélep.webp"
+      ],
+      "legacyGraphicCode": "HAB-08",
+      "normalizedCandidate": "HAB-007",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "62cueeDAEFpwYyji",
+      "name": "Foca de Weddell",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-031_Leptonychotes_weddellii.webp"
+      ],
+      "legacyGraphicCode": "FAU-031",
+      "normalizedCandidate": "FAU-031",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "AUi055skDxo3nCYF",
+      "name": "Gonfoterio · Notiomastodon",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-047_Notiomastodon_platensis.webp"
+      ],
+      "legacyGraphicCode": "FAU-047",
+      "normalizedCandidate": "FAU-047",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "rF1LxbYuVYwMmfNe",
+      "name": "Guanaco",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-017_Lama_guanicoe.webp"
+      ],
+      "legacyGraphicCode": "FAU-017",
+      "normalizedCandidate": "FAU-017",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "alPU9feZe0k3VldY",
+      "name": "Güiña",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-010_Leopardus_guigna.webp"
+      ],
+      "legacyGraphicCode": "FAU-010",
+      "normalizedCandidate": "FAU-010",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "i8Pv6mqeJkN6ierv",
+      "name": "Hippidion · caballo sudamericano",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-046_Hippidion_saldiasi.webp"
+      ],
+      "legacyGraphicCode": "FAU-046",
+      "normalizedCandidate": "FAU-046",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "wpaa4vskznxs19HL",
+      "name": "Huillín",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-022_Lontra_provocax.webp"
+      ],
+      "legacyGraphicCode": "FAU-022",
+      "normalizedCandidate": "FAU-022",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "5JBwsUNnFYacodTJ",
+      "name": "Katari",
+      "family": "Habitantes",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-04_Katari.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-04_Katari.webp"
+      ],
+      "legacyGraphicCode": "HAB-04",
+      "normalizedCandidate": "HAB-003",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "bCAVf76eJBauphje",
+      "name": "Kawa Kawa",
+      "family": "Habitantes",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-07_Kawa_Kawa.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-07_Kawa_Kawa.webp"
+      ],
+      "legacyGraphicCode": "HAB-07",
+      "normalizedCandidate": "HAB-006",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "uTQE6B8E0PiNUbDG",
+      "name": "Kelenken · ave del terror",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-054_Kelenken_guillermoi.webp"
+      ],
+      "legacyGraphicCode": "FAU-054",
+      "normalizedCandidate": "FAU-054",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "PbWfXgVH7R2xS4pQ",
+      "name": "Lobo marino común",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-025_Otaria_byronia.webp"
+      ],
+      "legacyGraphicCode": "FAU-025",
+      "normalizedCandidate": "FAU-025",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "AkBZAyt3CImiIvdI",
+      "name": "Macrauchenia · macrauquenia",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-045_Macrauchenia_patachonica.webp"
+      ],
+      "legacyGraphicCode": "FAU-045",
+      "normalizedCandidate": "FAU-045",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "gJy5tCsrAHMJvS8S",
+      "name": "Milodón relicto",
+      "family": "Habitantes",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-09_Milodón_relicto.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-09_Milodón_relicto.webp"
+      ],
+      "legacyGraphicCode": "HAB-09",
+      "normalizedCandidate": "HAB-008",
+      "status": "RECLASSIFICATION_TO_FAUNA_KEEP_ID_CODE_PENDING"
+    },
+    {
+      "id": "SjikI34cg9ZuspEz",
+      "name": "Ngürüfilu",
+      "family": "Habitantes",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-06_Ngürüfilu.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-06_Ngürüfilu.webp"
+      ],
+      "legacyGraphicCode": "HAB-06",
+      "normalizedCandidate": "HAB-005",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "2iOWVO3YfUAu70HP",
+      "name": "Nutria gigante",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-050_Pteronura_brasiliensis.webp"
+      ],
+      "legacyGraphicCode": "FAU-050",
+      "normalizedCandidate": "FAU-050",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "I9kEYPzEdlHmegol",
+      "name": "Oso andino · Jucumari",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-005_Tremarctos_ornatus.webp"
+      ],
+      "legacyGraphicCode": "FAU-005",
+      "normalizedCandidate": "FAU-005",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "S271H47hRuZ1J4h1",
+      "name": "Otorongo · Jaguar",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-008_Panthera_onca.webp"
+      ],
+      "legacyGraphicCode": "FAU-008",
+      "normalizedCandidate": "FAU-008",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "a2UMZpS1rH0QLcEP",
+      "name": "Puma",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-013_Puma_concolor.webp"
+      ],
+      "legacyGraphicCode": "FAU-013",
+      "normalizedCandidate": "FAU-013",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "xCzi2ZnfvpiktUvY",
+      "name": "Qatiqati",
+      "family": "Habitantes",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-02_Qatiqati.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-02_Qatiqati.webp"
+      ],
+      "legacyGraphicCode": "HAB-02",
+      "normalizedCandidate": "HAB-002",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "4XR5qS710r8a7cJR",
+      "name": "Quesintuu y Umantuu",
+      "family": "Habitantes",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-01_Quesintuu_y_Umantuu.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-01_Quesintuu_y_Umantuu.webp"
+      ],
+      "legacyGraphicCode": "HAB-01",
+      "normalizedCandidate": "HAB-001",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "4WEwljZ2VjLUaRdJ",
+      "name": "Quien sopla el viento",
+      "family": "Habitantes",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-11_Quien_sopla_el_viento.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-11_Quien_sopla_el_viento.webp"
+      ],
+      "legacyGraphicCode": "HAB-11",
+      "normalizedCandidate": null,
+      "status": "EDITORIAL_CODE_OPEN"
+    },
+    {
+      "id": "56qrc20XJSx0kOMH",
+      "name": "Rana gigante del Titicaca",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-002_Telmatobius_culeus.webp"
+      ],
+      "legacyGraphicCode": "FAU-002",
+      "normalizedCandidate": "FAU-002",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "zrRIUDc3sD6aLwR0",
+      "name": "Shoggot",
+      "family": "Habitantes",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-12_Shoggot.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-12_Shoggot.webp"
+      ],
+      "legacyGraphicCode": "HAB-12",
+      "normalizedCandidate": null,
+      "status": "EDITORIAL_CODE_OPEN"
+    },
+    {
+      "id": "bP5Yg5wEUGif1rsc",
+      "name": "Smilodon · felino de colmillos de sable",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-053_Smilodon_populator.webp"
+      ],
+      "legacyGraphicCode": "FAU-053",
+      "normalizedCandidate": "FAU-053",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "OP7xlczxpAOCIfX1",
+      "name": "Tapir · Sachavaca",
+      "family": "Fauna",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-007_Tapirus_terrestris.webp"
+      ],
+      "legacyGraphicCode": "FAU-007",
+      "normalizedCandidate": "FAU-007",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "8U4xgO8CCjeNnxur",
+      "name": "Trülkewekufü",
+      "family": "Habitantes",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/habitantes/HAB-05_Trülkewekufü.webp",
+        "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-05_Trülkewekufü.webp"
+      ],
+      "legacyGraphicCode": "HAB-05",
+      "normalizedCandidate": "HAB-004",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "6pTPJHbEJLeODFBv",
+      "name": "Anchimallén",
+      "family": "Familiares Exóticos",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-002_Anchimallen.webp"
+      ],
+      "legacyGraphicCode": "EXO-002",
+      "normalizedCandidate": "EXO-002",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "tVHCdcwMv1jz2pEm",
+      "name": "Imbunche",
+      "family": "Familiares Exóticos",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-008_Imbunche.webp"
+      ],
+      "legacyGraphicCode": "EXO-008",
+      "normalizedCandidate": "EXO-008",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "jJ9N4oUCmmD4PBGt",
+      "name": "Kobold",
+      "family": "Familiares Exóticos",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-005_Kobold.webp"
+      ],
+      "legacyGraphicCode": "EXO-005",
+      "normalizedCandidate": "EXO-005",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "NtOoatkkgH7sxAjY",
+      "name": "Kolo Kolo",
+      "family": "Familiares Exóticos",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-006_Kolo_Kolo.webp"
+      ],
+      "legacyGraphicCode": "EXO-006",
+      "normalizedCandidate": "EXO-006",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "UmY99wnFGChXYDo6",
+      "name": "Macaco de Pikunmapu",
+      "family": "Familiares Exóticos",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-009_Macaco_de_Pikunmapu.webp"
+      ],
+      "legacyGraphicCode": "EXO-009",
+      "normalizedCandidate": "EXO-009",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "V4hkO2v24ouHE7Wd",
+      "name": "Mandao",
+      "family": "Familiares Exóticos",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-003_Mandao.webp"
+      ],
+      "legacyGraphicCode": "EXO-003",
+      "normalizedCandidate": "EXO-003",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "7d6GezL23i8PCPUB",
+      "name": "Monito del monte",
+      "family": "Familiares Exóticos",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-007_Monito_del_Monte.webp"
+      ],
+      "legacyGraphicCode": "EXO-007",
+      "normalizedCandidate": "EXO-007",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "gvOeY1GIYPFfEFHk",
+      "name": "Troll pétreo",
+      "family": "Familiares Exóticos",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-004_Troll.webp"
+      ],
+      "legacyGraphicCode": "EXO-004",
+      "normalizedCandidate": "EXO-004",
+      "status": "IDENTITY_CROSSWALK_ONLY"
+    },
+    {
+      "id": "01hgbx0UU76CiKsk",
+      "name": "Ave entrenada",
+      "family": "Mascotas",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/MASC-AVE-ENTRENADA_Ave_entrenada.webp"
+      ],
+      "legacyGraphicCode": null,
+      "normalizedCandidate": null,
+      "status": "CODE_ALLOCATION_PENDING"
+    },
+    {
+      "id": "7rwEzFZqOD9W8uAz",
+      "name": "Ave yagán",
+      "family": "Mascotas",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/animal-ave-mensajera-buscadora.webp"
+      ],
+      "legacyGraphicCode": null,
+      "normalizedCandidate": null,
+      "status": "CODE_ALLOCATION_PENDING"
+    },
+    {
+      "id": "ljLPLj4fZKTBhw1r",
+      "name": "Culpeo amansado",
+      "family": "Mascotas",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/MASC-CULPEO_Culpeo_amansado.webp"
+      ],
+      "legacyGraphicCode": null,
+      "normalizedCandidate": null,
+      "status": "CODE_ALLOCATION_PENDING"
+    },
+    {
+      "id": "fkq43lUn7QdAdOUn",
+      "name": "Guiña compañera",
+      "family": "Mascotas",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/animal-guina-companera.webp"
+      ],
+      "legacyGraphicCode": null,
+      "normalizedCandidate": null,
+      "status": "CODE_ALLOCATION_PENDING"
+    },
+    {
+      "id": "6sOsXhQeXKtMZTSc",
+      "name": "Loro Atacameño",
+      "family": "Mascotas",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/animal-loro-cautivo-atacama.webp"
+      ],
+      "legacyGraphicCode": null,
+      "normalizedCandidate": null,
+      "status": "CODE_ALLOCATION_PENDING"
+    },
+    {
+      "id": "KNAs3CxA9JtpnXis",
+      "name": "Ñarki — gato compañero",
+      "family": "Mascotas",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/MASC-NARKI_Narki_companero.webp"
+      ],
+      "legacyGraphicCode": null,
+      "normalizedCandidate": null,
+      "status": "CODE_ALLOCATION_PENDING"
+    },
+    {
+      "id": "cFFjV9AudILE6rGV",
+      "name": "Perro cazador de nutrias",
+      "family": "Mascotas",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/MASC-PERRO-CAZADOR_Perro_cazador_nutrias.webp"
+      ],
+      "legacyGraphicCode": null,
+      "normalizedCandidate": null,
+      "status": "CODE_ALLOCATION_PENDING"
+    },
+    {
+      "id": "yGPS7CQOIwigBvss",
+      "name": "Perro lanudo de los Chonos",
+      "family": "Mascotas",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/MASC-PERRO-LANUDO_Perro_lanudo_chono.webp"
+      ],
+      "legacyGraphicCode": null,
+      "normalizedCandidate": null,
+      "status": "CODE_ALLOCATION_PENDING"
+    },
+    {
+      "id": "rsP7bEX5B9cTSdHh",
+      "name": "Perro pescador de los Chonos",
+      "family": "Mascotas",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/MASC-PERRO-PESCADOR_Perro_pescador_chono.webp"
+      ],
+      "legacyGraphicCode": null,
+      "normalizedCandidate": null,
+      "status": "CODE_ALLOCATION_PENDING"
+    },
+    {
+      "id": "M0my63fGNJGZgmGW",
+      "name": "Perro viajero canoero",
+      "family": "Mascotas",
+      "legacyPaths": [
+        "modules/hiperaustralis-rituales/assets/mascotas/animal-perros-viajeros-canoeros.webp"
+      ],
+      "legacyGraphicCode": null,
+      "normalizedCandidate": null,
+      "status": "CODE_ALLOCATION_PENDING"
+    }
+  ],
+  "fauna": {
+    "items": [
+      {
+        "code": "FAU-001",
+        "id": "MYBvmQTY5ka6CYOA",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/01_Titicaca/FAU-001_Rollandia_microptera.webp"
+      },
+      {
+        "code": "FAU-002",
+        "id": "ghbWSzAV3A8PUmOj",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/01_Titicaca/FAU-002_Telmatobius_culeus.webp"
+      },
+      {
+        "code": "FAU-003",
+        "id": "8U49t6TXIzBEXBja",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/01_Titicaca/FAU-003_Fulica_ardesiaca.webp"
+      },
+      {
+        "code": "FAU-004",
+        "id": "vpvHVQOGukREGu7l",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/01_Titicaca/FAU-004_Vicugna_vicugna.webp"
+      },
+      {
+        "code": "FAU-005",
+        "id": "ht3BGgYN4Qpv6Jxh",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/02_Paititi/FAU-005_Tremarctos_ornatus.webp"
+      },
+      {
+        "code": "FAU-006",
+        "id": "sJUb33WwcLgPb3PQ",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/02_Paititi/FAU-006_Rupicola_peruvianus.webp"
+      },
+      {
+        "code": "FAU-007",
+        "id": "zfH73rgloB8L6pSM",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/02_Paititi/FAU-007_Tapirus_terrestris.webp"
+      },
+      {
+        "code": "FAU-008",
+        "id": "jeBv1DPoIY1lX2zq",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/02_Paititi/FAU-008_Panthera_onca.webp"
+      },
+      {
+        "code": "FAU-009",
+        "id": "5NdmuLKi7ZMHzjfX",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/03_Ngulumapu/FAU-009_Pudu_puda.webp"
+      },
+      {
+        "code": "FAU-010",
+        "id": "fHQnZGjmSOlu4qa8",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/03_Ngulumapu/FAU-010_Leopardus_guigna.webp"
+      },
+      {
+        "code": "FAU-011",
+        "id": "9rgDjzvFGvWNfeKu",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/03_Ngulumapu/FAU-011_Dromiciops_gliroides.webp"
+      },
+      {
+        "code": "FAU-012",
+        "id": "CWlLMol2AZpujPx7",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/03_Ngulumapu/FAU-012_Rhinoderma_darwinii.webp"
+      },
+      {
+        "code": "FAU-013",
+        "id": "DnbzqhzAdXN1r3kW",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/04_Pewenmapu/FAU-013_Puma_concolor.webp"
+      },
+      {
+        "code": "FAU-014",
+        "id": "VUtnqenmd6OCLomn",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/04_Pewenmapu/FAU-014_Lycalopex_culpaeus.webp"
+      },
+      {
+        "code": "FAU-015",
+        "id": "gIDtNyJSYWIXOAp5",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/04_Pewenmapu/FAU-015_Vultur_gryphus.webp"
+      },
+      {
+        "code": "FAU-016",
+        "id": "usQ73nSvGhNkSDSu",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/04_Pewenmapu/FAU-016_Campephilus_magellanicus.webp"
+      },
+      {
+        "code": "FAU-017",
+        "id": "xBWLbeiR1eoLoRNB",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/05_Patagonia_austral/FAU-017_Lama_guanicoe.webp"
+      },
+      {
+        "code": "FAU-018",
+        "id": "nmg6fpR6xYf8oZdL",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/05_Patagonia_austral/FAU-018_Hippocamelus_bisulcus.webp"
+      },
+      {
+        "code": "FAU-019",
+        "id": "OpHPHxq5nQDijZ7p",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/05_Patagonia_austral/FAU-019_Rhea_pennata.webp"
+      },
+      {
+        "code": "FAU-020",
+        "id": "8fqHkodlT8RvP0BS",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/05_Patagonia_austral/FAU-020_Chloephaga_picta.webp"
+      },
+      {
+        "code": "FAU-021",
+        "id": "Hy0GGLcD0eOhzq9W",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/06_Tierra_del_Fuego/FAU-021_Lama_guanicoe_guanicoe.webp"
+      },
+      {
+        "code": "FAU-022",
+        "id": "xYZgtFASxeIFpToR",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/06_Tierra_del_Fuego/FAU-022_Lontra_provocax.webp"
+      },
+      {
+        "code": "FAU-023",
+        "id": "ExYEwc3Ap4yp1hnX",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/06_Tierra_del_Fuego/FAU-023_Chloephaga_hybrida.webp"
+      },
+      {
+        "code": "FAU-024",
+        "id": "N4GmaJdfHlqloRZq",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/06_Tierra_del_Fuego/FAU-024_Tachyeres_pteneres.webp"
+      },
+      {
+        "code": "FAU-025",
+        "id": "wSNmNqNKH8EHbp44",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/07_Canales_australes/FAU-025_Otaria_byronia_sin_O_flavescens.webp"
+      },
+      {
+        "code": "FAU-026",
+        "id": "kb0XKfjLsXLerl6F",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/07_Canales_australes/FAU-026_Arctocephalus_australis.webp"
+      },
+      {
+        "code": "FAU-027",
+        "id": "nUYY5ux1kkLbNsiI",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/07_Canales_australes/FAU-027_Lagenorhynchus_australis.webp"
+      },
+      {
+        "code": "FAU-028",
+        "id": "us4NecHuL6WQXwMc",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/07_Canales_australes/FAU-028_Leucocarbo_atriceps.webp"
+      },
+      {
+        "code": "FAU-029",
+        "id": "YU8cxHhyveeveNAn",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/08_Umbral_Polar/FAU-029_Euphausia_superba.webp"
+      },
+      {
+        "code": "FAU-030",
+        "id": "huZeixaINs1rrugH",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/08_Umbral_Polar/FAU-030_Pygoscelis_adeliae.webp"
+      },
+      {
+        "code": "FAU-031",
+        "id": "DqpmHU2SZaEQ0IQe",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/08_Umbral_Polar/FAU-031_Leptonychotes_weddellii.webp"
+      },
+      {
+        "code": "FAU-032",
+        "id": "rv4P8LZ6pKAhtV0F",
+        "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/08_Umbral_Polar/FAU-032_Stercorarius_maccormicki.webp"
+      },
+      {
+        "code": "FAU-033",
+        "id": "KbtOX3hJ5s6hx3MV",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-034",
+        "id": "8LZSIGm6glTvjx8F",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-035",
+        "id": "pwpLirKw2V1zdpX7",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-036",
+        "id": "ty5vxa5YdStMLiDb",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-037",
+        "id": "vqydUWKetUA4uMwD",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-038",
+        "id": "UWNOWOmcjnTU3TKM",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-039",
+        "id": "eG8Fv70VMWfPn9ND",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-040",
+        "id": "jSNogolHCojEoXVv",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-045",
+        "id": "1ZG2udTbA0CmXejm",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-046",
+        "id": "wS747C9NmBt7XFrg",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-047",
+        "id": "exWEvQTUZT0S0hY4",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-048",
+        "id": "8qnBtUxCb8VYiSzp",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-049",
+        "id": "yDxgobX0LZ1B8pff",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-050",
+        "id": "NpLnnFUGIb4QtU67",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-051",
+        "id": "Uo01VqsJ2QxRunBJ",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-052",
+        "id": "Ns2E8Uvsz8cPKJVt",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-053",
+        "id": "t8fwdSxU650cW8DG",
+        "legacyDocumentaryPath": null
+      },
+      {
+        "code": "FAU-054",
+        "id": "6dbWEBG1uRnGI28V",
+        "legacyDocumentaryPath": null
+      }
+    ],
+    "retired": [
+      "FAU-006"
+    ],
+    "unobserved": [
+      "FAU-041",
+      "FAU-042",
+      "FAU-043",
+      "FAU-044"
+    ]
+  },
+  "flora": [
+    {
+      "code": "FLO-001",
+      "id": "8QxkLEqZyWoZwQuE",
+      "name": "Totora"
+    },
+    {
+      "code": "FLO-002",
+      "id": "kPTRbEpIKnNKD22G",
+      "name": "Orquídea andina"
+    },
+    {
+      "code": "FLO-003",
+      "id": "hrHdYmhradICCOAg",
+      "name": "Ulmo"
+    },
+    {
+      "code": "FLO-004",
+      "id": "D8DUTJF1Et3urear",
+      "name": "Pewen"
+    },
+    {
+      "code": "FLO-005",
+      "id": "obsN2rPwUuDCO9R1",
+      "name": "Calafate"
+    },
+    {
+      "code": "FLO-006",
+      "id": "AjK8zQYvQReR5Dej",
+      "name": "Lenga"
+    },
+    {
+      "code": "FLO-007",
+      "id": "uj4l7qa0LFq7wBXp",
+      "name": "Ciprés de las Guaitecas"
+    },
+    {
+      "code": "FLO-008",
+      "id": "RAFdBdh3zkbnLfFQ",
+      "name": "Pasto antártico"
+    },
+    {
+      "code": "FLO-009",
+      "id": "AqSaHtDOp4paD2OA",
+      "name": "Llacho"
+    },
+    {
+      "code": "FLO-010",
+      "id": "bgNINDolymBTkMDy",
+      "name": "Bromelia"
+    },
+    {
+      "code": "FLO-011",
+      "id": "HRtAN5hQLFY2YhwT",
+      "name": "Canelo"
+    },
+    {
+      "code": "FLO-012",
+      "id": "ZGD5Ju34FhFSWGCp",
+      "name": "Ñirre"
+    },
+    {
+      "code": "FLO-013",
+      "id": "FxSyHzkYd6xLmkC0",
+      "name": "Coigüe"
+    },
+    {
+      "code": "FLO-014",
+      "id": "bWNDctTwgVuBN8ma",
+      "name": "Coirón"
+    },
+    {
+      "code": "FLO-015",
+      "id": "TvWyolfUzBJ4KWUY",
+      "name": "Guindo"
+    },
+    {
+      "code": "FLO-016",
+      "id": "1QDhWgJwPAuLX5Rs",
+      "name": "Esfagno"
+    },
+    {
+      "code": "FLO-017",
+      "id": "QcEq2xpc5io1q7vD",
+      "name": "Helecho arborescente"
+    },
+    {
+      "code": "FLO-018",
+      "id": "EAKZGHAPhvoHXnzY",
+      "name": "Avellano"
+    },
+    {
+      "code": "FLO-019",
+      "id": "If11MHBVELSdsaQ9",
+      "name": "Chaura"
+    },
+    {
+      "code": "FLO-020",
+      "id": "OglJ4jmNql2edLh6",
+      "name": "Liquen polar"
+    },
+    {
+      "code": "FLO-021",
+      "id": "wKqymf6A6W8aCRiE",
+      "name": "Junco"
+    },
+    {
+      "code": "FLO-022",
+      "id": "24LkJ0uBiyQWBJml",
+      "name": "Bambú"
+    },
+    {
+      "code": "FLO-023",
+      "id": "07hNf7vg5bHgJXh2",
+      "name": "Mañío"
+    },
+    {
+      "code": "FLO-024",
+      "id": "YZmZVSVFTjl4hYud",
+      "name": "Macroalga"
+    },
+    {
+      "code": "FLO-025",
+      "id": "JId9z6VBRmBOlXs7",
+      "name": "Lenteja de agua"
+    },
+    {
+      "code": "FLO-026",
+      "id": "OiLM8P1RIhCLROSv",
+      "name": "Musgo de bosque"
+    },
+    {
+      "code": "FLO-027",
+      "id": "WXw4KQcmzDupTAJL",
+      "name": "Ciprés de cordillera"
+    },
+    {
+      "code": "FLO-028",
+      "id": "l2u4hl0dxPmqflYF",
+      "name": "Fungosidades"
+    },
+    {
+      "code": "FLO-029",
+      "id": "immVDHHU9IRjrKh1",
+      "name": "Helecho de agua"
+    },
+    {
+      "code": "FLO-030",
+      "id": "zKZ9w91iyVBmsi1Z",
+      "name": "Epífita"
+    },
+    {
+      "code": "FLO-031",
+      "id": "6bRCFwRxDAig1TJO",
+      "name": "Trepadora"
+    },
+    {
+      "code": "FLO-032",
+      "id": "Gyk8U4yhhoZSckcb",
+      "name": "Alga polar"
+    },
+    {
+      "code": "FLO-033",
+      "id": "xgKE2gvAnDTcuCGt",
+      "name": "Helecho terrestre"
+    },
+    {
+      "code": "FLO-034",
+      "id": "FP8NfVhSk4nLXZiw",
+      "name": "Gramínea cordillerana"
+    },
+    {
+      "code": "FLO-035",
+      "id": "azGKtoLz76hPNUwZ",
+      "name": "Vegetación litoral"
+    },
+    {
+      "code": "FLO-036",
+      "id": "kol0TUekULuAIgkj",
+      "name": "Musgo polar"
+    },
+    {
+      "code": "FLO-037",
+      "id": "AgJPeKku9aQbjp4R",
+      "name": "Yareta"
+    },
+    {
+      "code": "FLO-038",
+      "id": "MV5XYAZDXi7NYtQP",
+      "name": "Copihue"
+    },
+    {
+      "code": "FLO-039",
+      "id": "mPmQ3MtNIZi3H10C",
+      "name": "Nalca"
+    },
+    {
+      "code": "FLO-040",
+      "id": "awe2EdrtmyFQnOzh",
+      "name": "Chilco"
+    }
+  ],
+  "instruments": [
+    {
+      "id": "Aobt60Pl1vy7i7MU",
+      "name": "Antara Lickanantay",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/04_antara_lickanantay.webp",
+      "approvedAsset": null,
+      "approval": "NAME_MATCH_ONLY_CANDIDATE",
+      "canonicalCode": null
+    },
+    {
+      "id": "zSsH0T0CZzJ4nNQB",
+      "name": "Antara Tiwanaku",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/02_antara_tiwanaku.webp",
+      "approvedAsset": null,
+      "approval": "NAME_MATCH_ONLY_CANDIDATE",
+      "canonicalCode": null
+    },
+    {
+      "id": "j7J6wcAttET8rJpB",
+      "name": "Arpa de boca",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/ARPA_BOCA_NORDICA_ERH_256.webp",
+      "approvedAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/ARPA_BOCA_NORDICA_ERH_256.webp",
+      "approval": "AUTHOR_VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECH",
+      "canonicalCode": null
+    },
+    {
+      "id": "RzhInApxuwq1o651",
+      "name": "Campana Lickanantay",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/CAMPANA_PIRAMIDAL_ERH_256.webp",
+      "approvedAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/CAMPANA_PIRAMIDAL_ERH_256.webp",
+      "approval": "AUTHOR_VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECH",
+      "canonicalCode": null
+    },
+    {
+      "id": "INdG4JndLBl0sWto",
+      "name": "Cuerno musical nórdico",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/CUERNO_MUSICAL_ERH_256.webp",
+      "approvedAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/CUERNO_MUSICAL_ERH_256.webp",
+      "approval": "AUTHOR_VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECH",
+      "canonicalCode": null
+    },
+    {
+      "id": "YfFAFtBpsdyU2l9R",
+      "name": "Flauta de hueso",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/FLAUTA_HUESO_ERH_256.webp",
+      "approvedAsset": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/FLAUTA_HUESO_ERH_256.webp",
+      "approval": "AUTHOR_VISUAL_APPROVED_ERH_OPTION_2_PENDING_TECH",
+      "canonicalCode": null
+    },
+    {
+      "id": "R1exJG9q2EP8URHe",
+      "name": "Flauta traversa de Coyo",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/FLAUTA_COYO_ERH_256.webp",
+      "approvedAsset": null,
+      "approval": "NAME_MATCH_ONLY_CANDIDATE",
+      "canonicalCode": null
+    },
+    {
+      "id": "1dhUgcpr5U3wAQ1l",
+      "name": "Kakel-kultrung",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/kakel_kultrung_ERH_256.webp",
+      "approvedAsset": null,
+      "approval": "NAME_MATCH_ONLY_CANDIDATE",
+      "canonicalCode": null
+    },
+    {
+      "id": "vr5gUbTNMU8tj3zL",
+      "name": "Kaskawilla",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/kaskawilla_erh_256.webp",
+      "approvedAsset": "assets/instrumentos/kaskawilla_erh_256.webp",
+      "approval": "APPROVED_ERH_REMAP",
+      "canonicalCode": null
+    },
+    {
+      "id": "K7d2oqF6P7DB0Kpt",
+      "name": "Kultrung",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/kultrung_erh_256.webp",
+      "approvedAsset": "assets/instrumentos/kultrung_erh_256.webp",
+      "approval": "APPROVED_ERH_REMAP",
+      "canonicalCode": null
+    },
+    {
+      "id": "7yTC2u73mcFuQrx2",
+      "name": "Lira nórdica",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/LIRA_ERH_256.webp",
+      "approvedAsset": null,
+      "approval": "NAME_MATCH_ONLY_CANDIDATE",
+      "canonicalCode": null
+    },
+    {
+      "id": "IG8DW7Wr30mg1jqx",
+      "name": "Pifüllka",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/pifullka_erh_256.webp",
+      "approvedAsset": "assets/instrumentos/pifullka_erh_256.webp",
+      "approval": "APPROVED_ERH_REMAP",
+      "canonicalCode": null
+    },
+    {
+      "id": "KpK5mqDdleRnemjh",
+      "name": "Piloilo",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/piloilo_erh_256.webp",
+      "approvedAsset": "assets/instrumentos/piloilo_erh_256.webp",
+      "approval": "APPROVED_ERH_REMAP",
+      "canonicalCode": null
+    },
+    {
+      "id": "JZUzx0bNMoDj6xs5",
+      "name": "Pututu",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/pututu_erh_256.webp",
+      "approvedAsset": "assets/instrumentos/pututu_erh_256.webp",
+      "approval": "APPROVED_ERH_REMAP",
+      "canonicalCode": null
+    },
+    {
+      "id": "K4BKDYp47LohrxuD",
+      "name": "Siku",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/SIKU_ERH_256.webp",
+      "approvedAsset": null,
+      "approval": "NAME_MATCH_ONLY_CANDIDATE",
+      "canonicalCode": null
+    },
+    {
+      "id": "VMdFQpCaienOgLV4",
+      "name": "Sonaja Aymara",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/03_sonaja_aymara.webp",
+      "approvedAsset": null,
+      "approval": "NAME_MATCH_ONLY_CANDIDATE",
+      "canonicalCode": null
+    },
+    {
+      "id": "RiMXmUYNYn5VRKrx",
+      "name": "Sonajero de hierro",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/SONAJERO_HIERRO_ERH_256.webp",
+      "approvedAsset": null,
+      "approval": "NAME_MATCH_ONLY_CANDIDATE",
+      "canonicalCode": null
+    },
+    {
+      "id": "tvgKf9WGkUmy6GJi",
+      "name": "Sonajero Lickanantay",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/06_sonajero_lickanantay.webp",
+      "approvedAsset": null,
+      "approval": "NAME_MATCH_ONLY_CANDIDATE",
+      "canonicalCode": null
+    },
+    {
+      "id": "Akd70OCwmrJ0az3P",
+      "name": "Trompeta monóxila",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/05_trompeta_monoxila.webp",
+      "approvedAsset": null,
+      "approval": "NAME_MATCH_ONLY_CANDIDATE",
+      "canonicalCode": null
+    },
+    {
+      "id": "FvfW6Ug0yCyR7VjF",
+      "name": "Wankara",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/01_wankara.webp",
+      "approvedAsset": null,
+      "approval": "NAME_MATCH_ONLY_CANDIDATE",
+      "canonicalCode": null
+    },
+    {
+      "id": "gp4b3XE6mJGvqE9X",
+      "name": "Waza",
+      "legacyCandidate": "source-original/ci137-asset-staging/instrumentos-erh/webp_256/waza_erh_256.webp",
+      "approvedAsset": "assets/instrumentos/waza_erh_256.webp",
+      "approval": "APPROVED_ERH_REMAP",
+      "canonicalCode": null
+    }
+  ],
+  "relics": [
+    {
+      "id": "q3HXoB750L6j6XHK",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/q3HXoB750L6j6XHK.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "CtMcaOnMjw23zWmq",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/CtMcaOnMjw23zWmq.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "frD3BIM7bklCxPle",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/frD3BIM7bklCxPle.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "z8BEvJ4uHgLSZePS",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/z8BEvJ4uHgLSZePS.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "a9NdZq068ANs5hnR",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/a9NdZq068ANs5hnR.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "u5Vbl3gGUL4kJJQ2",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/u5Vbl3gGUL4kJJQ2.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "sdQeeQDV2W6EVl2w",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/sdQeeQDV2W6EVl2w.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "tr9AQooUcnTtAxO3",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/tr9AQooUcnTtAxO3.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "TADm8tlCkyns4iwE",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/TADm8tlCkyns4iwE.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "T0yw5ZsA7WtDOB9G",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/T0yw5ZsA7WtDOB9G.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "3Rjv67wd9g9rVwka",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/3Rjv67wd9g9rVwka.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "NSOxLP5BMpfX7L57",
+      "family": "Reliquias cotidianas",
+      "source": "source-pending/ci137-reliquias-historicas-16/cotidianas/NSOxLP5BMpfX7L57.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "ik1kdfVoqQbbTAmH",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/ik1kdfVoqQbbTAmH.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "UrZNB1QgdnAghNQb",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/UrZNB1QgdnAghNQb.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "607Y5Z4vouHf8vEi",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/607Y5Z4vouHf8vEi.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "sRDyvzOfCVjdHJ0D",
+      "family": "Reliquias legendarias",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/sRDyvzOfCVjdHJ0D.json",
+      "canonicalCode": null
+    },
+    {
+      "id": "TokicuraRel0001",
+      "family": "Reliquias",
+      "source": "source/items/reliquias/tokicura.json",
+      "canonicalCode": null,
+      "warning": "V14 active transport alias TokicuraRel00010; do not change either by normalization"
+    }
+  ],
+  "parafernaliaRituals": [
+    {
+      "id": "ntEPr3gfZn4xD2rG",
+      "name": "Asiento miniatura de plata",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/08_NORDICOS_ASIENTO_MINIATURA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "JKxUdwuhOtz8yGW1",
+      "name": "Boca del mallku",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/19_AYMARA_BOCA_DEL_MALLKU.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "ilG4UwSV1Bgbk4TF",
+      "name": "Bolsa con semillas de beleño",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/16_NORDICOS_BOLSA_BELENO.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "nnmYeJON0DKDGJsL",
+      "name": "Contenedor del kit inhalatorio",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/17_LICKANANTAY_CONTENEDOR_KIT.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "Z955U4dlDAUeEZvr",
+      "name": "Cucharilla / espátula",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/13_LICKANANTAY_CUCHARILLA_ESPATULA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "FwlbrqC5ZBqiRjXy",
+      "name": "Escobilla de limpieza",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/21_LICKANANTAY_ESCOBILLA_LIMPIEZA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "IPKDCSo3bKzUCcGl",
+      "name": "Hilo negro ritual",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/15_AYMARA_HILO_NEGRO.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "AocpkbZW4w29Bc4u",
+      "name": "Keñeyken",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/38_MAPUCHE_KENEYKEN.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "Nvj2xTK4apIrEDPn",
+      "name": "Kultrún",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/02_MAPUCHE_KULTRUN.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "psnu2t74dnHQ3pFx",
+      "name": "Latúe",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/42_MAPUCHE_LATUE.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "FBVSE0HBZ62ShEZM",
+      "name": "Llaf-llaf",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/10_MAPUCHE_LLAF_LLAF.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "xdvai2XGysSWwdKt",
+      "name": "Mortero miniatura y mano",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/09_LICKANANTAY_MORTERO_MINIATURA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "q0qlFGWAMip94Y4i",
+      "name": "Pañoleta ceremonial",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/14_MAPUCHE_PANOLETA_CEREMONIAL.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "dVgxiZYJcTLdA5yL",
+      "name": "Pifüllka",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/26_MAPUCHE_PIFULLKA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "P0xH74Ofvj2xnAvk",
+      "name": "Q'uwa",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/11_AYMARA_QUWA_HUMO.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "fW04rY0fTfZ84fL6",
+      "name": "Rewe",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/06_MAPUCHE_REWE.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "3cCDbjqou8AlzfsW",
+      "name": "Runas corregidas",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/40_NORDICOS_RUNAS_CORREGIDAS.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "zSx4zh9b24XjjXMx",
+      "name": "Tableta inhalatoria",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/01_LICKANANTAY_TABLETA_INHALATORIA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "QTbZkuQcog7ReVW5",
+      "name": "Trepanación cicatrizada",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/41_ATACAMA_TREPANACION_CICATRIZADA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "MvGDMBIuGD1iozPW",
+      "name": "Tubo inhalatorio",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/05_LICKANANTAY_TUBO_INHALATORIO.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "0MRehrLjaQOO4s1A",
+      "name": "Vara de völva",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/24_NORDICOS_VARA_VOLVA_KOPINGSVIK.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "oaLaLLWoZXQrRULq",
+      "name": "Vigilia nocturna",
+      "family": "Parafernalia · sanación · cultura material",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/43_AYMARA_VIGILIA_NOCTURNA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "StbeCxC7TrpiOUdG",
+      "name": "Atar",
+      "family": "Rituales",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/rituales/05_ATAR.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "fCg9JDUw2DNqWjOe",
+      "name": "Consultar",
+      "family": "Rituales",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/rituales/03_CONSULTAR.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "wgLZd7pqnk84LSWJ",
+      "name": "Despedir",
+      "family": "Rituales",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/rituales/06_DESPEDIR.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "4jeuBPUYEGHmXKXv",
+      "name": "Lakutun · Legar",
+      "family": "Rituales",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/rituales/08_LAKUTUN_LEGAR.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "mLpXRfCGbmX1t8xa",
+      "name": "Renovar Arraigo",
+      "family": "Rituales",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/rituales/04_RENOVAR_ARRAIGO.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "JQI2h5gPnAsqvcsF",
+      "name": "Restituir",
+      "family": "Rituales",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/rituales/02_RESTITUIR.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "yoCFKUIlnBqVvRsH",
+      "name": "Viajar",
+      "family": "Rituales",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/rituales/07_VIAJAR.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "yQe9xxburYY3j35H",
+      "name": "Vincular",
+      "family": "Rituales",
+      "legacyPath": "modules/hiperaustralis-rituales/assets/rituales/01_VINCULAR.webp",
+      "canonicalCode": null
+    }
+  ],
+  "equipment": [
+    {
+      "id": "SbBJa9ACdFH2z86D",
+      "name": "Qapu · Huso",
+      "culture": "Aymara",
+      "legacyPath": "source-original/ci137-asset-staging/equipo/webp256/aymara_qapu_huso.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "EPqXIQm8A38zvtXw",
+      "name": "Knífr · Cuchillo",
+      "culture": "Nórdicos",
+      "legacyPath": "source-original/ci137-asset-staging/equipo/webp256/nordico_knifr_cuchillo.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "XhykrqOWzvB8abe9",
+      "name": "Eldjárn · Yesquero",
+      "culture": "Nórdicos",
+      "legacyPath": "source-original/ci137-asset-staging/equipo/webp256/nordico_eldjarn_yesquero.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "VOtfeqh5KvQw6eF1",
+      "name": "Saum-nál · Aguja de coser",
+      "culture": "Nórdicos",
+      "legacyPath": "source-original/ci137-asset-staging/equipo/webp256/nordico_saum_nal_aguja.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "YuTiSkP9Mx7FvJy7",
+      "name": "Gancho de atalaje",
+      "culture": "Lickanantay",
+      "legacyPath": "source-original/ci137-asset-staging/equipo/webp256/lickanantay_gancho_atalaje.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "CBIQgRyTGVMq6RCP",
+      "name": "Chinguillo · Bolsa-red",
+      "culture": "Chinchorro",
+      "legacyPath": "source-original/ci137-asset-staging/equipo/webp256/chinchorro_chinguillo.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "Cal0I8l96tdRm1pR",
+      "name": "Chope · Desconchador",
+      "culture": "Chinchorro",
+      "legacyPath": "source-original/ci137-asset-staging/equipo/webp256/chinchorro_chope.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "8a526Vqfx3hsafi3",
+      "name": "Canasto",
+      "culture": "Chinchorro",
+      "legacyPath": "source-original/ci137-asset-staging/equipo/webp256/chinchorro_canasto.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "MX9mAxfkdCwvEvkZ",
+      "name": "Punzón de hueso",
+      "culture": "Chinchorro",
+      "legacyPath": "source-original/ci137-asset-staging/equipo/webp256/chinchorro_punzon_hueso.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "F8SYAQfuZnLiXCv6",
+      "name": "Külko · Canasto",
+      "culture": "Mapuche",
+      "legacyPath": "EQ_MAP_KULKO_CANASTO_L01_v02_ALFA_LIMPIA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "tfOpt8w3B1dFl6qS",
+      "name": "Uysu · Arado de pie",
+      "culture": "Aymara",
+      "legacyPath": "EQ_AYM_UYSU_ARADO_PIE_L01_v02_ALFA_LIMPIA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "kMqPL8yvZQIaZGmY",
+      "name": "Brýni · Piedra de afilar",
+      "culture": "Nórdicos",
+      "legacyPath": "EQ_NOR_BRYNI_PIEDRA_AFILAR_L01_v02_ALFA_LIMPIA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "xzRV37AjDu0WVuzh",
+      "name": "Ckarisur · Peine",
+      "culture": "Lickanantay",
+      "legacyPath": "EQ_LICK_CKARISUR_PEINE_L01_v02_ALFA_LIMPIA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "9u2kj6J5jcbZiVP6",
+      "name": "Challa · Olla",
+      "culture": "Mapuche",
+      "legacyPath": "EQ_MAP_CHALLA_OLLA_L02_v01_APROBADA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "Y0QM677Ln8rfixg6",
+      "name": "Ch'uspa · Bolsa pequeña",
+      "culture": "Aymara",
+      "legacyPath": "EQ_AYM_CHUSPA_BOLSA_L02_v01_APROBADA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "UZCgOpwUoDoYPAME",
+      "name": "Øx · Hacha",
+      "culture": "Nórdicos",
+      "legacyPath": "EQ_NOR_OX_HACHA_HERRAMIENTA_L02_v01_APROBADA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "yFT8cUZ71AOrxvN5",
+      "name": "Puco · Cuenco",
+      "culture": "Lickanantay",
+      "legacyPath": "EQ_LICK_PUCO_CUENCO_L02_v01_APROBADA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "5nFewbreKtldDFdL",
+      "name": "Witrü · Cuchara de madera",
+      "culture": "Mapuche",
+      "legacyPath": "EQ_MAP_WITRU_CUCHARA_L03_v01_APROBADA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "g2YB821BybKVvqgK",
+      "name": "Q'ipi · Bulto de carga",
+      "culture": "Aymara",
+      "legacyPath": "EQ_AYM_QIPI_BULTO_L03_v01_APROBADA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "em5ML5e9yQyQCH2o",
+      "name": "Canasto",
+      "culture": "Lickanantay",
+      "legacyPath": "EQ_LICK_CANASTO_L03_v01_APROBADA.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "PmTYfMVymolkOvkq",
+      "name": "Ketill · Caldero",
+      "culture": "Nórdicos",
+      "legacyPath": "EQ_NOR_KETILL_CALDERO_L03_v02_SIN_PATAS.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "MVaSt17DYFT5CP5R",
+      "name": "Rali · Plato",
+      "culture": "Mapuche",
+      "legacyPath": "EQ_MAP_RALI_PLATO_L04_v01_APROBADO.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "iqLSPRD0g34ZMqTi",
+      "name": "Wakulla · Cántaro",
+      "culture": "Aymara",
+      "legacyPath": "EQ_AYM_WAKULLA_CANTARO_L04_v01_APROBADO.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "V70OePeRN8xLcbuy",
+      "name": "Hacha",
+      "culture": "Lickanantay",
+      "legacyPath": "EQ_LICK_HACHA_HERRAMIENTA_L04_v02_APROBADO.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "WgYdtWEqZmWbZpuU",
+      "name": "Estera de fibra vegetal",
+      "culture": "Chinchorro",
+      "legacyPath": "EQ_CHIN_ESTERA_VEGETAL_L04_v01_APROBADO.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "7y88F6dSJK7HvqrN",
+      "name": "Mortero de piedra",
+      "culture": "Mapuche",
+      "legacyPath": "EQ_MAP_MORTERO_PIEDRA_L05_v02_ERH_APROBADO.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "w9DvGQFnGfW8GsiW",
+      "name": "Snælda · Huso",
+      "culture": "Nórdicos",
+      "legacyPath": "EQ_NOR_SNAELDA_HUSO_L05_v02_ERH_APROBADO.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "89egEPGh4AtrOMS0",
+      "name": "Saba · Saco",
+      "culture": "Lickanantay",
+      "legacyPath": "EQ_LICK_SABA_SACO_L05_v02_ERH_APROBADO.webp",
+      "canonicalCode": null
+    },
+    {
+      "id": "3v9D425QdKOva3XV",
+      "name": "Anzuelo y sedal",
+      "culture": "Chinchorro (banco histórico)",
+      "legacyPath": "EQ_CHIN_ANZUELO_SEDAL_L05_v02_ERH_APROBADO.webp",
+      "canonicalCode": null
+    }
+  ],
+  "turianos": [
+    {
+      "legacyCode": "TUR-01",
+      "normalizedCandidate": "TUR-001",
+      "name": "Cantor / Tamborilero",
+      "legacyAsset": "cantor_tamborilero.webp",
+      "status": "visual_recovered_sheet_pending"
+    },
+    {
+      "legacyCode": "TUR-02",
+      "normalizedCandidate": "TUR-002",
+      "name": "Viajero",
+      "legacyAsset": "viajero_trenzas.webp",
+      "status": "visual_recovered_sheet_pending"
+    },
+    {
+      "legacyCode": "TUR-03",
+      "normalizedCandidate": "TUR-003",
+      "name": "Sabio",
+      "legacyAsset": "sabio_pregonando_libro.webp",
+      "status": "visual_recovered_sheet_pending"
+    },
+    {
+      "legacyCode": "TUR-04",
+      "normalizedCandidate": "TUR-004",
+      "name": "Guerrero gorilesco de lanza",
+      "legacyAsset": "guerrero_gorilesco_lanza.webp",
+      "status": "visual_recovered_sheet_pending"
+    },
+    {
+      "legacyCode": "TUR-05",
+      "normalizedCandidate": "TUR-005",
+      "name": "Sangu",
+      "legacyAsset": "sangu_candidato_provisional.webp",
+      "status": "candidate_not_foundry_validated"
+    },
+    {
+      "legacyCode": "TUR-06",
+      "normalizedCandidate": "TUR-006",
+      "name": "Popr",
+      "legacyAsset": "popr.webp",
+      "status": "technical_refinement_approved_foundry_test_pending"
+    }
+  ],
+  "pending": [
+    "Full 40 equipment names and historical COM aliases; distinguish equipo cultural without splitting by default.",
+    "Recover authoritative code allocations for instruments, relics, parafernalia, rituals, presences, codes and Funga; FUN-01..04 and FUN-17..20 established, reservations elsewhere; do not invent sequence.",
+    "Verify 40 PJ codes on Bridge and preserve namespace; no duplicate assets in compendium.",
+    "Resolve DEF-04/08, DEF-05 name, Tañaña missing asset.",
+    "Resolve HAB uncoded, Milodón reclassification, RIV-01 active QA5 ID vs historical alias; do not promote graphic numbers to catalog IDs.",
+    "After exact binary verification, draft reversible path map and run D2 path/ID checks."
+  ]
+}
