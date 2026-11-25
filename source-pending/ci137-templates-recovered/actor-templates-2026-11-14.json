@@ -1,0 +1,480 @@
+{
+  "status": "HISTORICAL_ACTOR_TEMPLATES_RECOVERED_NO_INSTALL",
+  "source": "HIPERAUSTRALIS_FOUNDRY_ACTORS_2026-11-14T18-19-48-819Z.json",
+  "sourceSHA256": "ccbfea38e96b075cf236ca676b4cfd6b4862576fd4cc97646ac63dad703a1e11",
+  "records": [
+    {
+      "id": "HipCriatTpl00001",
+      "document": {
+        "_id": "HipCriatTpl00001",
+        "name": "_Hiperaustralis Criatura",
+        "type": "_template",
+        "img": "icons/svg/mystery-man.svg",
+        "system": {
+          "body": {
+            "contents": [
+              {
+                "key": "peso",
+                "cssClass": "ha-rival-peso",
+                "role": 0,
+                "permission": 0,
+                "tooltip": "Peso de la Criatura en la situación",
+                "visibilityFormula": "",
+                "label": "Peso",
+                "defaultValue": "1",
+                "size": "full-size",
+                "allowDecimal": false,
+                "minVal": "0",
+                "maxVal": "9",
+                "allowRelative": true,
+                "showControls": true,
+                "controlsStyle": "hover",
+                "controlsCustomIncrements": "-1,1",
+                "inputStyle": "text",
+                "type": "numberField"
+              },
+              {
+                "key": "descripcion",
+                "cssClass": "ha-rival-descripcion",
+                "role": 0,
+                "editRole": 0,
+                "permission": 0,
+                "tooltip": "Descripción del Rival.",
+                "visibilityFormula": "",
+                "editableFormula": "",
+                "label": "Descripción",
+                "defaultValue": "Descripción de la Criatura.",
+                "style": "dialog",
+                "type": "textArea"
+              },
+              {
+                "key": "en_escena",
+                "cssClass": "ha-rival-escena",
+                "role": 0,
+                "editRole": 0,
+                "permission": 0,
+                "tooltip": "Uso directo en escena.",
+                "visibilityFormula": "",
+                "editableFormula": "",
+                "label": "En escena",
+                "defaultValue": "",
+                "style": "dialog",
+                "type": "textArea"
+              }
+            ],
+            "key": "custom_body",
+            "type": "panel"
+          },
+          "display": {
+            "width": 520,
+            "height": 430,
+            "fix_size": false,
+            "pp_width": 64,
+            "pp_height": 64
+          },
+          "header": {
+            "contents": [],
+            "key": "custom_header",
+            "type": "panel"
+          },
+          "hidden": [],
+          "attributeBar": {},
+          "templateSystemUniqueVersion": 202051
+        },
+        "flags": {
+          "custom-system-builder": {
+            "version": "5.2.1"
+          },
+          "hiperaustralis-creature-template": {
+            "seedId": "creature-template-v1",
+            "version": "0.1"
+          }
+        },
+        "prototypeToken": {
+          "name": "_Hiperaustralis Criatura",
+          "displayName": 30,
+          "actorLink": false,
+          "width": 1,
+          "height": 1,
+          "depth": 1,
+          "texture": {
+            "src": "systems/custom-system-builder/img/template-logo.svg",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "lockRotation": true,
+          "rotation": 0,
+          "alpha": 1,
+          "disposition": 0,
+          "displayBars": 30,
+          "bar1": {
+            "attribute": null
+          },
+          "bar2": {
+            "attribute": null
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 0,
+            "color": null,
+            "coloration": 1,
+            "dim": 0,
+            "attenuation": 0.5,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "sight": {
+            "enabled": true,
+            "range": 0,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0.1,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
+          },
+          "detectionModes": {},
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "flags": {},
+          "randomImg": false,
+          "appendNumber": false,
+          "prependAdjective": false
+        },
+        "items": [],
+        "effects": [],
+        "folder": null,
+        "sort": 1300000,
+        "ownership": {
+          "default": 0,
+          "zuJuqzsEVZsKtxHu": 3
+        },
+        "_stats": {
+          "coreVersion": "14.367",
+          "systemId": "custom-system-builder",
+          "systemVersion": "6.0.2",
+          "createdTime": 1793297389796,
+          "modifiedTime": 1794267178917,
+          "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
+      },
+      "dependentActors": [
+        "M0my63fGNJGZgmGW",
+        "KNAs3CxA9JtpnXis",
+        "rsP7bEX5B9cTSdHh",
+        "yGPS7CQOIwigBvss",
+        "cFFjV9AudILE6rGV",
+        "01hgbx0UU76CiKsk",
+        "7d6GezL23i8PCPUB",
+        "7rwEzFZqOD9W8uAz",
+        "6sOsXhQeXKtMZTSc",
+        "82ee3a3ec88dcd5d",
+        "UmY99wnFGChXYDo6",
+        "fkq43lUn7QdAdOUn",
+        "ljLPLj4fZKTBhw1r",
+        "6pTPJHbEJLeODFBv",
+        "NtOoatkkgH7sxAjY",
+        "V4hkO2v24ouHE7Wd",
+        "gvOeY1GIYPFfEFHk",
+        "jJ9N4oUCmmD4PBGt",
+        "tVHCdcwMv1jz2pEm",
+        "2iOWVO3YfUAu70HP",
+        "56qrc20XJSx0kOMH",
+        "62cueeDAEFpwYyji",
+        "B3G24jKZL5s6qYgh",
+        "I9kEYPzEdlHmegol",
+        "IPWS6morNxCeMbNQ",
+        "OP7xlczxpAOCIfX1",
+        "PbWfXgVH7R2xS4pQ",
+        "AUi055skDxo3nCYF",
+        "AkBZAyt3CImiIvdI",
+        "bP5Yg5wEUGif1rsc",
+        "gJy5tCsrAHMJvS8S",
+        "i8Pv6mqeJkN6ierv",
+        "uTQE6B8E0PiNUbDG",
+        "S271H47hRuZ1J4h1",
+        "a2UMZpS1rH0QLcEP",
+        "alPU9feZe0k3VldY",
+        "rF1LxbYuVYwMmfNe",
+        "v4Q4MmCWsVrfvFcS",
+        "wpaa4vskznxs19HL",
+        "4WEwljZ2VjLUaRdJ",
+        "8U4xgO8CCjeNnxur",
+        "SjikI34cg9ZuspEz",
+        "wzsmN9i46PPX6xbq",
+        "bCAVf76eJBauphje",
+        "mXTFN1vg76IQ2qa2",
+        "4XR5qS710r8a7cJR",
+        "5JBwsUNnFYacodTJ",
+        "xCzi2ZnfvpiktUvY",
+        "zrRIUDc3sD6aLwR0"
+      ]
+    },
+    {
+      "id": "HipRivalTpl00001",
+      "document": {
+        "_id": "HipRivalTpl00001",
+        "name": "_Hiperaustralis Rival",
+        "type": "_template",
+        "img": "icons/svg/mystery-man.svg",
+        "system": {
+          "body": {
+            "contents": [
+              {
+                "key": "peso",
+                "cssClass": "ha-rival-peso",
+                "role": 0,
+                "permission": 0,
+                "tooltip": "Peso del Rival en la situación",
+                "visibilityFormula": "",
+                "label": "Peso",
+                "defaultValue": "1",
+                "size": "full-size",
+                "allowDecimal": false,
+                "minVal": "0",
+                "maxVal": "9",
+                "allowRelative": true,
+                "showControls": true,
+                "controlsStyle": "hover",
+                "controlsCustomIncrements": "-1,1",
+                "inputStyle": "text",
+                "type": "numberField"
+              },
+              {
+                "key": "descripcion",
+                "cssClass": "ha-rival-descripcion",
+                "role": 0,
+                "editRole": 0,
+                "permission": 0,
+                "tooltip": "Descripción del Rival.",
+                "visibilityFormula": "",
+                "editableFormula": "",
+                "label": "Descripción",
+                "defaultValue": "",
+                "style": "dialog",
+                "type": "textArea"
+              },
+              {
+                "key": "en_escena",
+                "cssClass": "ha-rival-escena",
+                "role": 0,
+                "editRole": 0,
+                "permission": 0,
+                "tooltip": "Uso directo en escena.",
+                "visibilityFormula": "",
+                "editableFormula": "",
+                "label": "En escena",
+                "defaultValue": "",
+                "style": "dialog",
+                "type": "textArea"
+              }
+            ],
+            "key": "custom_body",
+            "type": "panel"
+          },
+          "display": {
+            "width": 520,
+            "height": 430,
+            "fix_size": false,
+            "pp_width": 64,
+            "pp_height": 64
+          },
+          "header": {
+            "contents": [],
+            "key": "custom_header",
+            "type": "panel"
+          },
+          "hidden": [],
+          "attributeBar": {},
+          "templateSystemUniqueVersion": 202047
+        },
+        "flags": {
+          "custom-system-builder": {
+            "version": "5.2.1"
+          },
+          "hiperaustralis-rival-template": {
+            "seedId": "rival-template-v1",
+            "version": "0.5.06"
+          }
+        },
+        "prototypeToken": {
+          "name": "_Hiperaustralis Rival",
+          "displayName": 30,
+          "actorLink": false,
+          "width": 1,
+          "height": 1,
+          "depth": 1,
+          "texture": {
+            "src": "systems/custom-system-builder/img/template-logo.svg",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "lockRotation": true,
+          "rotation": 0,
+          "alpha": 1,
+          "disposition": 0,
+          "displayBars": 30,
+          "bar1": {
+            "attribute": null
+          },
+          "bar2": {
+            "attribute": null
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 0,
+            "color": null,
+            "coloration": 1,
+            "dim": 0,
+            "attenuation": 0.5,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "sight": {
+            "enabled": true,
+            "range": 0,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0.1,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
+          },
+          "detectionModes": {},
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "flags": {},
+          "randomImg": false,
+          "appendNumber": false,
+          "prependAdjective": false
+        },
+        "items": [],
+        "effects": [],
+        "folder": null,
+        "sort": 4300000,
+        "ownership": {
+          "default": 0,
+          "zuJuqzsEVZsKtxHu": 3
+        },
+        "_stats": {
+          "coreVersion": "14.367",
+          "systemId": "custom-system-builder",
+          "systemVersion": "6.0.2",
+          "createdTime": 1791566479231,
+          "modifiedTime": 1794267178989,
+          "lastModifiedBy": "zuJuqzsEVZsKtxHu",
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
+      },
+      "dependentActors": [
+        "1ad8f2de41a35138",
+        "1j2IdqIefYVmdjU8",
+        "1nAObZRVJtrDjg8l",
+        "5KTErdwgVENf1dwn",
+        "Dkabns46N07iK9ph",
+        "EuSbBbRWpyR4sc63",
+        "HmxNtPIpubUjWWrw",
+        "Pm7WRaZA8kAa49IQ",
+        "Uq5wazXjptC8WxvC",
+        "WnDrzRXoPpZdUAIk",
+        "cUpbmbg9VSg6uMnI",
+        "d64s3aT9JKD0hCg9",
+        "dy3dsoYy8xnCIR2S",
+        "iEs5Kvbosau0cujM",
+        "npdPcNTKe9KJ4m78",
+        "r0PDzwkvx9QvZTic",
+        "1911d58042f44382",
+        "4b9f621a9edd4de5",
+        "a09f3b40b9414588",
+        "ec547af88c2e43ab"
+      ]
+    }
+  ]
+}
