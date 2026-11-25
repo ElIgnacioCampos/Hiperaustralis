@@ -874,7 +874,8 @@
         "catalogEntries": 18,
         "graphicCompositions": 17,
         "uniqueSpeciesNotEstablished": true,
-        "binaryFilesRecoveredThisTurn": 0
+        "binaryFilesRecoveredThisTurn": 0,
+        "note": "18 prior catalog entries / 17 compositions plus recovered Rapa Nui record and Atacama shared reference; no additional graphical approval inferred."
       },
       "recoveryPriority": [
         "HIPERAUSTRALIS_LOTE_AYMARA_TIWANAKU_CONSOLIDADO_v03.zip",
@@ -891,6 +892,66 @@
         "sharedJS": true,
         "avoidSymlinks": true,
         "activation": "Require exact source bytes and document identity or approved new Actor payload; no empty placeholder records"
+      },
+      "uploadedKitEvidence": {
+        "archive": "KIT_TRASPASO_INV_ANIMALES_DOMESTICOS(1).zip",
+        "bytes": 3330,
+        "sha256": "bd192406462b7831086a420b2d78f8f3b932a7b782bf4b5cdd6fd0b36c4f8be8",
+        "crc": "PASS",
+        "members": [
+          "00_LEEME.md",
+          "01_PROMPT_NUEVO_CHAT.md"
+        ],
+        "binaryAssets": 0,
+        "authority": "Historical territorial matrix pending historical audit; no new species approval."
+      },
+      "territorialReferences": [
+        {
+          "territory": "Atacama / Lickanantay",
+          "name": "Llamas",
+          "status": "DOCUMENTED_HISTORICAL_MATRIX_REFERENCE__NO_DUPLICATE_ASSET"
+        },
+        {
+          "territory": "Rapa Nui",
+          "name": "Gallina polinésica",
+          "status": "DOCUMENTED_HISTORICAL_MATRIX__APPROVAL_AND_ASSET_PENDING"
+        }
+      ],
+      "companionKit": {
+        "archive": "KIT_TRASPASO_HIPERAUSTRALIS_ANIMALITOS_KONA_v02_REENTREGA_20261029(1).zip",
+        "sha256": "f7cf52691a6a8b19f4db8f71f24a2d827d6b40111a7e8f6488839af583695b44",
+        "bytes": 136907,
+        "crc": "PASS",
+        "binaryAssets": 0,
+        "manifest": "MANIFIESTO_INTEGRIDAD_ACTIVOS_v06.csv",
+        "manifestRows": 142,
+        "webpCount": 71,
+        "pngCount": 71,
+        "historicalCounts": {
+          "kona": 52,
+          "mascotas": 10,
+          "exoticos": 9
+        },
+        "historicalMasterArchives": [
+          "HIPERAUSTRALIS_CONSOLIDADO_ANIMALITOS_KONA_v06.zip",
+          "HIPERAUSTRALIS_REPERTORIO_WEBP256_CONSOLIDADO_v06.zip"
+        ],
+        "domeykodactylus": {
+          "code": "EXO-001",
+          "status": "HISTORICAL_AUTHOR_CONFIRMED_ACTIVE_PROVISIONAL__BYTES_PENDING",
+          "path": "05_WEBP256_FOUNDRY/EXOTICOS/EXO-001_Domeykodactylus.webp",
+          "sha256": "5c9d46b6be440aba847733f28738ffa8ef6a291c889e0cc4543ebbf703b44226",
+          "bytes": 16820,
+          "actorId": null
+        },
+        "chilecebus": {
+          "code": "EXO-009",
+          "status": "HISTORICAL_ACTIVE_WITH_SEPARATE_CANDIDATE__CROSSWALK_LATER_RENAME_REQUIRED",
+          "path": "05_WEBP256_FOUNDRY/EXOTICOS/EXO-009_Chilecebus.webp",
+          "sha256": "e9349f0efecea8c4ab25f4609d6193f6ecc33745bba225246a06a8dd6df710a9",
+          "bytes": 9030
+        },
+        "caution": "52 historical Kona are not a replacement for current 40 Bridge tokens; reconcile by identity. Do not roll back later classification, weights or names."
       }
     }
   },
