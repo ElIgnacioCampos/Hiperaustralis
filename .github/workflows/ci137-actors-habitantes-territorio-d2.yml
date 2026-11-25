@@ -1,0 +1,162 @@
+name: CI137 - Actors territorial folders isolated D2 (NO INSTALL)
+on:
+  push:
+    branches: [work/ci137-expansion-familias-20261124]
+    paths: ['.github/workflows/ci137-actors-habitantes-territorio-d2.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  d2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prepare unchanged QA5 and isolated catalog extension
+        run: |
+          set -euo pipefail
+          python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/ci137-base-items"
+          python tools/foundry/ci137_h7_packager.py prepare-meta --out "$RUNNER_TEMP/ci137-base-meta"
+          python tools/foundry/ci137_v14_id_preflight.py --prepared "$RUNNER_TEMP/ci137-base-items" --metadata "$RUNNER_TEMP/ci137-base-meta"
+          python - <<'PY'
+          import json, re, hashlib, os, copy
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])
+          source=Path('source-pending/ci137-actors-historical-68/actors-2026-11-14.json')
+          selection=json.loads(Path('manifests/ci137-actors-selection-64-20261124-v01.json').read_text())
+          recovered=Path('source-pending/ci137-native-release-recovered')
+          prov=json.loads((recovered/'PROVENANCE.json').read_text())
+          assert len(prov['records'])==145
+          valid=lambda s: isinstance(s,str) and re.fullmatch(r'[A-Za-z0-9]{16}',s)
+          write=lambda p,d: (p.parent.mkdir(parents=True,exist_ok=True),p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n'))
+          raw=json.loads(source.read_text())
+          selected={r['id']:r for r in selection['records']}
+          excluded={r['id'] for r in selection['excluded']}
+          assert len(selected)==64 and len(excluded)==4 and not selected.keys()&excluded
+          baseline_actor=json.loads(next((root/'ci137-base-meta/actors').glob('*.json')).read_text())
+          baseline_journal=json.loads(next((root/'ci137-base-meta/journals').glob('*.json')).read_text())
+          actor_root=root/'ci137-expanded/actors'
+          journal_root=root/'ci137-expanded/journals'
+          folder_paths={}
+          folder_ids={}
+          def folder(name,parent=None,ident=None):
+              key=(parent+'/'+name) if parent else name
+              ident=ident or hashlib.sha256(('CI137:Actor:'+key).encode()).hexdigest()[:16]
+              assert valid(ident) and ident not in folder_ids.values()
+              folder_ids[key]=ident
+              p=(folder_paths[parent] if parent else actor_root)/(name.replace(' ','_')+'_'+ident)
+              folder_paths[key]=p
+              write(p/'_Folder.json',{'_id':ident,'_key':'!folders!'+ident,'name':name,'type':'Actor','folder':folder_ids[parent] if parent else None,'sorting':'a','sort':0,'flags':{},'description':''})
+              return key
+          folder('Habitantes')
+          folder('Bestiario',ident='YTPlfIpMNGkqzMA6')
+          folder('Familiares Exóticos','Bestiario',ident='JoEVDSZSTi9tI6ls')
+          folder('Mascotas','Bestiario',ident='bqTtMDMIu7UFe3kL')
+          folder('Adversarios')
+          folder('Rivales','Adversarios',ident=hashlib.sha256(b'CI137:Actor:Rivales').hexdigest()[:16])
+          folder('Turianos','Adversarios')
+          structure=json.loads(Path('manifests/ci137-culturas-adversarios-habitantes-amenyi-v01.json').read_text())
+          hab={r['id']:r for r in structure['habitantesTerritorial']['records']}
+          assert len(hab)==11
+          for territory in sorted({r['territory'] for r in hab.values() if r['path'].startswith('Habitantes/')}):
+              folder(territory,'Habitantes')
+          folder('Amenyi','Habitantes')
+          family_paths={'Rivales':'Adversarios/Rivales','Habitantes':'Habitantes','Fauna':'Bestiario','Familiares Exóticos':'Bestiario/Familiares Exóticos','Mascotas':'Bestiario/Mascotas'}
+          actors={}
+          def actor(d,key,source_id):
+              d=copy.deepcopy(d)
+              ident=d['_id']
+              assert valid(ident) and ident not in actors and ident not in excluded
+              assert d['type']=='character' and not d.get('items') and not d.get('effects')
+              d['folder']=folder_ids[key];d['_key']='!actors!'+ident
+              actors[ident]={'name':d['name'],'folder':d['folder'],'sourceId':source_id,'props':d['system']['props'],'img':d['img'],'token':d['prototypeToken']['texture']['src']}
+              write(folder_paths[key]/(ident+'.json'),d)
+          for r in raw['records']:
+              ident=r['documentId']
+              if ident not in selected: continue
+              d=r['document']
+              if r['name']=='Ladrón oportunista':
+                  assert d['_id']=='dm9nrrmBJzoiBgYY' and baseline_actor['_id']=='1ad8f2de41a35138'
+                  d=baseline_actor
+              key=family_paths[selected[ident]['family']]
+              if ident in hab:
+                  assert d['flags']['hiperaustralis-habitantes']['territorio']==hab[ident]['territory']
+                  key=hab[ident]['path']
+              actor(d,key,ident)
+          assert len(actors)==64
+          assert len([i for i in hab if actors[i]['folder'] in {v for k,v in folder_ids.items() if k.startswith('Habitantes/')}])==10
+          assert actors['gJy5tCsrAHMJvS8S']['folder']==folder_ids['Bestiario']
+          assert len(folder_ids)==15
+          tur_candidates={'a09f3b40b9414588','4b9f621a9edd4de5','1911d58042f44382','ec547af88c2e43ab'}
+          for p in sorted((recovered/'turianos-v06').glob('*.json')):
+              d=json.loads(p.read_text())
+              if d['_id'] not in tur_candidates: continue
+              assert d['system']['props']['peso']=='4'
+              # Keep archived notes untouched; D2 payload is exact recovered content,
+              # NOT an approved mechanical revision or playable release.
+              actor(d,'Adversarios/Turianos',d['_id'])
+          assert len(actors)==68 and set(actors)&tur_candidates==tur_candidates
+          cultures_record=next(r for r in prov['records'] if r['id']=='48YG3G7eaXO96CyE')
+          p=Path(cultures_record['path'])
+          assert hashlib.sha256(p.read_bytes()).hexdigest()==cultures_record['stagedSHA256']
+          cultures=json.loads(p.read_text())
+          assert len(cultures['pages'])==37 and cultures['name']=='Culturas — Hiperaustralis'
+          journals={}
+          for d in [baseline_journal,cultures]:
+              ident=d['_id'];assert valid(ident) and ident not in journals
+              d['_key']='!journal!'+ident; d['folder']=None
+              pages=d['pages'];ids=[p['_id'] for p in pages]
+              assert len(ids)==len(set(ids)) and all(valid(i) for i in ids)
+              for p in pages: p['_key']='!journal.pages!'+ident+'.'+p['_id']
+              journals[ident]={'name':d['name'],'pageIds':ids}
+              write(journal_root/(ident+'.json'),d)
+          assert sum(len(v['pageIds']) for v in journals.values())==58
+          write(root/'ci137-expanded/expected.json',{'status':'D2_CANDIDATE_NO_INSTALL','actors':actors,'folders':folder_ids,'journals':journals,'excludedAtlantes':sorted(excluded),'excludedSpecialTurianos':['1dd86a387a28476e','939dad09976d48cd'],'pending':['Unresolved legacy art paths; no asset promotion','Turiano note/weight compatibility','Territory 9 CORE crosswalk','CSB client validation'],'baselineItemCount':136})
+          PY
+      - name: Roundtrip native Actor and Journal candidate, no module ZIP
+        run: |
+          set -euo pipefail
+          npm install --no-audit --no-fund --no-save --no-package-lock @foundryvtt/foundryvtt-cli@3.0.5
+          FVTT=./node_modules/.bin/fvtt
+          mkdir -p "$RUNNER_TEMP/ci137-expanded-packs" "$RUNNER_TEMP/ci137-expanded-roundtrip/actors" "$RUNNER_TEMP/ci137-expanded-roundtrip/journals"
+          "$FVTT" package pack -n ha-proto-actors --inputDirectory "$RUNNER_TEMP/ci137-expanded/actors" --outputDirectory "$RUNNER_TEMP/ci137-expanded-packs" --recursive
+          "$FVTT" package pack -n ha-proto-journals --inputDirectory "$RUNNER_TEMP/ci137-expanded/journals" --outputDirectory "$RUNNER_TEMP/ci137-expanded-packs"
+          "$FVTT" package unpack -n ha-proto-actors --inputDirectory "$RUNNER_TEMP/ci137-expanded-packs" --outputDirectory "$RUNNER_TEMP/ci137-expanded-roundtrip/actors" --folders
+          "$FVTT" package unpack -n ha-proto-journals --inputDirectory "$RUNNER_TEMP/ci137-expanded-packs" --outputDirectory "$RUNNER_TEMP/ci137-expanded-roundtrip/journals"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          t=Path(os.environ['RUNNER_TEMP'])
+          e=json.loads((t/'ci137-expanded/expected.json').read_text())
+          actors={};folders={};journals={}
+          for p in (t/'ci137-expanded-roundtrip/actors').rglob('*.json'):
+              d=json.loads(p.read_text());i=d['_id']
+              if p.name=='_Folder.json': folders[i]=d
+              else: actors[i]=d
+          for p in (t/'ci137-expanded-roundtrip/journals').rglob('*.json'):
+              d=json.loads(p.read_text());journals[d['_id']]=d
+          assert set(actors)==set(e['actors']) and set(folders)==set(e['folders'].values()) and set(journals)==set(e['journals'])
+          for key,ident in e['folders'].items():
+              parent=key.rsplit('/',1)[0] if '/' in key else None
+              assert folders[ident].get('folder')==(e['folders'][parent] if parent else None)
+          for i,v in e['actors'].items():
+              d=actors[i]
+              assert d['name']==v['name'] and d['folder']==v['folder'] and d['system']['props']==v['props'] and d['img']==v['img'] and d['prototypeToken']['texture']['src']==v['token']
+          for i,v in e['journals'].items():
+              d=journals[i];assert d['name']==v['name'] and [p['_id'] for p in d['pages']]==v['pageIds']
+          assert not set(e['excludedAtlantes'])&set(actors)
+          out={'status':'PASS_D2_NO_RUNTIME_APPROVAL','actors':len(actors),'actorFolders':len(folders),'journals':len(journals),'journalPages':sum(len(d['pages']) for d in journals.values()),'installableZip':False,'runtimeD3':False,'pending':e['pending']}
+          (t/'ci137-expanded/roundtrip-report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps(out,ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CI137-ACTORS-TERRITORIO-D2-REPORT-ONLY
+          path: |
+            ${{ runner.temp }}/ci137-expanded/expected.json
+            ${{ runner.temp }}/ci137-expanded/roundtrip-report.json
+          if-no-files-found: error
+          retention-days: 30
