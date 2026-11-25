@@ -1,0 +1,1207 @@
+{
+  "status": "CROSSWALK_VERIFIED__CANDIDATE_SELECTION_NO_DEPLOY",
+  "date": "2026-11-24",
+  "sources": [
+    {
+      "file": "CORE_MATRIZ_UNICA_VIGENCIA_MELIAZ_2026-11-21_v03.md",
+      "sections": "M47-M55, M60-M63"
+    },
+    {
+      "file": "CORE_ED_CUADERNILLO_INTEGRACION_NATURALEZA_2026-11-19_v04.md",
+      "section": "Selección territorial de Fauna"
+    },
+    {
+      "file": "source-pending/ci137-native-release-recovered/PROVENANCE.json",
+      "sha": "dddee7162915c8fb8a999fced93992b8be57f87e"
+    },
+    {
+      "file": "manifests/ci137-assets-identity-audit-v01.json",
+      "sha": "3d2a180c0c6195632e1c5905f9f855c8ad09e361"
+    }
+  ],
+  "archiveD2": {
+    "runId": 45530211237,
+    "status": "PASS"
+  },
+  "counts": {
+    "historicalItems": 98,
+    "fauna": {
+      "CORE_ACTIVE_NONPRIMARY": 18,
+      "LEGACY_EXCLUDED": 1,
+      "CORE_TERRITORIAL_PRIMARY": 26,
+      "PREHISTORIC_SEPARATE_CANDIDATE": 5
+    },
+    "flora": 40,
+    "biomas": 8,
+    "territorialAssignments": 36,
+    "uniquePrimaryFauna": 26
+  },
+  "territories": [
+    {
+      "id": "01",
+      "name": "Atacama / Lickanantay",
+      "primaryFauna": [
+        {
+          "code": "FAU-039",
+          "id": "eG8Fv70VMWfPn9ND"
+        },
+        {
+          "code": "FAU-014",
+          "id": "VUtnqenmd6OCLomn"
+        },
+        {
+          "code": "FAU-015",
+          "id": "gIDtNyJSYWIXOAp5"
+        },
+        {
+          "code": "FAU-013",
+          "id": "DnbzqhzAdXN1r3kW"
+        }
+      ],
+      "historicalBiomeId": null
+    },
+    {
+      "id": "02",
+      "name": "Pikunmapu",
+      "primaryFauna": [
+        {
+          "code": "FAU-014",
+          "id": "VUtnqenmd6OCLomn"
+        },
+        {
+          "code": "FAU-040",
+          "id": "jSNogolHCojEoXVv"
+        },
+        {
+          "code": "FAU-015",
+          "id": "gIDtNyJSYWIXOAp5"
+        },
+        {
+          "code": "FAU-013",
+          "id": "DnbzqhzAdXN1r3kW"
+        }
+      ],
+      "historicalBiomeId": null
+    },
+    {
+      "id": "03",
+      "name": "Ngulumapu",
+      "primaryFauna": [
+        {
+          "code": "FAU-009",
+          "id": "5NdmuLKi7ZMHzjfX"
+        },
+        {
+          "code": "FAU-010",
+          "id": "fHQnZGjmSOlu4qa8"
+        },
+        {
+          "code": "FAU-011",
+          "id": "9rgDjzvFGvWNfeKu"
+        },
+        {
+          "code": "FAU-012",
+          "id": "CWlLMol2AZpujPx7"
+        }
+      ],
+      "historicalBiomeId": "5iifIanvWdAPphJc"
+    },
+    {
+      "id": "04",
+      "name": "Pewenmapu",
+      "primaryFauna": [
+        {
+          "code": "FAU-009",
+          "id": "5NdmuLKi7ZMHzjfX"
+        },
+        {
+          "code": "FAU-013",
+          "id": "DnbzqhzAdXN1r3kW"
+        },
+        {
+          "code": "FAU-015",
+          "id": "gIDtNyJSYWIXOAp5"
+        },
+        {
+          "code": "FAU-016",
+          "id": "usQ73nSvGhNkSDSu"
+        }
+      ],
+      "historicalBiomeId": "qGfDgUgbztWfpLac"
+    },
+    {
+      "id": "05",
+      "name": "Willimapu",
+      "primaryFauna": [
+        {
+          "code": "FAU-009",
+          "id": "5NdmuLKi7ZMHzjfX"
+        },
+        {
+          "code": "FAU-010",
+          "id": "fHQnZGjmSOlu4qa8"
+        },
+        {
+          "code": "FAU-011",
+          "id": "9rgDjzvFGvWNfeKu"
+        },
+        {
+          "code": "FAU-022",
+          "id": "xYZgtFASxeIFpToR"
+        }
+      ],
+      "historicalBiomeId": null
+    },
+    {
+      "id": "06",
+      "name": "Patagonia austral",
+      "primaryFauna": [
+        {
+          "code": "FAU-017",
+          "id": "xBWLbeiR1eoLoRNB"
+        },
+        {
+          "code": "FAU-018",
+          "id": "nmg6fpR6xYf8oZdL"
+        },
+        {
+          "code": "FAU-019",
+          "id": "OpHPHxq5nQDijZ7p"
+        },
+        {
+          "code": "FAU-020",
+          "id": "8fqHkodlT8RvP0BS"
+        }
+      ],
+      "historicalBiomeId": "AykRw9CbbrA6GH25"
+    },
+    {
+      "id": "07",
+      "name": "Tierra del Fuego",
+      "primaryFauna": [
+        {
+          "code": "FAU-021",
+          "id": "Hy0GGLcD0eOhzq9W"
+        },
+        {
+          "code": "FAU-022",
+          "id": "xYZgtFASxeIFpToR"
+        },
+        {
+          "code": "FAU-023",
+          "id": "ExYEwc3Ap4yp1hnX"
+        },
+        {
+          "code": "FAU-024",
+          "id": "N4GmaJdfHlqloRZq"
+        }
+      ],
+      "historicalBiomeId": "WGArY0MBMfFODZ5G"
+    },
+    {
+      "id": "08",
+      "name": "Canales australes",
+      "primaryFauna": [
+        {
+          "code": "FAU-025",
+          "id": "wSNmNqNKH8EHbp44"
+        },
+        {
+          "code": "FAU-026",
+          "id": "kb0XKfjLsXLerl6F"
+        },
+        {
+          "code": "FAU-027",
+          "id": "nUYY5ux1kkLbNsiI"
+        },
+        {
+          "code": "FAU-028",
+          "id": "us4NecHuL6WQXwMc"
+        }
+      ],
+      "historicalBiomeId": "viMyw1q7XBwaYJzd"
+    },
+    {
+      "id": "09",
+      "name": "Umbral Polar",
+      "primaryFauna": [
+        {
+          "code": "FAU-029",
+          "id": "YU8cxHhyveeveNAn"
+        },
+        {
+          "code": "FAU-030",
+          "id": "huZeixaINs1rrugH"
+        },
+        {
+          "code": "FAU-031",
+          "id": "DqpmHU2SZaEQ0IQe"
+        },
+        {
+          "code": "FAU-032",
+          "id": "rv4P8LZ6pKAhtV0F"
+        }
+      ],
+      "historicalBiomeId": "PxPpVGJTu6Wgowg0"
+    }
+  ],
+  "fauna": [
+    {
+      "code": "FAU-001",
+      "id": "MYBvmQTY5ka6CYOA",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/01_Titicaca/FAU-001_Rollandia_microptera.webp",
+      "name": "Keñola · Zambullidor del Titicaca",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Ke_ola___Zambullidor_del_Titicaca_MYBvmQTY5ka6CYOA.json",
+      "sourceSHA256": "6f374042a7a5ee6fbae8dcbc1c8f061db423658a1ad97dc5dad5e487a1d71941",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-002",
+      "id": "ghbWSzAV3A8PUmOj",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/01_Titicaca/FAU-002_Telmatobius_culeus.webp",
+      "name": "Rana gigante del Titicaca",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Rana_gigante_del_Titicaca_ghbWSzAV3A8PUmOj.json",
+      "sourceSHA256": "b7436477d6896066e1a2709f4dd26de3512f4537aeb74ed568970a1f0fe8423d",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-003",
+      "id": "8U49t6TXIzBEXBja",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/01_Titicaca/FAU-003_Fulica_ardesiaca.webp",
+      "name": "Choka · Gallareta andina",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Choka___Gallareta_andina_8U49t6TXIzBEXBja.json",
+      "sourceSHA256": "0da95e6525bb8fd67405c3fe802567761e94435a241c1ac86533d2b1a932705a",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-004",
+      "id": "vpvHVQOGukREGu7l",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/01_Titicaca/FAU-004_Vicugna_vicugna.webp",
+      "name": "Vicuña",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Vicu_a_vpvHVQOGukREGu7l.json",
+      "sourceSHA256": "77063db1304b4646e50a942a80d84b698efd5ce1e9edfae9e6ac8b1dd5625d61",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-005",
+      "id": "ht3BGgYN4Qpv6Jxh",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/02_Paititi/FAU-005_Tremarctos_ornatus.webp",
+      "name": "Oso andino · Jucumari",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Oso_andino___Jucumari_ht3BGgYN4Qpv6Jxh.json",
+      "sourceSHA256": "f670971516ceac1b16d7fb078bb4d7c3aec834aba41fa4836594952a771a48d9",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-006",
+      "id": "sJUb33WwcLgPb3PQ",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/02_Paititi/FAU-006_Rupicola_peruvianus.webp",
+      "name": "Gallito de las rocas",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Gallito_de_las_rocas_sJUb33WwcLgPb3PQ.json",
+      "sourceSHA256": "832679018a2b7d3a84a5fb7b3f687159ea43a2f485469434c331f4c875eed3e6",
+      "status": "LEGACY_EXCLUDED",
+      "territories": []
+    },
+    {
+      "code": "FAU-007",
+      "id": "zfH73rgloB8L6pSM",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/02_Paititi/FAU-007_Tapirus_terrestris.webp",
+      "name": "Tapir · Sachavaca",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Tapir___Sachavaca_zfH73rgloB8L6pSM.json",
+      "sourceSHA256": "10abae1f813bcea61103581ffd0957b2e9b1c12ec51198cfe4554ff235b14840",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-008",
+      "id": "jeBv1DPoIY1lX2zq",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/02_Paititi/FAU-008_Panthera_onca.webp",
+      "name": "Otorongo · Jaguar",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Otorongo___Jaguar_jeBv1DPoIY1lX2zq.json",
+      "sourceSHA256": "f807a12b2c354d51995319146a49bc60afd501206bda1afd0f6580e9e39ab707",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-009",
+      "id": "5NdmuLKi7ZMHzjfX",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/03_Ngulumapu/FAU-009_Pudu_puda.webp",
+      "name": "Pudú",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Pud__5NdmuLKi7ZMHzjfX.json",
+      "sourceSHA256": "d8a956c6f22654ce0c808f9697c4961e93a3855ef6bd36516e900c102850a5e3",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "03",
+        "04",
+        "05"
+      ]
+    },
+    {
+      "code": "FAU-010",
+      "id": "fHQnZGjmSOlu4qa8",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/03_Ngulumapu/FAU-010_Leopardus_guigna.webp",
+      "name": "Güiña",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/G_i_a_fHQnZGjmSOlu4qa8.json",
+      "sourceSHA256": "5bc3dc8094e7f3db9753f50e54589ca070bb49aad24dab47524002def462c198",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "03",
+        "05"
+      ]
+    },
+    {
+      "code": "FAU-011",
+      "id": "9rgDjzvFGvWNfeKu",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/03_Ngulumapu/FAU-011_Dromiciops_gliroides.webp",
+      "name": "Monito del monte",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Monito_del_monte_9rgDjzvFGvWNfeKu.json",
+      "sourceSHA256": "522d5459f99172f459240ddda0101eac23bf619822cb8b62afdf19af0e67af0c",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "03",
+        "05"
+      ]
+    },
+    {
+      "code": "FAU-012",
+      "id": "CWlLMol2AZpujPx7",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/03_Ngulumapu/FAU-012_Rhinoderma_darwinii.webp",
+      "name": "Ranita de Darwin",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Ranita_de_Darwin_CWlLMol2AZpujPx7.json",
+      "sourceSHA256": "2cbe8e03c4df0eb71338fd7709e36f9a6aa2fba067b4451d2ecd7a042d1a0e8b",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "03"
+      ]
+    },
+    {
+      "code": "FAU-013",
+      "id": "DnbzqhzAdXN1r3kW",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/04_Pewenmapu/FAU-013_Puma_concolor.webp",
+      "name": "Puma",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Puma_DnbzqhzAdXN1r3kW.json",
+      "sourceSHA256": "7b32e8a225f5a72324884e6a7873f09328eede0862b0446b264607898bdbcb74",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "01",
+        "02",
+        "04"
+      ]
+    },
+    {
+      "code": "FAU-014",
+      "id": "VUtnqenmd6OCLomn",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/04_Pewenmapu/FAU-014_Lycalopex_culpaeus.webp",
+      "name": "Zorro culpeo",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Zorro_culpeo_VUtnqenmd6OCLomn.json",
+      "sourceSHA256": "1dd335a8dbb30bb0562908319109a18d160d6fe5e4a6ef4c12c8aa8f3362458e",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "01",
+        "02"
+      ]
+    },
+    {
+      "code": "FAU-015",
+      "id": "gIDtNyJSYWIXOAp5",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/04_Pewenmapu/FAU-015_Vultur_gryphus.webp",
+      "name": "Cóndor andino",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/C_ndor_andino_gIDtNyJSYWIXOAp5.json",
+      "sourceSHA256": "9f054507751c4b76f9bef2e3c4f894c82fefcd8dc54cf7966b72d814e8d7729d",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "01",
+        "02",
+        "04"
+      ]
+    },
+    {
+      "code": "FAU-016",
+      "id": "usQ73nSvGhNkSDSu",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/04_Pewenmapu/FAU-016_Campephilus_magellanicus.webp",
+      "name": "Carpintero negro · Carpintero magallánico",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Carpintero_negro___Carpintero_magall_nico_usQ73nSvGhNkSDSu.json",
+      "sourceSHA256": "de9d30e0851fec8f9731b718faa596f7fd44898ab1e68c6de93402f7fca6ede9",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "04"
+      ]
+    },
+    {
+      "code": "FAU-017",
+      "id": "xBWLbeiR1eoLoRNB",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/05_Patagonia_austral/FAU-017_Lama_guanicoe.webp",
+      "name": "Guanaco",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Guanaco_xBWLbeiR1eoLoRNB.json",
+      "sourceSHA256": "f462714c0735a3118d955de065451de37235870c467aef0091ed99b98dd924f6",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "06"
+      ]
+    },
+    {
+      "code": "FAU-018",
+      "id": "nmg6fpR6xYf8oZdL",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/05_Patagonia_austral/FAU-018_Hippocamelus_bisulcus.webp",
+      "name": "Huemul",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Huemul_nmg6fpR6xYf8oZdL.json",
+      "sourceSHA256": "94532aa3454aa3fb88348fe3b5c9526990b49e520177bec8e61c6c05dda6b007",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "06"
+      ]
+    },
+    {
+      "code": "FAU-019",
+      "id": "OpHPHxq5nQDijZ7p",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/05_Patagonia_austral/FAU-019_Rhea_pennata.webp",
+      "name": "Choique · Ñandú petiso",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Choique____and__petiso_OpHPHxq5nQDijZ7p.json",
+      "sourceSHA256": "27a3b422e1d8cff1cb84455c863c8d951dae744f90e89b79470779dd0e50f2f7",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "06"
+      ]
+    },
+    {
+      "code": "FAU-020",
+      "id": "8fqHkodlT8RvP0BS",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/05_Patagonia_austral/FAU-020_Chloephaga_picta.webp",
+      "name": "Caiquén · Cauquén común",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Caiqu_n___Cauqu_n_com_n_8fqHkodlT8RvP0BS.json",
+      "sourceSHA256": "1190e5fd4f9b3b276c26493134fd5305be1eb6e2bb5431ae908a6a228380c2c0",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "06"
+      ]
+    },
+    {
+      "code": "FAU-021",
+      "id": "Hy0GGLcD0eOhzq9W",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/06_Tierra_del_Fuego/FAU-021_Lama_guanicoe_guanicoe.webp",
+      "name": "Yowen · Guanaco",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Yowen___Guanaco_Hy0GGLcD0eOhzq9W.json",
+      "sourceSHA256": "5950bec142ec7f9f6a4296c534880e6949fa66d07173c19fa4d35e1fa99ad0b6",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "07"
+      ]
+    },
+    {
+      "code": "FAU-022",
+      "id": "xYZgtFASxeIFpToR",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/06_Tierra_del_Fuego/FAU-022_Lontra_provocax.webp",
+      "name": "Huillín",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Huill_n_xYZgtFASxeIFpToR.json",
+      "sourceSHA256": "ca015e28f56ef866c4b0f77d5fd2708a42667076720d285ac5c5193c23bc8fa0",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "05",
+        "07"
+      ]
+    },
+    {
+      "code": "FAU-023",
+      "id": "ExYEwc3Ap4yp1hnX",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/06_Tierra_del_Fuego/FAU-023_Chloephaga_hybrida.webp",
+      "name": "Caranca",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Caranca_ExYEwc3Ap4yp1hnX.json",
+      "sourceSHA256": "8fb1490be9db34e7d384a29f9f66624f6a14a59b60cc8efcf82db641ee0a507f",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "07"
+      ]
+    },
+    {
+      "code": "FAU-024",
+      "id": "N4GmaJdfHlqloRZq",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/06_Tierra_del_Fuego/FAU-024_Tachyeres_pteneres.webp",
+      "name": "Quetro no volador",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Quetro_no_volador_N4GmaJdfHlqloRZq.json",
+      "sourceSHA256": "7aa3d9cc923d0ad653d415b01bd58f541575bf97a71e25577ebdceba19e821d4",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "07"
+      ]
+    },
+    {
+      "code": "FAU-025",
+      "id": "wSNmNqNKH8EHbp44",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/07_Canales_australes/FAU-025_Otaria_byronia_sin_O_flavescens.webp",
+      "name": "Lobo marino común",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Lobo_marino_com_n_wSNmNqNKH8EHbp44.json",
+      "sourceSHA256": "99b7eea5f2f11ac4767d6ba542a32673c6914b406f4a100de2b13339d68d7b08",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "08"
+      ]
+    },
+    {
+      "code": "FAU-026",
+      "id": "kb0XKfjLsXLerl6F",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/07_Canales_australes/FAU-026_Arctocephalus_australis.webp",
+      "name": "Lobo fino austral",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Lobo_fino_austral_kb0XKfjLsXLerl6F.json",
+      "sourceSHA256": "4cbeb1fc56022bee1e4a1229f93a80c5a426006ef55d694574a8ba21396e1408",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "08"
+      ]
+    },
+    {
+      "code": "FAU-027",
+      "id": "nUYY5ux1kkLbNsiI",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/07_Canales_australes/FAU-027_Lagenorhynchus_australis.webp",
+      "name": "Delfín austral · Tonina",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Delf_n_austral___Tonina_nUYY5ux1kkLbNsiI.json",
+      "sourceSHA256": "d986362ec81a4bfc559453db2fb55fb46d694b5078cc72a912ccedcf2d27d17a",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "08"
+      ]
+    },
+    {
+      "code": "FAU-028",
+      "id": "us4NecHuL6WQXwMc",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/07_Canales_australes/FAU-028_Leucocarbo_atriceps.webp",
+      "name": "Cormorán imperial",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Cormor_n_imperial_us4NecHuL6WQXwMc.json",
+      "sourceSHA256": "ce2c86ad9c8aa43404a3d902e0a302780d9c6c62bca5750d27e03b5bfa2e451b",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "08"
+      ]
+    },
+    {
+      "code": "FAU-029",
+      "id": "YU8cxHhyveeveNAn",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/08_Umbral_Polar/FAU-029_Euphausia_superba.webp",
+      "name": "Krill antártico",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Krill_ant_rtico_YU8cxHhyveeveNAn.json",
+      "sourceSHA256": "300d3a16a7a5414944a0b5bd9450940a6f7c86d75173c6e0b26ef2234806cf91",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "09"
+      ]
+    },
+    {
+      "code": "FAU-030",
+      "id": "huZeixaINs1rrugH",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/08_Umbral_Polar/FAU-030_Pygoscelis_adeliae.webp",
+      "name": "Pingüino de Adelia",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Ping_ino_de_Adelia_huZeixaINs1rrugH.json",
+      "sourceSHA256": "93d64d12d5071dba6bd7ca5339282e7e7c644a95829af627f5f12755500293cd",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "09"
+      ]
+    },
+    {
+      "code": "FAU-031",
+      "id": "DqpmHU2SZaEQ0IQe",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/08_Umbral_Polar/FAU-031_Leptonychotes_weddellii.webp",
+      "name": "Foca de Weddell",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Foca_de_Weddell_DqpmHU2SZaEQ0IQe.json",
+      "sourceSHA256": "13a3fe849f1bf032262e71e4f2997fc45aa1d17467e65ff7fd5d49995ca43aa2",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "09"
+      ]
+    },
+    {
+      "code": "FAU-032",
+      "id": "rv4P8LZ6pKAhtV0F",
+      "legacyDocumentaryPath": "modules/hiperaustralis-fauna/assets/fauna/08_Umbral_Polar/FAU-032_Stercorarius_maccormicki.webp",
+      "name": "Skúa polar del sur",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Sk_a_polar_del_sur_rv4P8LZ6pKAhtV0F.json",
+      "sourceSHA256": "6fcc4d4b3e26ccccac47af71592964716d7a9dde5db4f22bd3b76c50a32728dd",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "09"
+      ]
+    },
+    {
+      "code": "FAU-033",
+      "id": "KbtOX3hJ5s6hx3MV",
+      "legacyDocumentaryPath": null,
+      "name": "Ballena azul",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Ballena_azul_KbtOX3hJ5s6hx3MV.json",
+      "sourceSHA256": "4aaca2e3bb16c2697cfa72a4c20dd0efddd9879ab5347aa06611b64ae3d60540",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-034",
+      "id": "8LZSIGm6glTvjx8F",
+      "legacyDocumentaryPath": null,
+      "name": "Ballena jorobada",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Ballena_jorobada_8LZSIGm6glTvjx8F.json",
+      "sourceSHA256": "7efa0562d01fdeabbce32851dc6630e2778fba55222e0cc0f98c1121938d5bd4",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-035",
+      "id": "pwpLirKw2V1zdpX7",
+      "legacyDocumentaryPath": null,
+      "name": "Ballena franca austral",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Ballena_franca_austral_pwpLirKw2V1zdpX7.json",
+      "sourceSHA256": "447fccb923d52cd9cc72309538c3c41347da5ec390566fcc040150759394def7",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-036",
+      "id": "ty5vxa5YdStMLiDb",
+      "legacyDocumentaryPath": null,
+      "name": "Cachalote",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Cachalote_ty5vxa5YdStMLiDb.json",
+      "sourceSHA256": "3a7821aa772dbdf9403a5d5667bc4e2287462e0cbf6d6f264661f29f3552bf12",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-037",
+      "id": "vqydUWKetUA4uMwD",
+      "legacyDocumentaryPath": null,
+      "name": "Taruca",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Taruca_vqydUWKetUA4uMwD.json",
+      "sourceSHA256": "a242bcad684696d1e810ddc9e1174fb9b12a095f0adb0cc113b2294b12265ec1",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-038",
+      "id": "UWNOWOmcjnTU3TKM",
+      "legacyDocumentaryPath": null,
+      "name": "Vizcacha de montaña",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Vizcacha_de_monta_a_UWNOWOmcjnTU3TKM.json",
+      "sourceSHA256": "f42f8c1c74878fd2b1db605bb971fc28665f0a16eb3a9d41727d464922dae50f",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-039",
+      "id": "eG8Fv70VMWfPn9ND",
+      "legacyDocumentaryPath": null,
+      "name": "Flamenco andino",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Flamenco_andino_eG8Fv70VMWfPn9ND.json",
+      "sourceSHA256": "f30adc1ce636fc996426b5070759edba6f584df1e0d237fa7516b976d9b36f21",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "01"
+      ]
+    },
+    {
+      "code": "FAU-040",
+      "id": "jSNogolHCojEoXVv",
+      "legacyDocumentaryPath": null,
+      "name": "Zorro chilla",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Zorro_chilla_jSNogolHCojEoXVv.json",
+      "sourceSHA256": "30c3a255770220d036231b09f0205de1665e588e312e42750369a8774967f4c5",
+      "status": "CORE_TERRITORIAL_PRIMARY",
+      "territories": [
+        "02"
+      ]
+    },
+    {
+      "code": "FAU-045",
+      "id": "1ZG2udTbA0CmXejm",
+      "legacyDocumentaryPath": null,
+      "name": "Macrauchenia · macrauquenia",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Macrauchenia___macrauquenia_1ZG2udTbA0CmXejm.json",
+      "sourceSHA256": "8e178cbb6960c61eb2c3578c5793574b1d91097f95898b20b5c9a208f7e27dfd",
+      "status": "PREHISTORIC_SEPARATE_CANDIDATE",
+      "territories": []
+    },
+    {
+      "code": "FAU-046",
+      "id": "wS747C9NmBt7XFrg",
+      "legacyDocumentaryPath": null,
+      "name": "Hippidion · caballo sudamericano",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Hippidion___caballo_sudamericano_wS747C9NmBt7XFrg.json",
+      "sourceSHA256": "201c4618348e83963041e10611364ad55705bf4995f8f71c81cd6c5647cd8774",
+      "status": "PREHISTORIC_SEPARATE_CANDIDATE",
+      "territories": []
+    },
+    {
+      "code": "FAU-047",
+      "id": "exWEvQTUZT0S0hY4",
+      "legacyDocumentaryPath": null,
+      "name": "Gonfoterio · Notiomastodon",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Gonfoterio___Notiomastodon_exWEvQTUZT0S0hY4.json",
+      "sourceSHA256": "2b0483a9b88a67a2f3ea1e288c133d9cb27021fa4e2a4abecdec273e9820091d",
+      "status": "PREHISTORIC_SEPARATE_CANDIDATE",
+      "territories": []
+    },
+    {
+      "code": "FAU-048",
+      "id": "8qnBtUxCb8VYiSzp",
+      "legacyDocumentaryPath": null,
+      "name": "Capibara",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Capibara_8qnBtUxCb8VYiSzp.json",
+      "sourceSHA256": "a0d9efd8a1fd374f92ca33204fd268a40b4d8ea15027e51f41c7af9ee922b252",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-049",
+      "id": "yDxgobX0LZ1B8pff",
+      "legacyDocumentaryPath": null,
+      "name": "Águila harpía",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/_guila_harp_a_yDxgobX0LZ1B8pff.json",
+      "sourceSHA256": "ef20ed2f9789215ec49b492144e515bc9c893a31b47db42959556fb588e66b75",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-050",
+      "id": "NpLnnFUGIb4QtU67",
+      "legacyDocumentaryPath": null,
+      "name": "Nutria gigante",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Nutria_gigante_NpLnnFUGIb4QtU67.json",
+      "sourceSHA256": "5eb06b646b7ffc0582337a64570a5581713fe0a78d128f82cd25bae2691f102a",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-051",
+      "id": "Uo01VqsJ2QxRunBJ",
+      "legacyDocumentaryPath": null,
+      "name": "Armadillo gigante",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Armadillo_gigante_Uo01VqsJ2QxRunBJ.json",
+      "sourceSHA256": "38784dcae146847ffe0691fc7fbaf21b77460a532e608b9af34d543af3a8c053",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-052",
+      "id": "Ns2E8Uvsz8cPKJVt",
+      "legacyDocumentaryPath": null,
+      "name": "Mara patagónica",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Mara_patag_nica_Ns2E8Uvsz8cPKJVt.json",
+      "sourceSHA256": "e6228f751a3a32227beb843ffaba1e212fa6ae7e8e8336a27523a394e2294909",
+      "status": "CORE_ACTIVE_NONPRIMARY",
+      "territories": []
+    },
+    {
+      "code": "FAU-053",
+      "id": "t8fwdSxU650cW8DG",
+      "legacyDocumentaryPath": null,
+      "name": "Smilodon · felino de colmillos de sable",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Smilodon___felino_de_colmillos_de_sable_t8fwdSxU650cW8DG.json",
+      "sourceSHA256": "4949d03fa5eefed1831832e7247e9830c449230ec15f9d77a2343780f3707e79",
+      "status": "PREHISTORIC_SEPARATE_CANDIDATE",
+      "territories": []
+    },
+    {
+      "code": "FAU-054",
+      "id": "6dbWEBG1uRnGI28V",
+      "legacyDocumentaryPath": null,
+      "name": "Kelenken · ave del terror",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Fauna_bFBfGotWh0kDYyPN/Kelenken___ave_del_terror_6dbWEBG1uRnGI28V.json",
+      "sourceSHA256": "bcdf61632e681fa45c69a5d9500e45a72f629c16e2353c75efbc38a889ba3775",
+      "status": "PREHISTORIC_SEPARATE_CANDIDATE",
+      "territories": []
+    }
+  ],
+  "flora": [
+    {
+      "code": "FLO-001",
+      "id": "8QxkLEqZyWoZwQuE",
+      "name": "Totora",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Totora_8QxkLEqZyWoZwQuE.json",
+      "sourceSHA256": "9b51ad4ecf4cf8884775764622a36d5c525d78e30099cb8db62b82451120fdca",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-002",
+      "id": "kPTRbEpIKnNKD22G",
+      "name": "Orquídea andina",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Orqu_dea_andina_kPTRbEpIKnNKD22G.json",
+      "sourceSHA256": "390352d8e60a1a09c86f0db573fc3bf2c30d112c0eb92ace921cf043853ef099",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-003",
+      "id": "hrHdYmhradICCOAg",
+      "name": "Ulmo",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Ulmo_hrHdYmhradICCOAg.json",
+      "sourceSHA256": "3a32c36e2246c152e78e03dece8644143a8fae3099b847ce1abb28c97a6a7669",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-004",
+      "id": "D8DUTJF1Et3urear",
+      "name": "Pewen",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Pewen_D8DUTJF1Et3urear.json",
+      "sourceSHA256": "dfb6c8426540e2ce1a5f6a1c91c1d361ccad04ed0f4a8d39a51ae80dc2c783fa",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-005",
+      "id": "obsN2rPwUuDCO9R1",
+      "name": "Calafate",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Calafate_obsN2rPwUuDCO9R1.json",
+      "sourceSHA256": "0239afe8fad00a3a578895c41edbb88c98c5cdf95ac25e5a8e11e45216b27fd3",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-006",
+      "id": "AjK8zQYvQReR5Dej",
+      "name": "Lenga",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Lenga_AjK8zQYvQReR5Dej.json",
+      "sourceSHA256": "6c91a39374e9504c0d75f7dcd75223b1097379415e09986267aff52659d9e141",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-007",
+      "id": "uj4l7qa0LFq7wBXp",
+      "name": "Ciprés de las Guaitecas",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Cipr_s_de_las_Guaitecas_uj4l7qa0LFq7wBXp.json",
+      "sourceSHA256": "115506dd4246445c3abb7ebf2815ec777325686ce3be01c57c5838f409397bd8",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-008",
+      "id": "RAFdBdh3zkbnLfFQ",
+      "name": "Pasto antártico",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Pasto_ant_rtico_RAFdBdh3zkbnLfFQ.json",
+      "sourceSHA256": "da0a732db36c50594ef14e105a22a09f9420cade4f6b4a947b40605b636965fd",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-009",
+      "id": "AqSaHtDOp4paD2OA",
+      "name": "Llacho",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Llacho_AqSaHtDOp4paD2OA.json",
+      "sourceSHA256": "b41f9f8c57c261e0383d1326ea19c26ed2632aaf3708ed134e2bb6ceb30eca4c",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-010",
+      "id": "bgNINDolymBTkMDy",
+      "name": "Bromelia",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Bromelia_bgNINDolymBTkMDy.json",
+      "sourceSHA256": "649e143e118d75fe0b8aac545b0dc1912a06457f46ae71876c954b23012fb2be",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-011",
+      "id": "HRtAN5hQLFY2YhwT",
+      "name": "Canelo",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Canelo_HRtAN5hQLFY2YhwT.json",
+      "sourceSHA256": "f141a2870e7698553ee9337d0b77bf3ed5594a34de3a2bdd7176d181a751395d",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-012",
+      "id": "ZGD5Ju34FhFSWGCp",
+      "name": "Ñirre",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/_irre_ZGD5Ju34FhFSWGCp.json",
+      "sourceSHA256": "ee3eb053a5765e639d9dec0510b57ab6b47374b7ee6fbc538696e3ce1da580f9",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-013",
+      "id": "FxSyHzkYd6xLmkC0",
+      "name": "Coigüe",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Coig_e_FxSyHzkYd6xLmkC0.json",
+      "sourceSHA256": "0e17a529a241c958d2b0c3cbe7c9e87b08aba6282a57b1811dbce4c753381235",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-014",
+      "id": "bWNDctTwgVuBN8ma",
+      "name": "Coirón",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Coir_n_bWNDctTwgVuBN8ma.json",
+      "sourceSHA256": "8b26502618d5577fe0d6c6f20d3f6e211645ade1fd881b3e2feee5a420975d13",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-015",
+      "id": "TvWyolfUzBJ4KWUY",
+      "name": "Guindo",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Guindo_TvWyolfUzBJ4KWUY.json",
+      "sourceSHA256": "838c25c4d36abce64765fbb99812b48ad5529cfba153f3d3c1459a8db8bd6569",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-016",
+      "id": "1QDhWgJwPAuLX5Rs",
+      "name": "Esfagno",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Esfagno_1QDhWgJwPAuLX5Rs.json",
+      "sourceSHA256": "c80287375f9575dd9a269d0abca6a8234ef619a0393b78ae1836c289c4b14370",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-017",
+      "id": "QcEq2xpc5io1q7vD",
+      "name": "Helecho arborescente",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Helecho_arborescente_QcEq2xpc5io1q7vD.json",
+      "sourceSHA256": "f59efd17eea28aff77ddd10522cb5114b4e6049d0acde8381e790ad8ffb905cf",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-018",
+      "id": "EAKZGHAPhvoHXnzY",
+      "name": "Avellano",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Avellano_EAKZGHAPhvoHXnzY.json",
+      "sourceSHA256": "4c9b8a6cc5dbb2e6ab5494abd8a8690ace7e418c8ecf96c02172a8f9bcc9875f",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-019",
+      "id": "If11MHBVELSdsaQ9",
+      "name": "Chaura",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Chaura_If11MHBVELSdsaQ9.json",
+      "sourceSHA256": "86229e543f043e81713faf1bfeb0242c5e5026bde08601f7745157c3587ab459",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-020",
+      "id": "OglJ4jmNql2edLh6",
+      "name": "Liquen polar",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Liquen_polar_OglJ4jmNql2edLh6.json",
+      "sourceSHA256": "ca2ffa736c23ffaa30ffdc55f9eddf4fb569e80217077052d8cfd815fb0100ea",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-021",
+      "id": "wKqymf6A6W8aCRiE",
+      "name": "Junco",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Junco_wKqymf6A6W8aCRiE.json",
+      "sourceSHA256": "c554a2dc364ff693c5db1bd4ebd4c5af3149d18a0d541007527071804f7abbad",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-022",
+      "id": "24LkJ0uBiyQWBJml",
+      "name": "Bambú",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Bamb__24LkJ0uBiyQWBJml.json",
+      "sourceSHA256": "5442090e6c95eaaaa908f7a966388df889cb5272fa76f82c11015f0a7118a5f1",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-023",
+      "id": "07hNf7vg5bHgJXh2",
+      "name": "Mañío",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Ma__o_07hNf7vg5bHgJXh2.json",
+      "sourceSHA256": "1d9e4df86254a93c8744ceec192acc90fefe6eedb763d0879864857d5475b885",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-024",
+      "id": "YZmZVSVFTjl4hYud",
+      "name": "Macroalga",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Macroalga_YZmZVSVFTjl4hYud.json",
+      "sourceSHA256": "7de3c8ecb0f33bc7a257eaa8a9944da47adaf379a6373857d799dbb17837ab64",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-025",
+      "id": "JId9z6VBRmBOlXs7",
+      "name": "Lenteja de agua",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Lenteja_de_agua_JId9z6VBRmBOlXs7.json",
+      "sourceSHA256": "985dd40d1539bd41c7da5eb8ed3f36323a8a360aa457967613b194bd3f0115e6",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-026",
+      "id": "OiLM8P1RIhCLROSv",
+      "name": "Musgo de bosque",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Musgo_de_bosque_OiLM8P1RIhCLROSv.json",
+      "sourceSHA256": "919892b4c0cb30adbda7beb9e5b99210695252a29d756e0c30717ef1c2e4a756",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-027",
+      "id": "WXw4KQcmzDupTAJL",
+      "name": "Ciprés de cordillera",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Cipr_s_de_cordillera_WXw4KQcmzDupTAJL.json",
+      "sourceSHA256": "49c3a72c572cdd361b8695b9896d2083488bbc0590a281f6874ba0c33577b911",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-028",
+      "id": "l2u4hl0dxPmqflYF",
+      "name": "Fungosidades",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Fungosidades_l2u4hl0dxPmqflYF.json",
+      "sourceSHA256": "5a75ae54eddb3ad79dbfe57542f4cee54c18c23ffd4e332f3d2baae583b88814",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-029",
+      "id": "immVDHHU9IRjrKh1",
+      "name": "Helecho de agua",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Helecho_de_agua_immVDHHU9IRjrKh1.json",
+      "sourceSHA256": "bff572306825eb6d0b686f6b825febbcf78033a60576756a58ae491e5da5a978",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-030",
+      "id": "zKZ9w91iyVBmsi1Z",
+      "name": "Epífita",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Ep_fita_zKZ9w91iyVBmsi1Z.json",
+      "sourceSHA256": "296605d983691f264427a7decd1128da064f1a77db15cccc40eb9a78654d216f",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-031",
+      "id": "6bRCFwRxDAig1TJO",
+      "name": "Trepadora",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Trepadora_6bRCFwRxDAig1TJO.json",
+      "sourceSHA256": "6f4444df736d220de19cd27c60ac9f726aa85dfe9f411da08c26959ba87251f1",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-032",
+      "id": "Gyk8U4yhhoZSckcb",
+      "name": "Alga polar",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Alga_polar_Gyk8U4yhhoZSckcb.json",
+      "sourceSHA256": "1ee61cc4357656a50a48a0d999186801b9da8a6d7350141d900857a5db3aaefd",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-033",
+      "id": "xgKE2gvAnDTcuCGt",
+      "name": "Helecho terrestre",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Helecho_terrestre_xgKE2gvAnDTcuCGt.json",
+      "sourceSHA256": "f2090d340b66728947cc1075772f994ad5f44a27d1788e67d411e524530d10f2",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-034",
+      "id": "FP8NfVhSk4nLXZiw",
+      "name": "Gramínea cordillerana",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Gram_nea_cordillerana_FP8NfVhSk4nLXZiw.json",
+      "sourceSHA256": "bb05b11e5cb1bf89fd23da906390cc87a92c26dcc90f6cc8336a24ac135c829f",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-035",
+      "id": "azGKtoLz76hPNUwZ",
+      "name": "Vegetación litoral",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Vegetaci_n_litoral_azGKtoLz76hPNUwZ.json",
+      "sourceSHA256": "159ba705e728b9f1f4b7f588d8ed7ae7064ac5dcc76a256e651571a2e47b4588",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-036",
+      "id": "kol0TUekULuAIgkj",
+      "name": "Musgo polar",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Musgo_polar_kol0TUekULuAIgkj.json",
+      "sourceSHA256": "d9107a30475b23a6afa4f9f0cede25f7436d81c29eee5a18b951446f2b1dcff7",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-037",
+      "id": "AgJPeKku9aQbjp4R",
+      "name": "Yareta",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Yareta_AgJPeKku9aQbjp4R.json",
+      "sourceSHA256": "83a8dfe06bfe6cbce4cce51b3c9e1ca57046b7ee0c0667f271d4ae6b4f275f86",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-038",
+      "id": "MV5XYAZDXi7NYtQP",
+      "name": "Copihue",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Copihue_MV5XYAZDXi7NYtQP.json",
+      "sourceSHA256": "0647c98200abe28ac961b41e7900f7046d79d516ff093ade592ee7563818c991",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-039",
+      "id": "mPmQ3MtNIZi3H10C",
+      "name": "Nalca",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Nalca_mPmQ3MtNIZi3H10C.json",
+      "sourceSHA256": "a197251b09bfd6ce914a6b12f3b4dcb2b3354eb63fa482c0f641a1561d54437a",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    },
+    {
+      "code": "FLO-040",
+      "id": "awe2EdrtmyFQnOzh",
+      "name": "Chilco",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Flora_fqRoZg8otQGiJaoS/Chilco_awe2EdrtmyFQnOzh.json",
+      "sourceSHA256": "3b284e17410b9a39c70f40a7b2cec208538309cd6c4386651b56b1d3abdca676",
+      "status": "HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED"
+    }
+  ],
+  "biomas": [
+    {
+      "id": "viMyw1q7XBwaYJzd",
+      "name": "Canales australes",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Canales_australes_viMyw1q7XBwaYJzd.json",
+      "sourceSHA256": "881d57457cf2e6db1bea716ef8ea0605efb19e7b0ba438722d3d16e673cc325b",
+      "territory": "08",
+      "status": "CORE_TERRITORY_HISTORICAL_BIOME_REFERENCE"
+    },
+    {
+      "id": "5iifIanvWdAPphJc",
+      "name": "Ngulumapu",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Ngulumapu_5iifIanvWdAPphJc.json",
+      "sourceSHA256": "898f19825108ff75613727f1837010ecd7961c989ddb8bed463a7c83c397e5fe",
+      "territory": "03",
+      "status": "CORE_TERRITORY_HISTORICAL_BIOME_REFERENCE"
+    },
+    {
+      "id": "A9QZLy1IegmmhnJK",
+      "name": "Paititi",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Paititi_A9QZLy1IegmmhnJK.json",
+      "sourceSHA256": "fb411fa7e26ad851e1a1415600e470c2f50e7491d59d56f374d419604b427b56",
+      "territory": null,
+      "status": "COMPLEMENTARY_HISTORICAL_BIOME"
+    },
+    {
+      "id": "AykRw9CbbrA6GH25",
+      "name": "Patagonia austral",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Patagonia_austral_AykRw9CbbrA6GH25.json",
+      "sourceSHA256": "7ab7ad380b41034e67ced9adeb26c77c391e9e5387ddd510d847e3e68983e6f2",
+      "territory": "06",
+      "status": "CORE_TERRITORY_HISTORICAL_BIOME_REFERENCE"
+    },
+    {
+      "id": "qGfDgUgbztWfpLac",
+      "name": "Pewenmapu",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Pewenmapu_qGfDgUgbztWfpLac.json",
+      "sourceSHA256": "0a8369f25df18642082addbcc250695dad58001973a8f97d9e66049dc01d56c4",
+      "territory": "04",
+      "status": "CORE_TERRITORY_HISTORICAL_BIOME_REFERENCE"
+    },
+    {
+      "id": "WGArY0MBMfFODZ5G",
+      "name": "Tierra del Fuego",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Tierra_del_Fuego_WGArY0MBMfFODZ5G.json",
+      "sourceSHA256": "1d2e50b6c7cce34fd271ce9ce20ed06adf3d2cc90ae9e6238daea114dc4aa797",
+      "territory": "07",
+      "status": "CORE_TERRITORY_HISTORICAL_BIOME_REFERENCE"
+    },
+    {
+      "id": "1L6xluNiPetnCBMh",
+      "name": "Titicaca",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Titicaca_1L6xluNiPetnCBMh.json",
+      "sourceSHA256": "892610b817d5135b89f04400eb1ac2f1241a8080c0df7148e0e1945442e3bc8a",
+      "territory": null,
+      "status": "COMPLEMENTARY_HISTORICAL_BIOME"
+    },
+    {
+      "id": "PxPpVGJTu6Wgowg0",
+      "name": "Umbral Polar",
+      "source": "source-pending/ci137-native-release-recovered/native/hiperaustralis-naturaleza-items/Biomas_X86HyhTed01WxwTp/Umbral_Polar_PxPpVGJTu6Wgowg0.json",
+      "sourceSHA256": "4b35e69be731e8ce98b5b2f7216bb5b40d962fd9e79ee024f714857917ad6e71",
+      "territory": "09",
+      "status": "CORE_TERRITORY_HISTORICAL_BIOME_REFERENCE"
+    }
+  ],
+  "restrictions": [
+    "44 active Fauna identities; FAU-006 protected outside new active pack; 5 prehistoric Item records separate from the 44 active catalogue, retain candidate status and historical IDs; not deleted. Milodon relicto already recovered as Actor, not allocate Item ID here.",
+    "FAU-041–044 unobserved; no filler. FAU-017 and FAU-021 remain distinct IDs.",
+    "8 historical biomas: not equivalent to 9 CORE territories. Titicaca and Paititi complementary. No new biome records inferred.",
+    "40 Flora labels archived; no automatic final editorial replacement or territorial quota. Funga separate documentary work, no native Item ID inferred.",
+    "No property, text, visual approval, or runtime change. Preserve documentary and token visual roles."
+  ]
+}
