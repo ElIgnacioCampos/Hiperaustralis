@@ -702,7 +702,7 @@
       "canonicalCandidateNote": "Preserve established filenames for this candidate; only module prefix changes, not an approved mass rename."
     },
     "domesticos": {
-      "status": "HISTORICAL_WORK_RECOVERED__BINARIES_NOT_LOCATED",
+      "status": "DOCUMENTARY_INVENTORY_RECOVERED__BINARY_GATE_OPEN",
       "proposedFolder": "Bestiario/Fauna/Doméstica",
       "notCompanions": true,
       "sourceCut": "2026-11-12/13, archaeological cutoff 1000 CE for historical lots; preserve source decisions",
@@ -737,15 +737,114 @@
         },
         {
           "name": "Nórdico",
-          "status": "HISTORICAL_LOT_MENTIONED__CONTENTS_AND_BYTES_UNVERIFIED"
+          "status": "HISTORICAL_APPROVAL_AND_NORMALIZATION_REPORTED",
+          "records": [
+            {
+              "names": [
+                "Gallo",
+                "Gallina"
+              ],
+              "master": "NORDICO_01_GALLO_GALLINA_RECORTE_v01.png",
+              "sharedComposition": true,
+              "status": "HISTORICAL_VISUAL_APPROVAL_REPORTED__EXACT_BYTES_NOT_RECOVERED"
+            },
+            {
+              "names": [
+                "Ganso"
+              ],
+              "master": "NORDICO_02_GANSO_RECORTE_v01.png",
+              "status": "HISTORICAL_VISUAL_APPROVAL_REPORTED__EXACT_BYTES_NOT_RECOVERED"
+            },
+            {
+              "names": [
+                "Cabra"
+              ],
+              "master": "NORDICO_03_CABRA_RECORTE_v01.png",
+              "status": "HISTORICAL_VISUAL_APPROVAL_REPORTED__EXACT_BYTES_NOT_RECOVERED"
+            },
+            {
+              "names": [
+                "Perro"
+              ],
+              "master": "NORDICO_04_PERRO_RECORTE_v01.png",
+              "status": "HISTORICAL_VISUAL_APPROVAL_REPORTED__EXACT_BYTES_NOT_RECOVERED"
+            }
+          ],
+          "archiveLead": "LOTE_NORDICO_PRODUCCION_v02.zip",
+          "historicalArchiveEntries": 13
         },
         {
           "name": "Europeo",
-          "status": "HISTORICAL_LOT_MENTIONED__CONTENTS_AND_BYTES_UNVERIFIED"
+          "status": "HISTORICAL_MASTERS_IDENTIFIED__APPROVAL_AND_BYTES_TO_VERIFY",
+          "archiveLead": "HIPERAUSTRALIS_LOTE_EUROPEO_FOUNDRY_256_WEBP.zip",
+          "records": [
+            {
+              "name": "Oveja",
+              "master": "HIPERAUSTRALIS_OVEJA_EUROPEO_MAESTRO_v05.png",
+              "status": "HISTORICAL_FILENAME_LEAD"
+            },
+            {
+              "name": "Pato",
+              "master": "HIPERAUSTRALIS_PATO_EUROPEO_MAESTRO_v04.png",
+              "status": "HISTORICAL_FILENAME_LEAD"
+            },
+            {
+              "name": "Chancho",
+              "master": "HIPERAUSTRALIS_CHANCHO_EUROPEO_MAESTRO_v02.png",
+              "status": "HISTORICAL_FILENAME_LEAD"
+            },
+            {
+              "name": "Conejo",
+              "master": "HIPERAUSTRALIS_CONEJO_EUROPEO_MAESTRO_v02.png",
+              "status": "HISTORICAL_FILENAME_LEAD"
+            }
+          ]
         },
         {
           "name": "Mapuche",
-          "status": "HISTORICAL_LOT_MENTIONED__CONTENTS_AND_BYTES_UNVERIFIED"
+          "status": "HISTORICAL_PIECES_IDENTIFIED__APPROVAL_AND_BYTES_TO_VERIFY",
+          "records": [
+            {
+              "name": "Cuy",
+              "territory": "Ngulumapu",
+              "version": "v03",
+              "status": "HISTORICAL_PIECE_LEAD"
+            },
+            {
+              "name": "Kollonka",
+              "territory": "Ngulumapu",
+              "version": "v01",
+              "status": "HISTORICAL_PIECE_LEAD"
+            },
+            {
+              "name": "Alka",
+              "territory": "Ngulumapu",
+              "version": "v02",
+              "status": "HISTORICAL_PIECE_LEAD"
+            },
+            {
+              "name": "Pollitos",
+              "territory": "Ngulumapu",
+              "version": "grupo de tres",
+              "status": "HISTORICAL_PIECE_LEAD"
+            },
+            {
+              "name": "Ketro Alka",
+              "territory": "Pewenmapu",
+              "version": "v01",
+              "status": "HISTORICAL_PIECE_LEAD"
+            },
+            {
+              "name": "Ketro Achawall",
+              "territory": "Pewenmapu",
+              "version": "v01",
+              "status": "HISTORICAL_PIECE_LEAD"
+            }
+          ],
+          "pending": [
+            "Kollonka de Aretes"
+          ],
+          "archiveLead": null
         },
         {
           "name": "Patagonia / Canales australes",
@@ -756,7 +855,8 @@
       "checks": [
         "Current mounted 0.4.100 archive filename inventory: no distinct livestock/corral token paths; culture images A1_Sajama_Llamas and L1_Licancabur_Llamas are not isolated tokens.",
         "14 Nov Actor export: no matching separate domestic livestock Actor names; prehistoric Hippidion and Tapir not domestics.",
-        "Library title/content and Drive filename searches did not recover exact camelid archive. Historical conversation is evidence of work, not binary verification."
+        "Library title/content and Drive filename searches did not recover exact camelid archive. Historical conversation is evidence of work, not binary verification.",
+        "24 Nov: local /mnt/data filename scan and Drive targeted queries for Nordic, European, Tiwanaku, Kollonka, Ketro and sheep returned no matching archives."
       ],
       "next": "Recover exact approved original archives and metadata; deduplicate by approved asset hash, retain shared references across Culturas/Territorios/Bestiario; do not invent missing animals or actor statistics.",
       "dogRecovery": {
@@ -769,6 +869,28 @@
         ],
         "noRegeneration": true,
         "doNotSetMechanicalPesoFromKg": true
+      },
+      "inventoryCount": {
+        "catalogEntries": 18,
+        "graphicCompositions": 17,
+        "uniqueSpeciesNotEstablished": true,
+        "binaryFilesRecoveredThisTurn": 0
+      },
+      "recoveryPriority": [
+        "HIPERAUSTRALIS_LOTE_AYMARA_TIWANAKU_CONSOLIDADO_v03.zip",
+        "LOTE_NORDICO_PRODUCCION_v02.zip",
+        "HIPERAUSTRALIS_LOTE_EUROPEO_FOUNDRY_256_WEBP.zip",
+        "Mapuche individual masters (no consolidated archive located)"
+      ],
+      "sourceCaveat": "Historical assistant records 12–13 Nov, including earlier reports of physical recovery of Nordic v02 and Aymara v02. These reports do not certify access to bytes today; v03 preferred when valid. No new approvals, Foundry IDs, weights or files fabricated.",
+      "runtimePolicy": {
+        "folder": "Bestiario/Fauna/Doméstica",
+        "bank": "FAUNA_DOMESTICA",
+        "cultureIsReferenceNotCopy": true,
+        "canonicalImage": "Single verified WebP256 per exact approved image; keep individual roles when genuinely different",
+        "sharedJS": true,
+        "avoidSymlinks": true,
+        "activation": "Require exact source bytes and document identity or approved new Actor payload; no empty placeholder records"
       }
     }
   },
