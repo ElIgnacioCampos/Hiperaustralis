@@ -938,13 +938,62 @@
         ],
         "domeykodactylus": {
           "code": "EXO-001",
-          "status": "HISTORICAL_AUTHOR_CONFIRMED_ACTIVE_PROVISIONAL__BYTES_PENDING",
+          "status": "APPROVED_EXACT_NEW_BINARIES_RECOVERED_AND_VERIFIED",
           "path": "05_WEBP256_FOUNDRY/EXOTICOS/EXO-001_Domeykodactylus.webp",
           "sha256": "5c9d46b6be440aba847733f28738ffa8ef6a291c889e0cc4543ebbf703b44226",
           "bytes": 16820,
           "actorId": null,
           "displayName": "Volador",
-          "historicalName": "Domeykodactylus"
+          "historicalName": "Domeykodactylus",
+          "historicalAssetStatus": "HISTORICAL_AUTHOR_CONFIRMED_ACTIVE_PROVISIONAL__BYTES_PENDING",
+          "approvedRelease": {
+            "status": "APPROVED_EXACT_NEW_BINARIES_RECOVERED_AND_VERIFIED",
+            "date": "2026-11-24",
+            "name": "Volador",
+            "taxon": "Domeykodactylus",
+            "code": "EXO-001",
+            "category": "Compañeros/Exóticos",
+            "sourceCategory": "Compañeros / Familiares exóticos",
+            "companionWeight": 1,
+            "style": "ERH",
+            "defaultVariant": "a",
+            "variants": [
+              {
+                "variant": "a",
+                "pose": "vuelo",
+                "file": "EXO-001a_volador_vuelo.webp",
+                "sha256": "4fd9159e616384f11a037cb6e182a36135e035087297321003c337b4b02bb309",
+                "bytes": 37880,
+                "alphaBBox": [
+                  8,
+                  17,
+                  248,
+                  238
+                ]
+              },
+              {
+                "variant": "b",
+                "pose": "terrestre",
+                "file": "EXO-001b_volador_terrestre.webp",
+                "sha256": "baae03942e3f8ec72d5ba15b1bee4293f82b6d6531e647b32c24786d2b08f1b1",
+                "bytes": 32852,
+                "alphaBBox": [
+                  47,
+                  8,
+                  208,
+                  248
+                ]
+              }
+            ],
+            "libraryFolder": "/Hiperaustralis/CORE/COMPANEROS/FAMILIARES_EXOTICOS",
+            "archive": "HIPERAUSTRALIS_FAMILIARES_EXOTICOS_EXO-001_VOLADOR_WEBP256.zip",
+            "archiveSHA256": "92e859db23317d348d4f57cfb0a5fd89bc0a46e069bdd09996440fa3acd974c5",
+            "archiveBytes": 71052,
+            "record": "EXO-001_VOLADOR_REGISTRO.json",
+            "checks": "Actual materialized ZIP: CRC pass, exactly two entries, both hashes and byte counts match record, WebP decoded 256x256 RGBA, alpha bbox match, visual inspection both poses.",
+            "rule": "One logical code and one ficha, variant suffix a/b. No additional Actor ID or duplicate document.",
+            "runtime": "Pending integration; no runtime path assigned; no change to other fauna."
+          }
         },
         "chilecebus": {
           "code": "EXO-009",
@@ -1010,7 +1059,8 @@
             {
               "id": "EXO-001",
               "sha256": "5c9d46b6be440aba847733f28738ffa8ef6a291c889e0cc4543ebbf703b44226",
-              "foundInLocalZips": false
+              "foundInLocalZips": false,
+              "resolution": "Superseded for current use by verified approved Volador a/b release; old v06 hash remains historical, not required for runtime."
             }
           ],
           "localReport": {
@@ -1230,12 +1280,61 @@
         "alternateSHA256": "f6c53e5bcf8c068a94cf5ad7e99913fafeadc84d72b8c28cd2ace6414251eea9",
         "alternatePath": "meliaz-bridge/assets/familiares-exoticos/EXO-001.webp",
         "actorId": null,
-        "status": "NOT_EXACT_APPROVED_SOURCE",
+        "status": "APPROVED_EXACT_NEW_BINARIES_RECOVERED_AND_VERIFIED",
         "companionWeight": 1,
         "displayName": "Volador",
         "historicalName": "Domeykodactylus",
         "namingAuthority": "Explicit user decision 2026-11-24: «Volador le vamos a poner»",
-        "namingStatus": "APPROVED"
+        "namingStatus": "APPROVED",
+        "historicalAssetStatus": "NOT_EXACT_APPROVED_SOURCE",
+        "approvedRelease": {
+          "status": "APPROVED_EXACT_NEW_BINARIES_RECOVERED_AND_VERIFIED",
+          "date": "2026-11-24",
+          "name": "Volador",
+          "taxon": "Domeykodactylus",
+          "code": "EXO-001",
+          "category": "Compañeros/Exóticos",
+          "sourceCategory": "Compañeros / Familiares exóticos",
+          "companionWeight": 1,
+          "style": "ERH",
+          "defaultVariant": "a",
+          "variants": [
+            {
+              "variant": "a",
+              "pose": "vuelo",
+              "file": "EXO-001a_volador_vuelo.webp",
+              "sha256": "4fd9159e616384f11a037cb6e182a36135e035087297321003c337b4b02bb309",
+              "bytes": 37880,
+              "alphaBBox": [
+                8,
+                17,
+                248,
+                238
+              ]
+            },
+            {
+              "variant": "b",
+              "pose": "terrestre",
+              "file": "EXO-001b_volador_terrestre.webp",
+              "sha256": "baae03942e3f8ec72d5ba15b1bee4293f82b6d6531e647b32c24786d2b08f1b1",
+              "bytes": 32852,
+              "alphaBBox": [
+                47,
+                8,
+                208,
+                248
+              ]
+            }
+          ],
+          "libraryFolder": "/Hiperaustralis/CORE/COMPANEROS/FAMILIARES_EXOTICOS",
+          "archive": "HIPERAUSTRALIS_FAMILIARES_EXOTICOS_EXO-001_VOLADOR_WEBP256.zip",
+          "archiveSHA256": "92e859db23317d348d4f57cfb0a5fd89bc0a46e069bdd09996440fa3acd974c5",
+          "archiveBytes": 71052,
+          "record": "EXO-001_VOLADOR_REGISTRO.json",
+          "checks": "Actual materialized ZIP: CRC pass, exactly two entries, both hashes and byte counts match record, WebP decoded 256x256 RGBA, alpha bbox match, visual inspection both poses.",
+          "rule": "One logical code and one ficha, variant suffix a/b. No additional Actor ID or duplicate document.",
+          "runtime": "Pending integration; no runtime path assigned; no change to other fauna."
+        }
       },
       "policy": "Peso 1 exclusively as provisional mechanical convention for Compañeros. No inference about body mass or natural strength. Preserve all other Fauna and encounter weights, historical IDs, functions and graphics; no global taxon-based weight migration.",
       "weightDecision": {
