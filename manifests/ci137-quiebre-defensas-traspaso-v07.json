@@ -1,0 +1,361 @@
+{
+  "schema": "ci137-quiebre-defensas-handoff-v07",
+  "status": "SOURCE_CROSSWALK_PASS__RUNTIME_NOT_APPLIED",
+  "source": "CORE_MELIAZ_TRASPASO_QUIEBRE_DEFENSAS_2026-11-24_v07.md",
+  "macro": "CORE_MELIAZ_QUIEBRE_CI137_MACRO_v01.js",
+  "sourcePolicy": "Base playtest accepted; preserve exact values, IDs and descriptions; no automatic new Items or merges.",
+  "quiebreField": "system.props.quiebre",
+  "arms": [
+    {
+      "id": "c2L6T5w4S9OcgkDt",
+      "name": "Cuchillo de piedra",
+      "quiebre": "Corte profundo",
+      "source": "source/items/armas/01_cuchillo_litico.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "Iol01RpIqlQxSTMr",
+      "name": "Cuchillo de hueso",
+      "quiebre": "Corte profundo",
+      "source": "source/items/armas/02_cuchillo_hueso.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "Ri1XmMCXqdIJbK3s",
+      "name": "Cuchillo metálico",
+      "quiebre": "Corte profundo, perforación",
+      "source": "source/items/armas/03_cuchillo_metalico.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "n5lkb91fMyBzjvzX",
+      "name": "Seax / cuchillo largo",
+      "quiebre": "Corte profundo, perforación",
+      "source": "source/items/armas/04_seax.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "tGW0xjpxQ9JnguU5",
+      "name": "Espada sencilla",
+      "quiebre": "Corte profundo, perforación",
+      "source": "source/items/armas/05_espada.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "gf8C98EdlQSYUQh4",
+      "name": "Garrote",
+      "quiebre": "Fractura, inconsciencia",
+      "source": "source/items/armas/06_garrote.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "DYLtTWt2LeXGYvG7",
+      "name": "Bastón de combate",
+      "quiebre": "Fractura, luxación",
+      "source": "source/items/armas/07_baston_combate.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "VM0QO1ULwgCp72UM",
+      "name": "Maza pétrea",
+      "quiebre": "Fractura, inconsciencia",
+      "source": "source/items/armas/08_maza_petrea.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "IIeIpAv4T4dD6hY1",
+      "name": "Hacha lítica",
+      "quiebre": "Corte profundo, fractura",
+      "source": "source/items/armas/09_hacha_litica.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "yJ6TtE7h71JqcxlU",
+      "name": "Hacha metálica",
+      "quiebre": "Corte profundo, mutilación",
+      "source": "source/items/armas/10_hacha_metalica.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "utacTITGbR2IGTqs",
+      "name": "Hacha de dos manos",
+      "quiebre": "Corte profundo, mutilación",
+      "source": "source/items/armas/11_hacha_dos_manos.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "9gpIv2fgoOYUFOpf",
+      "name": "Hacha barbada",
+      "quiebre": "Corte profundo",
+      "source": "source/items/armas/12_hacha_barbada.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "QxUldCoEJEOCXFnJ",
+      "name": "Lanza corta",
+      "quiebre": "Perforación",
+      "source": "source/items/armas/13_lanza_corta.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "UEjClr8xQiDH77h1",
+      "name": "Lanza larga",
+      "quiebre": "Perforación",
+      "source": "source/items/armas/14_lanza_larga.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "Rq6tY7rc6ktFEigy",
+      "name": "Jabalina",
+      "quiebre": "Perforación",
+      "source": "source/items/armas/15_jabalina.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "8D8YGQR5iuPKMqo0",
+      "name": "Arco simple",
+      "quiebre": "Según proyectil",
+      "source": "source/items/armas/16_arco_simple.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "mHTbGNwut0kzDCVg",
+      "name": "Flecha",
+      "quiebre": "Perforación",
+      "source": "source/items/armas/17_flecha.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "18MnPw0iJrmMtvgV",
+      "name": "Honda",
+      "quiebre": "Fractura, inconsciencia",
+      "source": "source/items/armas/18_honda.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "3ssFdtyl81bRpdKc",
+      "name": "Mata’a",
+      "quiebre": "Corte profundo",
+      "source": "source/items/armas/19_mataa.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "1uesBUeTeGjo9JQT",
+      "name": "Arpón",
+      "quiebre": "Perforación, desgarro",
+      "source": "source/items/armas/20_arpon.json",
+      "family": "Armas",
+      "template": "HipArmaTpl000001"
+    },
+    {
+      "id": "607Y5Z4vouHf8vEi",
+      "name": "Tridente de Ullman",
+      "quiebre": "Perforación",
+      "source": "source-pending/ci137-reliquias-historicas-16/legendarias/607Y5Z4vouHf8vEi.json",
+      "family": "Reliquias legendarias",
+      "template": "HipRelqTpl000001"
+    }
+  ],
+  "historicalDefenses": [
+    {
+      "id": "Id2dCZ4s4TPTMr8R",
+      "seedId": "defensa-01",
+      "name": "Casco rígido de madera y fibras — Pica–Tarapacá",
+      "template": "HipEquipTpl00001",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/01_casco_rigido_pica_tarapaca.webp",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/Id2dCZ4s4TPTMr8R.json"
+    },
+    {
+      "id": "uM1FCC5l7Lbx8sRa",
+      "seedId": "defensa-02",
+      "name": "Casco emplumado — Pica–Tarapacá",
+      "template": "HipEquipTpl00001",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/02_casco_emplumado_pica_tarapaca.webp",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/uM1FCC5l7Lbx8sRa.json"
+    },
+    {
+      "id": "ThGITBgBJNBwJ6o2",
+      "seedId": "defensa-03",
+      "name": "Casco sobre capucha tejida — Pica–Tarapacá",
+      "template": "HipEquipTpl00001",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/03_casco_sobre_capucha_pica_tarapaca.webp",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/ThGITBgBJNBwJ6o2.json"
+    },
+    {
+      "id": "pe9Bb6kzCsr5IUx1",
+      "seedId": "defensa-04",
+      "name": "Capucha protectora de fibra de camélido — Pica–Tarapacá",
+      "template": "HipEquipTpl00001",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/04_capucha_protectora_pica_tarapaca.webp",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/pe9Bb6kzCsr5IUx1.json"
+    },
+    {
+      "id": "aa9YXJm5fD4UF6oK",
+      "seedId": "defensa-05",
+      "name": "Coraza de Lasana — Alto Loa",
+      "template": "HipEquipTpl00001",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/05_coraza_lasana.webp",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/aa9YXJm5fD4UF6oK.json"
+    },
+    {
+      "id": "gftm3lDJ8r4YbOjh",
+      "seedId": "defensa-06",
+      "name": "Peto grueso de cuero surandino",
+      "template": "HipEquipTpl00001",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/06_peto_cuero_surandino.webp",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/gftm3lDJ8r4YbOjh.json"
+    },
+    {
+      "id": "6z2oWVl5FstIDJKB",
+      "seedId": "defensa-07",
+      "name": "Espaldar grueso de cuero surandino",
+      "template": "HipEquipTpl00001",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/07_espaldar_cuero_surandino.webp",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/6z2oWVl5FstIDJKB.json"
+    },
+    {
+      "id": "bMbwzRsasVa6zxAM",
+      "seedId": "defensa-08",
+      "name": "Manta densa defensiva surandina",
+      "template": "HipEquipTpl00001",
+      "img": "modules/hiperaustralis-rituales/assets/defensas/08_manta_densa_surandina.webp",
+      "sourcePath": "source-pending/ci137-historicos-99/defensas/bMbwzRsasVa6zxAM.json"
+    }
+  ],
+  "newDefenses": [
+    {
+      "code": "DEF-01",
+      "name": "Makün — Manta Mapuche",
+      "description": "Manta gruesa de tejido rústico, plegada para ofrecer protección. Presenta franjas en tonos terrosos y flecos en sus bordes. Se utiliza como una pieza independiente que puede interponerse para cubrir el cuerpo.",
+      "assetCode": "COM-03",
+      "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-03_Manta_Mapuche_256.webp",
+      "assetGitBlobSha": "1a95b87f2dcccaecb6bbf1f46b86a0852edf6560",
+      "declaredAssetSha256": "535cb7ca1244a81ab5174c51d18bf43813cbaaf7d59b396cb2a563d0c8716c4b",
+      "runtimeId": null,
+      "decision": "DISTINCT_CANDIDATE_NO_RUNTIME_CREATE"
+    },
+    {
+      "code": "DEF-02",
+      "name": "Capa Selk'nam",
+      "description": "Capa confeccionada con piel de zorro, llevada con el pelo hacia fuera. Se utiliza sobre los hombros y el cuerpo como abrigo y protección.",
+      "assetCode": "COM-05",
+      "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-05_Capa_Selknam_Zorro_256.webp",
+      "assetGitBlobSha": "f99acd7a45e5559edfc9a11668c5663b9f8e16f9",
+      "declaredAssetSha256": "632a2d21ab1f3a6efe2097efe7dd4f8d7d03c8e1d8dca0676543cc6ab476aa2b",
+      "runtimeId": null,
+      "decision": "DISTINCT_CANDIDATE_NO_RUNTIME_CREATE"
+    },
+    {
+      "code": "DEF-03",
+      "name": "Escudo nórdico",
+      "description": "Escudo circular de madera, reforzado en el centro por un umbo metálico. Su superficie está decorada con pintura roja y motivos de color claro. Se sostiene para interponerlo entre el cuerpo y el ataque.",
+      "assetCode": "COM-06",
+      "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-06_Escudo_Nordico_256.webp",
+      "assetGitBlobSha": "aa07153cfddb3ee1b5a4765557c7687077ec94e2",
+      "declaredAssetSha256": "d1015cdd974d6b6a5a04c15565e2369fd5d53662f11f542a8ccf46b0ad7bcb1e",
+      "runtimeId": null,
+      "decision": "DISTINCT_CANDIDATE_NO_RUNTIME_CREATE"
+    },
+    {
+      "code": "DEF-04",
+      "name": "Casco con insignia — Casco Pica-Tarapacá",
+      "description": "Casco construido con tablillas de madera unidas mediante fibras vegetales y complementado con pelo de camélido. Su estructura cubre la cabeza, las orejas y el cuello. Presenta una cúpula cerrada, una escotadura frontal, una insignia en la parte delantera y una correa que se ata a las aletas laterales para mantenerlo sujeto.",
+      "assetCode": "COM-07",
+      "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-07_Casco_Pica_Tarapaca_256.webp",
+      "assetGitBlobSha": "77593c4da78736aae4a0f15ae510bb38883f03ce",
+      "declaredAssetSha256": "b0e32b13bc91c95f80954e2aabf50dcfa787d33e9a257804704fd5c204cf8920",
+      "runtimeId": null,
+      "decision": "IDENTITY_PENDING_COMPARE_3_HISTORICAL_HELMETS"
+    },
+    {
+      "code": "DEF-05",
+      "name": "Escudo de cuero — Coraza Chiu-Chiu",
+      "description": "Pieza independiente de forma trapezoidal, construida con siete capas de cuero crudo cosidas entre sí mediante tiras del mismo material. Cubre el pecho y el vientre, sin mangas ni piezas metálicas. Se lleva sobre el torso como protección frontal.",
+      "assetCode": "COM-08",
+      "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-08_Coraza_Chiu-Chiu_256.webp",
+      "assetGitBlobSha": "510b223344b9e1ba26b3ef4d717c2c28f9ddc838",
+      "declaredAssetSha256": "2dfcfc0354bf1dee28989d4838fdeab6dd9b72561d9e70f5bf259fbed6bc254c",
+      "runtimeId": null,
+      "decision": "DISTINCT_CANDIDATE_NAME_PENDING"
+    },
+    {
+      "code": "DEF-06",
+      "name": "Tañaña — Coraza cónica mapuche",
+      "description": "Coraza de cuero de forma cónica que se ensancha hacia abajo hasta cubrir las rodillas. Presenta una abertura para dejar libre el brazo izquierdo.",
+      "assetCode": "COM-09",
+      "assetPath": null,
+      "assetGitBlobSha": null,
+      "declaredAssetSha256": null,
+      "runtimeId": null,
+      "decision": "DISTINCT_CANDIDATE_ASSET_MISSING"
+    },
+    {
+      "code": "DEF-07",
+      "name": "Celada — Casquete de cuero mapuche",
+      "description": "Casquete de cuero que cubre casi por completo la cabeza, con una abertura para el ojo izquierdo. Está confeccionado con pieles de felinos y presenta un adorno de plumaje en la parte posterior.",
+      "assetCode": "COM-10",
+      "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-10_CELADA_MAPUCHE_256.webp",
+      "assetGitBlobSha": "5434fd74ae85136b0e2d18e6ecb72ef7249dff80",
+      "declaredAssetSha256": "cc3f96a051df7ad9f52067e0c8b076da9eb0a25b2a1996e5622d6858b0933522",
+      "runtimeId": null,
+      "decision": "DISTINCT_CANDIDATE_NO_RUNTIME_CREATE"
+    },
+    {
+      "code": "DEF-08",
+      "name": "Coraza atacameña de cuero de caimán",
+      "description": "Coraza confeccionada con cuero de caimán y decorada con recortes de piel de mono.",
+      "assetCode": "COM-11",
+      "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-11_CORAZA_CHIU_CHIU_256.webp",
+      "assetGitBlobSha": "56505598d6f7565d4e1c335363c8266a7578792d",
+      "declaredAssetSha256": "551991bbd4c946ecbf08f1a5e847a0cdd8c296742e256c13a50f646d31bbb556",
+      "runtimeId": null,
+      "decision": "PROBABLE_LASANA_DUPLICATE_NOT_MERGED"
+    },
+    {
+      "code": "DEF-09",
+      "name": "Armadura acolchada Chimú",
+      "description": "Armadura textil acolchada, confeccionada con dos capas de tejido de algodón que contienen un relleno grueso de fibras crudas del mismo material. La superficie presenta tejido brocado decorativo.",
+      "assetCode": "COM-12",
+      "assetPath": "source-original/ci137-asset-staging/defensas/webp256/COM-12_ARMADURA_ACOLCHADA_CHIMU_256.webp",
+      "assetGitBlobSha": "d93f8318a688cd89e16a8727136abb081aace24a",
+      "declaredAssetSha256": "f4a6bd39ac5d99ccab0bbdc60cb964e8653ffbf6b0c14fe57369917dc6c65245",
+      "runtimeId": null,
+      "decision": "DISTINCT_CANDIDATE_NO_RUNTIME_CREATE"
+    }
+  ],
+  "defensiveRelic": {
+    "name": "Yelmo de Hipólita",
+    "id": "sRDyvzOfCVjdHJ0D",
+    "newPowers": false
+  },
+  "gates": {
+    "selectedIdsMatched": 21,
+    "historicalDefensesMatched": 8,
+    "defenseDescriptionCount": 9,
+    "assetPathsLocated": 8,
+    "assetBytesVerifiedThisTurn": false,
+    "asphyxiaArmorInterposition": false,
+    "venomInterposition": "Only before inoculation if armor intercepts medium",
+    "shieldRule": "candidate not ratified",
+    "noLiveChanges": true
+  }
+}
