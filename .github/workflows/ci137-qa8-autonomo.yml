@@ -1,0 +1,100 @@
+name: CI137 QA8 autonomous - isolated D2 only
+
+on:
+  push:
+    branches:
+      - work/ci137-acumulativo-qa7-20261125
+    paths:
+      - '.github/workflows/ci137-qa8-autonomo.yml'
+      - 'tools/foundry/ci137_qa8_autonomo.py'
+      - 'tools/foundry/ci137_qa7_acumulativo.py'
+      - 'tools/foundry/ci137_qa6_erh4_isolated.py'
+      - 'manifests/equipo-comun-29-cruces-candidatos-20261121.json'
+      - 'module/assets/equipo-comun/**'
+      - 'tools/foundry/ci137_pipeline.py'
+      - 'manifests/ci137-selected-source-137-historical-ids.json'
+      - 'manifests/ci137-erh-cuatro-ambiguedades-aprobacion-20261124.json'
+      - 'source-original/ci137-asset-staging/instrumentos-erh/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa6-candidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install transparent-WebP pixel decoder
+        run: python -m pip install --disable-pip-version-check --no-input Pillow==11.3.0
+      - name: Syntax gate and canonical QA5 baseline prepare
+        run: |
+          set -euo pipefail
+          python -m py_compile tools/foundry/ci137_qa8_autonomo.py tools/foundry/ci137_pipeline.py tools/foundry/ci137_v14_id_preflight.py tools/foundry/ci137_h7_packager.py
+          python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/ci137-qa6-prepared"
+          python tools/foundry/ci137_h7_packager.py prepare-meta --out "$RUNNER_TEMP/ci137-qa6-meta"
+      - name: Apply QA7 approved images and restore exact legacy paths
+        run: |
+          python tools/foundry/ci137_qa8_autonomo.py overlay \
+            --prepared "$RUNNER_TEMP/ci137-qa6-prepared"
+          python tools/foundry/ci137_v14_id_preflight.py \
+            --prepared "$RUNNER_TEMP/ci137-qa6-prepared" \
+            --metadata "$RUNNER_TEMP/ci137-qa6-meta" \
+            --report "$RUNNER_TEMP/ci137-qa6-v14-id-report.json"
+      - name: Install pinned official Foundry compendium pack CLI
+        run: npm install --no-audit --no-fund --no-save --no-package-lock @foundryvtt/foundryvtt-cli@3.0.5
+      - name: Compile three compendia with verified image and background paths
+        run: |
+          set -euo pipefail
+          FVTT=./node_modules/.bin/fvtt
+          mkdir -p "$RUNNER_TEMP/ci137-qa6-packs" "$RUNNER_TEMP/ci137-qa6-roundtrip"
+          "$FVTT" package pack -n ha-proto-items --inputDirectory "$RUNNER_TEMP/ci137-qa6-prepared/items" --outputDirectory "$RUNNER_TEMP/ci137-qa6-packs" --recursive
+          "$FVTT" package pack -n ha-proto-actors --inputDirectory "$RUNNER_TEMP/ci137-qa6-meta/actors" --outputDirectory "$RUNNER_TEMP/ci137-qa6-packs"
+          "$FVTT" package pack -n ha-proto-journals --inputDirectory "$RUNNER_TEMP/ci137-qa6-meta/journals" --outputDirectory "$RUNNER_TEMP/ci137-qa6-packs"
+          "$FVTT" package unpack -n ha-proto-items --inputDirectory "$RUNNER_TEMP/ci137-qa6-packs" --outputDirectory "$RUNNER_TEMP/ci137-qa6-roundtrip" --folders
+          python tools/foundry/ci137_pipeline.py verify --prepared "$RUNNER_TEMP/ci137-qa6-prepared" --unpacked "$RUNNER_TEMP/ci137-qa6-roundtrip"
+      - name: Package autonomous candidate QA8 with SAME module ID; NOT INSTALLED
+        run: |
+          python tools/foundry/ci137_qa8_autonomo.py package \
+            --prepared "$RUNNER_TEMP/ci137-qa6-prepared" \
+            --compiled "$RUNNER_TEMP/ci137-qa6-packs" \
+            --out dist/HIPERAUSTRALIS_CI137_QA8_AUTONOMO_LAB.zip
+      - name: Independently unpack the EXACT final ZIP with Foundry CLI
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/ci137-qa6-final" "$RUNNER_TEMP/ci137-qa6-final-items" \
+                   "$RUNNER_TEMP/ci137-qa6-final-actors" "$RUNNER_TEMP/ci137-qa6-final-journals"
+          unzip -q dist/HIPERAUSTRALIS_CI137_QA8_AUTONOMO_LAB.zip -d "$RUNNER_TEMP/ci137-qa6-final"
+          FVTT=./node_modules/.bin/fvtt
+          "$FVTT" package unpack -n ha-proto-items --inputDirectory "$RUNNER_TEMP/ci137-qa6-final/packs" --outputDirectory "$RUNNER_TEMP/ci137-qa6-final-items" --folders
+          "$FVTT" package unpack -n ha-proto-actors --inputDirectory "$RUNNER_TEMP/ci137-qa6-final/packs" --outputDirectory "$RUNNER_TEMP/ci137-qa6-final-actors"
+          "$FVTT" package unpack -n ha-proto-journals --inputDirectory "$RUNNER_TEMP/ci137-qa6-final/packs" --outputDirectory "$RUNNER_TEMP/ci137-qa6-final-journals"
+          python tools/foundry/ci137_qa8_autonomo.py check-final \
+            --prepared "$RUNNER_TEMP/ci137-qa6-prepared" \
+            --zip dist/HIPERAUSTRALIS_CI137_QA8_AUTONOMO_LAB.zip \
+            --unpacked-items "$RUNNER_TEMP/ci137-qa6-final-items" \
+            --unpacked-actors "$RUNNER_TEMP/ci137-qa6-final-actors" \
+            --unpacked-journals "$RUNNER_TEMP/ci137-qa6-final-journals"
+      - name: Carry the exact D2 evidence, never auto-deploy
+        run: |
+          cp "$RUNNER_TEMP/ci137-qa6-prepared/ci137-qa6-erh4-overlay.json" dist/CI137_QA6_4ERH_IMG_ONLY_AUDIT.json
+          cp "$RUNNER_TEMP/ci137-qa6-v14-id-report.json" dist/CI137_QA6_V14_ID_GATE.json
+          echo "QA8 D2 candidate only. NO FORGE INSTALL, NO BRIDGE CHANGE, NO WORLD CHANGES."
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CI137-QA8-AUTONOMO-LAB
+          path: |
+            dist/HIPERAUSTRALIS_CI137_QA8_AUTONOMO_LAB.zip
+            dist/CI137_QA8_D2_REPORT.json
+            dist/CI137_QA6_4ERH_IMG_ONLY_AUDIT.json
+            dist/CI137_QA6_V14_ID_GATE.json
+          if-no-files-found: error
+          retention-days: 30
+
+# This workflow cannot access Forge or edit H6/H7/Bridge; packaging is D2 only.
