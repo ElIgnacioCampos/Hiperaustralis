@@ -130,6 +130,20 @@ jobs:
               # NOT an approved mechanical revision or playable release.
               actor(d,'Adversarios/Turianos',d['_id'])
           assert len(actors)==68 and set(actors)&tur_candidates==tur_candidates
+          volador=json.loads(Path('source-pending/ci137-companeros-volador/EXO-001.actor.json').read_text())
+          vid=volador['_id']
+          assert vid=='82ee3a3ec88dcd5d' and vid not in actors and vid not in {r['documentId'] for r in raw['records']}
+          assert volador['name']=='Volador' and volador['system']['template']=='HipCriatTpl00001'
+          assert volador['system']['props']['peso']=='1'
+          assert volador['system']['props']['id']==vid and volador['system']['props']['name']=='Volador'
+          assert 'sin causarle daño' in volador['system']['props']['en_escena']
+          assert volador['system']['props']['img']==volador['img']==volador['prototypeToken']['texture']['src']
+          vf=volador['flags']['hiperaustralis-bestiario']
+          assert vf['seedId']=='EXO-001' and vf['defaultVariant']=='a'
+          assert set(vf['variants'])=={'a','b'} and vf['variants']['a']==volador['img'] and vf['variants']['a']!=vf['variants']['b']
+          assert all(p.startswith('modules/hiperaustralis-compendios-prototype/assets/companeros/exoticos/') for p in vf['variants'].values())
+          actor(volador,'Bestiario/Compañeros/Exóticos',vid)
+          assert len(actors)==69
           cultures_record=next(r for r in prov['records'] if r['id']=='48YG3G7eaXO96CyE')
           p=Path(cultures_record['path'])
           assert hashlib.sha256(p.read_bytes()).hexdigest()==cultures_record['stagedSHA256']
@@ -145,7 +159,7 @@ jobs:
               journals[ident]={'name':d['name'],'pageIds':ids}
               write(journal_root/(ident+'.json'),d)
           assert sum(len(v['pageIds']) for v in journals.values())==58
-          write(root/'ci137-expanded/expected.json',{'status':'D2_CANDIDATE_NO_INSTALL','actors':actors,'folders':folder_ids,'journals':journals,'excludedAtlantes':sorted(excluded),'excludedSpecialTurianos':['1dd86a387a28476e','939dad09976d48cd'],'companionIds':sorted(companions),'companionWeightChanges':sorted(changed),'pending':['Volador approved art recovered; Actor payload and asset transport pending','Unresolved legacy art paths; no asset promotion','Turiano note/weight compatibility','Territory 9 CORE crosswalk','CSB client validation'],'baselineItemCount':136})
+          write(root/'ci137-expanded/expected.json',{'status':'D2_CANDIDATE_NO_INSTALL','actors':actors,'folders':folder_ids,'journals':journals,'excludedAtlantes':sorted(excluded),'excludedSpecialTurianos':['1dd86a387a28476e','939dad09976d48cd'],'companionIds':sorted(set(companions)|{vid}),'companionWeightChanges':sorted(changed),'pending':['Volador source Actor included; approved asset bytes transport pending (not installable)','Unresolved legacy art paths; no asset promotion','Turiano note/weight compatibility','Territory 9 CORE crosswalk','CSB client validation'],'baselineItemCount':136})
           PY
       - name: Roundtrip native Actor and Journal candidate, no module ZIP
         run: |
@@ -179,8 +193,9 @@ jobs:
           for i,v in e['journals'].items():
               d=journals[i];assert d['name']==v['name'] and [p['_id'] for p in d['pages']]==v['pageIds']
           assert not set(e['excludedAtlantes'])&set(actors)
-          assert len(e['companionIds'])==18 and len(e['companionWeightChanges'])==6
+          assert len(e['companionIds'])==19 and len(e['companionWeightChanges'])==6
           assert all(actors[i]['system']['props']['peso']=='1' for i in e['companionIds'])
+          assert len(actors)==69 and actors['82ee3a3ec88dcd5d']['flags']['hiperaustralis-bestiario']['seedId']=='EXO-001'
           out={'status':'PASS_D2_NO_RUNTIME_APPROVAL','actors':len(actors),'companions':len(e['companionIds']),'companionWeightChanges':len(e['companionWeightChanges']),'actorFolders':len(folders),'journals':len(journals),'journalPages':sum(len(d['pages']) for d in journals.values()),'installableZip':False,'runtimeD3':False,'pending':e['pending']}
           (t/'ci137-expanded/roundtrip-report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
           print(json.dumps(out,ensure_ascii=False))
