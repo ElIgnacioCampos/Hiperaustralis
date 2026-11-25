@@ -94,17 +94,61 @@
     [
       "        <p><em>Este laboratorio registra el estado; todavía no aplica automáticamente el bono a las tiradas.</em></p>\n        <div class=\"meliaz-copy-row\">",
       "        <p><em>La Manifestación activa aporta +1 a las Capacidades durante el enfrentamiento; su grado determina el alcance.</em></p>\n        <div class=\"meliaz-copy-row\">"
+    ],
+    [
+      "async function resolveAction(action, { alreadyClaimed = false } = {}) {",
+      "// Torcer: author-confirmed result; conservative LAB eligibility, not canon.\nfunction hiperaCanTorcer(face, newen, action) {\n  return (face === 1 || face === 2) && Number.isInteger(newen) && newen >= 1 &&\n    !action.useManifestacion && !action.selfExaltar && action.intervention !== \"exaltarCapacidad\" && !action.torcer;\n}\nasync function hiperaOfferTorcer(action, naturalFace, message) {\n  if (!message || action.ownerUserId !== game.user.id || action.state !== \"resolving\") return naturalFace;\n  const actor = action.actor;\n  if (!actor?.isOwner || !hiperaCanTorcer(naturalFace,Number(actor.system?.props?.newen),action)) return naturalFace;\n  const outcome = action.intercambio ? hiperaIntercambioOutcome(naturalFace).label : (naturalFace === 1 ? \"DESASTRE\" : \"FALLO\");\n  const destination = action.intercambio ? \"IMPACTO\" : \"ÉXITO RASO\";\n  await message.update({content:\"<div><h3>MELIAZ · RESULTADO NATURAL</h3><p>d4: \"+naturalFace+\" · \"+outcome+\"</p><p>Decisión de Torcer pendiente. No aplicar consecuencias todavía.</p></div>\",\n    [`flags.${MODULE_ID}.action.naturalRollTotal`]:naturalFace, [`flags.${MODULE_ID}.action.state`]:\"torcer-pending\"});\n  let yes = false;\n  try {\n    yes = await foundry.applications.api.DialogV2.confirm({window:{title:\"MELIAZ · Torcer el Resultado\"},\n      content:\"<p>d4: \"+naturalFace+\" · \"+outcome+\"</p><p>Gasta 1 Newén para obtener \"+destination+\".</p>\",\n      yes:{label:\"TORCER\"},no:{label:\"Conservar resultado\"},rejectClose:false,modal:true});\n  } catch (err) { console.warn(\"MELIAZ: Torcer cancelado\",err); }\n  const before=Number(actor.system?.props?.newen);\n  if (!yes || !hiperaCanTorcer(naturalFace,before,action)) return naturalFace;\n  // Keep a distinct record: Prestar ropa remains a separate intervention.\n  await message.update({[`flags.${MODULE_ID}.action.torcerClaimed`]:true});\n  try { await actor.update({\"system.props.newen\":before-1}); }\n  catch (err) { ui.notifications.error(\"MELIAZ: no se confirmó el gasto de Torcer. Revisar Newén.\"); throw err; }\n  action.torcer={naturalFace,finalFace:3,newenBefore:before,newenAfter:before-1};\n  return 3;\n}\n\nasync function resolveAction(action, { alreadyClaimed = false } = {}) {"
+    ],
+    [
+      "      const mode = await askExaltarMode();\n      if (mode) await exaltar(actorUuid, mode);",
+      "      await exaltar(actorUuid, \"capacidad\");"
+    ],
+    [
+      "  if (mode !== \"capacidad\" && mode !== \"azar\") return;\n  if (action.intercambio && mode === \"azar\") {\n    ui.notifications.warn(\"LAB: Exaltar Azar en combate requiere el nuevo flujo post-dado; todavía no implementado.\");\n    return;\n  }",
+      "  if (mode !== \"capacidad\") return;"
+    ],
+    [
+      "  if (!claimIntervention(action, mode === \"azar\" ? \"exaltarAzar\" : \"exaltarCapacidad\")) return;",
+      "  if (!claimIntervention(action, \"exaltarCapacidad\")) return;"
+    ],
+    [
+      "  if (mode === \"azar\") {\n    action.forceOutcome = \"ÉXITO RASO\";\n  } else {\n    action.effectiveValue = action.baseValue + 1;\n  }",
+      "  action.effectiveValue = action.baseValue + 1;"
+    ],
+    [
+      "  } else if (action.forceOutcome === \"ÉXITO RASO\") {\n    resultLine = \"ÉXITO RASO · Exaltar Azar\";\n  } else if (value > peso) {",
+      "  } else if (value > peso) {"
+    ],
+    [
+      "  const message = game.messages.get(action.messageId);\n\n  if (message) {\n    const changedValue =",
+      "  const message = game.messages.get(action.messageId);\n  const naturalRollTotal = rollTotal;\n  if (rollTotal !== null) {\n    rollTotal = await hiperaOfferTorcer(action,naturalRollTotal,message);\n    if (action.torcer) {\n      if (action.intercambio) exchangeResult = hiperaIntercambioOutcome(rollTotal);\n      resultLine = `d4 natural: ${naturalRollTotal} · TORCER → ${action.intercambio ? \"IMPACTO\" : \"ÉXITO RASO\"} (${rollTotal})`;\n    }\n  }\n\n  if (message) {\n    const changedValue ="
+    ],
+    [
+      "      if (action.intervention === \"exaltarAzar\") {\n        interventionHtmlParts.push(`<p><strong>EXALTAR AZAR:</strong> éxito raso garantizado · Newen ${action.newenBefore} → ${action.newenAfter}</p>`);\n        interventionTextParts.push(`EXALTAR AZAR: éxito raso garantizado · Newen ${action.newenBefore} → ${action.newenAfter}`);\n      }",
+      ""
+    ],
+    [
+      "    const interventionLine = interventionHtmlParts.length",
+      "    if (action.torcer) {\n      const t=action.torcer;\n      interventionHtmlParts.push(`<p><strong>TORCER:</strong> Newén ${t.newenBefore} → ${t.newenAfter}</p>`);\n      interventionTextParts.push(`TORCER: Newén ${t.newenBefore} → ${t.newenAfter}`);\n    }\n    const interventionLine = interventionHtmlParts.length"
+    ],
+    [
+      "      [`flags.${MODULE_ID}.action.forceOutcome`]: action.forceOutcome ?? null,",
+      "      [`flags.${MODULE_ID}.action.naturalRollTotal`]: naturalRollTotal,\n      [`flags.${MODULE_ID}.action.torcer`]: action.torcer ?? null,\n      [`flags.${MODULE_ID}.action.forceOutcome`]: null,"
+    ],
+    [
+      "async function askExaltarMode() {\n  try {\n    const mode = await foundry.applications.api.DialogV2.prompt({\n      window: { title: \"MELIAZ · Exaltar\" },\n      content: `\n        <div style=\"display:grid;gap:.75rem\">\n          <p><strong>Exaltar Azar</strong></p>\n          <p>Gasta 1 Newén y garantiza un éxito raso en esta acción.</p>\n        </div>\n      `,\n      ok: {\n        label: \"Exaltar Azar\",\n        callback: () => \"azar\"\n      },\n      rejectClose: false,\n      modal: true\n    });\n    return mode === \"azar\" ? \"azar\" : null;\n  } catch (err) {\n    console.warn(\"MELIAZ: selección de Exaltar no completada.\", err);\n    return null;\n  }\n}\n\n",
+      ""
     ]
   ],
   "rules": "// CORE chapter V v13: combat only, never reinterpret universal tests.\nfunction hiperaIntercambioCanRoll(initiator, value, peso) {\n  return Number.isFinite(value) && Number.isFinite(peso) && peso > 0 &&\n    (initiator === \"rival\" || (initiator === \"kona\" && value > peso));\n}\nfunction hiperaIntercambioOutcome(face) {\n  return ({\n    1: {label:\"REVÉS\",loss:0,wound:false,note:\"El Rival se impone; complicación pertinente. Desgaste y Puede Herir según medio y escena.\"},\n    2: {label:\"EMPATE\",loss:0,wound:false,note:\"Ninguna parte se impone.\"},\n    3: {label:\"IMPACTO\",loss:1,wound:false,note:\"El Rival pierde 1 Peso.\"},\n    4: {label:\"QUIEBRE\",loss:1,wound:true,note:\"El Rival pierde 1 Peso y recibe una Herida; sin descontar Peso adicional.\"}\n  })[face] ?? null;\n}\nfunction hiperaIntercambioWeapon(item) {\n  return item ? {id:item.id,name:String(item.name ?? \"\"),quiebre:String(item.system?.props?.quiebre ?? \"\").trim()} : null;\n}\nfunction hiperaIntercambioLine(context) {\n  if (!context) return \"\";\n  return \"<p><strong>Resolver Intercambio:</strong> \" + (context.initiator === \"rival\" ? \"agresión del Rival\" : \"iniciativa del Kona\") +\n    (context.weapon ? \" · \" + escapeHiperaHtml(context.weapon.name) : \"\") + \"</p>\";\n}",
   "test": "const assert = require(\"node:assert/strict\");\nfor (const cap of [1,2,3,4,5]) for (const peso of [1,2,3,4,5]) {\n  assert.equal(hiperaIntercambioCanRoll(\"kona\",cap,peso),cap>peso);\n  assert.equal(hiperaIntercambioCanRoll(\"rival\",cap,peso),true);\n}\nassert.equal(hiperaIntercambioCanRoll(\"rival\",4,0),false);\nassert.deepEqual([1,2,3,4].map(n=>hiperaIntercambioOutcome(n).label),[\"REVÉS\",\"EMPATE\",\"IMPACTO\",\"QUIEBRE\"]);\nassert.deepEqual([1,2,3,4].map(n=>hiperaIntercambioOutcome(n).loss),[0,0,1,1]);\nassert.deepEqual([1,2,3,4].map(n=>hiperaIntercambioOutcome(n).wound),[false,false,false,true]);\nconsole.log(\"PASS: 50 eligibility cases + 4 outcome faces\");",
   "remaining": [
     "D3 real Foundry, ownership, message persistence, Piños",
-    "Exaltar Azar post-dado",
     "Códigos UI/storage",
     "Armadura and Aguante confirmation",
     "Manifestar D3: active duration, eligible grade, insufficient Newén, Descendiente, cooperation rule unresolved",
-    "Exaltar Azar: conflicting playtest sources; do not implement a new transformation without exact closure"
+    "Torcer: D3 confirmation/decline/reload, debit failure recovery, provisional eligibility pending author closure",
+    "Exaltar + Prestar ropa coexistence requires separate audit"
   ],
   "manifestar": {
     "status": "AUTHOR_CORRECTION_RECOVERED_2026-11-23__LAB_ONLY",
@@ -118,5 +162,17 @@
       "no stacking with ordinary Exaltar or Prestar ropa pending separate cooperation closure"
     ],
     "test": "Read exact compiled MANIFESTACION_DATA and verify costs 1/2/3 and bonuses 1/1/1."
+  },
+  "torcer": {
+    "authority": "Author: Torcer te da un exito raso o impacto; checkpoint 2026-11-25",
+    "effect": "face 3, natural face retained, no additional dice",
+    "provisional": [
+      "1 Newén",
+      "only natural 1 or 2",
+      "not if Exaltar/Manifestar active",
+      "after die before effects"
+    ],
+    "implementation": "DialogV2 owner-only after natural result shown in chat; lock action while pending; newen rechecked before debit; no separate publication",
+    "runtimeNotVerified": true
   }
 }
