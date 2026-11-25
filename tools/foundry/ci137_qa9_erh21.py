@@ -79,7 +79,7 @@ def overlay(prepared):
              "instrument identity "+iid)
         p=Path(x["candidateStagedPath"]);gate(p.as_posix().startswith("source-original/ci137-asset-staging/instrumentos-erh/webp_256/") and ".." not in p.parts,"candidate path")
         data=(ROOT/p).read_bytes()
-        gitsha=hashlib.sha1(("blob "+str(len(data))+"\\0").encode()+data).hexdigest()
+        gitsha=hashlib.sha1(("blob "+str(len(data))).encode()+bytes([0])+data).hexdigest()
         gate(len(data)==x["expectedBytes"] and gitsha==x["expectedGitBlobSha1"],"exact ERH Git blob "+iid)
         qa6.image_ok(data,digest(data),iid)
         old=doc["img"];member="assets/instrumentos/"+p.name
