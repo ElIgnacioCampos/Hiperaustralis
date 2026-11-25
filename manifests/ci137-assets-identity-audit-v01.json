@@ -63,7 +63,7 @@
     "newDefenseCandidates": 9,
     "turianoRecords": 6,
     "relicSourceReadbacks": 17,
-    "equipmentSourceReadbacks": 14
+    "equipmentSourceReadbacks": 28
   },
   "arms": [
     {
@@ -2548,6 +2548,160 @@
       "culture": "Nórdicos",
       "canonicalCode": null,
       "sourceSha": "537dcd779e421cd94c7f7a71382ae5def91b3fc6"
+    },
+    {
+      "id": "WgYdtWEqZmWbZpuU",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/WgYdtWEqZmWbZpuU.json",
+      "name": "Estera de fibra vegetal",
+      "legacyPath": "icons/sundries/survival/bedroll-tan.webp",
+      "legacySeed": "eq-chin-estera",
+      "culture": "Chinchorro",
+      "canonicalCode": null,
+      "sourceSha": "273b50be5f04fed6a035a46f4bf04648ab5c6171"
+    },
+    {
+      "id": "YuTiSkP9Mx7FvJy7",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/YuTiSkP9Mx7FvJy7.json",
+      "name": "Gancho de atalaje",
+      "legacyPath": "icons/sundries/survival/rope-wrapped-loops-grey.webp",
+      "legacySeed": "eq-lick-atalaje",
+      "culture": "Lickanantay",
+      "canonicalCode": null,
+      "sourceSha": "aa7e445011645064db9094d0ba6d7ee211514d97"
+    },
+    {
+      "id": "V70OePeRN8xLcbuy",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/V70OePeRN8xLcbuy.json",
+      "name": "Hacha",
+      "legacyPath": "icons/tools/hand/hatchet-steel-grey.webp",
+      "legacySeed": "eq-lick-hacha",
+      "culture": "Lickanantay",
+      "canonicalCode": null,
+      "sourceSha": "b6084b59e25c6fdc4248f211834dffdb8a45d379"
+    },
+    {
+      "id": "PmTYfMVymolkOvkq",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/PmTYfMVymolkOvkq.json",
+      "name": "Ketill · Caldero",
+      "legacyPath": "icons/tools/cooking/cauldron-empty.webp",
+      "legacySeed": "eq-nor-ketill",
+      "culture": "Nórdicos",
+      "canonicalCode": null,
+      "sourceSha": "65d00c2f69684fe313e46fd11680518a9967785c"
+    },
+    {
+      "id": "EPqXIQm8A38zvtXw",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/EPqXIQm8A38zvtXw.json",
+      "name": "Knífr · Cuchillo",
+      "legacyPath": "icons/weapons/daggers/dagger-black.webp",
+      "legacySeed": "eq-nor-knifr",
+      "culture": "Nórdicos",
+      "canonicalCode": null,
+      "sourceSha": "fea589b41fbd9f38f8cf11b1adf2feffce0153e6"
+    },
+    {
+      "id": "F8SYAQfuZnLiXCv6",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/F8SYAQfuZnLiXCv6.json",
+      "name": "Külko · Canasto",
+      "legacyPath": "icons/containers/misc/basket-simple-yellow.webp",
+      "legacySeed": "eq-map-kulko",
+      "culture": "Mapuche",
+      "canonicalCode": null,
+      "sourceSha": "56c34e7e77a33bd9795366abe6bfea7603ef9198"
+    },
+    {
+      "id": "o1z5pPevd1NzySi6",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/o1z5pPevd1NzySi6.json",
+      "name": "Metawe · Jarro",
+      "legacyPath": "icons/containers/kitchenware/jug-clay-brown.webp",
+      "legacySeed": "eq-map-metawe",
+      "culture": "Mapuche",
+      "canonicalCode": null,
+      "sourceSha": "8b796d775d3040cdd706576212f87add52cf3988"
+    },
+    {
+      "id": "7y88F6dSJK7HvqrN",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/7y88F6dSJK7HvqrN.json",
+      "name": "Mortero de piedra",
+      "legacyPath": "icons/tools/cooking/mortar-stone-yellow.webp",
+      "legacySeed": "eq-map-mortero",
+      "culture": "Mapuche",
+      "canonicalCode": null,
+      "sourceSha": "e15f8d620d230e6c4fbdb3e32b6526a12fdf3227"
+    },
+    {
+      "id": "UZCgOpwUoDoYPAME",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/UZCgOpwUoDoYPAME.json",
+      "name": "Øx · Hacha",
+      "legacyPath": "icons/weapons/axes/axe-simple-grey.webp",
+      "legacySeed": "eq-nor-ox",
+      "culture": "Nórdicos",
+      "canonicalCode": null,
+      "sourceSha": "3ab7fd055c25c6d2e533773e5ef66d7344d4f8d1"
+    },
+    {
+      "id": "0AeK5B1RD2Z0xry7",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/0AeK5B1RD2Z0xry7.json",
+      "name": "Paño tejido",
+      "legacyPath": "icons/commodities/cloth/cloth-roll-tan.webp",
+      "legacySeed": "eq-map-pano",
+      "culture": "Mapuche",
+      "canonicalCode": null,
+      "sourceSha": "f63800e8d4848f19b81171983da9275a731c465e"
+    },
+    {
+      "id": "8y3gYDMnZvALhlOn",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/8y3gYDMnZvALhlOn.json",
+      "name": "Phala · Soga",
+      "legacyPath": "icons/sundries/survival/rope-wrapped-tan.webp",
+      "legacySeed": "eq-aym-phala",
+      "culture": "Aymara",
+      "canonicalCode": null,
+      "sourceSha": "82c3a12da7a6540c42229f9806b74bb65c5a040a"
+    },
+    {
+      "id": "rmS5WS3R6v1dapQ3",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/rmS5WS3R6v1dapQ3.json",
+      "name": "Phullu · Manta",
+      "legacyPath": "icons/commodities/cloth/cloth-rolls-cmy.webp",
+      "legacySeed": "eq-aym-phullu",
+      "culture": "Aymara",
+      "canonicalCode": null,
+      "sourceSha": "670295d23a294160c0f649ef40fb29a97d1e4c17"
+    },
+    {
+      "id": "xE1erYosmiInLUpj",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/xE1erYosmiInLUpj.json",
+      "name": "Poki · Bolsa",
+      "legacyPath": "icons/containers/bags/pouch-leather-simple-tan.webp",
+      "legacySeed": "eq-nor-poki",
+      "culture": "Nórdicos",
+      "canonicalCode": null,
+      "sourceSha": "6f9753ee0e2ce66573616dd86ed728f2f25d5641"
+    },
+    {
+      "id": "yFT8cUZ71AOrxvN5",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/yFT8cUZ71AOrxvN5.json",
+      "name": "Puco · Cuenco",
+      "legacyPath": "icons/containers/kitchenware/bowl-clay-brown.webp",
+      "legacySeed": "eq-lick-puco",
+      "culture": "Lickanantay",
+      "canonicalCode": null,
+      "sourceSha": "fc59ac8b4c12192ed21315f7f297fc182154ca19"
     }
   ]
 }
