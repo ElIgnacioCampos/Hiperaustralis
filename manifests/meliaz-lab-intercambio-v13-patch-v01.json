@@ -1,0 +1,92 @@
+{
+  "status": "LAB_CANDIDATE_NO_DEPLOY",
+  "sourceBlob": "faabe9b428157567c5a48d45810fbd2bcbfe1d8f",
+  "authority": "CORE_ED_CAPITULO_V_MELIAZ_CONSOLIDADO_CANDIDATO_2026-11-24_v13.md",
+  "patches": [
+    [
+      "async function startAction(actorUuid, capKey) {",
+      "// CORE chapter V v13: combat only, never reinterpret universal tests.\nfunction hiperaIntercambioCanRoll(initiator, value, peso) {\n  return Number.isFinite(value) && Number.isFinite(peso) && peso > 0 &&\n    (initiator === \"rival\" || (initiator === \"kona\" && value > peso));\n}\nfunction hiperaIntercambioOutcome(face) {\n  return ({\n    1: {label:\"REVÉS\",loss:0,wound:false,note:\"El Rival se impone; complicación pertinente. Desgaste y Puede Herir según medio y escena.\"},\n    2: {label:\"EMPATE\",loss:0,wound:false,note:\"Ninguna parte se impone.\"},\n    3: {label:\"IMPACTO\",loss:1,wound:false,note:\"El Rival pierde 1 Peso.\"},\n    4: {label:\"QUIEBRE\",loss:1,wound:true,note:\"El Rival pierde 1 Peso y recibe una Herida; sin descontar Peso adicional.\"}\n  })[face] ?? null;\n}\nfunction hiperaIntercambioWeapon(item) {\n  return item ? {id:item.id,name:String(item.name ?? \"\"),quiebre:String(item.system?.props?.quiebre ?? \"\").trim()} : null;\n}\nfunction hiperaIntercambioLine(context) {\n  if (!context) return \"\";\n  return \"<p><strong>Resolver Intercambio:</strong> \" + (context.initiator === \"rival\" ? \"agresión del Rival\" : \"iniciativa del Kona\") +\n    (context.weapon ? \" · \" + escapeHiperaHtml(context.weapon.name) : \"\") + \"</p>\";\n}\n\nasync function startAction(actorUuid, capKey, intercambio = null) {"
+    ],
+    [
+      "      if (item) item.sheet?.render?.(true);\n      return;\n    }\n  }, true);\n\n  // CORE · edición contextual",
+      "      if (item && loadoutRow.dataset.haNequeRow === \"arma\" && !event.shiftKey) {\n        await startAction(actor.uuid, \"neque\", {initiator:\"kona\", weapon:hiperaIntercambioWeapon(item)});\n      } else if (item) item.sheet?.render?.(true);\n      return;\n    }\n  }, true);\n\n  // CORE · edición contextual"
+    ],
+    [
+      "      await startAction(actor.uuid, capKey);\n    } catch (err) {",
+      "      // LAB entry: Alt+capability = reactive; Shift+Ñeque = combat without weapon.\n      const intercambio = event.altKey ? {initiator:\"rival\",weapon:hiperaIntercambioWeapon(getHiperaNequeLoadoutItem(actor,\"arma\"))} :\n        (event.shiftKey && capKey === \"neque\" ? {initiator:\"kona\",weapon:hiperaIntercambioWeapon(getHiperaNequeLoadoutItem(actor,\"arma\"))} : null);\n      await startAction(actor.uuid, capKey, intercambio);\n    } catch (err) {"
+    ],
+    [
+      "  const target = getSingleTargetSnapshot();\n\n  if (target.status === \"multiple\") {",
+      "  const target = getSingleTargetSnapshot();\n\n  if (intercambio && (![\"kona\",\"rival\"].includes(intercambio.initiator) || target.status !== \"rival\" || !(Number(target.pesoBase)>0))) {\n    ui.notifications.warn(\"MELIAZ: Resolver Intercambio requiere un Rival activo como objetivo.\");\n    return;\n  }\n\n  if (target.status === \"multiple\") {"
+    ],
+    [
+      "          capKey,\n          baseValue: capValue,",
+      "          capKey,\n          intercambio,\n          baseValue: capValue,"
+    ],
+    [
+      "    capKey,\n    capName,\n    baseValue: capValue,",
+      "    capKey,\n    intercambio,\n    capName,\n    baseValue: capValue,"
+    ],
+    [
+      "        <h3>MELIAZ · ACCIÓN ${useManifestacion ? \"CON MANIFESTACIÓN\" : \"PENDIENTE\"}</h3>",
+      "        <h3>${intercambio ? \"MELIAZ · RESOLVER INTERCAMBIO\" : \"MELIAZ · ACCIÓN\"} ${useManifestacion ? \"CON MANIFESTACIÓN\" : \"PENDIENTE\"}</h3>\n        ${hiperaIntercambioLine(intercambio)}"
+    ],
+    [
+      "        <h3>MELIAZ · ACCIÓN ${action.useManifestacion ? \"CON MANIFESTACIÓN\" : \"PENDIENTE\"}</h3>",
+      "        <h3>${action.intercambio ? \"MELIAZ · RESOLVER INTERCAMBIO\" : \"MELIAZ · ACCIÓN\"} ${action.useManifestacion ? \"CON MANIFESTACIÓN\" : \"PENDIENTE\"}</h3>\n        ${hiperaIntercambioLine(action.intercambio)}"
+    ],
+    [
+      "  if (mode !== \"capacidad\" && mode !== \"azar\") return;",
+      "  if (mode !== \"capacidad\" && mode !== \"azar\") return;\n  if (action.intercambio && mode === \"azar\") {\n    ui.notifications.warn(\"LAB: Exaltar Azar en combate requiere el nuevo flujo post-dado; todavía no implementado.\");\n    return;\n  }"
+    ],
+    [
+      "  if (action.forceOutcome === \"ÉXITO RASO\") {\n    resultLine = \"ÉXITO RASO · Exaltar Azar\";",
+      "  let exchangeResult = null;\n  if (action.intercambio) {\n    if (hiperaIntercambioCanRoll(action.intercambio.initiator,value,peso)) {\n      const roll = await new Roll(\"1d4\").evaluate();\n      rollTotal = Number(roll.total);\n      exchangeResult = hiperaIntercambioOutcome(rollTotal);\n      resultLine = `d4: ${rollTotal} · ${exchangeResult.label}`;\n    } else {\n      resultLine = \"SIN INTERCAMBIO · La imposición directa requiere Capacidad efectiva mayor que Peso.\";\n    }\n  } else if (action.forceOutcome === \"ÉXITO RASO\") {\n    resultLine = \"ÉXITO RASO · Exaltar Azar\";"
+    ],
+    [
+      "    const targetAguanteControl = action.targetActorUuid\n      ?",
+      "    const targetAguanteControl = action.targetActorUuid && (!action.intercambio || exchangeResult?.loss === 1)\n      ?"
+    ],
+    [
+      "              data-meliaz-lose-peso=\"1\"\n              data-actor-uuid=\"${action.targetActorUuid}\">",
+      "              data-meliaz-lose-peso=\"1\"\n              data-actor-uuid=\"${action.targetActorUuid}\"\n              data-exchange-message=\"${action.intercambio ? action.messageId : \"\"}\">"
+    ],
+    [
+      "      \"MELIAZ · RESOLUCIÓN\",\n      action.actor.name,",
+      "      action.intercambio ? \"MELIAZ · RESOLVER INTERCAMBIO\" : \"MELIAZ · RESOLUCIÓN\",\n      action.actor.name,"
+    ],
+    [
+      "      resultLine\n    ].filter(Boolean).join(\"\\n\");",
+      "      resultLine,\n      exchangeResult?.note,\n      exchangeResult?.wound ? (\"Quiebre del arma: \" + (action.intercambio?.weapon?.quiebre || \"determinar Herida según medio y escena\")) : null\n    ].filter(Boolean).join(\"\\n\");"
+    ],
+    [
+      "          <h3>MELIAZ · RESOLUCIÓN</h3>\n          <p><strong>${getActorDisplayName(action.actor)}</strong></p>",
+      "          <h3>${action.intercambio ? \"MELIAZ · RESOLVER INTERCAMBIO\" : \"MELIAZ · RESOLUCIÓN\"}</h3>\n          <p><strong>${getActorDisplayName(action.actor)}</strong></p>\n          ${hiperaIntercambioLine(action.intercambio)}"
+    ],
+    [
+      "          ${targetAguanteControl}\n          <p><em>Resuelto automáticamente. La pérdida de Peso se marca sólo cuando el PJ se impone en combate y su intención implica desgaste.</em></p>",
+      "          ${exchangeResult ? \"<p>\"+escapeHiperaHtml(exchangeResult.note)+\"</p>\" : \"\"}\n          ${exchangeResult?.wound ? \"<p><strong>Herida:</strong> \"+escapeHiperaHtml(action.intercambio?.weapon?.quiebre || \"determinar por medio y escena\")+\"</p>\" : \"\"}\n          ${targetAguanteControl}\n          <p><em>${action.intercambio ? \"LAB: confirma la consecuencia; si se desarma un Piño, no descontar además al principal.\" : \"Resuelto automáticamente. La pérdida de Peso se marca sólo cuando el PJ se impone en combate y su intención implica desgaste.\"}</em></p>"
+    ],
+    [
+      "      [`flags.${MODULE_ID}.action.rollTotal`]: rollTotal,",
+      "      [`flags.${MODULE_ID}.action.rollTotal`]: rollTotal,\n      [`flags.${MODULE_ID}.action.intercambio`]: action.intercambio ?? null,\n      [`flags.${MODULE_ID}.action.intercambioResult`]: exchangeResult,"
+    ],
+    [
+      "const fuera = Number(result.after) === 0 ? \" · FUERA DE COMBATE\" : \"\";",
+      "const fuera = Number(result.after) === 0 ? \" · INCAPACITADO\" : \"\";"
+    ],
+    [
+      "    pesoButton.disabled = true;\n    try {\n      const result = await requestPesoLoss(actorUuid, 1);",
+      "    const exchangeMessageId = pesoButton.dataset.exchangeMessage;\n    if (exchangeMessageId) {\n      const msg = game.messages.get(exchangeMessageId);\n      const state = msg?.getFlag(MODULE_ID,\"action\");\n      if (!state?.intercambio || state.ownerUserId !== game.user.id || state.targetActorUuid !== actorUuid ||\n          state.intercambioResult?.loss !== 1 || state.pesoClaimed || pesoButton.disabled) return;\n      pesoButton.disabled = true;\n      await msg.update({[`flags.${MODULE_ID}.action.pesoClaimed`]:true});\n      const result = await requestPesoLoss(actorUuid,1);\n      if (result?.ok) {\n        await msg.update({[`flags.${MODULE_ID}.action.pesoApplied`]:{before:result.before,after:result.after}});\n        pesoButton.textContent = `PESO ${result.before} → ${result.after}`;\n      } else {\n        ui.notifications.warn(\"MELIAZ: aplicación no confirmada. Revisar con Voz del Mundo antes de repetir.\");\n      }\n      return;\n    }\n    pesoButton.disabled = true;\n    try {\n      const result = await requestPesoLoss(actorUuid, 1);"
+    ]
+  ],
+  "rules": "// CORE chapter V v13: combat only, never reinterpret universal tests.\nfunction hiperaIntercambioCanRoll(initiator, value, peso) {\n  return Number.isFinite(value) && Number.isFinite(peso) && peso > 0 &&\n    (initiator === \"rival\" || (initiator === \"kona\" && value > peso));\n}\nfunction hiperaIntercambioOutcome(face) {\n  return ({\n    1: {label:\"REVÉS\",loss:0,wound:false,note:\"El Rival se impone; complicación pertinente. Desgaste y Puede Herir según medio y escena.\"},\n    2: {label:\"EMPATE\",loss:0,wound:false,note:\"Ninguna parte se impone.\"},\n    3: {label:\"IMPACTO\",loss:1,wound:false,note:\"El Rival pierde 1 Peso.\"},\n    4: {label:\"QUIEBRE\",loss:1,wound:true,note:\"El Rival pierde 1 Peso y recibe una Herida; sin descontar Peso adicional.\"}\n  })[face] ?? null;\n}\nfunction hiperaIntercambioWeapon(item) {\n  return item ? {id:item.id,name:String(item.name ?? \"\"),quiebre:String(item.system?.props?.quiebre ?? \"\").trim()} : null;\n}\nfunction hiperaIntercambioLine(context) {\n  if (!context) return \"\";\n  return \"<p><strong>Resolver Intercambio:</strong> \" + (context.initiator === \"rival\" ? \"agresión del Rival\" : \"iniciativa del Kona\") +\n    (context.weapon ? \" · \" + escapeHiperaHtml(context.weapon.name) : \"\") + \"</p>\";\n}",
+  "test": "const assert = require(\"node:assert/strict\");\nfor (const cap of [1,2,3,4,5]) for (const peso of [1,2,3,4,5]) {\n  assert.equal(hiperaIntercambioCanRoll(\"kona\",cap,peso),cap>peso);\n  assert.equal(hiperaIntercambioCanRoll(\"rival\",cap,peso),true);\n}\nassert.equal(hiperaIntercambioCanRoll(\"rival\",4,0),false);\nassert.deepEqual([1,2,3,4].map(n=>hiperaIntercambioOutcome(n).label),[\"REVÉS\",\"EMPATE\",\"IMPACTO\",\"QUIEBRE\"]);\nassert.deepEqual([1,2,3,4].map(n=>hiperaIntercambioOutcome(n).loss),[0,0,1,1]);\nassert.deepEqual([1,2,3,4].map(n=>hiperaIntercambioOutcome(n).wound),[false,false,false,true]);\nconsole.log(\"PASS: 50 eligibility cases + 4 outcome faces\");",
+  "remaining": [
+    "D3 real Foundry, ownership, message persistence, Piños",
+    "Exaltar Azar post-dado",
+    "Códigos UI/storage",
+    "Armadura and Aguante confirmation",
+    "manifestar review"
+  ]
+}
