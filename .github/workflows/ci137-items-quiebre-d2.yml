@@ -1,0 +1,186 @@
+name: CI137 - consolidated Items Quiebre delta D2 (NO INSTALL)
+on:
+  push:
+    branches: [work/ci137-expansion-familias-20261124]
+    paths: ['.github/workflows/ci137-items-quiebre-d2.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  d2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prepare existing 136 Items and reconcile all 98 Nature identities
+        run: |
+          set -euo pipefail
+          python tools/foundry/ci137_pipeline.py prepare --out "$RUNNER_TEMP/base-items"
+          python tools/foundry/ci137_h7_packager.py prepare-meta --out "$RUNNER_TEMP/base-meta"
+          python tools/foundry/ci137_v14_id_preflight.py --prepared "$RUNNER_TEMP/base-items" --metadata "$RUNNER_TEMP/base-meta"
+          python - <<'PY'
+          import json, hashlib, os, shutil, re, collections
+          from pathlib import Path
+          t=Path(os.environ['RUNNER_TEMP'])
+          dst=t/'combined'
+          dst.mkdir()
+          shutil.copytree(t/'base-items/items',dst/'candidate')
+          reserved=dst/'reserve'
+          reserved.mkdir()
+          m=json.loads(Path('manifests/ci137-naturaleza-vigencia-crosswalk-v01.json').read_text())
+          prov=json.loads(Path('source-pending/ci137-native-release-recovered/PROVENANCE.json').read_text())
+          nature={r['id']:r for r in prov['records'] if '/hiperaustralis-naturaleza-items/' in r['path'] and not r['path'].endswith('_Folder.json')}
+          rows=m['fauna']+m['flora']+m['biomas']
+          assert len(rows)==len(nature)==98 and set(nature)=={r['id'] for r in rows}
+          def read(root):
+              result={}
+              for p in root.rglob('*.json'):
+                  d=json.loads(p.read_text())
+                  assert d['_id'] not in result
+                  result[d['_id']]=(p.name=='_Folder.json',d)
+              return result
+          base=read(dst/'candidate')
+          assert sum(not f for f,d in base.values())==136
+          assert not set(base)&set(nature)
+          valid=lambda s:isinstance(s,str) and re.fullmatch('[A-Za-z0-9]{16}',s)
+          def write(p,d):
+              p.parent.mkdir(parents=True,exist_ok=True)
+              p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+          used=set(base)|set(nature)
+          def folder(root,name,id,parent=None):
+              assert valid(id) and id not in used
+              used.add(id)
+              write(root/'_Folder.json',{'_id':id,'_key':'!folders!'+id,'name':name,'type':'Item','folder':parent,'sorting':'a','sort':0,'flags':{},'description':''})
+          def gen(s): return hashlib.sha256(('CI137:Item:'+s).encode()).hexdigest()[:16]
+          active=dst/'candidate'/'Naturaleza'
+          rootid=gen('Naturaleza')
+          folder(active,'Naturaleza',rootid)
+          old_folders={r['name']:r['id'] for r in prov['records'] if '/hiperaustralis-naturaleza-items/' in r['path'] and r['path'].endswith('_Folder.json')}
+          assert set(old_folders)=={'Fauna','Flora','Biomas'}
+          folder(active/'Fauna','Fauna',old_folders['Fauna'],rootid)
+          folder(reserved/'Fauna prehistórica','Fauna prehistórica',gen('Reserva/Fauna prehistórica'))
+          folder(reserved/'Flora','Flora',old_folders['Flora'])
+          folder(reserved/'Biomas','Biomas',old_folders['Biomas'])
+          counts=collections.Counter()
+          excluded=[]
+          for r in rows:
+              s=nature[r['id']]
+              raw=Path(s['path']).read_bytes()
+              assert hashlib.sha256(raw).hexdigest()==s['stagedSHA256']==r['sourceSHA256']
+              d=json.loads(raw)
+              assert valid(d['_id']) and d['_id']==r['id']
+              before=json.loads(raw)
+              status=r['status']
+              counts[status]+=1
+              if status=='LEGACY_EXCLUDED':
+                  excluded.append(d['_id']); continue
+              if status in ('CORE_TERRITORIAL_PRIMARY','CORE_ACTIVE_NONPRIMARY'):
+                  directory=active/'Fauna'; folder_id=old_folders['Fauna']
+              elif status=='PREHISTORIC_SEPARATE_CANDIDATE':
+                  directory=reserved/'Fauna prehistórica';folder_id=gen('Reserva/Fauna prehistórica')
+              elif status=='HISTORICAL_PRESERVED__EDITORIAL_REPLACEMENT_NOT_APPROVED':
+                  directory=reserved/'Flora';folder_id=old_folders['Flora']
+              elif status in ('CORE_TERRITORY_HISTORICAL_BIOME_REFERENCE','COMPLEMENTARY_HISTORICAL_BIOME'):
+                  directory=reserved/'Biomas';folder_id=old_folders['Biomas']
+              else: raise ValueError(status)
+              d['folder']=folder_id
+              d['_key']='!items!'+d['_id']
+              assert {k:v for k,v in d.items() if k not in ('folder','_key')}=={k:v for k,v in before.items() if k not in ('folder','_key')}
+              write(directory/(d['_id']+'.json'),d)
+          a,b=read(dst/'candidate'),read(reserved)
+          assert all(a[i]==v for i,v in base.items())
+          assert not set(a)&set(b)
+          assert sum(not f for f,d in a.values())==180
+          assert sum(not f for f,d in b.values())==53
+          assert len(excluded)==1 and excluded==['sJUb33WwcLgPb3PQ']
+          assert not set(excluded)&(set(a)|set(b))
+          report={'status':'PREPARED_NO_INSTALL','coreItems':136,'activeFauna':44,'candidateItems':180,'reserveItems':53,'historicalExcluded':excluded,'counts':dict(counts),'sourceItemsAccountedFor':234,'candidateFolders':sum(f for f,d in a.values()),'reserveFolders':sum(f for f,d in b.values()),'restrictions':['Reserve is not player-facing release','No visual substitution or new statistics','No template/runtime compatibility claim','No module ZIP or deployment']}
+          (dst/'selection-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          print(report)
+          PY
+      - name: Apply exact accepted Quiebre playtest delta to isolated candidate only
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, copy, os
+          from pathlib import Path
+          t=Path(os.environ['RUNNER_TEMP'])/'combined'
+          m=json.loads(Path('manifests/ci137-quiebre-defensas-traspaso-v07.json').read_text())
+          rows=m['arms']
+          assert len(rows)==21 and len({r['id'] for r in rows})==21
+          assert sum(r['template']=='HipArmaTpl000001' for r in rows)==20
+          assert sum(r['template']=='HipRelqTpl000001' for r in rows)==1
+          index={}
+          for p in (t/'candidate').rglob('*.json'):
+              if p.name=='_Folder.json': continue
+              d=json.loads(p.read_text())
+              assert d['_id'] not in index
+              index[d['_id']]=(p,d)
+          assert len(index)==180
+          assert set(r['id'] for r in rows)<=set(index)
+          report=[]
+          for r in rows:
+              p,d=index[r['id']]
+              assert d['system']['template']==r['template'],r['id']
+              props=d['system']['props']
+              previous=props.get('quiebre')
+              assert previous in (None,'',r['quiebre']),(r['id'],previous)
+              before=copy.deepcopy(d)
+              props['quiebre']=r['quiebre']
+              check=copy.deepcopy(d)
+              if 'quiebre' in before['system']['props']:
+                  check['system']['props']['quiebre']=previous
+              else:
+                  check['system']['props'].pop('quiebre')
+              assert check==before
+              p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+              report.append({'id':r['id'],'template':r['template'],'previous':previous,'quiebre':r['quiebre']})
+          (t/'quiebre-delta.json').write_text(json.dumps({'status':'PLAYTEST_DATA_PREPARED_ONLY','count':len(report),'field':'system.props.quiebre','changes':report,'templateRenderValidated':False,'runtimePersistenceValidated':False,'noOtherPropertyChanges':True},ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Roundtrip both isolated Item groups
+        run: |
+          set -euo pipefail
+          npm install --no-audit --no-fund --no-save --no-package-lock @foundryvtt/foundryvtt-cli@3.0.5
+          T="$RUNNER_TEMP/combined"
+          mkdir -p "$T/packs" "$T/check-candidate" "$T/check-reserve"
+          for name in candidate reserve; do
+            ./node_modules/.bin/fvtt package pack -n "ci137-$name" --inputDirectory "$T/$name" --outputDirectory "$T/packs" --recursive
+            ./node_modules/.bin/fvtt package unpack -n "ci137-$name" --inputDirectory "$T/packs" --outputDirectory "$T/check-$name" --folders
+          done
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          t=Path(os.environ['RUNNER_TEMP'])/'combined'
+          def load(p):
+              out={}
+              for f in p.rglob('*.json'):
+                  d=json.loads(f.read_text())
+                  assert d['_id'] not in out
+                  out[d['_id']]=(f.name=='_Folder.json',d)
+              return out
+          for name,n in [('candidate',180),('reserve',53)]:
+              a,b=load(t/name),load(t/('check-'+name))
+              assert set(a)==set(b) and sum(not f for f,d in a.values())==n
+              for i,(folder,d) in a.items():
+                  assert folder==b[i][0]
+                  for k in ('name','type','folder','system','img','flags'):
+                      assert d.get(k)==b[i][1].get(k),(name,i,k)
+          delta=json.loads((t/'quiebre-delta.json').read_text())
+          a=load(t/'check-candidate')
+          assert all(a[r['id']][1]['system']['props']['quiebre']==r['quiebre'] for r in delta['changes'])
+          report={'status':'PASS_D2_NO_INSTALL','quiebreValues':21,'templateRenderValidated':False,'candidateItems':180,'reserveItems':53,'excludedHistorical':1,'idsPreserved':True,'propertiesPreserved':True,'runtimeD3':False}
+          (t/'roundtrip-report.json').write_text(json.dumps(report,indent=2)+'\n')
+          print(report)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CI137-ITEMS-QUIEBRE-D2-REPORT-ONLY
+          path: |
+            ${{ runner.temp }}/combined/selection-report.json
+            ${{ runner.temp }}/combined/roundtrip-report.json
+            ${{ runner.temp }}/combined/quiebre-delta.json
+          if-no-files-found: error
+          retention-days: 30
