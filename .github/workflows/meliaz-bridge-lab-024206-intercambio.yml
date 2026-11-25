@@ -51,7 +51,11 @@ jobs:
               assert js.count(before)==1, (i,before,js.count(before))
               js=js.replace(before,after,1)
           assert delta['rules'] in js
-          (root/'check'/'exchange-test.js').write_text(delta['rules']+'\n'+delta['test']+'\n')
+          import re
+          data=re.search(r'const MANIFESTACION_DATA = \{[\s\S]*?\n\};',js)
+          assert data, "MANIFESTACION_DATA not found"
+          manifest_test='\nassert.deepEqual(Object.values(MANIFESTACION_DATA).map(x=>x.cost),[1,2,3]);\nassert.deepEqual(Object.values(MANIFESTACION_DATA).map(x=>x.battleBonus),[1,1,1]);\nconsole.log("PASS: Manifestar fixed +1 across grades, costs preserved");\n'
+          (root/'check'/'exchange-test.js').write_text(data.group(0)+'\n'+delta['rules']+'\n'+delta['test']+manifest_test)
           files['bridge.js']=js.encode()
           m=json.loads(files['module.json'])
           assert m['id']=='meliaz-bridge-lab' and m['version']=='0.24.204-lab.0'
@@ -66,7 +70,7 @@ jobs:
               assert all(z.read(n)==b for n,b in files.items())
               for n in ['bridge.js','kona-token-icons.js']:
                   (root/'check'/n).write_bytes(z.read(n))
-          report={'status':'D2_CANDIDATE_NO_DEPLOY','moduleId':m['id'],'version':m['version'],'changes':['preserve Descendiente hitbox','combat-only v13 outcome mapping','explicit reactive entry','Quiebre context and single claimed Peso marking','Incapacitado label','version'], 'remaining':['D3 real Foundry','Exaltar Azar post-dado','Códigos UI and storage','Piño consequence','Aguante and Armadura','Manifestar'], 'unchanged':['Mascota handler','Descendiente persistence','Auspicio','40 tokens','all graphics','CSB template','original Bridge'], 'sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'bytes':out.stat().st_size,'runtimeTested':False}
+          report={'status':'D2_CANDIDATE_NO_DEPLOY','moduleId':m['id'],'version':m['version'],'changes':['preserve Descendiente hitbox','combat-only v13 outcome mapping','explicit reactive entry','Quiebre context and single claimed Peso marking','Incapacitado label','Manifestar fixed +1 across grades','version'], 'remaining':['D3 real Foundry','Exaltar Azar post-dado','Códigos UI and storage','Piño consequence','Aguante and Armadura','Manifestar D3 and Descendiente cooperation'], 'unchanged':['Mascota handler','Descendiente persistence','Auspicio','40 tokens','all graphics','CSB template','original Bridge'], 'sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'bytes':out.stat().st_size,'runtimeTested':False}
           Path('dist/REPORT.json').write_text(json.dumps(report,indent=2)+'\n')
           print(json.dumps(report))
           PY
