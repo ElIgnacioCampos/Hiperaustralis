@@ -1,0 +1,3269 @@
+{
+  "schema": "CI137_Route_Map_v02",
+  "sourceRun": 45531779657,
+  "sourceArchiveSHA256": "7c642be75cfd32fb9c9dd05a3ce64d13e5e010ae21d788a27aafad2c7056ae22",
+  "counts": {
+    "itemsFolders": 11,
+    "items": 180,
+    "actorsFolders": 19,
+    "actors": 69,
+    "journals": 2,
+    "journalPages": 58
+  },
+  "remaps": [
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/adalid-turiano_token.png",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/adalid-turiano_token.webp",
+      "sha256": "2eb24128c794615abdc8a5556e1d90f89b4ddebbcde1cc7136a02d3ebcc363d0",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 23456,
+      "resolution": "DOCUMENTED_TOKEN_DERIVATIVE_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/pregonero-turiano_token.png",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/pregonero-turiano_token.webp",
+      "sha256": "a5f506ae0a7c39b7af7e99fe9bad67d272f06f91f47e5cebfa85c16b96b5384e",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 25004,
+      "resolution": "DOCUMENTED_TOKEN_DERIVATIVE_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/tambor-turiano_token.png",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/tambor-turiano_token.webp",
+      "sha256": "049c09906b3375ed954adb67909bda50bf2564afc15403f82dabb93446eabf9d",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 26084,
+      "resolution": "DOCUMENTED_TOKEN_DERIVATIVE_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/vigia-turiano_token.png",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/vigia-turiano_token.webp",
+      "sha256": "656122389ae9247f9c545f2b9db49037ea4c1b23d24bcf55c07307ed10d92d38",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 23702,
+      "resolution": "DOCUMENTED_TOKEN_DERIVATIVE_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/armas/01_cuchillo_litico.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/01_cuchillo_litico.webp",
+      "sha256": "7ff631440c2a74d7ca25014ceb1c38024b14d3ebdb2f73a9bcc0be98ba7a8082",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 20056,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/companeros/exoticos/EXO-001a_volador_vuelo.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/companeros/exoticos/EXO-001a_volador_vuelo.webp",
+      "sha256": "4fd9159e616384f11a037cb6e182a36135e035087297321003c337b4b02bb309",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 37880,
+      "resolution": "APPROVED_LATEST_BINARY_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/companeros/exoticos/EXO-001b_volador_terrestre.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/companeros/exoticos/EXO-001b_volador_terrestre.webp",
+      "sha256": "baae03942e3f8ec72d5ba15b1bee4293f82b6d6531e647b32c24786d2b08f1b1",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 32852,
+      "resolution": "APPROVED_LATEST_BINARY_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/kaskawilla_erh_256.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/kaskawilla_erh_256.webp",
+      "sha256": "99d04f3c8d65226cfb8e10a1bbdb168e37bd1e41ed4cd3d78e00aec5668377e6",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 42256,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/kultrung_erh_256.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/kultrung_erh_256.webp",
+      "sha256": "f6871ff1e0f968dbf7e745461364dccd68ed79f3dd92063026bdee65bf470be2",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 65290,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/pifullka_erh_256.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/pifullka_erh_256.webp",
+      "sha256": "c4e1aeec786511dff44f84e9a8f80897e84ee43fbf991c12970fd59d6afa748d",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 37872,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/piloilo_erh_256.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/piloilo_erh_256.webp",
+      "sha256": "44fe741c96bbcdc185fe45b225dbf4aa13764d2abc039539eb8ad207cef81fe4",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 49928,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/pututu_erh_256.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/pututu_erh_256.webp",
+      "sha256": "c85f79ac0e51f2194be355b76b6bc679ffb9163c3e2db116d7ef559aed333e77",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 46472,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/waza_erh_256.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/waza_erh_256.webp",
+      "sha256": "42516d8a32aa293a146639ac844a515d1b6aa751362e6dcba858d3a7109e42d5",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 20832,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/01_challa_heredada.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/01_challa_heredada.webp",
+      "sha256": "ebd510bc84991f321fa328a4036e793a819f1d8bc1e70d406bc52957d7ed590f",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 66404,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/02_kutru_metawe_familiar.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/02_kutru_metawe_familiar.webp",
+      "sha256": "cfdc91370729a4480d480f7012e61a96ebbd9f5af525dac0dc9f47f8e0ccd151",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 54578,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/03_chuspa_de_camino.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/03_chuspa_de_camino.webp",
+      "sha256": "cb1153adf283051551502c7446d1c82927ba9b1c04584fcd336724c30f0e58ba",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 90978,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/04_inkuna_de_ofrendas.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/04_inkuna_de_ofrendas.webp",
+      "sha256": "e58cb0b1d0b3427831e74f9280869725620c34f1b01af4be879f6bcaaaa67653",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 85312,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/05_peine_de_asta_heredado.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/05_peine_de_asta_heredado.webp",
+      "sha256": "e4bd529c83c1e83c4ca8c70159dfdf1e71ee268ed2a02fd4520c7fde2016dac0",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 51744,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/06_piedra_de_afilar_del_viaje.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/06_piedra_de_afilar_del_viaje.webp",
+      "sha256": "8bc4bf7d9460ed9fb14f45e36c5e17b290c126ce12a091197ca0c637b15ec78d",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 37264,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/07_cuchara_de_chanar.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/07_cuchara_de_chanar.webp",
+      "sha256": "fb4e2e65925253b880114ce43b4e9607ff0ece36a714baaa80e53b43677cfde6",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 62432,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/08_cencerro_de_madera.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/cotidianas/08_cencerro_de_madera.webp",
+      "sha256": "d0901ea867582c77b868bc4914c23a4d34be6078a677315502cbd4fa5a730f18",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 73282,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/01_TRIDENTE_DE_ULLMAN.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/01_TRIDENTE_DE_ULLMAN.webp",
+      "sha256": "453291d3c7600b6beef40d53ac884331910c3d809ccb688d151e78ca01a5515e",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 77800,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/02_ANTUKURA.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/02_ANTUKURA.webp",
+      "sha256": "51ef7804baec4824e80c4840b14a6807ec7b93bb96f3ebbf505253908930fb8a",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 90498,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/03_YELMO_DE_HIPOLITA.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/03_YELMO_DE_HIPOLITA.webp",
+      "sha256": "360c5e670f6d9aa383e5d363429ecea543a446fc7e2362fd89ce132161928bfd",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 71626,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/04_DRAKAR_DE_ULLMAN.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/04_DRAKAR_DE_ULLMAN.webp",
+      "sha256": "9db5966beaef1596c8080a56ac54ffa35d9df883a8ee5117d59be3ea216c30ff",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 95338,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/05_PIEDRA_VIEJA_DE_PAITITI.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/05_PIEDRA_VIEJA_DE_PAITITI.webp",
+      "sha256": "76e4a49f5bf04e39ad93d108fc539d2df685dbbd946a74a9ce6ebe193c38c457",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 90730,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/06_CHAYANCO_DE_CHILLPILA.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/06_CHAYANCO_DE_CHILLPILA.webp",
+      "sha256": "2eb1bbdf76773bd599a7aa78dece04cbd52f6cd1b706c9f04eb8f2412b9d8827",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 64624,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/07_TABLETA_DEL_HOMBRE_FELINO.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/07_TABLETA_DEL_HOMBRE_FELINO.webp",
+      "sha256": "618d8ac03134411f22b26165a54ff3ca06da805081d4ca88e0026f47930cdffa",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 58038,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/08_AMULETO_RUNICO_DE_KVINNEBY.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/legendarias/08_AMULETO_RUNICO_DE_KVINNEBY.webp",
+      "sha256": "4cf181d48a67841ea760acffb7ca1b434e0857b2ac99d063fc914b5d28da2878",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 99740,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-compendios-prototype/assets/reliquias/tokicura_256.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/reliquias/tokicura_256.webp",
+      "sha256": "1a1a480ed3014b1f031e9e295ddf57ece94b2f5d060fcd6edb5fc6fb87421c09",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 11154,
+      "resolution": "EXACT_CI_ASSET_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-01_01_ladron_oportunista_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-01_01_ladron_oportunista_FOUNDRY_512.webp",
+      "sha256": "b22f125f10f4a590aa2a74f19da7a63b2635579f66fc904397a03d59a9940a37",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 17854,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-02_02_emboscadora_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-02_02_emboscadora_FOUNDRY_512.webp",
+      "sha256": "a623f4ca6e27422e3576482b14f74f1ca97b74f88ee559a6b382b1a8c91f8796",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 19276,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-03_03_guerrero_otra_comunidad_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-03_03_guerrero_otra_comunidad_FOUNDRY_512.webp",
+      "sha256": "880384d1d324c064c3ebe2db8becf0fe5ed97f01182bec1cb3b6af88997447a9",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 18794,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-04_04_custodia_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-04_04_custodia_FOUNDRY_512.webp",
+      "sha256": "c020f528ddae781b8d9e206536a64c3a1a285a1b155ba455e3c79ffe22d055e3",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 16248,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-05_05_rastreadora_hostil_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-05_05_rastreadora_hostil_FOUNDRY_512.webp",
+      "sha256": "2d7451a2e6f821de481301e613079d827a44e3a0406824152b9653fb395f1c06",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 17484,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-06_06_saqueadora_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-06_06_saqueadora_FOUNDRY_512.webp",
+      "sha256": "fcb0f0b38cf66b9912f164cc33b219207e3cbf9373880fba758e823308d32308",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 16176,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-07_07_veterana_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-07_07_veterana_FOUNDRY_512.webp",
+      "sha256": "27f5cb98bb98505f23a40df1639d59094f3adbcb1c380c619e57165c3c5f4ac3",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 15912,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-08_08_jefe_de_partida_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-08_08_jefe_de_partida_FOUNDRY_512.webp",
+      "sha256": "ef410a01aac3e4fc57017ed8ea81b38a2b62216870e048b98870f845e20a83a3",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 15592,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-09_09_hondero_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-09_09_hondero_FOUNDRY_512.webp",
+      "sha256": "e96b83bc47f7b47592d5e068032dbc88120087460a39d615cb56d72f86e01798",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 28200,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-10_10_arquero_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-10_10_arquero_FOUNDRY_512.webp",
+      "sha256": "aff964668e944c9f5bd8a3d2cf3c45bd032a2b59c151ee3350cf1f04098fc753",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 27578,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-11_11_lancero_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-11_11_lancero_FOUNDRY_512.webp",
+      "sha256": "98dea6f14a4e993445d5752611bdaebe4188f4ab5c38cadbcd08065926202fd0",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 20534,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-12_12_combatiente_defensivo_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-12_12_combatiente_defensivo_FOUNDRY_512.webp",
+      "sha256": "3d991c5f73db78c57eeae79f90f3199e6d2043dd78f16c38c2cd08f310cf7376",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 36350,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-13_13_luchador_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-13_13_luchador_FOUNDRY_512.webp",
+      "sha256": "dc00a17ccc76bb2f7dc74f73427bc7ed5deac21fd3c2e957e7a93c71aa8c29fd",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 23078,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-14_14_emboscador_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-14_14_emboscador_FOUNDRY_512.webp",
+      "sha256": "fbb144286c940ac3f71e7333bf15738d6ada5f72c604890e7582e8bcb0049e67",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 32914,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-15_15_navegante_armado_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-15_15_navegante_armado_FOUNDRY_512.webp",
+      "sha256": "a8a1c9c1fbf525a34bf9b793dcbb397d1eeb8ee6b4d2d5bbf2860bf581ef8f4e",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 30998,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/adversarios/rivales/RIV-16_16_pino_de_guerreros_FOUNDRY_512.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/adversarios/rivales/RIV-16_16_pino_de_guerreros_FOUNDRY_512.webp",
+      "sha256": "3685e09f508bafd279d2603fb0a0eceb8d3aa19fbede706b467b622b34acee2a",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 31004,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/02_cuchillo_hueso.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/02_cuchillo_hueso.webp",
+      "sha256": "9409db7e160e19d6c44f303e907f3537cc6ac6d750fe422f9cf6538a880cb44a",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 18370,
+      "resolution": "DOCUMENTED_HISTORICAL_RENAME_MATCH"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/03_cuchillo_metalico.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/03_cuchillo_metalico.webp",
+      "sha256": "00a894e4d504bdfd93a152d437f13772cd6ed67aac9a33c7f41311e10bc1a0a9",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 19422,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/04_seax.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/04_seax.webp",
+      "sha256": "9b28f6056b02ca4762fd4f0c5f55f4e572b979cb14ba4e7f84a0a76b4bf98764",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 13368,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/05_espada.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/05_espada.webp",
+      "sha256": "a91f61a667903afa4ab128b242084240bc05183198919c69e96832cee2dd46fe",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 12596,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/06_garrote.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/06_garrote.webp",
+      "sha256": "cc6aa20795a1370be986c0a84ad354c384ee3e83ab72041fea53b7d5f44c485c",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 7712,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/07_baston_combate.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/07_baston_combate.webp",
+      "sha256": "3486d39e0628ee0aab1e0955a56b5ccdcc33e1e99d1c9bc7253ffd61a8d5e58d",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 18150,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/08_maza_petrea.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/08_maza_petrea.webp",
+      "sha256": "0eeb3a15e8c8bdc4c9f82c284a66ff97da1817560fdcf9c2e974a92eb79a5e62",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 10284,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/09_hacha_litica.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/09_hacha_litica.webp",
+      "sha256": "a14c2209f681b0b6146a2f94270de71ca2031b1ddc5d5e687a035b8e5068f3a2",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 10942,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/10_hacha_metalica.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/10_hacha_metalica.webp",
+      "sha256": "db3ca60b7d3d46dc3802ee9e55e8f8a6c28d741fbe2d476ed3fb9bb7b95d05cd",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 15142,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/11_hacha_dos_manos.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/11_hacha_dos_manos.webp",
+      "sha256": "db51f3a2fa8816b57a719b07ba9a5fdd3147ad219aef9f890eb836bba4b539f9",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 16076,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/12_hacha_barbada.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/12_hacha_barbada.webp",
+      "sha256": "47da2017801cfc2abee46392bbc3e2e4486568e8308c61da7e401d4683ea4ad0",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 14850,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/13_lanza_corta.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/13_lanza_corta.webp",
+      "sha256": "2f68e267d956993801a3e168f037eb1d1c3a7854476f83cc628c32d5c2a23561",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 9428,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/14_lanza_larga.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/14_lanza_larga.webp",
+      "sha256": "acdc8c5ba6c8ca55914185542d55aa454c5a278711a22a0dcadcf2a99ece02b8",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 7250,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/15_jabalina.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/15_jabalina.webp",
+      "sha256": "d47334681a1eea2d0bab858f5ce60c37859c9b414603b1bb33a5dbb4c2f0e74e",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 15184,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/16_arco_simple.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/16_arco_simple.webp",
+      "sha256": "4b887a5341b1ef339f8c60784551a73c048ebb082310e9789cc7c2e5397d1b68",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 33948,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/17_flecha.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/17_flecha.webp",
+      "sha256": "4a75d0767384a519a489e737bc43959a12c2a25dea255667f40855940db5d232",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 9404,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/18_honda.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/18_honda.webp",
+      "sha256": "e79f3fd3fd66abbee0670a949becd66c347d3efd351a7ff5554bff7c78eeabfa",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 20594,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/19_mataa.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/19_mataa.webp",
+      "sha256": "997504214c6bccda511d1cbd9c99df32ca8f37c7adf89b4207fa7c2e38661064",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 12124,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/armas/20_arpon.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/armas/20_arpon.webp",
+      "sha256": "eb3e384487abf6d1522a77c7b38497431945eb1e9840db54636a9974769ab696",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 7714,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/01_MAPUCHE/M1_Nahuelbuta.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/01_MAPUCHE/M1_Nahuelbuta.webp",
+      "sha256": "1e7686d81a03d218d89f663c3e25764d30661abb8c2b22ecab41f23684344810",
+      "size": [
+        1600,
+        1200
+      ],
+      "bytes": 518374,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/01_MAPUCHE/M2_Ruka.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/01_MAPUCHE/M2_Ruka.webp",
+      "sha256": "413c35d57be1c01bfbcd1f48cf420baf0dd51933cf3c28d5dbc6f3dd0a9ec881",
+      "size": [
+        1600,
+        1262
+      ],
+      "bytes": 413602,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/01_MAPUCHE/M3_Hilado_Mapuche.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/01_MAPUCHE/M3_Hilado_Mapuche.webp",
+      "sha256": "19345b2d399885bef95ab6599784aff46c254c788f690c84b8cfc2c4a1cedc38",
+      "size": [
+        1274,
+        1600
+      ],
+      "bytes": 181998,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/02_AYMARA/A1_Sajama_Llamas.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/02_AYMARA/A1_Sajama_Llamas.webp",
+      "sha256": "7b364f6de17f626d207294a47187b5dc5ed22a28e31241b8b74afb1d6b2a48eb",
+      "size": [
+        1600,
+        1067
+      ],
+      "bytes": 286854,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/02_AYMARA/A2_Tejedora_Aymara.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/02_AYMARA/A2_Tejedora_Aymara.webp",
+      "sha256": "2188624de9610b5562912d2da977c452f150a2ce7d5c477054949d11dd55f449",
+      "size": [
+        532,
+        750
+      ],
+      "bytes": 76642,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/02_AYMARA/A3_Totorales_Titicaca.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/02_AYMARA/A3_Totorales_Titicaca.webp",
+      "sha256": "ba19317a6581c65b631da2828f6b96072bc43cae55e77afb2935c983d602ab19",
+      "size": [
+        1600,
+        1200
+      ],
+      "bytes": 509762,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/03_NORDICOS/N1_Casa_Nordica.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/03_NORDICOS/N1_Casa_Nordica.webp",
+      "sha256": "ff10c60f48c1a3b021d4dbae19407c0705e460534781ea914502e61e33e51ec8",
+      "size": [
+        1600,
+        1068
+      ],
+      "bytes": 396572,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/03_NORDICOS/N2_Nave_Vikinga.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/03_NORDICOS/N2_Nave_Vikinga.webp",
+      "sha256": "926f72e1f57afdb78f3778faf4d256d2009376fc7e438885ff26b3eb8a166142",
+      "size": [
+        1206,
+        1600
+      ],
+      "bytes": 164188,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/03_NORDICOS/N3_Piedra_Runica_G208.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/03_NORDICOS/N3_Piedra_Runica_G208.webp",
+      "sha256": "f737760c446c2f09a4c8ee125dd6aa381e9d520102a494b1b2881e10a653af0d",
+      "size": [
+        1105,
+        1600
+      ],
+      "bytes": 243524,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/04_CHINCHORRO/C1_Caleta_Camarones.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/04_CHINCHORRO/C1_Caleta_Camarones.webp",
+      "sha256": "fe2f4994d81f2cca28dfbf998e0e1022f46125f0aae20b7c14a76c3a1cc1045c",
+      "size": [
+        1024,
+        680
+      ],
+      "bytes": 36738,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/04_CHINCHORRO/C2_Momias_Chinchorro_Conjunto.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/04_CHINCHORRO/C2_Momias_Chinchorro_Conjunto.webp",
+      "sha256": "2e286085eff739d48dcec884eb26a2cf516bedc7ab82b5ac3dc2f4c3974b5f41",
+      "size": [
+        890,
+        533
+      ],
+      "bytes": 60194,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/04_CHINCHORRO/C3_Momia_Chinchorro_Museo.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/04_CHINCHORRO/C3_Momia_Chinchorro_Museo.webp",
+      "sha256": "ea42410452e6870ced0e6d58df22408d76363c5737d32116bd2a1025b47e3d10",
+      "size": [
+        1600,
+        1200
+      ],
+      "bytes": 385602,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/05_LICKANANTAY/L1_Licancabur_Llamas.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/05_LICKANANTAY/L1_Licancabur_Llamas.webp",
+      "sha256": "08a7890d3dd8581d02522171a5869092aec2589d5c73f3e98133ac98b705257e",
+      "size": [
+        1600,
+        1200
+      ],
+      "bytes": 442458,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/05_LICKANANTAY/L2_Geoglifos_Chug_Chug.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/05_LICKANANTAY/L2_Geoglifos_Chug_Chug.webp",
+      "sha256": "37b4a3d646936698c4b3c2e794e6814a8c3dd5594f31fe27614e845dff3daa01",
+      "size": [
+        1600,
+        300
+      ],
+      "bytes": 132974,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/05_LICKANANTAY/L3_Aldea_Tulor.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/05_LICKANANTAY/L3_Aldea_Tulor.webp",
+      "sha256": "8d79b4bc909b626a628b4ea1851eb6c9a27255e2394520336ddb8f36ce255dd7",
+      "size": [
+        1600,
+        1200
+      ],
+      "bytes": 312710,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/06_SELKNAM/S1_Estepa_Tierra_del_Fuego.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/06_SELKNAM/S1_Estepa_Tierra_del_Fuego.webp",
+      "sha256": "bcf02d2ca8947104cd13a399ca9a73dd3a06eb20e59d894a6213efad94eb0616",
+      "size": [
+        1600,
+        628
+      ],
+      "bytes": 91062,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/06_SELKNAM/S2_Selknam_Playa.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/06_SELKNAM/S2_Selknam_Playa.webp",
+      "sha256": "67b2f9ac2b12a512ec7de100e68905891e2bfd6d22dfc73adbc7454f637afc31",
+      "size": [
+        1600,
+        865
+      ],
+      "bytes": 131844,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/06_SELKNAM/S3_Selknam_Cazando.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/06_SELKNAM/S3_Selknam_Cazando.webp",
+      "sha256": "6a270c141ca1aa8cc220e3e08916959f6a2fb2299c79c258ad94477197a654df",
+      "size": [
+        1600,
+        1110
+      ],
+      "bytes": 299858,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/07_RAPA_NUI/R1_Paisaje_Rapa_Nui.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/07_RAPA_NUI/R1_Paisaje_Rapa_Nui.webp",
+      "sha256": "7e036be892e714cbbf7069884d3cf9bbdbf6164989cedf6c754744dfb628dde0",
+      "size": [
+        1600,
+        1200
+      ],
+      "bytes": 439764,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/07_RAPA_NUI/R2_Rano_Raraku.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/07_RAPA_NUI/R2_Rano_Raraku.webp",
+      "sha256": "903eb2ed74f24ce67e7db533ec0728e34e1421dd67e4f2b265535f1ea19e83b7",
+      "size": [
+        1600,
+        1064
+      ],
+      "bytes": 388046,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/07_RAPA_NUI/R3_Hodges_Rapa_Nui_1775.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/07_RAPA_NUI/R3_Hodges_Rapa_Nui_1775.webp",
+      "sha256": "ccf7eabc6035dbe9db32e96a0c522f13c0acca30494cd98e0531f4924b46abad",
+      "size": [
+        1600,
+        983
+      ],
+      "bytes": 231116,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/08_AONIKENK/AO1_Guanaco_Estepa.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/08_AONIKENK/AO1_Guanaco_Estepa.webp",
+      "sha256": "01729f7fedaea3fd6a21f09369e90f1970838404ac902e7fc6626f4f46c8b126",
+      "size": [
+        981,
+        1600
+      ],
+      "bytes": 498700,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/08_AONIKENK/AO2_Waki_Puma.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/08_AONIKENK/AO2_Waki_Puma.webp",
+      "sha256": "1af91118151c67a41f2603073c18443d6193f7b43eef7b68c67ae88fe0d43eb1",
+      "size": [
+        1000,
+        577
+      ],
+      "bytes": 211198,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/08_AONIKENK/AO3_Tolderia_Kankel.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/08_AONIKENK/AO3_Tolderia_Kankel.webp",
+      "sha256": "20f398d5b1d3a3e3e4118ad0367cbc2325502e393c54de4e5bbb89e9966ecf53",
+      "size": [
+        785,
+        340
+      ],
+      "bytes": 45992,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/09_KAWESQAR/K1_Maritorio_Kawesqar.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/09_KAWESQAR/K1_Maritorio_Kawesqar.webp",
+      "sha256": "f1e00bcc9c18743de483bd3b79da9e3ab7cc0e6e79d7b26370f314d333912f93",
+      "size": [
+        1600,
+        1200
+      ],
+      "bytes": 539362,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/09_KAWESQAR/K2_Kawesqar_Navegando.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/09_KAWESQAR/K2_Kawesqar_Navegando.webp",
+      "sha256": "f93e0567dfc505cc2a8311242c7eab6906857de4ea80ca2771a394c28d259873",
+      "size": [
+        842,
+        504
+      ],
+      "bytes": 96312,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/culturas/09_KAWESQAR/K3_Canoa_Kawesqar_Museo.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/culturas/09_KAWESQAR/K3_Canoa_Kawesqar_Museo.webp",
+      "sha256": "db79ae0481e4935c454ea5c84fda087f8502232f5e11289077a9a1e1be24f07e",
+      "size": [
+        1600,
+        1187
+      ],
+      "bytes": 99264,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/defensas/01_casco_rigido_pica_tarapaca.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/defensas/01_casco_rigido_pica_tarapaca.webp",
+      "sha256": "be54c5adb53d28cb6b3299a429f499027dd32a169c81db01d06cb3fcad59a5fe",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 13670,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/defensas/02_casco_emplumado_pica_tarapaca.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/defensas/02_casco_emplumado_pica_tarapaca.webp",
+      "sha256": "bd497b4397a76e6e3e97b97ae0ae1d453b6ea3629d4902455888dc1fe4aef948",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 13712,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/defensas/03_casco_sobre_capucha_pica_tarapaca.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/defensas/03_casco_sobre_capucha_pica_tarapaca.webp",
+      "sha256": "9bd5c44fba7e268bb96a0418c323c602ce8ab85bd0b9965c69af4a3b20d2a2ec",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 11080,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/defensas/04_capucha_protectora_pica_tarapaca.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/defensas/04_capucha_protectora_pica_tarapaca.webp",
+      "sha256": "8becba25cf75a2e9f72d413eb2c616a38803ba38aeca480eb70b44ff1b576a30",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 12178,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/defensas/05_coraza_lasana.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/defensas/05_coraza_lasana.webp",
+      "sha256": "e31c5172ab6463e8a2d587716597db1e1c43480a5a5eba160ff51a7f639a9f97",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 14348,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/defensas/06_peto_cuero_surandino.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/defensas/06_peto_cuero_surandino.webp",
+      "sha256": "a9fec8c399b3c771f3a751daea132346a73d790dc030076e54eccb9e90dad552",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 13240,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/defensas/07_espaldar_cuero_surandino.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/defensas/07_espaldar_cuero_surandino.webp",
+      "sha256": "6e69acef49f975381ebbe8aeaff07fbe49b5bffaafb71c1239cf799fb838464d",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 11570,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/defensas/08_manta_densa_surandina.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/defensas/08_manta_densa_surandina.webp",
+      "sha256": "71babb281ca79c75027bca710a8ba1c7e1ab9f10c91d15bf74b0d06a9223264a",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 12444,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-002_Anchimallen.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/familiares-exoticos/EXO-002_Anchimallen.webp",
+      "sha256": "d9ddbfacf3d48219ab37966d8ad60d7760f1ff95f7cd9f63c099bb640e9b84a5",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 6536,
+      "resolution": "CROSS_ROOT_EXACT_CURRENT_COMPANION_HASH"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-003_Mandao.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/familiares-exoticos/EXO-003_Mandao.webp",
+      "sha256": "1a6cca5941efd22fe4e204745927c6c12e6d8e2d469909ee78593b53e691d1ce",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 11868,
+      "resolution": "CROSS_ROOT_EXACT_CURRENT_COMPANION_HASH"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-004_Troll.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/familiares-exoticos/EXO-004_Troll.webp",
+      "sha256": "566f3b553216322e5c80a2c1087d04396ccdea34a6f1006ae6d7b7c137d40f66",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 16206,
+      "resolution": "CROSS_ROOT_EXACT_CURRENT_COMPANION_HASH"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-005_Kobold.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/familiares-exoticos/EXO-005_Kobold.webp",
+      "sha256": "4d7900c95fb90347f980ecc166198d17a7dd22b15cf38d47c3175ac5d67f4948",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 15620,
+      "resolution": "CROSS_ROOT_EXACT_CURRENT_COMPANION_HASH"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-006_Kolo_Kolo.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/familiares-exoticos/EXO-006_Kolo_Kolo.webp",
+      "sha256": "fe892d47ffa7d798f645b89e893267850e83398a937b40b8712dbcbbd421c2e3",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 5924,
+      "resolution": "CROSS_ROOT_EXACT_CURRENT_COMPANION_HASH"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-007_Monito_del_Monte.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/familiares-exoticos/EXO-007_Monito_del_Monte.webp",
+      "sha256": "c316b61f772a3f03da37456dfca31fe997eea5225ec81b13a341b103e9cb805a",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 5744,
+      "resolution": "CROSS_ROOT_EXACT_CURRENT_COMPANION_HASH"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-008_Imbunche.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/familiares-exoticos/EXO-008_Imbunche.webp",
+      "sha256": "1ceb91690bd6dc45f46912d435f7818f5230594b6083b58ec33a5da9c729b4ea",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 24402,
+      "resolution": "CROSS_ROOT_EXACT_CURRENT_COMPANION_HASH"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/01_Titicaca/FAU-001_Rollandia_microptera.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/01_Titicaca/FAU-001_Rollandia_microptera.webp",
+      "sha256": "11f6505a10da327f672a86937448bb5ddf517b03978d8534aecfdabb14a0c94b",
+      "size": [
+        1440,
+        1152
+      ],
+      "bytes": 104778,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/01_Titicaca/FAU-002_Telmatobius_culeus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/01_Titicaca/FAU-002_Telmatobius_culeus.webp",
+      "sha256": "9b2e1a440fe7a1212c4ee9b4617ff82984ee967f2d72ffd0898dd1d43cd21f24",
+      "size": [
+        1080,
+        1440
+      ],
+      "bytes": 77172,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/01_Titicaca/FAU-003_Fulica_ardesiaca.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/01_Titicaca/FAU-003_Fulica_ardesiaca.webp",
+      "sha256": "b71ac7b3b26024aa2df7a32c609b99340d9be44fac9fdb2f7ec6791ca7053ad2",
+      "size": [
+        1080,
+        1440
+      ],
+      "bytes": 350708,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/01_Titicaca/FAU-004_Vicugna_vicugna.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/01_Titicaca/FAU-004_Vicugna_vicugna.webp",
+      "sha256": "bb6c3cb94fcec7c112bad12b109f7b22d1671c24b9daa7826288be9832ba1b27",
+      "size": [
+        762,
+        1143
+      ],
+      "bytes": 64944,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/02_Paititi/FAU-005_Tremarctos_ornatus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/02_Paititi/FAU-005_Tremarctos_ornatus.webp",
+      "sha256": "8a3621b1e79d9acecef082363728959ec4073db5863dbba4c1391cd880b14b15",
+      "size": [
+        960,
+        1280
+      ],
+      "bytes": 209520,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/02_Paititi/FAU-007_Tapirus_terrestris.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/02_Paititi/FAU-007_Tapirus_terrestris.webp",
+      "sha256": "bdaedbee9dfe80d8ed0aa8d5375d302d45e30918991d4ed2bdb03a475192d47c",
+      "size": [
+        640,
+        424
+      ],
+      "bytes": 48242,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/02_Paititi/FAU-008_Panthera_onca.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/02_Paititi/FAU-008_Panthera_onca.webp",
+      "sha256": "4f1483dfb9b5d035906fb46a25b6197bca1b826db9a0f0e02ebce63c09a07549",
+      "size": [
+        1440,
+        960
+      ],
+      "bytes": 263640,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/03_Ngulumapu/FAU-009_Pudu_puda.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/03_Ngulumapu/FAU-009_Pudu_puda.webp",
+      "sha256": "801e3516eecfd43261bf9cf5bee7d2fb7f2ead302b2a27bbfafec46b2d462bab",
+      "size": [
+        1440,
+        1084
+      ],
+      "bytes": 195074,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/03_Ngulumapu/FAU-010_Leopardus_guigna.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/03_Ngulumapu/FAU-010_Leopardus_guigna.webp",
+      "sha256": "43eeec1392a78c5e0c28c26247b59214baab5e18ca9c76be3d14b148bad01379",
+      "size": [
+        1440,
+        1029
+      ],
+      "bytes": 134320,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/03_Ngulumapu/FAU-011_Dromiciops_gliroides.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/03_Ngulumapu/FAU-011_Dromiciops_gliroides.webp",
+      "sha256": "83dbac9f21dbaa9989910b9a4106bd0eb2bd15f60c6b207ae5acdedd33fc5a0f",
+      "size": [
+        292,
+        310
+      ],
+      "bytes": 12804,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/03_Ngulumapu/FAU-012_Rhinoderma_darwinii.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/03_Ngulumapu/FAU-012_Rhinoderma_darwinii.webp",
+      "sha256": "114d3df4c518f2e344bddd2dd194da13d7d08900bc2e57cb62339019046234e3",
+      "size": [
+        705,
+        601
+      ],
+      "bytes": 32886,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/04_Pewenmapu/FAU-013_Puma_concolor.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/04_Pewenmapu/FAU-013_Puma_concolor.webp",
+      "sha256": "9accbe17e5e3e007360b4d8d249d923d32fe28ef65c0aedd3b5564d3c81a4ecc",
+      "size": [
+        1440,
+        961
+      ],
+      "bytes": 116304,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/04_Pewenmapu/FAU-014_Lycalopex_culpaeus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/04_Pewenmapu/FAU-014_Lycalopex_culpaeus.webp",
+      "sha256": "48b115f5e58c0994e10129a509df01eda85bb90dd5cda971959242028de77447",
+      "size": [
+        1440,
+        964
+      ],
+      "bytes": 242008,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/04_Pewenmapu/FAU-015_Vultur_gryphus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/04_Pewenmapu/FAU-015_Vultur_gryphus.webp",
+      "sha256": "3a3280098617c62b93bb4a00eac422be1cdf8b39df5fbebc5ae8fcd198bb335e",
+      "size": [
+        1440,
+        960
+      ],
+      "bytes": 11752,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/04_Pewenmapu/FAU-016_Campephilus_magellanicus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/04_Pewenmapu/FAU-016_Campephilus_magellanicus.webp",
+      "sha256": "151cb0844c34b7eaaf635dcdcd0870ecba390c429e9c3f6c8811646377232b90",
+      "size": [
+        1080,
+        1350
+      ],
+      "bytes": 94490,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/05_Patagonia_austral/FAU-017_Lama_guanicoe.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/05_Patagonia_austral/FAU-017_Lama_guanicoe.webp",
+      "sha256": "520d4d434b165abe1b7509699986fc7d807756c39cdf39c912786d4c939d55af",
+      "size": [
+        1440,
+        960
+      ],
+      "bytes": 266824,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/05_Patagonia_austral/FAU-018_Hippocamelus_bisulcus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/05_Patagonia_austral/FAU-018_Hippocamelus_bisulcus.webp",
+      "sha256": "5900b7d719bdeca0c3fbd2b7d1ca26e515a66bfe95dec9efd42a158d0a885493",
+      "size": [
+        1440,
+        960
+      ],
+      "bytes": 316286,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/05_Patagonia_austral/FAU-019_Rhea_pennata.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/05_Patagonia_austral/FAU-019_Rhea_pennata.webp",
+      "sha256": "9eb412d076a7352e12a69c8e2191cfa2770d96673b581a7fce5c2b927448c89e",
+      "size": [
+        1440,
+        902
+      ],
+      "bytes": 84452,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/05_Patagonia_austral/FAU-020_Chloephaga_picta.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/05_Patagonia_austral/FAU-020_Chloephaga_picta.webp",
+      "sha256": "7a6cbafc7a9d3363c440000490070f3e55434da65a8952040375489b807cab23",
+      "size": [
+        1440,
+        960
+      ],
+      "bytes": 145332,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/06_Tierra_del_Fuego/FAU-021_Lama_guanicoe_guanicoe.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/06_Tierra_del_Fuego/FAU-021_Lama_guanicoe_guanicoe.webp",
+      "sha256": "0f60c470a5cb5e853e4029e4671054a660a7ca1bbc8d8b33b8df063133cc32f1",
+      "size": [
+        701,
+        459
+      ],
+      "bytes": 38898,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/06_Tierra_del_Fuego/FAU-022_Lontra_provocax.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/06_Tierra_del_Fuego/FAU-022_Lontra_provocax.webp",
+      "sha256": "11c735848afbce9427c65ebd0dcde6e4106df92f5f900bf87e2e57aa642c0ff8",
+      "size": [
+        1440,
+        916
+      ],
+      "bytes": 118396,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/06_Tierra_del_Fuego/FAU-023_Chloephaga_hybrida.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/06_Tierra_del_Fuego/FAU-023_Chloephaga_hybrida.webp",
+      "sha256": "92ad07b1a1585eec1f341949d4bffcd19fc606767444fbb37e12924b21ced2f6",
+      "size": [
+        1440,
+        900
+      ],
+      "bytes": 41246,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/06_Tierra_del_Fuego/FAU-024_Tachyeres_pteneres.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/06_Tierra_del_Fuego/FAU-024_Tachyeres_pteneres.webp",
+      "sha256": "3cb67ca054b2c695f02bfe850fff1bda90ece8125f2e0c3f3d40a5487846896c",
+      "size": [
+        1440,
+        902
+      ],
+      "bytes": 134952,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/07_Canales_australes/FAU-025_Otaria_byronia_sin_O_flavescens.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/07_Canales_australes/FAU-025_Otaria_byronia_sin_O_flavescens.webp",
+      "sha256": "cad476e5107275da52bc8582c6620934951856e9fa9a9ce3e630454e9362bd65",
+      "size": [
+        1440,
+        1080
+      ],
+      "bytes": 452202,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/07_Canales_australes/FAU-026_Arctocephalus_australis.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/07_Canales_australes/FAU-026_Arctocephalus_australis.webp",
+      "sha256": "04d2a716fabe143f38a004d167d7454879bef1b2649a4d238fc6dd22b022f622",
+      "size": [
+        1440,
+        850
+      ],
+      "bytes": 80760,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/07_Canales_australes/FAU-027_Lagenorhynchus_australis.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/07_Canales_australes/FAU-027_Lagenorhynchus_australis.webp",
+      "sha256": "526a899b5d86748e35d5ae7367e94da1de94754100ab9aaaf4ff5dacdc164743",
+      "size": [
+        1000,
+        840
+      ],
+      "bytes": 26838,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/07_Canales_australes/FAU-028_Leucocarbo_atriceps.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/07_Canales_australes/FAU-028_Leucocarbo_atriceps.webp",
+      "sha256": "d233de9a9deb96697705a82dc07a1ea8860a975828d6c4e6ec42c5d3d5d6569b",
+      "size": [
+        1440,
+        960
+      ],
+      "bytes": 74492,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/08_Umbral_Polar/FAU-029_Euphausia_superba.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/08_Umbral_Polar/FAU-029_Euphausia_superba.webp",
+      "sha256": "fa3019c88c0d5c3a8e1a47e41f6323a9b9b7d9ec45da319ce0f288a0dd96b020",
+      "size": [
+        1440,
+        982
+      ],
+      "bytes": 19560,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/08_Umbral_Polar/FAU-030_Pygoscelis_adeliae.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/08_Umbral_Polar/FAU-030_Pygoscelis_adeliae.webp",
+      "sha256": "beb48ba067e83ce66854a0c4ca0eda96bd542449e6d0007da9626f5d0c125360",
+      "size": [
+        1080,
+        1440
+      ],
+      "bytes": 237190,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/08_Umbral_Polar/FAU-031_Leptonychotes_weddellii.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/08_Umbral_Polar/FAU-031_Leptonychotes_weddellii.webp",
+      "sha256": "70532b308ad9619da9d675d3a600c5d56c2d85d0f05e9a153bab15e8cc63e713",
+      "size": [
+        700,
+        450
+      ],
+      "bytes": 24652,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/08_Umbral_Polar/FAU-032_Stercorarius_maccormicki.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/08_Umbral_Polar/FAU-032_Stercorarius_maccormicki.webp",
+      "sha256": "4adca14da78e36b862218f3655750666759f0dbcf01a18ca0fdabfdb55d989fc",
+      "size": [
+        1440,
+        958
+      ],
+      "bytes": 57464,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-001_Rollandia_microptera.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-001_Rollandia_microptera.webp",
+      "sha256": "47076fe403596116a17181bb5603665468887f8013af800cfcfaefa57c6b7cb5",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 24140,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-002_Telmatobius_culeus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-002_Telmatobius_culeus.webp",
+      "sha256": "c5c06777a1714533d18452ca038317ab36a0cce359c6c64a12f104b1739bf13a",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 31858,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-003_Fulica_ardesiaca.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-003_Fulica_ardesiaca.webp",
+      "sha256": "309f76da54380f6becbdc1be48e356edbd5b904621e241e68038711f4a5753eb",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 26974,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-004_Vicugna_vicugna.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-004_Vicugna_vicugna.webp",
+      "sha256": "f7c9aafa926f8461739964e914ee96961e9afa46cd5532af850f11fdbfe55713",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 25160,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-005_Tremarctos_ornatus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-005_Tremarctos_ornatus.webp",
+      "sha256": "811c5271a90dd8fdd32e65b4401b9f0ce511a469bd69ac8818c503bc17577813",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 29914,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-007_Tapirus_terrestris.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-007_Tapirus_terrestris.webp",
+      "sha256": "be0fc9939477197b334d374e81d3ecce1f6da29fc5f7ed745135286a533ddca9",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 27232,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-008_Panthera_onca.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-008_Panthera_onca.webp",
+      "sha256": "413321f994bed9b93a410ba78791725a0ae33f3c24dfb9d4265aeeb19a62a309",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 33342,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-009_Pudu_puda.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-009_Pudu_puda.webp",
+      "sha256": "7c8e87416b67597b685704b7ab6cf9837d7f63901f0c3db67858f10b44b669fa",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 26302,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-010_Leopardus_guigna.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-010_Leopardus_guigna.webp",
+      "sha256": "cd66be26fe6e9f3d526ea4f6e5d3f51e29ff36e869ea5bd307ba1249b6592fb4",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 30916,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-011_Dromiciops_gliroides.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-011_Dromiciops_gliroides.webp",
+      "sha256": "ce315fb959da2f329198d2999d1847eeb1dbf9d4dac22b531fb11605340bb4cd",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 29540,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-012_Rhinoderma_darwinii.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-012_Rhinoderma_darwinii.webp",
+      "sha256": "04198a7f4963b54cfb7aa1949d0525e13eec03625d7e21f8b823f8065248bc90",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 29518,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-013_Puma_concolor.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-013_Puma_concolor.webp",
+      "sha256": "9609453448a0de21c3fb0443079785c84871fa9f080dfeb635589db369f0d0b9",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 21832,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-014_Lycalopex_culpaeus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-014_Lycalopex_culpaeus.webp",
+      "sha256": "610dd730d25766bee36afcd62c0d6c6a8d57d36e1577cc898f53b238f47425d6",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 22998,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-015_Vultur_gryphus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-015_Vultur_gryphus.webp",
+      "sha256": "6f25fcc0c03bbb11d85168f256a00cbb5b5581ca0c603f5084bad1d45ce5e21f",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 22278,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-016_Campephilus_magellanicus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-016_Campephilus_magellanicus.webp",
+      "sha256": "8d0255bbeb7b1e9aeac659cec72175b7b956b1f31eca7c2491126ed7fbea3b66",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 17196,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-017_Lama_guanicoe.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-017_Lama_guanicoe.webp",
+      "sha256": "e1eb1fe11606189c3ceae986bab0fa2aa51b565db4a16e2cb7b8f3dd0289a150",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 23392,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-018_Hippocamelus_bisulcus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-018_Hippocamelus_bisulcus.webp",
+      "sha256": "9dc9ec75ebcaf95152a160b5010ac35e7d792a5094e81ab2f2c6d6408852a006",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 22478,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-019_Rhea_pennata.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-019_Rhea_pennata.webp",
+      "sha256": "d4ce79266588ea0f7ccd3fcb8edadb2767a4b8ddb096d6b1d56a0acda1a56329",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 22078,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-020_Chloephaga_picta.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-020_Chloephaga_picta.webp",
+      "sha256": "1200212888d214d670d18771a716dcfde5b6b189499e0925215721316ce951d5",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 19516,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-021_Lama_guanicoe_guanicoe.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-021_Lama_guanicoe_guanicoe.webp",
+      "sha256": "cc647d27268ff2740fdb6f5809c2a86f88b627d9f2abe419c11ac5c8d32ee2fa",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 22048,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-022_Lontra_provocax.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-022_Lontra_provocax.webp",
+      "sha256": "79af5e2c9a793a96e82540810b534c8876470761e489f4e9e219e5bc4b0717c1",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 15484,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-023_Chloephaga_hybrida.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-023_Chloephaga_hybrida.webp",
+      "sha256": "1acc30e1734bc6bb00c2d69226f4135c9dc03afcd5820fc3d06873a0000726a5",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 20384,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-024_Tachyeres_pteneres.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-024_Tachyeres_pteneres.webp",
+      "sha256": "e94daaa9dfa790c94e9fd4d5524dfb2a2306c0f30a4c188339849a46348049a8",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 24332,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-025_Otaria_byronia.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-025_Otaria_byronia.webp",
+      "sha256": "58a3fb7000a211bb3c0e236ac3e679bab5c021be91ad707781f638a775a806b5",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 21668,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-026_Arctocephalus_australis.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-026_Arctocephalus_australis.webp",
+      "sha256": "9f592c1b4236e5d996d1ff74b7d1b0b3775ef5c39fc942def35d4537646dbacd",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 19452,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-027_Lagenorhynchus_australis.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-027_Lagenorhynchus_australis.webp",
+      "sha256": "7369cddf1c102b6f995c14cbabd9b8ce9ebf603a08061ad477bcc61ad1ec99fb",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 14550,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-028_Leucocarbo_atriceps.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-028_Leucocarbo_atriceps.webp",
+      "sha256": "fa4f9c282b1a7abd5368888071da4653287b57d87cc115aaca9d005a27647b85",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 16152,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-029_Euphausia_superba.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-029_Euphausia_superba.webp",
+      "sha256": "56271009b50a992eb7b1897c564ddd28bfdd25fc8d00e223239c17abd02bc6c3",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 24136,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-030_Pygoscelis_adeliae.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-030_Pygoscelis_adeliae.webp",
+      "sha256": "f8d5c27861582ccd00da2833e9657d221531865ac86e3b2b1815c7c922c167c7",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 16124,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-031_Leptonychotes_weddellii.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-031_Leptonychotes_weddellii.webp",
+      "sha256": "2ff3ae277d95cf3b57c03d301b126f97e77756c13c7939359782ef7cdd7c797e",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 20160,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-032_Stercorarius_maccormicki.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-032_Stercorarius_maccormicki.webp",
+      "sha256": "ff2ee575ce1eb076b423399cd4642823182612a01776d772bb3deda9fed3683d",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 21098,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-033_Balaenoptera_musculus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-033_Balaenoptera_musculus.webp",
+      "sha256": "a6912a82216dd7dc26a744ecee2d28123ca96c87c363ab138c82461c98a06294",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 12648,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-034_Megaptera_novaeangliae.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-034_Megaptera_novaeangliae.webp",
+      "sha256": "d850be00f97cc502fd3251b6ceb46791b1ca1ecb5d20b231720dd6ecceb029af",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 14320,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-035_Eubalaena_australis.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-035_Eubalaena_australis.webp",
+      "sha256": "09b8671303dd945f3c86c9b4e1eeb2323279bddec3c72074bc175561fa296694",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 13024,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-036_Physeter_macrocephalus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-036_Physeter_macrocephalus.webp",
+      "sha256": "2300cd02825930f694c8defabd58439dec02514cf939209fdd7c8a439ace41f5",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 12902,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-037_Hippocamelus_antisensis.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-037_Hippocamelus_antisensis.webp",
+      "sha256": "8e5da8befc188f88a4575fb41674ae60ca65974ab62c5ffc2d7e5179837fe1e4",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 24304,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-038_Lagidium_sp.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-038_Lagidium_sp.webp",
+      "sha256": "1b56a1d1e912c5a1db1c64bab702675241a88dedf76802357cad4242f723b9fc",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 30652,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-039_Phoenicoparrus_andinus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-039_Phoenicoparrus_andinus.webp",
+      "sha256": "1ab8f5ab577b7c8a4907f976573219e2d491dc460a11265b264bb94cec57958e",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 20702,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-040_Lycalopex_griseus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-040_Lycalopex_griseus.webp",
+      "sha256": "57f89e92c182ea22ad4ad031f2cb84ba4ab033df8c45dd24cef714df2826a715",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 27356,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-048_Hydrochoerus_hydrochaeris.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-048_Hydrochoerus_hydrochaeris.webp",
+      "sha256": "4c27937c6fd45319b8bc1b3511cc8f3461bd1323119a323791bf8427b9295db8",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 29416,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-049_Harpia_harpyja.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-049_Harpia_harpyja.webp",
+      "sha256": "ba1274bd3742761b330678af58d660ebfc0a9a18b3ad53a92437980c1a238958",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 25418,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-050_Pteronura_brasiliensis.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-050_Pteronura_brasiliensis.webp",
+      "sha256": "c7cc007c90984c6375160ecfe0ee670a9e4e82833fc5373e277873ab8251ddc3",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 19694,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-051_Priodontes_maximus.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-051_Priodontes_maximus.webp",
+      "sha256": "a14958d7466c24039f22212de82dee1a7b906963594cef3db59a5e63273ae658",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 24550,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-052_Dolichotis_patagonum.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/fauna/rupestre/FAU-052_Dolichotis_patagonum.webp",
+      "sha256": "6951f9888a5a97ff807ab69838a1b0f4301edca33590dfd5128a236f41d6d4a9",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 25434,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/01_LICKANANTAY_TABLETA_INHALATORIA.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/01_LICKANANTAY_TABLETA_INHALATORIA.webp",
+      "sha256": "618dd83a091b7074a774deac06abbcc35969990f786ce9092bc2d316f748b99d",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 13502,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/02_MAPUCHE_KULTRUN.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/02_MAPUCHE_KULTRUN.webp",
+      "sha256": "4280e794565c91c4052d240314d1a905f36e5dc3113d9bfa28f1c8396c1c8e0e",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 17226,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/05_LICKANANTAY_TUBO_INHALATORIO.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/05_LICKANANTAY_TUBO_INHALATORIO.webp",
+      "sha256": "bafe8a0f1a00bc5fe5a35eae5ecc51d34d21c4df1648b769d1676b1beaf56008",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 7044,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/06_MAPUCHE_REWE.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/06_MAPUCHE_REWE.webp",
+      "sha256": "7427c6bdf51f1e0d2dcaa72e4dd347b6daf9c9cdb62c04ae00793912fea34289",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 6310,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/08_NORDICOS_ASIENTO_MINIATURA.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/08_NORDICOS_ASIENTO_MINIATURA.webp",
+      "sha256": "9909b1cb6538fd540bda1ee0e0bac02be5b8db37b249d7729d4deb7b11ee222a",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 5156,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/09_LICKANANTAY_MORTERO_MINIATURA.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/09_LICKANANTAY_MORTERO_MINIATURA.webp",
+      "sha256": "8b37ffa374729f5d2950644eb445b1c2e41c4b0fb78da7bac0440412128eda7e",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 15598,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/10_MAPUCHE_LLAF_LLAF.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/10_MAPUCHE_LLAF_LLAF.webp",
+      "sha256": "983bbdaa6733e76ef974b9561e4dbff7699765a3f148978b0f11c927289d7bfb",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 18020,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/11_AYMARA_QUWA_HUMO.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/11_AYMARA_QUWA_HUMO.webp",
+      "sha256": "9ca165bc583b86d2255e7df0013f6df93052a713abeb6dc19d3a9ff82e1014d8",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 16170,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/13_LICKANANTAY_CUCHARILLA_ESPATULA.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/13_LICKANANTAY_CUCHARILLA_ESPATULA.webp",
+      "sha256": "6556b99b5251951e2905f5e958bf907e7cc7fb0faa7c65d552982d533c1148ff",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 10780,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/14_MAPUCHE_PANOLETA_CEREMONIAL.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/14_MAPUCHE_PANOLETA_CEREMONIAL.webp",
+      "sha256": "4c2fd6306893607fb88cf9e680880c24fafbe7685ffbe4ee1cc53dbe1aefc1aa",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 15418,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/15_AYMARA_HILO_NEGRO.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/15_AYMARA_HILO_NEGRO.webp",
+      "sha256": "563095ca250672a7951d5710de37fdcae36472643f52d9da4b1110dfd5b35322",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 4326,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/16_NORDICOS_BOLSA_BELENO.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/16_NORDICOS_BOLSA_BELENO.webp",
+      "sha256": "a8c7be0e687fb987e590c0fdcdc9416b3f8d584c84dfecf4d041fbb4410b6527",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 14168,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/17_LICKANANTAY_CONTENEDOR_KIT.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/17_LICKANANTAY_CONTENEDOR_KIT.webp",
+      "sha256": "c552b1c0f2bcb15abc59fdb8d7ebbd83f2e8c0ab45a1709f0f0db370115335b1",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 11262,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/19_AYMARA_BOCA_DEL_MALLKU.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/19_AYMARA_BOCA_DEL_MALLKU.webp",
+      "sha256": "eacacc839524d4015795c0db46748181c499918656b6ba34549747ed32dee57f",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 22124,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/21_LICKANANTAY_ESCOBILLA_LIMPIEZA.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/21_LICKANANTAY_ESCOBILLA_LIMPIEZA.webp",
+      "sha256": "20df1ebfd2440c55a42b2f0cdf3a7f3bb5e22cca34b0d51211d273f8b04069aa",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 8262,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/24_NORDICOS_VARA_VOLVA_KOPINGSVIK.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/24_NORDICOS_VARA_VOLVA_KOPINGSVIK.webp",
+      "sha256": "326ca4bf8aaf579fe7b2dec4d6df23884f00cf4645c984992ccffb2ce8be80ab",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 4562,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/26_MAPUCHE_PIFULLKA.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/26_MAPUCHE_PIFULLKA.webp",
+      "sha256": "fc03b529cdd238f698064dc06f5d3a5aeceab5ededd2023e232b94ac6496a383",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 6968,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/38_MAPUCHE_KENEYKEN.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/38_MAPUCHE_KENEYKEN.webp",
+      "sha256": "7633199145c403de8aa68398cfc345e5bec01b865667c79f649827664ce03681",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 16574,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/40_NORDICOS_RUNAS_CORREGIDAS.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/40_NORDICOS_RUNAS_CORREGIDAS.webp",
+      "sha256": "de70d68328282ea150c382c8aa72f68b5a01266089816549f15741957d05f067",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 17734,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/41_ATACAMA_TREPANACION_CICATRIZADA.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/41_ATACAMA_TREPANACION_CICATRIZADA.webp",
+      "sha256": "369a27dd193d8145c3a44385064921f491319bb87a4ff0798fac4521ddc69495",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 15366,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/42_MAPUCHE_LATUE.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/42_MAPUCHE_LATUE.webp",
+      "sha256": "2d2d46c2b42ea601e92633f40ce9cc37ebc63f6ad504987d9d08adb52249f2e9",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 14784,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/iconos_aprobados/43_AYMARA_VIGILIA_NOCTURNA.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/iconos_aprobados/43_AYMARA_VIGILIA_NOCTURNA.webp",
+      "sha256": "561e155abaecc7c226ff8a4df5b9dd3b406f609c4832a66a47c093ed7b578961",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 19928,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/instrumentos/aymara/04_siku.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/aymara/04_siku.webp",
+      "sha256": "afd9aad5f8662e7b0f3c6de2159eaac2afcd7852b576d727116c23e2d97fe987",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 30266,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/instrumentos/aymara/05_wankara.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/aymara/05_wankara.webp",
+      "sha256": "136de24ebc7f83967f1cd35e54e30ebe1c2cc1ac5656104b2e6611e4b5a576e6",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 46642,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/instrumentos/aymara/06_antara_tiwanaku.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/aymara/06_antara_tiwanaku.webp",
+      "sha256": "5a1e7030aa33e6f933576d6cc5f46f4cf438b72f49c0a9c2f6175703f0df1fc2",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 31044,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/instrumentos/aymara/17_sonaja.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/aymara/17_sonaja.webp",
+      "sha256": "996373b7d8d388a0d6bd0257920c3d057f897e4ae1d2d78911f2ac6ccc228a86",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 28428,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/07_antara_4_ductos.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/lickanantay/07_antara_4_ductos.webp",
+      "sha256": "7be45f542ebe1b506b0f88c8a3961e23149f1aa6a1f9e054e0c39411dfdcca22",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 36008,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/08_trompeta_monoxila.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/lickanantay/08_trompeta_monoxila.webp",
+      "sha256": "b5be6536c64acbd5bdd9384c65c5c81f0520f4e4c9b9d600d5e975a18ff3101c",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 20662,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/09_sonajero.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/lickanantay/09_sonajero.webp",
+      "sha256": "479cd6bdf508302ee343c8708e418716b919d887537e758c04a36d9fe2b7b756",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 30988,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/18_flauta_coyo.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/lickanantay/18_flauta_coyo.webp",
+      "sha256": "2dbadfbe806406629c33d478a067f94b1e2547d45f71a4b2cf5bfcd3bd0c4bda",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 13034,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/instrumentos/lickanantay/19_campana.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/lickanantay/19_campana.webp",
+      "sha256": "3ff26e14f134caa3936c5166b37b040f368675aa82eb91010d9dbecd888aec0b",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 32522,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/instrumentos/mapuche/15_kakel_kultrung.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/mapuche/15_kakel_kultrung.webp",
+      "sha256": "b6ac13e2f44b8babfffbf09825320e476dfa6ee883f57791938127a384c41a45",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 42504,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/10_lira.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/nordicos/10_lira.webp",
+      "sha256": "f4bb215dd4b10e9006f3244d1af85fd659ffa3f17d3b5476490d37cee5f582dd",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 47350,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/11_flauta_hueso.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/nordicos/11_flauta_hueso.webp",
+      "sha256": "3f81addeee80ef03ea314e3b4887405d92cba2a12d893b4c7f6ef85ea51baa14",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 20346,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/12_sonajero_hierro.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/nordicos/12_sonajero_hierro.webp",
+      "sha256": "7e34e4298e7df38d175f6881efd9ab3c7e6dad28be5cb443d14e89fcdce7981e",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 34012,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/20_cuerno_musical.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/nordicos/20_cuerno_musical.webp",
+      "sha256": "fd4562fb1fb2a3dfcced879c9ee8e66c1b8cea3c594a45bc233c54d03e5e9e8b",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 31852,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/instrumentos/nordicos/21_arpa_de_boca.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/instrumentos/nordicos/21_arpa_de_boca.webp",
+      "sha256": "9b9a95b642022155283c8862f08bf951abcb9158f29312ff73c424c2b856e31d",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 22072,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/rituales/01_VINCULAR.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/rituales/01_VINCULAR.webp",
+      "sha256": "52ea146e9b80dd139f4517c0746ead99629d652487b174b4e677b3e09bc32a8e",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 41460,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/rituales/02_RESTITUIR.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/rituales/02_RESTITUIR.webp",
+      "sha256": "06c007fcfd0f0fed3627774e499ed3dcea8b0d43a74df251690e98437f6c6488",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 62688,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/rituales/03_CONSULTAR.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/rituales/03_CONSULTAR.webp",
+      "sha256": "2e105dbd5dec357048459cf5ee9b3d670706cb4d434fbfa44261b0429af77fda",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 47478,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/rituales/04_RENOVAR_ARRAIGO.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/rituales/04_RENOVAR_ARRAIGO.webp",
+      "sha256": "0f3d683a203f7a3cd393bb100f40aa3916c451b7bdd5e6a24d090c80a9ba425c",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 32836,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/rituales/05_ATAR.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/rituales/05_ATAR.webp",
+      "sha256": "7536694f9fbbddf87892f01273c47cdf957059c38bde432a14f6cec724c6c796",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 49702,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/rituales/06_DESPEDIR.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/rituales/06_DESPEDIR.webp",
+      "sha256": "91668acc595b9b329642684480b16d90cb35a6647410bc55b2c1decb1143d6b8",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 33344,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/rituales/07_VIAJAR.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/rituales/07_VIAJAR.webp",
+      "sha256": "b1863fe3494fac65580201c07124e8897b9d4fbf9a2d364f78622742db4d583b",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 25614,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    },
+    {
+      "oldPath": "modules/hiperaustralis-rituales/assets/rituales/08_LAKUTUN_LEGAR.webp",
+      "target": "modules/hiperaustralis-compendios-prototype/assets/rituales/08_LAKUTUN_LEGAR.webp",
+      "sha256": "6d53e57b3ffcf5ec931413a006adf5ed9add02c842a153c1cad94bee447473c8",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 42898,
+      "resolution": "EXACT_HISTORICAL_PATH_VERIFIED"
+    }
+  ],
+  "pending": [
+    {
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/adalid-turiano.png",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "a09f3b40b9414588",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "a09f3b40b9414588",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/pregonero-turiano.png",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "4b9f621a9edd4de5",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "4b9f621a9edd4de5",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/tambor-turiano.png",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "1911d58042f44382",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "1911d58042f44382",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-compendios-prototype/assets/adversarios/turianos/vigia-turiano.png",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "ec547af88c2e43ab",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "ec547af88c2e43ab",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-compendios/assets/turianos/01_Turiano_Cantor_TOKEN_512.png",
+      "uses": [
+        {
+          "family": "journals",
+          "id": "48YG3G7eaXO96CyE",
+          "field": "pages[36].text.content"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-compendios/assets/turianos/02_Turiano_Viajero_TOKEN_512.png",
+      "uses": [
+        {
+          "family": "journals",
+          "id": "48YG3G7eaXO96CyE",
+          "field": "pages[36].text.content"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-compendios/assets/turianos/03_Turiano_Sabio_Pregonero_TOKEN_512.png",
+      "uses": [
+        {
+          "family": "journals",
+          "id": "48YG3G7eaXO96CyE",
+          "field": "pages[36].text.content"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-compendios/assets/turianos/04_Turiano_Guerrero_Lanza_TOKEN_512.png",
+      "uses": [
+        {
+          "family": "journals",
+          "id": "48YG3G7eaXO96CyE",
+          "field": "pages[36].text.content"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/familiares-exoticos/EXO-009_Macaco_de_Pikunmapu.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "UmY99wnFGChXYDo6",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "UmY99wnFGChXYDo6",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "UmY99wnFGChXYDo6",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-045_Macrauchenia_patachonica.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "AkBZAyt3CImiIvdI",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "AkBZAyt3CImiIvdI",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "AkBZAyt3CImiIvdI",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-046_Hippidion_saldiasi.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "i8Pv6mqeJkN6ierv",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "i8Pv6mqeJkN6ierv",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "i8Pv6mqeJkN6ierv",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-047_Notiomastodon_platensis.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "AUi055skDxo3nCYF",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "AUi055skDxo3nCYF",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "AUi055skDxo3nCYF",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-053_Smilodon_populator.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "bP5Yg5wEUGif1rsc",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "bP5Yg5wEUGif1rsc",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "bP5Yg5wEUGif1rsc",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-054_Kelenken_guillermoi.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "uTQE6B8E0PiNUbDG",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "uTQE6B8E0PiNUbDG",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "uTQE6B8E0PiNUbDG",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/HAB-01_Quesintuu_y_Umantuu.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "4XR5qS710r8a7cJR",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "4XR5qS710r8a7cJR",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/HAB-02_Qatiqati.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "xCzi2ZnfvpiktUvY",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "xCzi2ZnfvpiktUvY",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/HAB-04_Katari.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "5JBwsUNnFYacodTJ",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "5JBwsUNnFYacodTJ",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/HAB-05_Trülkewekufü.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "8U4xgO8CCjeNnxur",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "8U4xgO8CCjeNnxur",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/HAB-06_Ngürüfilu.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "SjikI34cg9ZuspEz",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "SjikI34cg9ZuspEz",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/HAB-07_Kawa_Kawa.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "bCAVf76eJBauphje",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "bCAVf76eJBauphje",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/HAB-08_Chélep.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "wzsmN9i46PPX6xbq",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "wzsmN9i46PPX6xbq",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/HAB-09_Milodón_relicto.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "gJy5tCsrAHMJvS8S",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "gJy5tCsrAHMJvS8S",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/HAB-10_Cháskels.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "mXTFN1vg76IQ2qa2",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "mXTFN1vg76IQ2qa2",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/HAB-11_Quien_sopla_el_viento.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "4WEwljZ2VjLUaRdJ",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "4WEwljZ2VjLUaRdJ",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/HAB-12_Shoggot.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "zrRIUDc3sD6aLwR0",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "zrRIUDc3sD6aLwR0",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-01_Quesintuu_y_Umantuu.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "4XR5qS710r8a7cJR",
+          "field": "flags.hiperaustralis-token.tokenSrc"
+        },
+        {
+          "family": "actors",
+          "id": "4XR5qS710r8a7cJR",
+          "field": "prototypeToken.texture.src"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-02_Qatiqati.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "xCzi2ZnfvpiktUvY",
+          "field": "flags.hiperaustralis-token.tokenSrc"
+        },
+        {
+          "family": "actors",
+          "id": "xCzi2ZnfvpiktUvY",
+          "field": "prototypeToken.texture.src"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-04_Katari.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "5JBwsUNnFYacodTJ",
+          "field": "flags.hiperaustralis-token.tokenSrc"
+        },
+        {
+          "family": "actors",
+          "id": "5JBwsUNnFYacodTJ",
+          "field": "prototypeToken.texture.src"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-05_Trülkewekufü.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "8U4xgO8CCjeNnxur",
+          "field": "flags.hiperaustralis-token.tokenSrc"
+        },
+        {
+          "family": "actors",
+          "id": "8U4xgO8CCjeNnxur",
+          "field": "prototypeToken.texture.src"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-06_Ngürüfilu.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "SjikI34cg9ZuspEz",
+          "field": "flags.hiperaustralis-token.tokenSrc"
+        },
+        {
+          "family": "actors",
+          "id": "SjikI34cg9ZuspEz",
+          "field": "prototypeToken.texture.src"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-07_Kawa_Kawa.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "bCAVf76eJBauphje",
+          "field": "flags.hiperaustralis-token.tokenSrc"
+        },
+        {
+          "family": "actors",
+          "id": "bCAVf76eJBauphje",
+          "field": "prototypeToken.texture.src"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-08_Chélep.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "wzsmN9i46PPX6xbq",
+          "field": "flags.hiperaustralis-token.tokenSrc"
+        },
+        {
+          "family": "actors",
+          "id": "wzsmN9i46PPX6xbq",
+          "field": "prototypeToken.texture.src"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-09_Milodón_relicto.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "gJy5tCsrAHMJvS8S",
+          "field": "flags.hiperaustralis-token.tokenSrc"
+        },
+        {
+          "family": "actors",
+          "id": "gJy5tCsrAHMJvS8S",
+          "field": "prototypeToken.texture.src"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-10_Cháskels.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "mXTFN1vg76IQ2qa2",
+          "field": "flags.hiperaustralis-token.tokenSrc"
+        },
+        {
+          "family": "actors",
+          "id": "mXTFN1vg76IQ2qa2",
+          "field": "prototypeToken.texture.src"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-11_Quien_sopla_el_viento.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "4WEwljZ2VjLUaRdJ",
+          "field": "flags.hiperaustralis-token.tokenSrc"
+        },
+        {
+          "family": "actors",
+          "id": "4WEwljZ2VjLUaRdJ",
+          "field": "prototypeToken.texture.src"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-12_Shoggot.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "zrRIUDc3sD6aLwR0",
+          "field": "flags.hiperaustralis-token.tokenSrc"
+        },
+        {
+          "family": "actors",
+          "id": "zrRIUDc3sD6aLwR0",
+          "field": "prototypeToken.texture.src"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/mascotas/MASC-AVE-ENTRENADA_Ave_entrenada.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "01hgbx0UU76CiKsk",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "01hgbx0UU76CiKsk",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "01hgbx0UU76CiKsk",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/mascotas/MASC-CULPEO_Culpeo_amansado.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "ljLPLj4fZKTBhw1r",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "ljLPLj4fZKTBhw1r",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "ljLPLj4fZKTBhw1r",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/mascotas/MASC-NARKI_Narki_companero.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "KNAs3CxA9JtpnXis",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "KNAs3CxA9JtpnXis",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "KNAs3CxA9JtpnXis",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/mascotas/MASC-PERRO-CAZADOR_Perro_cazador_nutrias.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "cFFjV9AudILE6rGV",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "cFFjV9AudILE6rGV",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "cFFjV9AudILE6rGV",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/mascotas/MASC-PERRO-LANUDO_Perro_lanudo_chono.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "yGPS7CQOIwigBvss",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "yGPS7CQOIwigBvss",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "yGPS7CQOIwigBvss",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/mascotas/MASC-PERRO-PESCADOR_Perro_pescador_chono.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "rsP7bEX5B9cTSdHh",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "rsP7bEX5B9cTSdHh",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "rsP7bEX5B9cTSdHh",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/mascotas/animal-ave-mensajera-buscadora.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "7rwEzFZqOD9W8uAz",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "7rwEzFZqOD9W8uAz",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "7rwEzFZqOD9W8uAz",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/mascotas/animal-guina-companera.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "fkq43lUn7QdAdOUn",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "fkq43lUn7QdAdOUn",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "fkq43lUn7QdAdOUn",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/mascotas/animal-loro-cautivo-atacama.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "6sOsXhQeXKtMZTSc",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "6sOsXhQeXKtMZTSc",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "6sOsXhQeXKtMZTSc",
+          "field": "system.props.img"
+        }
+      ]
+    },
+    {
+      "path": "modules/hiperaustralis-rituales/assets/mascotas/animal-perros-viajeros-canoeros.webp",
+      "uses": [
+        {
+          "family": "actors",
+          "id": "M0my63fGNJGZgmGW",
+          "field": "img"
+        },
+        {
+          "family": "actors",
+          "id": "M0my63fGNJGZgmGW",
+          "field": "prototypeToken.texture.src"
+        },
+        {
+          "family": "actors",
+          "id": "M0my63fGNJGZgmGW",
+          "field": "system.props.img"
+        }
+      ]
+    }
+  ],
+  "restrictions": [
+    "Only path transport; no other source field changes",
+    "46 paths unresolved; no installation or substitution",
+    "Approved assets stay in verified local archive lots, not assumed present in GitHub"
+  ]
+}
