@@ -455,7 +455,12 @@ jobs:
               for i,(folder,d) in a.items():
                   assert folder==b[i][0]
                   for k in ('name','type','folder','system','img','flags','ownership','pages','prototypeToken','items','effects'):
-                      assert d.get(k)==b[i][1].get(k),(name,i,k)
+                      before,after=d.get(k),b[i][1].get(k)
+                      # CLI may materialize an absent embedded collection as [].
+                      # Never accept a change to any nonempty effect or embedded Item.
+                      if k in ('effects','items') and before in (None,[]) and after in (None,[]):
+                          continue
+                      assert before==after,(name,i,k,repr(before)[:500],repr(after)[:500])
           for p in (out/'packs').rglob('*'):
               if p.is_file() and (p.name=='LOCK' or p.name.startswith('LOG')): p.unlink()
           report=json.loads((out/'REPORT.json').read_text())
