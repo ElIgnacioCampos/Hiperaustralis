@@ -62,7 +62,8 @@
     "faunaItemIds": 50,
     "newDefenseCandidates": 9,
     "turianoRecords": 6,
-    "relicSourceReadbacks": 17
+    "relicSourceReadbacks": 17,
+    "equipmentSourceReadbacks": 14
   },
   "arms": [
     {
@@ -2392,5 +2393,161 @@
     "Resolve HAB uncoded, Milodón reclassification, RIV-01 active QA5 ID vs historical alias; do not promote graphic numbers to catalog IDs.",
     "After exact binary verification, draft reversible path map and run D2 path/ID checks."
   ],
-  "revision": 2
+  "revision": 2,
+  "equipmentSourceReadbacks": [
+    {
+      "id": "3v9D425QdKOva3XV",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/3v9D425QdKOva3XV.json",
+      "name": "Anzuelo y sedal",
+      "legacyPath": "icons/tools/fishing/hook-simple-bone.webp",
+      "legacySeed": "eq-chin-anzuelo",
+      "culture": "Chinchorro",
+      "canonicalCode": null,
+      "sourceSha": "4eb9ee0e51ca624b40a41273ad2e152f5e016330"
+    },
+    {
+      "id": "E8964qw0yfQskaB6",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/E8964qw0yfQskaB6.json",
+      "name": "Arco y flechas",
+      "legacyPath": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+      "legacySeed": "eq-lick-arco",
+      "culture": "Lickanantay",
+      "canonicalCode": null,
+      "sourceSha": "e405b492e459311b776e6510ffa33ddc65926959"
+    },
+    {
+      "id": "U4ON2BsjM4Y0t5nD",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/U4ON2BsjM4Y0t5nD.json",
+      "name": "Arpón",
+      "legacyPath": "icons/weapons/polearms/spear-simple-stone.webp",
+      "legacySeed": "eq-chin-arpon",
+      "culture": "Chinchorro",
+      "canonicalCode": null,
+      "sourceSha": "cf31179945bed5ff2307eba689fff054e159a75a"
+    },
+    {
+      "id": "kMqPL8yvZQIaZGmY",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/kMqPL8yvZQIaZGmY.json",
+      "name": "Brýni · Piedra de afilar",
+      "legacyPath": "icons/tools/cooking/mill-stone-grey.webp",
+      "legacySeed": "eq-nor-bryni",
+      "culture": "Nórdicos",
+      "canonicalCode": null,
+      "sourceSha": "5c3ac6d4007911200c84a5544c4de48c32d3042c"
+    },
+    {
+      "id": "8a526Vqfx3hsafi3",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/8a526Vqfx3hsafi3.json",
+      "name": "Canasto",
+      "legacyPath": "icons/containers/misc/basket-simple-yellow.webp",
+      "legacySeed": "eq-chin-canasto",
+      "culture": "Chinchorro",
+      "canonicalCode": null,
+      "sourceSha": "cdd0b4f0bc475abc6968fac55a96152a11c49881"
+    },
+    {
+      "id": "em5ML5e9yQyQCH2o",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/em5ML5e9yQyQCH2o.json",
+      "name": "Canasto",
+      "legacyPath": "icons/containers/misc/basket-handle-woven-yellow.webp",
+      "legacySeed": "eq-lick-canasto",
+      "culture": "Lickanantay",
+      "canonicalCode": null,
+      "sourceSha": "2b6889569a1339f09a596368870f1dc673e928dc"
+    },
+    {
+      "id": "Y0QM677Ln8rfixg6",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/Y0QM677Ln8rfixg6.json",
+      "name": "Ch'uspa · Bolsa pequeña",
+      "legacyPath": "icons/containers/bags/pouch-leather-simple-tan.webp",
+      "legacySeed": "eq-aym-chuspa",
+      "culture": "Aymara",
+      "canonicalCode": null,
+      "sourceSha": "acbe3a873de6417d418fc96b3fd2d5baa4ccd657"
+    },
+    {
+      "id": "9u2kj6J5jcbZiVP6",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/9u2kj6J5jcbZiVP6.json",
+      "name": "Challa · Olla",
+      "legacyPath": "icons/containers/kitchenware/vase-clay-pot-decorated-red.webp",
+      "legacySeed": "eq-map-challa",
+      "culture": "Mapuche",
+      "canonicalCode": null,
+      "sourceSha": "28358b42ae2a535e6801a53a68048f1219e2b504"
+    },
+    {
+      "id": "CBIQgRyTGVMq6RCP",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/CBIQgRyTGVMq6RCP.json",
+      "name": "Chinguillo · Bolsa-red",
+      "legacyPath": "icons/tools/fishing/net-tan.webp",
+      "legacySeed": "eq-chin-chinguillo",
+      "culture": "Chinchorro",
+      "canonicalCode": null,
+      "sourceSha": "3ca4d5799952449fe3d3133346f6f1386447a2e3"
+    },
+    {
+      "id": "Cal0I8l96tdRm1pR",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/Cal0I8l96tdRm1pR.json",
+      "name": "Chope · Desconchador",
+      "legacyPath": "icons/tools/hand/wrench-steel-grey.webp",
+      "legacySeed": "eq-chin-chope",
+      "culture": "Chinchorro",
+      "canonicalCode": null,
+      "sourceSha": "5c5077e5164bac8996fb1d8842955e161285a06a"
+    },
+    {
+      "id": "xzRV37AjDu0WVuzh",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/xzRV37AjDu0WVuzh.json",
+      "name": "Ckarisur · Peine",
+      "legacyPath": "icons/tools/hand/brush-paint-brown-tan.webp",
+      "legacySeed": "eq-lick-ckarisur",
+      "culture": "Lickanantay",
+      "canonicalCode": null,
+      "sourceSha": "9ab6857bc7705b442ad98e7cc10566f309d76ac8"
+    },
+    {
+      "id": "5mmFqPLbv3kcJcoj",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/5mmFqPLbv3kcJcoj.json",
+      "name": "Cuchara de madera",
+      "legacyPath": "icons/tools/cooking/soup-ladle.webp",
+      "legacySeed": "eq-lick-cuchara",
+      "culture": "Lickanantay",
+      "canonicalCode": null,
+      "sourceSha": "a3d84423b2a91bfc4d6a57ceb048e269c7a63075"
+    },
+    {
+      "id": "lvwNyb0lGRwb1Oxu",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/lvwNyb0lGRwb1Oxu.json",
+      "name": "Cuchillo lítico",
+      "legacyPath": "icons/weapons/daggers/dagger-simple-stone-black.webp",
+      "legacySeed": "eq-chin-cuchillo",
+      "culture": "Chinchorro",
+      "canonicalCode": null,
+      "sourceSha": "587955fafee8a9779bd4055b31ed8f25ba91c199"
+    },
+    {
+      "id": "XhykrqOWzvB8abe9",
+      "family": "Equipo común",
+      "source": "source-pending/ci137-historicos-99/equipo-comun/XhykrqOWzvB8abe9.json",
+      "name": "Eldjárn · Yesquero",
+      "legacyPath": "icons/tools/laboratory/burner-steel-grey.webp",
+      "legacySeed": "eq-nor-eldjarn",
+      "culture": "Nórdicos",
+      "canonicalCode": null,
+      "sourceSha": "537dcd779e421cd94c7f7a71382ae5def91b3fc6"
+    }
+  ]
 }
