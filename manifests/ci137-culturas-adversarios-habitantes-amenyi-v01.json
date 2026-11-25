@@ -851,7 +851,7 @@
           "status": "NO_COMPLETE_PRECOLONIAL_LOT_CONFIRMED"
         }
       ],
-      "companionAuthority": "CORE_CHECKPOINT_RUBRICA_ICONOS_COMPANEROS_2026-11-19_v04.md distinguishes 5 domestic, 8 exotic, 6 familiar companions, 19 total; 18 historical actor records recovered; do not count livestock as companions or assume their Peso 1.",
+      "companionAuthority": "19 Nov checkpoint remains classification source (5 domestic, 8 exotic, 6 familiar); 24 Nov explicit author decision supersedes Peso 1/1/2: all companions Peso 1 provisionally. Livestock excluded from this rule.",
       "checks": [
         "Current mounted 0.4.100 archive filename inventory: no distinct livestock/corral token paths; culture images A1_Sajama_Llamas and L1_Licancabur_Llamas are not isolated tokens.",
         "14 Nov Actor export: no matching separate domestic livestock Actor names; prehistoric Hippidion and Tapir not domestics.",
@@ -1047,8 +1047,9 @@
           "code": "EXO-002",
           "category": "Familiares",
           "legacyWeight": 3,
-          "companionWeight": 2,
-          "assetStatus": "EXACT_SHARED_BYTES"
+          "companionWeight": 1,
+          "assetStatus": "EXACT_SHARED_BYTES",
+          "previousCompanionWeight": 2
         },
         {
           "id": "tVHCdcwMv1jz2pEm",
@@ -1056,8 +1057,9 @@
           "code": "EXO-008",
           "category": "Familiares",
           "legacyWeight": 3,
-          "companionWeight": 2,
-          "assetStatus": "EXACT_SHARED_BYTES"
+          "companionWeight": 1,
+          "assetStatus": "EXACT_SHARED_BYTES",
+          "previousCompanionWeight": 2
         },
         {
           "id": "jJ9N4oUCmmD4PBGt",
@@ -1065,8 +1067,9 @@
           "code": "EXO-005",
           "category": "Familiares",
           "legacyWeight": 2,
-          "companionWeight": 2,
-          "assetStatus": "EXACT_SHARED_BYTES"
+          "companionWeight": 1,
+          "assetStatus": "EXACT_SHARED_BYTES",
+          "previousCompanionWeight": 2
         },
         {
           "id": "NtOoatkkgH7sxAjY",
@@ -1074,8 +1077,9 @@
           "code": "EXO-006",
           "category": "Familiares",
           "legacyWeight": 3,
-          "companionWeight": 2,
-          "assetStatus": "EXACT_SHARED_BYTES"
+          "companionWeight": 1,
+          "assetStatus": "EXACT_SHARED_BYTES",
+          "previousCompanionWeight": 2
         },
         {
           "id": "UmY99wnFGChXYDo6",
@@ -1084,7 +1088,8 @@
           "category": "Exóticos",
           "legacyWeight": 1,
           "companionWeight": 1,
-          "assetStatus": "IDENTITY_CROSSWALK_PENDING"
+          "assetStatus": "IDENTITY_CROSSWALK_PENDING",
+          "previousCompanionWeight": 1
         },
         {
           "id": "V4hkO2v24ouHE7Wd",
@@ -1092,8 +1097,9 @@
           "code": "EXO-003",
           "category": "Familiares",
           "legacyWeight": 1,
-          "companionWeight": 2,
-          "assetStatus": "EXACT_SHARED_BYTES"
+          "companionWeight": 1,
+          "assetStatus": "EXACT_SHARED_BYTES",
+          "previousCompanionWeight": 2
         },
         {
           "id": "7d6GezL23i8PCPUB",
@@ -1102,7 +1108,8 @@
           "category": "Exóticos",
           "legacyWeight": 1,
           "companionWeight": 1,
-          "assetStatus": "EXACT_SHARED_BYTES"
+          "assetStatus": "EXACT_SHARED_BYTES",
+          "previousCompanionWeight": 1
         },
         {
           "id": "gvOeY1GIYPFfEFHk",
@@ -1110,8 +1117,9 @@
           "code": "EXO-004",
           "category": "Familiares",
           "legacyWeight": 2,
-          "companionWeight": 2,
-          "assetStatus": "EXACT_SHARED_BYTES"
+          "companionWeight": 1,
+          "assetStatus": "EXACT_SHARED_BYTES",
+          "previousCompanionWeight": 2
         },
         {
           "id": "01hgbx0UU76CiKsk",
@@ -1120,7 +1128,8 @@
           "category": "Exóticos",
           "legacyWeight": 1,
           "companionWeight": 1,
-          "assetStatus": "CANDIDATE_NOT_APPROVED"
+          "assetStatus": "CANDIDATE_NOT_APPROVED",
+          "previousCompanionWeight": 1
         },
         {
           "id": "7rwEzFZqOD9W8uAz",
@@ -1129,7 +1138,8 @@
           "category": "Exóticos",
           "legacyWeight": 1,
           "companionWeight": 1,
-          "assetStatus": "DIFFERENT_EXPORT_VERIFY_VISUAL_ROLE"
+          "assetStatus": "DIFFERENT_EXPORT_VERIFY_VISUAL_ROLE",
+          "previousCompanionWeight": 1
         },
         {
           "id": "ljLPLj4fZKTBhw1r",
@@ -1138,7 +1148,8 @@
           "category": "Exóticos",
           "legacyWeight": 2,
           "companionWeight": 1,
-          "assetStatus": "DIFFERENT_EXPORT_VERIFY_VISUAL_ROLE"
+          "assetStatus": "DIFFERENT_EXPORT_VERIFY_VISUAL_ROLE",
+          "previousCompanionWeight": 1
         },
         {
           "id": "fkq43lUn7QdAdOUn",
@@ -1147,7 +1158,8 @@
           "category": "Exóticos",
           "legacyWeight": 1,
           "companionWeight": 1,
-          "assetStatus": "DIFFERENT_EXPORT_VERIFY_VISUAL_ROLE"
+          "assetStatus": "DIFFERENT_EXPORT_VERIFY_VISUAL_ROLE",
+          "previousCompanionWeight": 1
         },
         {
           "id": "6sOsXhQeXKtMZTSc",
@@ -1156,7 +1168,8 @@
           "category": "Exóticos",
           "legacyWeight": 1,
           "companionWeight": 1,
-          "assetStatus": "DIFFERENT_EXPORT_VERIFY_VISUAL_ROLE"
+          "assetStatus": "DIFFERENT_EXPORT_VERIFY_VISUAL_ROLE",
+          "previousCompanionWeight": 1
         },
         {
           "id": "KNAs3CxA9JtpnXis",
@@ -1165,7 +1178,8 @@
           "category": "Domésticos",
           "legacyWeight": 1,
           "companionWeight": 1,
-          "assetStatus": "APPROVED_LATER_VERSION_MISSING"
+          "assetStatus": "APPROVED_LATER_VERSION_MISSING",
+          "previousCompanionWeight": 1
         },
         {
           "id": "cFFjV9AudILE6rGV",
@@ -1174,7 +1188,8 @@
           "category": "Domésticos",
           "legacyWeight": 1,
           "companionWeight": 1,
-          "assetStatus": "APPROVED_LATER_VERSION_MISSING"
+          "assetStatus": "APPROVED_LATER_VERSION_MISSING",
+          "previousCompanionWeight": 1
         },
         {
           "id": "yGPS7CQOIwigBvss",
@@ -1183,7 +1198,8 @@
           "category": "Domésticos",
           "legacyWeight": 1,
           "companionWeight": 1,
-          "assetStatus": "APPROVED_LATER_VERSION_MISSING"
+          "assetStatus": "APPROVED_LATER_VERSION_MISSING",
+          "previousCompanionWeight": 1
         },
         {
           "id": "rsP7bEX5B9cTSdHh",
@@ -1192,7 +1208,8 @@
           "category": "Domésticos",
           "legacyWeight": 1,
           "companionWeight": 1,
-          "assetStatus": "APPROVED_LATER_VERSION_MISSING"
+          "assetStatus": "APPROVED_LATER_VERSION_MISSING",
+          "previousCompanionWeight": 1
         },
         {
           "id": "M0my63fGNJGZgmGW",
@@ -1201,7 +1218,8 @@
           "category": "Domésticos",
           "legacyWeight": 1,
           "companionWeight": 1,
-          "assetStatus": "APPROVED_LATER_VERSION_MISSING"
+          "assetStatus": "APPROVED_LATER_VERSION_MISSING",
+          "previousCompanionWeight": 1
         }
       ],
       "domeykodactylus": {
@@ -1210,9 +1228,63 @@
         "alternateSHA256": "f6c53e5bcf8c068a94cf5ad7e99913fafeadc84d72b8c28cd2ace6414251eea9",
         "alternatePath": "meliaz-bridge/assets/familiares-exoticos/EXO-001.webp",
         "actorId": null,
-        "status": "NOT_EXACT_APPROVED_SOURCE"
+        "status": "NOT_EXACT_APPROVED_SOURCE",
+        "companionWeight": 1
       },
-      "policy": "18 existing Actors retain IDs and props in current D2; compare role-specific Peso, do not overwrite encounter weights blindly. Exact 7 binaries already backed up; no duplicate ZIP. No promotion of candidate or superseded version."
+      "policy": "All companions have Peso 1 provisionally. Preserve historical weights as provenance, IDs, functions, assets and categories. Do not alter unrelated encounter or livestock actors. No image promotion or live deployment.",
+      "weightDecision": {
+        "date": "2026-11-24",
+        "authority": "Explicit user decision: all pets Peso 1 for now, including exotic pets.",
+        "status": "AUTHOR_APPROVED_PROVISIONAL",
+        "scope": "All 19 companions: domestic, exotic and familiar. Not all fauna or livestock; not unrelated encounter actors.",
+        "previousRule": "1/1/2",
+        "currentRule": {
+          "domesticos": 1,
+          "exoticos": 1,
+          "familiares": 1
+        },
+        "existingActors": 18,
+        "existingActorsNeedingWeightChange": [
+          {
+            "id": "6pTPJHbEJLeODFBv",
+            "name": "Anchimallén",
+            "from": 3,
+            "to": 1
+          },
+          {
+            "id": "tVHCdcwMv1jz2pEm",
+            "name": "Imbunche",
+            "from": 3,
+            "to": 1
+          },
+          {
+            "id": "jJ9N4oUCmmD4PBGt",
+            "name": "Kobold",
+            "from": 2,
+            "to": 1
+          },
+          {
+            "id": "NtOoatkkgH7sxAjY",
+            "name": "Kolo Kolo",
+            "from": 3,
+            "to": 1
+          },
+          {
+            "id": "gvOeY1GIYPFfEFHk",
+            "name": "Troll pétreo",
+            "from": 2,
+            "to": 1
+          },
+          {
+            "id": "ljLPLj4fZKTBhw1r",
+            "name": "Culpeo amansado",
+            "from": 2,
+            "to": 1
+          }
+        ],
+        "missingActor": "EXO-001 Domeykodactylus",
+        "runtime": "PENDING_ISOLATED_IMPLEMENTATION_AND_QA"
+      }
     }
   },
   "latestD2": {
