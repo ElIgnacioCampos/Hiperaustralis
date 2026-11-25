@@ -1,0 +1,143 @@
+{
+  "schema": "ci137-classification-and-amenyi-staging-v01",
+  "date": "2026-11-24",
+  "status": "AUTHOR_CLASSIFICATION_RECORDED__NARRATIVE_STAGING_NOT_RUNTIME",
+  "classification": {
+    "culturas": "Cultural dossiers, retain Journal and page IDs; organize by culture without duplicate art or docs.",
+    "adversarios": "Opposition roles; Turianos under Adversarios/Turianos. Proposed Rivales move under Adversarios/Rivales; preserve actor IDs.",
+    "habitantes": "Singular beings without defined cultural or racial affiliation, or communities/individuals not a threat by default. Nonhostile status does not erase culture, agency or situational opposition.",
+    "amenyi": "Habitantes/Amenyi",
+    "presencias": "Separate category; PRES-012 protected",
+    "bestiario": "Fauna with Mascotas and Familiares Exóticos; Milodón reclassification pending path QA."
+  },
+  "existingD2": {
+    "actors": 68,
+    "journals": 2,
+    "pages": 58,
+    "sourceRun": 45488238376,
+    "changesApplied": false
+  },
+  "cultures": {
+    "journalId": "48YG3G7eaXO96CyE",
+    "pages": 37,
+    "keepTurianoCulturalReference": true,
+    "keepKonaBankInBridge": true
+  },
+  "turianos": {
+    "path": "Adversarios/Turianos",
+    "ordinaryIds": [
+      "a09f3b40b9414588",
+      "4b9f621a9edd4de5",
+      "1911d58042f44382",
+      "ec547af88c2e43ab"
+    ],
+    "specialPending": [
+      "939dad09976d48cd",
+      "1dd86a387a28476e"
+    ]
+  },
+  "amenyi": {
+    "source": "ADV_LA_COPA_AMENYI_MANUSCRITO_v2_12_GESTOS_Y_MATE_FUMADO_2026-11-23_CANDIDATO.docx, pp.13–16; ADV_AMENYI_ACTA_NOMENCLATURA_Y_CONTINUIDAD_v01.md; CHECKPOINT_ADV_AMENYI_v27.md; CHECKPOINT_FEDE_FACU_v28.md",
+    "name": "Amenyi",
+    "epeche": "legend only",
+    "actorFolder": "Habitantes/Amenyi",
+    "records": [
+      {
+        "name": "Agus Delobarco",
+        "phrase": "Alta data",
+        "description": "Orgullosa y escrupulosa. Conoce el camino a Kemkemtrew y las marcas de suministros.",
+        "team": "Ribereños",
+        "teamSource": "manuscript and older token assignment; verify if not explicit",
+        "visualStatus": "v22 one red stripe candidate, not explicitly ratified",
+        "actorId": null,
+        "peso": null,
+        "disposition": "NARRATIVE_SOURCE_STAGED_NO_ACTOR_CREATED"
+      },
+      {
+        "name": "Fede Rolinka",
+        "phrase": "¿Tenés faso?",
+        "description": "Bocón e irónico, fanático del rok. Reconoce el sonido de Kavi y cuándo está distraído.",
+        "team": "Bokitas",
+        "teamSource": "manuscript and older token assignment; verify if not explicit",
+        "visualStatus": "v03 older approved; v25/v28 candidate",
+        "actorId": null,
+        "peso": null,
+        "disposition": "NARRATIVE_SOURCE_STAGED_NO_ACTOR_CREATED"
+      },
+      {
+        "name": "Mili Altayanta",
+        "phrase": "Alto bardo",
+        "description": "Impetuosa y práctica. Conoce trayectos cortos y salidas estrechas; lleva mensajes.",
+        "team": "Bokitas",
+        "teamSource": "manuscript and older token assignment; verify if not explicit",
+        "visualStatus": "v16 base accepted for work, textured finish not automatically final",
+        "actorId": null,
+        "peso": null,
+        "disposition": "NARRATIVE_SOURCE_STAGED_NO_ACTOR_CREATED"
+      },
+      {
+        "name": "Lali Cantafino",
+        "phrase": "Alta fiesta",
+        "description": "Cantora que conoce cantos y memoria de ambas comunidades. Puede reunirlas y sostener una distracción sonora.",
+        "team": "Ribereños",
+        "teamSource": "manuscript and older token assignment; verify if not explicit",
+        "visualStatus": "individual approved; v27 plate scale approved",
+        "actorId": null,
+        "peso": null,
+        "disposition": "NARRATIVE_SOURCE_STAGED_NO_ACTOR_CREATED"
+      },
+      {
+        "name": "Lolo el Nono",
+        "phrase": "Posta, posta",
+        "description": "Custodia la leyenda de Tata Amenyi y recuerda el robo de la Copa.",
+        "team": "Bokitas",
+        "teamSource": "manuscript and older token assignment; verify if not explicit",
+        "visualStatus": "v27 approved; verify exact source",
+        "actorId": null,
+        "peso": null,
+        "disposition": "NARRATIVE_SOURCE_STAGED_NO_ACTOR_CREATED"
+      },
+      {
+        "name": "Tano Fuegolento",
+        "phrase": "Alto guiso",
+        "description": "Cocinero que conoce las necesidades de provisiones del valle y prepara el viaje.",
+        "team": null,
+        "teamSource": "manuscript and older token assignment; verify if not explicit",
+        "visualStatus": "v03 approved original; textured variant work only",
+        "actorId": null,
+        "peso": null,
+        "disposition": "NARRATIVE_SOURCE_STAGED_NO_ACTOR_CREATED"
+      },
+      {
+        "name": "Facu Pieveloz",
+        "phrase": "Dale, pibe",
+        "description": "Fanfarrón en la cancha. Conoce rendijas y ayuda a transportar la Copa si confía en los Kona.",
+        "team": "Bokitas",
+        "teamSource": "manuscript and older token assignment; verify if not explicit",
+        "visualStatus": "v24 approved; v26/v28 candidate without stars",
+        "actorId": null,
+        "peso": null,
+        "disposition": "NARRATIVE_SOURCE_STAGED_NO_ACTOR_CREATED"
+      }
+    ],
+    "sourcePackagesRecovered": [
+      {
+        "file": "ADV_PERSONAJES_APROBADOS_AMENYI_20261122_v03_CORREGIDO.zip",
+        "sha256": "c9d51e1fd96427556e6cc4fb7a1f48e990253df66e1bdea7b4576e008e09ced4",
+        "crc": "PASS"
+      },
+      {
+        "file": "ADV_AMENYI_CIERRE_TECNICO_FEDE_FACU_v28.zip",
+        "sha256": "eff57b895b4b60d962e9f530b80547536911b2a1535791ce86c8c701c47356d8",
+        "crc": "PASS",
+        "status": "CANDIDATES_NOT_RATIFIED"
+      }
+    ],
+    "blocked": [
+      "Exact approved individual visuals and 256 derivatives must be recovered/checked separately; no automatic v28 promotion.",
+      "No final Amenyi Actor payload or IDs recovered; build dedicated neutral Actor representation after checking CSB template, no default Peso 1.",
+      "Do not put Kavi, Kari and Cucas in Amenyi; separate ADV opposition files, existing source weights 4/5/3."
+    ]
+  },
+  "noLiveChanges": true
+}
