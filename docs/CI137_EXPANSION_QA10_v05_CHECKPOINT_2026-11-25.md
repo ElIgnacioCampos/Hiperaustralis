@@ -1,0 +1,11 @@
+# CI137 — expansión acumulativa v05 · 25-11-2026
+## Resultado
+Recuperado v04 exacto y archivo CI137_ASSETS_04100_CANDIDATOS_BRIDGE_01.zip junto con manifiesto CI137_ASSETS_RECUPERACION_04100_20261124.json. Diez imágenes Mascotas del respaldo 0.4.100 existían bajo meliaz-bridge/assets/mascotas, no hiperaustralis-rituales. Coincidencia literal de ruta relativa, registro de procedencia, SHA-256, tamaño y WebP decodificado verificados. Reubicadas bajo assets/mascotas del prototipo en candidato de fuentes. Las diez fichas usan la misma imagen para retrato y token según fuente; tres campos de ruta cambiados por Actor: img, system.props.img, prototypeToken.texture.src. IDs y seedId MASC-01..10 conservados, reversión exacta comprobada de las 251 fuentes. No se generó/recomprimió arte. No se acredita que sean los últimos rediseños aprobados: recuperación histórica LAB.
+## Geometría
+Los diez Actors históricos traen width=height=1, scaleX=scaleY=1 y modo tokenizer-ready. Se preservan exactamente esos valores; no implican escala final correcta para escena. El despliegue automático, tamaño relativo y seguimiento continúan pendientes Bridge.
+## Estado
+180 Items, 69 Actors, 2 Journals/58 páginas; 180 Items, 52 Actors y 2 Journals sin rutas gráficas ausentes; 278 assets referenciados disponibles. Rutas sin binario 30 -> 20 (14 Habitantes, 5 Fauna, 1 Macaco EXO-009). Además 8 retratos HAB históricos y 10 mascotas históricas sin certificación de último arte. Macaco identificado en export y registro, no encontrado el binario exacto. Conservar sus datos sin sustitución.
+## Archivo
+Biblioteca /Hiperaustralis/CI137/Candidato_unificado_v02/CI137_FUENTES_QA10_EXPANSION_v05_NO_INSTALAR.zip, file_id file_000000006cd4820e89cc1dcc469f1d77, 5443276 bytes, SHA256 9fd8cc179464882e7c0053db633274e907df4ffe4725bec8c0090cf7c810d534. CRC PASS, contiene MANIFEST.json con rutas pendientes e historial. Mantener dos lotes de dependencias originales. No compilación LevelDB/D3, no cambios Forge, mundos, Bridge o Maestro.
+## Siguiente
+Priorizar los tokens HAB y resolver imágenes FAU reserva y EXO-009; no convertir retratos en tokens ni inventar versiones. Preparar un build ampliado únicamente con alcance y ausencias explícitos.
