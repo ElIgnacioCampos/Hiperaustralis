@@ -993,6 +993,22 @@
             "checks": "Actual materialized ZIP: CRC pass, exactly two entries, both hashes and byte counts match record, WebP decoded 256x256 RGBA, alpha bbox match, visual inspection both poses.",
             "rule": "One logical code and one ficha, variant suffix a/b. No additional Actor ID or duplicate document.",
             "runtime": "Pending integration; no runtime path assigned; no change to other fauna."
+          },
+          "companionFunction": {
+            "status": "AUTHOR_APPROVED",
+            "authority": "2026-11-24: user adds «Tb tiene ataque aéreo. No daña pero distrae» to aerial reconnaissance proposal.",
+            "functions": [
+              {
+                "name": "Reconocimiento aéreo",
+                "text": "Explora desde el aire obstáculos, pasos y accidentes del terreno cercanos."
+              },
+              {
+                "name": "Ataque aéreo",
+                "text": "Se abalanza desde el aire sobre un adversario para distraerlo, sin causarle daño."
+              }
+            ],
+            "limits": "Situated narrative utility; no automatic bonus, damage, Aguante loss, Herida or additional subsystem; no changes to encounter Fauna.",
+            "companionWeight": 1
           }
         },
         "chilecebus": {
@@ -1336,7 +1352,7 @@
           "runtime": "Pending integration; no runtime path assigned; no change to other fauna."
         },
         "textRecovery": {
-          "status": "HISTORICAL_ENCOUNTER_TEXT_RECOVERED__COMPANION_FUNCTION_NOT_DEFINED",
+          "status": "HISTORICAL_ENCOUNTER_TEXT_RECOVERED__COMPANION_FUNCTION_APPROVED",
           "archive": "KIT_TRASPASO_HIPERAUSTRALIS_ANIMALITOS_KONA_v02_REENTREGA_20261029(1).zip",
           "members": [
             "FUENTES_DE_TRASPASO/FICHAS/FICHAS_EXOTICOS_MELIAZ_v02.md",
@@ -1347,9 +1363,40 @@
           "sceneLiteral": "Una sombra cruza una ladera o un desfiladero. El animal sobrevuela un paso estrecho y obliga al grupo a decidir entre ocultarse, esperar, avanzar bajo cobertura o cambiar la ruta.",
           "historicalEncounterWeight": 3,
           "scope": "Historical encounter playtest only; not current companion role; preserve text as provenance, no global Fauna change.",
-          "companionFunction": null,
+          "companionFunction": {
+            "status": "AUTHOR_APPROVED",
+            "authority": "2026-11-24: user adds «Tb tiene ataque aéreo. No daña pero distrae» to aerial reconnaissance proposal.",
+            "functions": [
+              {
+                "name": "Reconocimiento aéreo",
+                "text": "Explora desde el aire obstáculos, pasos y accidentes del terreno cercanos."
+              },
+              {
+                "name": "Ataque aéreo",
+                "text": "Se abalanza desde el aire sobre un adversario para distraerlo, sin causarle daño."
+              }
+            ],
+            "limits": "Situated narrative utility; no automatic bonus, damage, Aguante loss, Herida or additional subsystem; no changes to encounter Fauna.",
+            "companionWeight": 1
+          },
           "actorId": null,
-          "gate": "No historical Actor ID or companion utility found. New Actor only after companion function decision or explicit neutral entry approval; no fabricated ability."
+          "gate": "Function closed. Recover or allocate one collision-checked Actor ID and validate CSB payload; approved a/b variants share one logical entry. No deploy yet."
+        },
+        "companionFunction": {
+          "status": "AUTHOR_APPROVED",
+          "authority": "2026-11-24: user adds «Tb tiene ataque aéreo. No daña pero distrae» to aerial reconnaissance proposal.",
+          "functions": [
+            {
+              "name": "Reconocimiento aéreo",
+              "text": "Explora desde el aire obstáculos, pasos y accidentes del terreno cercanos."
+            },
+            {
+              "name": "Ataque aéreo",
+              "text": "Se abalanza desde el aire sobre un adversario para distraerlo, sin causarle daño."
+            }
+          ],
+          "limits": "Situated narrative utility; no automatic bonus, damage, Aguante loss, Herida or additional subsystem; no changes to encounter Fauna.",
+          "companionWeight": 1
         }
       },
       "policy": "Peso 1 exclusively as provisional mechanical convention for Compañeros. No inference about body mass or natural strength. Preserve all other Fauna and encounter weights, historical IDs, functions and graphics; no global taxon-based weight migration.",
