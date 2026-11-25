@@ -1,0 +1,34 @@
+name: CI137 portable Foundry CLI 3.0.5
+on:
+  push:
+    branches: [work/ci137-acumulativo-qa7-20261125]
+    paths: ['.github/workflows/ci137-cli-portable.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  portable:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.16.0'
+      - name: Install pinned official CLI
+        run: |
+          mkdir cli
+          cd cli
+          npm install --no-audit --no-fund --save-exact @foundryvtt/foundryvtt-cli@3.0.5
+          ./node_modules/.bin/fvtt --version
+          npm ls --all --json > dependency-tree.json
+      - name: Preserve executable bits and symlinks
+        run: |
+          tar -czf foundry-cli-3.0.5-node22-linux-x64.tar.gz -C cli .
+          sha256sum foundry-cli-3.0.5-node22-linux-x64.tar.gz > SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CI137-FOUNDRY-CLI-305-PORTABLE
+          path: |
+            foundry-cli-3.0.5-node22-linux-x64.tar.gz
+            SHA256SUMS
+          if-no-files-found: error
+          retention-days: 7
