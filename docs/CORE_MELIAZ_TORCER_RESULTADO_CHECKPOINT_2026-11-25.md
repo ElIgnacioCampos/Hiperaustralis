@@ -1,15 +1,15 @@
 # CORE / MELIAZ — Torcer el Resultado
 
-Estado: cierre terminológico confirmado por el autor; implementación mecánica pendiente de cotejo.
+Estado: terminología y efecto confirmados por el autor; implementación pendiente.
 
 ## Decisiones
-- Torcer sustituye a Exaltar Azar en el contexto de Resolver Intercambio.
+- Torcer sustituye a Exaltar Azar. Corrección autoral expresa posterior: «Torcer te da un exito raso o impacto». En Prueba de Azar ordinaria, Éxito raso; en Resolver Intercambio, Impacto. No Crítico ni Quiebre.
 - Expresión desarrollada: Torcer el Resultado. Rótulo de tarjeta: TORCER.
 - Exaltar antes del dado; Torcer después del dado. No introducir otra tirada.
-- No extender el renombramiento automáticamente a otros usos de Prueba de Azar, Exaltar Newén, Forzar Newén o Negar el sino.
+- El efecto se distingue por contexto de resolución, sin modificar Exaltar Newén, Forzar Newén o Negar el sino.
 
 ## Pendientes
-- Recuperar la última decisión sobre coste, resultados elegibles, transformación exacta, exclusiones y relación con Exaltar/Manifestar antes de modificar la lógica.
+- Propuesta de implementación: 1 Newén, después del dado y antes de consecuencias, ofrecer sólo si mejora un resultado natural 1 o 2 a 3; conservar 3 y 4; máximo una vez; exclusión con Exaltar/Manifestar aún requiere cotejo. El efecto de éxito raso/Impacto sí está confirmado; no presentar las demás condiciones como nuevas decisiones autorales.
 - Conservar el resultado natural y el modificado en la tarjeta y verificar persistencia, autoridad y consumo único durante D3.
 - Integrar en la entrega conjunta Bridge + CI137, sin publicación intermedia.
 
