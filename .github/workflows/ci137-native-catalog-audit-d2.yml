@@ -1,0 +1,106 @@
+name: CI137 - recovered native catalog audit and archive D2 (NO INSTALL)
+on:
+  push:
+    branches: [work/ci137-expansion-familias-20261124]
+    paths: ['.github/workflows/ci137-native-catalog-audit-d2.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify entire recovered source and prepare historical Nature archive
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, hashlib, os, re, collections
+          from pathlib import Path
+          root=Path('source-pending/ci137-native-release-recovered')
+          target=Path(os.environ['RUNNER_TEMP'])/'native-audit'
+          target.mkdir()
+          prov=json.loads((root/'PROVENANCE.json').read_text())
+          rows=prov['records']
+          assert len(rows)==145
+          counts=collections.Counter()
+          docs={}
+          nature={}
+          folders={}
+          refs=collections.defaultdict(list)
+          def paths(v):
+              if isinstance(v,dict):
+                  for x in v.values(): yield from paths(x)
+              elif isinstance(v,list):
+                  for x in v: yield from paths(x)
+              elif isinstance(v,str):
+                  yield from re.findall(r'(?:modules|systems)/[^\s"<>]+?\.(?:webp|png|jpg|jpeg|svg|js)',v,re.I)
+          for r in rows:
+              p=Path(r['path'])
+              raw=p.read_bytes()
+              assert hashlib.sha256(raw).hexdigest()==r['stagedSHA256'],p
+              d=json.loads(raw)
+              assert d['_id']==r['id'],p
+              assert p.as_posix() not in docs
+              docs[p.as_posix()]=d
+              for ref in sorted(set(paths(d))): refs[ref].append({'id':d['_id'],'source':str(p)})
+              if 'hiperaustralis-naturaleza-items' in p.parts:
+                  is_folder=p.name=='_Folder.json'
+                  dest=target/'items'/p.relative_to(root/'native/hiperaustralis-naturaleza-items')
+                  dest.parent.mkdir(parents=True,exist_ok=True)
+                  dest.write_bytes(raw)
+                  group=dest.parent.name.split('_')[0]
+                  counts[group+(':folder' if is_folder else ':item')]+=1
+                  (folders if is_folder else nature)[d['_id']]=d
+              elif 'hiperaustralis-journals' in p.parts: counts['journal']+=1
+              elif 'territorio' in p.parts: counts['territoryFolder']+=1
+              elif 'turianos-v06' in p.parts: counts['turiano']+=1
+          assert len(nature)==98 and len(folders)==3
+          assert counts['Fauna:item']==50 and counts['Flora:item']==40 and counts['Biomas:item']==8
+          assert counts['journal']==6 and counts['territoryFolder']==32 and counts['turiano']==6
+          assert all(d.get('folder') in folders for d in nature.values())
+          assert not nature.keys() & folders.keys()
+          out={'status':'SOURCE_AUDIT_PASS_ARCHIVE_ONLY','records':len(docs),'counts':dict(counts),'natureIds':sorted(nature),'folderIds':sorted(folders),'references':dict(refs),'restrictions':['Not active catalogue selection','No modification to Fauna properties','No journal publication or PRES-012 exposure','No module ZIP, no install','Asset references inventoried, not verified present']}
+          (target/'source-report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps({'records':len(docs),'counts':dict(counts),'uniqueReferences':len(refs)},ensure_ascii=False))
+          PY
+      - name: Roundtrip all 98 historical Nature items in separate archive pack
+        run: |
+          set -euo pipefail
+          npm install --no-audit --no-fund --no-save --no-package-lock @foundryvtt/foundryvtt-cli@3.0.5
+          T="$RUNNER_TEMP/native-audit"
+          mkdir -p "$T/packs" "$T/roundtrip"
+          ./node_modules/.bin/fvtt package pack -n ci137-nature-archive --inputDirectory "$T/items" --outputDirectory "$T/packs" --recursive
+          ./node_modules/.bin/fvtt package unpack -n ci137-nature-archive --inputDirectory "$T/packs" --outputDirectory "$T/roundtrip" --folders
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          t=Path(os.environ['RUNNER_TEMP'])/'native-audit'
+          def read(root):
+              out={}
+              for p in root.rglob('*.json'):
+                  d=json.loads(p.read_text())
+                  assert d['_id'] not in out
+                  out[d['_id']]=d
+              return out
+          a,b=read(t/'items'),read(t/'roundtrip')
+          assert set(a)==set(b) and len(a)==101
+          for i,d in a.items():
+              for k in ('name','type','folder','system','img','flags'):
+                  assert d.get(k)==b[i].get(k),(i,k)
+          out={'status':'PASS_D2_HISTORICAL_ARCHIVE_ONLY','items':98,'folders':3,'identitiesPreserved':True,'noPropertyChanges':True,'installable':False}
+          (t/'roundtrip-report.json').write_text(json.dumps(out,indent=2)+'\n')
+          print(out)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CI137-NATIVE-CATALOG-AUDIT-REPORT-ONLY
+          path: |
+            ${{ runner.temp }}/native-audit/source-report.json
+            ${{ runner.temp }}/native-audit/roundtrip-report.json
+          if-no-files-found: error
+          retention-days: 30
