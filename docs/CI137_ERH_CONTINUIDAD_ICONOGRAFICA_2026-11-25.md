@@ -1,0 +1,10 @@
+# CI137 — continuidad iconográfica ERH · 25-11-2026
+## Rectificación del alcance
+Autor: «Los instrumentos originales tuvieron una actualizacion ERH de diseño icono, revisa». La diferencia gráfica entre el original y ERH no es por sí sola una objeción: se trata del rediseño de iconos de Items existentes. No reabrir investigación arqueológica ni confundir cambio visual con identidad nueva. Conservar ID, nombre, descripción, procedencia, plantilla y propiedades. No generar imágenes.
+## Recuperación
+- Conversación 09-11: se declaró consolidación 21/21 (6 sustituciones ERH aprobadas y 15 imágenes previas normalizadas), paquete 0.4.91. Conversación 11-11: se declaró integración posterior de 20 existentes y 7 nuevos ERH. Son registros de trabajo recuperados, no prueba binaria de la entrega final.
+- docs/AUDITORIA_INSTRUMENTOS_ERH_2026-11-13.md y manifests/instrumentos-erh-assets.json: 28 derivados WebP 256 RGBA archivados, lotes 01–05 y extras; no sumar respaldos duplicados. Catálogo descriptivo v04 separado del transporte gráfico. 
+- QA9 ya enlaza 21 IDs originales con recursos ERH; D2 PASS 45662926999. Los 11 cruces últimos siguen siendo enlaces de laboratorio, no aprobación visual individual inventada. Retirar la diferencia morfológica genérica como criterio autónomo de bloqueo; verificar contra el icono final de la actualización original, no contra el icono que se quería sustituir.
+- No se localizó el ZIP exacto 0.4.91/0.4.103 ni el manifiesto final de la actualización posterior. La recuperación 04100 disponible documenta otras familias; el mapa de rutas candidato v02 sólo certifica los seis ERH ya reconciliados. No afirmar paridad final 21/21 con la versión anterior.
+## Pendientes
+Recuperar binarios finales y su correspondencia original; integrar los que falten sin IDs nuevos para instrumentos existentes. Tratar las siete posibles altas como bloque separado con fuente exacta. D3 y compendio acumulativo. No modificar el Maestro ni Forge; no generar ZIP intermedio por esta rectificación.
