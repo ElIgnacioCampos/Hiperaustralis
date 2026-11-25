@@ -186,7 +186,7 @@
         "name": "Milodón relicto",
         "territory": "Patagonia austral",
         "editorialCode": "HAB-008",
-        "path": "Bestiario",
+        "path": "Bestiario/Fauna/Prehistórica",
         "reason": "Prior author reclassification to Fauna; preserve historic code and ID",
         "keepProps": true
       },
@@ -252,5 +252,207 @@
       "Do not create placeholder actors.",
       "Existing actor props, code, image and token unchanged; Peso audit separate."
     ]
+  },
+  "bestiario": {
+    "status": "AUTHOR_HIERARCHY__D2_PENDING",
+    "records": [
+      {
+        "id": "B3G24jKZL5s6qYgh",
+        "name": "Águila harpía",
+        "sourceCode": "FAU-049",
+        "folder": "Bestiario/Fauna",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-049_Harpia_harpyja.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-049_Harpia_harpyja.webp",
+        "relatedItemId": "yDxgobX0LZ1B8pff"
+      },
+      {
+        "id": "IPWS6morNxCeMbNQ",
+        "name": "Armadillo gigante",
+        "sourceCode": "FAU-051",
+        "folder": "Bestiario/Fauna",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-051_Priodontes_maximus.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-051_Priodontes_maximus.webp",
+        "relatedItemId": "Uo01VqsJ2QxRunBJ"
+      },
+      {
+        "id": "v4Q4MmCWsVrfvFcS",
+        "name": "Cachalote",
+        "sourceCode": "FAU-036",
+        "folder": "Bestiario/Fauna",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-036_Physeter_macrocephalus.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-036_Physeter_macrocephalus.webp",
+        "relatedItemId": "ty5vxa5YdStMLiDb"
+      },
+      {
+        "id": "62cueeDAEFpwYyji",
+        "name": "Foca de Weddell",
+        "sourceCode": "FAU-031",
+        "folder": "Bestiario/Fauna",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-031_Leptonychotes_weddellii.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-031_Leptonychotes_weddellii.webp",
+        "relatedItemId": "DqpmHU2SZaEQ0IQe"
+      },
+      {
+        "id": "AUi055skDxo3nCYF",
+        "name": "Gonfoterio · Notiomastodon",
+        "sourceCode": "FAU-047",
+        "folder": "Bestiario/Fauna/Prehistórica",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-047_Notiomastodon_platensis.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-047_Notiomastodon_platensis.webp",
+        "relatedItemId": "exWEvQTUZT0S0hY4"
+      },
+      {
+        "id": "rF1LxbYuVYwMmfNe",
+        "name": "Guanaco",
+        "sourceCode": "FAU-017",
+        "folder": "Bestiario/Fauna",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-017_Lama_guanicoe.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-017_Lama_guanicoe.webp",
+        "relatedItemId": "xBWLbeiR1eoLoRNB"
+      },
+      {
+        "id": "alPU9feZe0k3VldY",
+        "name": "Güiña",
+        "sourceCode": "FAU-010",
+        "folder": "Bestiario/Fauna",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-010_Leopardus_guigna.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-010_Leopardus_guigna.webp",
+        "relatedItemId": "fHQnZGjmSOlu4qa8"
+      },
+      {
+        "id": "i8Pv6mqeJkN6ierv",
+        "name": "Hippidion · caballo sudamericano",
+        "sourceCode": "FAU-046",
+        "folder": "Bestiario/Fauna/Prehistórica",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-046_Hippidion_saldiasi.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-046_Hippidion_saldiasi.webp",
+        "relatedItemId": "wS747C9NmBt7XFrg"
+      },
+      {
+        "id": "wpaa4vskznxs19HL",
+        "name": "Huillín",
+        "sourceCode": "FAU-022",
+        "folder": "Bestiario/Fauna",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-022_Lontra_provocax.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-022_Lontra_provocax.webp",
+        "relatedItemId": "xYZgtFASxeIFpToR"
+      },
+      {
+        "id": "uTQE6B8E0PiNUbDG",
+        "name": "Kelenken · ave del terror",
+        "sourceCode": "FAU-054",
+        "folder": "Bestiario/Fauna/Prehistórica",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-054_Kelenken_guillermoi.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-054_Kelenken_guillermoi.webp",
+        "relatedItemId": "6dbWEBG1uRnGI28V"
+      },
+      {
+        "id": "PbWfXgVH7R2xS4pQ",
+        "name": "Lobo marino común",
+        "sourceCode": "FAU-025",
+        "folder": "Bestiario/Fauna",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-025_Otaria_byronia.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-025_Otaria_byronia.webp",
+        "relatedItemId": "wSNmNqNKH8EHbp44"
+      },
+      {
+        "id": "AkBZAyt3CImiIvdI",
+        "name": "Macrauchenia · macrauquenia",
+        "sourceCode": "FAU-045",
+        "folder": "Bestiario/Fauna/Prehistórica",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-045_Macrauchenia_patachonica.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-045_Macrauchenia_patachonica.webp",
+        "relatedItemId": "1ZG2udTbA0CmXejm"
+      },
+      {
+        "id": "gJy5tCsrAHMJvS8S",
+        "name": "Milodón relicto",
+        "sourceCode": "HAB-008",
+        "folder": "Bestiario/Fauna/Prehistórica",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/habitantes/HAB-09_Milodón_relicto.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/habitantes/tokens/HAB-09_Milodón_relicto.webp",
+        "relatedItemId": null
+      },
+      {
+        "id": "2iOWVO3YfUAu70HP",
+        "name": "Nutria gigante",
+        "sourceCode": "FAU-050",
+        "folder": "Bestiario/Fauna",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-050_Pteronura_brasiliensis.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-050_Pteronura_brasiliensis.webp",
+        "relatedItemId": "NpLnnFUGIb4QtU67"
+      },
+      {
+        "id": "I9kEYPzEdlHmegol",
+        "name": "Oso andino · Jucumari",
+        "sourceCode": "FAU-005",
+        "folder": "Bestiario/Fauna",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-005_Tremarctos_ornatus.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-005_Tremarctos_ornatus.webp",
+        "relatedItemId": "ht3BGgYN4Qpv6Jxh"
+      },
+      {
+        "id": "S271H47hRuZ1J4h1",
+        "name": "Otorongo · Jaguar",
+        "sourceCode": "FAU-008",
+        "folder": "Bestiario/Fauna",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-008_Panthera_onca.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-008_Panthera_onca.webp",
+        "relatedItemId": "jeBv1DPoIY1lX2zq"
+      },
+      {
+        "id": "a2UMZpS1rH0QLcEP",
+        "name": "Puma",
+        "sourceCode": "FAU-013",
+        "folder": "Bestiario/Fauna",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-013_Puma_concolor.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-013_Puma_concolor.webp",
+        "relatedItemId": "DnbzqhzAdXN1r3kW"
+      },
+      {
+        "id": "56qrc20XJSx0kOMH",
+        "name": "Rana gigante del Titicaca",
+        "sourceCode": "FAU-002",
+        "folder": "Bestiario/Fauna",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-002_Telmatobius_culeus.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-002_Telmatobius_culeus.webp",
+        "relatedItemId": "ghbWSzAV3A8PUmOj"
+      },
+      {
+        "id": "bP5Yg5wEUGif1rsc",
+        "name": "Smilodon · felino de colmillos de sable",
+        "sourceCode": "FAU-053",
+        "folder": "Bestiario/Fauna/Prehistórica",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-053_Smilodon_populator.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-053_Smilodon_populator.webp",
+        "relatedItemId": "t8fwdSxU650cW8DG"
+      },
+      {
+        "id": "OP7xlczxpAOCIfX1",
+        "name": "Tapir · Sachavaca",
+        "sourceCode": "FAU-007",
+        "folder": "Bestiario/Fauna",
+        "legacyImg": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-007_Tapirus_terrestris.webp",
+        "legacyToken": "modules/hiperaustralis-rituales/assets/fauna/rupestre/FAU-007_Tapirus_terrestris.webp",
+        "relatedItemId": "zfH73rgloB8L6pSM"
+      }
+    ],
+    "folders": [
+      "Bestiario/Fauna",
+      "Bestiario/Fauna/Prehistórica",
+      "Bestiario/Mascotas",
+      "Bestiario/Familiares Exóticos"
+    ],
+    "counts": {
+      "fauna": 14,
+      "prehistorica": 6
+    },
+    "sharedAssetPolicy": {
+      "canonicalDocuments": "One source document per persistent ID/type; use UUID references for secondary navigation; Actor and Item of same taxon may coexist with distinct functions.",
+      "graphics": "Reuse the identical approved WebP across Actor portrait/token, Items and multiple folders when visual role and approved identity match; never duplicate files merely by folder. Confirm source hash before merging; distinct documentary image, portrait, token and map remain distinct when needed.",
+      "js": "One implementation per shared behavior; reference/import the same JS, not per-folder copies. JSON source reused where the same document is referenced.",
+      "pathStrategy": "Canonical module-relative asset URI; do not rely on filesystem symlinks in Forge; rewire all img, prototypeToken, flags, HTML and JS references through reversible mapping before retiring old path.",
+      "noLiveChanges": true
+    }
   }
 }
