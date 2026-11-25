@@ -721,11 +721,19 @@
               "master": "HIPERAUSTRALIS_ALPACA_SELECCION_v02.png"
             },
             {
-              "name": "Perro doméstico de Tiwanaku",
-              "status": "PENDING_FINAL_VALIDATION"
+              "name": "Perro del Tiwanaku",
+              "status": "HISTORICAL_APPROVAL_AND_WEBP256_REPORTED__EXACT_BINARY_NOT_RECOVERED",
+              "designMassKg": 14,
+              "master": "HIPERAUSTRALIS_PERRO_TIWANAKU_MAESTRO_v01.png",
+              "archiveLead": "HIPERAUSTRALIS_LOTE_AYMARA_TIWANAKU_CONSOLIDADO_v03.zip",
+              "approvalEvidence": "User accepted name and 14kg 2026-11-12; subsequent assistant record 2026-11-13 00:21 UTC reports approval and normalization, later record 01:37 confirms v03 lead; not a fresh visual verification.",
+              "foundryActorId": null,
+              "peso": null
             }
           ],
-          "archiveLead": "HIPERAUSTRALIS_CAMELIDOS_FOUNDRY_256_WEBP.zip"
+          "archiveLead": "HIPERAUSTRALIS_CAMELIDOS_FOUNDRY_256_WEBP.zip",
+          "consolidatedArchiveLead": "HIPERAUSTRALIS_LOTE_AYMARA_TIWANAKU_CONSOLIDADO_v03.zip",
+          "companionWildlifeNote": "Huallata also reported in v03, wild species, not domestic"
         },
         {
           "name": "Nórdico",
@@ -750,7 +758,18 @@
         "14 Nov Actor export: no matching separate domestic livestock Actor names; prehistoric Hippidion and Tapir not domestics.",
         "Library title/content and Drive filename searches did not recover exact camelid archive. Historical conversation is evidence of work, not binary verification."
       ],
-      "next": "Recover exact approved original archives and metadata; deduplicate by approved asset hash, retain shared references across Culturas/Territorios/Bestiario; do not invent missing animals or actor statistics."
+      "next": "Recover exact approved original archives and metadata; deduplicate by approved asset hash, retain shared references across Culturas/Territorios/Bestiario; do not invent missing animals or actor statistics.",
+      "dogRecovery": {
+        "date": "2026-11-24",
+        "status": "DOCUMENTARY_CLOSURE__BINARY_RECOVERY_PENDING",
+        "checks": [
+          "Exact filename searches in conversation/library returned unrelated results",
+          "Drive TIWANAKU/CAMELIDOS search no matches",
+          "No matching filenames in current /mnt/data"
+        ],
+        "noRegeneration": true,
+        "doNotSetMechanicalPesoFromKg": true
+      }
     }
   },
   "latestD2": {
