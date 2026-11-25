@@ -1,0 +1,598 @@
+{
+  "status": "JOURNAL_INVENTORY_CURRENT_CUT__NO_PUBLICATION",
+  "cut": "2026-11-24",
+  "source": "source-pending/ci137-native-release-recovered/PROVENANCE.json",
+  "sourceBlob": "dddee7162915c8fb8a999fced93992b8be57f87e",
+  "counts": {
+    "journals": 6,
+    "pages": 97,
+    "overlapHAB": 8
+  },
+  "freshnessPolicy": {
+    "atEveryFamilyClosure": "Recover latest exact ACTUAL master, latest checkpoint, approved deltas and actual graphical sources; distinguish supersession from alternatives and provisional decisions.",
+    "beforeFinalBuild": "Recheck changes since every family cut and block unresolved conflicts from runtime; retain historical sources.",
+    "never": "Do not promote new canon, update Master, resurrect deprecated rules, expose GM material, or overwrite a closed approved asset."
+  },
+  "recentDeltas": [
+    {
+      "source": "CORE_MELIAZ_KONA_CENTRICO_INICIATIVA_OPCIONAL_2026-11-24_v03.md",
+      "status": "PLAYTEST_CONFIRMED__MASTER_RECONCILIATION_PENDING",
+      "note": "Kona-centric resolution and result naming differ from older master; do not silently apply to Actors."
+    },
+    {
+      "source": "INV_ED_CHECKPOINT_MITROZ_ASCENDIENTES_Y_CORPUS_PENDIENTE_2026-11-24_v01.md",
+      "status": "PARTIAL_AUTHOR_APPROVAL",
+      "note": "Mitroz identity approved; do not invent Peso, art, or new page; corpus suspended."
+    },
+    {
+      "source": "ACTA_COTEJO_EDITORIAL_Y_CONSERVACION_PRESENCIAS_20261121.md",
+      "status": "PRES_012_GM_ONLY",
+      "note": "All Presence descriptions await text publication approval."
+    },
+    {
+      "source": "CORE_MATRIZ_UNICA_VIGENCIA_MELIAZ_2026-11-21_v03.md",
+      "status": "AUTHORITY_CROSSWALK",
+      "note": "Protect HAB identities and Flora title; use newer explicit updates only when recovered."
+    }
+  ],
+  "records": [
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-journals/Auspicios___Hiperaustralis_ozu3vFfbERrwF2ri.json",
+      "originalSHA256": "7b6508757e4425b7a64bbebc05d64c22b3bbbf70a206d2e8a4beb4e8bf0999a5",
+      "stagedSHA256": "b1c751fbfacd25002fb44a388e15c57f2d7ba3ecf120c93623882cdbc4041c59",
+      "id": "ozu3vFfbERrwF2ri",
+      "name": "Auspicios — Hiperaustralis",
+      "type": null,
+      "status": "BASELINE_ALREADY_IN_QA5__LATEST_CREATION_DELTA_PENDING",
+      "latest": "CORE — Veteranos y creación alternativa; Auspicios, Ascendientes y Gracias. Do not overwrite existing QA5 journal before checking current approved roster.",
+      "pages": [
+        {
+          "id": "gNFS5iaygBYCL0ON",
+          "name": "Mortales",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "jVE0IbUBy8yJNHHp",
+          "name": "Ngüru",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "rHZ6ekwA7V0plYNo",
+          "name": "Arümko",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "fZ34ucBjA1dvPVka",
+          "name": "Choyke",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "L6NykB5sutir5CoI",
+          "name": "Filu",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "T6zJNPGnkzm5eO4f",
+          "name": "Thor",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "PhuFZualidlpiTwg",
+          "name": "Trempülkawe",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "0VZ70QLeQRnEgpra",
+          "name": "Descendientes",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "QPa2zqOH0EtWJ0Gz",
+          "name": "Tunupa",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "toZq1KrCch74POF6",
+          "name": "Cherufe",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "jN1JGPyEJSaTz8xf",
+          "name": "Reginn",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "bHYr8RA6MBbJ44fT",
+          "name": "Shumpall",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "hjbZBSHZnfkBJTG4",
+          "name": "Kaikai Vilu",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "lpWrzaPxEmtGk0Tn",
+          "name": "Jörmungandr",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "LmqMgGz450yKbvO4",
+          "name": "Wayra Tata",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "GcWRC3uQm5dYAIKM",
+          "name": "Piwichen",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "DjS4esZ8nSHYDgpR",
+          "name": "Norðri",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "Klyg9YPZpLxjfcO0",
+          "name": "Trentren Vilu",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "8NhK7csr31NOX0M2",
+          "name": "Mallku",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "aexFWjz5bflZgZX3",
+          "name": "Fenrir",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "NQVNGaCrSSBLHWjb",
+          "name": "Mama Qocha",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        }
+      ]
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-journals/Culturas___Hiperaustralis_48YG3G7eaXO96CyE.json",
+      "originalSHA256": "82d94c96794e50b768e94383726f46181b5f09016262ea727e4b7b22ec89f6c7",
+      "stagedSHA256": "295505911b2ae49bfb670cf4ee08d0478d06002df016bab730c31e88b7bb47a3",
+      "id": "48YG3G7eaXO96CyE",
+      "name": "Culturas — Hiperaustralis",
+      "type": null,
+      "status": "D2_CANDIDATE__CULTURAL_ROSTER_UPDATE_PENDING",
+      "latest": "9 historical cultures + Turianos; Yagán absent; do not mark every culture playable or infer latest roster.",
+      "pages": [
+        {
+          "id": "dAVlXFXkgA0nZEO8",
+          "name": "Mapuche",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "HOT1TRymWxqSSrz3",
+          "name": "Bosque de Nahuelbuta",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "mMz53gKHi49RByVu",
+          "name": "Ruka",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "2zwZKin1Jae8rPiW",
+          "name": "Hilado",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "UlXOXnegOLkhBvSA",
+          "name": "Aymara",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "sJpsbG36OeoCFnyB",
+          "name": "Altura y llamas",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "6YKt8IhXV4qUeMxG",
+          "name": "Tejedora",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "SaZIRczAwOrjdf95",
+          "name": "Totorales del Titicaca",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "Rh9Ip4WROIiXUc9P",
+          "name": "Nórdicos",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "y5OdZ9QS5RTOILZb",
+          "name": "Casa nórdica",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "O2RUrotQWO9ptvlP",
+          "name": "Nave",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "t9RMJH35iRyd8klc",
+          "name": "Piedra rúnica",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "D80RyIP4DV7uC1BE",
+          "name": "Chinchorro",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "jG3Tx5Y6UvGwPeDn",
+          "name": "Mar y agua dulce",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "iar9uVspmsxVUd33",
+          "name": "Los muertos",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "fiY2zCE64W5JoTCq",
+          "name": "Cuerpo preparado",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "QViNr1U7V1OUYtv5",
+          "name": "Lickanantay",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "gFa25zeTYDmxlX8q",
+          "name": "Desierto y movilidad",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "exbOEekalvXqBtBU",
+          "name": "Huellas en el desierto",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "J9vcwB4CqTHalVVy",
+          "name": "Tulor",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "QgS3CUFQEGUByZYh",
+          "name": "Selk’nam",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "79TclqV8VDq67581",
+          "name": "Tierra del Fuego",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "SZHcAmZk7HRJepGp",
+          "name": "Junto al agua",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "xQEeZiLMtoPMsf61",
+          "name": "Rapa Nui / Polinesia",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "1zohfX5BrDWkuhNO",
+          "name": "Caza",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "O7xGJu9ScbZVRjXX",
+          "name": "Isla",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "MUiX0Viq3G0FPEC1",
+          "name": "Rano Raraku",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "VLV3kojOxQuBBKLt",
+          "name": "Una mirada desde 1775",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "pxCkuNRKKYnNzqQC",
+          "name": "Aónikenk",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "c2FcXuygj11DehYQ",
+          "name": "Guanaco y estepa",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "SIrV63LW9CK5Mky9",
+          "name": "Wáki y el puma",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "8Nmv6HFIkNhxm4Ga",
+          "name": "Toldería de Kankel",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "UrAXighBXGD9lLM6",
+          "name": "Kawésqar",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "KmZO0IdrAF62HpzF",
+          "name": "Maritorio",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "Iq3D9AG6TpxNcXZg",
+          "name": "Navegar",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "5cd9ioeRApMMKuaN",
+          "name": "Canoa",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "ME6dfcxG53a8Odja",
+          "name": "Turianos",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        }
+      ]
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-journals/Hiperaustralis___Bestiario_sobrenatural_p1Ditj5HvsgNiTrd.json",
+      "originalSHA256": "94ca0c71b90a6f20f93ddb70537d85428ef75f24547241bcf5e3ed1f5a7c65b1",
+      "stagedSHA256": "3560e9528def836a3b269164362194252bc79ba44d8d0657fd62425e601ada12",
+      "id": "p1Ditj5HvsgNiTrd",
+      "name": "Hiperaustralis · Bestiario sobrenatural",
+      "type": null,
+      "status": "HISTORICAL_OVERLAPPING_ARCHIVE",
+      "latest": "8 HAB pages overlap with broader Habitantes archive; preserve page IDs without duplicating current public entry.",
+      "pages": [
+        {
+          "id": "zWWk2zjDjbGXGyCQ",
+          "name": "00 · Índice",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "dqJlaUV7wE432QSe",
+          "name": "HAB-001 · Quesintuu y Umantuu",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "gbvMwsrEf0bV6h2z",
+          "name": "HAB-002 · Qatiqati",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "raatgaNsJwtB88HG",
+          "name": "HAB-003 · Katari",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "7cZ7huVtdCOC68O8",
+          "name": "HAB-004 · Trülkewekufü",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "dHVNPrbgdY5VB1TP",
+          "name": "HAB-005 · Ngürüfilu",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "HRCn9bg8DB5jHPbX",
+          "name": "HAB-006 · Kawa Kawa",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "w1DYxAh9oi0pb9RF",
+          "name": "HAB-007 · Chélep",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "dqPsw5FM04olMM2O",
+          "name": "HAB-008 · Milodón relicto",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        }
+      ]
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-journals/Hiperaustralis___Habitantes_extraordinarios___13_entradas_7KBAMCE3Q3X83H39.json",
+      "originalSHA256": "bb852103ce2925668fab2aff07af6ac8f925d0975b23aec2ee2ac2f28f8695d1",
+      "stagedSHA256": "fcb5250ca790902ef01fc31bcd82461dce0cce01447b3f83fb6b29cb6d7d7660",
+      "id": "7KBAMCE3Q3X83H39",
+      "name": "Hiperaustralis · Habitantes extraordinarios — 13 entradas",
+      "type": null,
+      "status": "EDITORIAL_CANDIDATE_NOT_PUBLISHED",
+      "latest": "13 historical identities; Milodón now Fauna, polar reserves, latest HAB/PRES editorial checkpoint; no duplicate Actor or automatic page publication.",
+      "pages": [
+        {
+          "id": "pVlptlWvVQz9R5m4",
+          "name": "Índice",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "EjqZyOxyXn7jagMR",
+          "name": "Quesintuu y Umantuu",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "HYxb9sZnByPa8Pj9",
+          "name": "Qatiqati",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "REDwX8xcjoH6zN58",
+          "name": "Mekalla",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "skbLCyHKO2AZkEau",
+          "name": "Katari",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "dxY7zFqmt0b3SVDX",
+          "name": "Trülkewekufü",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "SlXBfUbno4yH9JvZ",
+          "name": "Ngürüfilu",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "BUXx10nB6Gqiv9Cb",
+          "name": "Kawa Kawa",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "L6eiYu5oMWQpwUJx",
+          "name": "Chélep",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "C10LuhDZLerhReqh",
+          "name": "Milodón relicto",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "J5ELyZxK7s5WzhpS",
+          "name": "Cháskels",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "TcVYGgtF5US7dJgH",
+          "name": "Quien sopla el viento",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "SLeJjul6YhZonI8f",
+          "name": "Shoggot",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "947AX61PeP7axM4y",
+          "name": "Constructores Estrellados",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        }
+      ]
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-journals/Hiperaustralis___Presencias_wPxQqMg7Hb9c2fmw.json",
+      "originalSHA256": "49308607decad0068aa0f9b6a06cec368303b9eb9015152335329de95fdd274f",
+      "stagedSHA256": "1e66e3a4f16356a78ced8c65f4d52fc60578d7d6cf7a376f66a35a81f7a4f217",
+      "id": "wPxQqMg7Hb9c2fmw",
+      "name": "Hiperaustralis · Presencias",
+      "type": null,
+      "status": "GM_ARCHIVE_ONLY__PUBLICATION_GATED",
+      "latest": "21 Nov acta: 12 identities, texts not approved, PRES-012 explicitly GM only. Mitroz new approved identity, not a new page until text and inclusion decided.",
+      "pages": [
+        {
+          "id": "jj9az1PTEwyBznlF",
+          "name": "Índice",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "QGoPmiKqwVBrW5Ph",
+          "name": "Quta Jaqi",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "k77Hp559idOvBpsJ",
+          "name": "Chuqilla",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "hJyGDOWrk6dJbVfX",
+          "name": "Ngen Mawiza",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "BcDjqkrNfN6PoaVo",
+          "name": "Ngen Ko",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "PeJTsJlWl3shgCKO",
+          "name": "Shumpall",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "B7HLPgjLszezwNZ4",
+          "name": "Trengtreng Filu",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "cX2sFdM7n2e6fnWS",
+          "name": "Ngen Pewenentu",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "sISE0PzetZzote3O",
+          "name": "Ngen Wingkul",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "gahJavJ0c8VMYBKf",
+          "name": "Ngen Rüpü",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "8UjnA23HD79ENGaN",
+          "name": "Máip",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "xMcZdBXqlkATwjHh",
+          "name": "Ayayema",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "uYpDg4cHbBgUSYkm",
+          "name": "Guardián de la puerta",
+          "status": "GM_ONLY_NO_PLAYER_EXPORT"
+        }
+      ]
+    },
+    {
+      "path": "source-pending/ci137-native-release-recovered/native/hiperaustralis-journals/Naturaleza___Fauna__Flora_y_Funga_TZunJ7Ih1rLlKY5i.json",
+      "originalSHA256": "af0416829f1ec811e5b40443e79cc5c609f312357b7b53586ae961a07eec5d5d",
+      "stagedSHA256": "0945462ea2891ada70629ad25ce52c4977d732839261eb5099df87d2d2844df0",
+      "id": "TZunJ7Ih1rLlKY5i",
+      "name": "Naturaleza — Fauna, Flora y Funga",
+      "type": null,
+      "status": "HISTORICAL_ARCHIVE__TERRITORIAL_DELTA_PENDING",
+      "latest": "98 nature records crosswalk and nine CORE territories; Flora title and Funga editorial distinction pending explicit approval; not reintroduce FAU-006 in active catalogue.",
+      "pages": [
+        {
+          "id": "sqfNZd6cOa2XWboq",
+          "name": "Fauna",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "5wuUAoa6fvfKdc2Z",
+          "name": "Flora y Funga",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        },
+        {
+          "id": "Q647HY7HYz1rHIm6",
+          "name": "Biomas",
+          "status": "PRESERVE_HISTORICAL__NO_PUBLICATION_INFERRED"
+        }
+      ]
+    }
+  ],
+  "releaseGate": "Only QA5 Auspicios and already D2-tested Culturas remain in candidate metadata; all other native journals are archived until current textual and privacy review. No public duplicate pages."
+}
