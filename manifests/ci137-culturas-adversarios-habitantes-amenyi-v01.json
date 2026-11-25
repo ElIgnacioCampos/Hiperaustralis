@@ -942,7 +942,9 @@
           "path": "05_WEBP256_FOUNDRY/EXOTICOS/EXO-001_Domeykodactylus.webp",
           "sha256": "5c9d46b6be440aba847733f28738ffa8ef6a291c889e0cc4543ebbf703b44226",
           "bytes": 16820,
-          "actorId": null
+          "actorId": null,
+          "displayName": "Volador",
+          "historicalName": "Domeykodactylus"
         },
         "chilecebus": {
           "code": "EXO-009",
@@ -1229,7 +1231,11 @@
         "alternatePath": "meliaz-bridge/assets/familiares-exoticos/EXO-001.webp",
         "actorId": null,
         "status": "NOT_EXACT_APPROVED_SOURCE",
-        "companionWeight": 1
+        "companionWeight": 1,
+        "displayName": "Volador",
+        "historicalName": "Domeykodactylus",
+        "namingAuthority": "Explicit user decision 2026-11-24: «Volador le vamos a poner»",
+        "namingStatus": "APPROVED"
       },
       "policy": "Peso 1 exclusively as provisional mechanical convention for Compañeros. No inference about body mass or natural strength. Preserve all other Fauna and encounter weights, historical IDs, functions and graphics; no global taxon-based weight migration.",
       "weightDecision": {
