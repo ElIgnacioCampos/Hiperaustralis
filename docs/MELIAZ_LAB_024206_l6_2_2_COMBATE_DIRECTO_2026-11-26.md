@@ -1,0 +1,9 @@
+# LAB.6.2.2 — Combate directo
+
+Autor confirma LAB.6.2.1: iconos de Gracia funcionan. Solicita inicio en un clic desde +Create Combat nativo o Combate LVDM. Base exacta SHA256 6872fe331832944925df69d27b9270c123de8578af9e8cf1d9f4e9f53c17e8e8.
+
+Decisión de implementación: ambos accesos usan la rutina de combate existente sin confirmación de inicio. Interceptar sólo acción Create Combat del tracker renderizado (handler V14 _onCombatCreate, claves de acción compatibles), no todo createCombat documental. El acceso nativo es sólo inicio, no cierre; el LVDM conserva confirmación de cierre y limpieza de Manifestaciones. Control de autoridad GM, exclusión Kawín, acciones pendientes, escena y alta completa de Kona por UUID antes de iniciar. Si alta parcial, reintentar reutiliza encuentro. Mostrar marcador expandido en GM tras inicio. No alta automática de PNJ. No modificar reglas, Descanso, Kawín ni arte. 
+
+QA: ocho scripts Node, 69 PASS simulados (65 regresión adaptada al inicio sin confirmación, cuatro nuevas: captura nativa y doble clic, start-only, alta parcial/reintento, GM y Kawín). ZIP CRC PASS, 86 miembros; cambian bridge.js, kawin.js, round-marker.js y module.json; QA_LAB6_2_2.json añadido; todos los assets idénticos. Candidato 6.212.700 bytes SHA256 a0ef34c3597ea55f99171f60d18c10e52d77f49d5343ee546b8fd1a5d760220f, Biblioteca file_00000000a6e0820e885d0c2176257a91. Pruebas file_0000000067bc820e8d423b54d9feaa64.
+
+Pendiente D3: comprobar ambos botones reales (en particular que el DOM del tracker instalado exponga la acción nativa esperada), abrir ronda 1, cierre seguro. Simulación no certifica UI real. Pendientes anteriores D3 y Descanso parcial siguen abiertos. Fuentes: checkpoint LAB.6.2.1, confirmación autor, API https://foundryvtt.com/api/v14/classes/foundry.applications.sidebar.tabs.CombatTracker.html y https://foundryvtt.com/api/v14/classes/foundry.documents.Combat.html. Maestro, estable, compendio y mundo intactos.
