@@ -1,0 +1,7 @@
+# LAB.6.4 — Escalas de compañeros (PROPUESTA, no implementación)
+
+Base LAB.6.3, checkpoint b5d19e21bb300c331175ef63d79457516683ddcc. Recuperación: LAB.5.8 y LAB.5.9 (spawn/seguimiento, prototypeToken width/height=1 y scale=1 en fuente CI137 QA10); CORE_CHECKPOINT_RUBRICA_ICONOS_COMPANEROS_2026-11-19_v04, repertorio 19 (5 domésticos, 8 exóticos, 6 familiares); búsqueda de decisiones previas no recupera escala relativa aprobada. No confundir píxeles con tamaño ni Peso con escala.
+
+Propuesta visual respecto de Kona adulto: 25% diminuto (Monito del monte), 40% pequeño (Ñarki, Guiña, Ave yagán, Loro atacameño, Ave entrenada, Macaco de Pikunmapu, Kolokolo), 60% mediano (cuatro perros, Culpeo, Anchimallén, Kobold, Mandao), 100% humanoide (Imbunche), 150% grande (Troll pétreo); Domeykodactylus 60% candidato sujeto a original y forma. No se afirma tamaño zoológico ni canon fantástico. Nombres/códigos se cotejarán con fichas vigentes antes de aplicar. Mantener huella de cuadrícula existente por defecto; permitir ajuste de escala visual de instancia por LVDM, no sobrescribir configuración explícita. Para grande, evaluar huella y colisiones por separado si se decide. No alterar retratos, Peso, reglas o compendio; no usar dimensiones de lienzo como medida de silueta. Cotejar alfa/bounding box originales antes de normalizar visualmente.
+
+Pendientes: ratificación de matriz, recuperar archivos exactos y cotejar últimas fichas/IDs, implementación y D3 real. No ZIP nuevo, Maestro y estable intactos. Auspicios siguiente frente.
