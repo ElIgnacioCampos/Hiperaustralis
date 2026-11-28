@@ -45,6 +45,27 @@ Por ello, las pruebas pasivas de la barra LVDM pueden comenzar sobre la versión
 
 Las pruebas de acciones reales quedan bloqueadas hasta contar con un clon restaurable o actores de prueba aislados y un respaldo verificado. Primero se permite únicamente inspección de UI, estado de fase, permisos y presencia del marcador, en lectura.
 
+### 2.2 Estado observado en hipera-7 — inspección pasiva 2026-11-28
+
+El usuario ejecutó un diagnóstico de sólo lectura. Resultado:
+
+- Mundo `hipera-7`, módulo `0.24.206-lab.6.17`, sesión GM.
+- Barra `Voz del Mundo` registrada con tres herramientas visibles y orden 0/1/2: `combate`, `descanso`, `kawin`.
+- El título de Combate es `Cerrar combate`; Descanso y Kawín aparecen en sus estados iniciales.
+- Kawín y Descanso: `phase=closed`, cero participantes.
+- Combat nativo: `started=true`, dos Combatants.
+- Flag `roundMarkerV1`: presente, ronda 1, `ended=true`, `pending=0`, `cleanupPending=0`.
+- Panel `#ha-meliaz-round-marker` presente.
+
+**Interpretación de código (confirmada contra fuentes de LAB.6.17 y LAB.6.18 con SHA-256 idénticos para `kawin.js` y `round-marker.js`):** es el cierre en dos etapas previsto. El marcador ya terminó; el documento Combat nativo sigue iniciado y debe cerrarse por separado. El título `Cerrar combate` depende de `game.combat.started`, no de `marker.ended`. El panel, cuando `ended=true` y no quedan pendientes, indica que se cierre el combate nativo.
+
+**Riesgo:** al pulsar la herramienta Combate, `kawin.js` pide confirmación, reconcilia/cierra el marcador y, si `ended=true` y `cleanupPending` está vacío, ejecuta `current.delete()`. Esto elimina el documento Combat nativo y sus Combatants. No pulsar hasta identificar el encuentro, escena y participantes y confirmar que no es un registro que deba conservarse.
+
+**QA:** D3-LVDM-01 queda como PASS parcial (registro de grupo, tres herramientas, orden y visibilidad GM). Aún faltan comprobación tras refresco y sesión jugador. Estado de fase y marcador: observados, no modificados. No se ha ejecutado ninguna acción de Combate, Descanso o Kawín.
+
+**Siguiente paso seguro:** diagnóstico de sólo lectura del nombre/ID/escena del Combat actual, Combatants, razón de cierre del marcador, participantes, acciones y otros encuentros iniciados. No pulsar botones ni alterar flags.
+
+
 ### 2.2 Secuencia obligatoria antes de cualquier acción que escriba
 
 1. Obtener respaldo completo del mundo, base de datos, archivos de usuario, módulos y compendios externos/prototipo.
