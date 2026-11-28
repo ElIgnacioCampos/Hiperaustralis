@@ -1,0 +1,32 @@
+name: CI137 recover exact defense source files
+on:
+  push:
+    branches: ['work/ci137-acumulativo-qa7-20261125']
+    paths: ['.github/workflows/ci137-recover-defensas-20261127.yml']
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify source bytes
+        run: |
+          python - <<'PY'
+          import json, pathlib, hashlib
+          root=pathlib.Path('source-pending/ci137-defensas-altas-20261127')
+          m=json.loads((root/'MANIFEST.json').read_text())
+          assert len(m['records'])==7
+          for r in m['records']:
+              p=root/'assets/defensas/webp256'/r['file']
+              assert hashlib.sha256(p.read_bytes()).hexdigest()==r['sha256'],p
+          u=json.loads((root/'updates/aa9YXJm5fD4UF6oK.json').read_text())
+          p=root/'assets/defensas/webp256'/u['sourceImage']['file']
+          assert hashlib.sha256(p.read_bytes()).hexdigest()==u['sourceImage']['expectedSha256']
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CI137-DEFENSAS-EXACTAS-20261127
+          path: source-pending/ci137-defensas-altas-20261127/
+          if-no-files-found: error
+          retention-days: 14
