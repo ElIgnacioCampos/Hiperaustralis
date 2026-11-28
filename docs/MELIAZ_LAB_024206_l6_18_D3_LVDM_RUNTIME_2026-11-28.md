@@ -3,7 +3,7 @@
 **Fecha:** 2026-11-28  
 **Estado:** RUNBOOK PREPARADO / D3 REAL NO EJECUTADO  
 **Alcance:** barra LVDM (Combate, Descanso, Kawín), cierre de fases y marcador MELIAZ de cuatro rondas.  
-**No modifica:** Bridge estable, mundos H6/H7, compendios, CI137 ni Estado Maestro.
+**Entorno D3 confirmado por el usuario:** `hipera-7` es mundo de pruebas. No hace falta crear otro mundo. Antes de acciones que escriban, respaldar H7 y usar datos/actores de prueba aislados. No modificar Bridge estable, CI137, compendios ni Estado Maestro.
 
 ## 1. Candidato de referencia
 
@@ -17,7 +17,7 @@
 - Conflicto declarado: `meliaz-bridge` estable. Nunca activar ambos módulos en el mismo mundo.
 - Advertencia explícita del manifiesto: el primer arranque puede escribir datos en Actors duplicados. Por eso no basta con que el ZIP no contenga compendios: el runtime debe probarse sólo sobre copia aislada.
 
-## 2. Puerta de seguridad — no actualizar ni sustituir módulos en hipera-7
+## 2. Entorno de pruebas confirmado — hipera-7
 
 La referencia anterior de Foundry 14.367 queda superada por un inventario de consola aportado por el usuario el 2026-11-28 desde el mundo **hipera-7**:
 
@@ -35,7 +35,7 @@ La referencia anterior de Foundry 14.367 queda superada por un inventario de con
 
 Foundry **14.370** y CSB **6.1.2** ya cumplen los requisitos declarados. No hay motivo para actualizar Foundry.
 
-El inventario no demuestra que `hipera-7` sea un clon desechable ni que exista un respaldo restaurable. Los compendios de Territorio, Objetos y Adversarios aparecen desbloqueados. Se considera un mundo con contenido de trabajo hasta demostrar lo contrario. No instalar, desinstalar ni sustituir módulos en él.
+El usuario confirma expresamente que `hipera-7` es el mundo de pruebas. Se usará ese entorno; no crear otro mundo ni exigir un clon completo. Que contenga Actors, Items y compendios significa que debemos preservar su contenido, no que deje de ser un entorno de pruebas. Antes de las pruebas mutativas, obtener y verificar un respaldo restaurable de H7. Mantener LAB.6.17 como está: no instalar LAB.6.18 ni sustituir módulos para esta ronda D3.
 
 ### 2.1 Decisión específica LVDM: probar primero con LAB.6.17
 
@@ -43,7 +43,7 @@ La comparación del parche `patch_618.py` contra LAB.6.17 muestra que el delta d
 
 Por ello, las pruebas pasivas de la barra LVDM pueden comenzar sobre la versión **6.17 ya activa**, sin instalar LAB.6.18. No se debe sustituir el módulo sólo para probar Combate, Descanso o Kawín.
 
-Las pruebas de acciones reales quedan bloqueadas hasta contar con un clon restaurable o actores de prueba aislados y un respaldo verificado. Primero se permite únicamente inspección de UI, estado de fase, permisos y presencia del marcador, en lectura.
+Las pruebas de acciones reales quedan bloqueadas hasta contar con un respaldo verificado y actores/datos de prueba aislados dentro de H7. No se exige un clon completo del mundo. Primero se identifica una escena de pruebas y se preparan actores duplicados de prueba; el encuentro actual de Bosque Turiano no se reutiliza ni se elimina.
 
 ### 2.2 Estado observado en hipera-7 — inspección pasiva 2026-11-28
 
@@ -142,18 +142,23 @@ Evidencia recuperada del paquete fuente LAB.6.18:
 **Estado de validación:** implementación existente y confirmada por fuente; QA simulado previo PASS. La ruta de cuatro rondas aún necesita D3 real controlado en Foundry para verificar el aviso, la confirmación, la limpieza y la desaparición del marcador. No hacer cambios de código salvo que esa prueba revele un defecto.
 
 
-### 2.6 Límite de entorno — no ejecutar D3 en hipera-7 ni H6/H7
+### 2.6 Alcance correcto de la guía anterior y seguridad de H7
 
-Se recuperó la guía original `GUIA_D3_LAB_6_12.md`, incluida en el paquete de fuentes. Su instrucción explícita es: **respaldar el mundo experimental y la versión LAB instalada; no tocar H6/H7 ni el Bridge estable 0.24.203; activar LAB sólo en copia experimental**.
+Se recuperó `GUIA_D3_MELIAZ_LAB_6_12.md`. Bajo el apartado **Instalación única**, indicaba respaldar el mundo experimental y la versión LAB instalada, no tocar H6/H7 ni el Bridge estable 0.24.203, y activar LAB sólo en una copia experimental. Esa guía corresponde al procedimiento de instalación de LAB.6.12; no debe imponerse mecánicamente como veto a la ejecución actual en H7, que el usuario confirma como mundo de pruebas y que ya tiene LAB.6.17 activo.
 
-Por tanto:
-- `hipera-7` queda en **sólo lectura** para este trabajo. El inventario de 97 Actors, 320 Items y cuatro compendios no demuestra que sea desechable ni que tenga respaldo restaurable.
-- No se ejecuta D3 en `hipera-7`, H6 ni H7. No se crea un Combat de prueba, no se marcan rondas, no se ejecuta Kawín/Descanso y no se pulsa ningún cierre ahí.
-- La mención de `hipera-6` en el checkpoint de Códigos v45 corresponde al diagnóstico de iconografía de Códigos y no autoriza usar ese mundo para D3/LVDM.
-- En el historial se había aceptado la creación de un mundo nuevo `Hiperaustralis — LAB V14` (ID propuesto entonces: `hiperaustralis-lab-v14`), pero su existencia y estado actual no están confirmados. Se puede localizar en Setup como candidato; no asumir que existe ni que está vacío.
-- El único destino válido para la prueba de cuatro rondas es un mundo experimental separado, identificado por su ID y con respaldo verificable. Si no existe, primero debe crearse/restaurarse una copia desechable; no duplicar ni migrar H6/H7 sin preservar íntegramente los originales.
+**Decisión vigente:** H7 es el destino D3. No crear `Hiperaustralis — LAB V14` ni otro mundo por este motivo. El ID histórico `hiperaustralis-lab-v14` queda como antecedente, no como requisito.
 
-**Próximo paso operativo:** localizar en Setup si existe `Hiperaustralis — LAB V14` / `hiperaustralis-lab-v14`. Si existe, abrirlo sólo para inventario de lectura (ID, Foundry, CSB, Bridge LAB, cantidades de documentos y lista de compendios). Si no existe, preparar un mundo experimental independiente. No realizar acciones de fase hasta confirmar ese destino y su respaldo.
+**Protecciones antes de acciones que escriben:**
+1. Obtener y verificar un respaldo restaurable de H7 y conservarlo sin sobrescribir.
+2. Identificar una escena adecuada para pruebas y preparar actores de prueba duplicados; no usar actores principales ni alterar sus fichas.
+3. Crear un encuentro nuevo y reconocible para D3. No reutilizar ni borrar el Combat existente `vgRz61croGsmWvfo` de Bosque Turiano (Eiríkr Þorsteinsson / Chope).
+4. Probar primero el cierre de cuatro rondas con el marcador y el aviso **Terminar combate**. Luego probar Descanso y Kawín con actores duplicados, revisando snapshots antes/después.
+5. No instalar LAB.6.18 ni sustituir LAB.6.17 durante esta ronda: `kawin.js` y `round-marker.js` son idénticos entre ambas versiones según el cotejo registrado.
+6. No modificar Bridge estable 0.24.203, CI137, compendios ni Estado Maestro.
+
+La mención de `hipera-6` en el checkpoint de Códigos v45 corresponde a otro diagnóstico y no cambia la designación de H7 como mundo de pruebas LVDM.
+
+**Siguiente paso operativo:** verificar si existe ya un respaldo completo y restaurable de H7. Si existe, identificar escena y actores duplicables para D3. Si no, preparar el respaldo antes de cualquier prueba que escriba. No se requiere otro mundo.
 
 
 ## 3. Alineación GitHub / paquete
@@ -212,4 +217,4 @@ D3 sólo queda aprobado cuando todos los casos críticos pasan en el clon desech
 
 No instalar en producción, no activar junto al Bridge estable, no modificar el Estado Maestro y no promover a estable sin aprobación expresa.
 
-**Siguiente paso autorizado por seguridad:** ejecutar únicamente un diagnóstico de sólo lectura de la barra LVDM en `hipera-7` con LAB.6.17 activo. No actualizar Foundry, no instalar LAB.6.18 y no ejecutar acciones de fase hasta contar con respaldo/clon verificado.
+**Siguiente paso autorizado por seguridad:** confirmar respaldo restaurable de H7 y localizar escena/actores de prueba. No actualizar Foundry ni instalar LAB.6.18. D3 se ejecutará en H7 con LAB.6.17 y datos de prueba aislados.
