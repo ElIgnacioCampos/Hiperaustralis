@@ -1,0 +1,25 @@
+{
+  "status": "AUTHOR_APPROVED_IDENTITY_STAGED_NOT_APPLIED",
+  "targetId": "aa9YXJm5fD4UF6oK",
+  "expected": {
+    "kind": "defensa",
+    "seedId": "defensa-05",
+    "template": "HipEquipTpl00001"
+  },
+  "set": {
+    "img": "modules/hiperaustralis-compendios-prototype/assets/defensas/webp256/COM-11_CORAZA_CHIU_CHIU_256.webp",
+    "system.props.descripcion": "Coraza confeccionada con cuero de caimán y decorada con recortes de piel de mono.",
+    "flags.hiperaustralis-defensas.catalogCode": "DEF-08",
+    "flags.hiperaustralis-defensas.assetCode": "COM-11"
+  },
+  "preserve": "Existing ID, name Coraza de Lasana — Alto Loa, seedId, all other fields and folder. Do not create new document.",
+  "sourceImage": {
+    "file": "COM-11_CORAZA_CHIU_CHIU_256.webp",
+    "gitBlob": "56505598d6f7565d4e1c335363c8266a7578792d",
+    "bytes": 79890,
+    "expectedSha256": "551991bbd4c946ecbf08f1a5e847a0cdd8c296742e256c13a50f646d31bbb556",
+    "stagedPath": "source-pending/ci137-defensas-altas-20261127/pending/assets/COM-11_CORAZA_CHIU_CHIU_256.webp",
+    "verified": "Git identity and size only; no physical decode in this session"
+  },
+  "guard": "Apply only to recovered current base after confirming matching ID/seed/template and exact alpha/dimensions/SHA256. Keep original snapshot; fail closed on conflicts."
+}

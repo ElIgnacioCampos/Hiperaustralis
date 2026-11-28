@@ -48,6 +48,20 @@
       "runtimeImage": "modules/hiperaustralis-compendios-prototype/assets/defensas/webp256/COM-06_Escudo_Nordico_256.webp"
     },
     {
+      "code": "DEF-04",
+      "asset": "COM-07",
+      "name": "Casco con insignia — Casco Pica-Tarapacá",
+      "id": "HADEF04Casco0001",
+      "file": "COM-07_Casco_Pica_Tarapaca_256.webp",
+      "sha": "77593c4da78736aae4a0f15ae510bb38883f03ce",
+      "sha256": "b0e32b13bc91c95f80954e2aabf50dcfa787d33e9a257804704fd5c204cf8920",
+      "size": 61054,
+      "originalPath": "source-original/ci137-asset-staging/defensas/webp256/COM-07_Casco_Pica_Tarapaca_256.webp",
+      "description": "Casco construido con tablillas de madera unidas mediante fibras vegetales y complementado con pelo de camélido. Su estructura cubre la cabeza, las orejas y el cuello. Presenta una cúpula cerrada, una escotadura frontal, una insignia en la parte delantera y una correa que se ata a las aletas laterales para mantenerlo sujeto.",
+      "stagedPath": "source-pending/ci137-defensas-altas-20261127/items/HADEF04Casco0001.json",
+      "runtimeImage": "modules/hiperaustralis-compendios-prototype/assets/defensas/webp256/COM-07_Casco_Pica_Tarapaca_256.webp"
+    },
+    {
       "code": "DEF-05",
       "asset": "COM-08",
       "name": "Peto de Chiu-Chiu",
@@ -93,23 +107,29 @@
   "notes": [
     "New candidate IDs, not verified live. No existing item overwritten.",
     "Git blobs reused exactly; current physical decode and SHA256 recomputation blocked. Historical SHA256 retained as expected, not recalculated.",
-    "No additional stats. CORE Armadura rule unchanged. DEF-05 name chosen from current author correction; old peto and coraza retain IDs."
+    "No additional stats. CORE Armadura rule unchanged. DEF-05 name chosen from current author correction; old peto and coraza retain IDs.",
+    "Do not install this staging directory. Current base and actual assets still require physical QA. No changes to CORE or Bridge."
   ],
   "pending": [
     {
-      "code": "DEF-04",
-      "name": "Casco con insignia — Casco Pica-Tarapacá",
-      "reason": "Cotejo de identidad con defensa-01/02/03; no fusionar por familia."
-    },
-    {
       "code": "DEF-06",
       "name": "Tañaña — Coraza cónica mapuche",
-      "reason": "No se ha localizado el binario aprobado COM-09."
-    },
+      "reason": "COM-09 exact approved binary missing"
+    }
+  ],
+  "updates": [
     {
       "code": "DEF-08",
-      "name": "Coraza atacameña de cuero de caimán",
-      "reason": "Posible identidad con defensa-05 Coraza de Lasana; preservar ID histórico hasta confirmar."
+      "targetId": "aa9YXJm5fD4UF6oK",
+      "patchPath": "source-pending/ci137-defensas-altas-20261127/updates/aa9YXJm5fD4UF6oK.json"
     }
-  ]
+  ],
+  "authorDecision": "27-11: ok to independent DEF-04 and preserve historical Coraza de Lasana ID for DEF-08; Tañaña pending.",
+  "counts": {
+    "historical": 8,
+    "newStaged": 7,
+    "updatesStaged": 1,
+    "pendingIndependent": 1,
+    "targetOrdinary": 16
+  }
 }

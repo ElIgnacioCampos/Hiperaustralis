@@ -1,0 +1,57 @@
+{
+  "_id": "HADEF04Casco0001",
+  "name": "Casco con insignia — Casco Pica-Tarapacá",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-compendios-prototype/assets/defensas/webp256/COM-07_Casco_Pica_Tarapaca_256.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "defensa",
+      "descripcion": "Casco construido con tablillas de madera unidas mediante fibras vegetales y complementado con pelo de camélido. Su estructura cubre la cabeza, las orejas y el cuello. Presenta una cúpula cerrada, una escotadura frontal, una insignia en la parte delantera y una correa que se ata a las aletas laterales para mantenerlo sujeto.",
+      "procedencia": ""
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 520,
+      "height": 390,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "defensa"
+    },
+    "hiperaustralis-defensas": {
+      "seedId": "DEF-04",
+      "catalogCode": "DEF-04",
+      "assetCode": "COM-07",
+      "sourcePack": "CATALOGO_DEF_DESCRIPCIONES_2026-11-24_v02"
+    }
+  },
+  "folder": "HAObjDefensa0010",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "items": [],
+  "_key": "!items!HADEF04Casco0001"
+}
