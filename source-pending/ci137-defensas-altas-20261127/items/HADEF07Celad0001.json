@@ -1,0 +1,57 @@
+{
+  "_id": "HADEF07Celad0001",
+  "name": "Celada — Casquete de cuero mapuche",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-compendios-prototype/assets/defensas/webp256/COM-10_CELADA_MAPUCHE_256.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "defensa",
+      "descripcion": "Casquete de cuero que cubre casi por completo la cabeza, con una abertura para el ojo izquierdo. Está confeccionado con pieles de felinos y presenta un adorno de plumaje en la parte posterior.",
+      "procedencia": ""
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 520,
+      "height": 390,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "defensa"
+    },
+    "hiperaustralis-defensas": {
+      "seedId": "DEF-07",
+      "catalogCode": "DEF-07",
+      "assetCode": "COM-10",
+      "sourcePack": "CATALOGO_DEF_DESCRIPCIONES_2026-11-24_v02"
+    }
+  },
+  "folder": "HAObjDefensa0010",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "items": [],
+  "_key": "!items!HADEF07Celad0001"
+}

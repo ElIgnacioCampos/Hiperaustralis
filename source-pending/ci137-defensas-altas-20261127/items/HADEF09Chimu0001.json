@@ -1,0 +1,57 @@
+{
+  "_id": "HADEF09Chimu0001",
+  "name": "Armadura acolchada Chimú",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-compendios-prototype/assets/defensas/webp256/COM-12_ARMADURA_ACOLCHADA_CHIMU_256.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "defensa",
+      "descripcion": "Armadura textil acolchada, confeccionada con dos capas de tejido de algodón que contienen un relleno grueso de fibras crudas del mismo material. La superficie presenta tejido brocado decorativo.",
+      "procedencia": ""
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 520,
+      "height": 390,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "defensa"
+    },
+    "hiperaustralis-defensas": {
+      "seedId": "DEF-09",
+      "catalogCode": "DEF-09",
+      "assetCode": "COM-12",
+      "sourcePack": "CATALOGO_DEF_DESCRIPCIONES_2026-11-24_v02"
+    }
+  },
+  "folder": "HAObjDefensa0010",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "items": [],
+  "_key": "!items!HADEF09Chimu0001"
+}

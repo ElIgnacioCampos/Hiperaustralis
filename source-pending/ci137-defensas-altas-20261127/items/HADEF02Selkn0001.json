@@ -1,0 +1,57 @@
+{
+  "_id": "HADEF02Selkn0001",
+  "name": "Capa Selk'nam",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-compendios-prototype/assets/defensas/webp256/COM-05_Capa_Selknam_Zorro_256.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "defensa",
+      "descripcion": "Capa confeccionada con piel de zorro, llevada con el pelo hacia fuera. Se utiliza sobre los hombros y el cuerpo como abrigo y protección.",
+      "procedencia": ""
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 520,
+      "height": 390,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "defensa"
+    },
+    "hiperaustralis-defensas": {
+      "seedId": "DEF-02",
+      "catalogCode": "DEF-02",
+      "assetCode": "COM-05",
+      "sourcePack": "CATALOGO_DEF_DESCRIPCIONES_2026-11-24_v02"
+    }
+  },
+  "folder": "HAObjDefensa0010",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "items": [],
+  "_key": "!items!HADEF02Selkn0001"
+}

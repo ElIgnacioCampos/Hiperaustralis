@@ -6,6 +6,34 @@
   "qa12_1": "not materialized; check live IDs, folder and template before compile",
   "records": [
     {
+      "code": "DEF-01",
+      "asset": "COM-03",
+      "name": "Makün — Manta Mapuche",
+      "id": "HADEF01Makun0001",
+      "file": "COM-03_Manta_Mapuche_256.webp",
+      "sha": "1a95b87f2dcccaecb6bbf1f46b86a0852edf6560",
+      "sha256": "535cb7ca1244a81ab5174c51d18bf43813cbaaf7d59b396cb2a563d0c8716c4b",
+      "size": 62434,
+      "originalPath": "source-original/ci137-asset-staging/defensas/webp256/COM-03_Manta_Mapuche_256.webp",
+      "description": "Manta gruesa de tejido rústico, plegada para ofrecer protección. Presenta franjas en tonos terrosos y flecos en sus bordes. Se utiliza como una pieza independiente que puede interponerse para cubrir el cuerpo.",
+      "stagedPath": "source-pending/ci137-defensas-altas-20261127/items/HADEF01Makun0001.json",
+      "runtimeImage": "modules/hiperaustralis-compendios-prototype/assets/defensas/webp256/COM-03_Manta_Mapuche_256.webp"
+    },
+    {
+      "code": "DEF-02",
+      "asset": "COM-05",
+      "name": "Capa Selk'nam",
+      "id": "HADEF02Selkn0001",
+      "file": "COM-05_Capa_Selknam_Zorro_256.webp",
+      "sha": "f99acd7a45e5559edfc9a11668c5663b9f8e16f9",
+      "sha256": "632a2d21ab1f3a6efe2097efe7dd4f8d7d03c8e1d8dca0676543cc6ab476aa2b",
+      "size": 55852,
+      "originalPath": "source-original/ci137-asset-staging/defensas/webp256/COM-05_Capa_Selknam_Zorro_256.webp",
+      "description": "Capa confeccionada con piel de zorro, llevada con el pelo hacia fuera. Se utiliza sobre los hombros y el cuerpo como abrigo y protección.",
+      "stagedPath": "source-pending/ci137-defensas-altas-20261127/items/HADEF02Selkn0001.json",
+      "runtimeImage": "modules/hiperaustralis-compendios-prototype/assets/defensas/webp256/COM-05_Capa_Selknam_Zorro_256.webp"
+    },
+    {
       "code": "DEF-03",
       "asset": "COM-06",
       "name": "Escudo nórdico",
@@ -32,11 +60,56 @@
       "description": "Pieza independiente de forma trapezoidal, construida con siete capas de cuero crudo cosidas entre sí mediante tiras del mismo material. Cubre el pecho y el vientre, sin mangas ni piezas metálicas. Se lleva sobre el torso como protección frontal.",
       "stagedPath": "source-pending/ci137-defensas-altas-20261127/items/HADEF05ChiuCh001.json",
       "runtimeImage": "modules/hiperaustralis-compendios-prototype/assets/defensas/webp256/COM-08_Coraza_Chiu-Chiu_256.webp"
+    },
+    {
+      "code": "DEF-07",
+      "asset": "COM-10",
+      "name": "Celada — Casquete de cuero mapuche",
+      "id": "HADEF07Celad0001",
+      "file": "COM-10_CELADA_MAPUCHE_256.webp",
+      "sha": "5434fd74ae85136b0e2d18e6ecb72ef7249dff80",
+      "sha256": "cc3f96a051df7ad9f52067e0c8b076da9eb0a25b2a1996e5622d6858b0933522",
+      "size": 71582,
+      "originalPath": "source-original/ci137-asset-staging/defensas/webp256/COM-10_CELADA_MAPUCHE_256.webp",
+      "description": "Casquete de cuero que cubre casi por completo la cabeza, con una abertura para el ojo izquierdo. Está confeccionado con pieles de felinos y presenta un adorno de plumaje en la parte posterior.",
+      "stagedPath": "source-pending/ci137-defensas-altas-20261127/items/HADEF07Celad0001.json",
+      "runtimeImage": "modules/hiperaustralis-compendios-prototype/assets/defensas/webp256/COM-10_CELADA_MAPUCHE_256.webp"
+    },
+    {
+      "code": "DEF-09",
+      "asset": "COM-12",
+      "name": "Armadura acolchada Chimú",
+      "id": "HADEF09Chimu0001",
+      "file": "COM-12_ARMADURA_ACOLCHADA_CHIMU_256.webp",
+      "sha": "d93f8318a688cd89e16a8727136abb081aace24a",
+      "sha256": "f4a6bd39ac5d99ccab0bbdc60cb964e8653ffbf6b0c14fe57369917dc6c65245",
+      "size": 69330,
+      "originalPath": "source-original/ci137-asset-staging/defensas/webp256/COM-12_ARMADURA_ACOLCHADA_CHIMU_256.webp",
+      "description": "Armadura textil acolchada, confeccionada con dos capas de tejido de algodón que contienen un relleno grueso de fibras crudas del mismo material. La superficie presenta tejido brocado decorativo.",
+      "stagedPath": "source-pending/ci137-defensas-altas-20261127/items/HADEF09Chimu0001.json",
+      "runtimeImage": "modules/hiperaustralis-compendios-prototype/assets/defensas/webp256/COM-12_ARMADURA_ACOLCHADA_CHIMU_256.webp"
     }
   ],
   "notes": [
     "New candidate IDs, not verified live. No existing item overwritten.",
     "Git blobs reused exactly; current physical decode and SHA256 recomputation blocked. Historical SHA256 retained as expected, not recalculated.",
     "No additional stats. CORE Armadura rule unchanged. DEF-05 name chosen from current author correction; old peto and coraza retain IDs."
+  ],
+  "pending": [
+    {
+      "code": "DEF-04",
+      "name": "Casco con insignia — Casco Pica-Tarapacá",
+      "reason": "Cotejo de identidad con defensa-01/02/03; no fusionar por familia."
+    },
+    {
+      "code": "DEF-06",
+      "name": "Tañaña — Coraza cónica mapuche",
+      "reason": "No se ha localizado el binario aprobado COM-09."
+    },
+    {
+      "code": "DEF-08",
+      "name": "Coraza atacameña de cuero de caimán",
+      "reason": "Posible identidad con defensa-05 Coraza de Lasana; preservar ID histórico hasta confirmar."
+    }
   ]
 }

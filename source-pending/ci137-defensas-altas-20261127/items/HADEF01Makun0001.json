@@ -1,0 +1,57 @@
+{
+  "_id": "HADEF01Makun0001",
+  "name": "Makün — Manta Mapuche",
+  "type": "equippableItem",
+  "img": "modules/hiperaustralis-compendios-prototype/assets/defensas/webp256/COM-03_Manta_Mapuche_256.webp",
+  "system": {
+    "props": {
+      "hipera_tipo": "defensa",
+      "descripcion": "Manta gruesa de tejido rústico, plegada para ofrecer protección. Presenta franjas en tonos terrosos y flecos en sus bordes. Se utiliza como una pieza independiente que puede interponerse para cubrir el cuerpo.",
+      "procedencia": ""
+    },
+    "template": "HipEquipTpl00001",
+    "templateSystemUniqueVersion": 191001,
+    "unique": false,
+    "uniqueId": "",
+    "body": {
+      "contents": [],
+      "key": "custom_body",
+      "type": "panel"
+    },
+    "display": {
+      "width": 520,
+      "height": 390,
+      "fix_size": false,
+      "pp_width": 64,
+      "pp_height": 64
+    },
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "type": "panel"
+    },
+    "hidden": []
+  },
+  "effects": [],
+  "flags": {
+    "custom-system-builder": {
+      "version": "5.2.1"
+    },
+    "meliaz-bridge": {
+      "kind": "defensa"
+    },
+    "hiperaustralis-defensas": {
+      "seedId": "DEF-01",
+      "catalogCode": "DEF-01",
+      "assetCode": "COM-03",
+      "sourcePack": "CATALOGO_DEF_DESCRIPCIONES_2026-11-24_v02"
+    }
+  },
+  "folder": "HAObjDefensa0010",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "items": [],
+  "_key": "!items!HADEF01Makun0001"
+}
