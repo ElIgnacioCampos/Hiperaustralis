@@ -87,17 +87,30 @@ La suite simula documentos/socket; no reemplaza la prueba de runtime en H7.
 
 Estas pruebas son unitarias/simuladas. No certifican runtime Foundry; D3 sigue siendo la validación pendiente.
 
-### 2.6 Siguiente ejecución D3 en H7
+### 2.6 D3 runtime — End Combat y nuevo encuentro manual
 
-Orden de trabajo, sin reinstalar ni actualizar módulos:
+El usuario confirma que, después de pulsar **End Combat** en Foundry y ver desaparecer el marcador, inició manualmente un nuevo combate desde Voz del Mundo.
 
-1. Comprobar el estado de `game.combat` después del **End Combat** nativo. Determinar si Foundry deja seleccionado el Combat terminado o libera el actual.
-2. Iniciar un encuentro nuevo desde **Voz del Mundo → Combate** y comprobar que el marcador nace en ronda 1/4, sin heredar `ended=true` del encuentro anterior.
-3. Con los Kona del encuentro, usar **Actuar → Pasar turno** para registrar una acción por participante en cada ronda. Pasar turno no gasta recursos ni modifica atributos del Actor; sólo registra participación en el marcador.
-4. Repetir hasta completar ronda 4. Comprobar aviso GM, botón **Terminar combate**, confirmación, limpieza de Manifestaciones y desaparición del marcador/encuentro.
-5. Registrar resultado PASS/FAIL y cualquier incidencia reproducible. No cambiar código si el flujo funciona.
+La inspección de sólo lectura del nuevo encuentro devolvió:
+- Combat anterior: `vgRz61croGsmWvfo`.
+- Combat nuevo: `cSaUHNgmZqDnlvbx` (ID distinto).
+- Nuevo encuentro: `started=true`, `active=true`.
+- Marcador presente, `ended=false`, ronda 1.
+- `pending=[]`, `cleanupPending=[]`.
+- Un único Combat en la colección al momento de la inspección.
 
-**Nota de riesgo funcional a verificar:** el código de `kawin.js` reutiliza `game.combat` cuando existe y no está iniciado. Si Foundry conserva como actual el Combat ya terminado, hay que verificar que el marcador se reinicie correctamente antes de usarlo como encuentro nuevo. No darlo por supuesto: es el primer punto de D3.
+**Resultado:** D3 — End Combat nativo + inicio manual de encuentro nuevo: **PASS**. El nuevo encuentro tiene Combat nuevo y marcador limpio; no hereda `ended=true` del anterior. La creación fue manual por el usuario, no automática.
+
+### 2.7 Siguiente ejecución D3 — cierre por cuatro rondas
+
+Sin reinstalar ni actualizar módulos:
+
+1. Con los Kona del encuentro nuevo, usar **Actuar → Pasar turno** para registrar una acción por participante en cada ronda. Pasar turno no gasta recursos ni modifica atributos del Actor; sólo registra participación en el marcador.
+2. Repetir hasta completar ronda 4.
+3. Comprobar que aparece el aviso GM y el botón **Terminar combate**.
+4. Pulsar **Terminar combate** y confirmar.
+5. Verificar limpieza de Manifestaciones pendientes, finalización/eliminación del encuentro y desaparición del marcador.
+6. Registrar resultado PASS/FAIL e incidencia reproducible. No cambiar código si el flujo funciona.
 
 **No se trabaja en respaldos, exportación de compendios ni Asset Sync.** El frente activo es el Bridge: barra LVDM, fases y marcador de cuatro rondas.
 
