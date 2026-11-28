@@ -104,6 +104,24 @@ El código inspeccionado confirma la distinción: `kawin.js` llama `current.dele
 
 **Prohibido:** actualizar Foundry en este mundo, instalar LAB.6.18 encima de LAB.6.17, sustituir el Bridge estable, reinstalar CI137 o reconstruir compendios como parte de esta prueba.
  
+### 2.4 Aclaración del usuario: comportamiento final esperado — 2026-11-28
+
+El usuario confirma que el comportamiento actual al pulsar **End Combat** en el tracker nativo es correcto: Foundry termina el encuentro y el marcador MELIAZ desaparece. También confirma que, si se completan cuatro rondas y aparece la opción **Terminar combate**, al confirmarla el encuentro debe terminar. No solicita cambiar estos flujos.
+
+**Verificación del código fuente LAB.6.18 recuperado:**
+
+- `round-marker.js` → `advance(s,c)`: cuando todos los Kona activos completan sus acciones en ronda 4, ejecuta `close(s,'Cuarta ronda completada')`. `updateEndAdvice` publica esa razón como `endAdvice`; `render()` muestra el botón **Terminar combate**.
+- Ese botón llama `finishNative(c)`: solicita confirmación, reconcilia el marcador, comprueba que no queden Manifestaciones pendientes y termina el encuentro mediante `c.delete()`.
+- Si se pulsa **End Combat** nativo, el hook `updateCombat` ejecuta `reconcile(c)`; al detectar `!c.started`, el marcador registra el cierre nativo, limpia las Manifestaciones pendientes y `render()` retira el panel porque el combate ya no está iniciado.
+- Por tanto, ambos caminos terminan el combate y hacen desaparecer el marcador. La diferencia técnica es que el botón nativo deja el documento Combat finalizado en Foundry; la acción MELIAZ de cuatro rondas elimina el documento Combat después de comprobar la limpieza. No se cambia esta diferencia sin una decisión de diseño expresa.
+
+**Corrección de interpretación:** la tarjeta persistente observada antes no era un menú sobrante ni un fallo. Era el estado intermedio posterior al cierre del marcador MELIAZ por Dirección, que indicaba cerrar el encuentro nativo en Foundry. Al ejecutar End Combat, el marcador se retira como corresponde.
+
+**Decisión:** retirar la propuesta anterior de cambiar el texto de la tarjeta. No implementar cambios en este flujo. La UX observada coincide con la intención confirmada por el usuario.
+
+**QA:** comportamiento de End Combat nativo observado por el usuario: PASS. Ruta de cuatro rondas y botón Terminar combate: verificada por inspección estática de código; pendiente ejecución real controlada. Ninguna acción fue ejecutada durante esta revisión.
+
+
 ## 3. Alineación GitHub / paquete
 
 La rama documental anterior `work/meliaz-bridge-lab-0.24.204-20261124` contiene documentación hasta LAB.6.18, pero su árbol de código conserva `module.json` **0.24.203** y no incluye los módulos separados `kawin.js` y `round-marker.js`. El ZIP de referencia sí contiene `bridge.js`, `kawin.js`, `round-marker.js` y los importa desde `bridge.js`.
