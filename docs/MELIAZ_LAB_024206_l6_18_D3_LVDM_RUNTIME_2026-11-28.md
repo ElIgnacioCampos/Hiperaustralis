@@ -91,4 +91,4 @@ D3 sólo queda aprobado cuando todos los casos críticos pasan en el clon desech
 
 No instalar en producción, no activar junto al Bridge estable, no modificar el Estado Maestro y no promover a estable sin aprobación expresa.
 
-**Siguiente paso autorizado por seguridad:** ejecutar únicamente el diagnóstico de sólo lectura en `hipera-6`; no actualizar Foundry ni instalar LAB.6.18 todavía.
+**Siguiente paso autorizado por seguridad:** ejecutar únicamente un diagnóstico de sólo lectura de la barra LVDM en `hipera-7` con LAB.6.17 activo. No actualizar Foundry, no instalar LAB.6.18 y no ejecutar acciones de fase hasta contar con respaldo/clon verificado.
