@@ -1,9 +1,9 @@
 # MELIAZ LAB.6.18 — D3 runtime · Barra LVDM y marcador
 
 **Fecha:** 2026-11-28  
-**Estado:** RUNBOOK PREPARADO / D3 REAL NO EJECUTADO  
+**Estado:** D3 REAL EN CURSO / LVDM PASIVO PARCIALMENTE VALIDADO  
 **Alcance:** barra LVDM (Combate, Descanso, Kawín), cierre de fases y marcador MELIAZ de cuatro rondas.  
-**Entorno D3 confirmado por el usuario:** `hipera-7` es mundo de pruebas. No hace falta crear otro mundo. Antes de acciones que escriban, respaldar H7 y usar datos/actores de prueba aislados. No modificar Bridge estable, CI137, compendios ni Estado Maestro.
+**Entorno D3 confirmado por el usuario:** `hipera-7` es mundo de pruebas. No crear otro mundo ni abrir un frente de respaldos. Trabajar con el Bridge LAB activo y el código versionado en GitHub; no modificar Bridge estable, CI137, compendios ni Estado Maestro.
 
 ## 1. Candidato de referencia
 
@@ -17,179 +17,78 @@
 - Conflicto declarado: `meliaz-bridge` estable. Nunca activar ambos módulos en el mismo mundo.
 - Advertencia explícita del manifiesto: el primer arranque puede escribir datos en Actors duplicados. Por eso no basta con que el ZIP no contenga compendios: el runtime debe probarse sólo sobre copia aislada.
 
-## 2. Entorno de pruebas confirmado — hipera-7
+## 2. Entorno de pruebas y D3 — H7
 
-La referencia anterior de Foundry 14.367 queda superada por un inventario de consola aportado por el usuario el 2026-11-28 desde el mundo **hipera-7**:
+**Destino confirmado por el usuario:** `hipera-7` es el mundo de pruebas del Bridge. No crear otro mundo ni convertir este trabajo en una tarea de respaldos. El ZIP de exportación de H7 recibido en este chat queda fuera del flujo de desarrollo y no genera pendientes de exportación de compendios/assets.
 
-| Componente | Valor observado |
+### 2.1 Runtime observado
+
+| Componente | Valor |
 |---|---|
 | Mundo | `hipera-7` / Hipera 7 |
 | Foundry | **14.370** |
-| Sistema | Custom System Builder **6.1.2** |
+| Custom System Builder | **6.1.2** |
 | Bridge estable | `meliaz-bridge` **0.24.203**, inactivo |
 | Bridge LAB | `meliaz-bridge-lab` **0.24.206-lab.6.17**, activo |
 | SocketLib | **1.1.4**, activo |
 | Actors / Scenes / Items | 97 / 3 / 320 |
 | Journals / Macros | 4 / 5 |
-| Compendios | Territorio, Objetos, Adversarios y Journals de prototipo |
+| Compendios observados | Territorio, Objetos, Adversarios y Journals de prototipo |
 
-Foundry **14.370** y CSB **6.1.2** ya cumplen los requisitos declarados. No hay motivo para actualizar Foundry.
+Foundry y CSB cumplen los requisitos del candidato LAB.6.18. No actualizar Foundry ni sustituir módulos para probar LVDM.
 
-El usuario confirma expresamente que `hipera-7` es el mundo de pruebas. Se usará ese entorno; no crear otro mundo ni exigir un clon completo. Que contenga Actors, Items y compendios significa que debemos preservar su contenido, no que deje de ser un entorno de pruebas. Antes de las pruebas mutativas, obtener y verificar un respaldo restaurable de H7. Mantener LAB.6.17 como está: no instalar LAB.6.18 ni sustituir módulos para esta ronda D3.
+### 2.2 Barra LVDM — inspección pasiva
 
-### 2.1 Decisión específica LVDM: probar primero con LAB.6.17
-
-La comparación del parche `patch_618.py` contra LAB.6.17 muestra que el delta de LAB.6.18 se limita a la presentación de galerías de selección de Items/Territorio y al metadato de versión del módulo. No modifica los archivos separados `kawin.js` ni `round-marker.js`.
-
-Por ello, las pruebas pasivas de la barra LVDM pueden comenzar sobre la versión **6.17 ya activa**, sin instalar LAB.6.18. No se debe sustituir el módulo sólo para probar Combate, Descanso o Kawín.
-
-Las pruebas de acciones reales quedan bloqueadas hasta contar con un respaldo verificado y actores/datos de prueba aislados dentro de H7. No se exige un clon completo del mundo. Primero se identifica una escena de pruebas y se preparan actores duplicados de prueba; el encuentro actual de Bosque Turiano no se reutiliza ni se elimina.
-
-### 2.2 Estado observado en hipera-7 — inspección pasiva 2026-11-28
-
-El usuario ejecutó un diagnóstico de sólo lectura. Resultado:
-
-- Mundo `hipera-7`, módulo `0.24.206-lab.6.17`, sesión GM.
-- Barra `Voz del Mundo` registrada con tres herramientas visibles y orden 0/1/2: `combate`, `descanso`, `kawin`.
-- El título de Combate es `Cerrar combate`; Descanso y Kawín aparecen en sus estados iniciales.
+El diagnóstico en H7 confirmó:
+- Grupo **Voz del Mundo** registrado para GM.
+- Tres controles visibles y en orden: Combate (0), Descanso (1), Kawín (2).
 - Kawín y Descanso: `phase=closed`, cero participantes.
-- Combat nativo: `started=true`, dos Combatants.
-- Flag `roundMarkerV1`: presente, ronda 1, `ended=true`, `pending=0`, `cleanupPending=0`.
-- Panel `#ha-meliaz-round-marker` presente.
+- Marcador MELIAZ presente en el Combat observado.
 
-**Interpretación de código (confirmada contra fuentes de LAB.6.17 y LAB.6.18 con SHA-256 idénticos para `kawin.js` y `round-marker.js`):** es el cierre en dos etapas previsto. El marcador ya terminó; el documento Combat nativo sigue iniciado y debe cerrarse por separado. El título `Cerrar combate` depende de `game.combat.started`, no de `marker.ended`. El panel, cuando `ended=true` y no quedan pendientes, indica que se cierre el combate nativo.
+**D3-LVDM-01:** PASS parcial (registro, orden y visibilidad GM). Pendiente refresco y sesión jugador.
 
-**Riesgo:** al pulsar la herramienta Combate, `kawin.js` pide confirmación, reconcilia/cierra el marcador y, si `ended=true` y `cleanupPending` está vacío, ejecuta `current.delete()`. Esto elimina el documento Combat nativo y sus Combatants. No pulsar hasta identificar el encuentro, escena y participantes y confirmar que no es un registro que deba conservarse.
+### 2.3 Cierre de combate — comportamiento confirmado
 
-**QA:** D3-LVDM-01 queda como PASS parcial (registro de grupo, tres herramientas, orden y visibilidad GM). Aún faltan comprobación tras refresco y sesión jugador. Estado de fase y marcador: observados, no modificados. No se ha ejecutado ninguna acción de Combate, Descanso o Kawín.
+El Combat observado fue `vgRz61croGsmWvfo`, escena Bosque Turiano, con Eiríkr Þorsteinsson y Chope. Su flag indicaba `ended=true`, razón `Cerrado por Dirección`, `cleanupPending=[]`, mientras Foundry aún tenía `started=true`.
 
-**Siguiente paso seguro:** diagnóstico de sólo lectura del nombre/ID/escena del Combat actual, Combatants, razón de cierre del marcador, participantes, acciones y otros encuentros iniciados. No pulsar botones ni alterar flags.
+El usuario confirmó que al pulsar **End Combat** nativo el encuentro termina y el marcador desaparece. Ese comportamiento es correcto y no requiere cambios.
 
+### 2.4 Cierre al completar cuatro rondas — implementación existente
 
-### 2.3 Confirmación visual y semántica de cierre — captura 2026-11-28
+La función fue solicitada e incorporada desde LAB.6.14. No hay que rediseñarla ni reimplementarla.
 
-El usuario aportó captura de Foundry en `hipera-7` que muestra el panel persistente:
+- `advance(s,c)` cierra el marcador con `Cuarta ronda completada` cuando todos los Kona activos registraron su acción en ronda 4.
+- `updateEndAdvice` genera el aviso al GM; `render()` muestra **Terminar combate**.
+- El GM pulsa el botón y confirma.
+- `finishNative(c)` reconcilia, limpia Manifestaciones pendientes y elimina el documento Combat si la limpieza terminó.
+- También se ofrece el aviso cuando todos los rivales identificados están incapacitados.
 
-- `MELIAZ · Combate cerrado`
-- `Cerrado por Dirección`
-- `Cierra el combate nativo en Foundry.`
+QA simulado previo: PASS. D3 real en Foundry: pendiente.
 
-En el tracker nativo sigue visible el control `End Combat`. La captura coincide con el estado leído por consola: `game.combat.started=true`, flag `roundMarkerV1.ended=true`, `reason='Cerrado por Dirección'`, `cleanupPending=[]`.
+### 2.5 QA de código disponible
 
-**No es un modal bloqueado ni un menú huérfano:** es la tarjeta de estado final del marcador, que permanece visible mientras el Combat nativo siga iniciado. En `round-marker.js`, `render()` conserva la tarjeta y muestra el mensaje de cierre nativo cuando `s.ended`; si `!game.combat.started`, restaura la UI nativa, elimina la tarjeta y cierra el menú.
+La suite local de LAB.6.17/6.18 se ejecutó de nuevo:
+- LVDM: 9 PASS.
+- Marcador: 28 PASS.
+- Descanso: 6 PASS.
+- Kawín colectivo: 7 PASS.
+- La prueba de rondas confirma el aviso al completar la cuarta ronda, sin cierre silencioso ni quinta ronda.
 
-**Tres acciones distintas que no deben confundirse:**
+La suite simula documentos/socket; no reemplaza la prueba de runtime en H7.
 
-1. **Marcador MELIAZ → botón `Cerrar`:** pide confirmación y ejecuta `manual(c,'end')`. Cambia el marcador a `ended=true`, razón `Cerrado por Dirección`, y limpia Manifestaciones. No elimina el Combat nativo. La tarjeta permanece para informar el siguiente paso.
-2. **Tracker nativo Foundry → `End Combat`:** es el cierre del encuentro nativo indicado por la tarjeta. Cuando Foundry deja `started=false`, el renderizador MELIAZ retira la tarjeta. Esta es la acción nativa a usar si se decide terminar ese encuentro.
-3. **Barra LVDM → `Cerrar combate`:** es otra ruta. Pide confirmación, reconcilia y cierra el marcador; si no quedan pendientes, ejecuta `current.delete()`. **Elimina el documento Combat y sus Combatants.** No usar como equivalente inocuo del botón MELIAZ `Cerrar`.
+### 2.6 Siguiente ejecución D3 en H7
 
-El código inspeccionado confirma la distinción: `kawin.js` llama `current.delete()` en la ruta de la barra; `round-marker.js` mantiene la tarjeta mientras el encuentro siga iniciado y la quita cuando `!c.started`.
+Orden de trabajo, sin reinstalar ni actualizar módulos:
 
-**Estado del encuentro de la captura:** escena `Bosque Turiano`; Combat ID `vgRz61croGsmWvfo`; Combatants Eiríkr Þorsteinsson y Chope. No se presume que sea un encuentro desechable. No pulsar ningún cierre ni borrar el Combat hasta que el usuario confirme que puede finalizar ese encuentro.
+1. Comprobar el estado de `game.combat` después del **End Combat** nativo. Determinar si Foundry deja seleccionado el Combat terminado o libera el actual.
+2. Iniciar un encuentro nuevo desde **Voz del Mundo → Combate** y comprobar que el marcador nace en ronda 1/4, sin heredar `ended=true` del encuentro anterior.
+3. Con los Kona del encuentro, usar **Actuar → Pasar turno** para registrar una acción por participante en cada ronda. Pasar turno no gasta recursos ni modifica atributos del Actor; sólo registra participación en el marcador.
+4. Repetir hasta completar ronda 4. Comprobar aviso GM, botón **Terminar combate**, confirmación, limpieza de Manifestaciones y desaparición del marcador/encuentro.
+5. Registrar resultado PASS/FAIL y cualquier incidencia reproducible. No cambiar código si el flujo funciona.
 
-**Resultado QA:** D3-LVDM-01 PASS en registro/orden/visibilidad GM y tarjeta de estado observada. Cierre en dos etapas confirmado por captura + flags; falta probar refresco y sesión jugador. Ningún dato fue modificado durante la inspección.
+**Nota de riesgo funcional a verificar:** el código de `kawin.js` reutiliza `game.combat` cuando existe y no está iniciado. Si Foundry conserva como actual el Combat ya terminado, hay que verificar que el marcador se reinicie correctamente antes de usarlo como encuentro nuevo. No darlo por supuesto: es el primer punto de D3.
 
-**Propuesta UX para revisión, no implementada:** reemplazar el mensaje ambiguo por `MARCADOR CERRADO · Encuentro de Foundry aún activo`, manteniendo el aviso de que el siguiente paso se realiza en el tracker nativo. Mantener el botón de la barra claramente rotulado como cierre que elimina el documento Combat, o reconsiderar su comportamiento sólo mediante una decisión de diseño explícita.
-
-
-### 2.2 Secuencia obligatoria antes de cualquier acción que escriba
-
-1. Obtener respaldo completo del mundo, base de datos, archivos de usuario, módulos y compendios externos/prototipo.
-2. Verificar que el respaldo puede restaurarse o duplicarse.
-3. Crear un clon independiente y comprobar Actors, escenas, Journals, Items, macros, settings, permisos, carpetas, packs/compendios, IDs y rutas de assets.
-4. Mantener intactos `hipera-7` y el respaldo de referencia.
-5. Ejecutar D3 con actores de prueba en el clon. Descanso y Kawín modifican recursos/flags de Actors; Combate crea o elimina encuentros, Combatants, flags y mensajes.
-6. Comparar inventarios antes/después. Ante cualquier alteración no prevista, detener y restaurar el clon.
-
-**Prohibido:** actualizar Foundry en este mundo, instalar LAB.6.18 encima de LAB.6.17, sustituir el Bridge estable, reinstalar CI137 o reconstruir compendios como parte de esta prueba.
- 
-### 2.4 Aclaración del usuario: comportamiento final esperado — 2026-11-28
-
-El usuario confirma que el comportamiento actual al pulsar **End Combat** en el tracker nativo es correcto: Foundry termina el encuentro y el marcador MELIAZ desaparece. También confirma que, si se completan cuatro rondas y aparece la opción **Terminar combate**, al confirmarla el encuentro debe terminar. No solicita cambiar estos flujos.
-
-**Verificación del código fuente LAB.6.18 recuperado:**
-
-- `round-marker.js` → `advance(s,c)`: cuando todos los Kona activos completan sus acciones en ronda 4, ejecuta `close(s,'Cuarta ronda completada')`. `updateEndAdvice` publica esa razón como `endAdvice`; `render()` muestra el botón **Terminar combate**.
-- Ese botón llama `finishNative(c)`: solicita confirmación, reconcilia el marcador, comprueba que no queden Manifestaciones pendientes y termina el encuentro mediante `c.delete()`.
-- Si se pulsa **End Combat** nativo, el hook `updateCombat` ejecuta `reconcile(c)`; al detectar `!c.started`, el marcador registra el cierre nativo, limpia las Manifestaciones pendientes y `render()` retira el panel porque el combate ya no está iniciado.
-- Por tanto, ambos caminos terminan el combate y hacen desaparecer el marcador. La diferencia técnica es que el botón nativo deja el documento Combat finalizado en Foundry; la acción MELIAZ de cuatro rondas elimina el documento Combat después de comprobar la limpieza. No se cambia esta diferencia sin una decisión de diseño expresa.
-
-**Corrección de interpretación:** la tarjeta persistente observada antes no era un menú sobrante ni un fallo. Era el estado intermedio posterior al cierre del marcador MELIAZ por Dirección, que indicaba cerrar el encuentro nativo en Foundry. Al ejecutar End Combat, el marcador se retira como corresponde.
-
-**Decisión:** retirar la propuesta anterior de cambiar el texto de la tarjeta. No implementar cambios en este flujo. La UX observada coincide con la intención confirmada por el usuario.
-
-**QA:** comportamiento de End Combat nativo observado por el usuario: PASS. Ruta de cuatro rondas y botón Terminar combate: verificada por inspección estática de código; pendiente ejecución real controlada. Ninguna acción fue ejecutada durante esta revisión.
-
-
-### 2.5 Recuperación de la entrega anterior — cierre al completar cuatro rondas
-
-**Confirmado: esta función ya fue solicitada e incorporada en LAB.6.14. No hay que volver a diseñarla ni implementarla.**
-
-Evidencia recuperada del paquete fuente LAB.6.18:
-
-- `QA_LAB6_14.json`: 18 scripts Node, 124 bloques PASS, sintaxis PASS; registra explícitamente el cambio **“GM combat end advisory, explicit confirmation”** y deja D3 pendiente.
-- `module.json`: changelog LAB.6.14: **“aviso GM Terminar combate (cuarta ronda o rivales identificados fuera de combate)”**.
-- `patch_618.py`: LAB.6.18 modifica únicamente `bridge.js` y `module.json`; no modifica `round-marker.js`. El módulo LAB.6.17 activo es la base declarada de LAB.6.18, por lo que conserva esta implementación.
-- `round-marker.js`: lógica concreta inspeccionada:
-  1. `advance(s,c)` cierra el marcador con razón `Cuarta ronda completada` cuando todos los Kona activos ya registraron su acción en la cuarta ronda.
-  2. `updateEndAdvice(c,s)` genera el aviso al GM por cuarta ronda completada; también puede generarlo cuando todos los rivales identificados están incapacitados.
-  3. `render()` muestra el botón **Terminar combate** al GM.
-  4. `finishNative(c)` solicita confirmación, reconcilia el marcador, ejecuta la limpieza de Manifestaciones y, si no quedan pendientes, elimina el documento Combat nativo.
-
-**Semántica:** no es un cierre automático silencioso al completar la cuarta ronda. Al completarla aparece el aviso y el GM debe pulsar **Terminar combate** y confirmar. Esa acción termina el encuentro y retira el marcador. Es exactamente el comportamiento pedido en LAB.6.14.
-
-**Estado de validación:** implementación existente y confirmada por fuente; QA simulado previo PASS. La ruta de cuatro rondas aún necesita D3 real controlado en Foundry para verificar el aviso, la confirmación, la limpieza y la desaparición del marcador. No hacer cambios de código salvo que esa prueba revele un defecto.
-
-
-### 2.6 Alcance correcto de la guía anterior y seguridad de H7
-
-Se recuperó `GUIA_D3_MELIAZ_LAB_6_12.md`. Su instrucción «no tocar H6/H7» pertenecía al procedimiento de instalación de LAB.6.12. No debe imponerse mecánicamente como veto a la ejecución actual en H7, que el usuario confirma como mundo de pruebas y que ya tiene LAB.6.17 activo.
-
-**Decisión vigente:** `hipera-7` es el destino D3. No crear `Hiperaustralis — LAB V14` ni otro mundo por este motivo. El ID histórico `hiperaustralis-lab-v14` queda como antecedente, no como requisito.
-
-**Estado del respaldo:** no se encontró en Biblioteca/Drive un export identificado como backup restaurable de H7. El respaldo íntegro del 19-11-2026 documentado en la Biblioteca corresponde a **Hipera 5**, no acredita H7. No inferir que un export de Actors ni un Save Point automático genérico contiene los compendios compartidos y assets requeridos. La existencia de un Save Point de H7 debe comprobarse en Forge.
-
-**Secuencia de respaldo previa a D3:**
-1. En Forge, detener H7 de forma normal si está abierto y guardar la sesión.
-2. Si la cuenta dispone de **Save Points**, crear un **Manual Save** de `hipera-7` con nombre `H7_PRE_D3_2026-11-28`. Los Save Points cubren los datos del mundo, pero no la Assets Library ni los compendios compartidos; no bastan por sí solos para todo el entorno.
-3. Desde **My Foundry → H7 → Game Tools → Export World**, descargar el ZIP del mundo.
-4. Desde **My Foundry → Export Compendium Modules**, exportar el módulo personalizado `hiperaustralis-compendios-prototype`, que contiene los packs externos `ha-proto-items`, `ha-proto-actors` y `ha-proto-journals`. El compendio `world.territorio` pertenece al mundo y debe quedar incluido en el export de H7.
-5. Respaldar aparte los assets de Forge mediante **Asset Sync** a una instalación Foundry local, si se requiere restauración completa de imágenes, mapas, tokens y audio. La exportación de mundo no incluye archivos multimedia de la Assets Library.
-6. Comprobar que los ZIP descargados abren, que contienen los datos esperados y guardar sus nombres, tamaños y hashes. No importar encima de H7 ni sobrescribir packs para «probar» el respaldo.
-7. D3 usará H7 con LAB.6.17, actores duplicados de prueba y un encuentro nuevo; el Combat existente `vgRz61croGsmWvfo` de Bosque Turiano (Eiríkr Þorsteinsson / Chope) queda protegido.
-
-**Referencias de procedimiento Forge:** exportación de mundo y módulos de compendio, exclusión de media files y Asset Sync; Save Points manuales y sus límites (no respaldan Assets Library ni shared compendiums). Consultar documentación enlazada en el checkpoint conversacional antes de cualquier restauración.
-
-**Siguiente paso operativo:** el usuario realiza primero el Manual Save si está disponible y descarga el ZIP de H7. Después se inspeccionan los archivos y se registra tamaño/hash antes de pasar al export del módulo de compendios y assets. No ejecutar todavía pruebas mutativas.
-
-
-### 2.7 Respaldo Forge World Export recibido y auditado — 2026-11-28
-
-Archivo recibido: `ForgeVTT-export-hipera-7-2026-11-28_20_19_22.zip`
-
-- Tamaño comprimido: **1,277,414 bytes**.
-- Tamaño descomprimido: **6,017,631 bytes**.
-- Entradas ZIP: **125**.
-- SHA-256: `b4426205d1ab448d3efa1f35836bcd5ede7e91b5f4fdaee7c737c10a21b85cf4`.
-- `ZipFile.testzip()`: sin entradas corruptas; CRC PASS en todo el archivo.
-- `world.json`: `id/name=hipera-7`, título `Hipera 7`, Foundry **14.370**, CSB **6.1.2**.
-- Incluye LevelDB de actors, cards, combats, effects, fog, folders, items, journal, macros, messages, playlists, scenes, settings, tables y users, además de `packs/territorio`.
-- Las 16 bases de datos LevelDB presentes tienen `CURRENT` apuntando a un `MANIFEST` que existe y tienen archivo `LOG`.
-- `world.json` registra el pack mundial `territorio` (JournalEntry).
-
-**Resultado:** export de mundo válido e íntegro a nivel ZIP y estructura de archivos. Esto acredita un respaldo del contenido de mundo exportado; no es todavía una restauración probada.
-
-**Límites detectados:**
-- El ZIP no contiene `modules/hiperaustralis-compendios-prototype` ni los tres packs externos `ha-proto-items`, `ha-proto-actors`, `ha-proto-journals` observados en runtime.
-- No contiene Assets Library / media files.
-- Tampoco contiene la instalación de módulos (Bridge LAB/estable, CSB, SocketLib).
-
-**Estado de protección:** respaldo del mundo H7 verificado; respaldo integral del entorno todavía incompleto. No iniciar D3 mutativo hasta respaldar el módulo de compendios externos y los assets necesarios. No importar el ZIP encima del mundo actual.
-
-**Siguiente paso:** exportar `hiperaustralis-compendios-prototype` desde Forge → My Foundry → Export Compendium Modules. Luego decidir el respaldo de Assets Library mediante Asset Sync. Conservar este ZIP original sin modificar.
-
-
+**No se trabaja en respaldos, exportación de compendios ni Asset Sync.** El frente activo es el Bridge: barra LVDM, fases y marcador de cuatro rondas.
 
 ## 3. Alineación GitHub / paquete
 
