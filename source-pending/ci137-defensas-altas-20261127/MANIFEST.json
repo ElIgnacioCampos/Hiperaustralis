@@ -1,0 +1,42 @@
+{
+  "status": "STAGED_SOURCE_ONLY_NOT_INSTALLABLE",
+  "source": "CATALOGO_DEF_DESCRIPCIONES_2026-11-24_v02.md",
+  "sourceId": "file_00000000269c820ea259c74838373435",
+  "baseSource": "CI137 QA10 v05 / historical template",
+  "qa12_1": "not materialized; check live IDs, folder and template before compile",
+  "records": [
+    {
+      "code": "DEF-03",
+      "asset": "COM-06",
+      "name": "Escudo nórdico",
+      "id": "HADEF03Nordic001",
+      "file": "COM-06_Escudo_Nordico_256.webp",
+      "sha": "aa07153cfddb3ee1b5a4765557c7687077ec94e2",
+      "sha256": "d1015cdd974d6b6a5a04c15565e2369fd5d53662f11f542a8ccf46b0ad7bcb1e",
+      "size": 85044,
+      "originalPath": "source-original/ci137-asset-staging/defensas/webp256/COM-06_Escudo_Nordico_256.webp",
+      "description": "Escudo circular de madera, reforzado en el centro por un umbo metálico. Su superficie está decorada con pintura roja y motivos de color claro. Se sostiene para interponerlo entre el cuerpo y el ataque.",
+      "stagedPath": "source-pending/ci137-defensas-altas-20261127/items/HADEF03Nordic001.json",
+      "runtimeImage": "modules/hiperaustralis-compendios-prototype/assets/defensas/webp256/COM-06_Escudo_Nordico_256.webp"
+    },
+    {
+      "code": "DEF-05",
+      "asset": "COM-08",
+      "name": "Peto de Chiu-Chiu",
+      "id": "HADEF05ChiuCh001",
+      "file": "COM-08_Coraza_Chiu-Chiu_256.webp",
+      "sha": "510b223344b9e1ba26b3ef4d717c2c28f9ddc838",
+      "sha256": "2dfcfc0354bf1dee28989d4838fdeab6dd9b72561d9e70f5bf259fbed6bc254c",
+      "size": 72796,
+      "originalPath": "source-original/ci137-asset-staging/defensas/webp256/COM-08_Coraza_Chiu-Chiu_256.webp",
+      "description": "Pieza independiente de forma trapezoidal, construida con siete capas de cuero crudo cosidas entre sí mediante tiras del mismo material. Cubre el pecho y el vientre, sin mangas ni piezas metálicas. Se lleva sobre el torso como protección frontal.",
+      "stagedPath": "source-pending/ci137-defensas-altas-20261127/items/HADEF05ChiuCh001.json",
+      "runtimeImage": "modules/hiperaustralis-compendios-prototype/assets/defensas/webp256/COM-08_Coraza_Chiu-Chiu_256.webp"
+    }
+  ],
+  "notes": [
+    "New candidate IDs, not verified live. No existing item overwritten.",
+    "Git blobs reused exactly; current physical decode and SHA256 recomputation blocked. Historical SHA256 retained as expected, not recalculated.",
+    "No additional stats. CORE Armadura rule unchanged. DEF-05 name chosen from current author correction; old peto and coraza retain IDs."
+  ]
+}
