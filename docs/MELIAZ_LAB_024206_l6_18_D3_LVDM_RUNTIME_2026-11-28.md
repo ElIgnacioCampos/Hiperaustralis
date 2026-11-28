@@ -10,27 +10,34 @@
 - Paquete: `MELIAZ_BRIDGE_LAB_0.24.206-lab.6.18_GALERIA256.zip`
 - SHA-256: `2e2a4ff8926cb69af30b32044a54e5b894ad4ad0e4b8cd659c783955e74ebc70`
 - CRC: PASS
+- Contenido inspeccionado: 128 entradas de módulo, código, documentación, pruebas y assets. No contiene directorios `packs/`, `worlds/` ni bases de datos de compendios.
 - Módulo: `meliaz-bridge-lab`
 - Versión: `0.24.206-lab.6.18`
 - Requisitos declarados: Foundry **14.370+**, Custom System Builder **6.1.2+**, SocketLib activo.
 - Conflicto declarado: `meliaz-bridge` estable. Nunca activar ambos módulos en el mismo mundo.
+- Advertencia explícita del manifiesto: el primer arranque puede escribir datos en Actors duplicados. Por eso no basta con que el ZIP no contenga compendios: el runtime debe probarse sólo sobre copia aislada.
 
-## 2. Bloqueo de compatibilidad antes de D3
+## 2. Puerta de seguridad — no actualizar Foundry todavía
 
-El último entorno de prueba documentado utiliza Foundry **14.367**, CSB **6.1.2** y Bridge estable **0.24.203**. CSB cumple; Foundry 14.367 no alcanza el mínimo 14.370 del candidato.
+**Rectificación preventiva:** la recomendación anterior de actualizar el clon a Foundry 14.370+ no autoriza a actualizar directamente el mundo `hipera-6`, ni ningún mundo con datos o compendios de trabajo.
 
-**D3 queda bloqueado** hasta actualizar una copia aislada del mundo a Foundry 14.370 o superior, o preparar y validar por separado una build cuya compatibilidad con 14.367 esté demostrada. No rebajar el mínimo del manifiesto sólo para forzar la instalación.
+El estado real de Foundry y del módulo instalado en `hipera-6` no está verificado en vivo desde este chat. Una referencia anterior menciona 14.367, pero no se toma como versión actual confirmada.
 
-Preparación:
-- Trabajar sobre clon aislado, nunca sobre producción ni H6/H7.
-- Confirmar versión real de Foundry, CSB y SocketLib.
-- Desactivar el Bridge estable sólo dentro del clon y activar únicamente `meliaz-bridge-lab`.
-- Tomar snapshot de los Actors de prueba antes de la primera carga; el manifiesto advierte que el primer arranque puede escribir datos en Actors duplicados.
-- Registrar consola limpia, ID y versión del módulo activo.
+Secuencia obligatoria:
+
+1. **Sólo lectura primero.** Ejecutar en `hipera-6`, como GM y con una ficha Kona abierta, el diagnóstico `HIPERA6_QA_CODIGOS_V45_SOLO_LECTURA_v01.js`. Está limitado a ese mundo; lee versión, módulo activo, assets, flag de Códigos, Items e índices de compendios. Hace GET de archivos y crea una galería DOM temporal. No escribe Actors, Items, flags, settings, packs, módulos ni archivos. Si el ID del mundo no coincide, aborta sin consultar.
+2. Guardar el JSON y capturas del diagnóstico. No instalar, desinstalar, actualizar ni reactivar módulos durante esta comprobación.
+3. Antes de cualquier D3, obtener y verificar un **respaldo restaurable completo** del mundo de prueba, base de datos, archivos de usuario, módulos y compendios externos/prototipo. Verificar que el respaldo puede restaurarse o duplicarse; una lista de archivos o un ZIP del Bridge no es respaldo del mundo.
+4. Crear un clon independiente desde ese respaldo. Confirmar que conserva Actors, escenas, Journals, Items, macros, settings, permisos, carpetas, packs/compendios, IDs y rutas de assets. Mantener intactos el original y sus respaldos.
+5. Sólo dentro del clon, comprobar versiones reales de Foundry, CSB y SocketLib. Si Foundry es inferior a 14.370, **no actualizar el mundo original ni el clon maestro**: preparar un segundo clon desechable para probar la migración/actualización, o conseguir un entorno aislado compatible. El clon restaurable de referencia permanece congelado.
+6. Instalar LAB.6.18 sólo en el clon desechable, activar únicamente `meliaz-bridge-lab` y desactivar el Bridge estable sólo en ese clon. Tomar snapshot de Actors duplicados antes de la primera carga.
+7. Si hay cualquier pérdida, migración inesperada, alteración de packs, referencias rotas o error no explicado: detener, cerrar sin guardar más cambios y restaurar el clon desde el respaldo. No trasladar cambios de vuelta.
+
+**Prohibido:** actualizar Foundry directamente en producción, H6/H7, el `hipera-6` de referencia o el único clon restaurable; sustituir carpetas de módulos en el mundo operativo; reinstalar CI137 o reconstruir compendios como parte de esta prueba.
 
 ## 3. Alineación GitHub / paquete
 
-La rama documental anterior `work/meliaz-bridge-lab-0.24.204-20261124` contiene documentación hasta LAB.6.18, pero su árbol de código conserva `module.json` **0.24.203** y no incluye los módulos separados `kawin.js` y `round-marker.js). El ZIP de referencia sí contiene `bridge.js`, `kawin.js`, `round-marker.js` y los importa desde `bridge.js`.
+La rama documental anterior `work/meliaz-bridge-lab-0.24.204-20261124` contiene documentación hasta LAB.6.18, pero su árbol de código conserva `module.json` **0.24.203** y no incluye los módulos separados `kawin.js` y `round-marker.js`. El ZIP de referencia sí contiene `bridge.js`, `kawin.js`, `round-marker.js` y los importa desde `bridge.js`.
 
 Por tanto, el ZIP verificado es la fuente exacta para este D3. No construir ni instalar una versión desde el árbol GitHub anterior hasta sincronizar el código de LAB.6.18.
 
@@ -75,12 +82,13 @@ Marcar cada caso PASS/FAIL y adjuntar evidencia. No inferir PASS por la simulaci
 - Capturas del marcador acoplado y flotante, y de sus estados de ronda.
 - Consola del navegador antes/después; registrar errores nuevos.
 - Snapshot de Actors participantes antes/después para Descanso y Kawín.
+- Comparación de inventario de compendios y módulos antes/después.
 - Resultado PASS/FAIL por ID, incidencia reproducible y acción tomada.
 
 ## 7. Criterio de cierre
 
-D3 sólo queda aprobado cuando todos los casos críticos pasan en el clon compatible, con evidencia GM/jugador y persistencia tras recarga. Ante un fallo, detener la promoción y aislar la incidencia.
+D3 sólo queda aprobado cuando todos los casos críticos pasan en el clon desechable compatible, con evidencia GM/jugador, persistencia tras recarga y verificación de integridad del mundo y compendios.
 
 No instalar en producción, no activar junto al Bridge estable, no modificar el Estado Maestro y no promover a estable sin aprobación expresa.
 
-**Siguiente paso:** habilitar el clon con Foundry 14.370+ y ejecutar D3-LVDM-01.
+**Siguiente paso autorizado por seguridad:** ejecutar únicamente el diagnóstico de sólo lectura en `hipera-6`; no actualizar Foundry ni instalar LAB.6.18 todavía.
