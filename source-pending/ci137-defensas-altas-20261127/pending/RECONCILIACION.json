@@ -1,0 +1,67 @@
+{
+  "status": "RECONCILIATION_PROPOSALS_ONLY",
+  "source": "CATALOGO_DEF_DESCRIPCIONES_2026-11-24_v02.md",
+  "master": "ACTUAL 27-11, Armadura; no rules changed",
+  "baseInspected": "QA10 expansion v05, not QA12.1 live",
+  "sixStaged": 6,
+  "historical": 8,
+  "pending": [
+    {
+      "code": "DEF-04",
+      "name": "Casco con insignia — Casco Pica-Tarapacá",
+      "asset": "COM-07",
+      "description": "Casco construido con tablillas de madera unidas mediante fibras vegetales y complementado con pelo de camélido. Su estructura cubre la cabeza, las orejas y el cuello. Presenta una cúpula cerrada, una escotadura frontal, una insignia en la parte delantera y una correa que se ata a las aletas laterales para mantenerlo sujeto.",
+      "status": "PENDING_NOT_INSTALLABLE",
+      "historicalIds": [
+        "Id2dCZ4s4TPTMr8R",
+        "uM1FCC5l7Lbx8sRa",
+        "ThGITBgBJNBwJ6o2"
+      ],
+      "proposal": "Separate variant only if author confirms; insignia frontal and lateral strap are not uniquely established in historical descriptions. No new ID allocated.",
+      "icon": {
+        "file": "COM-07_Casco_Pica_Tarapaca_256.webp",
+        "gitBlob": "77593c4da78736aae4a0f15ae510bb38883f03ce",
+        "bytes": 61054,
+        "expectedSha256": "b0e32b13bc91c95f80954e2aabf50dcfa787d33e9a257804704fd5c204cf8920",
+        "stagedPath": "source-pending/ci137-defensas-altas-20261127/pending/assets/COM-07_Casco_Pica_Tarapaca_256.webp",
+        "verified": "Git identity and size only; no physical decode in this session"
+      }
+    },
+    {
+      "code": "DEF-06",
+      "name": "Tañaña — Coraza cónica mapuche",
+      "asset": "COM-09",
+      "description": "Coraza de cuero de forma cónica que se ensancha hacia abajo hasta cubrir las rodillas. Presenta una abertura para dejar libre el brazo izquierdo.",
+      "status": "PENDING_NOT_INSTALLABLE",
+      "proposal": "Independent defense; missing approved COM-09 binary. No placeholder, no regeneration. No new ID allocated."
+    },
+    {
+      "code": "DEF-08",
+      "name": "Coraza atacameña de cuero de caimán",
+      "asset": "COM-11",
+      "description": "Coraza confeccionada con cuero de caimán y decorada con recortes de piel de mono.",
+      "status": "PENDING_NOT_INSTALLABLE",
+      "historicalIds": [
+        "aa9YXJm5fD4UF6oK"
+      ],
+      "proposal": "Probable same piece: both descriptions specifically name caiman leather and monkey-skin cutouts. Propose updating image and editorial description under existing ID, subject to visual/provenance verification and author confirmation. No duplicate.",
+      "icon": {
+        "file": "COM-11_CORAZA_CHIU_CHIU_256.webp",
+        "gitBlob": "56505598d6f7565d4e1c335363c8266a7578792d",
+        "bytes": 79890,
+        "expectedSha256": "551991bbd4c946ecbf08f1a5e847a0cdd8c296742e256c13a50f646d31bbb556",
+        "stagedPath": "source-pending/ci137-defensas-altas-20261127/pending/assets/COM-11_CORAZA_CHIU_CHIU_256.webp",
+        "verified": "Git identity and size only; no physical decode in this session"
+      }
+    }
+  ],
+  "counts": {
+    "sixUnambiguousPlusHistorical": 14,
+    "afterTanana": 15,
+    "ifHelmetSeparate": 16,
+    "ifCorazaSeparate": 17
+  },
+  "constraints": [
+    "No fusion or replacement until author decision and exact image verified. No compilation from incomplete QA10."
+  ]
+}
