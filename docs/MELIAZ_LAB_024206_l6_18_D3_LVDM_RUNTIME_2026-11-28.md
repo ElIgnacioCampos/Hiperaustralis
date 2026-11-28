@@ -66,6 +66,33 @@ El usuario ejecutó un diagnóstico de sólo lectura. Resultado:
 **Siguiente paso seguro:** diagnóstico de sólo lectura del nombre/ID/escena del Combat actual, Combatants, razón de cierre del marcador, participantes, acciones y otros encuentros iniciados. No pulsar botones ni alterar flags.
 
 
+### 2.3 Confirmación visual y semántica de cierre — captura 2026-11-28
+
+El usuario aportó captura de Foundry en `hipera-7` que muestra el panel persistente:
+
+- `MELIAZ · Combate cerrado`
+- `Cerrado por Dirección`
+- `Cierra el combate nativo en Foundry.`
+
+En el tracker nativo sigue visible el control `End Combat`. La captura coincide con el estado leído por consola: `game.combat.started=true`, flag `roundMarkerV1.ended=true`, `reason='Cerrado por Dirección'`, `cleanupPending=[]`.
+
+**No es un modal bloqueado ni un menú huérfano:** es la tarjeta de estado final del marcador, que permanece visible mientras el Combat nativo siga iniciado. En `round-marker.js`, `render()` conserva la tarjeta y muestra el mensaje de cierre nativo cuando `s.ended`; si `!game.combat.started`, restaura la UI nativa, elimina la tarjeta y cierra el menú.
+
+**Tres acciones distintas que no deben confundirse:**
+
+1. **Marcador MELIAZ → botón `Cerrar`:** pide confirmación y ejecuta `manual(c,'end')`. Cambia el marcador a `ended=true`, razón `Cerrado por Dirección`, y limpia Manifestaciones. No elimina el Combat nativo. La tarjeta permanece para informar el siguiente paso.
+2. **Tracker nativo Foundry → `End Combat`:** es el cierre del encuentro nativo indicado por la tarjeta. Cuando Foundry deja `started=false`, el renderizador MELIAZ retira la tarjeta. Esta es la acción nativa a usar si se decide terminar ese encuentro.
+3. **Barra LVDM → `Cerrar combate`:** es otra ruta. Pide confirmación, reconcilia y cierra el marcador; si no quedan pendientes, ejecuta `current.delete()`. **Elimina el documento Combat y sus Combatants.** No usar como equivalente inocuo del botón MELIAZ `Cerrar`.
+
+El código inspeccionado confirma la distinción: `kawin.js` llama `current.delete()` en la ruta de la barra; `round-marker.js` mantiene la tarjeta mientras el encuentro siga iniciado y la quita cuando `!c.started`.
+
+**Estado del encuentro de la captura:** escena `Bosque Turiano`; Combat ID `vgRz61croGsmWvfo`; Combatants Eiríkr Þorsteinsson y Chope. No se presume que sea un encuentro desechable. No pulsar ningún cierre ni borrar el Combat hasta que el usuario confirme que puede finalizar ese encuentro.
+
+**Resultado QA:** D3-LVDM-01 PASS en registro/orden/visibilidad GM y tarjeta de estado observada. Cierre en dos etapas confirmado por captura + flags; falta probar refresco y sesión jugador. Ningún dato fue modificado durante la inspección.
+
+**Propuesta UX para revisión, no implementada:** reemplazar el mensaje ambiguo por `MARCADOR CERRADO · Encuentro de Foundry aún activo`, manteniendo el aviso de que el siguiente paso se realiza en el tracker nativo. Mantener el botón de la barra claramente rotulado como cierre que elimina el documento Combat, o reconsiderar su comportamiento sólo mediante una decisión de diseño explícita.
+
+
 ### 2.2 Secuencia obligatoria antes de cualquier acción que escriba
 
 1. Obtener respaldo completo del mundo, base de datos, archivos de usuario, módulos y compendios externos/prototipo.
