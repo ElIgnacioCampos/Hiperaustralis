@@ -17,24 +17,45 @@
 - Conflicto declarado: `meliaz-bridge` estable. Nunca activar ambos módulos en el mismo mundo.
 - Advertencia explícita del manifiesto: el primer arranque puede escribir datos en Actors duplicados. Por eso no basta con que el ZIP no contenga compendios: el runtime debe probarse sólo sobre copia aislada.
 
-## 2. Puerta de seguridad — no actualizar Foundry todavía
+## 2. Puerta de seguridad — no actualizar ni sustituir módulos en hipera-7
 
-**Rectificación preventiva:** la recomendación anterior de actualizar el clon a Foundry 14.370+ no autoriza a actualizar directamente el mundo `hipera-6`, ni ningún mundo con datos o compendios de trabajo.
+La referencia anterior de Foundry 14.367 queda superada por un inventario de consola aportado por el usuario el 2026-11-28 desde el mundo **hipera-7**:
 
-El estado real de Foundry y del módulo instalado en `hipera-6` no está verificado en vivo desde este chat. Una referencia anterior menciona 14.367, pero no se toma como versión actual confirmada.
+| Componente | Valor observado |
+|---|---|
+| Mundo | `hipera-7` / Hipera 7 |
+| Foundry | **14.370** |
+| Sistema | Custom System Builder **6.1.2** |
+| Bridge estable | `meliaz-bridge` **0.24.203**, inactivo |
+| Bridge LAB | `meliaz-bridge-lab` **0.24.206-lab.6.17**, activo |
+| SocketLib | **1.1.4**, activo |
+| Actors / Scenes / Items | 97 / 3 / 320 |
+| Journals / Macros | 4 / 5 |
+| Compendios | Territorio, Objetos, Adversarios y Journals de prototipo |
 
-Secuencia obligatoria:
+Foundry **14.370** y CSB **6.1.2** ya cumplen los requisitos declarados. No hay motivo para actualizar Foundry.
 
-1. **Sólo lectura primero.** Ejecutar en `hipera-6`, como GM y con una ficha Kona abierta, el diagnóstico `HIPERA6_QA_CODIGOS_V45_SOLO_LECTURA_v01.js`. Está limitado a ese mundo; lee versión, módulo activo, assets, flag de Códigos, Items e índices de compendios. Hace GET de archivos y crea una galería DOM temporal. No escribe Actors, Items, flags, settings, packs, módulos ni archivos. Si el ID del mundo no coincide, aborta sin consultar.
-2. Guardar el JSON y capturas del diagnóstico. No instalar, desinstalar, actualizar ni reactivar módulos durante esta comprobación.
-3. Antes de cualquier D3, obtener y verificar un **respaldo restaurable completo** del mundo de prueba, base de datos, archivos de usuario, módulos y compendios externos/prototipo. Verificar que el respaldo puede restaurarse o duplicarse; una lista de archivos o un ZIP del Bridge no es respaldo del mundo.
-4. Crear un clon independiente desde ese respaldo. Confirmar que conserva Actors, escenas, Journals, Items, macros, settings, permisos, carpetas, packs/compendios, IDs y rutas de assets. Mantener intactos el original y sus respaldos.
-5. Sólo dentro del clon, comprobar versiones reales de Foundry, CSB y SocketLib. Si Foundry es inferior a 14.370, **no actualizar el mundo original ni el clon maestro**: preparar un segundo clon desechable para probar la migración/actualización, o conseguir un entorno aislado compatible. El clon restaurable de referencia permanece congelado.
-6. Instalar LAB.6.18 sólo en el clon desechable, activar únicamente `meliaz-bridge-lab` y desactivar el Bridge estable sólo en ese clon. Tomar snapshot de Actors duplicados antes de la primera carga.
-7. Si hay cualquier pérdida, migración inesperada, alteración de packs, referencias rotas o error no explicado: detener, cerrar sin guardar más cambios y restaurar el clon desde el respaldo. No trasladar cambios de vuelta.
+El inventario no demuestra que `hipera-7` sea un clon desechable ni que exista un respaldo restaurable. Los compendios de Territorio, Objetos y Adversarios aparecen desbloqueados. Se considera un mundo con contenido de trabajo hasta demostrar lo contrario. No instalar, desinstalar ni sustituir módulos en él.
 
-**Prohibido:** actualizar Foundry directamente en producción, H6/H7, el `hipera-6` de referencia o el único clon restaurable; sustituir carpetas de módulos en el mundo operativo; reinstalar CI137 o reconstruir compendios como parte de esta prueba.
+### 2.1 Decisión específica LVDM: probar primero con LAB.6.17
 
+La comparación del parche `patch_618.py` contra LAB.6.17 muestra que el delta de LAB.6.18 se limita a la presentación de galerías de selección de Items/Territorio y al metadato de versión del módulo. No modifica los archivos separados `kawin.js` ni `round-marker.js`.
+
+Por ello, las pruebas pasivas de la barra LVDM pueden comenzar sobre la versión **6.17 ya activa**, sin instalar LAB.6.18. No se debe sustituir el módulo sólo para probar Combate, Descanso o Kawín.
+
+Las pruebas de acciones reales quedan bloqueadas hasta contar con un clon restaurable o actores de prueba aislados y un respaldo verificado. Primero se permite únicamente inspección de UI, estado de fase, permisos y presencia del marcador, en lectura.
+
+### 2.2 Secuencia obligatoria antes de cualquier acción que escriba
+
+1. Obtener respaldo completo del mundo, base de datos, archivos de usuario, módulos y compendios externos/prototipo.
+2. Verificar que el respaldo puede restaurarse o duplicarse.
+3. Crear un clon independiente y comprobar Actors, escenas, Journals, Items, macros, settings, permisos, carpetas, packs/compendios, IDs y rutas de assets.
+4. Mantener intactos `hipera-7` y el respaldo de referencia.
+5. Ejecutar D3 con actores de prueba en el clon. Descanso y Kawín modifican recursos/flags de Actors; Combate crea o elimina encuentros, Combatants, flags y mensajes.
+6. Comparar inventarios antes/después. Ante cualquier alteración no prevista, detener y restaurar el clon.
+
+**Prohibido:** actualizar Foundry en este mundo, instalar LAB.6.18 encima de LAB.6.17, sustituir el Bridge estable, reinstalar CI137 o reconstruir compendios como parte de esta prueba.
+ 
 ## 3. Alineación GitHub / paquete
 
 La rama documental anterior `work/meliaz-bridge-lab-0.24.204-20261124` contiene documentación hasta LAB.6.18, pero su árbol de código conserva `module.json` **0.24.203** y no incluye los módulos separados `kawin.js` y `round-marker.js`. El ZIP de referencia sí contiene `bridge.js`, `kawin.js`, `round-marker.js` y los importa desde `bridge.js`.
