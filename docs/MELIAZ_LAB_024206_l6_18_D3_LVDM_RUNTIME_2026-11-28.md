@@ -142,6 +142,20 @@ Evidencia recuperada del paquete fuente LAB.6.18:
 **Estado de validación:** implementación existente y confirmada por fuente; QA simulado previo PASS. La ruta de cuatro rondas aún necesita D3 real controlado en Foundry para verificar el aviso, la confirmación, la limpieza y la desaparición del marcador. No hacer cambios de código salvo que esa prueba revele un defecto.
 
 
+### 2.6 Límite de entorno — no ejecutar D3 en hipera-7 ni H6/H7
+
+Se recuperó la guía original `GUIA_D3_LAB_6_12.md`, incluida en el paquete de fuentes. Su instrucción explícita es: **respaldar el mundo experimental y la versión LAB instalada; no tocar H6/H7 ni el Bridge estable 0.24.203; activar LAB sólo en copia experimental**.
+
+Por tanto:
+- `hipera-7` queda en **sólo lectura** para este trabajo. El inventario de 97 Actors, 320 Items y cuatro compendios no demuestra que sea desechable ni que tenga respaldo restaurable.
+- No se ejecuta D3 en `hipera-7`, H6 ni H7. No se crea un Combat de prueba, no se marcan rondas, no se ejecuta Kawín/Descanso y no se pulsa ningún cierre ahí.
+- La mención de `hipera-6` en el checkpoint de Códigos v45 corresponde al diagnóstico de iconografía de Códigos y no autoriza usar ese mundo para D3/LVDM.
+- En el historial se había aceptado la creación de un mundo nuevo `Hiperaustralis — LAB V14` (ID propuesto entonces: `hiperaustralis-lab-v14`), pero su existencia y estado actual no están confirmados. Se puede localizar en Setup como candidato; no asumir que existe ni que está vacío.
+- El único destino válido para la prueba de cuatro rondas es un mundo experimental separado, identificado por su ID y con respaldo verificable. Si no existe, primero debe crearse/restaurarse una copia desechable; no duplicar ni migrar H6/H7 sin preservar íntegramente los originales.
+
+**Próximo paso operativo:** localizar en Setup si existe `Hiperaustralis — LAB V14` / `hiperaustralis-lab-v14`. Si existe, abrirlo sólo para inventario de lectura (ID, Foundry, CSB, Bridge LAB, cantidades de documentos y lista de compendios). Si no existe, preparar un mundo experimental independiente. No realizar acciones de fase hasta confirmar ese destino y su respaldo.
+
+
 ## 3. Alineación GitHub / paquete
 
 La rama documental anterior `work/meliaz-bridge-lab-0.24.204-20261124` contiene documentación hasta LAB.6.18, pero su árbol de código conserva `module.json` **0.24.203** y no incluye los módulos separados `kawin.js` y `round-marker.js`. El ZIP de referencia sí contiene `bridge.js`, `kawin.js`, `round-marker.js` y los importa desde `bridge.js`.
