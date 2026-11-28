@@ -1,21 +1,19 @@
 # MELIAZ LAB.6.18 — D3 runtime · Barra LVDM y marcador
 
 **Fecha:** 2026-11-28  
-**Estado:** D3 REAL EN CURSO / LVDM PASIVO PARCIALMENTE VALIDADO  
+**Estado:** PAUSADO / LAB.6.18 NO RECUPERABLE / D3 NO EJECUTADO SOBRE EL CANDIDATO  
 **Alcance:** barra LVDM (Combate, Descanso, Kawín), cierre de fases y marcador MELIAZ de cuatro rondas.  
 **Entorno D3 confirmado por el usuario:** `hipera-7` es mundo de pruebas. No crear otro mundo ni abrir un frente de respaldos. Trabajar con el Bridge LAB activo y el código versionado en GitHub; no modificar Bridge estable, CI137, compendios ni Estado Maestro.
 
-## 1. Candidato de referencia
+## 1. LAB.6.18 — antecedente no instalable
 
-- Paquete: `MELIAZ_BRIDGE_LAB_0.24.206-lab.6.18_GALERIA256.zip`
-- SHA-256: `2e2a4ff8926cb69af30b32044a54e5b894ad4ad0e4b8cd659c783955e74ebc70`
-- CRC: PASS
-- Contenido inspeccionado: 128 entradas de módulo, código, documentación, pruebas y assets. No contiene directorios `packs/`, `worlds/` ni bases de datos de compendios.
-- Módulo: `meliaz-bridge-lab`
-- Versión: `0.24.206-lab.6.18`
-- Requisitos declarados: Foundry **14.370+**, Custom System Builder **6.1.2+**, SocketLib activo.
-- Conflicto declarado: `meliaz-bridge` estable. Nunca activar ambos módulos en el mismo mundo.
-- Advertencia explícita del manifiesto: el primer arranque puede escribir datos en Actors duplicados. Por eso no basta con que el ZIP no contenga compendios: el runtime debe probarse sólo sobre copia aislada.
+El paquete se registró históricamente como:
+- Nombre: `MELIAZ_BRIDGE_LAB_0.24.206-lab.6.18_GALERIA256.zip`.
+- SHA-256 registrado: `2e2a4ff8926cb69af30b32044a54e5b894ad4ad0e4b8cd659c783955e74ebc70`.
+- Versión declarada: `0.24.206-lab.6.18`.
+- Requisitos declarados: Foundry **14.370+**, CSB **6.1.2+**, SocketLib activo.
+
+**Corrección posterior de continuidad (Biblioteca, 2026-11-28):** la fuente binaria exacta de LAB.6.18 fue declarada **NO RECUPERABLE** y se cerró su búsqueda. No solicitar de nuevo el ZIP, no reconstruir LAB.6.18 desde LAB.6.17/anteriores, Bridge estable 0.24.203 ni desde la rama GitHub desincronizada. El nombre, hash y resultados históricos se conservan sólo como registro; no autorizan instalación ni certificación actual.
 
 ## 2. Entorno de pruebas y D3 — H7
 
@@ -87,38 +85,27 @@ La suite simula documentos/socket; no reemplaza la prueba de runtime en H7.
 
 Estas pruebas son unitarias/simuladas. No certifican runtime Foundry; D3 sigue siendo la validación pendiente.
 
-### 2.6 D3 runtime — End Combat y nuevo encuentro manual
+### 2.6 Inspección accidental de LAB.6.17 — no cuenta como D3 de LAB.6.18
 
-El usuario confirma que, después de pulsar **End Combat** en Foundry y ver desaparecer el marcador, inició manualmente un nuevo combate desde Voz del Mundo.
+El 2026-11-28 se inspeccionó H7, donde estaba activo `meliaz-bridge-lab 0.24.206-lab.6.17`. El usuario pulsó **End Combat** nativo y luego inició manualmente otro encuentro. La lectura posterior mostró un Combat nuevo con marcador `ended=false`, ronda 1 y sin pendientes.
 
-La inspección de sólo lectura del nuevo encuentro devolvió:
-- Combat anterior: `vgRz61croGsmWvfo`.
-- Combat nuevo: `cSaUHNgmZqDnlvbx` (ID distinto).
-- Nuevo encuentro: `started=true`, `active=true`.
-- Marcador presente, `ended=false`, ronda 1.
-- `pending=[]`, `cleanupPending=[]`.
-- Un único Combat en la colección al momento de la inspección.
+**Clasificación correcta:** observación de funcionamiento de LAB.6.17 únicamente. No valida LAB.6.18, no es D3 del candidato y no justifica seguir probando rondas sobre la versión anterior. Se detiene aquí la prueba de LAB.6.17.
 
-**Resultado:** D3 — End Combat nativo + inicio manual de encuentro nuevo: **PASS**. El nuevo encuentro tiene Combat nuevo y marcador limpio; no hereda `ended=true` del anterior. La creación fue manual por el usuario, no automática.
+### 2.7 Continuidad correcta del Bridge / LVDM
 
-### 2.7 Siguiente ejecución D3 — cierre por cuatro rondas
+1. Recuperar e identificar el commit/artefacto exacto del último Bridge aprobado. No inferirlo desde la versión activa en H7 ni desde una rama documental.
+2. Usar esa base aprobada para desarrollar un **candidato nuevo**, con identificador/versionado propio. No llamarlo LAB.6.18 ni atribuirle equivalencia.
+3. Recuperar del registro funcional aprobado el alcance LVDM: barra GM Combate/Descanso/Kawín, marcador MELIAZ y cierre por cuarta ronda. Mantener las decisiones ya cerradas; no rediseñarlas.
+4. Sincronizar en GitHub el código fuente completo del candidato, manifiesto, dependencias, pruebas y documentación. Verificar que la rama contiene los archivos realmente empaquetados.
+5. Ejecutar QA local y generar ZIP reproducible con hash. Sólo entonces instalar ese candidato en H7.
+6. Ejecutar D3 real sobre la versión efectivamente instalada: barra, permisos GM/jugador, Combate, Descanso, Kawín, marcador, cuarta ronda, persistencia y multicliente.
+7. Registrar resultados por caso y promover sólo tras aprobación explícita.
 
-Sin reinstalar ni actualizar módulos:
-
-1. Con los Kona del encuentro nuevo, usar **Actuar → Pasar turno** para registrar una acción por participante en cada ronda. Pasar turno no gasta recursos ni modifica atributos del Actor; sólo registra participación en el marcador.
-2. Repetir hasta completar ronda 4.
-3. Comprobar que aparece el aviso GM y el botón **Terminar combate**.
-4. Pulsar **Terminar combate** y confirmar.
-5. Verificar limpieza de Manifestaciones pendientes, finalización/eliminación del encuentro y desaparición del marcador.
-6. Registrar resultado PASS/FAIL e incidencia reproducible. No cambiar código si el flujo funciona.
-
-**No se trabaja en respaldos, exportación de compendios ni Asset Sync.** El frente activo es el Bridge: barra LVDM, fases y marcador de cuatro rondas.
+**No continuar las pruebas de cuatro rondas en LAB.6.17 como sustituto de D3.18. No instalar ni reconstruir el paquete perdido.** El frente sigue siendo GitHub/Foundry: construir y verificar un candidato nuevo sobre la base aprobada, con LVDM como alcance.
 
 ## 3. Alineación GitHub / paquete
 
-La rama documental anterior `work/meliaz-bridge-lab-0.24.204-20261124` contiene documentación hasta LAB.6.18, pero su árbol de código conserva `module.json` **0.24.203** y no incluye los módulos separados `kawin.js` y `round-marker.js`. El ZIP de referencia sí contiene `bridge.js`, `kawin.js`, `round-marker.js` y los importa desde `bridge.js`.
-
-Por tanto, el ZIP verificado es la fuente exacta para este D3. No construir ni instalar una versión desde el árbol GitHub anterior hasta sincronizar el código de LAB.6.18.
+La rama documental `work/meliaz-lab618-lvdm-d3-20261128` no es fuente instalable de LAB.6.18: su árbol no está sincronizado con el paquete candidato y conserva un manifiesto antiguo. La fuente binaria exacta fue declarada NO RECUPERABLE en el replan posterior de Biblioteca. Esta rama se mantiene sólo como registro del análisis; no usarla para construir ni instalar módulos.
 
 ## 4. QA local ya ejecutado
 
@@ -130,7 +117,7 @@ Sobre el ZIP y sus fuentes recuperadas:
 - CRC del ZIP PASS y SHA-256 coincidente.
 - Pruebas específicas: LVDM (9), Kawín colectivo (7), Descanso con recuperación (6), marcador (28), visual D3 simulado (4).
 
-Estas pruebas son simulaciones Node/mocks. **No sustituyen Foundry real, navegador ni sincronización multicliente.** Las trazas de error de Kawín/Descanso corresponden a fallos inyectados deliberadamente; sus pruebas de bloqueo, reintento e idempotencia pasan.
+Estas cifras son un registro histórico de QA atribuido al paquete LAB.6.18 antes de declararse no recuperable. Las fuentes exactas no están disponibles para repetirlo; por tanto, no se presentan como QA reproducible del candidato actual ni sustituyen un build verificable.
 
 ## 5. Matriz D3 — ejecución real
 
@@ -166,8 +153,8 @@ Marcar cada caso PASS/FAIL y adjuntar evidencia. No inferir PASS por la simulaci
 
 ## 7. Criterio de cierre
 
-D3 sólo queda aprobado cuando todos los casos críticos pasan en el clon desechable compatible, con evidencia GM/jugador, persistencia tras recarga y verificación de integridad del mundo y compendios.
+D3 sólo puede comenzar cuando exista un candidato nuevo, reproducible y sincronizado con GitHub, instalado efectivamente en H7. La prueba debe registrar la versión/hash realmente cargados y cubrir evidencia GM/jugador, persistencia y todos los casos críticos.
 
 No instalar en producción, no activar junto al Bridge estable, no modificar el Estado Maestro y no promover a estable sin aprobación expresa.
 
-**Siguiente paso autorizado por seguridad:** confirmar respaldo restaurable de H7 y localizar escena/actores de prueba. No actualizar Foundry ni instalar LAB.6.18. D3 se ejecutará en H7 con LAB.6.17 y datos de prueba aislados.
+**Siguiente paso:** recuperar la base exacta del Bridge aprobado y construir el nuevo candidato LVDM. LAB.6.18 permanece no recuperable y no instalado; LAB.6.17 no sustituye su validación.
