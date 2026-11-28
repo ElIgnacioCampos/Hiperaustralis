@@ -164,6 +164,32 @@ Se recuperó `GUIA_D3_MELIAZ_LAB_6_12.md`. Su instrucción «no tocar H6/H7» pe
 **Siguiente paso operativo:** el usuario realiza primero el Manual Save si está disponible y descarga el ZIP de H7. Después se inspeccionan los archivos y se registra tamaño/hash antes de pasar al export del módulo de compendios y assets. No ejecutar todavía pruebas mutativas.
 
 
+### 2.7 Respaldo Forge World Export recibido y auditado — 2026-11-28
+
+Archivo recibido: `ForgeVTT-export-hipera-7-2026-11-28_20_19_22.zip`
+
+- Tamaño comprimido: **1,277,414 bytes**.
+- Tamaño descomprimido: **6,017,631 bytes**.
+- Entradas ZIP: **125**.
+- SHA-256: `b4426205d1ab448d3efa1f35836bcd5ede7e91b5f4fdaee7c737c10a21b85cf4`.
+- `ZipFile.testzip()`: sin entradas corruptas; CRC PASS en todo el archivo.
+- `world.json`: `id/name=hipera-7`, título `Hipera 7`, Foundry **14.370**, CSB **6.1.2**.
+- Incluye LevelDB de actors, cards, combats, effects, fog, folders, items, journal, macros, messages, playlists, scenes, settings, tables y users, además de `packs/territorio`.
+- Las 16 bases de datos LevelDB presentes tienen `CURRENT` apuntando a un `MANIFEST` que existe y tienen archivo `LOG`.
+- `world.json` registra el pack mundial `territorio` (JournalEntry).
+
+**Resultado:** export de mundo válido e íntegro a nivel ZIP y estructura de archivos. Esto acredita un respaldo del contenido de mundo exportado; no es todavía una restauración probada.
+
+**Límites detectados:**
+- El ZIP no contiene `modules/hiperaustralis-compendios-prototype` ni los tres packs externos `ha-proto-items`, `ha-proto-actors`, `ha-proto-journals` observados en runtime.
+- No contiene Assets Library / media files.
+- Tampoco contiene la instalación de módulos (Bridge LAB/estable, CSB, SocketLib).
+
+**Estado de protección:** respaldo del mundo H7 verificado; respaldo integral del entorno todavía incompleto. No iniciar D3 mutativo hasta respaldar el módulo de compendios externos y los assets necesarios. No importar el ZIP encima del mundo actual.
+
+**Siguiente paso:** exportar `hiperaustralis-compendios-prototype` desde Forge → My Foundry → Export Compendium Modules. Luego decidir el respaldo de Assets Library mediante Asset Sync. Conservar este ZIP original sin modificar.
+
+
 
 ## 3. Alineación GitHub / paquete
 
