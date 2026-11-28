@@ -122,6 +122,26 @@ El usuario confirma que el comportamiento actual al pulsar **End Combat** en el 
 **QA:** comportamiento de End Combat nativo observado por el usuario: PASS. Ruta de cuatro rondas y botón Terminar combate: verificada por inspección estática de código; pendiente ejecución real controlada. Ninguna acción fue ejecutada durante esta revisión.
 
 
+### 2.5 Recuperación de la entrega anterior — cierre al completar cuatro rondas
+
+**Confirmado: esta función ya fue solicitada e incorporada en LAB.6.14. No hay que volver a diseñarla ni implementarla.**
+
+Evidencia recuperada del paquete fuente LAB.6.18:
+
+- `QA_LAB6_14.json`: 18 scripts Node, 124 bloques PASS, sintaxis PASS; registra explícitamente el cambio **“GM combat end advisory, explicit confirmation”** y deja D3 pendiente.
+- `module.json`: changelog LAB.6.14: **“aviso GM Terminar combate (cuarta ronda o rivales identificados fuera de combate)”**.
+- `patch_618.py`: LAB.6.18 modifica únicamente `bridge.js` y `module.json`; no modifica `round-marker.js`. El módulo LAB.6.17 activo es la base declarada de LAB.6.18, por lo que conserva esta implementación.
+- `round-marker.js`: lógica concreta inspeccionada:
+  1. `advance(s,c)` cierra el marcador con razón `Cuarta ronda completada` cuando todos los Kona activos ya registraron su acción en la cuarta ronda.
+  2. `updateEndAdvice(c,s)` genera el aviso al GM por cuarta ronda completada; también puede generarlo cuando todos los rivales identificados están incapacitados.
+  3. `render()` muestra el botón **Terminar combate** al GM.
+  4. `finishNative(c)` solicita confirmación, reconcilia el marcador, ejecuta la limpieza de Manifestaciones y, si no quedan pendientes, elimina el documento Combat nativo.
+
+**Semántica:** no es un cierre automático silencioso al completar la cuarta ronda. Al completarla aparece el aviso y el GM debe pulsar **Terminar combate** y confirmar. Esa acción termina el encuentro y retira el marcador. Es exactamente el comportamiento pedido en LAB.6.14.
+
+**Estado de validación:** implementación existente y confirmada por fuente; QA simulado previo PASS. La ruta de cuatro rondas aún necesita D3 real controlado en Foundry para verificar el aviso, la confirmación, la limpieza y la desaparición del marcador. No hacer cambios de código salvo que esa prueba revele un defecto.
+
+
 ## 3. Alineación GitHub / paquete
 
 La rama documental anterior `work/meliaz-bridge-lab-0.24.204-20261124` contiene documentación hasta LAB.6.18, pero su árbol de código conserva `module.json` **0.24.203** y no incluye los módulos separados `kawin.js` y `round-marker.js`. El ZIP de referencia sí contiene `bridge.js`, `kawin.js`, `round-marker.js` y los importa desde `bridge.js`.
