@@ -76,6 +76,17 @@ La suite local de LAB.6.17/6.18 se ejecutó de nuevo:
 
 La suite simula documentos/socket; no reemplaza la prueba de runtime en H7.
 
+**Reejecución local 2026-11-28 (fuentes del candidato LAB.6.18):**
+- `test_lvdm.mjs`: 9 pruebas PASS.
+- `test_round_marker.mjs`: 28 pruebas PASS.
+- `test_rest_recovery.mjs`: 6 pruebas PASS (los errores de escritura/chat/cierre se inyectan deliberadamente y sus recuperaciones pasan).
+- `test_kawin_collective.mjs`: 7 pruebas PASS (fallo de escritura inyectado deliberadamente; reintento idempotente PASS).
+- SHA-256 `kawin.js`: `b2378806494a3f3d4195762b9403f2906cd7d36be246851531c71e553872dd1d`.
+- SHA-256 `round-marker.js`: `56d2a955b536b0d63afb8f6b203ad27d26120b90454f5409dddc9d525978eeba`.
+- Ambos archivos son idénticos en los paquetes recuperados LAB.6.17 y LAB.6.18.
+
+Estas pruebas son unitarias/simuladas. No certifican runtime Foundry; D3 sigue siendo la validación pendiente.
+
 ### 2.6 Siguiente ejecución D3 en H7
 
 Orden de trabajo, sin reinstalar ni actualizar módulos:
