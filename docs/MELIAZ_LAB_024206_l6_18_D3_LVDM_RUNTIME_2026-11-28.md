@@ -144,21 +144,25 @@ Evidencia recuperada del paquete fuente LAB.6.18:
 
 ### 2.6 Alcance correcto de la guía anterior y seguridad de H7
 
-Se recuperó `GUIA_D3_MELIAZ_LAB_6_12.md`. Bajo el apartado **Instalación única**, indicaba respaldar el mundo experimental y la versión LAB instalada, no tocar H6/H7 ni el Bridge estable 0.24.203, y activar LAB sólo en una copia experimental. Esa guía corresponde al procedimiento de instalación de LAB.6.12; no debe imponerse mecánicamente como veto a la ejecución actual en H7, que el usuario confirma como mundo de pruebas y que ya tiene LAB.6.17 activo.
+Se recuperó `GUIA_D3_MELIAZ_LAB_6_12.md`. Su instrucción «no tocar H6/H7» pertenecía al procedimiento de instalación de LAB.6.12. No debe imponerse mecánicamente como veto a la ejecución actual en H7, que el usuario confirma como mundo de pruebas y que ya tiene LAB.6.17 activo.
 
-**Decisión vigente:** H7 es el destino D3. No crear `Hiperaustralis — LAB V14` ni otro mundo por este motivo. El ID histórico `hiperaustralis-lab-v14` queda como antecedente, no como requisito.
+**Decisión vigente:** `hipera-7` es el destino D3. No crear `Hiperaustralis — LAB V14` ni otro mundo por este motivo. El ID histórico `hiperaustralis-lab-v14` queda como antecedente, no como requisito.
 
-**Protecciones antes de acciones que escriben:**
-1. Obtener y verificar un respaldo restaurable de H7 y conservarlo sin sobrescribir.
-2. Identificar una escena adecuada para pruebas y preparar actores de prueba duplicados; no usar actores principales ni alterar sus fichas.
-3. Crear un encuentro nuevo y reconocible para D3. No reutilizar ni borrar el Combat existente `vgRz61croGsmWvfo` de Bosque Turiano (Eiríkr Þorsteinsson / Chope).
-4. Probar primero el cierre de cuatro rondas con el marcador y el aviso **Terminar combate**. Luego probar Descanso y Kawín con actores duplicados, revisando snapshots antes/después.
-5. No instalar LAB.6.18 ni sustituir LAB.6.17 durante esta ronda: `kawin.js` y `round-marker.js` son idénticos entre ambas versiones según el cotejo registrado.
-6. No modificar Bridge estable 0.24.203, CI137, compendios ni Estado Maestro.
+**Estado del respaldo:** no se encontró en Biblioteca/Drive un export identificado como backup restaurable de H7. El respaldo íntegro del 19-11-2026 documentado en la Biblioteca corresponde a **Hipera 5**, no acredita H7. No inferir que un export de Actors ni un Save Point automático genérico contiene los compendios compartidos y assets requeridos. La existencia de un Save Point de H7 debe comprobarse en Forge.
 
-La mención de `hipera-6` en el checkpoint de Códigos v45 corresponde a otro diagnóstico y no cambia la designación de H7 como mundo de pruebas LVDM.
+**Secuencia de respaldo previa a D3:**
+1. En Forge, detener H7 de forma normal si está abierto y guardar la sesión.
+2. Si la cuenta dispone de **Save Points**, crear un **Manual Save** de `hipera-7` con nombre `H7_PRE_D3_2026-11-28`. Los Save Points cubren los datos del mundo, pero no la Assets Library ni los compendios compartidos; no bastan por sí solos para todo el entorno.
+3. Desde **My Foundry → H7 → Game Tools → Export World**, descargar el ZIP del mundo.
+4. Desde **My Foundry → Export Compendium Modules**, exportar el módulo personalizado `hiperaustralis-compendios-prototype`, que contiene los packs externos `ha-proto-items`, `ha-proto-actors` y `ha-proto-journals`. El compendio `world.territorio` pertenece al mundo y debe quedar incluido en el export de H7.
+5. Respaldar aparte los assets de Forge mediante **Asset Sync** a una instalación Foundry local, si se requiere restauración completa de imágenes, mapas, tokens y audio. La exportación de mundo no incluye archivos multimedia de la Assets Library.
+6. Comprobar que los ZIP descargados abren, que contienen los datos esperados y guardar sus nombres, tamaños y hashes. No importar encima de H7 ni sobrescribir packs para «probar» el respaldo.
+7. D3 usará H7 con LAB.6.17, actores duplicados de prueba y un encuentro nuevo; el Combat existente `vgRz61croGsmWvfo` de Bosque Turiano (Eiríkr Þorsteinsson / Chope) queda protegido.
 
-**Siguiente paso operativo:** verificar si existe ya un respaldo completo y restaurable de H7. Si existe, identificar escena y actores duplicables para D3. Si no, preparar el respaldo antes de cualquier prueba que escriba. No se requiere otro mundo.
+**Referencias de procedimiento Forge:** exportación de mundo y módulos de compendio, exclusión de media files y Asset Sync; Save Points manuales y sus límites (no respaldan Assets Library ni shared compendiums). Consultar documentación enlazada en el checkpoint conversacional antes de cualquier restauración.
+
+**Siguiente paso operativo:** el usuario realiza primero el Manual Save si está disponible y descarga el ZIP de H7. Después se inspeccionan los archivos y se registra tamaño/hash antes de pasar al export del módulo de compendios y assets. No ejecutar todavía pruebas mutativas.
+
 
 
 ## 3. Alineación GitHub / paquete
